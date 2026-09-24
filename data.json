@@ -9,8 +9,8 @@
       "web-app"
     ],
     "brief": "A loop library from ForwardFuture Signals, shared as a design reference. Details unverified from the link-only share.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "loop-library-forwardfuture-signals"
+    "id": "loop-library-forwardfuture-signals",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "Flue 1.0 Beta",
@@ -24,8 +24,8 @@
       "article"
     ],
     "brief": "Flue 1.0 Beta announcement — \"the open framework for building agents without lab lock-in: write once, deploy...\" Details beyond the embed preview are unverified.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "flue-1-0-beta"
+    "id": "flue-1-0-beta",
+    "warning": ""
   },
   {
     "title": "LMCache",
@@ -38,8 +38,8 @@
       "github"
     ],
     "brief": "\"Supercharge Your LLM with the Fastest KV Cache Layer.\" The performance claim is the project's and unverified.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "lmcache"
+    "id": "lmcache",
+    "warning": ""
   },
   {
     "title": "pi-shell-acp",
@@ -52,8 +52,8 @@
       "github"
     ],
     "brief": "Use Claude Code, Codex, and Gemini CLI through the Agent Client Protocol (ACP) inside pi. Details unverified from the link-only share.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "pi-shell-acp"
+    "id": "pi-shell-acp",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "es-git PR #213",
@@ -66,8 +66,8 @@
       "github"
     ],
     "brief": "A fix by monotykamary — diff.print() (default Patch format) was stripping the +/-/space line-origin prefixes from output; this PR prepends them back.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "es-git-pr-213"
+    "id": "es-git-pr-213",
+    "warning": ""
   },
   {
     "title": "pi-tool-repair",
@@ -80,8 +80,8 @@
       "github"
     ],
     "brief": "A validate-then-repair extension for pi that fixes common LLM tool-call mistakes (null fields, stringified arrays, wrong field names, anchor bleed) before tools execute. Tom: \"technically their tool repair brought over to pi (+ my additions).\"",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "pi-tool-repair"
+    "id": "pi-tool-repair",
+    "warning": ""
   },
   {
     "title": "fff PR #593",
@@ -94,8 +94,8 @@
       "github"
     ],
     "brief": "A fix for fff — the /fff-mode override was only stored in an in-memory variable lost on /reload and session restart; this PR persists fff-mode across reloads and session resumes.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "fff-pr-593"
+    "id": "fff-pr-593",
+    "warning": ""
   },
   {
     "title": "fff",
@@ -108,8 +108,8 @@
       "github"
     ],
     "brief": "\"The fastest and the most accurate file search toolkit for AI agents, Neovim, Rust, C, and NodeJS.\" The performance claim is the project's and unverified.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "fff"
+    "id": "fff",
+    "warning": ""
   },
   {
     "title": "ccusage",
@@ -122,8 +122,8 @@
       "github"
     ],
     "brief": "Analyze coding (agent) CLI token usage and costs from local data.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "ccusage"
+    "id": "ccusage",
+    "warning": ""
   },
   {
     "title": "hyperframes",
@@ -136,8 +136,8 @@
       "github"
     ],
     "brief": "\"Write HTML. Render video. Built for agents.\" Details unverified from the link-only share.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "hyperframes"
+    "id": "hyperframes",
+    "warning": "Built for agents.\" Details unverified from the link-only share."
   },
   {
     "title": "MoneyPrinterTurbo",
@@ -150,8 +150,8 @@
       "github"
     ],
     "brief": "Generate HD short videos with one click using AI LLMs (the repo description is in Chinese). Details unverified from the link-only share.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "moneyprinterturbo"
+    "id": "moneyprinterturbo",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "Cozy",
@@ -163,8 +163,8 @@
       "web-app"
     ],
     "brief": "A local-first private diary app. Details unverified from the link-only share.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "cozy"
+    "id": "cozy",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "MiniMax M3",
@@ -177,8 +177,8 @@
       "article"
     ],
     "brief": "MiniMax's M3 announcement — frontier coding capability, 1M context, native multimodality, and a new MSA architecture. All vendor claims, unverified.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "minimax-m3"
+    "id": "minimax-m3",
+    "warning": "All vendor claims, unverified."
   },
   {
     "title": "codex-lb",
@@ -191,8 +191,8 @@
       "github"
     ],
     "brief": "A Codex/ChatGPT multiple-account load balancer and proxy with usage tracking, a dashboard, and OpenCode compatibility. Tom: \"gonna try first.\"",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "codex-lb"
+    "id": "codex-lb",
+    "warning": ""
   },
   {
     "title": "codex-auth",
@@ -205,8 +205,8 @@
       "github"
     ],
     "brief": "A CLI tool to switch and manage Codex accounts. Details unverified from the link-only share.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "codex-auth"
+    "id": "codex-auth",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "Zinley",
@@ -219,8 +219,8 @@
       "web-app"
     ],
     "brief": "\"Built to extend you. 10× your day\" — an AI extension of you across every device and person: takes your calls, writes your emails, and more. Vendor claims, unverified.",
-    "_batch": "week-2026-06-04_to_2026-06-29.md",
-    "id": "zinley"
+    "id": "zinley",
+    "warning": "Vendor claims, unverified."
   },
   {
     "title": "IRIS",
@@ -233,8 +233,8 @@
       "github"
     ],
     "brief": "A shell auto-completion tool for your terminal. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "iris"
+    "id": "iris",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "kimi-k3-mlx",
@@ -247,8 +247,8 @@
       "github"
     ],
     "brief": "An MLX port of moonshotai's Kimi-K3 (2.78T multimodal MoE); the weights are converted from the original release and requantized. Conversion quality is unverified.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "kimi-k3-mlx"
+    "id": "kimi-k3-mlx",
+    "warning": "Conversion quality is unverified."
   },
   {
     "title": "Hermes Console",
@@ -261,8 +261,8 @@
       "web-app"
     ],
     "brief": "A self-hosted AI agent console (\"Tu agente AI self-hosted\") that thelaggingway is giving a go. The self-hosted claim is unverified beyond the site's tagline.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "hermes-console"
+    "id": "hermes-console",
+    "warning": "The self-hosted claim is unverified beyond the site's tagline."
   },
   {
     "title": "OptMem",
@@ -275,8 +275,8 @@
       "github"
     ],
     "brief": "Permanent memory for AI agents, from Victor Taelin. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "optmem"
+    "id": "optmem",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "Content Architecture",
@@ -289,8 +289,8 @@
       "web-app"
     ],
     "brief": "An agent-ready Sanity + Next.js kit. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "content-architecture"
+    "id": "content-architecture",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "nimbus-lite",
@@ -303,8 +303,8 @@
       "github"
     ],
     "brief": "A free, framework-free AI chat UI kit for AI projects. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "nimbus-lite"
+    "id": "nimbus-lite",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "worldmonitor",
@@ -317,8 +317,8 @@
       "web-app"
     ],
     "brief": "A real-time global intelligence dashboard. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "worldmonitor"
+    "id": "worldmonitor",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "Amicro",
@@ -330,8 +330,8 @@
       "web-app"
     ],
     "brief": "Premium React micro-transitions and interaction components. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "amicro"
+    "id": "amicro",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "pi-dispatch",
@@ -344,8 +344,8 @@
       "github"
     ],
     "brief": "Run the pi coding agent as a service. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "pi-dispatch"
+    "id": "pi-dispatch",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "Componentry",
@@ -357,8 +357,8 @@
       "web-app"
     ],
     "brief": "Beautiful animated UI components for React. Rykuuun shared it as a front-end dev finding; details unverified beyond the site's tagline.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "componentry"
+    "id": "componentry",
+    "warning": "Rykuuun shared it as a front-end dev finding; details unverified beyond the site's tagline."
   },
   {
     "title": "Mint Playground",
@@ -370,8 +370,8 @@
       "web-app"
     ],
     "brief": "\"Make the Web Spatial\" — a playground for spatial web experiences. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "mint-playground"
+    "id": "mint-playground",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "delphitools",
@@ -384,8 +384,8 @@
       "web-app"
     ],
     "brief": "Privacy-first browser tools. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "delphitools"
+    "id": "delphitools",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "modly",
@@ -398,8 +398,8 @@
       "github"
     ],
     "brief": "A desktop app that generates 3D models from images using local AI. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "modly"
+    "id": "modly",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "img2threejs",
@@ -412,8 +412,8 @@
       "github"
     ],
     "brief": "Rebuilds the object in a reference image as code-only procedural Three.js. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "img2threejs"
+    "id": "img2threejs",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "pi-openai-server-compaction",
@@ -426,8 +426,8 @@
       "github"
     ],
     "brief": "Shared without description; the name suggests an OpenAI-compatible server with context compaction for the pi agent. Unverified.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "pi-openai-server-compaction"
+    "id": "pi-openai-server-compaction",
+    "warning": "Unverified."
   },
   {
     "title": "Fractal (Plasma AI)",
@@ -440,8 +440,8 @@
       "web-app"
     ],
     "brief": "Plasma AI's Fractal wraps Claude Code and Codex in bounded recursive loops. Details beyond the truncated preview are unverified.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "fractal-plasma-ai"
+    "id": "fractal-plasma-ai",
+    "warning": "Details beyond the truncated preview are unverified."
   },
   {
     "title": "freerange",
@@ -454,8 +454,8 @@
       "github"
     ],
     "brief": "Static checks for ordinary TypeScript layout code, from chenglou. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "freerange"
+    "id": "freerange",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "60fps.design",
@@ -467,8 +467,8 @@
       "web-app"
     ],
     "brief": "UI/UX animation inspiration for mobile and web apps. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "60fps-design"
+    "id": "60fps-design",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "pi-queue-steer",
@@ -481,8 +481,8 @@
       "github"
     ],
     "brief": "A Cursor-style visible follow-up queue with inline editing for the Pi agent. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "pi-queue-steer"
+    "id": "pi-queue-steer",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "pi-grok",
@@ -495,8 +495,8 @@
       "github"
     ],
     "brief": "Use your x.com Premium/SuperGrok subscription in pi with OAuth login, auto-refresh, and live model discovery; supports grok-4.5, grok-composer-2.5-fast, grok-build, grok-4.3, and x_search. Feature claims come from the repo description and are unverified.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "pi-grok"
+    "id": "pi-grok",
+    "warning": "Feature claims come from the repo description and are unverified."
   },
   {
     "title": "Kimi-Vendor-Verifier",
@@ -509,8 +509,8 @@
       "github"
     ],
     "brief": "A vendor verifier from MoonshotAI; baanish asked if anyone has run it. Details unverified from the message text.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "kimi-vendor-verifier"
+    "id": "kimi-vendor-verifier",
+    "warning": "Details unverified from the message text."
   },
   {
     "title": "agentic_coding_flywheel_setup",
@@ -523,8 +523,8 @@
       "github"
     ],
     "brief": "An agentic coding setup that Rykuuun found \"more flexible\" than alternatives. Details unverified from the message text.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "agentic-coding-flywheel-setup"
+    "id": "agentic-coding-flywheel-setup",
+    "warning": "Details unverified from the message text."
   },
   {
     "title": "tailscale-shell",
@@ -537,8 +537,8 @@
       "github"
     ],
     "brief": "A proxied shell + exit-node picker for Tailscale userspace networking, with egress through Mullvad or other providers. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "tailscale-shell"
+    "id": "tailscale-shell",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "Dory",
@@ -551,8 +551,8 @@
       "web-app"
     ],
     "brief": "Docker & Linux containers native to Mac — free, open source, one shared VM for all containers, claiming ~4.7x less idle memory than per-container setups. The memory claim is the vendor's and unverified.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "dory"
+    "id": "dory",
+    "warning": "The memory claim is the vendor's and unverified."
   },
   {
     "title": "archify",
@@ -565,8 +565,8 @@
       "github"
     ],
     "brief": "An agent skill that generates beautiful architecture diagrams with dark/light theme toggle and PNG/JPEG export. Details unverified from the link-only share.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "archify"
+    "id": "archify",
+    "warning": "Details unverified from the link-only share."
   },
   {
     "title": "beads_rust",
@@ -579,8 +579,8 @@
       "github"
     ],
     "brief": "A fast Rust port of Steve Yegge's beads — a local-first, non-invasive issue tracker storing tasks in SQLite. Rykuuun \"really loved this tool\" and says it makes things easier to manage.",
-    "_batch": "week-2026-07-02_to_2026-07-29.md",
-    "id": "beads-rust"
+    "id": "beads-rust",
+    "warning": ""
   },
   {
     "title": "hax",
@@ -592,8 +592,8 @@
       "ai-tool"
     ],
     "brief": "A minimalist coding agent that runs natively in the terminal. The \"minimalist\" claim comes from the sharer's one-line description and is unverified.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "hax"
+    "id": "hax",
+    "warning": "The \"minimalist\" claim comes from the sharer's one-line description and is unverified."
   },
   {
     "title": "AgentFS introduction (Turso docs)",
@@ -605,8 +605,8 @@
       "ai-tool"
     ],
     "brief": "Turso's introduction to AgentFS, which Rykuuun found interesting. It appears to be an agent-oriented filesystem from Turso; anything beyond the docs link is unverified.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "agentfs-introduction-turso-docs"
+    "id": "agentfs-introduction-turso-docs",
+    "warning": "It appears to be an agent-oriented filesystem from Turso; anything beyond the docs link is unverified."
   },
   {
     "title": "billion-context-pi",
@@ -619,8 +619,8 @@
       "github"
     ],
     "brief": "Rykuuun shared this asking \"this is pi-vcc right?\", suggesting it's related to a \"pi\" coding agent with very large context. Details are unverified from the message text alone.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "billion-context-pi"
+    "id": "billion-context-pi",
+    "warning": "Details are unverified from the message text alone."
   },
   {
     "title": "pi (nktkt)",
@@ -633,8 +633,8 @@
       "github"
     ],
     "brief": "A GitHub repo named \"pi\", shared without description. Given the surrounding chatter about pi-vcc, likely an agent project; unverified from the message text.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "pi-nktkt"
+    "id": "pi-nktkt",
+    "warning": "Given the surrounding chatter about pi-vcc, likely an agent project; unverified from the message text."
   },
   {
     "title": "maki",
@@ -647,8 +647,8 @@
       "github"
     ],
     "brief": "A GitHub repo shared without description. What it does is unverified from the message text alone.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "maki"
+    "id": "maki",
+    "warning": "What it does is unverified from the message text alone."
   },
   {
     "title": "Inspora",
@@ -660,8 +660,8 @@
       "web-app"
     ],
     "brief": "A design-focused site, shared link-only. Its exact purpose is unverified from the message text; the domain suggests a design inspiration or resource site.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "inspora"
+    "id": "inspora",
+    "warning": "Its exact purpose is unverified from the message text; the domain suggests a design inspiration or resource site."
   },
   {
     "title": "Gooey",
@@ -673,8 +673,8 @@
       "web-app"
     ],
     "brief": "A site by Jakub Antalik, shared link-only. The name suggests gooey/morphing visual effects; unverified from the message text.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "gooey"
+    "id": "gooey",
+    "warning": "The name suggests gooey/morphing visual effects; unverified from the message text."
   },
   {
     "title": "Collect UI",
@@ -686,8 +686,8 @@
       "web-app"
     ],
     "brief": "A gallery of collected user interfaces for design inspiration. Shared link-only; the description is inferred from the site's name and unverified from the message.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "collect-ui"
+    "id": "collect-ui",
+    "warning": "Shared link-only; the description is inferred from the site's name and unverified from the message."
   },
   {
     "title": "bro-skill",
@@ -700,8 +700,8 @@
       "github"
     ],
     "brief": "An agent \"skill\" on GitHub. What it teaches the agent is unverified from the link-only share.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "bro-skill"
+    "id": "bro-skill",
+    "warning": "What it teaches the agent is unverified from the link-only share."
   },
   {
     "title": "Avoid z-index Whenever Possible",
@@ -713,8 +713,8 @@
       "article"
     ],
     "brief": "A 2020 article by Daniel Rotter arguing for CSS layouts that avoid z-index. The thesis is in the URL slug; the article's quality is unverified.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "avoid-z-index-whenever-possible"
+    "id": "avoid-z-index-whenever-possible",
+    "warning": "The thesis is in the URL slug; the article's quality is unverified."
   },
   {
     "title": "Beautiful UI",
@@ -726,8 +726,8 @@
       "web-app"
     ],
     "brief": "A demo site showcasing a \"beautiful UI\". Shared link-only; what it demonstrates is unverified.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "beautiful-ui"
+    "id": "beautiful-ui",
+    "warning": "Shared link-only; what it demonstrates is unverified."
   },
   {
     "title": "oil-motion",
@@ -740,8 +740,8 @@
       "web-app"
     ],
     "brief": "A GitHub repo, likely a motion/animation library given the name. Shared link-only; unverified.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "oil-motion"
+    "id": "oil-motion",
+    "warning": "Shared link-only; unverified."
   },
   {
     "title": "Arlan Marat's Vault",
@@ -753,8 +753,8 @@
       "web-app"
     ],
     "brief": "A personal \"vault\" site by Arlan Marat. Contents are unverified from the link-only share.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "arlan-marat-s-vault"
+    "id": "arlan-marat-s-vault",
+    "warning": "Contents are unverified from the link-only share."
   },
   {
     "title": "Refero Design Styles",
@@ -766,8 +766,8 @@
       "web-app"
     ],
     "brief": "A design-styles reference site. Shared link-only; unverified beyond the domain.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "refero-design-styles"
+    "id": "refero-design-styles",
+    "warning": "Shared link-only; unverified beyond the domain."
   },
   {
     "title": "There Is An Open Source For That",
@@ -779,8 +779,8 @@
       "web-app"
     ],
     "brief": "A directory of open-source alternatives to popular software. The description is inferred from the site's name; unverified from the message.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "there-is-an-open-source-for-that"
+    "id": "there-is-an-open-source-for-that",
+    "warning": "The description is inferred from the site's name; unverified from the message."
   },
   {
     "title": "josh",
@@ -793,8 +793,8 @@
       "github"
     ],
     "brief": "The josh project on GitHub, shared link-only. What it does is unverified from the message text.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "josh"
+    "id": "josh",
+    "warning": "What it does is unverified from the message text."
   },
   {
     "title": "Checklist Design",
@@ -806,8 +806,8 @@
       "web-app"
     ],
     "brief": "A design checklist site. Shared link-only; unverified beyond the domain.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "checklist-design"
+    "id": "checklist-design",
+    "warning": "Shared link-only; unverified beyond the domain."
   },
   {
     "title": "oh-my-hermes",
@@ -820,8 +820,8 @@
       "github"
     ],
     "brief": "asx8678's entire review was \"crazy\". What the repo does is unverified from the message text.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "oh-my-hermes"
+    "id": "oh-my-hermes",
+    "warning": "What the repo does is unverified from the message text."
   },
   {
     "title": "Kitesurf (Cloudflare blog)",
@@ -833,8 +833,8 @@
       "article"
     ],
     "brief": "A Cloudflare blog post about Kitesurf. The post's claims are unverified; it's a vendor blog.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "kitesurf-cloudflare-blog"
+    "id": "kitesurf-cloudflare-blog",
+    "warning": "The post's claims are unverified; it's a vendor blog."
   },
   {
     "title": "linus-torvalds-skill",
@@ -847,8 +847,8 @@
       "github"
     ],
     "brief": "An agent skill themed on Linus Torvalds, presumably encoding his review style for code agents. Shared link-only; unverified.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "linus-torvalds-skill"
+    "id": "linus-torvalds-skill",
+    "warning": "Shared link-only; unverified."
   },
   {
     "title": "bb",
@@ -861,8 +861,8 @@
       "github"
     ],
     "brief": "Rykuuun found it \"interesting...\". What it does is unverified from the message text.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "bb"
+    "id": "bb",
+    "warning": "What it does is unverified from the message text."
   },
   {
     "title": "Qwen3-8 Max on Artificial Analysis",
@@ -875,8 +875,8 @@
       "web-app"
     ],
     "brief": "Artificial Analysis's model page for Qwen3-8 Max, with benchmarks and pricing. Shared link-only; the page's data is third-party and unverified.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "qwen3-8-max-on-artificial-analysis"
+    "id": "qwen3-8-max-on-artificial-analysis",
+    "warning": "Shared link-only; the page's data is third-party and unverified."
   },
   {
     "title": "opencli",
@@ -889,8 +889,8 @@
       "github"
     ],
     "brief": "A GitHub repo named opencli, shared link-only. What it does is unverified from the message text.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "opencli"
+    "id": "opencli",
+    "warning": "What it does is unverified from the message text."
   },
   {
     "title": "desengs",
@@ -902,8 +902,8 @@
       "web-app"
     ],
     "brief": "Shared link-only. Purpose unverified from the message text; the domain suggests a design/engineering resource.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "desengs"
+    "id": "desengs",
+    "warning": "Purpose unverified from the message text; the domain suggests a design/engineering resource."
   },
   {
     "title": "Antidoom (Liquid AI blog)",
@@ -915,8 +915,8 @@
       "article"
     ],
     "brief": "A Liquid AI blog post about \"Antidoom\". The post's claims are unverified; it's a vendor blog.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "antidoom-liquid-ai-blog"
+    "id": "antidoom-liquid-ai-blog",
+    "warning": "The post's claims are unverified; it's a vendor blog."
   },
   {
     "title": "Kimi K3 on MI355X (Wafer blog)",
@@ -928,8 +928,8 @@
       "article"
     ],
     "brief": "A Wafer blog post benchmarking Kimi K3 on AMD MI355X hardware. Claims unverified; vendor blog.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "kimi-k3-on-mi355x-wafer-blog"
+    "id": "kimi-k3-on-mi355x-wafer-blog",
+    "warning": "Claims unverified; vendor blog."
   },
   {
     "title": "Snowflow",
@@ -941,8 +941,8 @@
       "web-app"
     ],
     "brief": "A deployed demo called Snowflow. What it demonstrates is unverified from the link-only share.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "snowflow"
+    "id": "snowflow",
+    "warning": "What it demonstrates is unverified from the link-only share."
   },
   {
     "title": "snowflow_demo",
@@ -955,8 +955,8 @@
       "web-app"
     ],
     "brief": "The demo repo behind the Snowflow site above. Contents unverified from the link-only share.",
-    "_batch": "week-2026-07-30_to_2026-08-13.md",
-    "id": "snowflow-demo"
+    "id": "snowflow-demo",
+    "warning": "Contents unverified from the link-only share."
   },
   {
     "title": "AoAgents",
@@ -968,8 +968,8 @@
       "ai-tool"
     ],
     "brief": "An AI agent platform whose pitch is \"Everything is an Agent\". Announcement-level description only; details unverified since the link was not opened.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "aoagents"
+    "id": "aoagents",
+    "warning": "Announcement-level description only; details unverified since the link was not opened."
   },
   {
     "title": "Phoenix (Arize AI)",
@@ -982,8 +982,8 @@
       "ai-tool"
     ],
     "brief": "Arize AI's open-source observability platform for LLM apps — tracing, evaluation, and experimentation for agent and RAG workloads. A standard choice for watching what production agents actually do.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "phoenix-arize-ai"
+    "id": "phoenix-arize-ai",
+    "warning": ""
   },
   {
     "title": "Prime Agent (Prime Intellect)",
@@ -996,8 +996,8 @@
       "ai-tool"
     ],
     "brief": "Prime Intellect's framework for training AI agents with reinforcement learning. Per the sharer, its gimmick is collecting training data through its CLI — worth a look if you're into RL-for-agents; specifics unverified.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "prime-agent-prime-intellect"
+    "id": "prime-agent-prime-intellect",
+    "warning": "Per the sharer, its gimmick is collecting training data through its CLI — worth a look if you're into RL-for-agents; specifics unverified."
   },
   {
     "title": "windows-harness (browser-use)",
@@ -1010,8 +1010,8 @@
       "ai-tool"
     ],
     "brief": "A Windows automation harness from the browser-use team (the web-agent library folks). Likely for running agents against Windows apps; details unverified.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "windows-harness-browser-use"
+    "id": "windows-harness-browser-use",
+    "warning": "Likely for running agents against Windows apps; details unverified."
   },
   {
     "title": "Spec-PTC: Speculative Parallel Test-Time Compute",
@@ -1023,8 +1023,8 @@
       "article"
     ],
     "brief": "A write-up of Spec-PTC, a speculative parallel test-time compute framework for long-horizon agents. Interesting if you follow inference-scaling tricks for agentic workloads.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "spec-ptc-speculative-parallel-test-time-compute"
+    "id": "spec-ptc-speculative-parallel-test-time-compute",
+    "warning": ""
   },
   {
     "title": "Headlong (Laude Institute)",
@@ -1037,8 +1037,8 @@
       "ai-tool"
     ],
     "brief": "An open-source agent microharness with persistent agency and recursive LLMs — \"of bash, by bash\". Minimal by design; good for experimenting with agent loops without a heavy framework.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "headlong-laude-institute"
+    "id": "headlong-laude-institute",
+    "warning": ""
   },
   {
     "title": "Shading Motion — Maxime Heckel",
@@ -1050,8 +1050,8 @@
       "article"
     ],
     "brief": "Maxime Heckel's deep dive into shading-based motion design techniques. One of the better-written front-end animation articles; useful if you care about motion craft.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "shading-motion-maxime-heckel"
+    "id": "shading-motion-maxime-heckel",
+    "warning": ""
   },
   {
     "title": "Radius — The AI Browser for Research",
@@ -1064,8 +1064,8 @@
       "ai-tool"
     ],
     "brief": "An AI-native browser aimed at research workflows. Product claims unverified; notable as another entry in the agentic-browser wave.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "radius-the-ai-browser-for-research"
+    "id": "radius-the-ai-browser-for-research",
+    "warning": "Product claims unverified; notable as another entry in the agentic-browser wave."
   },
   {
     "title": "darkbloom — MCP gateway",
@@ -1078,8 +1078,8 @@
       "ai-tool"
     ],
     "brief": "An MCP (Model Context Protocol) gateway that advertises an accuracy guarantee — unusual positioning in the MCP tooling space. Claims unverified; interesting if you run MCP servers in production.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "darkbloom-mcp-gateway"
+    "id": "darkbloom-mcp-gateway",
+    "warning": "Claims unverified; interesting if you run MCP servers in production."
   },
   {
     "title": "pi harness v2 docs (earendil-works)",
@@ -1092,8 +1092,8 @@
       "ai-tool"
     ],
     "brief": "Deep link into the pi coding agent's v2 harness documentation. Worth reading if you use pi or are designing your own agent harness.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "pi-harness-v2-docs-earendil-works"
+    "id": "pi-harness-v2-docs-earendil-works",
+    "warning": ""
   },
   {
     "title": "ThreeUI",
@@ -1106,8 +1106,8 @@
       "dev-tool"
     ],
     "brief": "A browsable library of Three.js components and interactive shaders. Handy for dropping 3D effects into web projects without writing raw WebGL.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "threeui"
+    "id": "threeui",
+    "warning": ""
   },
   {
     "title": "kolu",
@@ -1120,8 +1120,8 @@
       "web-app"
     ],
     "brief": "A terminal tool that bills itself as \"the best way to run terminals\". Details unverified, but worth a look if your terminal setup needs rethinking.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "kolu"
+    "id": "kolu",
+    "warning": "Details unverified, but worth a look if your terminal setup needs rethinking."
   },
   {
     "title": "anti-slop (dmmulroy)",
@@ -1134,8 +1134,8 @@
       "dev-tool"
     ],
     "brief": "Opinionated Oxlint rules that reject low-evidence TypeScript/JavaScript patterns — basically a linter config against AI-slop code. Fun and practical for teams drowning in generated code.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "anti-slop-dmmulroy"
+    "id": "anti-slop-dmmulroy",
+    "warning": ""
   },
   {
     "title": "Introducing Slack Code (Salesforce)",
@@ -1147,8 +1147,8 @@
       "article"
     ],
     "brief": "Salesforce's announcement of Slack Code, bringing coding-agent workflows into Slack. Announcement-level; the \"oh no\" from the sharer suggests healthy skepticism.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "introducing-slack-code-salesforce"
+    "id": "introducing-slack-code-salesforce",
+    "warning": ""
   },
   {
     "title": "claudish-to-english (gvzdv)",
@@ -1161,8 +1161,8 @@
       "ai-tool"
     ],
     "brief": "A small repo that translates \"Claudish\" — AI-assistant jargon — into plain English. Niche but amusing; useful if you've ever stared at a model hedging for three paragraphs.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "claudish-to-english-gvzdv"
+    "id": "claudish-to-english-gvzdv",
+    "warning": ""
   },
   {
     "title": "interior.dev",
@@ -1175,8 +1175,8 @@
       "dev-tool"
     ],
     "brief": "Micro-interactions for React, \"built for the half-second after a click\". A focused little library for the small animations that make UIs feel alive.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "interior-dev"
+    "id": "interior-dev",
+    "warning": ""
   },
   {
     "title": "eve — durable AI agent framework",
@@ -1189,8 +1189,8 @@
       "ai-tool"
     ],
     "brief": "A durable agent framework pitched as \"Next.js for agents\" — build agents with one folder, with durability baked in. Product claims unverified; the durability angle is the interesting bit.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "eve-durable-ai-agent-framework"
+    "id": "eve-durable-ai-agent-framework",
+    "warning": "Product claims unverified; the durability angle is the interesting bit."
   },
   {
     "title": "OpenHistory",
@@ -1203,8 +1203,8 @@
       "ai-tool"
     ],
     "brief": "Turns your Mac activity into a private timeline for you and your AI — local activity history as agent context. Privacy-sensitive by nature; the \"private\" claim is unverified.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "openhistory"
+    "id": "openhistory",
+    "warning": "Privacy-sensitive by nature; the \"private\" claim is unverified."
   },
   {
     "title": "Berd",
@@ -1217,8 +1217,8 @@
       "ai-tool"
     ],
     "brief": "A self-described \"weird, playful\" desktop app for building with AI agents — \"less chatting, more building\". Product claims unverified.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "berd"
+    "id": "berd",
+    "warning": "Product claims unverified."
   },
   {
     "title": "fx — Vercel Labs coding agent",
@@ -1230,8 +1230,8 @@
       "ai-tool"
     ],
     "brief": "Vercel's announcement of fx, \"a tiny, open, native coding agent\" from Vercel Labs, originally an internal tool. Announcement-only source; details unverified.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "fx-vercel-labs-coding-agent"
+    "id": "fx-vercel-labs-coding-agent",
+    "warning": "Announcement-only source; details unverified."
   },
   {
     "title": "skills (emilkowalski)",
@@ -1244,8 +1244,8 @@
       "dev-tool"
     ],
     "brief": "A collection of \"skills\" for designers and engineers from Emil Kowalski (of Vercel/animations fame). Likely agent-skill style playbooks; worth browsing.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "skills-emilkowalski"
+    "id": "skills-emilkowalski",
+    "warning": ""
   },
   {
     "title": "GPS-01 — interactive GPS explainer",
@@ -1258,8 +1258,8 @@
       "article"
     ],
     "brief": "A tiny interactive explainer of how your phone finds itself — satellites, signal timing, and trilateration. The good kind of technical storytelling.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "gps-01-interactive-gps-explainer"
+    "id": "gps-01-interactive-gps-explainer",
+    "warning": ""
   },
   {
     "title": "Rare UI",
@@ -1272,8 +1272,8 @@
       "dev-tool"
     ],
     "brief": "A library of animated React components. Another solid option in the crowded React-animation space; compare with the other UI libraries already in the archive.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "rare-ui"
+    "id": "rare-ui",
+    "warning": ""
   },
   {
     "title": "Cua Computer History (open source)",
@@ -1285,8 +1285,8 @@
       "ai-tool"
     ],
     "brief": "Cua's announcement of the first open-source \"Computer History\", in early preview. Announcement-only; interesting for computer-use agent research.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "cua-computer-history-open-source"
+    "id": "cua-computer-history-open-source",
+    "warning": ""
   },
   {
     "title": "watermarks-remover (guillaumemeyer)",
@@ -1299,8 +1299,8 @@
       "ai-tool"
     ],
     "brief": "Strips multi-vendor AI provenance marks — Unicode text hygiene, statistical rewrite hooks, and C2PA handling. Legitimate hygiene tooling; obviously dual-use.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "watermarks-remover-guillaumemeyer"
+    "id": "watermarks-remover-guillaumemeyer",
+    "warning": ""
   },
   {
     "title": "Beautiful UI",
@@ -1313,8 +1313,8 @@
       "dev-tool"
     ],
     "brief": "\"Crafted primitives for AI-native interfaces\" — a component library aimed at the AI-app UI wave. Claims unverified.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "beautiful-ui-2"
+    "id": "beautiful-ui-2",
+    "warning": "Claims unverified."
   },
   {
     "title": "codedb (justrach)",
@@ -1327,8 +1327,8 @@
       "ai-tool"
     ],
     "brief": "A Zig code-intelligence server and MCP toolset for AI agents, recommended firsthand by the sharer. Native-speed code intelligence as agent context is a strong pitch.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "codedb-justrach"
+    "id": "codedb-justrach",
+    "warning": ""
   },
   {
     "title": "codebase-memory-mcp (DeusData)",
@@ -1341,8 +1341,8 @@
       "ai-tool"
     ],
     "brief": "Persistent semantic memory for coding agents — an MCP server that indexes your codebase. Useful when you have many repos and context windows aren't enough.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "codebase-memory-mcp-deusdata"
+    "id": "codebase-memory-mcp-deusdata",
+    "warning": ""
   },
   {
     "title": "quickbeam (elixir-volt)",
@@ -1355,8 +1355,8 @@
       "dev-tool"
     ],
     "brief": "A JavaScript runtime for the BEAM — Web APIs backed by OTP, native DOM, and a built-in TypeScript toolchain. Genuinely novel: Erlang's concurrency model meets JS.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "quickbeam-elixir-volt"
+    "id": "quickbeam-elixir-volt",
+    "warning": ""
   },
   {
     "title": "Qwen3.6-27B-MTP-GGUF (unsloth quant)",
@@ -1368,8 +1368,8 @@
       "ai-tool"
     ],
     "brief": "Unsloth's GGUF quantization of Qwen3.6-27B with MTP (multi-token prediction). For local inference of the 27B Qwen.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "qwen3-6-27b-mtp-gguf-unsloth-quant"
+    "id": "qwen3-6-27b-mtp-gguf-unsloth-quant",
+    "warning": ""
   },
   {
     "title": "Qwen3.8 open weights announcement",
@@ -1381,8 +1381,8 @@
       "ai-tool"
     ],
     "brief": "Alibaba's announcement that Qwen3.8's open weights are out. Announcement-only; pair with the unsloth GGUF quant below for local runs.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "qwen3-8-open-weights-announcement"
+    "id": "qwen3-8-open-weights-announcement",
+    "warning": ""
   },
   {
     "title": "Qwen3.8-27B-GGUF (unsloth quant)",
@@ -1394,8 +1394,8 @@
       "ai-tool"
     ],
     "brief": "Unsloth's GGUF quantization of Qwen3.8-27B for local inference. The practical artifact behind the open-weights announcement above.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "qwen3-8-27b-gguf-unsloth-quant"
+    "id": "qwen3-8-27b-gguf-unsloth-quant",
+    "warning": ""
   },
   {
     "title": "pi-acp-jetbrain (ryan-brosas)",
@@ -1408,8 +1408,8 @@
       "dev-tool"
     ],
     "brief": "A JetBrains IntelliJ ACP (Agent Client Protocol) adapter for the pi coding agent. Niche but exactly what you need if you want pi inside IntelliJ.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "pi-acp-jetbrain-ryan-brosas"
+    "id": "pi-acp-jetbrain-ryan-brosas",
+    "warning": ""
   },
   {
     "title": "Woxi (vs Mathematica comparison)",
@@ -1421,8 +1421,8 @@
       "article"
     ],
     "brief": "Woxi's comparison of itself against Mathematica — Woxi being an interpreter for a subset of the Wolfram Language. A decent way into what Woxi is and where it stands.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "woxi-vs-mathematica-comparison"
+    "id": "woxi-vs-mathematica-comparison",
+    "warning": ""
   },
   {
     "title": "spec-kit (GitHub)",
@@ -1435,8 +1435,8 @@
       "dev-tool"
     ],
     "brief": "GitHub's official toolkit for spec-driven development — write the spec, let agents implement. From GitHub itself, so it carries weight in the SDD workflow trend.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "spec-kit-github"
+    "id": "spec-kit-github",
+    "warning": ""
   },
   {
     "title": "pullfrog",
@@ -1450,8 +1450,8 @@
       "dev-tool"
     ],
     "brief": "An open-source, model-agnostic, BYOK GitHub bot that runs in GitHub Actions. Bring your own key, pick your model, automate your repo — the self-hosted answer to proprietary coding agents.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "pullfrog"
+    "id": "pullfrog",
+    "warning": ""
   },
   {
     "title": "DeepSeek Harness (developer preview)",
@@ -1464,8 +1464,8 @@
       "ai-tool"
     ],
     "brief": "DeepSeek's agent harness in developer preview — \"everything is a plugin\", with source released alongside. Every agent capability is a swappable plugin; the plugin architecture is the interesting idea here. Claims unverified.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "deepseek-harness-developer-preview"
+    "id": "deepseek-harness-developer-preview",
+    "warning": "Claims unverified."
   },
   {
     "title": "Delta — multiplayer coding with agents",
@@ -1478,8 +1478,8 @@
       "ai-tool"
     ],
     "brief": "A multiplayer environment for coding with agents — shared threads where teammates and agents build and review together, with full conversation and code context. Product claims unverified.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "delta-multiplayer-coding-with-agents"
+    "id": "delta-multiplayer-coding-with-agents",
+    "warning": "Product claims unverified."
   },
   {
     "title": "Rust Foundation Trusted Training (RFTT)",
@@ -1491,8 +1491,8 @@
       "article"
     ],
     "brief": "The Rust Foundation's quality standard for Rust training. Reference material if you're evaluating Rust courses or building one.",
-    "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "rust-foundation-trusted-training-rftt"
+    "id": "rust-foundation-trusted-training-rftt",
+    "warning": ""
   },
   {
     "title": "Psychology for UX: Study Guide",
@@ -1504,8 +1504,8 @@
       "article"
     ],
     "brief": "Nielsen Norman Group's study guide on the psychology behind UX. A solid reference for grounding design decisions in research rather than taste.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "psychology-for-ux-study-guide"
+    "id": "psychology-for-ux-study-guide",
+    "warning": ""
   },
   {
     "title": "beUI motion components",
@@ -1518,8 +1518,8 @@
       "web-app"
     ],
     "brief": "Copy-paste animated React components from beUI. Drop-in motion without building animation primitives from scratch.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "beui-motion-components"
+    "id": "beui-motion-components",
+    "warning": ""
   },
   {
     "title": "Canvas UI",
@@ -1532,8 +1532,8 @@
       "web-app"
     ],
     "brief": "A creative component library for Canvas, WebGL and WebGPU. For interfaces that need GPU-level visuals rather than DOM elements.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "canvas-ui"
+    "id": "canvas-ui",
+    "warning": ""
   },
   {
     "title": "treg",
@@ -1546,8 +1546,8 @@
       "web-app"
     ],
     "brief": "A tool catalog for agents — 2,630 endpoints across 47 providers (SEO, social, enrichment, ads data) callable with one key, priced per call, plus support for your own keys and skills. Tom's 2 Sep share carried his referral param; normalized to the root domain.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "treg"
+    "id": "treg",
+    "warning": ""
   },
   {
     "title": "Claude for people-search (announcement)",
@@ -1559,8 +1559,8 @@
       "ai-tool"
     ],
     "brief": "Jason Zhou's announcement of \"Claude for people-search\" at a claimed $0.0089/lead versus $600 subscriptions. The pricing claims are the poster's and unverified; the tweet mentions a git repo \"below\" that wasn't captured.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "claude-for-people-search-announcement"
+    "id": "claude-for-people-search-announcement",
+    "warning": "The pricing claims are the poster's and unverified; the tweet mentions a git repo \"below\" that wasn't captured."
   },
   {
     "title": "Paper",
@@ -1573,8 +1573,8 @@
       "dev-tool"
     ],
     "brief": "Paper — \"design, share, ship.\" A design tool baanish was scouting; no verdict from the channel yet. (Rykuuun's pricing-page share from 8 Sep was dropped as context-free.)",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "paper"
+    "id": "paper",
+    "warning": ""
   },
   {
     "title": "Paseo",
@@ -1587,8 +1587,8 @@
       "dev-tool"
     ],
     "brief": "Kenn wanted to fork Paseo for internal use cases but held off because it was AGPL — PR #3944 has now relicensed it to Apache. The shared link was the PR; normalized to the repo root. The license change is the news: it's forkable now.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "paseo"
+    "id": "paseo",
+    "warning": ""
   },
   {
     "title": "elxr",
@@ -1601,8 +1601,8 @@
       "ai-tool"
     ],
     "brief": "asx8678's own repo, built after burning through tokens fast. Context is thin, but it reads as a token-efficiency tool from someone feeling the pain directly.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "elxr"
+    "id": "elxr",
+    "warning": ""
   },
   {
     "title": "DSH — DeepSeek Harness (announcement)",
@@ -1614,8 +1614,8 @@
       "ai-tool"
     ],
     "brief": "The Elixir Forum announcing DSH, the DeepSeek Harness. Announcement only; no repo or docs link was captured.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "dsh-deepseek-harness-announcement"
+    "id": "dsh-deepseek-harness-announcement",
+    "warning": "Announcement only; no repo or docs link was captured."
   },
   {
     "title": "Fresh",
@@ -1627,8 +1627,8 @@
       "dev-tool"
     ],
     "brief": "Fresh — \"The Terminal IDE.\" A terminal-based IDE worth a look if you live in the shell.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "fresh"
+    "id": "fresh",
+    "warning": ""
   },
   {
     "title": "Markdown Graphs",
@@ -1641,8 +1641,8 @@
       "web-app"
     ],
     "brief": "Monospace charts and tables for MDX and React. Handy for rendering data visuals that stay crisp in markdown contexts.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "markdown-graphs"
+    "id": "markdown-graphs",
+    "warning": ""
   },
   {
     "title": "Eclipse Theia",
@@ -1655,8 +1655,8 @@
       "dev-tool"
     ],
     "brief": "Eclipse Theia — a cloud and desktop IDE framework implemented in TypeScript. The open foundation behind several well-known IDE products.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "eclipse-theia"
+    "id": "eclipse-theia",
+    "warning": ""
   },
   {
     "title": "Plane",
@@ -1669,8 +1669,8 @@
       "dev-tool"
     ],
     "brief": "Open-source alternative to Jira, Linear, Monday and ClickUp. A self-hostable project-management option for teams avoiding SaaS lock-in.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "plane"
+    "id": "plane",
+    "warning": ""
   },
   {
     "title": "Hy4-preview-FP8",
@@ -1682,8 +1682,8 @@
       "ai-tool"
     ],
     "brief": "Tencent's Hy4 preview weights in FP8 on Hugging Face — 770B total, 49B active, 1M context, open weights. For anyone with the hardware to run a frontier-scale open model.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "hy4-preview-fp8"
+    "id": "hy4-preview-fp8",
+    "warning": ""
   },
   {
     "title": "GLM-5.3-Flash-DFlash2",
@@ -1695,8 +1695,8 @@
       "ai-tool"
     ],
     "brief": "A GLM-5.3-Flash quant on Hugging Face. Context is thin — thelaggingway's whole review was \"Huh\" — but it's another fast-model option to know about.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "glm-5-3-flash-dflash2"
+    "id": "glm-5-3-flash-dflash2",
+    "warning": ""
   },
   {
     "title": "DBX",
@@ -1708,8 +1708,8 @@
       "dev-tool"
     ],
     "brief": "DBX — a 20 MB tool for managing 90+ databases. Remarkably small footprint for a universal database client.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "dbx"
+    "id": "dbx",
+    "warning": ""
   },
   {
     "title": "Brilliant",
@@ -1723,8 +1723,8 @@
       "ai-tool"
     ],
     "brief": "A professional vector design tool \"where you and your AI agents work directly on the canvas.\" Agent-native design tooling is still rare, which makes this one notable.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "brilliant"
+    "id": "brilliant",
+    "warning": ""
   },
   {
     "title": "ArgusAgent",
@@ -1737,8 +1737,8 @@
       "ai-tool"
     ],
     "brief": "Microsoft's ArgusAgent — a persistent, reviewed multi-agent runtime for long-horizon research and engineering. Directly relevant to anyone running agents on long tasks.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "argusagent"
+    "id": "argusagent",
+    "warning": ""
   },
   {
     "title": "PrettyMD",
@@ -1751,8 +1751,8 @@
       "web-app"
     ],
     "brief": "A markdown viewer \"for vibe coders\" — a simple, beautiful app for reading the .md files your AI writes: specs, plans, skills, agents and more. Pairs naturally with agent-heavy workflows.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "prettymd"
+    "id": "prettymd",
+    "warning": ""
   },
   {
     "title": "pi-warden",
@@ -1765,8 +1765,8 @@
       "ai-tool"
     ],
     "brief": "Guardrails for Pi built on pi-typesafe — \"steer the agent instead of interrupting you: Jev judges.\" Part of a small Pi-safety ecosystem from the same author as the next entry.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "pi-warden"
+    "id": "pi-warden",
+    "warning": ""
   },
   {
     "title": "pi-typesafe",
@@ -1779,8 +1779,8 @@
       "ai-tool"
     ],
     "brief": "TypeSafe decisions for Pi — a batched evaluation tool, terminal playground and typed API for extensions. The foundation pi-warden builds on.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "pi-typesafe"
+    "id": "pi-typesafe",
+    "warning": ""
   },
   {
     "title": "BrokenArXiv / ArXivMath (announcement)",
@@ -1792,8 +1792,8 @@
       "ai-tool"
     ],
     "brief": "Jasper Dekoninck releasing new versions of the BrokenArXiv and ArXivMath benchmarks. Announcement only; useful pointer for anyone tracking eval benchmarks.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "brokenarxiv-arxivmath-announcement"
+    "id": "brokenarxiv-arxivmath-announcement",
+    "warning": "Announcement only; useful pointer for anyone tracking eval benchmarks."
   },
   {
     "title": "Arrow 2 (announcement)",
@@ -1805,8 +1805,8 @@
       "ai-tool"
     ],
     "brief": "QuiverAI's Arrow 2 — their latest models for generating precise, editable vector graphics. Announcement only; a notable data point in AI vector-graphics generation.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "arrow-2-announcement"
+    "id": "arrow-2-announcement",
+    "warning": "Announcement only; a notable data point in AI vector-graphics generation."
   },
   {
     "title": "MiniCPM5-2B-PCD",
@@ -1818,8 +1818,8 @@
       "ai-tool"
     ],
     "brief": "MiniCPM5 2B PCD weights on Hugging Face — the same model family as the 16 Sept in-browser Pi announcement. The model behind that WebGPU coding-agent demo.",
-    "_batch": "week-2026-08-27_to_2026-09-03.md",
-    "id": "minicpm5-2b-pcd"
+    "id": "minicpm5-2b-pcd",
+    "warning": ""
   },
   {
     "title": "LFM2.5-2.6B-RLCD",
@@ -1831,8 +1831,8 @@
       "ai-tool"
     ],
     "brief": "LiquidAI's LFM2.5 2.6B model tuned for RLCD, shared in the context of Jev's API and concepts. A small local model for anyone experimenting with RLCD-style agent loops.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "lfm2-5-2-6b-rlcd"
+    "id": "lfm2-5-2-6b-rlcd",
+    "warning": ""
   },
   {
     "title": "Qwen-2.5-1B-RLCD",
@@ -1844,8 +1844,8 @@
       "ai-tool"
     ],
     "brief": "A 1B RLCD-tuned Qwen 2.5 that kenn tried locally \"to get a feel of how Jev's API and concepts might feel like\" — and found it did fine in a roguelike spike. Useful as a tiny testbed model before spending on bigger runs.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "qwen-2-5-1b-rlcd"
+    "id": "qwen-2-5-1b-rlcd",
+    "warning": ""
   },
   {
     "title": "Pi coding agent in the browser (announcement)",
@@ -1857,8 +1857,8 @@
       "ai-tool"
     ],
     "brief": "Announcement of a coding agent (Pi) running entirely in the browser on a 2B model via WebGPU — MiniCPM5-2B + Pi with Transformers.js and 4-bit ONNX weights. Announcement only; no repo was linked in the post.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "pi-coding-agent-in-the-browser-announcement"
+    "id": "pi-coding-agent-in-the-browser-announcement",
+    "warning": "Announcement only; no repo was linked in the post."
   },
   {
     "title": "varve",
@@ -1871,8 +1871,8 @@
       "dev-tool"
     ],
     "brief": "An experimental Rust time-series database with DuckDB SQL and tiered Parquet storage — \"time settles into layers.\" Early-stage but interesting for anyone into time-series storage design.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "varve"
+    "id": "varve",
+    "warning": ""
   },
   {
     "title": "ever-gauzy",
@@ -1885,8 +1885,8 @@
       "web-app"
     ],
     "brief": "Ever Gauzy — an open business management platform covering ERP, CRM, HRM, ATS and project management (gauzy.co). A full open-source suite if you ever need to stand up business tooling.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "ever-gauzy"
+    "id": "ever-gauzy",
+    "warning": ""
   },
   {
     "title": "Universal syntax highlighter / OpaqueRange (demo)",
@@ -1899,8 +1899,8 @@
       "article"
     ],
     "brief": "Demo of a universal syntax highlighter built on the new OpaqueRange web API (Chrome 152+, 2026) — syntax-highlighting different program fragments efficiently. Worth a look for anyone building code-rendering UI.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "universal-syntax-highlighter-opaquerange-demo"
+    "id": "universal-syntax-highlighter-opaquerange-demo",
+    "warning": ""
   },
   {
     "title": "The invisible side of design engineering",
@@ -1912,8 +1912,8 @@
       "article"
     ],
     "brief": "Jakub Krehel's essay on the invisible side of design engineering — the craft that doesn't show up in the final pixels. A thoughtful read for design-minded engineers.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "the-invisible-side-of-design-engineering"
+    "id": "the-invisible-side-of-design-engineering",
+    "warning": ""
   },
   {
     "title": "Inspo",
@@ -1926,8 +1926,8 @@
       "ai-tool"
     ],
     "brief": "A reference layer for AI coding agents — real production websites with desktop and mobile captures, \"real websites worth studying.\" Useful as grounding material when agents need to see how good sites are actually built.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "inspo"
+    "id": "inspo",
+    "warning": ""
   },
   {
     "title": "FeralUI",
@@ -1940,8 +1940,8 @@
       "web-app"
     ],
     "brief": "A small library of playful, physics-driven React elements — including a ceiling pull-cord with real Verlet rope physics. For interfaces that should feel alive rather than flat.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "feralui"
+    "id": "feralui",
+    "warning": ""
   },
   {
     "title": "GVS5H",
@@ -1954,8 +1954,8 @@
       "ai-tool"
     ],
     "brief": "A harness claiming five Qwen3.8-27B models match Claude Fable 5 on LiveCodeBench Hard — \"Fable 5 level coding.\" The performance claims are the poster's and unverified; scarywood75 noted the implementation is Python.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "gvs5h"
+    "id": "gvs5h",
+    "warning": ""
   },
   {
     "title": "transitions.dev",
@@ -1968,8 +1968,8 @@
       "dev-tool"
     ],
     "brief": "A collection of the most essential transitions for web apps, plus a skill for agents and a Refine tool. Drop-in motion craft for web projects and the agents building them.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "transitions-dev"
+    "id": "transitions-dev",
+    "warning": ""
   },
   {
     "title": "UI Skills",
@@ -1982,8 +1982,8 @@
       "dev-tool"
     ],
     "brief": "A collection of design-engineering skills covering accessibility, motion and frontend craft. Pairs well with the transitions.dev repo above for leveling up UI output.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "ui-skills"
+    "id": "ui-skills",
+    "warning": ""
   },
   {
     "title": "e2e agent testing framework (announcement)",
@@ -1995,8 +1995,8 @@
       "dev-tool"
     ],
     "brief": "Oskar's announcement of \"e2e\", a new agent-oriented testing framework — he ported React Native Pager View's test suite from Maestro to it. Announcement only; the framework itself is still being built.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "e2e-agent-testing-framework-announcement"
+    "id": "e2e-agent-testing-framework-announcement",
+    "warning": "Announcement only; the framework itself is still being built."
   },
   {
     "title": "pdfcn",
@@ -2009,8 +2009,8 @@
       "web-app"
     ],
     "brief": "A collection of beautifully designed, accessible and customizable PDF components built on Takumi. Handy if you ever need to render polished PDFs from a web stack.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "pdfcn"
+    "id": "pdfcn",
+    "warning": ""
   },
   {
     "title": "pascalorg/editor",
@@ -2023,8 +2023,8 @@
       "dev-tool"
     ],
     "brief": "An open-source 3D architectural editor with a local CLI, MCP tools and practical workflows for humans and agents. Niche but complete — 3D editing with agent integration baked in.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "pascalorg-editor"
+    "id": "pascalorg-editor",
+    "warning": ""
   },
   {
     "title": "Real API Pricing",
@@ -2037,8 +2037,8 @@
       "ai-tool"
     ],
     "brief": "Compares the real cost of AI — subscription allowances, model benchmarks and the price–performance frontier, with transparent sources. Useful before committing spend to any provider.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "real-api-pricing"
+    "id": "real-api-pricing",
+    "warning": ""
   },
   {
     "title": "pi-arm64-exec (announcement)",
@@ -2051,8 +2051,8 @@
       "ai-tool"
     ],
     "brief": "A pi extension giving the agent exactly one tool — doing file read/edit work in arm64 assembly — to stop Astra shelling out to python3, ruby and perl for file ops. Announcement; the actual link was promised in a follow-up tweet.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "pi-arm64-exec-announcement"
+    "id": "pi-arm64-exec-announcement",
+    "warning": ""
   },
   {
     "title": "Minara Harness (announcement)",
@@ -2064,8 +2064,8 @@
       "ai-tool"
     ],
     "brief": "Announcement of Minara Harness — pitched as \"general financial intelligence for everyone\", turning ideas into signals into execution, plus coding tasks like any other agent. The capability claims are the poster's and unverified.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "minara-harness-announcement"
+    "id": "minara-harness-announcement",
+    "warning": "The capability claims are the poster's and unverified."
   },
   {
     "title": "herdr fleet management update (announcement)",
@@ -2077,8 +2077,8 @@
       "dev-tool"
     ],
     "brief": "Daniel's post that a new herdrdev update is out with fleet management live. A product-update announcement; the herdr blog below has the substance.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "herdr-fleet-management-update-announcement"
+    "id": "herdr-fleet-management-update-announcement",
+    "warning": ""
   },
   {
     "title": "How to Build 3D Worlds with Astra",
@@ -2090,8 +2090,8 @@
       "article"
     ],
     "brief": "A step-by-step guide to making photorealistic 3D worlds and games — reference photos, Blender assets, sub-agents, blind critics, Three.js vs Unreal Engine, and a starter prompt. The \"GPT-6 Astra\" framing is the site's own marketing.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "how-to-build-3d-worlds-with-astra"
+    "id": "how-to-build-3d-worlds-with-astra",
+    "warning": ""
   },
   {
     "title": "OSIRIS",
@@ -2104,8 +2104,8 @@
       "dev-tool"
     ],
     "brief": "An open-source Palantir alternative — track 10K+ aircraft, 2K satellites and worldwide CCTV on a 3D globe, and run Nmap, DNS, WHOIS and threat-intel scans from the browser across 20+ live feeds. Free.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "osiris"
+    "id": "osiris",
+    "warning": ""
   },
   {
     "title": "open-pencil",
@@ -2118,8 +2118,8 @@
       "dev-tool"
     ],
     "brief": "An AI-native design editor pitched as an open-source Figma alternative. Worth watching if design tooling is on your radar.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "open-pencil"
+    "id": "open-pencil",
+    "warning": ""
   },
   {
     "title": "Herdr 0.9 — Connecting the machines",
@@ -2132,8 +2132,8 @@
       "dev-tool"
     ],
     "brief": "The Herdr blog on 0.9, which brings local and remote machines into one TUI client, with Herdr Cloud coming next. Herdr's pitch: run agents anywhere, leave them running.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "herdr-0-9-connecting-the-machines"
+    "id": "herdr-0-9-connecting-the-machines",
+    "warning": ""
   },
   {
     "title": "ECC",
@@ -2146,8 +2146,8 @@
       "ai-tool"
     ],
     "brief": "An agent-harness performance optimization system — skills, instincts, memory, security and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. Directly relevant if you're tuning agent setups.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "ecc"
+    "id": "ecc",
+    "warning": ""
   },
   {
     "title": "MarkItDown (announcement)",
@@ -2159,8 +2159,8 @@
       "dev-tool"
     ],
     "brief": "Matt Dancho's post on Microsoft's MarkItDown — turns almost any file (PDFs, Word, PowerPoint, Excel, images) into clean Markdown; claimed 100,000+ GitHub stars. Announcement only; the repo wasn't directly linked.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "markitdown-announcement"
+    "id": "markitdown-announcement",
+    "warning": "Announcement only; the repo wasn't directly linked."
   },
   {
     "title": "Magika (announcement)",
@@ -2172,8 +2172,8 @@
       "dev-tool"
     ],
     "brief": "Google's Magika — detects the real content of any file even when disguised (malware posing as PDF, scripts hidden as images); free and open-source. Announcement only; the repo wasn't directly linked.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "magika-announcement"
+    "id": "magika-announcement",
+    "warning": "Announcement only; the repo wasn't directly linked."
   },
   {
     "title": "teamai-cli",
@@ -2186,8 +2186,8 @@
       "ai-tool"
     ],
     "brief": "Tencent's \"Make Every Team AI Native\" CLI. The description is thin, but a Tencent-backed team-AI CLI is worth a look.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "teamai-cli"
+    "id": "teamai-cli",
+    "warning": ""
   },
   {
     "title": "pi-mockdeck",
@@ -2200,8 +2200,8 @@
       "ai-tool"
     ],
     "brief": "Cata's first pi extension — an ASCII showcase/mockup gallery of UIs for fast iteration. The shared link pointed at the commits page; normalized to the repo root.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "pi-mockdeck"
+    "id": "pi-mockdeck",
+    "warning": ""
   },
   {
     "title": "okf-agent-memory",
@@ -2214,8 +2214,8 @@
       "ai-tool"
     ],
     "brief": "Git-native persistent memory for AI coding agents — implements Google OKF v0.2 with sub-300µs in-memory BM25 search and an embedded MCP server. Claims to slash token bloat by 80%; that figure is the repo's and unverified.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "okf-agent-memory"
+    "id": "okf-agent-memory",
+    "warning": "Claims to slash token bloat by 80%; that figure is the repo's and unverified."
   },
   {
     "title": "tgrep (announcement)",
@@ -2227,8 +2227,8 @@
       "dev-tool"
     ],
     "brief": "Microsoft's tgrep — grep for large codebases with client/server support, claimed 7–50x faster than ripgrep and ugrep. Announcement only; the speedup claim is the poster's.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "tgrep-announcement"
+    "id": "tgrep-announcement",
+    "warning": "Announcement only; the speedup claim is the poster's."
   },
   {
     "title": "mobframework",
@@ -2241,8 +2241,8 @@
       "web-app"
     ],
     "brief": "\"BEAM on device\" — write mobile apps in Elixir with the whole BEAM running on the device, rendering native iOS and Android UI; your coding agent attaches to the running app with real state and hot-pushed fixes. Ambitious and unusual.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "mobframework"
+    "id": "mobframework",
+    "warning": ""
   },
   {
     "title": "ripwire",
@@ -2255,8 +2255,8 @@
       "ai-tool"
     ],
     "brief": "\"The ripgrep of AI context\" — a zero-dependency C++23 CLI plus MCP server that gives coding agents a ranked, deterministic map of any repo: blast radius, tests-to-run and quality deltas. From Red Hat's emerging-tech group.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "ripwire"
+    "id": "ripwire",
+    "warning": ""
   },
   {
     "title": "Architectural visualization with Astra",
@@ -2268,8 +2268,8 @@
       "article"
     ],
     "brief": "OpenAI's developer blog on using Astra to design a house, refine everyday details, and explore it through Blender camera tours and an Unreal Engine 5 walkthrough. A concrete agentic-design case study.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "architectural-visualization-with-astra"
+    "id": "architectural-visualization-with-astra",
+    "warning": ""
   },
   {
     "title": "SponsorBar (announcement)",
@@ -2281,8 +2281,8 @@
       "web-app"
     ],
     "brief": "SponsorBar — puts a small ad in your menu bar and shares the revenue with you (\"make money from your menu bar for doing nothing\"), with a 10%-extra launch promo. A real launched product, though a niche one.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "sponsorbar-announcement"
+    "id": "sponsorbar-announcement",
+    "warning": ""
   },
   {
     "title": "Factory Open Source AutoWikis",
@@ -2295,8 +2295,8 @@
       "dev-tool"
     ],
     "brief": "Browse Factory-generated wikis for popular open-source repositories — a preview of what living documentation looks like on real codebases before running it on your own. Nice for evaluating doc-generation tooling.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "factory-open-source-autowikis"
+    "id": "factory-open-source-autowikis",
+    "warning": ""
   },
   {
     "title": "monocode",
@@ -2309,8 +2309,8 @@
       "ai-tool"
     ],
     "brief": "A GUI for your coding agents. Description is minimal, but a visual front-end for agent harnesses is a gap worth filling.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "monocode"
+    "id": "monocode",
+    "warning": ""
   },
   {
     "title": "synthetic-search-mcp",
@@ -2323,8 +2323,8 @@
       "ai-tool"
     ],
     "brief": "A search MCP server from baanish, who vouched for PR #4 personally. The shared link was the PR; normalized to the repo root.",
-    "_batch": "week-2026-09-03_to_2026-09-17.md",
-    "id": "synthetic-search-mcp"
+    "id": "synthetic-search-mcp",
+    "warning": ""
   },
   {
     "title": "pi-claude-agent-sdk",
@@ -2337,8 +2337,8 @@
       "github"
     ],
     "brief": "An inference provider that lets Pi (a terminal agent harness) run on Claude Code Pro/Max subscriptions instead of API keys. Kenn is using a fork and admits he \"just closed my eyes and let the agent figure it out\" — expect rough edges.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "pi-claude-agent-sdk"
+    "id": "pi-claude-agent-sdk",
+    "warning": "Kenn is using a fork and admits he \"just closed my eyes and let the agent figure it out\" — expect rough edges."
   },
   {
     "title": "pi-claude-bridge",
@@ -2351,8 +2351,8 @@
       "github"
     ],
     "brief": "Lets you route Pi's model calls through a Claude subscription (\"allow sub usage in pi\"). Same cost-saving idea as pi-claude-agent-sdk: agentic coding without per-token API billing.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "pi-claude-bridge"
+    "id": "pi-claude-bridge",
+    "warning": ""
   },
   {
     "title": "spirula-studio",
@@ -2365,8 +2365,8 @@
       "github"
     ],
     "brief": "Cross-vendor 3D Gaussian Splatting trainer — video to splat to mesh, running on Vulkan or CUDA. Notable for not being CUDA-locked.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "spirula-studio"
+    "id": "spirula-studio",
+    "warning": ""
   },
   {
     "title": "Responsively App",
@@ -2379,8 +2379,8 @@
       "web-app"
     ],
     "brief": "A dedicated browser for responsive web development — preview a site at multiple screen sizes side by side. Built for faster, more precise responsive work.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "responsively-app"
+    "id": "responsively-app",
+    "warning": ""
   },
   {
     "title": "Grokbot Characters (Rege Lab)",
@@ -2392,8 +2392,8 @@
       "web-app"
     ],
     "brief": "A Rege Lab page with six little Grokbot character expressions to play with, plus downloadable editable CoAnimato files. A creative asset resource for bot and character design.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "grokbot-characters-rege-lab"
+    "id": "grokbot-characters-rege-lab",
+    "warning": ""
   },
   {
     "title": "Getting the most out of Opus 5.5",
@@ -2406,8 +2406,8 @@
       "ai-tool"
     ],
     "brief": "Official Claude guide to prompting Opus 5.5, steering long agent runs, and checking results in Claude apps and Claude Code. A practical reference for anyone driving long agent sessions.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "getting-the-most-out-of-opus-5-5"
+    "id": "getting-the-most-out-of-opus-5-5",
+    "warning": ""
   },
   {
     "title": "Grokbot Icon Studio",
@@ -2420,8 +2420,8 @@
       "ai-tool"
     ],
     "brief": "A minimal bot-icon studio — browse bot icon examples and copy a prompt to generate an icon of your own. Quick asset generation for bot projects.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "grokbot-icon-studio"
+    "id": "grokbot-icon-studio",
+    "warning": ""
   },
   {
     "title": "Cloudflare Quick Tunnels",
@@ -2433,8 +2433,8 @@
       "dev-tool"
     ],
     "brief": "Cloudflare Quick Tunnels — free encrypted tunnels that expose localhost as a public URL. Cata plans to use it instead of the VS Code tunnel.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "cloudflare-quick-tunnels"
+    "id": "cloudflare-quick-tunnels",
+    "warning": ""
   },
   {
     "title": "BendSR",
@@ -2446,8 +2446,8 @@
       "github"
     ],
     "brief": "Symbolic regression implemented in Bend. A research-flavoured repo for anyone exploring the Bend language.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "bendsr"
+    "id": "bendsr",
+    "warning": ""
   },
   {
     "title": "security-audit-skill",
@@ -2460,8 +2460,8 @@
       "ai-tool"
     ],
     "brief": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings. A drop-in skill for agentic security reviews.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "security-audit-skill"
+    "id": "security-audit-skill",
+    "warning": ""
   },
   {
     "title": "Saving 100TB of RAM with math",
@@ -2473,8 +2473,8 @@
       "article"
     ],
     "brief": "Cloudflare engineering deep-dive on saving 100TB of RAM with math (and Rust). A solid systems-engineering read.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "saving-100tb-of-ram-with-math"
+    "id": "saving-100tb-of-ram-with-math",
+    "warning": ""
   },
   {
     "title": "Bend",
@@ -2486,8 +2486,8 @@
       "github"
     ],
     "brief": "Bend 2 — a fast programming language that blocks AI mistakes via proof checking. Install with curl from bend-lang.com.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "bend"
+    "id": "bend",
+    "warning": ""
   },
   {
     "title": "Monid free agent search (announcement)",
@@ -2499,8 +2499,8 @@
       "ai-tool"
     ],
     "brief": "Announcement of a free agent search/fetch API — \"killed Exa, Tavily and Brave\", $0 with no quotas, from Tiny_Fish and MonidHQ. The pricing claims are the poster's and unverified; this link is the announcement, not documentation.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "monid-free-agent-search-announcement"
+    "id": "monid-free-agent-search-announcement",
+    "warning": "The pricing claims are the poster's and unverified; this link is the announcement, not documentation."
   },
   {
     "title": "jev-search",
@@ -2513,7 +2513,7 @@
       "ai-tool"
     ],
     "brief": "Shared by thelaggingway with just \"Another one\" — context is thin, but it landed in the search-tool thread. Worth a look if you're tracking search APIs.",
-    "_batch": "week-2026-09-17_to_2026-09-24.md",
-    "id": "jev-search"
+    "id": "jev-search",
+    "warning": ""
   }
 ]

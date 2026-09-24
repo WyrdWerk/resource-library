@@ -3,7 +3,7 @@
 
 Reads curated research notes from notes/*.md and regenerates:
   index.html   — the browsable site (search + category + week filters)
-  data.json    — the full dataset (title, url, sharer, date, categories, brief, week, id)
+  data.json    — the full dataset (title, url, sharer, date, categories, brief, warning, week, id)
   weeks/*.md   — per-week curated lists with briefs
   CHANGELOG.md — batch history derived from notes/
 
@@ -108,6 +108,41 @@ def parse_notes(path):
 
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+
+WARN_RE = re.compile(
+    r"unverified|announcement only|expect rough edges|link-only share"
+    r"|claims? (?:comes|come) from (?:the )?poster"
+    r"|not independently (?:checked|verified)"
+    r"|treat [^.]*experimental|use at your own risk"
+    r"|no (?:benchmark|working link|repo) was", re.I)
+
+
+def split_warning(brief):
+    """Split a brief into (description, warning). Sentences that flag an
+    unverified/experimental/announcement-only claim become the warning bar;
+    the rest stays as the description. If every sentence is a caveat, the
+    brief stays whole and no warning is shown."""
+    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z\"'])", brief)
+    warn = [p for p in parts if WARN_RE.search(p)]
+    keep = [p for p in parts if not WARN_RE.search(p)]
+    if warn and keep:
+        return " ".join(keep), " ".join(warn)
+    return brief, ""
+
+
+def count_dropped(paths):
+    """Count bullets under '## Dropped' sections across notes files."""
+    n = 0
+    for p in paths:
+        in_drop = False
+        for line in p.read_text().splitlines():
+            s = line.strip()
+            if s.startswith("## "):
+                in_drop = s.startswith("## Dropped")
+            elif in_drop and s.startswith("- "):
+                n += 1
+    return n
 
 
 def xml_esc(s):
@@ -227,12 +262,16 @@ def main():
     seen = set()
     for r in all_res:
         r["id"] = slugify(r["title"], seen)
+        r["_desc"], r["_warn"] = split_warning(r["brief"])
 
+    dropped = count_dropped(NOTES_DIR.glob("*.md"))
     total = len(all_res)
     cats = sorted({c for r in all_res for c in r["categories"]})
     cat_counts = {c: sum(1 for r in all_res if c in r["categories"]) for c in cats}
 
-    (ROOT / "data.json").write_text(json.dumps(all_res, indent=2, ensure_ascii=False))
+    data = [{k: v for k, v in r.items() if not k.startswith("_")} | {"warning": r["_warn"]}
+            for r in all_res]
+    (ROOT / "data.json").write_text(json.dumps(data, indent=2, ensure_ascii=False))
 
     # ---- weeks/*.md ----
     WEEKS_DIR.mkdir(exist_ok=True)
@@ -283,12 +322,15 @@ def main():
                 for c in r["categories"])
             blob = esc((r["title"] + " " + r["brief"] + " " + r["sharer"]).lower())
             dom = urlsplit(r["url"]).netloc.replace("www.", "")
+            warnbar = (f'<p class="warnbar"><span class="warnmark">⚠</span> {esc(r["_warn"])}</p>'
+                       if r["_warn"] else "")
             cards.append(
                 f'<article class="card" id="r-{r["id"]}" data-cats="{" ".join(r["categories"])}" data-search="{blob}">'
                 f'<div class="card-main">'
                 f'<div class="cardtop"><span class="cardnum">{ci + 1:02d}</span>'
                 f'<h3><a href="{esc(r["url"])}" target="_blank" rel="noopener">{esc(r["title"])}</a></h3></div>'
-                f'<p>{esc(r["brief"])}</p>'
+                f'<p>{esc(r["_desc"])}</p>'
+                f'{warnbar}'
                 f'<a class="dlink" href="{esc(r["url"])}" target="_blank" rel="noopener">{esc(dom)} ↗</a>'
                 f'</div>'
                 f'<div class="card-side">'
@@ -537,6 +579,13 @@ body {{
 .card h3 a {{ text-decoration: none; color: inherit; }}
 .card h3 a:hover {{ color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }}
 .card-main p {{ margin: 10px 0 12px; color: var(--ink); font-size: 15px; }}
+.warnbar {{
+  display: flex; gap: 8px; align-items: baseline; margin: -4px 0 12px;
+  padding: 8px 12px; border-left: 3px solid var(--warm); border-radius: 0 8px 8px 0;
+  background: rgba(217,154,108,.10); color: var(--warm); font-size: 13.5px; line-height: 1.45;
+}}
+[data-theme="light"] .warnbar {{ background: rgba(155,72,42,.08); }}
+.warnbar .warnmark {{ flex: none; }}
 .dlink {{
   display: inline-block; font-size: 13px; color: var(--accent); text-decoration: none;
   border: 1px solid var(--line); border-radius: 8px; padding: 4px 12px;
@@ -660,7 +709,7 @@ footer a {{ color: var(--accent); }}
       <aside class="review" aria-label="Review summary">
         <span class="rlab">Review window</span>
         <div class="ritem"><span class="rval">{range_str}</span></div>
-        <div class="ritem"><span class="rval">{total} <small>resources kept</small></span><span class="rsub">across {len(ordered)} weekly drops</span></div>
+        <div class="ritem"><span class="rval">{total} <small>kept</small> · {dropped} <small>cut</small></span><span class="rsub">across {len(ordered)} weekly drops</span></div>
       </aside>
     </div>
     <div class="catchips">{catchips}</div>
@@ -725,7 +774,7 @@ footer a {{ color: var(--accent); }}
   <p class="empty" id="empty" style="display:none">Nothing matches — try a different search.</p>
   <footer>
     <span class="fsrc">Source: CheapInfra Discord · #share-tech</span> · Last updated {today_str}<br>
-    Briefs are editorial summaries (~2 sentences); claims originating from announcement posts are unverified unless independently checked.<br>
+    Briefs are editorial summaries (~2 sentences); entries flagged <span class="warnmark">⚠</span> carry a caveat — typically unverified claims from announcement posts — lifted from the brief at build time.<br>
     Data: <a href="data.json">data.json</a> · Weekly lists: <a href="weeks/">weeks/</a> · Raw logs: <a href="raw/">raw/</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="feed.xml">RSS</a>
   </footer>
 </div>
