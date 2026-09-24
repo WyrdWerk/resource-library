@@ -140,9 +140,14 @@ def _svg(w, h, inner):
     return f'<svg viewBox="0 0 {w} {h}" class="chart" role="img">\n{inner}\n</svg>'
 
 
+def _ax(short):
+    """Axis label for a period: end date only, e.g. '24 Sep'."""
+    return re.split(r"[–-]", short)[-1].strip()
+
+
 def vol_chart(rows):
     """Vertical bars: total resources per period, oldest -> newest."""
-    W, H, pad_l, pad_b, pad_t = 560, 300, 34, 46, 28
+    W, H, pad_l, pad_b, pad_t = 560, 300, 34, 72, 28
     n = len(rows)
     cw = (W - pad_l - 14) / max(n, 1)
     bw = min(cw * 0.62, 64)
@@ -153,15 +158,17 @@ def vol_chart(rows):
         x = pad_l + i * cw + (cw - bw) / 2
         bh = max(r["total"] * ph, 2)
         y = H - pad_b - bh
+        cx = x + bw / 2
+        ly = H - pad_b + 18
         parts.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw:.1f}" height="{bh:.1f}" rx="5" class="bar"/>')
-        parts.append(f'<text x="{x + bw / 2:.1f}" y="{y - 8:.1f}" text-anchor="middle" class="val">{r["total"]}</text>')
-        parts.append(f'<text x="{x + bw / 2:.1f}" y="{H - pad_b + 20:.1f}" text-anchor="middle" class="ax">{esc(r["short"])}</text>')
+        parts.append(f'<text x="{cx:.1f}" y="{y - 8:.1f}" text-anchor="middle" class="val">{r["total"]}</text>')
+        parts.append(f'<text x="{cx:.1f}" y="{ly:.1f}" text-anchor="end" transform="rotate(-38 {cx:.1f} {ly:.1f})" class="ax">{esc(_ax(r["short"]))}</text>')
     return _svg(W, H, "\n".join(parts))
 
 
 def stacked_chart(periods, cats):
     """Stacked vertical bars: category mix per period, oldest -> newest."""
-    W, H, pad_l, pad_b, pad_t = 560, 320, 34, 46, 28
+    W, H, pad_l, pad_b, pad_t = 560, 320, 34, 72, 28
     n = len(periods)
     cw = (W - pad_l - 14) / max(n, 1)
     bw = min(cw * 0.62, 72)
@@ -178,8 +185,10 @@ def stacked_chart(periods, cats):
             sh = v * ph
             y -= sh
             parts.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw:.1f}" height="{sh:.1f}" class="seg-{c}"><title>{esc(c)}: {v}</title></rect>')
-        parts.append(f'<text x="{x + bw / 2:.1f}" y="{H - pad_b - p["total"] * ph - 8:.1f}" text-anchor="middle" class="val">{p["total"]}</text>')
-        parts.append(f'<text x="{x + bw / 2:.1f}" y="{H - pad_b + 20:.1f}" text-anchor="middle" class="ax">{esc(p["short"])}</text>')
+        cx = x + bw / 2
+        ly = H - pad_b + 18
+        parts.append(f'<text x="{cx:.1f}" y="{H - pad_b - p["total"] * ph - 8:.1f}" text-anchor="middle" class="val">{p["total"]}</text>')
+        parts.append(f'<text x="{cx:.1f}" y="{ly:.1f}" text-anchor="end" transform="rotate(-38 {cx:.1f} {ly:.1f})" class="ax">{esc(_ax(p["short"]))}</text>')
     return _svg(W, H, "\n".join(parts))
 
 
@@ -455,11 +464,21 @@ body {{
   color: var(--muted); font-weight: 700; display: block; margin-bottom: 6px;
 }}
 #search {{
-  width: 100%; padding: 11px 16px; font-size: 15px; border: 1px solid var(--line);
-  border-radius: 10px; background: var(--card); color: var(--ink); margin-bottom: 10px;
+  flex: 1 1 auto; min-width: 0; padding: 11px 16px; font-size: 15px; border: 1px solid var(--line);
+  border-radius: 10px; background: var(--card); color: var(--ink);
 }}
 #search:focus {{ outline: 2px solid var(--accent); border-color: transparent; }}
 #search::placeholder {{ color: var(--muted); opacity: 0.8; }}
+.searchrow {{ display: flex; gap: 10px; align-items: stretch; margin-bottom: 10px; }}
+.clearbtn {{
+  flex: 0 0 auto; white-space: nowrap; cursor: pointer;
+  border: 1px solid var(--line); background: transparent; color: var(--muted);
+  border-radius: 10px; padding: 0 18px; font: inherit; font-size: 13px; font-weight: 600;
+  -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}}
+.clearbtn:hover {{ border-color: var(--accent); color: var(--ink); }}
+.clearbtn:active {{ transform: scale(0.97); }}
 .frow {{ display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }}
 .frow + .frow {{ margin-top: 6px; }}
 .flabel {{ font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-right: 6px; font-weight: 700; }}
@@ -648,7 +667,10 @@ footer a {{ color: var(--accent); }}
   </header>
   <div class="toolbar">
     <label class="searchlabel" for="search">Search the library</label>
-    <input id="search" type="search" placeholder="Search {total} resources…" autocomplete="off">
+    <div class="searchrow">
+      <input id="search" type="search" placeholder="Search {total} resources…" autocomplete="off">
+      <button id="clearAll" class="clearbtn" type="button">Clear all</button>
+    </div>
     <div class="frow"><span class="flabel">Category</span>{fchips}</div>
     <div class="frow"><span class="flabel">Week</span>{wchips}</div>
   </div>
@@ -767,6 +789,28 @@ for (const ch of wchips) ch.addEventListener('click', () => {{
   wchips.forEach(c => c.classList.toggle('active', c.dataset.week === activeWeek));
   apply();
   goResults();
+}});
+// clear all: reset search text, category and week filters
+const clearBtn = document.getElementById('clearAll');
+if (clearBtn) clearBtn.addEventListener('click', () => {{
+  activeCat = null; activeWeek = null;
+  if (q) q.value = '';
+  cchips.forEach(c => c.classList.toggle('active', c.dataset.cat === 'all'));
+  wchips.forEach(c => c.classList.remove('active'));
+  apply();
+  goResults();
+}});
+// week-nav anchor links: clear filters first so the target section is visible,
+// otherwise a link to a filtered-out week would have no scroll target
+const wnavs = [...document.querySelectorAll('.wnav')];
+for (const a of wnavs) a.addEventListener('click', () => {{
+  if (activeCat || activeWeek || (q && q.value)) {{
+    activeCat = null; activeWeek = null;
+    if (q) q.value = '';
+    cchips.forEach(c => c.classList.toggle('active', c.dataset.cat === 'all'));
+    wchips.forEach(c => c.classList.remove('active'));
+    apply();
+  }}
 }});
 // tabs: library / analytics
 const tabs = [...document.querySelectorAll('.tab')];

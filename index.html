@@ -99,11 +99,21 @@ body {
   color: var(--muted); font-weight: 700; display: block; margin-bottom: 6px;
 }
 #search {
-  width: 100%; padding: 11px 16px; font-size: 15px; border: 1px solid var(--line);
-  border-radius: 10px; background: var(--card); color: var(--ink); margin-bottom: 10px;
+  flex: 1 1 auto; min-width: 0; padding: 11px 16px; font-size: 15px; border: 1px solid var(--line);
+  border-radius: 10px; background: var(--card); color: var(--ink);
 }
 #search:focus { outline: 2px solid var(--accent); border-color: transparent; }
 #search::placeholder { color: var(--muted); opacity: 0.8; }
+.searchrow { display: flex; gap: 10px; align-items: stretch; margin-bottom: 10px; }
+.clearbtn {
+  flex: 0 0 auto; white-space: nowrap; cursor: pointer;
+  border: 1px solid var(--line); background: transparent; color: var(--muted);
+  border-radius: 10px; padding: 0 18px; font: inherit; font-size: 13px; font-weight: 600;
+  -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.clearbtn:hover { border-color: var(--accent); color: var(--ink); }
+.clearbtn:active { transform: scale(0.97); }
 .frow { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .frow + .frow { margin-top: 6px; }
 .flabel { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-right: 6px; font-weight: 700; }
@@ -292,7 +302,10 @@ footer a { color: var(--accent); }
   </header>
   <div class="toolbar">
     <label class="searchlabel" for="search">Search the library</label>
-    <input id="search" type="search" placeholder="Search 184 resources…" autocomplete="off">
+    <div class="searchrow">
+      <input id="search" type="search" placeholder="Search 184 resources…" autocomplete="off">
+      <button id="clearAll" class="clearbtn" type="button">Clear all</button>
+    </div>
     <div class="frow"><span class="flabel">Category</span><button class="fchip active" data-cat="all">All <b>184</b></button><button class="fchip" data-cat="ai-tool">AI tools <b>88</b></button><button class="fchip" data-cat="article">Articles <b>20</b></button><button class="fchip" data-cat="dev-tool">Dev tools <b>61</b></button><button class="fchip" data-cat="github">GitHub repos <b>81</b></button><button class="fchip" data-cat="web-app">Web apps <b>59</b></button></div>
     <div class="frow"><span class="flabel">Week</span><button class="fchip wfilter" data-week="17–24 Sep 2026">17–24 Sep 2026</button><button class="fchip wfilter" data-week="10–17 Sep 2026">10–17 Sep 2026</button><button class="fchip wfilter" data-week="3–10 Sep 2026">3–10 Sep 2026</button><button class="fchip wfilter" data-week="27 Aug–3 Sep 2026">27 Aug–3 Sep 2026</button><button class="fchip wfilter" data-week="20–27 Aug 2026">20–27 Aug 2026</button><button class="fchip wfilter" data-week="13–20 Aug 2026">13–20 Aug 2026</button><button class="fchip wfilter" data-week="6–12 Aug 2026">6–12 Aug 2026</button><button class="fchip wfilter" data-week="30 Jul–5 Aug 2026">30 Jul–5 Aug 2026</button><button class="fchip wfilter" data-week="23–29 Jul 2026">23–29 Jul 2026</button><button class="fchip wfilter" data-week="16–22 Jul 2026">16–22 Jul 2026</button><button class="fchip wfilter" data-week="9–15 Jul 2026">9–15 Jul 2026</button><button class="fchip wfilter" data-week="2–8 Jul 2026">2–8 Jul 2026</button><button class="fchip wfilter" data-week="18–24 Jun 2026">18–24 Jun 2026</button><button class="fchip wfilter" data-week="11–17 Jun 2026">11–17 Jun 2026</button><button class="fchip wfilter" data-week="4–10 Jun 2026">4–10 Jun 2026</button></div>
   </div>
@@ -484,52 +497,52 @@ footer a { color: var(--accent); }
         <h3>Resources per week</h3>
         <p class="sub">Curated resources added each week, oldest to newest.</p>
         <svg viewBox="0 0 560 300" class="chart" role="img">
-<line x1="34" y1="254" x2="550" y2="254" class="grid"/>
-<rect x="40.5" y="175.4" width="21.2" height="78.6" rx="5" class="bar"/>
-<text x="51.1" y="167.4" text-anchor="middle" class="val">8</text>
-<text x="51.1" y="274.0" text-anchor="middle" class="ax">4–10 Jun</text>
-<rect x="74.6" y="185.2" width="21.2" height="68.8" rx="5" class="bar"/>
-<text x="85.2" y="177.2" text-anchor="middle" class="val">7</text>
-<text x="85.2" y="274.0" text-anchor="middle" class="ax">11–17 Jun</text>
-<rect x="108.8" y="244.2" width="21.2" height="9.8" rx="5" class="bar"/>
-<text x="119.3" y="236.2" text-anchor="middle" class="val">1</text>
-<text x="119.3" y="274.0" text-anchor="middle" class="ax">18–24 Jun</text>
-<rect x="142.9" y="195.0" width="21.2" height="59.0" rx="5" class="bar"/>
-<text x="153.5" y="187.0" text-anchor="middle" class="val">6</text>
-<text x="153.5" y="274.0" text-anchor="middle" class="ax">2–8 Jul</text>
-<rect x="177.0" y="244.2" width="21.2" height="9.8" rx="5" class="bar"/>
-<text x="187.6" y="236.2" text-anchor="middle" class="val">1</text>
-<text x="187.6" y="274.0" text-anchor="middle" class="ax">9–15 Jul</text>
-<rect x="211.2" y="204.9" width="21.2" height="49.1" rx="5" class="bar"/>
-<text x="221.7" y="196.9" text-anchor="middle" class="val">5</text>
-<text x="221.7" y="274.0" text-anchor="middle" class="ax">16–22 Jul</text>
-<rect x="245.3" y="116.4" width="21.2" height="137.6" rx="5" class="bar"/>
-<text x="255.9" y="108.4" text-anchor="middle" class="val">14</text>
-<text x="255.9" y="274.0" text-anchor="middle" class="ax">23–29 Jul</text>
-<rect x="279.4" y="195.0" width="21.2" height="59.0" rx="5" class="bar"/>
-<text x="290.0" y="187.0" text-anchor="middle" class="val">6</text>
-<text x="290.0" y="274.0" text-anchor="middle" class="ax">30 Jul–5 Aug</text>
-<rect x="313.6" y="37.8" width="21.2" height="216.2" rx="5" class="bar"/>
-<text x="324.1" y="29.8" text-anchor="middle" class="val">22</text>
-<text x="324.1" y="274.0" text-anchor="middle" class="ax">6–12 Aug</text>
-<rect x="347.7" y="57.5" width="21.2" height="196.5" rx="5" class="bar"/>
-<text x="358.3" y="49.5" text-anchor="middle" class="val">20</text>
-<text x="358.3" y="274.0" text-anchor="middle" class="ax">13–20 Aug</text>
-<rect x="381.8" y="67.3" width="21.2" height="186.7" rx="5" class="bar"/>
-<text x="392.4" y="59.3" text-anchor="middle" class="val">19</text>
-<text x="392.4" y="274.0" text-anchor="middle" class="ax">20–27 Aug</text>
-<rect x="416.0" y="96.8" width="21.2" height="157.2" rx="5" class="bar"/>
-<text x="426.5" y="88.8" text-anchor="middle" class="val">16</text>
-<text x="426.5" y="274.0" text-anchor="middle" class="ax">27 Aug–3 Sep</text>
-<rect x="450.1" y="28.0" width="21.2" height="226.0" rx="5" class="bar"/>
+<line x1="34" y1="228" x2="550" y2="228" class="grid"/>
+<rect x="40.5" y="158.4" width="21.2" height="69.6" rx="5" class="bar"/>
+<text x="51.1" y="150.4" text-anchor="middle" class="val">8</text>
+<text x="51.1" y="246.0" text-anchor="end" transform="rotate(-38 51.1 246.0)" class="ax">10 Jun</text>
+<rect x="74.6" y="167.1" width="21.2" height="60.9" rx="5" class="bar"/>
+<text x="85.2" y="159.1" text-anchor="middle" class="val">7</text>
+<text x="85.2" y="246.0" text-anchor="end" transform="rotate(-38 85.2 246.0)" class="ax">17 Jun</text>
+<rect x="108.8" y="219.3" width="21.2" height="8.7" rx="5" class="bar"/>
+<text x="119.3" y="211.3" text-anchor="middle" class="val">1</text>
+<text x="119.3" y="246.0" text-anchor="end" transform="rotate(-38 119.3 246.0)" class="ax">24 Jun</text>
+<rect x="142.9" y="175.8" width="21.2" height="52.2" rx="5" class="bar"/>
+<text x="153.5" y="167.8" text-anchor="middle" class="val">6</text>
+<text x="153.5" y="246.0" text-anchor="end" transform="rotate(-38 153.5 246.0)" class="ax">8 Jul</text>
+<rect x="177.0" y="219.3" width="21.2" height="8.7" rx="5" class="bar"/>
+<text x="187.6" y="211.3" text-anchor="middle" class="val">1</text>
+<text x="187.6" y="246.0" text-anchor="end" transform="rotate(-38 187.6 246.0)" class="ax">15 Jul</text>
+<rect x="211.2" y="184.5" width="21.2" height="43.5" rx="5" class="bar"/>
+<text x="221.7" y="176.5" text-anchor="middle" class="val">5</text>
+<text x="221.7" y="246.0" text-anchor="end" transform="rotate(-38 221.7 246.0)" class="ax">22 Jul</text>
+<rect x="245.3" y="106.3" width="21.2" height="121.7" rx="5" class="bar"/>
+<text x="255.9" y="98.3" text-anchor="middle" class="val">14</text>
+<text x="255.9" y="246.0" text-anchor="end" transform="rotate(-38 255.9 246.0)" class="ax">29 Jul</text>
+<rect x="279.4" y="175.8" width="21.2" height="52.2" rx="5" class="bar"/>
+<text x="290.0" y="167.8" text-anchor="middle" class="val">6</text>
+<text x="290.0" y="246.0" text-anchor="end" transform="rotate(-38 290.0 246.0)" class="ax">5 Aug</text>
+<rect x="313.6" y="36.7" width="21.2" height="191.3" rx="5" class="bar"/>
+<text x="324.1" y="28.7" text-anchor="middle" class="val">22</text>
+<text x="324.1" y="246.0" text-anchor="end" transform="rotate(-38 324.1 246.0)" class="ax">12 Aug</text>
+<rect x="347.7" y="54.1" width="21.2" height="173.9" rx="5" class="bar"/>
+<text x="358.3" y="46.1" text-anchor="middle" class="val">20</text>
+<text x="358.3" y="246.0" text-anchor="end" transform="rotate(-38 358.3 246.0)" class="ax">20 Aug</text>
+<rect x="381.8" y="62.8" width="21.2" height="165.2" rx="5" class="bar"/>
+<text x="392.4" y="54.8" text-anchor="middle" class="val">19</text>
+<text x="392.4" y="246.0" text-anchor="end" transform="rotate(-38 392.4 246.0)" class="ax">27 Aug</text>
+<rect x="416.0" y="88.9" width="21.2" height="139.1" rx="5" class="bar"/>
+<text x="426.5" y="80.9" text-anchor="middle" class="val">16</text>
+<text x="426.5" y="246.0" text-anchor="end" transform="rotate(-38 426.5 246.0)" class="ax">3 Sep</text>
+<rect x="450.1" y="28.0" width="21.2" height="200.0" rx="5" class="bar"/>
 <text x="460.7" y="20.0" text-anchor="middle" class="val">23</text>
-<text x="460.7" y="274.0" text-anchor="middle" class="ax">3–10 Sep</text>
-<rect x="484.2" y="87.0" width="21.2" height="167.0" rx="5" class="bar"/>
-<text x="494.8" y="79.0" text-anchor="middle" class="val">17</text>
-<text x="494.8" y="274.0" text-anchor="middle" class="ax">10–17 Sep</text>
-<rect x="518.4" y="67.3" width="21.2" height="186.7" rx="5" class="bar"/>
-<text x="528.9" y="59.3" text-anchor="middle" class="val">19</text>
-<text x="528.9" y="274.0" text-anchor="middle" class="ax">17–24 Sep</text>
+<text x="460.7" y="246.0" text-anchor="end" transform="rotate(-38 460.7 246.0)" class="ax">10 Sep</text>
+<rect x="484.2" y="80.2" width="21.2" height="147.8" rx="5" class="bar"/>
+<text x="494.8" y="72.2" text-anchor="middle" class="val">17</text>
+<text x="494.8" y="246.0" text-anchor="end" transform="rotate(-38 494.8 246.0)" class="ax">17 Sep</text>
+<rect x="518.4" y="62.8" width="21.2" height="165.2" rx="5" class="bar"/>
+<text x="528.9" y="54.8" text-anchor="middle" class="val">19</text>
+<text x="528.9" y="246.0" text-anchor="end" transform="rotate(-38 528.9 246.0)" class="ax">24 Sep</text>
 </svg>
       </div>
       <div class="an-card">
@@ -577,158 +590,158 @@ footer a { color: var(--accent); }
           <button class="fchip fswitch" data-range="fort">Fortnightly</button>
         </div>
         <div id="trendWeek"><svg viewBox="0 0 560 320" class="chart" role="img">
-<line x1="34" y1="274" x2="550" y2="274" class="grid"/>
-<rect x="40.5" y="220.5" width="21.2" height="53.5" class="seg-ai-tool"><title>ai-tool: 5</title></rect>
-<rect x="40.5" y="209.8" width="21.2" height="10.7" class="seg-article"><title>article: 1</title></rect>
-<rect x="40.5" y="188.4" width="21.2" height="21.4" class="seg-dev-tool"><title>dev-tool: 2</title></rect>
-<rect x="40.5" y="135.0" width="21.2" height="53.5" class="seg-github"><title>github: 5</title></rect>
-<rect x="40.5" y="113.6" width="21.2" height="21.4" class="seg-web-app"><title>web-app: 2</title></rect>
-<text x="51.1" y="180.4" text-anchor="middle" class="val">8</text>
-<text x="51.1" y="294.0" text-anchor="middle" class="ax">4–10 Jun</text>
-<rect x="74.6" y="231.2" width="21.2" height="42.8" class="seg-ai-tool"><title>ai-tool: 4</title></rect>
-<rect x="74.6" y="220.5" width="21.2" height="10.7" class="seg-article"><title>article: 1</title></rect>
-<rect x="74.6" y="188.4" width="21.2" height="32.1" class="seg-dev-tool"><title>dev-tool: 3</title></rect>
-<rect x="74.6" y="124.3" width="21.2" height="64.2" class="seg-github"><title>github: 6</title></rect>
-<rect x="74.6" y="113.6" width="21.2" height="10.7" class="seg-web-app"><title>web-app: 1</title></rect>
-<text x="85.2" y="191.1" text-anchor="middle" class="val">7</text>
-<text x="85.2" y="294.0" text-anchor="middle" class="ax">11–17 Jun</text>
-<rect x="108.8" y="263.3" width="21.2" height="10.7" class="seg-web-app"><title>web-app: 1</title></rect>
-<text x="119.3" y="255.3" text-anchor="middle" class="val">1</text>
-<text x="119.3" y="294.0" text-anchor="middle" class="ax">18–24 Jun</text>
-<rect x="142.9" y="241.9" width="21.2" height="32.1" class="seg-ai-tool"><title>ai-tool: 3</title></rect>
-<rect x="142.9" y="209.8" width="21.2" height="32.1" class="seg-dev-tool"><title>dev-tool: 3</title></rect>
-<rect x="142.9" y="156.3" width="21.2" height="53.5" class="seg-github"><title>github: 5</title></rect>
-<rect x="142.9" y="145.7" width="21.2" height="10.7" class="seg-web-app"><title>web-app: 1</title></rect>
-<text x="153.5" y="201.8" text-anchor="middle" class="val">6</text>
-<text x="153.5" y="294.0" text-anchor="middle" class="ax">2–8 Jul</text>
-<rect x="177.0" y="263.3" width="21.2" height="10.7" class="seg-ai-tool"><title>ai-tool: 1</title></rect>
-<rect x="177.0" y="252.6" width="21.2" height="10.7" class="seg-github"><title>github: 1</title></rect>
-<text x="187.6" y="255.3" text-anchor="middle" class="val">1</text>
-<text x="187.6" y="294.0" text-anchor="middle" class="ax">9–15 Jul</text>
-<rect x="211.2" y="241.9" width="21.2" height="32.1" class="seg-ai-tool"><title>ai-tool: 3</title></rect>
-<rect x="211.2" y="231.2" width="21.2" height="10.7" class="seg-dev-tool"><title>dev-tool: 1</title></rect>
-<rect x="211.2" y="199.1" width="21.2" height="32.1" class="seg-github"><title>github: 3</title></rect>
-<rect x="211.2" y="177.7" width="21.2" height="21.4" class="seg-web-app"><title>web-app: 2</title></rect>
-<text x="221.7" y="212.5" text-anchor="middle" class="val">5</text>
-<text x="221.7" y="294.0" text-anchor="middle" class="ax">16–22 Jul</text>
-<rect x="245.3" y="199.1" width="21.2" height="74.9" class="seg-ai-tool"><title>ai-tool: 7</title></rect>
-<rect x="245.3" y="167.0" width="21.2" height="32.1" class="seg-dev-tool"><title>dev-tool: 3</title></rect>
-<rect x="245.3" y="81.5" width="21.2" height="85.6" class="seg-github"><title>github: 8</title></rect>
-<rect x="245.3" y="6.6" width="21.2" height="74.9" class="seg-web-app"><title>web-app: 7</title></rect>
-<text x="255.9" y="116.3" text-anchor="middle" class="val">14</text>
-<text x="255.9" y="294.0" text-anchor="middle" class="ax">23–29 Jul</text>
-<rect x="279.4" y="252.6" width="21.2" height="21.4" class="seg-article"><title>article: 2</title></rect>
-<rect x="279.4" y="241.9" width="21.2" height="10.7" class="seg-dev-tool"><title>dev-tool: 1</title></rect>
-<rect x="279.4" y="220.5" width="21.2" height="21.4" class="seg-github"><title>github: 2</title></rect>
-<rect x="279.4" y="188.4" width="21.2" height="32.1" class="seg-web-app"><title>web-app: 3</title></rect>
-<text x="290.0" y="201.8" text-anchor="middle" class="val">6</text>
-<text x="290.0" y="294.0" text-anchor="middle" class="ax">30 Jul–5 Aug</text>
-<rect x="313.6" y="199.1" width="21.2" height="74.9" class="seg-ai-tool"><title>ai-tool: 7</title></rect>
-<rect x="313.6" y="177.7" width="21.2" height="21.4" class="seg-article"><title>article: 2</title></rect>
-<rect x="313.6" y="135.0" width="21.2" height="42.8" class="seg-dev-tool"><title>dev-tool: 4</title></rect>
-<rect x="313.6" y="38.7" width="21.2" height="96.3" class="seg-github"><title>github: 9</title></rect>
-<rect x="313.6" y="-68.3" width="21.2" height="107.0" class="seg-web-app"><title>web-app: 10</title></rect>
-<text x="324.1" y="30.7" text-anchor="middle" class="val">22</text>
-<text x="324.1" y="294.0" text-anchor="middle" class="ax">6–12 Aug</text>
-<rect x="347.7" y="156.3" width="21.2" height="117.7" class="seg-ai-tool"><title>ai-tool: 11</title></rect>
-<rect x="347.7" y="124.3" width="21.2" height="32.1" class="seg-article"><title>article: 3</title></rect>
-<rect x="347.7" y="49.4" width="21.2" height="74.9" class="seg-dev-tool"><title>dev-tool: 7</title></rect>
-<rect x="347.7" y="-36.2" width="21.2" height="85.6" class="seg-github"><title>github: 8</title></rect>
-<rect x="347.7" y="-89.7" width="21.2" height="53.5" class="seg-web-app"><title>web-app: 5</title></rect>
-<text x="358.3" y="52.1" text-anchor="middle" class="val">20</text>
-<text x="358.3" y="294.0" text-anchor="middle" class="ax">13–20 Aug</text>
-<rect x="381.8" y="145.7" width="21.2" height="128.3" class="seg-ai-tool"><title>ai-tool: 12</title></rect>
-<rect x="381.8" y="113.6" width="21.2" height="32.1" class="seg-article"><title>article: 3</title></rect>
-<rect x="381.8" y="60.1" width="21.2" height="53.5" class="seg-dev-tool"><title>dev-tool: 5</title></rect>
-<rect x="381.8" y="-14.8" width="21.2" height="74.9" class="seg-github"><title>github: 7</title></rect>
-<rect x="381.8" y="-89.7" width="21.2" height="74.9" class="seg-web-app"><title>web-app: 7</title></rect>
-<text x="392.4" y="62.8" text-anchor="middle" class="val">19</text>
-<text x="392.4" y="294.0" text-anchor="middle" class="ax">20–27 Aug</text>
-<rect x="416.0" y="209.8" width="21.2" height="64.2" class="seg-ai-tool"><title>ai-tool: 6</title></rect>
-<rect x="416.0" y="199.1" width="21.2" height="10.7" class="seg-article"><title>article: 1</title></rect>
-<rect x="416.0" y="102.9" width="21.2" height="96.3" class="seg-dev-tool"><title>dev-tool: 9</title></rect>
-<rect x="416.0" y="60.1" width="21.2" height="42.8" class="seg-github"><title>github: 4</title></rect>
-<rect x="416.0" y="6.6" width="21.2" height="53.5" class="seg-web-app"><title>web-app: 5</title></rect>
-<text x="426.5" y="94.9" text-anchor="middle" class="val">16</text>
-<text x="426.5" y="294.0" text-anchor="middle" class="ax">27 Aug–3 Sep</text>
-<rect x="450.1" y="156.3" width="21.2" height="117.7" class="seg-ai-tool"><title>ai-tool: 11</title></rect>
-<rect x="450.1" y="124.3" width="21.2" height="32.1" class="seg-article"><title>article: 3</title></rect>
-<rect x="450.1" y="6.6" width="21.2" height="117.7" class="seg-dev-tool"><title>dev-tool: 11</title></rect>
-<rect x="450.1" y="-79.0" width="21.2" height="85.6" class="seg-github"><title>github: 8</title></rect>
-<rect x="450.1" y="-143.1" width="21.2" height="64.2" class="seg-web-app"><title>web-app: 6</title></rect>
+<line x1="34" y1="248" x2="550" y2="248" class="grid"/>
+<rect x="40.5" y="200.2" width="21.2" height="47.8" class="seg-ai-tool"><title>ai-tool: 5</title></rect>
+<rect x="40.5" y="190.6" width="21.2" height="9.6" class="seg-article"><title>article: 1</title></rect>
+<rect x="40.5" y="171.5" width="21.2" height="19.1" class="seg-dev-tool"><title>dev-tool: 2</title></rect>
+<rect x="40.5" y="123.7" width="21.2" height="47.8" class="seg-github"><title>github: 5</title></rect>
+<rect x="40.5" y="104.5" width="21.2" height="19.1" class="seg-web-app"><title>web-app: 2</title></rect>
+<text x="51.1" y="163.5" text-anchor="middle" class="val">8</text>
+<text x="51.1" y="266.0" text-anchor="end" transform="rotate(-38 51.1 266.0)" class="ax">10 Jun</text>
+<rect x="74.6" y="209.7" width="21.2" height="38.3" class="seg-ai-tool"><title>ai-tool: 4</title></rect>
+<rect x="74.6" y="200.2" width="21.2" height="9.6" class="seg-article"><title>article: 1</title></rect>
+<rect x="74.6" y="171.5" width="21.2" height="28.7" class="seg-dev-tool"><title>dev-tool: 3</title></rect>
+<rect x="74.6" y="114.1" width="21.2" height="57.4" class="seg-github"><title>github: 6</title></rect>
+<rect x="74.6" y="104.5" width="21.2" height="9.6" class="seg-web-app"><title>web-app: 1</title></rect>
+<text x="85.2" y="173.0" text-anchor="middle" class="val">7</text>
+<text x="85.2" y="266.0" text-anchor="end" transform="rotate(-38 85.2 266.0)" class="ax">17 Jun</text>
+<rect x="108.8" y="238.4" width="21.2" height="9.6" class="seg-web-app"><title>web-app: 1</title></rect>
+<text x="119.3" y="230.4" text-anchor="middle" class="val">1</text>
+<text x="119.3" y="266.0" text-anchor="end" transform="rotate(-38 119.3 266.0)" class="ax">24 Jun</text>
+<rect x="142.9" y="219.3" width="21.2" height="28.7" class="seg-ai-tool"><title>ai-tool: 3</title></rect>
+<rect x="142.9" y="190.6" width="21.2" height="28.7" class="seg-dev-tool"><title>dev-tool: 3</title></rect>
+<rect x="142.9" y="142.8" width="21.2" height="47.8" class="seg-github"><title>github: 5</title></rect>
+<rect x="142.9" y="133.2" width="21.2" height="9.6" class="seg-web-app"><title>web-app: 1</title></rect>
+<text x="153.5" y="182.6" text-anchor="middle" class="val">6</text>
+<text x="153.5" y="266.0" text-anchor="end" transform="rotate(-38 153.5 266.0)" class="ax">8 Jul</text>
+<rect x="177.0" y="238.4" width="21.2" height="9.6" class="seg-ai-tool"><title>ai-tool: 1</title></rect>
+<rect x="177.0" y="228.9" width="21.2" height="9.6" class="seg-github"><title>github: 1</title></rect>
+<text x="187.6" y="230.4" text-anchor="middle" class="val">1</text>
+<text x="187.6" y="266.0" text-anchor="end" transform="rotate(-38 187.6 266.0)" class="ax">15 Jul</text>
+<rect x="211.2" y="219.3" width="21.2" height="28.7" class="seg-ai-tool"><title>ai-tool: 3</title></rect>
+<rect x="211.2" y="209.7" width="21.2" height="9.6" class="seg-dev-tool"><title>dev-tool: 1</title></rect>
+<rect x="211.2" y="181.0" width="21.2" height="28.7" class="seg-github"><title>github: 3</title></rect>
+<rect x="211.2" y="161.9" width="21.2" height="19.1" class="seg-web-app"><title>web-app: 2</title></rect>
+<text x="221.7" y="192.2" text-anchor="middle" class="val">5</text>
+<text x="221.7" y="266.0" text-anchor="end" transform="rotate(-38 221.7 266.0)" class="ax">22 Jul</text>
+<rect x="245.3" y="181.0" width="21.2" height="67.0" class="seg-ai-tool"><title>ai-tool: 7</title></rect>
+<rect x="245.3" y="152.3" width="21.2" height="28.7" class="seg-dev-tool"><title>dev-tool: 3</title></rect>
+<rect x="245.3" y="75.8" width="21.2" height="76.5" class="seg-github"><title>github: 8</title></rect>
+<rect x="245.3" y="8.9" width="21.2" height="67.0" class="seg-web-app"><title>web-app: 7</title></rect>
+<text x="255.9" y="106.1" text-anchor="middle" class="val">14</text>
+<text x="255.9" y="266.0" text-anchor="end" transform="rotate(-38 255.9 266.0)" class="ax">29 Jul</text>
+<rect x="279.4" y="228.9" width="21.2" height="19.1" class="seg-article"><title>article: 2</title></rect>
+<rect x="279.4" y="219.3" width="21.2" height="9.6" class="seg-dev-tool"><title>dev-tool: 1</title></rect>
+<rect x="279.4" y="200.2" width="21.2" height="19.1" class="seg-github"><title>github: 2</title></rect>
+<rect x="279.4" y="171.5" width="21.2" height="28.7" class="seg-web-app"><title>web-app: 3</title></rect>
+<text x="290.0" y="182.6" text-anchor="middle" class="val">6</text>
+<text x="290.0" y="266.0" text-anchor="end" transform="rotate(-38 290.0 266.0)" class="ax">5 Aug</text>
+<rect x="313.6" y="181.0" width="21.2" height="67.0" class="seg-ai-tool"><title>ai-tool: 7</title></rect>
+<rect x="313.6" y="161.9" width="21.2" height="19.1" class="seg-article"><title>article: 2</title></rect>
+<rect x="313.6" y="123.7" width="21.2" height="38.3" class="seg-dev-tool"><title>dev-tool: 4</title></rect>
+<rect x="313.6" y="37.6" width="21.2" height="86.1" class="seg-github"><title>github: 9</title></rect>
+<rect x="313.6" y="-58.1" width="21.2" height="95.7" class="seg-web-app"><title>web-app: 10</title></rect>
+<text x="324.1" y="29.6" text-anchor="middle" class="val">22</text>
+<text x="324.1" y="266.0" text-anchor="end" transform="rotate(-38 324.1 266.0)" class="ax">12 Aug</text>
+<rect x="347.7" y="142.8" width="21.2" height="105.2" class="seg-ai-tool"><title>ai-tool: 11</title></rect>
+<rect x="347.7" y="114.1" width="21.2" height="28.7" class="seg-article"><title>article: 3</title></rect>
+<rect x="347.7" y="47.1" width="21.2" height="67.0" class="seg-dev-tool"><title>dev-tool: 7</title></rect>
+<rect x="347.7" y="-29.4" width="21.2" height="76.5" class="seg-github"><title>github: 8</title></rect>
+<rect x="347.7" y="-77.2" width="21.2" height="47.8" class="seg-web-app"><title>web-app: 5</title></rect>
+<text x="358.3" y="48.7" text-anchor="middle" class="val">20</text>
+<text x="358.3" y="266.0" text-anchor="end" transform="rotate(-38 358.3 266.0)" class="ax">20 Aug</text>
+<rect x="381.8" y="133.2" width="21.2" height="114.8" class="seg-ai-tool"><title>ai-tool: 12</title></rect>
+<rect x="381.8" y="104.5" width="21.2" height="28.7" class="seg-article"><title>article: 3</title></rect>
+<rect x="381.8" y="56.7" width="21.2" height="47.8" class="seg-dev-tool"><title>dev-tool: 5</title></rect>
+<rect x="381.8" y="-10.3" width="21.2" height="67.0" class="seg-github"><title>github: 7</title></rect>
+<rect x="381.8" y="-77.2" width="21.2" height="67.0" class="seg-web-app"><title>web-app: 7</title></rect>
+<text x="392.4" y="58.3" text-anchor="middle" class="val">19</text>
+<text x="392.4" y="266.0" text-anchor="end" transform="rotate(-38 392.4 266.0)" class="ax">27 Aug</text>
+<rect x="416.0" y="190.6" width="21.2" height="57.4" class="seg-ai-tool"><title>ai-tool: 6</title></rect>
+<rect x="416.0" y="181.0" width="21.2" height="9.6" class="seg-article"><title>article: 1</title></rect>
+<rect x="416.0" y="95.0" width="21.2" height="86.1" class="seg-dev-tool"><title>dev-tool: 9</title></rect>
+<rect x="416.0" y="56.7" width="21.2" height="38.3" class="seg-github"><title>github: 4</title></rect>
+<rect x="416.0" y="8.9" width="21.2" height="47.8" class="seg-web-app"><title>web-app: 5</title></rect>
+<text x="426.5" y="87.0" text-anchor="middle" class="val">16</text>
+<text x="426.5" y="266.0" text-anchor="end" transform="rotate(-38 426.5 266.0)" class="ax">3 Sep</text>
+<rect x="450.1" y="142.8" width="21.2" height="105.2" class="seg-ai-tool"><title>ai-tool: 11</title></rect>
+<rect x="450.1" y="114.1" width="21.2" height="28.7" class="seg-article"><title>article: 3</title></rect>
+<rect x="450.1" y="8.9" width="21.2" height="105.2" class="seg-dev-tool"><title>dev-tool: 11</title></rect>
+<rect x="450.1" y="-67.7" width="21.2" height="76.5" class="seg-github"><title>github: 8</title></rect>
+<rect x="450.1" y="-125.0" width="21.2" height="57.4" class="seg-web-app"><title>web-app: 6</title></rect>
 <text x="460.7" y="20.0" text-anchor="middle" class="val">23</text>
-<text x="460.7" y="294.0" text-anchor="middle" class="ax">3–10 Sep</text>
-<rect x="484.2" y="209.8" width="21.2" height="64.2" class="seg-ai-tool"><title>ai-tool: 6</title></rect>
-<rect x="484.2" y="188.4" width="21.2" height="21.4" class="seg-article"><title>article: 2</title></rect>
-<rect x="484.2" y="92.2" width="21.2" height="96.3" class="seg-dev-tool"><title>dev-tool: 9</title></rect>
-<rect x="484.2" y="28.0" width="21.2" height="64.2" class="seg-github"><title>github: 6</title></rect>
-<rect x="484.2" y="-36.2" width="21.2" height="64.2" class="seg-web-app"><title>web-app: 6</title></rect>
-<text x="494.8" y="84.2" text-anchor="middle" class="val">17</text>
-<text x="494.8" y="294.0" text-anchor="middle" class="ax">10–17 Sep</text>
-<rect x="518.4" y="145.7" width="21.2" height="128.3" class="seg-ai-tool"><title>ai-tool: 12</title></rect>
-<rect x="518.4" y="124.3" width="21.2" height="21.4" class="seg-article"><title>article: 2</title></rect>
-<rect x="518.4" y="92.2" width="21.2" height="32.1" class="seg-dev-tool"><title>dev-tool: 3</title></rect>
-<rect x="518.4" y="-4.1" width="21.2" height="96.3" class="seg-github"><title>github: 9</title></rect>
-<rect x="518.4" y="-36.2" width="21.2" height="32.1" class="seg-web-app"><title>web-app: 3</title></rect>
-<text x="528.9" y="62.8" text-anchor="middle" class="val">19</text>
-<text x="528.9" y="294.0" text-anchor="middle" class="ax">17–24 Sep</text>
+<text x="460.7" y="266.0" text-anchor="end" transform="rotate(-38 460.7 266.0)" class="ax">10 Sep</text>
+<rect x="484.2" y="190.6" width="21.2" height="57.4" class="seg-ai-tool"><title>ai-tool: 6</title></rect>
+<rect x="484.2" y="171.5" width="21.2" height="19.1" class="seg-article"><title>article: 2</title></rect>
+<rect x="484.2" y="85.4" width="21.2" height="86.1" class="seg-dev-tool"><title>dev-tool: 9</title></rect>
+<rect x="484.2" y="28.0" width="21.2" height="57.4" class="seg-github"><title>github: 6</title></rect>
+<rect x="484.2" y="-29.4" width="21.2" height="57.4" class="seg-web-app"><title>web-app: 6</title></rect>
+<text x="494.8" y="77.4" text-anchor="middle" class="val">17</text>
+<text x="494.8" y="266.0" text-anchor="end" transform="rotate(-38 494.8 266.0)" class="ax">17 Sep</text>
+<rect x="518.4" y="133.2" width="21.2" height="114.8" class="seg-ai-tool"><title>ai-tool: 12</title></rect>
+<rect x="518.4" y="114.1" width="21.2" height="19.1" class="seg-article"><title>article: 2</title></rect>
+<rect x="518.4" y="85.4" width="21.2" height="28.7" class="seg-dev-tool"><title>dev-tool: 3</title></rect>
+<rect x="518.4" y="-0.7" width="21.2" height="86.1" class="seg-github"><title>github: 9</title></rect>
+<rect x="518.4" y="-29.4" width="21.2" height="28.7" class="seg-web-app"><title>web-app: 3</title></rect>
+<text x="528.9" y="58.3" text-anchor="middle" class="val">19</text>
+<text x="528.9" y="266.0" text-anchor="end" transform="rotate(-38 528.9 266.0)" class="ax">24 Sep</text>
 </svg></div>
         <div id="trendFort" hidden><svg viewBox="0 0 560 320" class="chart" role="img">
-<line x1="34" y1="274" x2="550" y2="274" class="grid"/>
-<rect x="46.2" y="221.3" width="39.7" height="52.7" class="seg-ai-tool"><title>ai-tool: 9</title></rect>
-<rect x="46.2" y="209.6" width="39.7" height="11.7" class="seg-article"><title>article: 2</title></rect>
-<rect x="46.2" y="180.3" width="39.7" height="29.3" class="seg-dev-tool"><title>dev-tool: 5</title></rect>
-<rect x="46.2" y="115.9" width="39.7" height="64.4" class="seg-github"><title>github: 11</title></rect>
-<rect x="46.2" y="98.3" width="39.7" height="17.6" class="seg-web-app"><title>web-app: 3</title></rect>
-<text x="66.0" y="178.1" text-anchor="middle" class="val">15</text>
-<text x="66.0" y="294.0" text-anchor="middle" class="ax">4–17 Jun</text>
-<rect x="110.2" y="256.4" width="39.7" height="17.6" class="seg-ai-tool"><title>ai-tool: 3</title></rect>
-<rect x="110.2" y="238.9" width="39.7" height="17.6" class="seg-dev-tool"><title>dev-tool: 3</title></rect>
-<rect x="110.2" y="209.6" width="39.7" height="29.3" class="seg-github"><title>github: 5</title></rect>
-<rect x="110.2" y="197.9" width="39.7" height="11.7" class="seg-web-app"><title>web-app: 2</title></rect>
-<text x="130.0" y="225.0" text-anchor="middle" class="val">7</text>
-<text x="130.0" y="294.0" text-anchor="middle" class="ax">18–8 Jul</text>
-<rect x="174.2" y="250.6" width="39.7" height="23.4" class="seg-ai-tool"><title>ai-tool: 4</title></rect>
-<rect x="174.2" y="244.7" width="39.7" height="5.9" class="seg-dev-tool"><title>dev-tool: 1</title></rect>
-<rect x="174.2" y="221.3" width="39.7" height="23.4" class="seg-github"><title>github: 4</title></rect>
-<rect x="174.2" y="209.6" width="39.7" height="11.7" class="seg-web-app"><title>web-app: 2</title></rect>
-<text x="194.0" y="230.9" text-anchor="middle" class="val">6</text>
-<text x="194.0" y="294.0" text-anchor="middle" class="ax">9–22 Jul</text>
-<rect x="238.2" y="233.0" width="39.7" height="41.0" class="seg-ai-tool"><title>ai-tool: 7</title></rect>
-<rect x="238.2" y="221.3" width="39.7" height="11.7" class="seg-article"><title>article: 2</title></rect>
-<rect x="238.2" y="197.9" width="39.7" height="23.4" class="seg-dev-tool"><title>dev-tool: 4</title></rect>
-<rect x="238.2" y="139.3" width="39.7" height="58.6" class="seg-github"><title>github: 10</title></rect>
-<rect x="238.2" y="80.7" width="39.7" height="58.6" class="seg-web-app"><title>web-app: 10</title></rect>
-<text x="258.0" y="148.9" text-anchor="middle" class="val">20</text>
-<text x="258.0" y="294.0" text-anchor="middle" class="ax">23–5 Aug</text>
-<rect x="302.2" y="168.6" width="39.7" height="105.4" class="seg-ai-tool"><title>ai-tool: 18</title></rect>
-<rect x="302.2" y="139.3" width="39.7" height="29.3" class="seg-article"><title>article: 5</title></rect>
-<rect x="302.2" y="74.9" width="39.7" height="64.4" class="seg-dev-tool"><title>dev-tool: 11</title></rect>
-<rect x="302.2" y="-24.7" width="39.7" height="99.6" class="seg-github"><title>github: 17</title></rect>
-<rect x="302.2" y="-112.6" width="39.7" height="87.9" class="seg-web-app"><title>web-app: 15</title></rect>
+<line x1="34" y1="248" x2="550" y2="248" class="grid"/>
+<rect x="46.2" y="200.9" width="39.7" height="47.1" class="seg-ai-tool"><title>ai-tool: 9</title></rect>
+<rect x="46.2" y="190.4" width="39.7" height="10.5" class="seg-article"><title>article: 2</title></rect>
+<rect x="46.2" y="164.2" width="39.7" height="26.2" class="seg-dev-tool"><title>dev-tool: 5</title></rect>
+<rect x="46.2" y="106.6" width="39.7" height="57.6" class="seg-github"><title>github: 11</title></rect>
+<rect x="46.2" y="90.9" width="39.7" height="15.7" class="seg-web-app"><title>web-app: 3</title></rect>
+<text x="66.0" y="161.4" text-anchor="middle" class="val">15</text>
+<text x="66.0" y="266.0" text-anchor="end" transform="rotate(-38 66.0 266.0)" class="ax">17 Jun</text>
+<rect x="110.2" y="232.3" width="39.7" height="15.7" class="seg-ai-tool"><title>ai-tool: 3</title></rect>
+<rect x="110.2" y="216.6" width="39.7" height="15.7" class="seg-dev-tool"><title>dev-tool: 3</title></rect>
+<rect x="110.2" y="190.4" width="39.7" height="26.2" class="seg-github"><title>github: 5</title></rect>
+<rect x="110.2" y="179.9" width="39.7" height="10.5" class="seg-web-app"><title>web-app: 2</title></rect>
+<text x="130.0" y="203.3" text-anchor="middle" class="val">7</text>
+<text x="130.0" y="266.0" text-anchor="end" transform="rotate(-38 130.0 266.0)" class="ax">8 Jul</text>
+<rect x="174.2" y="227.0" width="39.7" height="21.0" class="seg-ai-tool"><title>ai-tool: 4</title></rect>
+<rect x="174.2" y="221.8" width="39.7" height="5.2" class="seg-dev-tool"><title>dev-tool: 1</title></rect>
+<rect x="174.2" y="200.9" width="39.7" height="21.0" class="seg-github"><title>github: 4</title></rect>
+<rect x="174.2" y="190.4" width="39.7" height="10.5" class="seg-web-app"><title>web-app: 2</title></rect>
+<text x="194.0" y="208.6" text-anchor="middle" class="val">6</text>
+<text x="194.0" y="266.0" text-anchor="end" transform="rotate(-38 194.0 266.0)" class="ax">22 Jul</text>
+<rect x="238.2" y="211.3" width="39.7" height="36.7" class="seg-ai-tool"><title>ai-tool: 7</title></rect>
+<rect x="238.2" y="200.9" width="39.7" height="10.5" class="seg-article"><title>article: 2</title></rect>
+<rect x="238.2" y="179.9" width="39.7" height="21.0" class="seg-dev-tool"><title>dev-tool: 4</title></rect>
+<rect x="238.2" y="127.5" width="39.7" height="52.4" class="seg-github"><title>github: 10</title></rect>
+<rect x="238.2" y="75.1" width="39.7" height="52.4" class="seg-web-app"><title>web-app: 10</title></rect>
+<text x="258.0" y="135.2" text-anchor="middle" class="val">20</text>
+<text x="258.0" y="266.0" text-anchor="end" transform="rotate(-38 258.0 266.0)" class="ax">5 Aug</text>
+<rect x="302.2" y="153.7" width="39.7" height="94.3" class="seg-ai-tool"><title>ai-tool: 18</title></rect>
+<rect x="302.2" y="127.5" width="39.7" height="26.2" class="seg-article"><title>article: 5</title></rect>
+<rect x="302.2" y="69.9" width="39.7" height="57.6" class="seg-dev-tool"><title>dev-tool: 11</title></rect>
+<rect x="302.2" y="-19.1" width="39.7" height="89.0" class="seg-github"><title>github: 17</title></rect>
+<rect x="302.2" y="-97.7" width="39.7" height="78.6" class="seg-web-app"><title>web-app: 15</title></rect>
 <text x="322.0" y="20.0" text-anchor="middle" class="val">42</text>
-<text x="322.0" y="294.0" text-anchor="middle" class="ax">6–20 Aug</text>
-<rect x="366.2" y="168.6" width="39.7" height="105.4" class="seg-ai-tool"><title>ai-tool: 18</title></rect>
-<rect x="366.2" y="145.1" width="39.7" height="23.4" class="seg-article"><title>article: 4</title></rect>
-<rect x="366.2" y="63.1" width="39.7" height="82.0" class="seg-dev-tool"><title>dev-tool: 14</title></rect>
-<rect x="366.2" y="-1.3" width="39.7" height="64.4" class="seg-github"><title>github: 11</title></rect>
-<rect x="366.2" y="-71.6" width="39.7" height="70.3" class="seg-web-app"><title>web-app: 12</title></rect>
-<text x="386.0" y="61.0" text-anchor="middle" class="val">35</text>
-<text x="386.0" y="294.0" text-anchor="middle" class="ax">20–3 Sep</text>
-<rect x="430.2" y="174.4" width="39.7" height="99.6" class="seg-ai-tool"><title>ai-tool: 17</title></rect>
-<rect x="430.2" y="145.1" width="39.7" height="29.3" class="seg-article"><title>article: 5</title></rect>
-<rect x="430.2" y="28.0" width="39.7" height="117.1" class="seg-dev-tool"><title>dev-tool: 20</title></rect>
-<rect x="430.2" y="-54.0" width="39.7" height="82.0" class="seg-github"><title>github: 14</title></rect>
-<rect x="430.2" y="-124.3" width="39.7" height="70.3" class="seg-web-app"><title>web-app: 12</title></rect>
-<text x="450.0" y="31.7" text-anchor="middle" class="val">40</text>
-<text x="450.0" y="294.0" text-anchor="middle" class="ax">3–17 Sep</text>
-<rect x="494.2" y="203.7" width="39.7" height="70.3" class="seg-ai-tool"><title>ai-tool: 12</title></rect>
-<rect x="494.2" y="192.0" width="39.7" height="11.7" class="seg-article"><title>article: 2</title></rect>
-<rect x="494.2" y="174.4" width="39.7" height="17.6" class="seg-dev-tool"><title>dev-tool: 3</title></rect>
-<rect x="494.2" y="121.7" width="39.7" height="52.7" class="seg-github"><title>github: 9</title></rect>
-<rect x="494.2" y="104.1" width="39.7" height="17.6" class="seg-web-app"><title>web-app: 3</title></rect>
-<text x="514.0" y="154.7" text-anchor="middle" class="val">19</text>
-<text x="514.0" y="294.0" text-anchor="middle" class="ax">17–24 Sep</text>
+<text x="322.0" y="266.0" text-anchor="end" transform="rotate(-38 322.0 266.0)" class="ax">20 Aug</text>
+<rect x="366.2" y="153.7" width="39.7" height="94.3" class="seg-ai-tool"><title>ai-tool: 18</title></rect>
+<rect x="366.2" y="132.8" width="39.7" height="21.0" class="seg-article"><title>article: 4</title></rect>
+<rect x="366.2" y="59.4" width="39.7" height="73.3" class="seg-dev-tool"><title>dev-tool: 14</title></rect>
+<rect x="366.2" y="1.8" width="39.7" height="57.6" class="seg-github"><title>github: 11</title></rect>
+<rect x="366.2" y="-61.0" width="39.7" height="62.9" class="seg-web-app"><title>web-app: 12</title></rect>
+<text x="386.0" y="56.7" text-anchor="middle" class="val">35</text>
+<text x="386.0" y="266.0" text-anchor="end" transform="rotate(-38 386.0 266.0)" class="ax">3 Sep</text>
+<rect x="430.2" y="159.0" width="39.7" height="89.0" class="seg-ai-tool"><title>ai-tool: 17</title></rect>
+<rect x="430.2" y="132.8" width="39.7" height="26.2" class="seg-article"><title>article: 5</title></rect>
+<rect x="430.2" y="28.0" width="39.7" height="104.8" class="seg-dev-tool"><title>dev-tool: 20</title></rect>
+<rect x="430.2" y="-45.3" width="39.7" height="73.3" class="seg-github"><title>github: 14</title></rect>
+<rect x="430.2" y="-108.2" width="39.7" height="62.9" class="seg-web-app"><title>web-app: 12</title></rect>
+<text x="450.0" y="30.5" text-anchor="middle" class="val">40</text>
+<text x="450.0" y="266.0" text-anchor="end" transform="rotate(-38 450.0 266.0)" class="ax">17 Sep</text>
+<rect x="494.2" y="185.1" width="39.7" height="62.9" class="seg-ai-tool"><title>ai-tool: 12</title></rect>
+<rect x="494.2" y="174.7" width="39.7" height="10.5" class="seg-article"><title>article: 2</title></rect>
+<rect x="494.2" y="159.0" width="39.7" height="15.7" class="seg-dev-tool"><title>dev-tool: 3</title></rect>
+<rect x="494.2" y="111.8" width="39.7" height="47.1" class="seg-github"><title>github: 9</title></rect>
+<rect x="494.2" y="96.1" width="39.7" height="15.7" class="seg-web-app"><title>web-app: 3</title></rect>
+<text x="514.0" y="140.5" text-anchor="middle" class="val">19</text>
+<text x="514.0" y="266.0" text-anchor="end" transform="rotate(-38 514.0 266.0)" class="ax">24 Sep</text>
 </svg></div>
       </div>
       <div class="an-card">
@@ -842,6 +855,28 @@ for (const ch of wchips) ch.addEventListener('click', () => {
   wchips.forEach(c => c.classList.toggle('active', c.dataset.week === activeWeek));
   apply();
   goResults();
+});
+// clear all: reset search text, category and week filters
+const clearBtn = document.getElementById('clearAll');
+if (clearBtn) clearBtn.addEventListener('click', () => {
+  activeCat = null; activeWeek = null;
+  if (q) q.value = '';
+  cchips.forEach(c => c.classList.toggle('active', c.dataset.cat === 'all'));
+  wchips.forEach(c => c.classList.remove('active'));
+  apply();
+  goResults();
+});
+// week-nav anchor links: clear filters first so the target section is visible,
+// otherwise a link to a filtered-out week would have no scroll target
+const wnavs = [...document.querySelectorAll('.wnav')];
+for (const a of wnavs) a.addEventListener('click', () => {
+  if (activeCat || activeWeek || (q && q.value)) {
+    activeCat = null; activeWeek = null;
+    if (q) q.value = '';
+    cchips.forEach(c => c.classList.toggle('active', c.dataset.cat === 'all'));
+    wchips.forEach(c => c.classList.remove('active'));
+    apply();
+  }
 });
 // tabs: library / analytics
 const tabs = [...document.querySelectorAll('.tab')];

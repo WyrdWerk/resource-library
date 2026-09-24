@@ -8,7 +8,7 @@ A curated, browsable archive of developer resources shared in the [CheapInfra](h
 
 | Path | What it is | Maintained by |
 |------|-----------|---------------|
-| `index.html` | The browsable site: search, category + week filters, numbered weekly sections, dark/light theme toggle (black default), Analytics tab | Generated — run `scripts/build.py` |
+| `index.html` | The browsable site: search, category + week filters, Clear all button, numbered weekly sections, dark/light theme toggle (black default), Analytics tab | Generated — run `scripts/build.py` |
 | `data.json` | The full dataset: title, URL, sharer, share date, categories, brief, week, stable `id` | Generated — run `scripts/build.py` |
 | `weeks/` | Per-week curated lists in Markdown, with briefs | Generated — run `scripts/build.py` |
 | `feed.xml` | RSS feed of all resources, newest first | Generated — run `scripts/build.py` |
