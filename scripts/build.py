@@ -449,7 +449,7 @@ body {{
 }}
 .shortlist-h {{
   font-family: Georgia, "Times New Roman", serif; font-size: 30px; font-weight: 600;
-  margin: 40px 0 4px; letter-spacing: -0.01em; scroll-margin-top: 200px;
+  margin: 40px 0 4px; letter-spacing: -0.01em; scroll-margin-top: 230px;
 }}
 .shortlist-sub {{ color: var(--muted); font-size: 14.5px; margin: 0 0 8px; }}
 .toolbar {{
@@ -501,7 +501,7 @@ body {{
 }}
 .wnav span {{ color: var(--muted); font-size: 12px; }}
 .wnav:hover {{ border-color: var(--accent); }}
-.week {{ margin-top: 40px; scroll-margin-top: 200px; }}
+.week {{ margin-top: 40px; scroll-margin-top: 230px; }}
 .weekhead {{ display: flex; align-items: baseline; gap: 12px; margin-bottom: 4px; flex-wrap: wrap; }}
 .weeknum {{
   font-family: Georgia, "Times New Roman", serif; font-size: 15px; color: var(--accent);
@@ -517,7 +517,7 @@ body {{
   padding: 18px 22px; margin: 10px 0;
   display: grid; grid-template-columns: 1fr 172px; gap: 20px;
   transition: border-color 0.16s ease;
-  scroll-margin-top: 200px;
+  scroll-margin-top: 230px;
 }}
 @media (max-width: 640px) {{
   .card {{ grid-template-columns: 1fr; gap: 12px; }}
