@@ -1,5 +1,541 @@
 [
   {
+    "title": "AoAgents",
+    "week": "20–27 Aug 2026",
+    "url": "https://aoagents.dev/",
+    "sharer": "Rykuuun",
+    "date": "27 Aug",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "An AI agent platform whose pitch is \"Everything is an Agent\". Announcement-level description only; details unverified since the link was not opened.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "aoagents"
+  },
+  {
+    "title": "Phoenix (Arize AI)",
+    "week": "20–27 Aug 2026",
+    "url": "https://github.com/Arize-ai/phoenix",
+    "sharer": "asx8678",
+    "date": "27 Aug",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Arize AI's open-source observability platform for LLM apps — tracing, evaluation, and experimentation for agent and RAG workloads. A standard choice for watching what production agents actually do.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "phoenix-arize-ai"
+  },
+  {
+    "title": "Prime Agent (Prime Intellect)",
+    "week": "20–27 Aug 2026",
+    "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+    "sharer": "Rykuuun",
+    "date": "26 Aug",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Prime Intellect's framework for training AI agents with reinforcement learning. Per the sharer, its gimmick is collecting training data through its CLI — worth a look if you're into RL-for-agents; specifics unverified.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "prime-agent-prime-intellect"
+  },
+  {
+    "title": "windows-harness (browser-use)",
+    "week": "20–27 Aug 2026",
+    "url": "https://github.com/browser-use/windows-harness",
+    "sharer": "Tom",
+    "date": "25 Aug",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "A Windows automation harness from the browser-use team (the web-agent library folks). Likely for running agents against Windows apps; details unverified.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "windows-harness-browser-use"
+  },
+  {
+    "title": "Spec-PTC: Speculative Parallel Test-Time Compute",
+    "week": "20–27 Aug 2026",
+    "url": "https://alexzhang13.github.io/blog/2026/spec-ptc/",
+    "sharer": "Tom",
+    "date": "25 Aug",
+    "categories": [
+      "article"
+    ],
+    "brief": "A write-up of Spec-PTC, a speculative parallel test-time compute framework for long-horizon agents. Interesting if you follow inference-scaling tricks for agentic workloads.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "spec-ptc-speculative-parallel-test-time-compute"
+  },
+  {
+    "title": "Headlong (Laude Institute)",
+    "week": "20–27 Aug 2026",
+    "url": "https://github.com/laude-institute/headlong",
+    "sharer": "thelaggingway",
+    "date": "25 Aug",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "An open-source agent microharness with persistent agency and recursive LLMs — \"of bash, by bash\". Minimal by design; good for experimenting with agent loops without a heavy framework.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "headlong-laude-institute"
+  },
+  {
+    "title": "Shading Motion — Maxime Heckel",
+    "week": "20–27 Aug 2026",
+    "url": "https://blog.maximeheckel.com/posts/shading-motion/",
+    "sharer": "Tom",
+    "date": "24 Aug",
+    "categories": [
+      "article"
+    ],
+    "brief": "Maxime Heckel's deep dive into shading-based motion design techniques. One of the better-written front-end animation articles; useful if you care about motion craft.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "shading-motion-maxime-heckel"
+  },
+  {
+    "title": "Radius — The AI Browser for Research",
+    "week": "20–27 Aug 2026",
+    "url": "https://radiusbrowser.com/",
+    "sharer": "Tom",
+    "date": "24 Aug",
+    "categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "brief": "An AI-native browser aimed at research workflows. Product claims unverified; notable as another entry in the agentic-browser wave.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "radius-the-ai-browser-for-research"
+  },
+  {
+    "title": "darkbloom — MCP gateway",
+    "week": "20–27 Aug 2026",
+    "url": "https://www.darkbloom.dev/",
+    "sharer": "simply soy",
+    "date": "24 Aug",
+    "categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "brief": "An MCP (Model Context Protocol) gateway that advertises an accuracy guarantee — unusual positioning in the MCP tooling space. Claims unverified; interesting if you run MCP servers in production.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "darkbloom-mcp-gateway"
+  },
+  {
+    "title": "pi harness v2 docs (earendil-works)",
+    "week": "20–27 Aug 2026",
+    "url": "https://github.com/earendil-works/pi/blob/harness-v2/j4/packages/agent/docs/harness-v2.md",
+    "sharer": "Tom",
+    "date": "22 Aug",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Deep link into the pi coding agent's v2 harness documentation. Worth reading if you use pi or are designing your own agent harness.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "pi-harness-v2-docs-earendil-works"
+  },
+  {
+    "title": "ThreeUI",
+    "week": "20–27 Aug 2026",
+    "url": "https://threeui.com/browse",
+    "sharer": "Alp",
+    "date": "21 Aug",
+    "categories": [
+      "web-app",
+      "dev-tool"
+    ],
+    "brief": "A browsable library of Three.js components and interactive shaders. Handy for dropping 3D effects into web projects without writing raw WebGL.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "threeui"
+  },
+  {
+    "title": "kolu",
+    "week": "20–27 Aug 2026",
+    "url": "https://kolu.dev/",
+    "sharer": "Alp",
+    "date": "21 Aug",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "A terminal tool that bills itself as \"the best way to run terminals\". Details unverified, but worth a look if your terminal setup needs rethinking.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "kolu"
+  },
+  {
+    "title": "anti-slop (dmmulroy)",
+    "week": "20–27 Aug 2026",
+    "url": "https://github.com/dmmulroy/anti-slop",
+    "sharer": "Rykuuun",
+    "date": "21 Aug",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "Opinionated Oxlint rules that reject low-evidence TypeScript/JavaScript patterns — basically a linter config against AI-slop code. Fun and practical for teams drowning in generated code.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "anti-slop-dmmulroy"
+  },
+  {
+    "title": "Introducing Slack Code (Salesforce)",
+    "week": "20–27 Aug 2026",
+    "url": "https://www.salesforce.com/introducing-slack-code/",
+    "sharer": "simply soy",
+    "date": "20 Aug",
+    "categories": [
+      "article"
+    ],
+    "brief": "Salesforce's announcement of Slack Code, bringing coding-agent workflows into Slack. Announcement-level; the \"oh no\" from the sharer suggests healthy skepticism.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "introducing-slack-code-salesforce"
+  },
+  {
+    "title": "claudish-to-english (gvzdv)",
+    "week": "20–27 Aug 2026",
+    "url": "https://github.com/gvzdv/claudish-to-english",
+    "sharer": "simply soy",
+    "date": "20 Aug",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "A small repo that translates \"Claudish\" — AI-assistant jargon — into plain English. Niche but amusing; useful if you've ever stared at a model hedging for three paragraphs.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "claudish-to-english-gvzdv"
+  },
+  {
+    "title": "interior.dev",
+    "week": "20–27 Aug 2026",
+    "url": "https://www.interior.dev/",
+    "sharer": "asx8678",
+    "date": "20 Aug",
+    "categories": [
+      "web-app",
+      "dev-tool"
+    ],
+    "brief": "Micro-interactions for React, \"built for the half-second after a click\". A focused little library for the small animations that make UIs feel alive.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "interior-dev"
+  },
+  {
+    "title": "eve — durable AI agent framework",
+    "week": "20–27 Aug 2026",
+    "url": "https://eve.dev/",
+    "sharer": "asx8678",
+    "date": "20 Aug",
+    "categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "brief": "A durable agent framework pitched as \"Next.js for agents\" — build agents with one folder, with durability baked in. Product claims unverified; the durability angle is the interesting bit.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "eve-durable-ai-agent-framework"
+  },
+  {
+    "title": "OpenHistory",
+    "week": "20–27 Aug 2026",
+    "url": "https://openhistory.sh/",
+    "sharer": "Tom",
+    "date": "20 Aug",
+    "categories": [
+      "dev-tool",
+      "ai-tool"
+    ],
+    "brief": "Turns your Mac activity into a private timeline for you and your AI — local activity history as agent context. Privacy-sensitive by nature; the \"private\" claim is unverified.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "openhistory"
+  },
+  {
+    "title": "Berd",
+    "week": "20–27 Aug 2026",
+    "url": "https://berd.xyz/",
+    "sharer": "simply soy",
+    "date": "20 Aug",
+    "categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "brief": "A self-described \"weird, playful\" desktop app for building with AI agents — \"less chatting, more building\". Product claims unverified.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "berd"
+  },
+  {
+    "title": "fx — Vercel Labs coding agent",
+    "week": "13–20 Aug 2026",
+    "url": "https://x.com/vercel_dev/status/2089828083415355806?s=46",
+    "sharer": "asx8678",
+    "date": "19 Aug",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Vercel's announcement of fx, \"a tiny, open, native coding agent\" from Vercel Labs, originally an internal tool. Announcement-only source; details unverified.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "fx-vercel-labs-coding-agent"
+  },
+  {
+    "title": "skills (emilkowalski)",
+    "week": "13–20 Aug 2026",
+    "url": "https://github.com/emilkowalski/skills",
+    "sharer": "whaaaat",
+    "date": "19 Aug",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "A collection of \"skills\" for designers and engineers from Emil Kowalski (of Vercel/animations fame). Likely agent-skill style playbooks; worth browsing.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "skills-emilkowalski"
+  },
+  {
+    "title": "GPS-01 — interactive GPS explainer",
+    "week": "13–20 Aug 2026",
+    "url": "https://gps-01.dmytro.fyi/",
+    "sharer": "Tom",
+    "date": "19 Aug",
+    "categories": [
+      "web-app",
+      "article"
+    ],
+    "brief": "A tiny interactive explainer of how your phone finds itself — satellites, signal timing, and trilateration. The good kind of technical storytelling.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "gps-01-interactive-gps-explainer"
+  },
+  {
+    "title": "Rare UI",
+    "week": "13–20 Aug 2026",
+    "url": "https://www.rareui.com/",
+    "sharer": "Alp",
+    "date": "19 Aug",
+    "categories": [
+      "web-app",
+      "dev-tool"
+    ],
+    "brief": "A library of animated React components. Another solid option in the crowded React-animation space; compare with the other UI libraries already in the archive.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "rare-ui"
+  },
+  {
+    "title": "Cua Computer History (open source)",
+    "week": "13–20 Aug 2026",
+    "url": "https://x.com/trycua/status/2089770780053643397?s=46&t=vWq9H9xzeo6jZ1ywa-gPvg",
+    "sharer": "baanish",
+    "date": "19 Aug",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Cua's announcement of the first open-source \"Computer History\", in early preview. Announcement-only; interesting for computer-use agent research.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "cua-computer-history-open-source"
+  },
+  {
+    "title": "watermarks-remover (guillaumemeyer)",
+    "week": "13–20 Aug 2026",
+    "url": "https://github.com/guillaumemeyer/watermarks-remover",
+    "sharer": "asx8678",
+    "date": "16 Aug",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Strips multi-vendor AI provenance marks — Unicode text hygiene, statistical rewrite hooks, and C2PA handling. Legitimate hygiene tooling; obviously dual-use.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "watermarks-remover-guillaumemeyer"
+  },
+  {
+    "title": "Beautiful UI",
+    "week": "13–20 Aug 2026",
+    "url": "https://www.beautifului.dev/",
+    "sharer": "UT",
+    "date": "16 Aug",
+    "categories": [
+      "web-app",
+      "dev-tool"
+    ],
+    "brief": "\"Crafted primitives for AI-native interfaces\" — a component library aimed at the AI-app UI wave. Claims unverified.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "beautiful-ui"
+  },
+  {
+    "title": "codedb (justrach)",
+    "week": "13–20 Aug 2026",
+    "url": "https://github.com/justrach/codedb",
+    "sharer": "Aditya Borkar",
+    "date": "16 Aug",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "A Zig code-intelligence server and MCP toolset for AI agents, recommended firsthand by the sharer. Native-speed code intelligence as agent context is a strong pitch.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "codedb-justrach"
+  },
+  {
+    "title": "codebase-memory-mcp (DeusData)",
+    "week": "13–20 Aug 2026",
+    "url": "https://github.com/DeusData/codebase-memory-mcp",
+    "sharer": "Rykuuun",
+    "date": "15 Aug",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Persistent semantic memory for coding agents — an MCP server that indexes your codebase. Useful when you have many repos and context windows aren't enough.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "codebase-memory-mcp-deusdata"
+  },
+  {
+    "title": "quickbeam (elixir-volt)",
+    "week": "13–20 Aug 2026",
+    "url": "https://github.com/elixir-volt/quickbeam",
+    "sharer": "Blessed Piss Enjoyer",
+    "date": "15 Aug",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "A JavaScript runtime for the BEAM — Web APIs backed by OTP, native DOM, and a built-in TypeScript toolchain. Genuinely novel: Erlang's concurrency model meets JS.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "quickbeam-elixir-volt"
+  },
+  {
+    "title": "Qwen3.6-27B-MTP-GGUF (unsloth quant)",
+    "week": "13–20 Aug 2026",
+    "url": "https://huggingface.co/unsloth/Qwen3.6-27B-MTP-GGUF",
+    "sharer": "simply soy",
+    "date": "14 Aug",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Unsloth's GGUF quantization of Qwen3.6-27B with MTP (multi-token prediction). For local inference of the 27B Qwen.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "qwen3-6-27b-mtp-gguf-unsloth-quant"
+  },
+  {
+    "title": "Qwen3.8 open weights announcement",
+    "week": "13–20 Aug 2026",
+    "url": "https://x.com/alibaba_qwen/status/2088280182356611304",
+    "sharer": "simply soy",
+    "date": "14 Aug",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Alibaba's announcement that Qwen3.8's open weights are out. Announcement-only; pair with the unsloth GGUF quant below for local runs.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "qwen3-8-open-weights-announcement"
+  },
+  {
+    "title": "Qwen3.8-27B-GGUF (unsloth quant)",
+    "week": "13–20 Aug 2026",
+    "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+    "sharer": "simply soy",
+    "date": "14 Aug",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Unsloth's GGUF quantization of Qwen3.8-27B for local inference. The practical artifact behind the open-weights announcement above.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "qwen3-8-27b-gguf-unsloth-quant"
+  },
+  {
+    "title": "pi-acp-jetbrain (ryan-brosas)",
+    "week": "13–20 Aug 2026",
+    "url": "https://github.com/ryan-brosas/pi-acp-jetbrain",
+    "sharer": "Rykuuun",
+    "date": "14 Aug",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "A JetBrains IntelliJ ACP (Agent Client Protocol) adapter for the pi coding agent. Niche but exactly what you need if you want pi inside IntelliJ.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "pi-acp-jetbrain-ryan-brosas"
+  },
+  {
+    "title": "Woxi (vs Mathematica comparison)",
+    "week": "13–20 Aug 2026",
+    "url": "https://woxi.ad-si.com/docs/comparison/mathematica/",
+    "sharer": "Tom",
+    "date": "14 Aug",
+    "categories": [
+      "article"
+    ],
+    "brief": "Woxi's comparison of itself against Mathematica — Woxi being an interpreter for a subset of the Wolfram Language. A decent way into what Woxi is and where it stands.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "woxi-vs-mathematica-comparison"
+  },
+  {
+    "title": "spec-kit (GitHub)",
+    "week": "13–20 Aug 2026",
+    "url": "https://github.com/github/spec-kit",
+    "sharer": "asx8678",
+    "date": "14 Aug",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "GitHub's official toolkit for spec-driven development — write the spec, let agents implement. From GitHub itself, so it carries weight in the SDD workflow trend.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "spec-kit-github"
+  },
+  {
+    "title": "pullfrog",
+    "week": "13–20 Aug 2026",
+    "url": "https://github.com/pullfrog/pullfrog",
+    "sharer": "thelaggingway",
+    "date": "14 Aug",
+    "categories": [
+      "github",
+      "ai-tool",
+      "dev-tool"
+    ],
+    "brief": "An open-source, model-agnostic, BYOK GitHub bot that runs in GitHub Actions. Bring your own key, pick your model, automate your repo — the self-hosted answer to proprietary coding agents.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "pullfrog"
+  },
+  {
+    "title": "DeepSeek Harness (developer preview)",
+    "week": "13–20 Aug 2026",
+    "url": "https://www.deepseek.com/harness/en/",
+    "sharer": "plainskill",
+    "date": "13 Aug",
+    "categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "brief": "DeepSeek's agent harness in developer preview — \"everything is a plugin\", with source released alongside. Every agent capability is a swappable plugin; the plugin architecture is the interesting idea here. Claims unverified.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "deepseek-harness-developer-preview"
+  },
+  {
+    "title": "Delta — multiplayer coding with agents",
+    "week": "13–20 Aug 2026",
+    "url": "https://delta.dev/",
+    "sharer": "Tom",
+    "date": "13 Aug",
+    "categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "brief": "A multiplayer environment for coding with agents — shared threads where teammates and agents build and review together, with full conversation and code context. Product claims unverified.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "delta-multiplayer-coding-with-agents"
+  },
+  {
+    "title": "Rust Foundation Trusted Training (RFTT)",
+    "week": "13–20 Aug 2026",
+    "url": "https://rustfoundation.org/rust-foundation-trusted-training/",
+    "sharer": "Rykuuun",
+    "date": "13 Aug",
+    "categories": [
+      "article"
+    ],
+    "brief": "The Rust Foundation's quality standard for Rust training. Reference material if you're evaluating Rust courses or building one.",
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "rust-foundation-trusted-training-rftt"
+  },
+  {
     "title": "Psychology for UX: Study Guide",
     "week": "27 Aug–3 Sep 2026",
     "url": "https://www.nngroup.com/articles/psychology-study-guide/",
