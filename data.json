@@ -1,5 +1,365 @@
 [
   {
+    "title": "IRIS",
+    "week": "23–29 Jul 2026",
+    "url": "https://github.com/versenilvis/iris",
+    "sharer": "formatme",
+    "date": "29 Jul",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "A shell auto-completion tool for your terminal. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "iris"
+  },
+  {
+    "title": "kimi-k3-mlx",
+    "week": "23–29 Jul 2026",
+    "url": "https://github.com/PipeNetwork/kimi-k3-mlx",
+    "sharer": "JohnDotOwl",
+    "date": "29 Jul",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "An MLX port of moonshotai's Kimi-K3 (2.78T multimodal MoE); the weights are converted from the original release and requantized. Conversion quality is unverified.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "kimi-k3-mlx"
+  },
+  {
+    "title": "Hermes Console",
+    "week": "23–29 Jul 2026",
+    "url": "https://hermes.xpetalab.dev/",
+    "sharer": "thelaggingway",
+    "date": "28 Jul",
+    "categories": [
+      "ai-tool",
+      "web-app"
+    ],
+    "brief": "A self-hosted AI agent console (\"Tu agente AI self-hosted\") that thelaggingway is giving a go. The self-hosted claim is unverified beyond the site's tagline.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "hermes-console"
+  },
+  {
+    "title": "OptMem",
+    "week": "23–29 Jul 2026",
+    "url": "https://github.com/VictorTaelin/OptMem",
+    "sharer": "Tom",
+    "date": "28 Jul",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Permanent memory for AI agents, from Victor Taelin. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "optmem"
+  },
+  {
+    "title": "Content Architecture",
+    "week": "23–29 Jul 2026",
+    "url": "https://www.contentarchitecture.dev/",
+    "sharer": "Tom",
+    "date": "28 Jul",
+    "categories": [
+      "ai-tool",
+      "web-app"
+    ],
+    "brief": "An agent-ready Sanity + Next.js kit. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "content-architecture"
+  },
+  {
+    "title": "nimbus-lite",
+    "week": "23–29 Jul 2026",
+    "url": "https://github.com/vojtasve-droid/nimbus-lite",
+    "sharer": "Rykuuun",
+    "date": "26 Jul",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "A free, framework-free AI chat UI kit for AI projects. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "nimbus-lite"
+  },
+  {
+    "title": "worldmonitor",
+    "week": "23–29 Jul 2026",
+    "url": "https://github.com/koala73/worldmonitor",
+    "sharer": "Rykuuun",
+    "date": "26 Jul",
+    "categories": [
+      "github",
+      "web-app"
+    ],
+    "brief": "A real-time global intelligence dashboard. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "worldmonitor"
+  },
+  {
+    "title": "Amicro",
+    "week": "23–29 Jul 2026",
+    "url": "https://amicro.vercel.app/",
+    "sharer": "Tom",
+    "date": "25 Jul",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "Premium React micro-transitions and interaction components. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "amicro"
+  },
+  {
+    "title": "pi-dispatch",
+    "week": "23–29 Jul 2026",
+    "url": "https://github.com/edgehero/pi-dispatch",
+    "sharer": "Tom",
+    "date": "25 Jul",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Run the pi coding agent as a service. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "pi-dispatch"
+  },
+  {
+    "title": "Componentry",
+    "week": "23–29 Jul 2026",
+    "url": "https://componentry.dev/",
+    "sharer": "Rykuuun",
+    "date": "25 Jul",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "Beautiful animated UI components for React. Rykuuun shared it as a front-end dev finding; details unverified beyond the site's tagline.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "componentry"
+  },
+  {
+    "title": "Mint Playground",
+    "week": "23–29 Jul 2026",
+    "url": "https://play.mint.gg/",
+    "sharer": "Tom",
+    "date": "24 Jul",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "\"Make the Web Spatial\" — a playground for spatial web experiences. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "mint-playground"
+  },
+  {
+    "title": "delphitools",
+    "week": "23–29 Jul 2026",
+    "url": "https://tools.rmv.fyi/",
+    "sharer": "Tom",
+    "date": "24 Jul",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "Privacy-first browser tools. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "delphitools"
+  },
+  {
+    "title": "modly",
+    "week": "23–29 Jul 2026",
+    "url": "https://github.com/lightningpixel/modly",
+    "sharer": "Tom",
+    "date": "24 Jul",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "A desktop app that generates 3D models from images using local AI. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "modly"
+  },
+  {
+    "title": "img2threejs",
+    "week": "23–29 Jul 2026",
+    "url": "https://github.com/hoainho/img2threejs",
+    "sharer": "Tom",
+    "date": "23 Jul",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "Rebuilds the object in a reference image as code-only procedural Three.js. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "img2threejs"
+  },
+  {
+    "title": "pi-openai-server-compaction",
+    "week": "16–22 Jul 2026",
+    "url": "https://github.com/algal/pi-openai-server-compaction",
+    "sharer": "Tom",
+    "date": "22 Jul",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Shared without description; the name suggests an OpenAI-compatible server with context compaction for the pi agent. Unverified.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "pi-openai-server-compaction"
+  },
+  {
+    "title": "Fractal (Plasma AI)",
+    "week": "16–22 Jul 2026",
+    "url": "https://www.plasma.ai/research/fractal",
+    "sharer": "Tom",
+    "date": "22 Jul",
+    "categories": [
+      "ai-tool",
+      "web-app"
+    ],
+    "brief": "Plasma AI's Fractal wraps Claude Code and Codex in bounded recursive loops. Details beyond the truncated preview are unverified.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "fractal-plasma-ai"
+  },
+  {
+    "title": "freerange",
+    "week": "16–22 Jul 2026",
+    "url": "https://github.com/chenglou/freerange",
+    "sharer": "Tom",
+    "date": "21 Jul",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "Static checks for ordinary TypeScript layout code, from chenglou. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "freerange"
+  },
+  {
+    "title": "60fps.design",
+    "week": "16–22 Jul 2026",
+    "url": "https://60fps.design/",
+    "sharer": "Tom",
+    "date": "20 Jul",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "UI/UX animation inspiration for mobile and web apps. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "60fps-design"
+  },
+  {
+    "title": "pi-queue-steer",
+    "week": "16–22 Jul 2026",
+    "url": "https://github.com/tmustier/pi-queue-steer",
+    "sharer": "Tom",
+    "date": "17 Jul",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "A Cursor-style visible follow-up queue with inline editing for the Pi agent. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "pi-queue-steer"
+  },
+  {
+    "title": "pi-grok",
+    "week": "9–15 Jul 2026",
+    "url": "https://github.com/stnly/pi-grok",
+    "sharer": "Tom",
+    "date": "9 Jul",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Use your x.com Premium/SuperGrok subscription in pi with OAuth login, auto-refresh, and live model discovery; supports grok-4.5, grok-composer-2.5-fast, grok-build, grok-4.3, and x_search. Feature claims come from the repo description and are unverified.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "pi-grok"
+  },
+  {
+    "title": "Kimi-Vendor-Verifier",
+    "week": "2–8 Jul 2026",
+    "url": "https://github.com/MoonshotAI/Kimi-Vendor-Verifier",
+    "sharer": "baanish",
+    "date": "7 Jul",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "A vendor verifier from MoonshotAI; baanish asked if anyone has run it. Details unverified from the message text.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "kimi-vendor-verifier"
+  },
+  {
+    "title": "agentic_coding_flywheel_setup",
+    "week": "2–8 Jul 2026",
+    "url": "https://github.com/Dicklesworthstone/agentic_coding_flywheel_setup",
+    "sharer": "Rykuuun",
+    "date": "7 Jul",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "An agentic coding setup that Rykuuun found \"more flexible\" than alternatives. Details unverified from the message text.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "agentic-coding-flywheel-setup"
+  },
+  {
+    "title": "tailscale-shell",
+    "week": "2–8 Jul 2026",
+    "url": "https://github.com/monotykamary/tailscale-shell",
+    "sharer": "Tom",
+    "date": "4 Jul",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "A proxied shell + exit-node picker for Tailscale userspace networking, with egress through Mullvad or other providers. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "tailscale-shell"
+  },
+  {
+    "title": "Dory",
+    "week": "2–8 Jul 2026",
+    "url": "https://augani.github.io/dory/",
+    "sharer": "Tom",
+    "date": "4 Jul",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "Docker & Linux containers native to Mac — free, open source, one shared VM for all containers, claiming ~4.7x less idle memory than per-container setups. The memory claim is the vendor's and unverified.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "dory"
+  },
+  {
+    "title": "archify",
+    "week": "2–8 Jul 2026",
+    "url": "https://github.com/tt-a1i/archify",
+    "sharer": "Tom",
+    "date": "2 Jul",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "An agent skill that generates beautiful architecture diagrams with dark/light theme toggle and PNG/JPEG export. Details unverified from the link-only share.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "archify"
+  },
+  {
+    "title": "beads_rust",
+    "week": "2–8 Jul 2026",
+    "url": "https://github.com/Dicklesworthstone/beads_rust",
+    "sharer": "Rykuuun",
+    "date": "2 Jul",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "A fast Rust port of Steve Yegge's beads — a local-first, non-invasive issue tracker storing tasks in SQLite. Rykuuun \"really loved this tool\" and says it makes things easier to manage.",
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "beads-rust"
+  },
+  {
     "title": "hax",
     "week": "6–12 Aug 2026",
     "url": "https://usehax.dev/",
