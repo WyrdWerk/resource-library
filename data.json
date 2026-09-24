@@ -1,5 +1,228 @@
 [
   {
+    "title": "Loop Library (ForwardFuture Signals)",
+    "week": "18–24 Jun 2026",
+    "url": "https://signals.forwardfuture.ai/loop-library/",
+    "sharer": "whaaaat",
+    "date": "19 Jun",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A loop library from ForwardFuture Signals, shared as a design reference. Details unverified from the link-only share.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "loop-library-forwardfuture-signals"
+  },
+  {
+    "title": "Flue 1.0 Beta",
+    "week": "11–17 Jun 2026",
+    "url": "https://flueframework.com/blog/flue-1-0-beta/?x",
+    "sharer": "Tom",
+    "date": "17 Jun",
+    "categories": [
+      "ai-tool",
+      "web-app",
+      "article"
+    ],
+    "brief": "Flue 1.0 Beta announcement — \"the open framework for building agents without lab lock-in: write once, deploy...\" Details beyond the embed preview are unverified.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "flue-1-0-beta"
+  },
+  {
+    "title": "LMCache",
+    "week": "11–17 Jun 2026",
+    "url": "https://github.com/LMCache/LMCache",
+    "sharer": "kenn",
+    "date": "16 Jun",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "\"Supercharge Your LLM with the Fastest KV Cache Layer.\" The performance claim is the project's and unverified.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "lmcache"
+  },
+  {
+    "title": "pi-shell-acp",
+    "week": "11–17 Jun 2026",
+    "url": "https://github.com/junghan0611/pi-shell-acp/",
+    "sharer": "Tom",
+    "date": "15 Jun",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Use Claude Code, Codex, and Gemini CLI through the Agent Client Protocol (ACP) inside pi. Details unverified from the link-only share.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "pi-shell-acp"
+  },
+  {
+    "title": "es-git PR #213",
+    "week": "11–17 Jun 2026",
+    "url": "https://github.com/toss/es-git/pull/213",
+    "sharer": "Tom",
+    "date": "14 Jun",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "A fix by monotykamary — diff.print() (default Patch format) was stripping the +/-/space line-origin prefixes from output; this PR prepends them back.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "es-git-pr-213"
+  },
+  {
+    "title": "pi-tool-repair",
+    "week": "11–17 Jun 2026",
+    "url": "https://github.com/monotykamary/pi-tool-repair",
+    "sharer": "Tom",
+    "date": "12 Jun",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "A validate-then-repair extension for pi that fixes common LLM tool-call mistakes (null fields, stringified arrays, wrong field names, anchor bleed) before tools execute. Tom: \"technically their tool repair brought over to pi (+ my additions).\"",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "pi-tool-repair"
+  },
+  {
+    "title": "fff PR #593",
+    "week": "11–17 Jun 2026",
+    "url": "https://github.com/dmtrKovalenko/fff/pull/593",
+    "sharer": "Tom",
+    "date": "12 Jun",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "A fix for fff — the /fff-mode override was only stored in an in-memory variable lost on /reload and session restart; this PR persists fff-mode across reloads and session resumes.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "fff-pr-593"
+  },
+  {
+    "title": "fff",
+    "week": "11–17 Jun 2026",
+    "url": "https://github.com/dmtrKovalenko/fff",
+    "sharer": "Tom",
+    "date": "12 Jun",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "\"The fastest and the most accurate file search toolkit for AI agents, Neovim, Rust, C, and NodeJS.\" The performance claim is the project's and unverified.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "fff"
+  },
+  {
+    "title": "ccusage",
+    "week": "4–10 Jun 2026",
+    "url": "https://github.com/ryoppippi/ccusage",
+    "sharer": "whaaaat",
+    "date": "9 Jun",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "Analyze coding (agent) CLI token usage and costs from local data.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "ccusage"
+  },
+  {
+    "title": "hyperframes",
+    "week": "4–10 Jun 2026",
+    "url": "https://github.com/heygen-com/hyperframes#framemd",
+    "sharer": "Tom",
+    "date": "9 Jun",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "\"Write HTML. Render video. Built for agents.\" Details unverified from the link-only share.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "hyperframes"
+  },
+  {
+    "title": "MoneyPrinterTurbo",
+    "week": "4–10 Jun 2026",
+    "url": "https://github.com/harry0703/MoneyPrinterTurbo/",
+    "sharer": "Tom",
+    "date": "9 Jun",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Generate HD short videos with one click using AI LLMs (the repo description is in Chinese). Details unverified from the link-only share.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "moneyprinterturbo"
+  },
+  {
+    "title": "Cozy",
+    "week": "4–10 Jun 2026",
+    "url": "https://cozyjournal.app/",
+    "sharer": "Tom",
+    "date": "9 Jun",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A local-first private diary app. Details unverified from the link-only share.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "cozy"
+  },
+  {
+    "title": "MiniMax M3",
+    "week": "4–10 Jun 2026",
+    "url": "https://www.minimax.io/blog/minimax-m3",
+    "sharer": "Tom",
+    "date": "9 Jun",
+    "categories": [
+      "ai-tool",
+      "article"
+    ],
+    "brief": "MiniMax's M3 announcement — frontier coding capability, 1M context, native multimodality, and a new MSA architecture. All vendor claims, unverified.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "minimax-m3"
+  },
+  {
+    "title": "codex-lb",
+    "week": "4–10 Jun 2026",
+    "url": "https://github.com/Soju06/codex-lb",
+    "sharer": "Tom",
+    "date": "9 Jun",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "A Codex/ChatGPT multiple-account load balancer and proxy with usage tracking, a dashboard, and OpenCode compatibility. Tom: \"gonna try first.\"",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "codex-lb"
+  },
+  {
+    "title": "codex-auth",
+    "week": "4–10 Jun 2026",
+    "url": "https://github.com/Loongphy/codex-auth",
+    "sharer": "Tom",
+    "date": "9 Jun",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "A CLI tool to switch and manage Codex accounts. Details unverified from the link-only share.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "codex-auth"
+  },
+  {
+    "title": "Zinley",
+    "week": "4–10 Jun 2026",
+    "url": "https://zinley.com/self-audit",
+    "sharer": "Tom",
+    "date": "9 Jun",
+    "categories": [
+      "ai-tool",
+      "web-app"
+    ],
+    "brief": "\"Built to extend you. 10× your day\" — an AI extension of you across every device and person: takes your calls, writes your emails, and more. Vendor claims, unverified.",
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "zinley"
+  },
+  {
     "title": "IRIS",
     "week": "23–29 Jul 2026",
     "url": "https://github.com/versenilvis/iris",

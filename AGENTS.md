@@ -19,7 +19,7 @@ Discord #share-tech  →  raw/      (raw weekly logs, unfiltered)
                      →  notes/    (curated: filtered + ~2-sentence briefs)
                      →  scripts/build.py
                      →  index.html, data.json, weeks/, CHANGELOG.md  (generated)
-                     →  push to main → Cloudflare Pages auto-deploys
+                     →  push to main → deploy on any static host
 ```
 
 ## Repository layout
@@ -84,17 +84,12 @@ Discord's `after:`/`before:` search filters **exclude** the boundary dates. A se
 
 ## Pushing
 
-Agents running in this project's orbs are authenticated to GitHub as the repo owner —
-plain `git push origin main` works. Use it (single commit per batch, as above).
-
-If you're in an environment with only a repo-scoped token (no git credentials), push
-via the GitHub API instead:
+The repo's token is scoped to this repository only. Push with the GitHub API:
 
 - **Empty repo:** use the Contents API — `PUT /repos/{owner}/{repo}/contents/{path}` with base64 content, one call per file.
 - **Existing repo:** prefer a single commit via the git data API — create blobs, then a tree, then a commit, then update `refs/heads/main`.
 
-Never force-push. `main` is the only branch. Note that pushing to `main` publishes the
-site automatically (see Deploying).
+Never force-push. `main` is the only branch.
 
 ## Analytics
 
@@ -108,14 +103,13 @@ generated SVG; change the generator functions (`vol_chart`, `stacked_chart`,
 
 ## Deploying
 
-The site is live on Cloudflare Pages, connected to this GitHub repo:
+The site is `index.html` (+ `data.json`, `feed.xml`, `og-image.png`). Any static host
+works; it's built for Cloudflare Pages with no build command and the repo root as the
+output directory.
 
-- **Production URL:** https://cheapinfra-resources.wyrdwerk.com (custom domain, canonical)
-- **Pages alias:** https://resource-library-7q4.pages.dev
-- **How it deploys:** every push to `main` auto-builds and publishes (Git integration; no build command, repo root as the output directory). PRs get preview deployments.
-- The site is pure static files (`index.html` + `data.json`, `feed.xml`, `og-image.png`), so any other static host still works in a pinch — but `main` is wired to Cloudflare; don't set up a second deploy pipeline.
-
-`scripts/build.py` has a `SITE_URL` constant (used for `og:image` and the RSS channel link) set to the canonical URL above. If the domain ever changes, update `SITE_URL`, re-run the build, and commit the regenerated files together with it.
+**Important:** `scripts/build.py` has a `SITE_URL` constant (used for `og:image` and the
+RSS channel link) that is currently a placeholder — update it to the real Pages URL once
+deployed, then re-run the build.
 
 ## What NOT to do
 
