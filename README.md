@@ -2,7 +2,7 @@
 
 A curated, browsable archive of developer resources shared in the [CheapInfra](https://cheapinfra.com) Discord server's `#share-tech` channel — AI tools, dev tools, websites, articles, and GitHub repos, collected newest-first, week by week.
 
-**Browse it:** the site is `index.html` — open it anywhere, or deploy to any static host (built for Cloudflare Pages; no build step, no dependencies). It opens in a black dark theme with a light-mode toggle in the header, and has two tabs: **Library** (search, category + week filters, weekly sections) and **Analytics** (weekly volume, top sharers, category mix over time with weekly/fortnightly views, and a sharer spotlight — all rendered as dependency-free inline SVG).
+**Browse it:** live at **[cheapinfra-resources.wyrdwerk.com](https://cheapinfra-resources.wyrdwerk.com)** (also at [resource-library-7q4.pages.dev](https://resource-library-7q4.pages.dev)). The site is a single `index.html` — no build step, no dependencies, so it also opens as a local file or runs on any static host. It opens in a black dark theme with a light-mode toggle in the header, and has two tabs: **Library** (search, category + week filters, weekly sections) and **Analytics** (weekly volume, top sharers, category mix over time with weekly/fortnightly views, and a sharer spotlight — all rendered as dependency-free inline SVG).
 
 ## What's in here
 
@@ -24,7 +24,7 @@ A curated, browsable archive of developer resources shared in the [CheapInfra](h
 
 ## Coverage
 
-See [CHANGELOG.md](CHANGELOG.md) for the batch history. Weeks are collected newest-first; the archive currently runs from late August 2026 forward.
+See [CHANGELOG.md](CHANGELOG.md) for the batch history. Weeks are collected newest-first; the archive currently runs from early July 2026 forward.
 
 ## Methodology
 
@@ -39,7 +39,7 @@ Read [AGENTS.md](AGENTS.md) — it documents the full workflow: how to collect a
 
 ## Deploying
 
-Any static host works. For Cloudflare Pages: create a Pages project from this repo (or drag-and-drop the files) — no build command, no output directory settings needed beyond the repo root.
+The site is deployed on **Cloudflare Pages**, connected to this GitHub repo: every push to `main` auto-builds and publishes to [cheapinfra-resources.wyrdwerk.com](https://cheapinfra-resources.wyrdwerk.com) (custom domain) and [resource-library-7q4.pages.dev](https://resource-library-7q4.pages.dev) — no build command, repo root as the output directory. PRs get preview deployments. Because publishing is automatic on push, don't set up a second deploy pipeline; the canonical URL lives in the `SITE_URL` constant in `scripts/build.py`.
 
 ## Contributing
 
