@@ -2,13 +2,13 @@
 
 A curated, browsable archive of developer resources shared in the [CheapInfra](https://cheapinfra.com) Discord server's `#share-tech` channel — AI tools, dev tools, websites, articles, and GitHub repos, collected newest-first, week by week.
 
-**Browse it:** the site is `index.html` — open it anywhere, or deploy to any static host (built for Cloudflare Pages; no build step, no dependencies).
+**Browse it:** the site is `index.html` — open it anywhere, or deploy to any static host (built for Cloudflare Pages; no build step, no dependencies). It opens in a black dark theme with a light-mode toggle in the header, and has two tabs: **Library** (search, category + week filters, weekly sections) and **Analytics** (weekly volume, top sharers, category mix over time with weekly/fortnightly views, and a sharer spotlight — all rendered as dependency-free inline SVG).
 
 ## What's in here
 
 | Path | What it is | Maintained by |
 |------|-----------|---------------|
-| `index.html` | The browsable site: search, category + week filters, weekly sections | Generated — run `scripts/build.py` |
+| `index.html` | The browsable site: search, category + week filters, weekly sections, dark/light theme toggle, Analytics tab | Generated — run `scripts/build.py` |
 | `data.json` | The full dataset: title, URL, sharer, share date, categories, brief, week, stable `id` | Generated — run `scripts/build.py` |
 | `weeks/` | Per-week curated lists in Markdown, with briefs | Generated — run `scripts/build.py` |
 | `feed.xml` | RSS feed of all resources, newest first | Generated — run `scripts/build.py` |

@@ -20,8 +20,8 @@ ROOT = Path(__file__).resolve().parent.parent
 NOTES_DIR = ROOT / "notes"
 WEEKS_DIR = ROOT / "weeks"
 
-# Deployed URL on Cloudflare Pages.
-SITE_URL = "https://resource-library-7q4.pages.dev"
+# TODO: update to the real deployed URL once Cloudflare Pages is configured.
+SITE_URL = "https://resource-library.pages.dev"
 
 MONTHS = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
           "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
@@ -105,15 +105,6 @@ def parse_notes(path):
     return resources
 
 
-CAT_COLORS = {
-    "ai-tool": ("#f3e8ff", "#7c3aed"),
-    "dev-tool": ("#dbeafe", "#1d4ed8"),
-    "github": ("#e5e7eb", "#374151"),
-    "web-app": ("#ccfbf1", "#0f766e"),
-    "article": ("#fef3c7", "#b45309"),
-}
-
-
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
@@ -127,7 +118,7 @@ def make_og_image(total):
     """Generate og-image.png (1200x630 social card) with the current count."""
     from PIL import Image, ImageDraw, ImageFont
     W, H = 1200, 630
-    img = Image.new("RGB", (W, H), "#faf9f6")
+    img = Image.new("RGB", (W, H), "#050505")
     d = ImageDraw.Draw(img)
     try:
         serif = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf", 104)
@@ -135,13 +126,76 @@ def make_og_image(total):
         kick = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 30)
     except OSError:
         serif = sans = kick = ImageFont.load_default()
-    d.rectangle([0, 0, W, 14], fill="#4f46e5")
-    d.text((80, 90), "CHEAPINFRA  ·  #SHARE-TECH", font=kick, fill="#78716c")
-    d.text((76, 170), "The Resource", font=serif, fill="#1c1917")
-    d.text((76, 290), "Library", font=serif, fill="#1c1917")
-    d.text((80, 450), f"{total} curated developer resources", font=sans, fill="#57534e")
-    d.text((80, 500), "AI tools, dev tools, repos & articles", font=sans, fill="#78716c")
+    d.rectangle([0, 0, W, 14], fill="#4f8cff")
+    d.text((80, 90), "CHEAPINFRA  ·  #SHARE-TECH", font=kick, fill="#9c9ca6")
+    d.text((76, 170), "The Resource", font=serif, fill="#f4f4f5")
+    d.text((76, 290), "Library", font=serif, fill="#f4f4f5")
+    d.text((80, 450), f"{total} curated developer resources", font=sans, fill="#d4d4d8")
+    d.text((80, 500), "AI tools, dev tools, repos & articles", font=sans, fill="#9c9ca6")
     img.save(ROOT / "og-image.png")
+
+
+def _svg(w, h, inner):
+    return f'<svg viewBox="0 0 {w} {h}" class="chart" role="img">\n{inner}\n</svg>'
+
+
+def vol_chart(rows):
+    """Vertical bars: total resources per period, oldest -> newest."""
+    W, H, pad_l, pad_b, pad_t = 560, 300, 34, 46, 28
+    n = len(rows)
+    cw = (W - pad_l - 14) / max(n, 1)
+    bw = min(cw * 0.62, 64)
+    vmax = max([r["total"] for r in rows] + [1])
+    ph = (H - pad_t - pad_b) / vmax
+    parts = [f'<line x1="{pad_l}" y1="{H - pad_b}" x2="{W - 10}" y2="{H - pad_b}" class="grid"/>']
+    for i, r in enumerate(rows):
+        x = pad_l + i * cw + (cw - bw) / 2
+        bh = max(r["total"] * ph, 2)
+        y = H - pad_b - bh
+        parts.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw:.1f}" height="{bh:.1f}" rx="5" class="bar"/>')
+        parts.append(f'<text x="{x + bw / 2:.1f}" y="{y - 8:.1f}" text-anchor="middle" class="val">{r["total"]}</text>')
+        parts.append(f'<text x="{x + bw / 2:.1f}" y="{H - pad_b + 20:.1f}" text-anchor="middle" class="ax">{esc(r["short"])}</text>')
+    return _svg(W, H, "\n".join(parts))
+
+
+def stacked_chart(periods, cats):
+    """Stacked vertical bars: category mix per period, oldest -> newest."""
+    W, H, pad_l, pad_b, pad_t = 560, 320, 34, 46, 28
+    n = len(periods)
+    cw = (W - pad_l - 14) / max(n, 1)
+    bw = min(cw * 0.62, 72)
+    vmax = max([p["total"] for p in periods] + [1])
+    ph = (H - pad_t - pad_b) / vmax
+    parts = [f'<line x1="{pad_l}" y1="{H - pad_b}" x2="{W - 10}" y2="{H - pad_b}" class="grid"/>']
+    for i, p in enumerate(periods):
+        x = pad_l + i * cw + (cw - bw) / 2
+        y = H - pad_b
+        for c in cats:
+            v = p["counts"].get(c, 0)
+            if not v:
+                continue
+            sh = v * ph
+            y -= sh
+            parts.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw:.1f}" height="{sh:.1f}" class="seg-{c}"><title>{esc(c)}: {v}</title></rect>')
+        parts.append(f'<text x="{x + bw / 2:.1f}" y="{H - pad_b - p["total"] * ph - 8:.1f}" text-anchor="middle" class="val">{p["total"]}</text>')
+        parts.append(f'<text x="{x + bw / 2:.1f}" y="{H - pad_b + 20:.1f}" text-anchor="middle" class="ax">{esc(p["short"])}</text>')
+    return _svg(W, H, "\n".join(parts))
+
+
+def hbar_chart(items, suffix=""):
+    """Horizontal bars. items: list of (label, value, css_class, extra_label)."""
+    W, row_h, pad_l, pad_r, pad_t = 560, 34, 148, 52, 10
+    H = pad_t + len(items) * row_h + 10
+    vmax = max([v for _, v, _, _ in items] + [1])
+    bw = (W - pad_l - pad_r) / vmax
+    parts = []
+    for i, (label, v, cls, extra) in enumerate(items):
+        y = pad_t + i * row_h
+        lab = label if len(label) <= 20 else label[:19] + "…"
+        parts.append(f'<text x="{pad_l - 10}" y="{y + 20}" text-anchor="end" class="hbar-label">{esc(lab)}</text>')
+        parts.append(f'<rect x="{pad_l}" y="{y + 6}" width="{max(v * bw, 3):.1f}" height="18" rx="5" class="{cls}"/>')
+        parts.append(f'<text x="{pad_l + v * bw + 8:.1f}" y="{y + 20}" class="val">{v}{extra}</text>')
+    return _svg(W, H, "\n".join(parts))
 
 
 def main():
@@ -207,8 +261,7 @@ def main():
         cards = []
         for r in res:
             chips = "".join(
-                f'<span class="chip" style="--bg:{CAT_COLORS.get(c, ("#f0f0f0", "#555"))[0]};'
-                f'--fg:{CAT_COLORS.get(c, ("#f0f0f0", "#555"))[1]}">{esc(c)}</span>'
+                f'<span class="chip c-{c}">{esc(c)}</span>'
                 for c in r["categories"])
             blob = esc((r["title"] + " " + r["brief"] + " " + r["sharer"]).lower())
             cards.append(
@@ -229,6 +282,55 @@ def main():
     fchips = "".join(f'<button class="fchip" data-cat="{c}">{c} <b>{cat_counts[c]}</b></button>' for c in cats)
     wchips = "".join(f'<button class="fchip wfilter" data-week="{esc(l)}">{esc(l)}</button>' for l in ordered)
     catchips = "".join(f'<span class="catchip">{c} × {cat_counts[c]}</span>' for c in cats)
+
+    # ---- analytics data ----
+    from collections import Counter
+    chrono = list(reversed(ordered))
+
+    def short_label(label):
+        return re.sub(r"\s+\d{4}$", "", label)
+
+    arows = []
+    for label in chrono:
+        counts = {c: 0 for c in cats}
+        for r in weeks[label]:
+            for c in r["categories"]:
+                counts[c] = counts.get(c, 0) + 1
+        arows.append({"label": label, "short": short_label(label),
+                      "total": len(weeks[label]), "counts": counts})
+    frows = []
+    for i in range(0, len(arows), 2):
+        grp = arows[i:i + 2]
+        counts = {c: sum(g["counts"].get(c, 0) for g in grp) for c in cats}
+        fl = (grp[0]["label"].split("–")[0] + "–" + grp[1]["label"].split("–")[1]
+              if len(grp) == 2 else grp[0]["label"])
+        frows.append({"label": fl, "short": short_label(fl),
+                      "total": sum(g["total"] for g in grp), "counts": counts})
+    sharer_counts = Counter(r["sharer"] for r in all_res)
+    top_sharers = sharer_counts.most_common(10)
+    top_name, top_n = top_sharers[0]
+    sp_counts = Counter(c for r in all_res if r["sharer"] == top_name for c in r["categories"])
+    busiest = max(arows, key=lambda r: r["total"])
+    top_cat = max(cats, key=lambda c: cat_counts[c])
+
+    vol_svg = vol_chart(arows)
+    trend_week_svg = stacked_chart(arows, cats)
+    trend_fort_svg = stacked_chart(frows, cats)
+    sharer_svg = hbar_chart([(s, n, "bar", "") for s, n in top_sharers])
+    mix_svg = hbar_chart([(c, cat_counts[c], f"seg-{c}", f" · {cat_counts[c] / total:.0%}")
+                          for c in cats])
+    legend = "".join(f'<span class="leg"><span class="seg-sw seg-{c}"></span>{c}</span>'
+                     for c in cats)
+    an_stats = (
+        f'<div class="an-stat"><b>{total}</b><span>resources tracked</span></div>'
+        f'<div class="an-stat"><b>{esc(busiest["short"])}</b><span>busiest week · {busiest["total"]} resources</span></div>'
+        f'<div class="an-stat"><b>{esc(top_cat)}</b><span>top category · {cat_counts[top_cat]}</span></div>'
+        f'<div class="an-stat"><b>{esc(top_name)}</b><span>top sharer · {top_n} shared</span></div>'
+    )
+    spotlight = (
+        f'<p class="spot-name">{esc(top_name)} <span>· {top_n} resources shared</span></p>'
+        + hbar_chart([(c, sp_counts[c], f"seg-{c}", "") for c in cats if sp_counts[c]])
+    )
     desc = (f"A curated, browsable archive of {total} developer resources shared in the "
             f"CheapInfra Discord's #share-tech channel, newest first.")
 
@@ -244,16 +346,27 @@ def main():
 <meta property="og:type" content="website">
 <meta property="og:image" content="{SITE_URL}/og-image.png">
 <link rel="alternate" type="application/rss+xml" title="Resource Library feed" href="feed.xml">
+<script>try{{var t=localStorage.getItem('rl-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}}catch(e){{}}</script>
 <style>
 :root {{
-  --paper: #faf9f6; --card: #ffffff; --ink: #1c1917; --muted: #78716c;
-  --line: #e7e2da; --accent: #4f46e5; --accent-soft: #eef2ff;
+  color-scheme: dark;
+  --paper: #050505; --card: #0e0e11; --ink: #f4f4f5; --muted: #9c9ca6;
+  --line: #232329; --accent: #4f8cff; --accent-soft: #12283f;
+  --cat-ai-tool: #58a6ff; --cat-ai-tool-bg: rgba(88,166,255,.13);
+  --cat-dev-tool: #3fb950; --cat-dev-tool-bg: rgba(63,185,80,.13);
+  --cat-github: #a371f7; --cat-github-bg: rgba(163,113,247,.15);
+  --cat-web-app: #f778ba; --cat-web-app-bg: rgba(247,120,186,.13);
+  --cat-article: #e3b341; --cat-article-bg: rgba(227,179,65,.14);
 }}
-@media (prefers-color-scheme: dark) {{
-  :root {{
-    --paper: #141210; --card: #1e1b18; --ink: #ece7df; --muted: #a8a29e;
-    --line: #2e2a26; --accent: #a5b4fc; --accent-soft: #262544;
-  }}
+[data-theme="light"] {{
+  color-scheme: light;
+  --paper: #ffffff; --card: #f5f5f7; --ink: #131316; --muted: #63636e;
+  --line: #e4e4ea; --accent: #1f6feb; --accent-soft: #e2ecfd;
+  --cat-ai-tool: #1f6feb; --cat-ai-tool-bg: #dbeafe;
+  --cat-dev-tool: #1a7f37; --cat-dev-tool-bg: #d9f2e2;
+  --cat-github: #6e40c9; --cat-github-bg: #e9e2fb;
+  --cat-web-app: #c2187b; --cat-web-app-bg: #fbdcec;
+  --cat-article: #9a6700; --cat-article-bg: #fbeecb;
 }}
 * {{ box-sizing: border-box; }}
 html {{ scroll-behavior: smooth; }}
@@ -332,7 +445,7 @@ body {{
   padding: 18px 20px; margin: 12px 0; transition: box-shadow 0.18s ease, transform 0.18s ease;
   scroll-margin-top: 150px;
 }}
-.card:hover {{ box-shadow: 0 8px 28px rgba(0,0,0,0.08); transform: translateY(-1px); }}
+.card:hover {{ box-shadow: 0 8px 28px rgba(0,0,0,0.35); transform: translateY(-1px); border-color: var(--accent); }}
 .card:target {{ outline: 2px solid var(--accent); outline-offset: 2px; }}
 .card h3 {{ margin: 0 0 8px; font-size: 17px; font-weight: 650; letter-spacing: -0.005em; }}
 .card h3 a {{ text-decoration: none; color: inherit; }}
@@ -341,7 +454,7 @@ body {{
 .meta {{ display: flex; gap: 6px; flex-wrap: wrap; }}
 .chip {{
   font-size: 11.5px; font-weight: 600; border-radius: 999px; padding: 3px 11px;
-  background: var(--bg, #f0f0f0); color: var(--fg, #555);
+  background: var(--line); color: var(--muted);
 }}
 .attr {{ font-size: 13px; color: var(--muted); }}
 .attr .who {{ font-weight: 600; color: var(--ink); }}
@@ -360,12 +473,86 @@ footer a {{ color: var(--accent); }}
   cursor: pointer; font-size: 18px; display: none; align-items: center; justify-content: center;
 }}
 .top.show {{ display: flex; }}
+/* ---- theme toggle ---- */
+.topbar {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }}
+.topbar .kicker {{ margin-bottom: 0; }}
+.theme-toggle {{
+  background: var(--card); border: 1px solid var(--line); border-radius: 50%;
+  width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: var(--ink); flex-shrink: 0; transition: border-color 0.15s ease;
+}}
+.theme-toggle:hover {{ border-color: var(--accent); }}
+.theme-toggle svg {{ width: 18px; height: 18px; }}
+.theme-toggle .icon-moon {{ display: none; }}
+[data-theme="light"] .theme-toggle .icon-sun {{ display: none; }}
+[data-theme="light"] .theme-toggle .icon-moon {{ display: block; }}
+/* ---- tabs ---- */
+.tabs {{ display: flex; gap: 6px; margin: 26px 0 4px; }}
+.tab {{
+  border: 1px solid var(--line); background: var(--card); color: var(--muted);
+  border-radius: 999px; padding: 7px 22px; font-size: 14px; cursor: pointer; font-weight: 600;
+  transition: all 0.15s ease;
+}}
+.tab:hover {{ border-color: var(--accent); color: var(--ink); }}
+.tab.active {{ background: var(--ink); color: var(--paper); border-color: var(--ink); }}
+.lib-hidden {{ display: none !important; }}
+/* ---- category chips (theme-aware) ---- */
+.chip.c-ai-tool {{ color: var(--cat-ai-tool); background: var(--cat-ai-tool-bg); }}
+.chip.c-dev-tool {{ color: var(--cat-dev-tool); background: var(--cat-dev-tool-bg); }}
+.chip.c-github {{ color: var(--cat-github); background: var(--cat-github-bg); }}
+.chip.c-web-app {{ color: var(--cat-web-app); background: var(--cat-web-app-bg); }}
+.chip.c-article {{ color: var(--cat-article); background: var(--cat-article-bg); }}
+/* ---- analytics ---- */
+#analytics {{ margin-top: 8px; }}
+.an-h {{
+  font-family: Georgia, "Times New Roman", serif; font-size: 26px; font-weight: 600;
+  margin: 28px 0 4px;
+}}
+.an-sub {{ color: var(--muted); font-size: 14px; margin: 0 0 20px; }}
+.an-stats {{ display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }}
+.an-stat {{
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 12px 18px; min-width: 140px;
+}}
+.an-stat b {{ display: block; font-size: 20px; font-weight: 700; letter-spacing: -0.01em; }}
+.an-stat span {{ font-size: 12px; color: var(--muted); }}
+.an-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }}
+@media (max-width: 640px) {{ .an-grid {{ grid-template-columns: 1fr; }} }}
+.an-card {{
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px;
+}}
+.an-card.wide {{ grid-column: 1 / -1; }}
+.an-card h3 {{ margin: 0 0 4px; font-size: 16px; font-weight: 650; }}
+.an-card .sub {{ color: var(--muted); font-size: 13px; margin: 0 0 14px; }}
+.chart {{ width: 100%; height: auto; display: block; }}
+.ax {{ fill: var(--muted); font-size: 11px; }}
+.val {{ fill: var(--ink); font-size: 11px; font-weight: 700; }}
+.grid {{ stroke: var(--line); stroke-width: 1; }}
+.bar {{ fill: var(--accent); }}
+.seg-ai-tool {{ fill: var(--cat-ai-tool); background: var(--cat-ai-tool); }}
+.seg-dev-tool {{ fill: var(--cat-dev-tool); background: var(--cat-dev-tool); }}
+.seg-github {{ fill: var(--cat-github); background: var(--cat-github); }}
+.seg-web-app {{ fill: var(--cat-web-app); background: var(--cat-web-app); }}
+.seg-article {{ fill: var(--cat-article); background: var(--cat-article); }}
+.hbar-label {{ fill: var(--ink); font-size: 12px; }}
+.legend {{ display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 12px; }}
+.leg {{ font-size: 12.5px; color: var(--muted); }}
+.seg-sw {{ width: 10px; height: 10px; border-radius: 3px; display: inline-block; margin-right: 6px; }}
+.segrow {{ display: flex; gap: 6px; margin-bottom: 14px; }}
+.spot-name {{ font-size: 14px; font-weight: 650; margin: 0 0 10px; }}
+.spot-name span {{ color: var(--muted); font-weight: 400; }}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="hero">
-    <div class="kicker">CheapInfra · #share-tech</div>
+    <div class="topbar">
+      <div class="kicker">CheapInfra · #share-tech</div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
     <h1>The Resource Library</h1>
     <p>Every genuinely useful link shared in the channel — AI tools, dev tools, websites, articles and repos — curated week by week, newest first. Collected read-only; each entry carries a two-sentence brief and its sharer.</p>
     <div class="stats">
@@ -380,10 +567,52 @@ footer a {{ color: var(--accent); }}
     <div class="frow"><span class="flabel">Category</span>{fchips}</div>
     <div class="frow"><span class="flabel">Week</span>{wchips}</div>
   </div>
+  <div class="tabs" role="tablist" aria-label="Library or analytics">
+    <button class="tab active" data-tab="library" role="tab" aria-selected="true">Library</button>
+    <button class="tab" data-tab="analytics" role="tab" aria-selected="false">Analytics</button>
+  </div>
   <nav class="wnavs">{"".join(nav)}</nav>
   <main id="main">
 {"".join(sections)}
   </main>
+  <section id="analytics" hidden>
+    <h2 class="an-h">Analytics</h2>
+    <p class="an-sub">What #share-tech has been sharing: volume, category mix and the most active sharers across {len(ordered)} weeks.</p>
+    <div class="an-stats">{an_stats}</div>
+    <div class="an-grid">
+      <div class="an-card">
+        <h3>Resources per week</h3>
+        <p class="sub">Curated resources added each week, oldest to newest.</p>
+        {vol_svg}
+      </div>
+      <div class="an-card">
+        <h3>Top sharers</h3>
+        <p class="sub">Most prolific link-sharers in the channel.</p>
+        {sharer_svg}
+      </div>
+      <div class="an-card wide">
+        <h3>Category mix over time</h3>
+        <p class="sub">How the category mix shifted across weeks.</p>
+        <div class="legend">{legend}</div>
+        <div class="segrow">
+          <button class="fchip fswitch active" data-range="week">Weekly</button>
+          <button class="fchip fswitch" data-range="fort">Fortnightly</button>
+        </div>
+        <div id="trendWeek">{trend_week_svg}</div>
+        <div id="trendFort" hidden>{trend_fort_svg}</div>
+      </div>
+      <div class="an-card">
+        <h3>All-time category mix</h3>
+        <p class="sub">Share of each category across all {total} resources.</p>
+        {mix_svg}
+      </div>
+      <div class="an-card">
+        <h3>Sharer spotlight</h3>
+        <p class="sub">What the top sharer shares most.</p>
+        {spotlight}
+      </div>
+    </div>
+  </section>
   <p class="empty" id="empty" style="display:none">Nothing matches — try a different search.</p>
   <footer>
     Built from read-only collection of CheapInfra's #share-tech channel. Briefs are editorial summaries (~2 sentences); claims originating from announcement posts are unverified unless independently checked. Data: <a href="data.json">data.json</a> · Weekly lists: <a href="weeks/">weeks/</a> · Raw logs: <a href="raw/">raw/</a> · <a href="CHANGELOG.md">Changelog</a>
@@ -429,6 +658,34 @@ for (const ch of wchips) ch.addEventListener('click', () => {{
 }});
 addEventListener('scroll', () => top.classList.toggle('show', scrollY > 600));
 top.addEventListener('click', () => scrollTo({{top: 0, behavior: 'smooth'}}));
+// theme: dark is the default; light is opt-in and remembered
+const tt = document.getElementById('themeToggle');
+function setTheme(t) {{
+  document.documentElement.dataset.theme = t;
+  try {{ localStorage.setItem('rl-theme', t); }} catch(e) {{}}
+}}
+tt.addEventListener('click', () =>
+  setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light'));
+// tabs: library / analytics
+const tabs = [...document.querySelectorAll('.tab')];
+const libEls = [document.querySelector('.toolbar'), document.querySelector('.wnavs'),
+                document.getElementById('main'), document.getElementById('empty')];
+const an = document.getElementById('analytics');
+for (const t of tabs) t.addEventListener('click', () => {{
+  tabs.forEach(x => {{ x.classList.toggle('active', x === t); x.setAttribute('aria-selected', x === t); }});
+  const showAn = t.dataset.tab === 'analytics';
+  an.hidden = !showAn;
+  libEls.forEach(e => e && e.classList.toggle('lib-hidden', showAn));
+  if (showAn) scrollTo({{top: 0, behavior: 'smooth'}});
+}});
+// analytics: weekly / fortnightly trend
+const fsw = [...document.querySelectorAll('.fswitch')];
+for (const b of fsw) b.addEventListener('click', () => {{
+  fsw.forEach(x => x.classList.toggle('active', x === b));
+  const fort = b.dataset.range === 'fort';
+  document.getElementById('trendWeek').hidden = fort;
+  document.getElementById('trendFort').hidden = !fort;
+}});
 </script>
 </body>
 </html>
