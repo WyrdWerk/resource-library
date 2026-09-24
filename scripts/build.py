@@ -15,6 +15,7 @@ Usage: python3 scripts/build.py   (run from anywhere; paths resolve to repo root
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTES_DIR = ROOT / "notes"
@@ -118,7 +119,7 @@ def make_og_image(total):
     """Generate og-image.png (1200x630 social card) with the current count."""
     from PIL import Image, ImageDraw, ImageFont
     W, H = 1200, 630
-    img = Image.new("RGB", (W, H), "#f4f6f1")
+    img = Image.new("RGB", (W, H), "#0a0c0b")
     d = ImageDraw.Draw(img)
     try:
         serif = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf", 104)
@@ -126,12 +127,12 @@ def make_og_image(total):
         kick = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 30)
     except OSError:
         serif = sans = kick = ImageFont.load_default()
-    d.rectangle([0, 0, W, 14], fill="#006a55")
-    d.text((80, 90), "CURATED FROM CHEAPINFRA  ·  #SHARE-TECH", font=kick, fill="#52615c")
-    d.text((76, 170), "Useful things", font=serif, fill="#16231f")
-    d.text((76, 290), "worth opening.", font=serif, fill="#16231f")
-    d.text((80, 450), f"{total} curated developer resources", font=sans, fill="#16231f")
-    d.text((80, 500), "AI tools, dev tools, repos & articles", font=sans, fill="#52615c")
+    d.rectangle([0, 0, W, 14], fill="#7ed7b6")
+    d.text((80, 90), "CURATED FROM CHEAPINFRA  ·  #SHARE-TECH", font=kick, fill="#9aa39b")
+    d.text((76, 170), "Useful things", font=serif, fill="#ece9e0")
+    d.text((76, 290), "worth opening.", font=serif, fill="#ece9e0")
+    d.text((80, 450), f"{total} curated developer resources", font=sans, fill="#ece9e0")
+    d.text((80, 500), "AI tools, dev tools, repos & articles", font=sans, fill="#9aa39b")
     img.save(ROOT / "og-image.png")
 
 
@@ -272,14 +273,20 @@ def main():
                 f'<span class="chip c-{c}">{esc(CAT_LABELS.get(c, c))}</span>'
                 for c in r["categories"])
             blob = esc((r["title"] + " " + r["brief"] + " " + r["sharer"]).lower())
+            dom = urlsplit(r["url"]).netloc.replace("www.", "")
             cards.append(
                 f'<article class="card" id="r-{r["id"]}" data-cats="{" ".join(r["categories"])}" data-search="{blob}">'
+                f'<div class="card-main">'
                 f'<div class="cardtop"><span class="cardnum">{ci + 1:02d}</span>'
                 f'<h3><a href="{esc(r["url"])}" target="_blank" rel="noopener">{esc(r["title"])}</a></h3></div>'
-                f'<div class="meta">{chips}</div>'
                 f'<p>{esc(r["brief"])}</p>'
-                f'<div class="attr">Shared by <span class="who">{esc(r["sharer"])}</span> · {esc(r["date"])}'
-                f' · <a class="plink" href="#r-{r["id"]}" title="Permalink">⧉</a></div>'
+                f'<a class="dlink" href="{esc(r["url"])}" target="_blank" rel="noopener">{esc(dom)} ↗</a>'
+                f'</div>'
+                f'<div class="card-side">'
+                f'<div class="meta">{chips}</div>'
+                f'<div class="side-row">Shared by <span class="who">{esc(r["sharer"])}</span></div>'
+                f'<div class="side-row">{esc(r["date"])} · <a class="plink" href="#r-{r["id"]}" title="Permalink">⧉</a></div>'
+                f'</div>'
                 f'</article>')
         badge = ' <span class="latest">Latest</span>' if wi == 0 else ''
         sections.append(
@@ -359,9 +366,19 @@ def main():
 <meta property="og:type" content="website">
 <meta property="og:image" content="{SITE_URL}/og-image.png">
 <link rel="alternate" type="application/rss+xml" title="Resource Library feed" href="feed.xml">
-<script>try{{var t=localStorage.getItem('rl-theme');if(t!=='light'&&t!=='dark'){{t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}}document.documentElement.dataset.theme=t;}}catch(e){{document.documentElement.dataset.theme='light';}}</script>
+<script>try{{var t=localStorage.getItem('rl-theme');if(t!=='light'&&t!=='dark'){{t='dark';}}document.documentElement.dataset.theme=t;}}catch(e){{document.documentElement.dataset.theme='dark';}}</script>
 <style>
 :root {{
+  color-scheme: dark;
+  --paper: #0a0c0b; --card: #121514; --ink: #ece9e0; --muted: #9aa39b;
+  --line: #232926; --accent: #7ed7b6; --accent-soft: rgba(126,215,182,.12); --warm: #d99a6c;
+  --cat-ai-tool: #6ad5ba; --cat-ai-tool-bg: rgba(106,215,186,.14);
+  --cat-dev-tool: #7ccf8a; --cat-dev-tool-bg: rgba(124,207,138,.13);
+  --cat-github: #b3a1e8; --cat-github-bg: rgba(179,161,232,.14);
+  --cat-web-app: #ef8fb8; --cat-web-app-bg: rgba(239,143,184,.13);
+  --cat-article: #e3b341; --cat-article-bg: rgba(227,179,65,.14);
+}}
+[data-theme="light"] {{
   color-scheme: light;
   --paper: #f4f6f1; --card: #fbfcf8; --ink: #16231f; --muted: #52615c;
   --line: #dde3d9; --accent: #006a55; --accent-soft: #dcebe3; --warm: #9b482a;
@@ -371,16 +388,6 @@ def main():
   --cat-web-app: #a23168; --cat-web-app-bg: #f4dfea;
   --cat-article: #8a5a00; --cat-article-bg: #f3e9cd;
 }}
-[data-theme="dark"] {{
-  color-scheme: dark;
-  --paper: #101714; --card: #18211c; --ink: #e9f0ea; --muted: #9db3a6;
-  --line: #27332c; --accent: #6ad5ba; --accent-soft: #1e352c; --warm: #d99a6c;
-  --cat-ai-tool: #6ad5ba; --cat-ai-tool-bg: rgba(106,213,186,.14);
-  --cat-dev-tool: #7ccf8a; --cat-dev-tool-bg: rgba(124,207,138,.13);
-  --cat-github: #b3a1e8; --cat-github-bg: rgba(179,161,232,.14);
-  --cat-web-app: #ef8fb8; --cat-web-app-bg: rgba(239,143,184,.13);
-  --cat-article: #e3b341; --cat-article-bg: rgba(227,179,65,.14);
-}}
 * {{ box-sizing: border-box; }}
 html {{ scroll-behavior: smooth; }}
 body {{
@@ -388,36 +395,37 @@ body {{
   background: var(--paper); color: var(--ink);
   margin: 0; line-height: 1.6;
 }}
-.wrap {{ max-width: 880px; margin: 0 auto; padding: 0 22px 90px; }}
-.hero {{ padding: 60px 0 6px; }}
+.wrap {{ max-width: 920px; margin: 0 auto; padding: 0 22px 90px; }}
+.hero {{ padding: 56px 0 6px; }}
 .hero .kicker {{
   font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600;
   color: var(--muted); margin-bottom: 14px;
 }}
+.hero-grid {{ display: grid; grid-template-columns: 1fr 260px; gap: 28px; align-items: start; }}
+@media (max-width: 700px) {{ .hero-grid {{ grid-template-columns: 1fr; }} }}
 .hero h1 {{
   font-family: Georgia, "Times New Roman", serif; font-weight: 600;
-  font-size: clamp(34px, 5.4vw, 50px); line-height: 1.12; margin: 0 0 14px;
+  font-size: clamp(34px, 5.4vw, 52px); line-height: 1.1; margin: 0 0 14px;
   letter-spacing: -0.01em;
 }}
-.hero p.lede {{ color: var(--muted); max-width: 60ch; margin: 0 0 26px; font-size: 16.5px; }}
-.stats {{ display: flex; gap: 30px; flex-wrap: wrap; margin-bottom: 6px; }}
-.stat b {{
-  display: block; font-size: 27px; font-weight: 600;
-  font-family: Georgia, "Times New Roman", serif; letter-spacing: -0.01em;
-}}
-.stat span {{ font-size: 13px; color: var(--muted); }}
+.hero p.lede {{ color: var(--muted); max-width: 60ch; margin: 0 0 6px; font-size: 16.5px; }}
 .review {{
-  border: 1px solid var(--line); border-radius: 14px; background: var(--card);
-  padding: 15px 20px; margin: 22px 0 4px; display: flex; gap: 28px; flex-wrap: wrap;
-  align-items: baseline;
+  border: 1px solid var(--line); border-radius: 12px; background: var(--card);
+  padding: 16px 20px;
 }}
 .review .rlab {{
-  font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.12em;
-  color: var(--muted); font-weight: 700;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--muted); font-weight: 700; display: block; margin-bottom: 10px;
 }}
-.review .rval {{ font-family: Georgia, "Times New Roman", serif; font-size: 17px; }}
-.review .rval small {{ font-size: 13px; color: var(--muted); font-family: inherit; }}
-.catchips {{ display: flex; gap: 8px; flex-wrap: wrap; margin: 14px 0 8px; }}
+.ritem {{ margin-bottom: 12px; }}
+.ritem:last-child {{ margin-bottom: 0; }}
+.review .rval {{
+  font-family: Georgia, "Times New Roman", serif; font-size: 23px; font-weight: 600;
+  display: block; line-height: 1.2;
+}}
+.review .rval small {{ font-size: 13px; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; font-weight: 400; }}
+.rsub {{ font-size: 12.5px; color: var(--muted); display: block; margin-top: 2px; }}
+.catchips {{ display: flex; gap: 8px; flex-wrap: wrap; margin: 18px 0 8px; }}
 .catchip {{
   font-size: 12.5px; color: var(--muted); border: 1px solid var(--line);
   border-radius: 999px; padding: 3px 12px; background: var(--card);
@@ -432,43 +440,50 @@ body {{
 }}
 .shortlist-h {{
   font-family: Georgia, "Times New Roman", serif; font-size: 30px; font-weight: 600;
-  margin: 44px 0 4px; letter-spacing: -0.01em;
+  margin: 40px 0 4px; letter-spacing: -0.01em; scroll-margin-top: 200px;
 }}
 .shortlist-sub {{ color: var(--muted); font-size: 14.5px; margin: 0 0 8px; }}
 .toolbar {{
   position: sticky; top: 0; z-index: 10;
-  background: color-mix(in srgb, var(--paper) 93%, transparent);
+  background: color-mix(in srgb, var(--paper) 94%, transparent);
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  padding: 14px 0; border-bottom: 1px solid var(--line);
+  padding: 14px 0 12px; border-bottom: 1px solid var(--line);
   margin: 26px -22px 0; padding-left: 22px; padding-right: 22px;
+}}
+.searchlabel {{
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--muted); font-weight: 700; display: block; margin-bottom: 6px;
 }}
 #search {{
   width: 100%; padding: 11px 16px; font-size: 15px; border: 1px solid var(--line);
-  border-radius: 999px; background: var(--card); color: var(--ink); margin-bottom: 10px;
+  border-radius: 10px; background: var(--card); color: var(--ink); margin-bottom: 10px;
 }}
 #search:focus {{ outline: 2px solid var(--accent); border-color: transparent; }}
+#search::placeholder {{ color: var(--muted); opacity: 0.8; }}
 .frow {{ display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }}
 .frow + .frow {{ margin-top: 6px; }}
-.flabel {{ font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-right: 6px; font-weight: 600; }}
+.flabel {{ font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-right: 6px; font-weight: 700; }}
 .fchip {{
   border: 1px solid var(--line); background: var(--card); color: var(--ink);
   border-radius: 999px; padding: 5px 14px; cursor: pointer; font-size: 13px;
   transition: border-color 0.15s ease, background 0.15s ease;
+  -webkit-tap-highlight-color: transparent; touch-action: manipulation;
 }}
 .fchip b {{ font-weight: 700; opacity: 0.55; }}
 .fchip:hover {{ border-color: var(--accent); }}
-.fchip.active {{ background: var(--accent); color: #fff; border-color: var(--accent); }}
-[data-theme="dark"] .fchip.active {{ color: #0c1512; }}
-.wnavs {{ display: flex; flex-wrap: wrap; gap: 8px; margin: 30px 0 8px; }}
+.fchip.active {{ background: var(--accent); color: #0a0c0b; border-color: var(--accent); font-weight: 600; }}
+[data-theme="light"] .fchip.active {{ color: #fff; }}
+.wnavs {{ display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 8px; }}
 .wnav {{
   text-decoration: none; color: var(--ink); font-size: 13px;
   border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px;
   background: var(--card); display: flex; gap: 8px; align-items: baseline;
+  -webkit-tap-highlight-color: transparent;
 }}
 .wnav span {{ color: var(--muted); font-size: 12px; }}
 .wnav:hover {{ border-color: var(--accent); }}
-.week {{ margin-top: 44px; scroll-margin-top: 160px; }}
-.weekhead {{ display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; flex-wrap: wrap; }}
+.week {{ margin-top: 40px; scroll-margin-top: 200px; }}
+.weekhead {{ display: flex; align-items: baseline; gap: 12px; margin-bottom: 4px; flex-wrap: wrap; }}
 .weeknum {{
   font-family: Georgia, "Times New Roman", serif; font-size: 15px; color: var(--accent);
   font-weight: 600; letter-spacing: 0.04em;
@@ -480,28 +495,45 @@ body {{
 .wcount {{ font-size: 13px; color: var(--muted); }}
 .card {{
   background: var(--card); border: 1px solid var(--line); border-radius: 12px;
-  padding: 18px 22px; margin: 10px 0; transition: border-color 0.16s ease, box-shadow 0.16s ease;
-  scroll-margin-top: 160px;
+  padding: 18px 22px; margin: 10px 0;
+  display: grid; grid-template-columns: 1fr 172px; gap: 20px;
+  transition: border-color 0.16s ease;
+  scroll-margin-top: 200px;
 }}
-.card:hover {{ border-color: var(--accent); box-shadow: 0 6px 22px rgba(22,35,31,0.10); }}
+@media (max-width: 640px) {{
+  .card {{ grid-template-columns: 1fr; gap: 12px; }}
+  .card-side {{ border-top: 1px solid var(--line); padding-top: 10px; }}
+}}
+.card:hover {{ border-color: var(--accent); }}
 .card:target {{ outline: 2px solid var(--accent); outline-offset: 2px; }}
 .cardtop {{ display: flex; gap: 14px; align-items: baseline; }}
 .cardnum {{
   font-family: Georgia, "Times New Roman", serif; font-size: 14px; color: var(--muted);
   font-weight: 600; min-width: 26px; text-align: right; flex-shrink: 0;
 }}
-.card h3 {{ margin: 0 0 8px; font-size: 17.5px; font-weight: 650; letter-spacing: -0.005em; flex: 1; }}
+.card h3 {{
+  margin: 0 0 8px; font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px; font-weight: 600; letter-spacing: -0.005em; flex: 1;
+}}
 .card h3 a {{ text-decoration: none; color: inherit; }}
 .card h3 a:hover {{ color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }}
-.card p {{ margin: 10px 0 12px; color: var(--ink); font-size: 15px; }}
+.card-main p {{ margin: 10px 0 12px; color: var(--ink); font-size: 15px; }}
+.dlink {{
+  display: inline-block; font-size: 13px; color: var(--accent); text-decoration: none;
+  border: 1px solid var(--line); border-radius: 8px; padding: 4px 12px;
+  margin: 2px 0 4px; word-break: break-all; -webkit-tap-highlight-color: transparent;
+}}
+.dlink:hover {{ border-color: var(--accent); }}
+.card-side {{ font-size: 12.5px; color: var(--muted); }}
+.card-side .meta {{ display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }}
+.side-row {{ margin-bottom: 4px; }}
+.side-row .who {{ font-weight: 600; color: var(--ink); }}
 .meta {{ display: flex; gap: 6px; flex-wrap: wrap; }}
 .chip {{
   font-size: 11.5px; font-weight: 600; border-radius: 999px; padding: 3px 11px;
-  background: var(--line); color: var(--muted);
+  background: var(--line); color: var(--muted); white-space: nowrap;
 }}
-.attr {{ font-size: 13px; color: var(--muted); }}
-.attr .who {{ font-weight: 600; color: var(--ink); }}
-.plink {{ color: var(--muted); text-decoration: none; opacity: 0; transition: opacity 0.15s; }}
+.plink {{ color: var(--muted); text-decoration: none; opacity: 0.45; transition: opacity 0.15s; }}
 .card:hover .plink {{ opacity: 1; }}
 .card.hidden, .week.hidden {{ display: none; }}
 .empty {{ color: var(--muted); font-style: italic; text-align: center; margin: 48px 0; }}
@@ -527,20 +559,21 @@ footer a {{ color: var(--accent); }}
 }}
 .theme-toggle:hover {{ border-color: var(--accent); }}
 .theme-toggle svg {{ width: 18px; height: 18px; }}
-.theme-toggle .icon-sun {{ display: none; }}
-.theme-toggle .icon-moon {{ display: block; }}
-[data-theme="dark"] .theme-toggle .icon-sun {{ display: block; }}
-[data-theme="dark"] .theme-toggle .icon-moon {{ display: none; }}
+.theme-toggle .icon-sun {{ display: block; }}
+.theme-toggle .icon-moon {{ display: none; }}
+[data-theme="light"] .theme-toggle .icon-sun {{ display: none; }}
+[data-theme="light"] .theme-toggle .icon-moon {{ display: block; }}
 /* ---- tabs ---- */
 .tabs {{ display: flex; gap: 6px; margin: 26px 0 4px; }}
 .tab {{
   border: 1px solid var(--line); background: var(--card); color: var(--muted);
-  border-radius: 999px; padding: 7px 22px; font-size: 14px; cursor: pointer; font-weight: 600;
+  border-radius: 999px; padding: 8px 24px; font-size: 14px; cursor: pointer; font-weight: 600;
   transition: border-color 0.15s ease, background 0.15s ease;
+  -webkit-tap-highlight-color: transparent; touch-action: manipulation;
 }}
 .tab:hover {{ border-color: var(--accent); color: var(--ink); }}
-.tab.active {{ background: var(--accent); color: #fff; border-color: var(--accent); }}
-[data-theme="dark"] .tab.active {{ color: #0c1512; }}
+.tab.active {{ background: var(--accent); color: #0a0c0b; border-color: var(--accent); }}
+[data-theme="light"] .tab.active {{ color: #fff; }}
 .lib-hidden {{ display: none !important; }}
 /* ---- category chips (theme-aware) ---- */
 .chip.c-ai-tool {{ color: var(--cat-ai-tool); background: var(--cat-ai-tool-bg); }}
@@ -549,7 +582,7 @@ footer a {{ color: var(--accent); }}
 .chip.c-web-app {{ color: var(--cat-web-app); background: var(--cat-web-app-bg); }}
 .chip.c-article {{ color: var(--cat-article); background: var(--cat-article-bg); }}
 /* ---- analytics ---- */
-#analytics {{ margin-top: 8px; }}
+#analytics {{ margin-top: 8px; scroll-margin-top: 24px; }}
 .an-h {{
   font-family: Georgia, "Times New Roman", serif; font-size: 26px; font-weight: 600;
   margin: 28px 0 4px;
@@ -600,21 +633,21 @@ footer a {{ color: var(--accent); }}
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
       </button>
     </div>
-    <h1>Useful things worth opening.</h1>
-    <p class="lede">Every genuinely useful link shared in the channel — AI tools, dev tools, websites, articles and repos — curated week by week, newest first. Collected read-only; each entry carries a two-sentence brief and its sharer.</p>
-    <div class="stats">
-      <div class="stat"><b>{total}</b><span>resources</span></div>
-      <div class="stat"><b>{len(ordered)}</b><span>weeks covered</span></div>
-      <div class="stat"><b>{len(cats)}</b><span>categories</span></div>
-    </div>
-    <div class="review">
-      <div class="ritem"><span class="rlab">Review windows</span><span class="rval">{range_str}</span></div>
-      <div class="ritem"><span class="rlab">Kept</span><span class="rval">{total} <small>resources</small></span></div>
-      <div class="ritem"><span class="rlab">Weeks</span><span class="rval">{len(ordered)}</span></div>
+    <div class="hero-grid">
+      <div>
+        <h1>Useful things worth opening.</h1>
+        <p class="lede">Every genuinely useful link shared in the channel — AI tools, dev tools, websites, articles and repos — curated week by week, newest first. Collected read-only; each entry carries a two-sentence brief and its sharer.</p>
+      </div>
+      <aside class="review" aria-label="Review summary">
+        <span class="rlab">Review window</span>
+        <div class="ritem"><span class="rval">{range_str}</span></div>
+        <div class="ritem"><span class="rval">{total} <small>resources kept</small></span><span class="rsub">across {len(ordered)} weekly drops</span></div>
+      </aside>
     </div>
     <div class="catchips">{catchips}</div>
   </header>
   <div class="toolbar">
+    <label class="searchlabel" for="search">Search the library</label>
     <input id="search" type="search" placeholder="Search {total} resources…" autocomplete="off">
     <div class="frow"><span class="flabel">Category</span>{fchips}</div>
     <div class="frow"><span class="flabel">Week</span>{wchips}</div>
@@ -624,7 +657,7 @@ footer a {{ color: var(--accent); }}
     <button class="tab" data-tab="analytics" role="tab" aria-selected="false">Analytics</button>
   </div>
   <nav class="wnavs">{"".join(nav)}</nav>
-  <h2 class="shortlist-h">The shortlist</h2>
+  <h2 class="shortlist-h" id="results">The shortlist</h2>
   <p class="shortlist-sub">Every kept resource, newest week first. Search and the filters above narrow it down.</p>
   <main id="main">
 {"".join(sections)}
@@ -676,20 +709,32 @@ footer a {{ color: var(--accent); }}
 </div>
 <button class="top" id="top" aria-label="Back to top">↑</button>
 <script>
+// theme: black is the default; the toggle offers the light editorial theme, choice remembered
+const tt = document.getElementById('themeToggle');
+function setTheme(t) {{
+  document.documentElement.dataset.theme = t;
+  try {{ localStorage.setItem('rl-theme', t); }} catch(e) {{}}
+}}
+if (tt) tt.addEventListener('click', () => {{
+  const cur = document.documentElement.dataset.theme || 'dark';
+  setTheme(cur === 'dark' ? 'light' : 'dark');
+}});
+// library filtering
 const q = document.getElementById('search');
 const cchips = [...document.querySelectorAll('.fchip[data-cat]')];
 const wchips = [...document.querySelectorAll('.fchip[data-week]')];
 const cards = [...document.querySelectorAll('.card')];
 const weeks = [...document.querySelectorAll('.week')];
 const empty = document.getElementById('empty');
-const top = document.getElementById('top');
+const resultsH = document.getElementById('results');
 let activeCat = null, activeWeek = null;
 function apply() {{
   const term = q.value.trim().toLowerCase();
   let visible = 0;
   for (const c of cards) {{
     const okCat = !activeCat || c.dataset.cats.split(' ').includes(activeCat);
-    const okWeek = !activeWeek || c.closest('.week').dataset.week === activeWeek;
+    const wsec = c.closest('.week');
+    const okWeek = !activeWeek || (wsec && wsec.dataset.week === activeWeek);
     const okQ = !term || c.dataset.search.includes(term);
     const show = okCat && okWeek && okQ;
     c.classList.toggle('hidden', !show);
@@ -699,52 +744,65 @@ function apply() {{
     const any = [...w.querySelectorAll('.card')].some(c => !c.classList.contains('hidden'));
     w.classList.toggle('hidden', !any);
   }}
-  empty.style.display = visible ? 'none' : 'block';
+  if (empty) empty.style.display = visible ? 'none' : 'block';
+  return visible;
 }}
-q.addEventListener('input', apply);
+function goResults() {{
+  if (resultsH) resultsH.scrollIntoView({{behavior: 'smooth', block: 'start'}});
+}}
+if (q) {{
+  q.addEventListener('input', apply);
+  q.addEventListener('keydown', (e) => {{ if (e.key === 'Enter') {{ apply(); goResults(); }} }});
+}}
 for (const ch of cchips) ch.addEventListener('click', () => {{
   const cat = ch.dataset.cat === 'all' ? null : ch.dataset.cat;
   activeCat = activeCat === cat ? null : cat;
   cchips.forEach(c => c.classList.toggle('active',
     c.dataset.cat === 'all' ? activeCat === null : c.dataset.cat === activeCat));
   apply();
+  goResults();
 }});
 for (const ch of wchips) ch.addEventListener('click', () => {{
   activeWeek = activeWeek === ch.dataset.week ? null : ch.dataset.week;
   wchips.forEach(c => c.classList.toggle('active', c.dataset.week === activeWeek));
   apply();
-}});
-addEventListener('scroll', () => top.classList.toggle('show', scrollY > 600));
-top.addEventListener('click', () => scrollTo({{top: 0, behavior: 'smooth'}}));
-// theme: light editorial is the default; dark follows the OS unless overridden, choice remembered
-const tt = document.getElementById('themeToggle');
-function setTheme(t) {{
-  document.documentElement.dataset.theme = t;
-  try {{ localStorage.setItem('rl-theme', t); }} catch(e) {{}}
-}}
-tt.addEventListener('click', () => {{
-  const cur = document.documentElement.dataset.theme || 'light';
-  setTheme(cur === 'light' ? 'dark' : 'light');
+  goResults();
 }});
 // tabs: library / analytics
 const tabs = [...document.querySelectorAll('.tab')];
-const libEls = [document.querySelector('.toolbar'), document.querySelector('.wnavs'),
-                document.getElementById('main'), document.getElementById('empty')];
 const an = document.getElementById('analytics');
-for (const t of tabs) t.addEventListener('click', () => {{
-  tabs.forEach(x => {{ x.classList.toggle('active', x === t); x.setAttribute('aria-selected', x === t); }});
-  const showAn = t.dataset.tab === 'analytics';
-  an.hidden = !showAn;
-  libEls.forEach(e => e && e.classList.toggle('lib-hidden', showAn));
-  if (showAn) scrollTo({{top: 0, behavior: 'smooth'}});
-}});
+const libSels = ['.toolbar', '.wnavs', '#main', '#empty', '.shortlist-h', '.shortlist-sub'];
+function showTab(name) {{
+  const showAn = name === 'analytics';
+  tabs.forEach(x => {{
+    const on = x.dataset.tab === name;
+    x.classList.toggle('active', on);
+    x.setAttribute('aria-selected', on ? 'true' : 'false');
+  }});
+  if (an) an.hidden = !showAn;
+  libSels.forEach(s => {{
+    const e = document.querySelector(s);
+    if (e) e.classList.toggle('lib-hidden', showAn);
+  }});
+  const target = showAn ? an : resultsH;
+  if (target) target.scrollIntoView({{behavior: 'smooth', block: 'start'}});
+  else scrollTo({{top: 0, behavior: 'smooth'}});
+}}
+for (const t of tabs) t.addEventListener('click', () => showTab(t.dataset.tab));
+// back to top
+const topBtn = document.getElementById('top');
+if (topBtn) {{
+  addEventListener('scroll', () => topBtn.classList.toggle('show', scrollY > 600), {{passive: true}});
+  topBtn.addEventListener('click', () => scrollTo({{top: 0, behavior: 'smooth'}}));
+}}
 // analytics: weekly / fortnightly trend
 const fsw = [...document.querySelectorAll('.fswitch')];
 for (const b of fsw) b.addEventListener('click', () => {{
   fsw.forEach(x => x.classList.toggle('active', x === b));
   const fort = b.dataset.range === 'fort';
-  document.getElementById('trendWeek').hidden = fort;
-  document.getElementById('trendFort').hidden = !fort;
+  const tw = document.getElementById('trendWeek'), tf = document.getElementById('trendFort');
+  if (tw) tw.hidden = fort;
+  if (tf) tf.hidden = !fort;
 }});
 </script>
 </body>

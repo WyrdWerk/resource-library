@@ -2,13 +2,13 @@
 
 A curated, browsable archive of developer resources shared in the [CheapInfra](https://cheapinfra.com) Discord server's `#share-tech` channel — AI tools, dev tools, websites, articles, and GitHub repos, collected newest-first, week by week.
 
-**Browse it:** the site is `index.html` — open it anywhere, or deploy to any static host (built for Cloudflare Pages; no build step, no dependencies). It opens in a light editorial theme (paper background, serif headlines, green accent — the dossier look) with a dark-mode toggle in the header that follows the OS preference unless overridden, and has two tabs: **Library** (search, category + week filters, numbered weekly sections) and **Analytics** (weekly volume, top sharers, category mix over time with weekly/fortnightly views, and a sharer spotlight — all rendered as dependency-free inline SVG).
+**Browse it:** the site is `index.html` — open it anywhere, or deploy to any static host (built for Cloudflare Pages; no build step, no dependencies). It opens in the dossier's black editorial theme (near-black background, serif headlines, mint-green accent) with a light-mode toggle in the header (your choice is remembered), and has two tabs: **Library** (search, category + week filters, numbered weekly sections) and **Analytics** (weekly volume, top sharers, category mix over time with weekly/fortnightly views, and a sharer spotlight — all rendered as dependency-free inline SVG).
 
 ## What's in here
 
 | Path | What it is | Maintained by |
 |------|-----------|---------------|
-| `index.html` | The browsable site: search, category + week filters, numbered weekly sections, light/dark theme toggle, Analytics tab | Generated — run `scripts/build.py` |
+| `index.html` | The browsable site: search, category + week filters, numbered weekly sections, dark/light theme toggle (black default), Analytics tab | Generated — run `scripts/build.py` |
 | `data.json` | The full dataset: title, URL, sharer, share date, categories, brief, week, stable `id` | Generated — run `scripts/build.py` |
 | `weeks/` | Per-week curated lists in Markdown, with briefs | Generated — run `scripts/build.py` |
 | `feed.xml` | RSS feed of all resources, newest first | Generated — run `scripts/build.py` |
