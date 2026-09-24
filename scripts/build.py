@@ -21,8 +21,8 @@ ROOT = Path(__file__).resolve().parent.parent
 NOTES_DIR = ROOT / "notes"
 WEEKS_DIR = ROOT / "weeks"
 
-# TODO: update to the real deployed URL once Cloudflare Pages is configured.
-SITE_URL = "https://resource-library.pages.dev"
+# Canonical URL of the deployed site (custom domain on Cloudflare Pages).
+SITE_URL = "https://cheapinfra-resources.wyrdwerk.com"
 
 MONTHS = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
           "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
