@@ -118,7 +118,7 @@ def make_og_image(total):
     """Generate og-image.png (1200x630 social card) with the current count."""
     from PIL import Image, ImageDraw, ImageFont
     W, H = 1200, 630
-    img = Image.new("RGB", (W, H), "#050505")
+    img = Image.new("RGB", (W, H), "#f4f6f1")
     d = ImageDraw.Draw(img)
     try:
         serif = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf", 104)
@@ -126,12 +126,12 @@ def make_og_image(total):
         kick = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 30)
     except OSError:
         serif = sans = kick = ImageFont.load_default()
-    d.rectangle([0, 0, W, 14], fill="#4f8cff")
-    d.text((80, 90), "CHEAPINFRA  ·  #SHARE-TECH", font=kick, fill="#9c9ca6")
-    d.text((76, 170), "The Resource", font=serif, fill="#f4f4f5")
-    d.text((76, 290), "Library", font=serif, fill="#f4f4f5")
-    d.text((80, 450), f"{total} curated developer resources", font=sans, fill="#d4d4d8")
-    d.text((80, 500), "AI tools, dev tools, repos & articles", font=sans, fill="#9c9ca6")
+    d.rectangle([0, 0, W, 14], fill="#006a55")
+    d.text((80, 90), "CURATED FROM CHEAPINFRA  ·  #SHARE-TECH", font=kick, fill="#52615c")
+    d.text((76, 170), "Useful things", font=serif, fill="#16231f")
+    d.text((76, 290), "worth opening.", font=serif, fill="#16231f")
+    d.text((80, 450), f"{total} curated developer resources", font=sans, fill="#16231f")
+    d.text((80, 500), "AI tools, dev tools, repos & articles", font=sans, fill="#52615c")
     img.save(ROOT / "og-image.png")
 
 
@@ -209,6 +209,11 @@ def main():
     week_info = {label: parse_week(label) for label in weeks}
     ordered = sorted(weeks, key=lambda l: week_info[l]["end"], reverse=True)
 
+    MON_NAME = {v: k for k, v in MONTHS.items()}
+    _smin = min(week_info[l]["start"] for l in ordered)
+    _smax = max(week_info[l]["end"] for l in ordered)
+    range_str = f"{_smin[2]} {MON_NAME[_smin[1]]} – {_smax[2]} {MON_NAME[_smax[1]]} {_smax[0]}"
+
     seen = set()
     for r in all_res:
         r["id"] = slugify(r["title"], seen)
@@ -252,36 +257,42 @@ def main():
     (ROOT / "CHANGELOG.md").write_text("\n".join(clog))
 
     # ---- index.html ----
+    CAT_LABELS = {"ai-tool": "AI tools", "dev-tool": "Dev tools", "github": "GitHub repos",
+                  "web-app": "Web apps", "article": "Articles"}
     sections, nav = [], []
     for wi, label in enumerate(ordered):
         info = week_info[label]
         res = weeks[label]
+        wnum = f"{wi + 1:02d}"
         latest = ' <span class="newdot">new</span>' if wi == 0 else ''
         nav.append(f'<a class="wnav" href="#{info["slug"]}">{esc(label)}{latest}<span>{len(res)}</span></a>')
         cards = []
-        for r in res:
+        for ci, r in enumerate(res):
             chips = "".join(
-                f'<span class="chip c-{c}">{esc(c)}</span>'
+                f'<span class="chip c-{c}">{esc(CAT_LABELS.get(c, c))}</span>'
                 for c in r["categories"])
             blob = esc((r["title"] + " " + r["brief"] + " " + r["sharer"]).lower())
             cards.append(
                 f'<article class="card" id="r-{r["id"]}" data-cats="{" ".join(r["categories"])}" data-search="{blob}">'
-                f'<h3><a href="{esc(r["url"])}" target="_blank" rel="noopener">{esc(r["title"])}</a></h3>'
+                f'<div class="cardtop"><span class="cardnum">{ci + 1:02d}</span>'
+                f'<h3><a href="{esc(r["url"])}" target="_blank" rel="noopener">{esc(r["title"])}</a></h3></div>'
                 f'<div class="meta">{chips}</div>'
                 f'<p>{esc(r["brief"])}</p>'
-                f'<div class="attr"><span class="who">{esc(r["sharer"])}</span> · {esc(r["date"])}'
+                f'<div class="attr">Shared by <span class="who">{esc(r["sharer"])}</span> · {esc(r["date"])}'
                 f' · <a class="plink" href="#r-{r["id"]}" title="Permalink">⧉</a></div>'
                 f'</article>')
         badge = ' <span class="latest">Latest</span>' if wi == 0 else ''
         sections.append(
             f'<section class="week" id="{info["slug"]}" data-week="{esc(label)}">'
-            f'<div class="weekhead"><h2>Week of {esc(label)}</h2>{badge}'
+            f'<div class="weekhead"><span class="weeknum">{wnum}</span><h2>Week of {esc(label)}</h2>{badge}'
             f'<span class="wcount">{len(res)} resources</span></div>'
             + "\n".join(cards) + '</section>')
 
-    fchips = "".join(f'<button class="fchip" data-cat="{c}">{c} <b>{cat_counts[c]}</b></button>' for c in cats)
+    fchips = (f'<button class="fchip active" data-cat="all">All <b>{total}</b></button>' +
+              "".join(f'<button class="fchip" data-cat="{c}">{CAT_LABELS.get(c, c)} <b>{cat_counts[c]}</b></button>'
+                      for c in cats))
     wchips = "".join(f'<button class="fchip wfilter" data-week="{esc(l)}">{esc(l)}</button>' for l in ordered)
-    catchips = "".join(f'<span class="catchip">{c} × {cat_counts[c]}</span>' for c in cats)
+    catchips = "".join(f'<span class="catchip">{CAT_LABELS.get(c, c)} × {cat_counts[c]}</span>' for c in cats)
 
     # ---- analytics data ----
     from collections import Counter
@@ -317,22 +328,24 @@ def main():
     trend_week_svg = stacked_chart(arows, cats)
     trend_fort_svg = stacked_chart(frows, cats)
     sharer_svg = hbar_chart([(s, n, "bar", "") for s, n in top_sharers])
-    mix_svg = hbar_chart([(c, cat_counts[c], f"seg-{c}", f" · {cat_counts[c] / total:.0%}")
+    mix_svg = hbar_chart([(CAT_LABELS.get(c, c), cat_counts[c], f"seg-{c}", f" · {cat_counts[c] / total:.0%}")
                           for c in cats])
-    legend = "".join(f'<span class="leg"><span class="seg-sw seg-{c}"></span>{c}</span>'
+    legend = "".join(f'<span class="leg"><span class="seg-sw seg-{c}"></span>{CAT_LABELS.get(c, c)}</span>'
                      for c in cats)
     an_stats = (
         f'<div class="an-stat"><b>{total}</b><span>resources tracked</span></div>'
         f'<div class="an-stat"><b>{esc(busiest["short"])}</b><span>busiest week · {busiest["total"]} resources</span></div>'
-        f'<div class="an-stat"><b>{esc(top_cat)}</b><span>top category · {cat_counts[top_cat]}</span></div>'
+        f'<div class="an-stat"><b>{esc(CAT_LABELS.get(top_cat, top_cat))}</b><span>top category · {cat_counts[top_cat]}</span></div>'
         f'<div class="an-stat"><b>{esc(top_name)}</b><span>top sharer · {top_n} shared</span></div>'
     )
     spotlight = (
         f'<p class="spot-name">{esc(top_name)} <span>· {top_n} resources shared</span></p>'
-        + hbar_chart([(c, sp_counts[c], f"seg-{c}", "") for c in cats if sp_counts[c]])
+        + hbar_chart([(CAT_LABELS.get(c, c), sp_counts[c], f"seg-{c}", "") for c in cats if sp_counts[c]])
     )
     desc = (f"A curated, browsable archive of {total} developer resources shared in the "
             f"CheapInfra Discord's #share-tech channel, newest first.")
+    from datetime import datetime
+    today_str = datetime.now().strftime("%-d %B %Y")
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -346,27 +359,27 @@ def main():
 <meta property="og:type" content="website">
 <meta property="og:image" content="{SITE_URL}/og-image.png">
 <link rel="alternate" type="application/rss+xml" title="Resource Library feed" href="feed.xml">
-<script>try{{var t=localStorage.getItem('rl-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}}catch(e){{}}</script>
+<script>try{{var t=localStorage.getItem('rl-theme');if(t!=='light'&&t!=='dark'){{t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}}document.documentElement.dataset.theme=t;}}catch(e){{document.documentElement.dataset.theme='light';}}</script>
 <style>
 :root {{
-  color-scheme: dark;
-  --paper: #050505; --card: #0e0e11; --ink: #f4f4f5; --muted: #9c9ca6;
-  --line: #232329; --accent: #4f8cff; --accent-soft: #12283f;
-  --cat-ai-tool: #58a6ff; --cat-ai-tool-bg: rgba(88,166,255,.13);
-  --cat-dev-tool: #3fb950; --cat-dev-tool-bg: rgba(63,185,80,.13);
-  --cat-github: #a371f7; --cat-github-bg: rgba(163,113,247,.15);
-  --cat-web-app: #f778ba; --cat-web-app-bg: rgba(247,120,186,.13);
-  --cat-article: #e3b341; --cat-article-bg: rgba(227,179,65,.14);
-}}
-[data-theme="light"] {{
   color-scheme: light;
-  --paper: #ffffff; --card: #f5f5f7; --ink: #131316; --muted: #63636e;
-  --line: #e4e4ea; --accent: #1f6feb; --accent-soft: #e2ecfd;
-  --cat-ai-tool: #1f6feb; --cat-ai-tool-bg: #dbeafe;
-  --cat-dev-tool: #1a7f37; --cat-dev-tool-bg: #d9f2e2;
-  --cat-github: #6e40c9; --cat-github-bg: #e9e2fb;
-  --cat-web-app: #c2187b; --cat-web-app-bg: #fbdcec;
-  --cat-article: #9a6700; --cat-article-bg: #fbeecb;
+  --paper: #f4f6f1; --card: #fbfcf8; --ink: #16231f; --muted: #52615c;
+  --line: #dde3d9; --accent: #006a55; --accent-soft: #dcebe3; --warm: #9b482a;
+  --cat-ai-tool: #0b6e4f; --cat-ai-tool-bg: #dcebe3;
+  --cat-dev-tool: #2f7a3d; --cat-dev-tool-bg: #e2ecdc;
+  --cat-github: #5b4a9e; --cat-github-bg: #e7e3f4;
+  --cat-web-app: #a23168; --cat-web-app-bg: #f4dfea;
+  --cat-article: #8a5a00; --cat-article-bg: #f3e9cd;
+}}
+[data-theme="dark"] {{
+  color-scheme: dark;
+  --paper: #101714; --card: #18211c; --ink: #e9f0ea; --muted: #9db3a6;
+  --line: #27332c; --accent: #6ad5ba; --accent-soft: #1e352c; --warm: #d99a6c;
+  --cat-ai-tool: #6ad5ba; --cat-ai-tool-bg: rgba(106,213,186,.14);
+  --cat-dev-tool: #7ccf8a; --cat-dev-tool-bg: rgba(124,207,138,.13);
+  --cat-github: #b3a1e8; --cat-github-bg: rgba(179,161,232,.14);
+  --cat-web-app: #ef8fb8; --cat-web-app-bg: rgba(239,143,184,.13);
+  --cat-article: #e3b341; --cat-article-bg: rgba(227,179,65,.14);
 }}
 * {{ box-sizing: border-box; }}
 html {{ scroll-behavior: smooth; }}
@@ -375,21 +388,35 @@ body {{
   background: var(--paper); color: var(--ink);
   margin: 0; line-height: 1.6;
 }}
-.wrap {{ max-width: 860px; margin: 0 auto; padding: 0 20px 80px; }}
-.hero {{ padding: 56px 0 8px; }}
+.wrap {{ max-width: 880px; margin: 0 auto; padding: 0 22px 90px; }}
+.hero {{ padding: 60px 0 6px; }}
 .hero .kicker {{
-  font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--muted); margin-bottom: 12px;
+  font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600;
+  color: var(--muted); margin-bottom: 14px;
 }}
 .hero h1 {{
   font-family: Georgia, "Times New Roman", serif; font-weight: 600;
-  font-size: clamp(32px, 5vw, 46px); line-height: 1.15; margin: 0 0 12px;
+  font-size: clamp(34px, 5.4vw, 50px); line-height: 1.12; margin: 0 0 14px;
   letter-spacing: -0.01em;
 }}
-.hero p {{ color: var(--muted); max-width: 62ch; margin: 0 0 24px; }}
-.stats {{ display: flex; gap: 28px; flex-wrap: wrap; margin-bottom: 8px; }}
-.stat b {{ display: block; font-size: 26px; font-weight: 650; }}
+.hero p.lede {{ color: var(--muted); max-width: 60ch; margin: 0 0 26px; font-size: 16.5px; }}
+.stats {{ display: flex; gap: 30px; flex-wrap: wrap; margin-bottom: 6px; }}
+.stat b {{
+  display: block; font-size: 27px; font-weight: 600;
+  font-family: Georgia, "Times New Roman", serif; letter-spacing: -0.01em;
+}}
 .stat span {{ font-size: 13px; color: var(--muted); }}
+.review {{
+  border: 1px solid var(--line); border-radius: 14px; background: var(--card);
+  padding: 15px 20px; margin: 22px 0 4px; display: flex; gap: 28px; flex-wrap: wrap;
+  align-items: baseline;
+}}
+.review .rlab {{
+  font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--muted); font-weight: 700;
+}}
+.review .rval {{ font-family: Georgia, "Times New Roman", serif; font-size: 17px; }}
+.review .rval small {{ font-size: 13px; color: var(--muted); font-family: inherit; }}
 .catchips {{ display: flex; gap: 8px; flex-wrap: wrap; margin: 14px 0 8px; }}
 .catchip {{
   font-size: 12.5px; color: var(--muted); border: 1px solid var(--line);
@@ -403,30 +430,36 @@ body {{
   font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase;
   letter-spacing: 0.06em;
 }}
+.shortlist-h {{
+  font-family: Georgia, "Times New Roman", serif; font-size: 30px; font-weight: 600;
+  margin: 44px 0 4px; letter-spacing: -0.01em;
+}}
+.shortlist-sub {{ color: var(--muted); font-size: 14.5px; margin: 0 0 8px; }}
 .toolbar {{
   position: sticky; top: 0; z-index: 10;
-  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  background: color-mix(in srgb, var(--paper) 93%, transparent);
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
   padding: 14px 0; border-bottom: 1px solid var(--line);
-  margin: 24px -20px 0; padding-left: 20px; padding-right: 20px;
+  margin: 26px -22px 0; padding-left: 22px; padding-right: 22px;
 }}
 #search {{
-  width: 100%; padding: 11px 14px; font-size: 15px; border: 1px solid var(--line);
-  border-radius: 10px; background: var(--card); color: var(--ink); margin-bottom: 10px;
+  width: 100%; padding: 11px 16px; font-size: 15px; border: 1px solid var(--line);
+  border-radius: 999px; background: var(--card); color: var(--ink); margin-bottom: 10px;
 }}
 #search:focus {{ outline: 2px solid var(--accent); border-color: transparent; }}
 .frow {{ display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }}
 .frow + .frow {{ margin-top: 6px; }}
-.flabel {{ font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-right: 4px; }}
+.flabel {{ font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-right: 6px; font-weight: 600; }}
 .fchip {{
   border: 1px solid var(--line); background: var(--card); color: var(--ink);
-  border-radius: 999px; padding: 4px 13px; cursor: pointer; font-size: 13px;
-  transition: all 0.15s ease;
+  border-radius: 999px; padding: 5px 14px; cursor: pointer; font-size: 13px;
+  transition: border-color 0.15s ease, background 0.15s ease;
 }}
 .fchip b {{ font-weight: 700; opacity: 0.55; }}
 .fchip:hover {{ border-color: var(--accent); }}
-.fchip.active {{ background: var(--ink); color: var(--paper); border-color: var(--ink); }}
-.wnavs {{ display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 8px; }}
+.fchip.active {{ background: var(--accent); color: #fff; border-color: var(--accent); }}
+[data-theme="dark"] .fchip.active {{ color: #0c1512; }}
+.wnavs {{ display: flex; flex-wrap: wrap; gap: 8px; margin: 30px 0 8px; }}
 .wnav {{
   text-decoration: none; color: var(--ink); font-size: 13px;
   border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px;
@@ -434,23 +467,33 @@ body {{
 }}
 .wnav span {{ color: var(--muted); font-size: 12px; }}
 .wnav:hover {{ border-color: var(--accent); }}
-.week {{ margin-top: 40px; scroll-margin-top: 150px; }}
-.weekhead {{ display: flex; align-items: baseline; gap: 12px; margin-bottom: 4px; }}
+.week {{ margin-top: 44px; scroll-margin-top: 160px; }}
+.weekhead {{ display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; flex-wrap: wrap; }}
+.weeknum {{
+  font-family: Georgia, "Times New Roman", serif; font-size: 15px; color: var(--accent);
+  font-weight: 600; letter-spacing: 0.04em;
+}}
 .weekhead h2 {{
-  font-family: Georgia, "Times New Roman", serif; font-size: 24px; font-weight: 600; margin: 0;
+  font-family: Georgia, "Times New Roman", serif; font-size: 25px; font-weight: 600; margin: 0;
+  letter-spacing: -0.01em;
 }}
 .wcount {{ font-size: 13px; color: var(--muted); }}
 .card {{
-  background: var(--card); border: 1px solid var(--line); border-radius: 14px;
-  padding: 18px 20px; margin: 12px 0; transition: box-shadow 0.18s ease, transform 0.18s ease;
-  scroll-margin-top: 150px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 22px; margin: 10px 0; transition: border-color 0.16s ease, box-shadow 0.16s ease;
+  scroll-margin-top: 160px;
 }}
-.card:hover {{ box-shadow: 0 8px 28px rgba(0,0,0,0.35); transform: translateY(-1px); border-color: var(--accent); }}
+.card:hover {{ border-color: var(--accent); box-shadow: 0 6px 22px rgba(22,35,31,0.10); }}
 .card:target {{ outline: 2px solid var(--accent); outline-offset: 2px; }}
-.card h3 {{ margin: 0 0 8px; font-size: 17px; font-weight: 650; letter-spacing: -0.005em; }}
+.cardtop {{ display: flex; gap: 14px; align-items: baseline; }}
+.cardnum {{
+  font-family: Georgia, "Times New Roman", serif; font-size: 14px; color: var(--muted);
+  font-weight: 600; min-width: 26px; text-align: right; flex-shrink: 0;
+}}
+.card h3 {{ margin: 0 0 8px; font-size: 17.5px; font-weight: 650; letter-spacing: -0.005em; flex: 1; }}
 .card h3 a {{ text-decoration: none; color: inherit; }}
-.card h3 a:hover {{ color: var(--accent); }}
-.card p {{ margin: 10px 0 12px; color: var(--ink); }}
+.card h3 a:hover {{ color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }}
+.card p {{ margin: 10px 0 12px; color: var(--ink); font-size: 15px; }}
 .meta {{ display: flex; gap: 6px; flex-wrap: wrap; }}
 .chip {{
   font-size: 11.5px; font-weight: 600; border-radius: 999px; padding: 3px 11px;
@@ -463,9 +506,10 @@ body {{
 .card.hidden, .week.hidden {{ display: none; }}
 .empty {{ color: var(--muted); font-style: italic; text-align: center; margin: 48px 0; }}
 footer {{
-  margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line);
+  margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line);
   font-size: 13px; color: var(--muted);
 }}
+footer .fsrc {{ font-weight: 600; color: var(--ink); }}
 footer a {{ color: var(--accent); }}
 .top {{
   position: fixed; right: 20px; bottom: 20px; width: 42px; height: 42px; border-radius: 50%;
@@ -483,18 +527,20 @@ footer a {{ color: var(--accent); }}
 }}
 .theme-toggle:hover {{ border-color: var(--accent); }}
 .theme-toggle svg {{ width: 18px; height: 18px; }}
-.theme-toggle .icon-moon {{ display: none; }}
-[data-theme="light"] .theme-toggle .icon-sun {{ display: none; }}
-[data-theme="light"] .theme-toggle .icon-moon {{ display: block; }}
+.theme-toggle .icon-sun {{ display: none; }}
+.theme-toggle .icon-moon {{ display: block; }}
+[data-theme="dark"] .theme-toggle .icon-sun {{ display: block; }}
+[data-theme="dark"] .theme-toggle .icon-moon {{ display: none; }}
 /* ---- tabs ---- */
 .tabs {{ display: flex; gap: 6px; margin: 26px 0 4px; }}
 .tab {{
   border: 1px solid var(--line); background: var(--card); color: var(--muted);
   border-radius: 999px; padding: 7px 22px; font-size: 14px; cursor: pointer; font-weight: 600;
-  transition: all 0.15s ease;
+  transition: border-color 0.15s ease, background 0.15s ease;
 }}
 .tab:hover {{ border-color: var(--accent); color: var(--ink); }}
-.tab.active {{ background: var(--ink); color: var(--paper); border-color: var(--ink); }}
+.tab.active {{ background: var(--accent); color: #fff; border-color: var(--accent); }}
+[data-theme="dark"] .tab.active {{ color: #0c1512; }}
 .lib-hidden {{ display: none !important; }}
 /* ---- category chips (theme-aware) ---- */
 .chip.c-ai-tool {{ color: var(--cat-ai-tool); background: var(--cat-ai-tool-bg); }}
@@ -514,7 +560,8 @@ footer a {{ color: var(--accent); }}
   background: var(--card); border: 1px solid var(--line); border-radius: 12px;
   padding: 12px 18px; min-width: 140px;
 }}
-.an-stat b {{ display: block; font-size: 20px; font-weight: 700; letter-spacing: -0.01em; }}
+.an-stat b {{ display: block; font-size: 21px; font-weight: 600; font-family: Georgia, "Times New Roman", serif; letter-spacing: -0.01em; }}
+.ritem {{ display: flex; flex-direction: column; gap: 2px; }}
 .an-stat span {{ font-size: 12px; color: var(--muted); }}
 .an-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }}
 @media (max-width: 640px) {{ .an-grid {{ grid-template-columns: 1fr; }} }}
@@ -547,18 +594,23 @@ footer a {{ color: var(--accent); }}
 <div class="wrap">
   <header class="hero">
     <div class="topbar">
-      <div class="kicker">CheapInfra · #share-tech</div>
+      <div class="kicker">Curated from CheapInfra · #share-tech</div>
       <button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
       </button>
     </div>
-    <h1>The Resource Library</h1>
-    <p>Every genuinely useful link shared in the channel — AI tools, dev tools, websites, articles and repos — curated week by week, newest first. Collected read-only; each entry carries a two-sentence brief and its sharer.</p>
+    <h1>Useful things worth opening.</h1>
+    <p class="lede">Every genuinely useful link shared in the channel — AI tools, dev tools, websites, articles and repos — curated week by week, newest first. Collected read-only; each entry carries a two-sentence brief and its sharer.</p>
     <div class="stats">
       <div class="stat"><b>{total}</b><span>resources</span></div>
       <div class="stat"><b>{len(ordered)}</b><span>weeks covered</span></div>
       <div class="stat"><b>{len(cats)}</b><span>categories</span></div>
+    </div>
+    <div class="review">
+      <div class="ritem"><span class="rlab">Review windows</span><span class="rval">{range_str}</span></div>
+      <div class="ritem"><span class="rlab">Kept</span><span class="rval">{total} <small>resources</small></span></div>
+      <div class="ritem"><span class="rlab">Weeks</span><span class="rval">{len(ordered)}</span></div>
     </div>
     <div class="catchips">{catchips}</div>
   </header>
@@ -572,6 +624,8 @@ footer a {{ color: var(--accent); }}
     <button class="tab" data-tab="analytics" role="tab" aria-selected="false">Analytics</button>
   </div>
   <nav class="wnavs">{"".join(nav)}</nav>
+  <h2 class="shortlist-h">The shortlist</h2>
+  <p class="shortlist-sub">Every kept resource, newest week first. Search and the filters above narrow it down.</p>
   <main id="main">
 {"".join(sections)}
   </main>
@@ -615,7 +669,9 @@ footer a {{ color: var(--accent); }}
   </section>
   <p class="empty" id="empty" style="display:none">Nothing matches — try a different search.</p>
   <footer>
-    Built from read-only collection of CheapInfra's #share-tech channel. Briefs are editorial summaries (~2 sentences); claims originating from announcement posts are unverified unless independently checked. Data: <a href="data.json">data.json</a> · Weekly lists: <a href="weeks/">weeks/</a> · Raw logs: <a href="raw/">raw/</a> · <a href="CHANGELOG.md">Changelog</a>
+    <span class="fsrc">Source: CheapInfra Discord · #share-tech</span> · Last updated {today_str}<br>
+    Briefs are editorial summaries (~2 sentences); claims originating from announcement posts are unverified unless independently checked.<br>
+    Data: <a href="data.json">data.json</a> · Weekly lists: <a href="weeks/">weeks/</a> · Raw logs: <a href="raw/">raw/</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="feed.xml">RSS</a>
   </footer>
 </div>
 <button class="top" id="top" aria-label="Back to top">↑</button>
@@ -647,8 +703,10 @@ function apply() {{
 }}
 q.addEventListener('input', apply);
 for (const ch of cchips) ch.addEventListener('click', () => {{
-  activeCat = activeCat === ch.dataset.cat ? null : ch.dataset.cat;
-  cchips.forEach(c => c.classList.toggle('active', c.dataset.cat === activeCat));
+  const cat = ch.dataset.cat === 'all' ? null : ch.dataset.cat;
+  activeCat = activeCat === cat ? null : cat;
+  cchips.forEach(c => c.classList.toggle('active',
+    c.dataset.cat === 'all' ? activeCat === null : c.dataset.cat === activeCat));
   apply();
 }});
 for (const ch of wchips) ch.addEventListener('click', () => {{
@@ -658,14 +716,16 @@ for (const ch of wchips) ch.addEventListener('click', () => {{
 }});
 addEventListener('scroll', () => top.classList.toggle('show', scrollY > 600));
 top.addEventListener('click', () => scrollTo({{top: 0, behavior: 'smooth'}}));
-// theme: dark is the default; light is opt-in and remembered
+// theme: light editorial is the default; dark follows the OS unless overridden, choice remembered
 const tt = document.getElementById('themeToggle');
 function setTheme(t) {{
   document.documentElement.dataset.theme = t;
   try {{ localStorage.setItem('rl-theme', t); }} catch(e) {{}}
 }}
-tt.addEventListener('click', () =>
-  setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light'));
+tt.addEventListener('click', () => {{
+  const cur = document.documentElement.dataset.theme || 'light';
+  setTheme(cur === 'light' ? 'dark' : 'light');
+}});
 // tabs: library / analytics
 const tabs = [...document.querySelectorAll('.tab')];
 const libEls = [document.querySelector('.toolbar'), document.querySelector('.wnavs'),
