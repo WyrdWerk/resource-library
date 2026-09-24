@@ -1,5 +1,381 @@
 [
   {
+    "title": "hax",
+    "week": "6–12 Aug 2026",
+    "url": "https://usehax.dev/",
+    "sharer": "Blessed Piss Enjoyer",
+    "date": "12 Aug",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "A minimalist coding agent that runs natively in the terminal. The \"minimalist\" claim comes from the sharer's one-line description and is unverified.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "hax"
+  },
+  {
+    "title": "AgentFS introduction (Turso docs)",
+    "week": "6–12 Aug 2026",
+    "url": "https://docs.turso.tech/agentfs/introduction",
+    "sharer": "Rykuuun",
+    "date": "12 Aug",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Turso's introduction to AgentFS, which Rykuuun found interesting. It appears to be an agent-oriented filesystem from Turso; anything beyond the docs link is unverified.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "agentfs-introduction-turso-docs"
+  },
+  {
+    "title": "billion-context-pi",
+    "week": "6–12 Aug 2026",
+    "url": "https://github.com/ranxianglei/billion-context-pi",
+    "sharer": "Rykuuun",
+    "date": "12 Aug",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Rykuuun shared this asking \"this is pi-vcc right?\", suggesting it's related to a \"pi\" coding agent with very large context. Details are unverified from the message text alone.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "billion-context-pi"
+  },
+  {
+    "title": "pi (nktkt)",
+    "week": "6–12 Aug 2026",
+    "url": "https://github.com/nktkt/pi",
+    "sharer": "Rykuuun",
+    "date": "12 Aug",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "A GitHub repo named \"pi\", shared without description. Given the surrounding chatter about pi-vcc, likely an agent project; unverified from the message text.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "pi-nktkt"
+  },
+  {
+    "title": "maki",
+    "week": "6–12 Aug 2026",
+    "url": "https://github.com/tontinton/maki",
+    "sharer": "Rykuuun",
+    "date": "12 Aug",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "A GitHub repo shared without description. What it does is unverified from the message text alone.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "maki"
+  },
+  {
+    "title": "Inspora",
+    "week": "6–12 Aug 2026",
+    "url": "https://www.inspora.design/",
+    "sharer": "Tom",
+    "date": "11 Aug",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A design-focused site, shared link-only. Its exact purpose is unverified from the message text; the domain suggests a design inspiration or resource site.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "inspora"
+  },
+  {
+    "title": "Gooey",
+    "week": "6–12 Aug 2026",
+    "url": "https://gooey.jakubantalik.com/",
+    "sharer": "Tom",
+    "date": "11 Aug",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A site by Jakub Antalik, shared link-only. The name suggests gooey/morphing visual effects; unverified from the message text.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "gooey"
+  },
+  {
+    "title": "Collect UI",
+    "week": "6–12 Aug 2026",
+    "url": "https://collectui.com/",
+    "sharer": "Tom",
+    "date": "11 Aug",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A gallery of collected user interfaces for design inspiration. Shared link-only; the description is inferred from the site's name and unverified from the message.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "collect-ui"
+  },
+  {
+    "title": "bro-skill",
+    "week": "6–12 Aug 2026",
+    "url": "https://github.com/luchasarie/bro-skill",
+    "sharer": "Tom",
+    "date": "11 Aug",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "An agent \"skill\" on GitHub. What it teaches the agent is unverified from the link-only share.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "bro-skill"
+  },
+  {
+    "title": "Avoid z-index Whenever Possible",
+    "week": "6–12 Aug 2026",
+    "url": "https://danielrotter.at/2020/04/08/avoid-z-index-whenever-possible.html",
+    "sharer": "Tom",
+    "date": "11 Aug",
+    "categories": [
+      "article"
+    ],
+    "brief": "A 2020 article by Daniel Rotter arguing for CSS layouts that avoid z-index. The thesis is in the URL slug; the article's quality is unverified.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "avoid-z-index-whenever-possible"
+  },
+  {
+    "title": "Beautiful UI",
+    "week": "6–12 Aug 2026",
+    "url": "https://beautiful-ui-five.vercel.app/",
+    "sharer": "Tom",
+    "date": "11 Aug",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A demo site showcasing a \"beautiful UI\". Shared link-only; what it demonstrates is unverified.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "beautiful-ui"
+  },
+  {
+    "title": "oil-motion",
+    "week": "6–12 Aug 2026",
+    "url": "https://github.com/oil-oil/oil-motion",
+    "sharer": "Tom",
+    "date": "11 Aug",
+    "categories": [
+      "github",
+      "web-app"
+    ],
+    "brief": "A GitHub repo, likely a motion/animation library given the name. Shared link-only; unverified.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "oil-motion"
+  },
+  {
+    "title": "Arlan Marat's Vault",
+    "week": "6–12 Aug 2026",
+    "url": "https://www.arlan.me/vault",
+    "sharer": "Tom",
+    "date": "10 Aug",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A personal \"vault\" site by Arlan Marat. Contents are unverified from the link-only share.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "arlan-marat-s-vault"
+  },
+  {
+    "title": "Refero Design Styles",
+    "week": "6–12 Aug 2026",
+    "url": "https://styles.refero.design/",
+    "sharer": "Tom",
+    "date": "10 Aug",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A design-styles reference site. Shared link-only; unverified beyond the domain.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "refero-design-styles"
+  },
+  {
+    "title": "There Is An Open Source For That",
+    "week": "6–12 Aug 2026",
+    "url": "https://thereisanopensourceforthat.com/",
+    "sharer": "Tom",
+    "date": "9 Aug",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A directory of open-source alternatives to popular software. The description is inferred from the site's name; unverified from the message.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "there-is-an-open-source-for-that"
+  },
+  {
+    "title": "josh",
+    "week": "6–12 Aug 2026",
+    "url": "https://github.com/josh-project/josh",
+    "sharer": "Tom",
+    "date": "9 Aug",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "The josh project on GitHub, shared link-only. What it does is unverified from the message text.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "josh"
+  },
+  {
+    "title": "Checklist Design",
+    "week": "6–12 Aug 2026",
+    "url": "https://www.checklist.design/",
+    "sharer": "Tom",
+    "date": "8 Aug",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A design checklist site. Shared link-only; unverified beyond the domain.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "checklist-design"
+  },
+  {
+    "title": "oh-my-hermes",
+    "week": "6–12 Aug 2026",
+    "url": "https://github.com/rlaope/oh-my-hermes",
+    "sharer": "asx8678",
+    "date": "7 Aug",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "asx8678's entire review was \"crazy\". What the repo does is unverified from the message text.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "oh-my-hermes"
+  },
+  {
+    "title": "Kitesurf (Cloudflare blog)",
+    "week": "6–12 Aug 2026",
+    "url": "https://blog.cloudflare.com/kitesurf/",
+    "sharer": "whaaaat",
+    "date": "7 Aug",
+    "categories": [
+      "article"
+    ],
+    "brief": "A Cloudflare blog post about Kitesurf. The post's claims are unverified; it's a vendor blog.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "kitesurf-cloudflare-blog"
+  },
+  {
+    "title": "linus-torvalds-skill",
+    "week": "6–12 Aug 2026",
+    "url": "https://github.com/Mte90/linus-torvalds-skill",
+    "sharer": "Tom",
+    "date": "6 Aug",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "An agent skill themed on Linus Torvalds, presumably encoding his review style for code agents. Shared link-only; unverified.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "linus-torvalds-skill"
+  },
+  {
+    "title": "bb",
+    "week": "6–12 Aug 2026",
+    "url": "https://github.com/get-bb/bb",
+    "sharer": "Rykuuun",
+    "date": "6 Aug",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "Rykuuun found it \"interesting...\". What it does is unverified from the message text.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "bb"
+  },
+  {
+    "title": "Qwen3-8 Max on Artificial Analysis",
+    "week": "6–12 Aug 2026",
+    "url": "https://artificialanalysis.ai/models/qwen3-8-max",
+    "sharer": "simply soy",
+    "date": "6 Aug",
+    "categories": [
+      "ai-tool",
+      "web-app"
+    ],
+    "brief": "Artificial Analysis's model page for Qwen3-8 Max, with benchmarks and pricing. Shared link-only; the page's data is third-party and unverified.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "qwen3-8-max-on-artificial-analysis"
+  },
+  {
+    "title": "opencli",
+    "week": "30 Jul–5 Aug 2026",
+    "url": "https://github.com/jackwener/opencli",
+    "sharer": "kenn",
+    "date": "5 Aug",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "A GitHub repo named opencli, shared link-only. What it does is unverified from the message text.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "opencli"
+  },
+  {
+    "title": "desengs",
+    "week": "30 Jul–5 Aug 2026",
+    "url": "https://desengs.com/",
+    "sharer": "Tom",
+    "date": "5 Aug",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "Shared link-only. Purpose unverified from the message text; the domain suggests a design/engineering resource.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "desengs"
+  },
+  {
+    "title": "Antidoom (Liquid AI blog)",
+    "week": "30 Jul–5 Aug 2026",
+    "url": "https://www.liquid.ai/blog/antidoom",
+    "sharer": "whaaaat",
+    "date": "3 Aug",
+    "categories": [
+      "article"
+    ],
+    "brief": "A Liquid AI blog post about \"Antidoom\". The post's claims are unverified; it's a vendor blog.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "antidoom-liquid-ai-blog"
+  },
+  {
+    "title": "Kimi K3 on MI355X (Wafer blog)",
+    "week": "30 Jul–5 Aug 2026",
+    "url": "https://www.wafer.ai/blog/kimi-k3-mi355x",
+    "sharer": "simply soy",
+    "date": "2 Aug",
+    "categories": [
+      "article"
+    ],
+    "brief": "A Wafer blog post benchmarking Kimi K3 on AMD MI355X hardware. Claims unverified; vendor blog.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "kimi-k3-on-mi355x-wafer-blog"
+  },
+  {
+    "title": "Snowflow",
+    "week": "30 Jul–5 Aug 2026",
+    "url": "https://snowflow-lilac.vercel.app/",
+    "sharer": "Tom",
+    "date": "30 Jul",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A deployed demo called Snowflow. What it demonstrates is unverified from the link-only share.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "snowflow"
+  },
+  {
+    "title": "snowflow_demo",
+    "week": "30 Jul–5 Aug 2026",
+    "url": "https://github.com/Noniv/snowflow_demo",
+    "sharer": "Tom",
+    "date": "30 Jul",
+    "categories": [
+      "github",
+      "web-app"
+    ],
+    "brief": "The demo repo behind the Snowflow site above. Contents unverified from the link-only share.",
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "snowflow-demo"
+  },
+  {
     "title": "AoAgents",
     "week": "20–27 Aug 2026",
     "url": "https://aoagents.dev/",
@@ -355,7 +731,7 @@
     ],
     "brief": "\"Crafted primitives for AI-native interfaces\" — a component library aimed at the AI-app UI wave. Claims unverified.",
     "_batch": "week-2026-08-13_to_2026-08-27.md",
-    "id": "beautiful-ui"
+    "id": "beautiful-ui-2"
   },
   {
     "title": "codedb (justrach)",

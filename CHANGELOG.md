@@ -14,3 +14,6 @@ Counts are curated resources kept after filtering.
 
 ## week-2026-08-13_to_2026-08-27.md
 - 39 resources → 13–20 Aug 2026, 20–27 Aug 2026
+
+## week-2026-07-30_to_2026-08-13.md
+- 28 resources → 30 Jul–5 Aug 2026, 6–12 Aug 2026
