@@ -1,0 +1,874 @@
+[
+  {
+    "title": "pi-claude-agent-sdk",
+    "week": "17–24 Sep 2026",
+    "url": "https://github.com/pi-pod/pi-claude-agent-sdk",
+    "sharer": "kenn",
+    "date": "24 Sep",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "An inference provider that lets Pi (a terminal agent harness) run on Claude Code Pro/Max subscriptions instead of API keys. Kenn is using a fork and admits he \"just closed my eyes and let the agent figure it out\" — expect rough edges."
+  },
+  {
+    "title": "pi-claude-bridge",
+    "week": "17–24 Sep 2026",
+    "url": "https://github.com/elidickinson/pi-claude-bridge",
+    "sharer": "kenn",
+    "date": "24 Sep",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Lets you route Pi's model calls through a Claude subscription (\"allow sub usage in pi\"). Same cost-saving idea as pi-claude-agent-sdk: agentic coding without per-token API billing."
+  },
+  {
+    "title": "spirula-studio",
+    "week": "17–24 Sep 2026",
+    "url": "https://github.com/harry7557558/spirula-studio",
+    "sharer": "Tom",
+    "date": "24 Sep",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "Cross-vendor 3D Gaussian Splatting trainer — video to splat to mesh, running on Vulkan or CUDA. Notable for not being CUDA-locked."
+  },
+  {
+    "title": "Responsively App",
+    "week": "17–24 Sep 2026",
+    "url": "https://responsively.app/",
+    "sharer": "UT",
+    "date": "23 Sep",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "A dedicated browser for responsive web development — preview a site at multiple screen sizes side by side. Built for faster, more precise responsive work."
+  },
+  {
+    "title": "Grokbot Characters (Rege Lab)",
+    "week": "17–24 Sep 2026",
+    "url": "https://www.rege-dev.xyz/lab/grokbot-characters",
+    "sharer": "Tom",
+    "date": "23 Sep",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A Rege Lab page with six little Grokbot character expressions to play with, plus downloadable editable CoAnimato files. A creative asset resource for bot and character design."
+  },
+  {
+    "title": "Getting the most out of Opus 5.5",
+    "week": "17–24 Sep 2026",
+    "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+    "sharer": "Alp",
+    "date": "23 Sep",
+    "categories": [
+      "article",
+      "ai-tool"
+    ],
+    "brief": "Official Claude guide to prompting Opus 5.5, steering long agent runs, and checking results in Claude apps and Claude Code. A practical reference for anyone driving long agent sessions."
+  },
+  {
+    "title": "Grokbot Icon Studio",
+    "week": "17–24 Sep 2026",
+    "url": "https://grokbot-icon-studio.serio-ai.chatgpt.site/en",
+    "sharer": "Tom",
+    "date": "21 Sep",
+    "categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "brief": "A minimal bot-icon studio — browse bot icon examples and copy a prompt to generate an icon of your own. Quick asset generation for bot projects."
+  },
+  {
+    "title": "Cloudflare Quick Tunnels",
+    "week": "17–24 Sep 2026",
+    "url": "https://try.cloudflare.com/#overview",
+    "sharer": "cata",
+    "date": "21 Sep",
+    "categories": [
+      "dev-tool"
+    ],
+    "brief": "Cloudflare Quick Tunnels — free encrypted tunnels that expose localhost as a public URL. Cata plans to use it instead of the VS Code tunnel."
+  },
+  {
+    "title": "BendSR",
+    "week": "17–24 Sep 2026",
+    "url": "https://github.com/k3ybladewielder/BendSR",
+    "sharer": "Tom",
+    "date": "20 Sep",
+    "categories": [
+      "github"
+    ],
+    "brief": "Symbolic regression implemented in Bend. A research-flavoured repo for anyone exploring the Bend language."
+  },
+  {
+    "title": "security-audit-skill",
+    "week": "17–24 Sep 2026",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "sharer": "Alp",
+    "date": "19 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings. A drop-in skill for agentic security reviews."
+  },
+  {
+    "title": "Saving 100TB of RAM with math",
+    "week": "17–24 Sep 2026",
+    "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+    "sharer": "Rykuuun",
+    "date": "19 Sep",
+    "categories": [
+      "article"
+    ],
+    "brief": "Cloudflare engineering deep-dive on saving 100TB of RAM with math (and Rust). A solid systems-engineering read."
+  },
+  {
+    "title": "Bend",
+    "week": "17–24 Sep 2026",
+    "url": "https://github.com/bendlang/bend",
+    "sharer": "Tom",
+    "date": "18 Sep",
+    "categories": [
+      "github"
+    ],
+    "brief": "Bend 2 — a fast programming language that blocks AI mistakes via proof checking. Install with curl from bend-lang.com."
+  },
+  {
+    "title": "Monid free agent search (announcement)",
+    "week": "17–24 Sep 2026",
+    "url": "https://x.com/MonidHQ/status/2100705843453079718",
+    "sharer": "Rykuuun",
+    "date": "18 Sep",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Announcement of a free agent search/fetch API — \"killed Exa, Tavily and Brave\", $0 with no quotas, from Tiny_Fish and MonidHQ. The pricing claims are the poster's and unverified; this link is the announcement, not documentation."
+  },
+  {
+    "title": "jev-search",
+    "week": "17–24 Sep 2026",
+    "url": "https://github.com/superagents-lab/jev-search",
+    "sharer": "thelaggingway",
+    "date": "18 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Shared by thelaggingway with just \"Another one\" — context is thin, but it landed in the search-tool thread. Worth a look if you're tracking search APIs."
+  },
+  {
+    "title": "LFM2.5-2.6B-RLCD",
+    "week": "10–17 Sep 2026",
+    "url": "https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD",
+    "sharer": "Tom",
+    "date": "16 Sep",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "LiquidAI's LFM2.5 2.6B model tuned for RLCD, shared in the context of Jev's API and concepts. A small local model for anyone experimenting with RLCD-style agent loops."
+  },
+  {
+    "title": "Qwen-2.5-1B-RLCD",
+    "week": "10–17 Sep 2026",
+    "url": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD",
+    "sharer": "kenn",
+    "date": "16 Sep",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "A 1B RLCD-tuned Qwen 2.5 that kenn tried locally \"to get a feel of how Jev's API and concepts might feel like\" — and found it did fine in a roguelike spike. Useful as a tiny testbed model before spending on bigger runs."
+  },
+  {
+    "title": "Pi coding agent in the browser (announcement)",
+    "week": "10–17 Sep 2026",
+    "url": "https://x.com/victormustar/status/2099794150879121471",
+    "sharer": "asx8678",
+    "date": "16 Sep",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Announcement of a coding agent (Pi) running entirely in the browser on a 2B model via WebGPU — MiniCPM5-2B + Pi with Transformers.js and 4-bit ONNX weights. Announcement only; no repo was linked in the post."
+  },
+  {
+    "title": "varve",
+    "week": "10–17 Sep 2026",
+    "url": "https://github.com/monotykamary/varve",
+    "sharer": "Alp",
+    "date": "16 Sep",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "An experimental Rust time-series database with DuckDB SQL and tiered Parquet storage — \"time settles into layers.\" Early-stage but interesting for anyone into time-series storage design."
+  },
+  {
+    "title": "ever-gauzy",
+    "week": "10–17 Sep 2026",
+    "url": "https://github.com/ever-co/ever-gauzy",
+    "sharer": "Alp",
+    "date": "15 Sep",
+    "categories": [
+      "github",
+      "web-app"
+    ],
+    "brief": "Ever Gauzy — an open business management platform covering ERP, CRM, HRM, ATS and project management (gauzy.co). A full open-source suite if you ever need to stand up business tooling."
+  },
+  {
+    "title": "Universal syntax highlighter / OpaqueRange (demo)",
+    "week": "10–17 Sep 2026",
+    "url": "https://x.com/sebastienlorber/status/2099883816718323949",
+    "sharer": "Tom",
+    "date": "15 Sep",
+    "categories": [
+      "dev-tool",
+      "article"
+    ],
+    "brief": "Demo of a universal syntax highlighter built on the new OpaqueRange web API (Chrome 152+, 2026) — syntax-highlighting different program fragments efficiently. Worth a look for anyone building code-rendering UI."
+  },
+  {
+    "title": "The invisible side of design engineering",
+    "week": "10–17 Sep 2026",
+    "url": "https://jakub.kr/writing/the-invisible-side-of-design-engineering",
+    "sharer": "Tom",
+    "date": "14 Sep",
+    "categories": [
+      "article"
+    ],
+    "brief": "Jakub Krehel's essay on the invisible side of design engineering — the craft that doesn't show up in the final pixels. A thoughtful read for design-minded engineers."
+  },
+  {
+    "title": "Inspo",
+    "week": "10–17 Sep 2026",
+    "url": "https://inspomcp.dev/",
+    "sharer": "Tom",
+    "date": "14 Sep",
+    "categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "brief": "A reference layer for AI coding agents — real production websites with desktop and mobile captures, \"real websites worth studying.\" Useful as grounding material when agents need to see how good sites are actually built."
+  },
+  {
+    "title": "FeralUI",
+    "week": "10–17 Sep 2026",
+    "url": "https://feralui.dev/",
+    "sharer": "thelaggingway",
+    "date": "14 Sep",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "A small library of playful, physics-driven React elements — including a ceiling pull-cord with real Verlet rope physics. For interfaces that should feel alive rather than flat."
+  },
+  {
+    "title": "GVS5H",
+    "week": "10–17 Sep 2026",
+    "url": "https://github.com/slee-persis/GVS5H",
+    "sharer": "scarywood75",
+    "date": "13 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "A harness claiming five Qwen3.8-27B models match Claude Fable 5 on LiveCodeBench Hard — \"Fable 5 level coding.\" The performance claims are the poster's and unverified; scarywood75 noted the implementation is Python."
+  },
+  {
+    "title": "transitions.dev",
+    "week": "10–17 Sep 2026",
+    "url": "https://github.com/Jakubantalik/transitions.dev",
+    "sharer": "thelaggingway",
+    "date": "13 Sep",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "A collection of the most essential transitions for web apps, plus a skill for agents and a Refine tool. Drop-in motion craft for web projects and the agents building them."
+  },
+  {
+    "title": "UI Skills",
+    "week": "10–17 Sep 2026",
+    "url": "https://www.ui-skills.com/",
+    "sharer": "Tom",
+    "date": "13 Sep",
+    "categories": [
+      "web-app",
+      "dev-tool"
+    ],
+    "brief": "A collection of design-engineering skills covering accessibility, motion and frontend craft. Pairs well with the transitions.dev repo above for leveling up UI output."
+  },
+  {
+    "title": "e2e agent testing framework (announcement)",
+    "week": "10–17 Sep 2026",
+    "url": "https://x.com/o_kwasniewski/status/2098804833880817728",
+    "sharer": "Tom",
+    "date": "13 Sep",
+    "categories": [
+      "dev-tool"
+    ],
+    "brief": "Oskar's announcement of \"e2e\", a new agent-oriented testing framework — he ported React Native Pager View's test suite from Maestro to it. Announcement only; the framework itself is still being built."
+  },
+  {
+    "title": "pdfcn",
+    "week": "10–17 Sep 2026",
+    "url": "https://www.pdfcn.dev/",
+    "sharer": "Tom",
+    "date": "13 Sep",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "A collection of beautifully designed, accessible and customizable PDF components built on Takumi. Handy if you ever need to render polished PDFs from a web stack."
+  },
+  {
+    "title": "pascalorg/editor",
+    "week": "10–17 Sep 2026",
+    "url": "https://github.com/pascalorg/editor",
+    "sharer": "Tom",
+    "date": "13 Sep",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "An open-source 3D architectural editor with a local CLI, MCP tools and practical workflows for humans and agents. Niche but complete — 3D editing with agent integration baked in."
+  },
+  {
+    "title": "Real API Pricing",
+    "week": "3–10 Sep 2026",
+    "url": "https://real-api-pricing.vercel.app/",
+    "sharer": "thelaggingway",
+    "date": "9 Sep",
+    "categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "brief": "Compares the real cost of AI — subscription allowances, model benchmarks and the price–performance frontier, with transparent sources. Useful before committing spend to any provider."
+  },
+  {
+    "title": "pi-arm64-exec (announcement)",
+    "week": "3–10 Sep 2026",
+    "url": "https://x.com/aliceisplaying/status/2097387613086683232",
+    "sharer": "Blessed Piss Enjoyer",
+    "date": "9 Sep",
+    "categories": [
+      "dev-tool",
+      "ai-tool"
+    ],
+    "brief": "A pi extension giving the agent exactly one tool — doing file read/edit work in arm64 assembly — to stop Astra shelling out to python3, ruby and perl for file ops. Announcement; the actual link was promised in a follow-up tweet."
+  },
+  {
+    "title": "Minara Harness (announcement)",
+    "week": "3–10 Sep 2026",
+    "url": "https://x.com/minara/status/2097413018510618899",
+    "sharer": "Tom",
+    "date": "9 Sep",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Announcement of Minara Harness — pitched as \"general financial intelligence for everyone\", turning ideas into signals into execution, plus coding tasks like any other agent. The capability claims are the poster's and unverified."
+  },
+  {
+    "title": "herdr fleet management update (announcement)",
+    "week": "3–10 Sep 2026",
+    "url": "https://x.com/imnotchalk/status/2097056509025018029/photo/1",
+    "sharer": "Alp",
+    "date": "9 Sep",
+    "categories": [
+      "dev-tool"
+    ],
+    "brief": "Daniel's post that a new herdrdev update is out with fleet management live. A product-update announcement; the herdr blog below has the substance."
+  },
+  {
+    "title": "How to Build 3D Worlds with Astra",
+    "week": "3–10 Sep 2026",
+    "url": "https://somethingbig.ai/3d-worlds",
+    "sharer": "Tom",
+    "date": "8 Sep",
+    "categories": [
+      "article"
+    ],
+    "brief": "A step-by-step guide to making photorealistic 3D worlds and games — reference photos, Blender assets, sub-agents, blind critics, Three.js vs Unreal Engine, and a starter prompt. The \"GPT-6 Astra\" framing is the site's own marketing."
+  },
+  {
+    "title": "OSIRIS",
+    "week": "3–10 Sep 2026",
+    "url": "https://osirisai.live/",
+    "sharer": "Tom",
+    "date": "8 Sep",
+    "categories": [
+      "web-app",
+      "dev-tool"
+    ],
+    "brief": "An open-source Palantir alternative — track 10K+ aircraft, 2K satellites and worldwide CCTV on a 3D globe, and run Nmap, DNS, WHOIS and threat-intel scans from the browser across 20+ live feeds. Free."
+  },
+  {
+    "title": "open-pencil",
+    "week": "3–10 Sep 2026",
+    "url": "https://github.com/open-pencil/open-pencil",
+    "sharer": "thelaggingway",
+    "date": "8 Sep",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "An AI-native design editor pitched as an open-source Figma alternative. Worth watching if design tooling is on your radar."
+  },
+  {
+    "title": "Herdr 0.9 — Connecting the machines",
+    "week": "3–10 Sep 2026",
+    "url": "https://herdr.dev/blog/connecting-the-machines/",
+    "sharer": "thelaggingway",
+    "date": "8 Sep",
+    "categories": [
+      "article",
+      "dev-tool"
+    ],
+    "brief": "The Herdr blog on 0.9, which brings local and remote machines into one TUI client, with Herdr Cloud coming next. Herdr's pitch: run agents anywhere, leave them running."
+  },
+  {
+    "title": "ECC",
+    "week": "3–10 Sep 2026",
+    "url": "https://github.com/affaan-m/ECC",
+    "sharer": "asx8678",
+    "date": "8 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "An agent-harness performance optimization system — skills, instincts, memory, security and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. Directly relevant if you're tuning agent setups."
+  },
+  {
+    "title": "MarkItDown (announcement)",
+    "week": "3–10 Sep 2026",
+    "url": "https://x.com/mdancho84/status/2096623235576053935",
+    "sharer": "asx8678",
+    "date": "7 Sep",
+    "categories": [
+      "dev-tool"
+    ],
+    "brief": "Matt Dancho's post on Microsoft's MarkItDown — turns almost any file (PDFs, Word, PowerPoint, Excel, images) into clean Markdown; claimed 100,000+ GitHub stars. Announcement only; the repo wasn't directly linked."
+  },
+  {
+    "title": "Magika (announcement)",
+    "week": "3–10 Sep 2026",
+    "url": "https://x.com/_guillecasaus/status/2096913125266079843",
+    "sharer": "asx8678",
+    "date": "7 Sep",
+    "categories": [
+      "dev-tool"
+    ],
+    "brief": "Google's Magika — detects the real content of any file even when disguised (malware posing as PDF, scripts hidden as images); free and open-source. Announcement only; the repo wasn't directly linked."
+  },
+  {
+    "title": "teamai-cli",
+    "week": "3–10 Sep 2026",
+    "url": "https://github.com/Tencent/teamai-cli",
+    "sharer": "asx8678",
+    "date": "7 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Tencent's \"Make Every Team AI Native\" CLI. The description is thin, but a Tencent-backed team-AI CLI is worth a look."
+  },
+  {
+    "title": "pi-mockdeck",
+    "week": "3–10 Sep 2026",
+    "url": "https://github.com/1y33/pi-mockdeck",
+    "sharer": "cata",
+    "date": "7 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Cata's first pi extension — an ASCII showcase/mockup gallery of UIs for fast iteration. The shared link pointed at the commits page; normalized to the repo root."
+  },
+  {
+    "title": "okf-agent-memory",
+    "week": "3–10 Sep 2026",
+    "url": "https://github.com/okf-memory/okf-agent-memory",
+    "sharer": "Thoor",
+    "date": "7 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Git-native persistent memory for AI coding agents — implements Google OKF v0.2 with sub-300µs in-memory BM25 search and an embedded MCP server. Claims to slash token bloat by 80%; that figure is the repo's and unverified."
+  },
+  {
+    "title": "tgrep (announcement)",
+    "week": "3–10 Sep 2026",
+    "url": "https://x.com/jedisct1/status/2096919996412666296",
+    "sharer": "asx8678",
+    "date": "7 Sep",
+    "categories": [
+      "dev-tool"
+    ],
+    "brief": "Microsoft's tgrep — grep for large codebases with client/server support, claimed 7–50x faster than ripgrep and ugrep. Announcement only; the speedup claim is the poster's."
+  },
+  {
+    "title": "mobframework",
+    "week": "3–10 Sep 2026",
+    "url": "https://mobframework.com/",
+    "sharer": "asx8678",
+    "date": "7 Sep",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "\"BEAM on device\" — write mobile apps in Elixir with the whole BEAM running on the device, rendering native iOS and Android UI; your coding agent attaches to the running app with real state and hot-pushed fixes. Ambitious and unusual."
+  },
+  {
+    "title": "ripwire",
+    "week": "3–10 Sep 2026",
+    "url": "https://github.com/redhat-et/ripwire",
+    "sharer": "Blessed Piss Enjoyer",
+    "date": "7 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "\"The ripgrep of AI context\" — a zero-dependency C++23 CLI plus MCP server that gives coding agents a ranked, deterministic map of any repo: blast radius, tests-to-run and quality deltas. From Red Hat's emerging-tech group."
+  },
+  {
+    "title": "Architectural visualization with Astra",
+    "week": "3–10 Sep 2026",
+    "url": "https://developers.openai.com/blog/architectural-visualization-with-astra",
+    "sharer": "Tom",
+    "date": "5 Sep",
+    "categories": [
+      "article"
+    ],
+    "brief": "OpenAI's developer blog on using Astra to design a house, refine everyday details, and explore it through Blender camera tours and an Unreal Engine 5 walkthrough. A concrete agentic-design case study."
+  },
+  {
+    "title": "SponsorBar (announcement)",
+    "week": "3–10 Sep 2026",
+    "url": "https://x.com/henry_kutrieb/status/2095901727425786300",
+    "sharer": "cata",
+    "date": "5 Sep",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "SponsorBar — puts a small ad in your menu bar and shares the revenue with you (\"make money from your menu bar for doing nothing\"), with a 10%-extra launch promo. A real launched product, though a niche one."
+  },
+  {
+    "title": "Factory Open Source AutoWikis",
+    "week": "3–10 Sep 2026",
+    "url": "https://factory.com/open-source-wikis",
+    "sharer": "thelaggingway",
+    "date": "5 Sep",
+    "categories": [
+      "web-app",
+      "dev-tool"
+    ],
+    "brief": "Browse Factory-generated wikis for popular open-source repositories — a preview of what living documentation looks like on real codebases before running it on your own. Nice for evaluating doc-generation tooling."
+  },
+  {
+    "title": "monocode",
+    "week": "3–10 Sep 2026",
+    "url": "https://github.com/hardbeat920/monocode",
+    "sharer": "Tom",
+    "date": "5 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "A GUI for your coding agents. Description is minimal, but a visual front-end for agent harnesses is a gap worth filling."
+  },
+  {
+    "title": "synthetic-search-mcp",
+    "week": "3–10 Sep 2026",
+    "url": "https://github.com/baanish/synthetic-search-mcp",
+    "sharer": "baanish",
+    "date": "4 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "A search MCP server from baanish, who vouched for PR #4 personally. The shared link was the PR; normalized to the repo root."
+  },
+  {
+    "title": "Psychology for UX: Study Guide",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://www.nngroup.com/articles/psychology-study-guide/",
+    "sharer": "Tom",
+    "date": "2 Sep",
+    "categories": [
+      "article"
+    ],
+    "brief": "Nielsen Norman Group's study guide on the psychology behind UX. A solid reference for grounding design decisions in research rather than taste."
+  },
+  {
+    "title": "beUI motion components",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://beui.dev/components/motion",
+    "sharer": "Tom",
+    "date": "2 Sep",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "Copy-paste animated React components from beUI. Drop-in motion without building animation primitives from scratch."
+  },
+  {
+    "title": "Canvas UI",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://canvasui.dev/",
+    "sharer": "Tom",
+    "date": "2 Sep",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "A creative component library for Canvas, WebGL and WebGPU. For interfaces that need GPU-level visuals rather than DOM elements."
+  },
+  {
+    "title": "treg",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://treg.to/",
+    "sharer": "Tom",
+    "date": "2 Sep",
+    "categories": [
+      "ai-tool",
+      "web-app"
+    ],
+    "brief": "A tool catalog for agents — 2,630 endpoints across 47 providers (SEO, social, enrichment, ads data) callable with one key, priced per call, plus support for your own keys and skills. Tom's 2 Sep share carried his referral param; normalized to the root domain."
+  },
+  {
+    "title": "Claude for people-search (announcement)",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://x.com/jasonzhou1993/status/2094740336895840605",
+    "sharer": "Tom",
+    "date": "2 Sep",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Jason Zhou's announcement of \"Claude for people-search\" at a claimed $0.0089/lead versus $600 subscriptions. The pricing claims are the poster's and unverified; the tweet mentions a git repo \"below\" that wasn't captured."
+  },
+  {
+    "title": "Paper",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://paper.design/",
+    "sharer": "baanish",
+    "date": "2 Sep",
+    "categories": [
+      "web-app",
+      "dev-tool"
+    ],
+    "brief": "Paper — \"design, share, ship.\" A design tool baanish was scouting; no verdict from the channel yet. (Rykuuun's pricing-page share from 8 Sep was dropped as context-free.)"
+  },
+  {
+    "title": "Paseo",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://github.com/getpaseo/paseo",
+    "sharer": "kenn",
+    "date": "1 Sep",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "Kenn wanted to fork Paseo for internal use cases but held off because it was AGPL — PR #3944 has now relicensed it to Apache. The shared link was the PR; normalized to the repo root. The license change is the news: it's forkable now."
+  },
+  {
+    "title": "elxr",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://github.com/asx8678/elxr",
+    "sharer": "asx8678",
+    "date": "31 Aug",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "asx8678's own repo, built after burning through tokens fast. Context is thin, but it reads as a token-efficiency tool from someone feeling the pain directly."
+  },
+  {
+    "title": "DSH — DeepSeek Harness (announcement)",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://x.com/elixirforum/status/2094106034298044867",
+    "sharer": "thelaggingway",
+    "date": "31 Aug",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "The Elixir Forum announcing DSH, the DeepSeek Harness. Announcement only; no repo or docs link was captured."
+  },
+  {
+    "title": "Fresh",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://getfresh.dev/",
+    "sharer": "thelaggingway",
+    "date": "31 Aug",
+    "categories": [
+      "dev-tool"
+    ],
+    "brief": "Fresh — \"The Terminal IDE.\" A terminal-based IDE worth a look if you live in the shell."
+  },
+  {
+    "title": "Markdown Graphs",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://mdx-graphs.kshv.me/",
+    "sharer": "Tom",
+    "date": "31 Aug",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "Monospace charts and tables for MDX and React. Handy for rendering data visuals that stay crisp in markdown contexts."
+  },
+  {
+    "title": "Eclipse Theia",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://github.com/eclipse-theia/theia",
+    "sharer": "asx8678",
+    "date": "30 Aug",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "Eclipse Theia — a cloud and desktop IDE framework implemented in TypeScript. The open foundation behind several well-known IDE products."
+  },
+  {
+    "title": "Plane",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://github.com/makeplane/plane",
+    "sharer": "Rykuuun",
+    "date": "28 Aug",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "Open-source alternative to Jira, Linear, Monday and ClickUp. A self-hostable project-management option for teams avoiding SaaS lock-in."
+  },
+  {
+    "title": "Hy4-preview-FP8",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://huggingface.co/tencent/Hy4-preview-FP8",
+    "sharer": "Alp",
+    "date": "28 Aug",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Tencent's Hy4 preview weights in FP8 on Hugging Face — 770B total, 49B active, 1M context, open weights. For anyone with the hardware to run a frontier-scale open model."
+  },
+  {
+    "title": "GLM-5.3-Flash-DFlash2",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://huggingface.co/incoai/GLM-5.3-Flash-DFlash2",
+    "sharer": "thelaggingway",
+    "date": "28 Aug",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "A GLM-5.3-Flash quant on Hugging Face. Context is thin — thelaggingway's whole review was \"Huh\" — but it's another fast-model option to know about."
+  },
+  {
+    "title": "DBX",
+    "week": "27 Aug–3 Sep 2026",
+    "url": "https://dbxio.com/en",
+    "sharer": "Blessed Piss Enjoyer",
+    "date": "28 Aug",
+    "categories": [
+      "dev-tool"
+    ],
+    "brief": "DBX — a 20 MB tool for managing 90+ databases. Remarkably small footprint for a universal database client."
+  },
+  {
+    "title": "Brilliant",
+    "week": "3–10 Sep 2026",
+    "url": "https://brilliant.design/",
+    "sharer": "Tom",
+    "date": "3 Sep",
+    "categories": [
+      "web-app",
+      "dev-tool",
+      "ai-tool"
+    ],
+    "brief": "A professional vector design tool \"where you and your AI agents work directly on the canvas.\" Agent-native design tooling is still rare, which makes this one notable."
+  },
+  {
+    "title": "ArgusAgent",
+    "week": "10–17 Sep 2026",
+    "url": "https://github.com/microsoft/ArgusAgent",
+    "sharer": "thelaggingway",
+    "date": "10 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Microsoft's ArgusAgent — a persistent, reviewed multi-agent runtime for long-horizon research and engineering. Directly relevant to anyone running agents on long tasks."
+  },
+  {
+    "title": "PrettyMD",
+    "week": "10–17 Sep 2026",
+    "url": "https://prettymd.app/",
+    "sharer": "Tom",
+    "date": "10 Sep",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "A markdown viewer \"for vibe coders\" — a simple, beautiful app for reading the .md files your AI writes: specs, plans, skills, agents and more. Pairs naturally with agent-heavy workflows."
+  },
+  {
+    "title": "pi-warden",
+    "week": "17–24 Sep 2026",
+    "url": "https://github.com/DevMortimer/pi-warden",
+    "sharer": "Aspiring UBI Recipient",
+    "date": "17 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Guardrails for Pi built on pi-typesafe — \"steer the agent instead of interrupting you: Jev judges.\" Part of a small Pi-safety ecosystem from the same author as the next entry."
+  },
+  {
+    "title": "pi-typesafe",
+    "week": "17–24 Sep 2026",
+    "url": "https://github.com/DevMortimer/pi-typesafe",
+    "sharer": "Aspiring UBI Recipient",
+    "date": "17 Sep",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "TypeSafe decisions for Pi — a batched evaluation tool, terminal playground and typed API for extensions. The foundation pi-warden builds on."
+  },
+  {
+    "title": "BrokenArXiv / ArXivMath (announcement)",
+    "week": "17–24 Sep 2026",
+    "url": "https://x.com/j_dekoninck/status/2100180792601420138/photo/1",
+    "sharer": "Rykuuun",
+    "date": "17 Sep",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Jasper Dekoninck releasing new versions of the BrokenArXiv and ArXivMath benchmarks. Announcement only; useful pointer for anyone tracking eval benchmarks."
+  },
+  {
+    "title": "Arrow 2 (announcement)",
+    "week": "17–24 Sep 2026",
+    "url": "https://x.com/QuiverAI/status/2100295136261349802",
+    "sharer": "Rykuuun",
+    "date": "17 Sep",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "QuiverAI's Arrow 2 — their latest models for generating precise, editable vector graphics. Announcement only; a notable data point in AI vector-graphics generation."
+  },
+  {
+    "title": "MiniCPM5-2B-PCD",
+    "week": "17–24 Sep 2026",
+    "url": "https://huggingface.co/monotykamary/MiniCPM5-2B-PCD",
+    "sharer": "Tom",
+    "date": "17 Sep",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "MiniCPM5 2B PCD weights on Hugging Face — the same model family as the 16 Sept in-browser Pi announcement. The model behind that WebGPU coding-agent demo."
+  }
+]
