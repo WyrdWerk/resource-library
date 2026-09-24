@@ -20,6 +20,9 @@ ROOT = Path(__file__).resolve().parent.parent
 NOTES_DIR = ROOT / "notes"
 WEEKS_DIR = ROOT / "weeks"
 
+# TODO: update to the real deployed URL once Cloudflare Pages is configured.
+SITE_URL = "https://resource-library.pages.dev"
+
 MONTHS = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
           "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
 
@@ -115,6 +118,32 @@ def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
+def xml_esc(s):
+    return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+             .replace('"', "&quot;").replace("'", "&apos;"))
+
+
+def make_og_image(total):
+    """Generate og-image.png (1200x630 social card) with the current count."""
+    from PIL import Image, ImageDraw, ImageFont
+    W, H = 1200, 630
+    img = Image.new("RGB", (W, H), "#faf9f6")
+    d = ImageDraw.Draw(img)
+    try:
+        serif = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf", 104)
+        sans = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 34)
+        kick = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 30)
+    except OSError:
+        serif = sans = kick = ImageFont.load_default()
+    d.rectangle([0, 0, W, 14], fill="#4f46e5")
+    d.text((80, 90), "CHEAPINFRA  ·  #SHARE-TECH", font=kick, fill="#78716c")
+    d.text((76, 170), "The Resource", font=serif, fill="#1c1917")
+    d.text((76, 290), "Library", font=serif, fill="#1c1917")
+    d.text((80, 450), f"{total} curated developer resources", font=sans, fill="#57534e")
+    d.text((80, 500), "AI tools, dev tools, repos & articles", font=sans, fill="#78716c")
+    img.save(ROOT / "og-image.png")
+
+
 def main():
     all_res = []
     for f in sorted(NOTES_DIR.glob("*.md")):
@@ -170,10 +199,11 @@ def main():
 
     # ---- index.html ----
     sections, nav = [], []
-    for label in ordered:
+    for wi, label in enumerate(ordered):
         info = week_info[label]
         res = weeks[label]
-        nav.append(f'<a class="wnav" href="#{info["slug"]}">{esc(label)}<span>{len(res)}</span></a>')
+        latest = ' <span class="newdot">new</span>' if wi == 0 else ''
+        nav.append(f'<a class="wnav" href="#{info["slug"]}">{esc(label)}{latest}<span>{len(res)}</span></a>')
         cards = []
         for r in res:
             chips = "".join(
@@ -189,14 +219,16 @@ def main():
                 f'<div class="attr"><span class="who">{esc(r["sharer"])}</span> · {esc(r["date"])}'
                 f' · <a class="plink" href="#r-{r["id"]}" title="Permalink">⧉</a></div>'
                 f'</article>')
+        badge = ' <span class="latest">Latest</span>' if wi == 0 else ''
         sections.append(
             f'<section class="week" id="{info["slug"]}" data-week="{esc(label)}">'
-            f'<div class="weekhead"><h2>Week of {esc(label)}</h2>'
+            f'<div class="weekhead"><h2>Week of {esc(label)}</h2>{badge}'
             f'<span class="wcount">{len(res)} resources</span></div>'
             + "\n".join(cards) + '</section>')
 
     fchips = "".join(f'<button class="fchip" data-cat="{c}">{c} <b>{cat_counts[c]}</b></button>' for c in cats)
     wchips = "".join(f'<button class="fchip wfilter" data-week="{esc(l)}">{esc(l)}</button>' for l in ordered)
+    catchips = "".join(f'<span class="catchip">{c} × {cat_counts[c]}</span>' for c in cats)
     desc = (f"A curated, browsable archive of {total} developer resources shared in the "
             f"CheapInfra Discord's #share-tech channel, newest first.")
 
@@ -210,6 +242,8 @@ def main():
 <meta property="og:title" content="Resource Library — CheapInfra #share-tech">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:type" content="website">
+<meta property="og:image" content="{SITE_URL}/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="Resource Library feed" href="feed.xml">
 <style>
 :root {{
   --paper: #faf9f6; --card: #ffffff; --ink: #1c1917; --muted: #78716c;
@@ -243,6 +277,19 @@ body {{
 .stats {{ display: flex; gap: 28px; flex-wrap: wrap; margin-bottom: 8px; }}
 .stat b {{ display: block; font-size: 26px; font-weight: 650; }}
 .stat span {{ font-size: 13px; color: var(--muted); }}
+.catchips {{ display: flex; gap: 8px; flex-wrap: wrap; margin: 14px 0 8px; }}
+.catchip {{
+  font-size: 12.5px; color: var(--muted); border: 1px solid var(--line);
+  border-radius: 999px; padding: 3px 12px; background: var(--card);
+}}
+.latest {{
+  font-size: 12px; font-weight: 700; background: var(--accent-soft); color: var(--accent);
+  border-radius: 999px; padding: 3px 12px; text-transform: uppercase; letter-spacing: 0.06em;
+}}
+.newdot {{
+  font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase;
+  letter-spacing: 0.06em;
+}}
 .toolbar {{
   position: sticky; top: 0; z-index: 10;
   background: color-mix(in srgb, var(--paper) 92%, transparent);
@@ -326,6 +373,7 @@ footer a {{ color: var(--accent); }}
       <div class="stat"><b>{len(ordered)}</b><span>weeks covered</span></div>
       <div class="stat"><b>{len(cats)}</b><span>categories</span></div>
     </div>
+    <div class="catchips">{catchips}</div>
   </header>
   <div class="toolbar">
     <input id="search" type="search" placeholder="Search {total} resources…" autocomplete="off">
@@ -386,6 +434,36 @@ top.addEventListener('click', () => scrollTo({{top: 0, behavior: 'smooth'}}));
 </html>
 """
     (ROOT / "index.html").write_text(html)
+    make_og_image(total)
+
+    # ---- feed.xml (RSS 2.0, newest first) ----
+    from datetime import datetime, timezone
+    from email.utils import format_datetime
+    items = []
+    for label in ordered:
+        info = week_info[label]
+        year = info["end"][0]
+        for r in weeks[label]:
+            m = re.match(r"(\d{1,2})\s+([A-Za-z]{3})", r.get("date", ""))
+            if m:
+                mon = MONTHS.get(m.group(2)[:3].title(), info["end"][1])
+                dt = datetime(year, mon, int(m.group(1)), 12, 0, tzinfo=timezone.utc)
+            else:
+                dt = datetime(*info["end"], 12, 0, tzinfo=timezone.utc)
+            items.append(
+                f"<item><title>{xml_esc(r['title'])}</title>"
+                f"<link>{xml_esc(r['url'])}</link>"
+                f"<guid isPermaLink=\"true\">{xml_esc(r['url'])}</guid>"
+                f"<pubDate>{format_datetime(dt)}</pubDate>"
+                f"<description>{xml_esc(r['brief'] + ' — shared by ' + r['sharer'] + ' in #share-tech.')}</description>"
+                f"</item>")
+    rss = (f"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss version=\"2.0\">"
+           f"<channel><title>The Resource Library — CheapInfra #share-tech</title>"
+           f"<link>{SITE_URL}/</link>"
+           f"<description>{xml_esc(desc)}</description>"
+           + "\n".join(items) + "</channel></rss>")
+    (ROOT / "feed.xml").write_text(rss)
+
     print(f"resources: {total}")
     for label in ordered:
         print(f"  {label}: {len(weeks[label])}")

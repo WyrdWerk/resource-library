@@ -11,11 +11,16 @@ A curated, browsable archive of developer resources shared in the [CheapInfra](h
 | `index.html` | The browsable site: search, category + week filters, weekly sections | Generated — run `scripts/build.py` |
 | `data.json` | The full dataset: title, URL, sharer, share date, categories, brief, week, stable `id` | Generated — run `scripts/build.py` |
 | `weeks/` | Per-week curated lists in Markdown, with briefs | Generated — run `scripts/build.py` |
+| `feed.xml` | RSS feed of all resources, newest first | Generated — run `scripts/build.py` |
+| `og-image.png` | Social card for link previews (1200×630) | Generated — run `scripts/build.py` |
 | `notes/` | Curated research notes — the **source of truth** for site content | Hand-written |
 | `raw/` | Raw weekly collection logs: every link-bearing message found, unfiltered | Append-only, never edit |
 | `CHANGELOG.md` | One entry per collection batch | Generated — run `scripts/build.py` |
-| `scripts/build.py` | Regenerates `index.html`, `data.json`, `weeks/`, `CHANGELOG.md` from `notes/` | Hand-written |
+| `scripts/build.py` | Regenerates `index.html`, `data.json`, `weeks/`, `CHANGELOG.md`, `feed.xml`, `og-image.png` from `notes/` | Hand-written |
+| `scripts/linkcheck.py` | Checks every URL in `data.json` for link rot | Hand-written |
 | `AGENTS.md` | Operating manual for agents working on this repo | Hand-written |
+| `CONTRIBUTING.md` | How to suggest resources or send fixes | Hand-written |
+| `LICENSE` | CC-BY-4.0 — the curated content's license | Hand-written |
 
 ## Coverage
 
@@ -38,8 +43,11 @@ Any static host works. For Cloudflare Pages: create a Pages project from this re
 
 ## Contributing
 
-Spotted a bad link or a miscategorized resource? Open an issue or PR against `notes/` — `index.html`, `data.json`, and `weeks/` are regenerated from it, so changes belong in the notes.
+See [CONTRIBUTING.md](CONTRIBUTING.md). The short version: suggest resources via issues,
+and send fixes as PRs against `notes/` — `index.html`, `data.json`, and `weeks/` are
+regenerated from it, so changes belong in the notes.
 
 ## License
 
-TBD — the briefs are original editorial summaries; a license (e.g. CC-BY-4.0 for the curated content) still needs to be chosen.
+[CC-BY-4.0](LICENSE) — the curated content (briefs, notes, and site) is yours to share
+and adapt with attribution. Linked third-party resources keep their own licenses.

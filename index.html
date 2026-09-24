@@ -8,6 +8,8 @@
 <meta property="og:title" content="Resource Library — CheapInfra #share-tech">
 <meta property="og:description" content="A curated, browsable archive of 114 developer resources shared in the CheapInfra Discord's #share-tech channel, newest first.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://resource-library.pages.dev/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="Resource Library feed" href="feed.xml">
 <style>
 :root {
   --paper: #faf9f6; --card: #ffffff; --ink: #1c1917; --muted: #78716c;
@@ -41,6 +43,19 @@ body {
 .stats { display: flex; gap: 28px; flex-wrap: wrap; margin-bottom: 8px; }
 .stat b { display: block; font-size: 26px; font-weight: 650; }
 .stat span { font-size: 13px; color: var(--muted); }
+.catchips { display: flex; gap: 8px; flex-wrap: wrap; margin: 14px 0 8px; }
+.catchip {
+  font-size: 12.5px; color: var(--muted); border: 1px solid var(--line);
+  border-radius: 999px; padding: 3px 12px; background: var(--card);
+}
+.latest {
+  font-size: 12px; font-weight: 700; background: var(--accent-soft); color: var(--accent);
+  border-radius: 999px; padding: 3px 12px; text-transform: uppercase; letter-spacing: 0.06em;
+}
+.newdot {
+  font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
 .toolbar {
   position: sticky; top: 0; z-index: 10;
   background: color-mix(in srgb, var(--paper) 92%, transparent);
@@ -124,15 +139,16 @@ footer a { color: var(--accent); }
       <div class="stat"><b>6</b><span>weeks covered</span></div>
       <div class="stat"><b>5</b><span>categories</span></div>
     </div>
+    <div class="catchips"><span class="catchip">ai-tool × 58</span><span class="catchip">article × 14</span><span class="catchip">dev-tool × 44</span><span class="catchip">github × 42</span><span class="catchip">web-app × 32</span></div>
   </header>
   <div class="toolbar">
     <input id="search" type="search" placeholder="Search 114 resources…" autocomplete="off">
     <div class="frow"><span class="flabel">Category</span><button class="fchip" data-cat="ai-tool">ai-tool <b>58</b></button><button class="fchip" data-cat="article">article <b>14</b></button><button class="fchip" data-cat="dev-tool">dev-tool <b>44</b></button><button class="fchip" data-cat="github">github <b>42</b></button><button class="fchip" data-cat="web-app">web-app <b>32</b></button></div>
     <div class="frow"><span class="flabel">Week</span><button class="fchip wfilter" data-week="17–24 Sep 2026">17–24 Sep 2026</button><button class="fchip wfilter" data-week="10–17 Sep 2026">10–17 Sep 2026</button><button class="fchip wfilter" data-week="3–10 Sep 2026">3–10 Sep 2026</button><button class="fchip wfilter" data-week="27 Aug–3 Sep 2026">27 Aug–3 Sep 2026</button><button class="fchip wfilter" data-week="20–27 Aug 2026">20–27 Aug 2026</button><button class="fchip wfilter" data-week="13–20 Aug 2026">13–20 Aug 2026</button></div>
   </div>
-  <nav class="wnavs"><a class="wnav" href="#2026-09-17_to_2026-09-24">17–24 Sep 2026<span>19</span></a><a class="wnav" href="#2026-09-10_to_2026-09-17">10–17 Sep 2026<span>17</span></a><a class="wnav" href="#2026-09-03_to_2026-09-10">3–10 Sep 2026<span>23</span></a><a class="wnav" href="#2026-08-27_to_2026-09-03">27 Aug–3 Sep 2026<span>16</span></a><a class="wnav" href="#2026-08-20_to_2026-08-27">20–27 Aug 2026<span>19</span></a><a class="wnav" href="#2026-08-13_to_2026-08-20">13–20 Aug 2026<span>20</span></a></nav>
+  <nav class="wnavs"><a class="wnav" href="#2026-09-17_to_2026-09-24">17–24 Sep 2026 <span class="newdot">new</span><span>19</span></a><a class="wnav" href="#2026-09-10_to_2026-09-17">10–17 Sep 2026<span>17</span></a><a class="wnav" href="#2026-09-03_to_2026-09-10">3–10 Sep 2026<span>23</span></a><a class="wnav" href="#2026-08-27_to_2026-09-03">27 Aug–3 Sep 2026<span>16</span></a><a class="wnav" href="#2026-08-20_to_2026-08-27">20–27 Aug 2026<span>19</span></a><a class="wnav" href="#2026-08-13_to_2026-08-20">13–20 Aug 2026<span>20</span></a></nav>
   <main id="main">
-<section class="week" id="2026-09-17_to_2026-09-24" data-week="17–24 Sep 2026"><div class="weekhead"><h2>Week of 17–24 Sep 2026</h2><span class="wcount">19 resources</span></div><article class="card" id="r-pi-warden" data-cats="github ai-tool" data-search="pi-warden guardrails for pi built on pi-typesafe — &quot;steer the agent instead of interrupting you: jev judges.&quot; part of a small pi-safety ecosystem from the same author as the next entry. aspiring ubi recipient"><h3><a href="https://github.com/DevMortimer/pi-warden" target="_blank" rel="noopener">pi-warden</a></h3><div class="meta"><span class="chip" style="--bg:#e5e7eb;--fg:#374151">github</span><span class="chip" style="--bg:#f3e8ff;--fg:#7c3aed">ai-tool</span></div><p>Guardrails for Pi built on pi-typesafe — &quot;steer the agent instead of interrupting you: Jev judges.&quot; Part of a small Pi-safety ecosystem from the same author as the next entry.</p><div class="attr"><span class="who">Aspiring UBI Recipient</span> · 17 Sep · <a class="plink" href="#r-pi-warden" title="Permalink">⧉</a></div></article>
+<section class="week" id="2026-09-17_to_2026-09-24" data-week="17–24 Sep 2026"><div class="weekhead"><h2>Week of 17–24 Sep 2026</h2> <span class="latest">Latest</span><span class="wcount">19 resources</span></div><article class="card" id="r-pi-warden" data-cats="github ai-tool" data-search="pi-warden guardrails for pi built on pi-typesafe — &quot;steer the agent instead of interrupting you: jev judges.&quot; part of a small pi-safety ecosystem from the same author as the next entry. aspiring ubi recipient"><h3><a href="https://github.com/DevMortimer/pi-warden" target="_blank" rel="noopener">pi-warden</a></h3><div class="meta"><span class="chip" style="--bg:#e5e7eb;--fg:#374151">github</span><span class="chip" style="--bg:#f3e8ff;--fg:#7c3aed">ai-tool</span></div><p>Guardrails for Pi built on pi-typesafe — &quot;steer the agent instead of interrupting you: Jev judges.&quot; Part of a small Pi-safety ecosystem from the same author as the next entry.</p><div class="attr"><span class="who">Aspiring UBI Recipient</span> · 17 Sep · <a class="plink" href="#r-pi-warden" title="Permalink">⧉</a></div></article>
 <article class="card" id="r-pi-typesafe" data-cats="github ai-tool" data-search="pi-typesafe typesafe decisions for pi — a batched evaluation tool, terminal playground and typed api for extensions. the foundation pi-warden builds on. aspiring ubi recipient"><h3><a href="https://github.com/DevMortimer/pi-typesafe" target="_blank" rel="noopener">pi-typesafe</a></h3><div class="meta"><span class="chip" style="--bg:#e5e7eb;--fg:#374151">github</span><span class="chip" style="--bg:#f3e8ff;--fg:#7c3aed">ai-tool</span></div><p>TypeSafe decisions for Pi — a batched evaluation tool, terminal playground and typed API for extensions. The foundation pi-warden builds on.</p><div class="attr"><span class="who">Aspiring UBI Recipient</span> · 17 Sep · <a class="plink" href="#r-pi-typesafe" title="Permalink">⧉</a></div></article>
 <article class="card" id="r-brokenarxiv-arxivmath-announcement" data-cats="ai-tool" data-search="brokenarxiv / arxivmath (announcement) jasper dekoninck releasing new versions of the brokenarxiv and arxivmath benchmarks. announcement only; useful pointer for anyone tracking eval benchmarks. rykuuun"><h3><a href="https://x.com/j_dekoninck/status/2100180792601420138/photo/1" target="_blank" rel="noopener">BrokenArXiv / ArXivMath (announcement)</a></h3><div class="meta"><span class="chip" style="--bg:#f3e8ff;--fg:#7c3aed">ai-tool</span></div><p>Jasper Dekoninck releasing new versions of the BrokenArXiv and ArXivMath benchmarks. Announcement only; useful pointer for anyone tracking eval benchmarks.</p><div class="attr"><span class="who">Rykuuun</span> · 17 Sep · <a class="plink" href="#r-brokenarxiv-arxivmath-announcement" title="Permalink">⧉</a></div></article>
 <article class="card" id="r-arrow-2-announcement" data-cats="ai-tool" data-search="arrow 2 (announcement) quiverai's arrow 2 — their latest models for generating precise, editable vector graphics. announcement only; a notable data point in ai vector-graphics generation. rykuuun"><h3><a href="https://x.com/QuiverAI/status/2100295136261349802" target="_blank" rel="noopener">Arrow 2 (announcement)</a></h3><div class="meta"><span class="chip" style="--bg:#f3e8ff;--fg:#7c3aed">ai-tool</span></div><p>QuiverAI's Arrow 2 — their latest models for generating precise, editable vector graphics. Announcement only; a notable data point in AI vector-graphics generation.</p><div class="attr"><span class="who">Rykuuun</span> · 17 Sep · <a class="plink" href="#r-arrow-2-announcement" title="Permalink">⧉</a></div></article>
