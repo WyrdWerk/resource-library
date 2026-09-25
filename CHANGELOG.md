@@ -23,3 +23,6 @@ Counts are curated resources kept after filtering.
 
 ## week-2026-06-04_to_2026-06-29.md
 - 16 resources → 11–17 Jun 2026, 18–24 Jun 2026, 4–10 Jun 2026
+
+## providers.md
+- 81 resources → providers

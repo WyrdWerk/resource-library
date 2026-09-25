@@ -1,5 +1,1058 @@
 [
   {
+    "title": "Prism Inference",
+    "week": "providers",
+    "url": "https://prisminference.com/pricing",
+    "sharer": "thelaggingway",
+    "date": "25 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Pay-as-you-go inference with no minimums across serverless, elastic, private and dedicated endpoints, plus batch. Lists per-model rates (GLM-5.3 $1.40/$4.40, Kimi K3 $3/$15 per 1M tokens) and states strict zero data retention — inputs and outputs are never used for training.",
+    "_batch": "providers.md",
+    "id": "prism-inference"
+  },
+  {
+    "title": "InferHub",
+    "week": "providers",
+    "url": "https://inferhub.dev/pricing",
+    "sharer": "one_phantomic",
+    "date": "21 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Proxy service that pools AI subscriptions into one API. Shared as \"a rly interesting proxy\" with per-plan pricing on its site.",
+    "_batch": "providers.md",
+    "id": "inferhub"
+  },
+  {
+    "title": "AIHubMix",
+    "week": "providers",
+    "url": "https://aihubmix.com/",
+    "sharer": "one_phantomic",
+    "date": "20 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Multi-model API with per-model pricing, including a GLM 5.3 coding endpoint. Shared via its GLM 5.3 API pricing page.",
+    "_batch": "providers.md",
+    "id": "aihubmix"
+  },
+  {
+    "title": "Surplus Intelligence",
+    "week": "providers",
+    "url": "https://www.surplusintelligence.ai/",
+    "sharer": "Felix",
+    "date": "17 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "OpenAI-compatible inference marketplace that routes each request to the cheapest current offer. Vendor claims ~38% savings via routing; pricing and retention terms weren't independently verified.",
+    "_batch": "providers.md",
+    "id": "surplus-intelligence"
+  },
+  {
+    "title": "Kitani",
+    "week": "providers",
+    "url": "https://kitani.ai/",
+    "sharer": "rah",
+    "date": "15 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Open inference on independent hardware with a prepaid USD balance — the max request cost is reserved, then settled on completion. API is OpenAI-compatible at api.kitani.ai/v1.",
+    "_batch": "providers.md",
+    "id": "kitani"
+  },
+  {
+    "title": "Pareto Inference",
+    "week": "providers",
+    "url": "https://paretoinference.com/",
+    "sharer": "Rykuuun",
+    "date": "14 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Pay-per-token inference running on Pareto's own GPUs, including GLM 5.3 Flash. Shared via its pricing page.",
+    "_batch": "providers.md",
+    "id": "pareto-inference"
+  },
+  {
+    "title": "BytePlus ModelArk",
+    "week": "providers",
+    "url": "https://www.byteplus.com/en/activity/codingplan",
+    "sharer": "Rykuuun",
+    "date": "14 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "BytePlus's Coding Plan for Claude Code, Cursor, Cline, Kilo Code, Roo Code and OpenCode, covering models like Dola-Seed-2.0-pro, GLM-5.1 and DeepSeek V4. Exact plan prices weren't visible on the promo page.",
+    "_batch": "providers.md",
+    "id": "byteplus-modelark"
+  },
+  {
+    "title": "Parasail",
+    "week": "providers",
+    "url": "https://parasail.io/",
+    "sharer": "tom (App)",
+    "date": "13 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference provider whose homepage FAQ states explicit zero data retention alongside SLA terms. Surfaced in #providers via a comparisons board post.",
+    "_batch": "providers.md",
+    "id": "parasail"
+  },
+  {
+    "title": "Inceptron",
+    "week": "providers",
+    "url": "https://inceptron.io/",
+    "sharer": "tom (App)",
+    "date": "13 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference provider with ISO 27001 certification, GDPR compliance and EU residency. No zero-retention statement was found on its site.",
+    "_batch": "providers.md",
+    "id": "inceptron"
+  },
+  {
+    "title": "Subconscious",
+    "week": "providers",
+    "url": "https://www.subconscious.dev/pricing",
+    "sharer": "Tom",
+    "date": "13 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Coding plans starting at $100/mo with 60M tokens/day. Shared via its pricing page.",
+    "_batch": "providers.md",
+    "id": "subconscious"
+  },
+  {
+    "title": "FEIHOA",
+    "week": "providers",
+    "url": "https://feihoa.com/",
+    "sharer": "Tom",
+    "date": "13 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Unlimited AI plans from €6. States prompts and outputs are not used for training, though it may retain data briefly for security, abuse prevention and legal reasons.",
+    "_batch": "providers.md",
+    "id": "feihoa"
+  },
+  {
+    "title": "Crof",
+    "week": "providers",
+    "url": "https://crof.ai/",
+    "sharer": "tom (App)",
+    "date": "13 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference provider at crof.ai; public evidence is thin (snippet-based). Third-party substitution allegations seen during research are unverified and not repeated here.",
+    "_batch": "providers.md",
+    "id": "crof"
+  },
+  {
+    "title": "Real API Pricing",
+    "week": "providers",
+    "url": "https://github.com/FeiZhuLulu/real-api-pricing",
+    "sharer": "JohnDotOwl",
+    "date": "11 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "GitHub repo behind the real-api-pricing comparison of actual inference API prices. Its web app is already in this library's web-apps section; this is the distinct source repo.",
+    "_batch": "providers.md",
+    "id": "real-api-pricing"
+  },
+  {
+    "title": "OpenCode Go",
+    "week": "providers",
+    "url": "https://opencode.ai/go",
+    "sharer": "UT",
+    "date": "10 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Subscription plan for the OpenCode coding agent. Shared with a screenshot of the plan page.",
+    "_batch": "providers.md",
+    "id": "opencode-go"
+  },
+  {
+    "title": "SingularityAPI",
+    "week": "providers",
+    "url": "https://singularityapi.dev/",
+    "sharer": "uur",
+    "date": "10 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference API; a forwarded announcement noted DeepSeek-V4.1-Flash going live on it.",
+    "_batch": "providers.md",
+    "id": "singularityapi"
+  },
+  {
+    "title": "DeepSeek clock",
+    "week": "providers",
+    "url": "https://deepakness.com/deepseek/",
+    "sharer": "Alp",
+    "date": "10 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Personal utility page showing DeepSeek's live peak/off-peak status in local time with both models' prices either way. Rates match the official docs.",
+    "_batch": "providers.md",
+    "id": "deepseek-clock"
+  },
+  {
+    "title": "Token Harbor",
+    "week": "providers",
+    "url": "https://tokenharbor.ai/pricing",
+    "sharer": "thelaggingway",
+    "date": "8 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference API with a published pricing page; the sharer noted roughly 3.5x markup on its $10 plan.",
+    "_batch": "providers.md",
+    "id": "token-harbor"
+  },
+  {
+    "title": "StreamLake",
+    "week": "providers",
+    "url": "https://www.streamlake.ai/",
+    "sharer": "tom (App)",
+    "date": "7 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Kuaishou's AI cloud / model-as-a-service platform with API and SDK integration for online inference. Holds ISO 27001/27017/42001 and MLPS Level 3; no explicit zero-retention statement found.",
+    "_batch": "providers.md",
+    "id": "streamlake"
+  },
+  {
+    "title": "CoreWeave",
+    "week": "providers",
+    "url": "https://www.coreweave.com/",
+    "sharer": "tom (App)",
+    "date": "7 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "GPU cloud infrastructure company offering serverless inference APIs, dedicated endpoints and GPU clusters. Infrastructure rather than a retail model API.",
+    "_batch": "providers.md",
+    "id": "coreweave"
+  },
+  {
+    "title": "GMI Cloud",
+    "week": "providers",
+    "url": "https://gmicloud.ai/",
+    "sharer": "tom (App)",
+    "date": "7 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "GPU cloud with serverless inference APIs and dedicated endpoints; lists H100 at $2/GPU-hour and H200 at $2.60/GPU-hour.",
+    "_batch": "providers.md",
+    "id": "gmi-cloud"
+  },
+  {
+    "title": "Venice",
+    "week": "providers",
+    "url": "https://venice.ai/",
+    "sharer": "tom (App)",
+    "date": "7 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Private AI chat and API with free entry and paid tiers (Pro $18/mo). Its API carries a zero-data-retention promise.",
+    "_batch": "providers.md",
+    "id": "venice"
+  },
+  {
+    "title": "Relace",
+    "week": "providers",
+    "url": "https://www.relace.ai/",
+    "sharer": "tom (App)",
+    "date": "7 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Coding-focused API (Instant Apply model, code retrieval, embeddings, reranking) rather than general LLM inference. Available via Continue.dev, with a self-host/VPC option.",
+    "_batch": "providers.md",
+    "id": "relace"
+  },
+  {
+    "title": "AntSeed",
+    "week": "providers",
+    "url": "https://antseed.com/",
+    "sharer": "Tom",
+    "date": "6 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Open market for AI inference with no account or email required and optional TEE-backed providers. That design is not the same as a universal zero-retention promise.",
+    "_batch": "providers.md",
+    "id": "antseed"
+  },
+  {
+    "title": "Inco",
+    "week": "providers",
+    "url": "https://inco.ai/",
+    "sharer": "Tom",
+    "date": "4 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Recently launched its own inference platform, announced on the company blog.",
+    "_batch": "providers.md",
+    "id": "inco"
+  },
+  {
+    "title": "Kenari",
+    "week": "providers",
+    "url": "https://kenari.id/",
+    "sharer": "ROman",
+    "date": "3 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Indonesian inference API — one API key, paid in Rupiah. Shared via its pricing page.",
+    "_batch": "providers.md",
+    "id": "kenari"
+  },
+  {
+    "title": "InferenceSaver",
+    "week": "providers",
+    "url": "https://www.inferencesaver.com/en",
+    "sharer": "Rykuuun",
+    "date": "3 Sep",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Comparison and routing service claiming 40–80% savings on AI inference costs.",
+    "_batch": "providers.md",
+    "id": "inferencesaver"
+  },
+  {
+    "title": "Nube",
+    "week": "providers",
+    "url": "https://nube.sh/",
+    "sharer": "baanish",
+    "date": "30 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference API with published per-token pricing. States explicit zero data retention with an upstream no-training clause.",
+    "_batch": "providers.md",
+    "id": "nube"
+  },
+  {
+    "title": "Cline Pass",
+    "week": "providers",
+    "url": "https://cline.bot/",
+    "sharer": "linker",
+    "date": "30 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Subscription for Cline's coding agent at $9.99/mo, positioned as 2–5x the quota versus direct API spend. The \"5x cheaper than API\" phrasing seen in chatter is not verified.",
+    "_batch": "providers.md",
+    "id": "cline-pass"
+  },
+  {
+    "title": "Nebius Token Factory",
+    "week": "providers",
+    "url": "https://tokenfactory.nebius.com/",
+    "sharer": "ajthemacboy",
+    "date": "30 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Nebius's pay-per-token hosted inference for open text/vision models (~23 models incl. DeepSeek, Llama, Qwen). New accounts get trial credit; uses separate v1 API credentials.",
+    "_batch": "providers.md",
+    "id": "nebius-token-factory"
+  },
+  {
+    "title": "Coral Bricks",
+    "week": "providers",
+    "url": "https://www.coralbricks.ai/",
+    "sharer": "scarywood75",
+    "date": "29 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "High-throughput inference aimed at agents. A forwarded promo code (SUPERINT) covered GLM 5.2 and Kimi K3.",
+    "_batch": "providers.md",
+    "id": "coral-bricks"
+  },
+  {
+    "title": "Fast Inference",
+    "week": "providers",
+    "url": "https://fast.inference.net/pricing",
+    "sharer": "baanish",
+    "date": "27 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Gateway for AI models and coding agents with provider failover. $9/mo gives $10 gateway credit, $49/mo gives $60, then pay-as-you-go at direct rates.",
+    "_batch": "providers.md",
+    "id": "fast-inference"
+  },
+  {
+    "title": "Entrim",
+    "week": "providers",
+    "url": "https://entrim.ai/",
+    "sharer": "Tom",
+    "date": "25 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "$10 in credits plus pay-as-you-go inference. Processes prompts and outputs in RAM only and does not train on them.",
+    "_batch": "providers.md",
+    "id": "entrim"
+  },
+  {
+    "title": "Merge Gateway",
+    "week": "providers",
+    "url": "https://merge.dev/",
+    "sharer": "0xSaiya",
+    "date": "24 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Multi-provider gateway. A Discord-shared \"75% off DeepSeek V4 Flash through September 30\" promo was not corroborated on its site.",
+    "_batch": "providers.md",
+    "id": "merge-gateway"
+  },
+  {
+    "title": "sference",
+    "week": "providers",
+    "url": "https://sference.com/",
+    "sharer": "scarywood75",
+    "date": "21 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Managed inference for open models on European GPUs. Public evidence is snippet-based; details unverified.",
+    "_batch": "providers.md",
+    "id": "sference"
+  },
+  {
+    "title": "Unifically",
+    "week": "providers",
+    "url": "https://unifically.com/",
+    "sharer": "scarywood75",
+    "date": "21 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Pay-per-use multi-model API (no subscription) with a $0.20 free balance and per-generation pricing, e.g. $0.03 per image. The sharer called it \"sus\" — treat vendor claims cautiously.",
+    "_batch": "providers.md",
+    "id": "unifically"
+  },
+  {
+    "title": "Reflex",
+    "week": "providers",
+    "url": "https://spark.reflex.inc/",
+    "sharer": "Alp",
+    "date": "21 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Post-trained Kimi K3 served with 6x context at a claimed 490 tokens/sec. Performance claims come from the provider's own page.",
+    "_batch": "providers.md",
+    "id": "reflex"
+  },
+  {
+    "title": "OpenModels",
+    "week": "providers",
+    "url": "https://openmodels.market/plans",
+    "sharer": "Rykuuun",
+    "date": "20 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "\"The open market for AI tokens\", with published plans.",
+    "_batch": "providers.md",
+    "id": "openmodels"
+  },
+  {
+    "title": "OpenRouter",
+    "week": "providers",
+    "url": "https://openrouter.ai/",
+    "sharer": "scarywood75",
+    "date": "19 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Multi-provider model gateway charging a 5.5% fee, with 50 free requests/day. Shared via its GLM 5.3 provider/pricing page.",
+    "_batch": "providers.md",
+    "id": "openrouter"
+  },
+  {
+    "title": "TensorX",
+    "week": "providers",
+    "url": "https://tensorx.ai/pricing/",
+    "sharer": "Alp",
+    "date": "19 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "EU-hosted pay-as-you-go inference whose pricing page states verbatim: \"all inference is zero data retention.\"",
+    "_batch": "providers.md",
+    "id": "tensorx"
+  },
+  {
+    "title": "AI Router",
+    "week": "providers",
+    "url": "https://airouter.ch/",
+    "sharer": "thelaggingway",
+    "date": "18 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Swiss-hosted inference API (\"All of AI. One API. Made in Switzerland\") with GDPR compliance and data hosted in Switzerland. Flat CHF 39/mo unlimited under a fair-use policy; OpenAI-compatible at api.airouter.ch/v1.",
+    "_batch": "providers.md",
+    "id": "ai-router"
+  },
+  {
+    "title": "B.AI",
+    "week": "providers",
+    "url": "https://b.ai/",
+    "sharer": "Tom",
+    "date": "18 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference API documented with DeepSeek-V4-Flash endpoints.",
+    "_batch": "providers.md",
+    "id": "b-ai"
+  },
+  {
+    "title": "OrcaRouter",
+    "week": "providers",
+    "url": "https://www.orcarouter.ai/",
+    "sharer": "simply soy",
+    "date": "18 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Zero-markup BYOK router with an open-source self-hostable Lite (MIT); the hosted plan includes free credits. Pass-through per-token pricing, e.g. DeepSeek V4 Flash $0.15/$0.29 per 1M in/out.",
+    "_batch": "providers.md",
+    "id": "orcarouter"
+  },
+  {
+    "title": "OpenFerence",
+    "week": "providers",
+    "url": "https://openference.ai/",
+    "sharer": "Tom",
+    "date": "17 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference API at openference.ai; public evidence is snippet-based only. A Discord claim that its GLM 5.2 \"is not even real\" is unverified.",
+    "_batch": "providers.md",
+    "id": "openference"
+  },
+  {
+    "title": "wafer",
+    "week": "providers",
+    "url": "https://wafer.ai/",
+    "sharer": "baanish",
+    "date": "16 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference provider, with DeepSeek V4 Flash mentioned on it in later chatter. Surfaced via an X post from @wafer_ai.",
+    "_batch": "providers.md",
+    "id": "wafer"
+  },
+  {
+    "title": "Fireworks AI",
+    "week": "providers",
+    "url": "https://fireworks.ai/",
+    "sharer": "baanish",
+    "date": "16 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Serverless inference from $0.10/1M tokens (under 4B params), $1 free starter credit, 50% off batch. 100–400+ open models with an OpenAI-compatible API, FireAttention engine, LoRA/RFT fine-tuning and dedicated GPUs.",
+    "_batch": "providers.md",
+    "id": "fireworks-ai"
+  },
+  {
+    "title": "RunInfra",
+    "week": "providers",
+    "url": "https://runinfra.ai/",
+    "sharer": "Aditya Borkar",
+    "date": "16 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference provider; its DeepSeek V4 Flash $0.13/M input price was corroborated. A \"1.8¢/M blended\" figure seen in chatter is not a list price.",
+    "_batch": "providers.md",
+    "id": "runinfra"
+  },
+  {
+    "title": "Freebuff",
+    "week": "providers",
+    "url": "https://freebuff.com/",
+    "sharer": "Rykuuun",
+    "date": "14 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Free, ad-supported coding agent (CLI, desktop, web, cloud, chat) powered by open models like DeepSeek V4 Pro/Flash and MiniMax M3. Explicit no-training stance — it doesn't share data with third parties that would train on it.",
+    "_batch": "providers.md",
+    "id": "freebuff"
+  },
+  {
+    "title": "GripHubRouter",
+    "week": "providers",
+    "url": "https://griphubrouter.com/",
+    "sharer": "Febryan",
+    "date": "14 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Cheap pay-as-you-go multi-model router, reportedly built by the sharer's friend.",
+    "_batch": "providers.md",
+    "id": "griphubrouter"
+  },
+  {
+    "title": "Melious",
+    "week": "providers",
+    "url": "https://melious.ai/",
+    "sharer": "Sewer56",
+    "date": "14 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "EU-hosted pay-as-you-go inference; the sharer cited ~240 tok/s on DeepSeek V4 Flash. States it does not train on user data.",
+    "_batch": "providers.md",
+    "id": "melious"
+  },
+  {
+    "title": "SiliconFlow",
+    "week": "providers",
+    "url": "https://www.siliconflow.com/",
+    "sharer": "thelaggingway",
+    "date": "14 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "One OpenAI-compatible API for open and commercial LLMs with serverless pay-as-you-go and dedicated endpoints. Homepage claim: \"No data stored, ever.\"",
+    "_batch": "providers.md",
+    "id": "siliconflow"
+  },
+  {
+    "title": "CheaperInference",
+    "week": "providers",
+    "url": "https://cheaperinference.com/",
+    "sharer": "0xSaiya",
+    "date": "14 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Pay-as-you-go inference with published example rates. Prompt and response bodies are not logged, with zero data retention on supported routes.",
+    "_batch": "providers.md",
+    "id": "cheaperinference"
+  },
+  {
+    "title": "Novita",
+    "week": "providers",
+    "url": "https://novita.ai/",
+    "sharer": "kenn",
+    "date": "13 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference provider, mentioned as a fan-out target in routing chatter.",
+    "_batch": "providers.md",
+    "id": "novita"
+  },
+  {
+    "title": "Command Code",
+    "week": "providers",
+    "url": "https://commandcode.ai/docs/plans/goat",
+    "sharer": "Alp",
+    "date": "13 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "GOAT plan — $10/mo for $70 in credits (limits $14/5h, $35/week, $70/month) across 30+ open and closed models. No zero-retention statement found.",
+    "_batch": "providers.md",
+    "id": "command-code"
+  },
+  {
+    "title": "DeepSeek",
+    "week": "providers",
+    "url": "https://api-docs.deepseek.com/quick_start/pricing",
+    "sharer": "Sewer56",
+    "date": "13 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "DeepSeek's official API pricing: pay-as-you-go with 50% off-peak discounts (Flash $0.15/$0.60, Pro $0.66/$1.98 per 1M in/out on cache miss; peak is 2x). The $0.13/$0.30 figures seen in Discord are stale.",
+    "_batch": "providers.md",
+    "id": "deepseek"
+  },
+  {
+    "title": "YOLO Auto",
+    "week": "providers",
+    "url": "https://yolo-auto.com/",
+    "sharer": "Rykuuun",
+    "date": "12 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Unlimited-token API plans, currently $19/$39 — the Discord-era $6/mo claim is superseded. Shared as an unlimited Qwen3.6-35B API.",
+    "_batch": "providers.md",
+    "id": "yolo-auto"
+  },
+  {
+    "title": "Claudin.io",
+    "week": "providers",
+    "url": "https://claudin.io/",
+    "sharer": "Rykuuun",
+    "date": "12 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Flat-rate API keys for coding agents, $9–$99.",
+    "_batch": "providers.md",
+    "id": "claudin-io"
+  },
+  {
+    "title": "regolo.ai",
+    "week": "providers",
+    "url": "https://regolo.ai/pricing/",
+    "sharer": "Rykuuun",
+    "date": "12 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "European inference platform with EUR per-token pay-as-you-go (e.g. Llama-3.3-70B €0.60/€2.70 per 1M in/out) and 70% off the first 3 months. Marketing claim: \"Zero data retention on European green infrastructure.\"",
+    "_batch": "providers.md",
+    "id": "regolo-ai"
+  },
+  {
+    "title": "Arli AI",
+    "week": "providers",
+    "url": "https://arliai.com/",
+    "sharer": "Rykuuun",
+    "date": "12 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference API with unlimited-request plans and an explicit zero-logging statement. The sharer noted it seemed new and unstable.",
+    "_batch": "providers.md",
+    "id": "arli-ai"
+  },
+  {
+    "title": "Hetzner",
+    "week": "providers",
+    "url": "https://inference.hetzner.com/api/v1",
+    "sharer": "baanish",
+    "date": "11 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Hetzner's free experimental open-weight LLM inference API (announced July 2026), EU-hosted. Roughly 4M input / 100k output tokens per 60s per key, no SLA — not for production.",
+    "_batch": "providers.md",
+    "id": "hetzner"
+  },
+  {
+    "title": "Synthetic",
+    "week": "providers",
+    "url": "https://synthetic.new/",
+    "sharer": "baanish",
+    "date": "8 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference provider; a forwarded announcement covered its scaling of Kimi K3.",
+    "_batch": "providers.md",
+    "id": "synthetic"
+  },
+  {
+    "title": "Aster",
+    "week": "providers",
+    "url": "https://asterlab.ai/",
+    "sharer": "scarywood75",
+    "date": "7 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "OpenAI-compatible inference with free, Pro and Max tiers. States zero data retention on the free tier; Pro around $20 for $30 in tokens.",
+    "_batch": "providers.md",
+    "id": "aster"
+  },
+  {
+    "title": "Featherless",
+    "week": "providers",
+    "url": "https://featherless.ai/",
+    "sharer": "whaaaat",
+    "date": "7 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Open-model inference provider. Only its status page was visible during research.",
+    "_batch": "providers.md",
+    "id": "featherless"
+  },
+  {
+    "title": "Meituan LongCat",
+    "week": "providers",
+    "url": "https://longcat.ai/",
+    "sharer": "asx",
+    "date": "3 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Meituan's LongCat with Token Packs — 50M tokens for $4.90 (promotion corroborated). Surfaced via an X post.",
+    "_batch": "providers.md",
+    "id": "meituan-longcat"
+  },
+  {
+    "title": "DeepInfra",
+    "week": "providers",
+    "url": "https://deepinfra.com/",
+    "sharer": "Alp",
+    "date": "2 Aug",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Pay-as-you-go inference across 100+ models with explicit zero data retention. Example: GLM-5.3 Flash $0.075/$0.25 per 1M.",
+    "_batch": "providers.md",
+    "id": "deepinfra"
+  },
+  {
+    "title": "CheapestInference",
+    "week": "providers",
+    "url": "https://cheapestinference.com/",
+    "sharer": "tushii",
+    "date": "31 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Flat-rate unlimited time-block subscriptions — Core pool from $22/mo per 8-hour daily block, Frontier $71/mo, Flagship $199/mo. Prompts and completions are processed in memory and discarded, never used for training.",
+    "_batch": "providers.md",
+    "id": "cheapestinference"
+  },
+  {
+    "title": "PrivacyWatch",
+    "week": "providers",
+    "url": "https://privacywatch.wyrdwerk.com/",
+    "sharer": "thelaggingway",
+    "date": "31 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Open-source comparison of 86+ provider families (97 surfaces) on training, retention, zero-retention and data location, quoting each provider's own ToS and privacy docs. Maintained by the same crew as this library.",
+    "_batch": "providers.md",
+    "id": "privacywatch"
+  },
+  {
+    "title": "OpenAI API pricing",
+    "week": "providers",
+    "url": "https://platform.openai.com/docs/pricing",
+    "sharer": "simply soy",
+    "date": "31 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "OpenAI's official per-1M-token pricing page (e.g. gpt-6-luna $0.10 in / $0.50 out short-context). Useful as the first-party reference behind third-party price comparisons.",
+    "_batch": "providers.md",
+    "id": "openai-api-pricing"
+  },
+  {
+    "title": "Zro",
+    "week": "providers",
+    "url": "https://zro.moonmath.ai/pricing",
+    "sharer": "Tom",
+    "date": "30 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "$20/mo including $60 of inference spend, OpenAI/Anthropic-compatible. Explicit zero request retention — prompts and completions are never used for training, evaluation or analytics.",
+    "_batch": "providers.md",
+    "id": "zro"
+  },
+  {
+    "title": "InferX",
+    "week": "providers",
+    "url": "https://inferx.net/models",
+    "sharer": "thelaggingway",
+    "date": "30 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Pay-as-you-go inference across 200+ one-click production-ready model endpoints.",
+    "_batch": "providers.md",
+    "id": "inferx"
+  },
+  {
+    "title": "xKiro",
+    "week": "providers",
+    "url": "https://xkiro.com/",
+    "sharer": "thelaggingway",
+    "date": "30 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Unified gateway — free tier with 40+ free models and 5M tokens/day (no card), pay-as-you-go about 35% below official prices on select models. 90+ models across 16 providers on one API key.",
+    "_batch": "providers.md",
+    "id": "xkiro"
+  },
+  {
+    "title": "StepFun",
+    "week": "providers",
+    "url": "https://platform.stepfun.ai/",
+    "sharer": "thelaggingway",
+    "date": "29 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "StepFun's open platform with a usage-billed API (api.stepfun.ai/v1) and a 15-day trial needing no card. Serves Step 5 Preview and StepAudio 3.",
+    "_batch": "providers.md",
+    "id": "stepfun"
+  },
+  {
+    "title": "Phoenix Grove",
+    "week": "providers",
+    "url": "https://pgsgrove.com/",
+    "sharer": "thelaggingway",
+    "date": "29 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Coding-plan provider; the sharer noted a vague allowance but a free month on offer.",
+    "_batch": "providers.md",
+    "id": "phoenix-grove"
+  },
+  {
+    "title": "Neuralwatt",
+    "week": "providers",
+    "url": "https://portal.neuralwatt.com/",
+    "sharer": "Blessed Piss Enjoyer",
+    "date": "28 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "$10/kWh pay-as-you-go (or per-token), $1 free credit after adding a payment method; monthly plans $20–$200. Hosted multi-model OpenAI-compatible API plus on-prem deployment; 14 models.",
+    "_batch": "providers.md",
+    "id": "neuralwatt"
+  },
+  {
+    "title": "Chutes",
+    "week": "providers",
+    "url": "https://chutes.ai/",
+    "sharer": "thelaggingway",
+    "date": "28 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference provider that was notably early serving Kimi K3, per channel chatter.",
+    "_batch": "providers.md",
+    "id": "chutes"
+  },
+  {
+    "title": "Telnyx",
+    "week": "providers",
+    "url": "https://telnyx.com/pricing/inference-api",
+    "sharer": "thelaggingway",
+    "date": "28 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference API with published per-token pricing — Kimi K3 at $2.70/M input, $0.27/M cached input, $13.50/M output. The sharer noted they're open to negotiating volume pricing.",
+    "_batch": "providers.md",
+    "id": "telnyx"
+  },
+  {
+    "title": "Charm Hyper",
+    "week": "providers",
+    "url": "https://hyper.charm.land/",
+    "sharer": "Alp",
+    "date": "27 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Free monthly credits plus a $20/mo plan, with an explicit zero-data-retention and GDPR claim.",
+    "_batch": "providers.md",
+    "id": "charm-hyper"
+  },
+  {
+    "title": "TokenWatch",
+    "week": "providers",
+    "url": "https://tokenwatch.wyrdwerk.com/",
+    "sharer": "thelaggingway",
+    "date": "27 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Live price comparison across inference providers, maintained by the same crew as this library. The sharer noted a Hyper subscription yields $12.50 of inference a day.",
+    "_batch": "providers.md",
+    "id": "tokenwatch"
+  },
+  {
+    "title": "Zyloo",
+    "week": "providers",
+    "url": "https://zyloo.io/subscription",
+    "sharer": "thelaggingway",
+    "date": "27 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Subscription-based inference provider at zyloo.io.",
+    "_batch": "providers.md",
+    "id": "zyloo"
+  },
+  {
+    "title": "Moonshot platform docs",
+    "week": "providers",
+    "url": "https://platform.kimi.ai/docs",
+    "sharer": "Manar",
+    "date": "27 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Moonshot AI's platform documentation for the Kimi model family. Shared originally via a Kimi-K3 Hugging Face link.",
+    "_batch": "providers.md",
+    "id": "moonshot-platform-docs"
+  },
+  {
+    "title": "Verboo Code",
+    "week": "providers",
+    "url": "https://verboo.ai/",
+    "sharer": "thelaggingway",
+    "date": "25 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Free trial, then unlimited-token subscriptions from Junior $24/mo to Ultra $269/mo, plus a usage API from $0.12/1M input tokens. Coding agent plus OpenAI-compatible API on Brazilian servers; states it does not train on or review code and calls.",
+    "_batch": "providers.md",
+    "id": "verboo-code"
+  },
+  {
+    "title": "Makora",
+    "week": "providers",
+    "url": "https://www.makora.com/",
+    "sharer": "0xSaiya",
+    "date": "25 Jul",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference provider and optimization service — Starter $20/mo and Developer $200/mo (both shown sold out), with private model serving and on-prem options. Starter covers unlimited models under 40B parameters.",
+    "_batch": "providers.md",
+    "id": "makora"
+  },
+  {
     "title": "Loop Library (ForwardFuture Signals)",
     "week": "18–24 Jun 2026",
     "url": "https://signals.forwardfuture.ai/loop-library/",
@@ -9,8 +1062,8 @@
       "web-app"
     ],
     "brief": "A loop library from ForwardFuture Signals, shared as a design reference. Details unverified from the link-only share.",
-    "id": "loop-library-forwardfuture-signals",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "loop-library-forwardfuture-signals"
   },
   {
     "title": "Flue 1.0 Beta",
@@ -24,8 +1077,8 @@
       "article"
     ],
     "brief": "Flue 1.0 Beta announcement — \"the open framework for building agents without lab lock-in: write once, deploy...\" Details beyond the embed preview are unverified.",
-    "id": "flue-1-0-beta",
-    "warning": ""
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "flue-1-0-beta"
   },
   {
     "title": "LMCache",
@@ -38,8 +1091,8 @@
       "github"
     ],
     "brief": "\"Supercharge Your LLM with the Fastest KV Cache Layer.\" The performance claim is the project's and unverified.",
-    "id": "lmcache",
-    "warning": ""
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "lmcache"
   },
   {
     "title": "pi-shell-acp",
@@ -52,8 +1105,8 @@
       "github"
     ],
     "brief": "Use Claude Code, Codex, and Gemini CLI through the Agent Client Protocol (ACP) inside pi. Details unverified from the link-only share.",
-    "id": "pi-shell-acp",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "pi-shell-acp"
   },
   {
     "title": "es-git PR #213",
@@ -66,8 +1119,8 @@
       "github"
     ],
     "brief": "A fix by monotykamary — diff.print() (default Patch format) was stripping the +/-/space line-origin prefixes from output; this PR prepends them back.",
-    "id": "es-git-pr-213",
-    "warning": ""
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "es-git-pr-213"
   },
   {
     "title": "pi-tool-repair",
@@ -80,8 +1133,8 @@
       "github"
     ],
     "brief": "A validate-then-repair extension for pi that fixes common LLM tool-call mistakes (null fields, stringified arrays, wrong field names, anchor bleed) before tools execute. Tom: \"technically their tool repair brought over to pi (+ my additions).\"",
-    "id": "pi-tool-repair",
-    "warning": ""
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "pi-tool-repair"
   },
   {
     "title": "fff PR #593",
@@ -94,8 +1147,8 @@
       "github"
     ],
     "brief": "A fix for fff — the /fff-mode override was only stored in an in-memory variable lost on /reload and session restart; this PR persists fff-mode across reloads and session resumes.",
-    "id": "fff-pr-593",
-    "warning": ""
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "fff-pr-593"
   },
   {
     "title": "fff",
@@ -108,8 +1161,8 @@
       "github"
     ],
     "brief": "\"The fastest and the most accurate file search toolkit for AI agents, Neovim, Rust, C, and NodeJS.\" The performance claim is the project's and unverified.",
-    "id": "fff",
-    "warning": ""
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "fff"
   },
   {
     "title": "ccusage",
@@ -122,8 +1175,8 @@
       "github"
     ],
     "brief": "Analyze coding (agent) CLI token usage and costs from local data.",
-    "id": "ccusage",
-    "warning": ""
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "ccusage"
   },
   {
     "title": "hyperframes",
@@ -136,8 +1189,8 @@
       "github"
     ],
     "brief": "\"Write HTML. Render video. Built for agents.\" Details unverified from the link-only share.",
-    "id": "hyperframes",
-    "warning": "Built for agents.\" Details unverified from the link-only share."
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "hyperframes"
   },
   {
     "title": "MoneyPrinterTurbo",
@@ -150,8 +1203,8 @@
       "github"
     ],
     "brief": "Generate HD short videos with one click using AI LLMs (the repo description is in Chinese). Details unverified from the link-only share.",
-    "id": "moneyprinterturbo",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "moneyprinterturbo"
   },
   {
     "title": "Cozy",
@@ -163,8 +1216,8 @@
       "web-app"
     ],
     "brief": "A local-first private diary app. Details unverified from the link-only share.",
-    "id": "cozy",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "cozy"
   },
   {
     "title": "MiniMax M3",
@@ -177,8 +1230,8 @@
       "article"
     ],
     "brief": "MiniMax's M3 announcement — frontier coding capability, 1M context, native multimodality, and a new MSA architecture. All vendor claims, unverified.",
-    "id": "minimax-m3",
-    "warning": "All vendor claims, unverified."
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "minimax-m3"
   },
   {
     "title": "codex-lb",
@@ -191,8 +1244,8 @@
       "github"
     ],
     "brief": "A Codex/ChatGPT multiple-account load balancer and proxy with usage tracking, a dashboard, and OpenCode compatibility. Tom: \"gonna try first.\"",
-    "id": "codex-lb",
-    "warning": ""
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "codex-lb"
   },
   {
     "title": "codex-auth",
@@ -205,8 +1258,8 @@
       "github"
     ],
     "brief": "A CLI tool to switch and manage Codex accounts. Details unverified from the link-only share.",
-    "id": "codex-auth",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "codex-auth"
   },
   {
     "title": "Zinley",
@@ -219,8 +1272,8 @@
       "web-app"
     ],
     "brief": "\"Built to extend you. 10× your day\" — an AI extension of you across every device and person: takes your calls, writes your emails, and more. Vendor claims, unverified.",
-    "id": "zinley",
-    "warning": "Vendor claims, unverified."
+    "_batch": "week-2026-06-04_to_2026-06-29.md",
+    "id": "zinley"
   },
   {
     "title": "IRIS",
@@ -233,8 +1286,8 @@
       "github"
     ],
     "brief": "A shell auto-completion tool for your terminal. Details unverified from the link-only share.",
-    "id": "iris",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "iris"
   },
   {
     "title": "kimi-k3-mlx",
@@ -247,8 +1300,8 @@
       "github"
     ],
     "brief": "An MLX port of moonshotai's Kimi-K3 (2.78T multimodal MoE); the weights are converted from the original release and requantized. Conversion quality is unverified.",
-    "id": "kimi-k3-mlx",
-    "warning": "Conversion quality is unverified."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "kimi-k3-mlx"
   },
   {
     "title": "Hermes Console",
@@ -261,8 +1314,8 @@
       "web-app"
     ],
     "brief": "A self-hosted AI agent console (\"Tu agente AI self-hosted\") that thelaggingway is giving a go. The self-hosted claim is unverified beyond the site's tagline.",
-    "id": "hermes-console",
-    "warning": "The self-hosted claim is unverified beyond the site's tagline."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "hermes-console"
   },
   {
     "title": "OptMem",
@@ -275,8 +1328,8 @@
       "github"
     ],
     "brief": "Permanent memory for AI agents, from Victor Taelin. Details unverified from the link-only share.",
-    "id": "optmem",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "optmem"
   },
   {
     "title": "Content Architecture",
@@ -289,8 +1342,8 @@
       "web-app"
     ],
     "brief": "An agent-ready Sanity + Next.js kit. Details unverified from the link-only share.",
-    "id": "content-architecture",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "content-architecture"
   },
   {
     "title": "nimbus-lite",
@@ -303,8 +1356,8 @@
       "github"
     ],
     "brief": "A free, framework-free AI chat UI kit for AI projects. Details unverified from the link-only share.",
-    "id": "nimbus-lite",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "nimbus-lite"
   },
   {
     "title": "worldmonitor",
@@ -317,8 +1370,8 @@
       "web-app"
     ],
     "brief": "A real-time global intelligence dashboard. Details unverified from the link-only share.",
-    "id": "worldmonitor",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "worldmonitor"
   },
   {
     "title": "Amicro",
@@ -330,8 +1383,8 @@
       "web-app"
     ],
     "brief": "Premium React micro-transitions and interaction components. Details unverified from the link-only share.",
-    "id": "amicro",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "amicro"
   },
   {
     "title": "pi-dispatch",
@@ -344,8 +1397,8 @@
       "github"
     ],
     "brief": "Run the pi coding agent as a service. Details unverified from the link-only share.",
-    "id": "pi-dispatch",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "pi-dispatch"
   },
   {
     "title": "Componentry",
@@ -357,8 +1410,8 @@
       "web-app"
     ],
     "brief": "Beautiful animated UI components for React. Rykuuun shared it as a front-end dev finding; details unverified beyond the site's tagline.",
-    "id": "componentry",
-    "warning": "Rykuuun shared it as a front-end dev finding; details unverified beyond the site's tagline."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "componentry"
   },
   {
     "title": "Mint Playground",
@@ -370,8 +1423,8 @@
       "web-app"
     ],
     "brief": "\"Make the Web Spatial\" — a playground for spatial web experiences. Details unverified from the link-only share.",
-    "id": "mint-playground",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "mint-playground"
   },
   {
     "title": "delphitools",
@@ -384,8 +1437,8 @@
       "web-app"
     ],
     "brief": "Privacy-first browser tools. Details unverified from the link-only share.",
-    "id": "delphitools",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "delphitools"
   },
   {
     "title": "modly",
@@ -398,8 +1451,8 @@
       "github"
     ],
     "brief": "A desktop app that generates 3D models from images using local AI. Details unverified from the link-only share.",
-    "id": "modly",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "modly"
   },
   {
     "title": "img2threejs",
@@ -412,8 +1465,8 @@
       "github"
     ],
     "brief": "Rebuilds the object in a reference image as code-only procedural Three.js. Details unverified from the link-only share.",
-    "id": "img2threejs",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "img2threejs"
   },
   {
     "title": "pi-openai-server-compaction",
@@ -426,8 +1479,8 @@
       "github"
     ],
     "brief": "Shared without description; the name suggests an OpenAI-compatible server with context compaction for the pi agent. Unverified.",
-    "id": "pi-openai-server-compaction",
-    "warning": "Unverified."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "pi-openai-server-compaction"
   },
   {
     "title": "Fractal (Plasma AI)",
@@ -440,8 +1493,8 @@
       "web-app"
     ],
     "brief": "Plasma AI's Fractal wraps Claude Code and Codex in bounded recursive loops. Details beyond the truncated preview are unverified.",
-    "id": "fractal-plasma-ai",
-    "warning": "Details beyond the truncated preview are unverified."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "fractal-plasma-ai"
   },
   {
     "title": "freerange",
@@ -454,8 +1507,8 @@
       "github"
     ],
     "brief": "Static checks for ordinary TypeScript layout code, from chenglou. Details unverified from the link-only share.",
-    "id": "freerange",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "freerange"
   },
   {
     "title": "60fps.design",
@@ -467,8 +1520,8 @@
       "web-app"
     ],
     "brief": "UI/UX animation inspiration for mobile and web apps. Details unverified from the link-only share.",
-    "id": "60fps-design",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "60fps-design"
   },
   {
     "title": "pi-queue-steer",
@@ -481,8 +1534,8 @@
       "github"
     ],
     "brief": "A Cursor-style visible follow-up queue with inline editing for the Pi agent. Details unverified from the link-only share.",
-    "id": "pi-queue-steer",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "pi-queue-steer"
   },
   {
     "title": "pi-grok",
@@ -495,8 +1548,8 @@
       "github"
     ],
     "brief": "Use your x.com Premium/SuperGrok subscription in pi with OAuth login, auto-refresh, and live model discovery; supports grok-4.5, grok-composer-2.5-fast, grok-build, grok-4.3, and x_search. Feature claims come from the repo description and are unverified.",
-    "id": "pi-grok",
-    "warning": "Feature claims come from the repo description and are unverified."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "pi-grok"
   },
   {
     "title": "Kimi-Vendor-Verifier",
@@ -509,8 +1562,8 @@
       "github"
     ],
     "brief": "A vendor verifier from MoonshotAI; baanish asked if anyone has run it. Details unverified from the message text.",
-    "id": "kimi-vendor-verifier",
-    "warning": "Details unverified from the message text."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "kimi-vendor-verifier"
   },
   {
     "title": "agentic_coding_flywheel_setup",
@@ -523,8 +1576,8 @@
       "github"
     ],
     "brief": "An agentic coding setup that Rykuuun found \"more flexible\" than alternatives. Details unverified from the message text.",
-    "id": "agentic-coding-flywheel-setup",
-    "warning": "Details unverified from the message text."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "agentic-coding-flywheel-setup"
   },
   {
     "title": "tailscale-shell",
@@ -537,8 +1590,8 @@
       "github"
     ],
     "brief": "A proxied shell + exit-node picker for Tailscale userspace networking, with egress through Mullvad or other providers. Details unverified from the link-only share.",
-    "id": "tailscale-shell",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "tailscale-shell"
   },
   {
     "title": "Dory",
@@ -551,8 +1604,8 @@
       "web-app"
     ],
     "brief": "Docker & Linux containers native to Mac — free, open source, one shared VM for all containers, claiming ~4.7x less idle memory than per-container setups. The memory claim is the vendor's and unverified.",
-    "id": "dory",
-    "warning": "The memory claim is the vendor's and unverified."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "dory"
   },
   {
     "title": "archify",
@@ -565,8 +1618,8 @@
       "github"
     ],
     "brief": "An agent skill that generates beautiful architecture diagrams with dark/light theme toggle and PNG/JPEG export. Details unverified from the link-only share.",
-    "id": "archify",
-    "warning": "Details unverified from the link-only share."
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "archify"
   },
   {
     "title": "beads_rust",
@@ -579,8 +1632,8 @@
       "github"
     ],
     "brief": "A fast Rust port of Steve Yegge's beads — a local-first, non-invasive issue tracker storing tasks in SQLite. Rykuuun \"really loved this tool\" and says it makes things easier to manage.",
-    "id": "beads-rust",
-    "warning": ""
+    "_batch": "week-2026-07-02_to_2026-07-29.md",
+    "id": "beads-rust"
   },
   {
     "title": "hax",
@@ -592,8 +1645,8 @@
       "ai-tool"
     ],
     "brief": "A minimalist coding agent that runs natively in the terminal. The \"minimalist\" claim comes from the sharer's one-line description and is unverified.",
-    "id": "hax",
-    "warning": "The \"minimalist\" claim comes from the sharer's one-line description and is unverified."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "hax"
   },
   {
     "title": "AgentFS introduction (Turso docs)",
@@ -605,8 +1658,8 @@
       "ai-tool"
     ],
     "brief": "Turso's introduction to AgentFS, which Rykuuun found interesting. It appears to be an agent-oriented filesystem from Turso; anything beyond the docs link is unverified.",
-    "id": "agentfs-introduction-turso-docs",
-    "warning": "It appears to be an agent-oriented filesystem from Turso; anything beyond the docs link is unverified."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "agentfs-introduction-turso-docs"
   },
   {
     "title": "billion-context-pi",
@@ -619,8 +1672,8 @@
       "github"
     ],
     "brief": "Rykuuun shared this asking \"this is pi-vcc right?\", suggesting it's related to a \"pi\" coding agent with very large context. Details are unverified from the message text alone.",
-    "id": "billion-context-pi",
-    "warning": "Details are unverified from the message text alone."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "billion-context-pi"
   },
   {
     "title": "pi (nktkt)",
@@ -633,8 +1686,8 @@
       "github"
     ],
     "brief": "A GitHub repo named \"pi\", shared without description. Given the surrounding chatter about pi-vcc, likely an agent project; unverified from the message text.",
-    "id": "pi-nktkt",
-    "warning": "Given the surrounding chatter about pi-vcc, likely an agent project; unverified from the message text."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "pi-nktkt"
   },
   {
     "title": "maki",
@@ -647,8 +1700,8 @@
       "github"
     ],
     "brief": "A GitHub repo shared without description. What it does is unverified from the message text alone.",
-    "id": "maki",
-    "warning": "What it does is unverified from the message text alone."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "maki"
   },
   {
     "title": "Inspora",
@@ -660,8 +1713,8 @@
       "web-app"
     ],
     "brief": "A design-focused site, shared link-only. Its exact purpose is unverified from the message text; the domain suggests a design inspiration or resource site.",
-    "id": "inspora",
-    "warning": "Its exact purpose is unverified from the message text; the domain suggests a design inspiration or resource site."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "inspora"
   },
   {
     "title": "Gooey",
@@ -673,8 +1726,8 @@
       "web-app"
     ],
     "brief": "A site by Jakub Antalik, shared link-only. The name suggests gooey/morphing visual effects; unverified from the message text.",
-    "id": "gooey",
-    "warning": "The name suggests gooey/morphing visual effects; unverified from the message text."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "gooey"
   },
   {
     "title": "Collect UI",
@@ -686,8 +1739,8 @@
       "web-app"
     ],
     "brief": "A gallery of collected user interfaces for design inspiration. Shared link-only; the description is inferred from the site's name and unverified from the message.",
-    "id": "collect-ui",
-    "warning": "Shared link-only; the description is inferred from the site's name and unverified from the message."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "collect-ui"
   },
   {
     "title": "bro-skill",
@@ -700,8 +1753,8 @@
       "github"
     ],
     "brief": "An agent \"skill\" on GitHub. What it teaches the agent is unverified from the link-only share.",
-    "id": "bro-skill",
-    "warning": "What it teaches the agent is unverified from the link-only share."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "bro-skill"
   },
   {
     "title": "Avoid z-index Whenever Possible",
@@ -713,8 +1766,8 @@
       "article"
     ],
     "brief": "A 2020 article by Daniel Rotter arguing for CSS layouts that avoid z-index. The thesis is in the URL slug; the article's quality is unverified.",
-    "id": "avoid-z-index-whenever-possible",
-    "warning": "The thesis is in the URL slug; the article's quality is unverified."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "avoid-z-index-whenever-possible"
   },
   {
     "title": "Beautiful UI",
@@ -726,8 +1779,8 @@
       "web-app"
     ],
     "brief": "A demo site showcasing a \"beautiful UI\". Shared link-only; what it demonstrates is unverified.",
-    "id": "beautiful-ui",
-    "warning": "Shared link-only; what it demonstrates is unverified."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "beautiful-ui"
   },
   {
     "title": "oil-motion",
@@ -740,8 +1793,8 @@
       "web-app"
     ],
     "brief": "A GitHub repo, likely a motion/animation library given the name. Shared link-only; unverified.",
-    "id": "oil-motion",
-    "warning": "Shared link-only; unverified."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "oil-motion"
   },
   {
     "title": "Arlan Marat's Vault",
@@ -753,8 +1806,8 @@
       "web-app"
     ],
     "brief": "A personal \"vault\" site by Arlan Marat. Contents are unverified from the link-only share.",
-    "id": "arlan-marat-s-vault",
-    "warning": "Contents are unverified from the link-only share."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "arlan-marat-s-vault"
   },
   {
     "title": "Refero Design Styles",
@@ -766,8 +1819,8 @@
       "web-app"
     ],
     "brief": "A design-styles reference site. Shared link-only; unverified beyond the domain.",
-    "id": "refero-design-styles",
-    "warning": "Shared link-only; unverified beyond the domain."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "refero-design-styles"
   },
   {
     "title": "There Is An Open Source For That",
@@ -779,8 +1832,8 @@
       "web-app"
     ],
     "brief": "A directory of open-source alternatives to popular software. The description is inferred from the site's name; unverified from the message.",
-    "id": "there-is-an-open-source-for-that",
-    "warning": "The description is inferred from the site's name; unverified from the message."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "there-is-an-open-source-for-that"
   },
   {
     "title": "josh",
@@ -793,8 +1846,8 @@
       "github"
     ],
     "brief": "The josh project on GitHub, shared link-only. What it does is unverified from the message text.",
-    "id": "josh",
-    "warning": "What it does is unverified from the message text."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "josh"
   },
   {
     "title": "Checklist Design",
@@ -806,8 +1859,8 @@
       "web-app"
     ],
     "brief": "A design checklist site. Shared link-only; unverified beyond the domain.",
-    "id": "checklist-design",
-    "warning": "Shared link-only; unverified beyond the domain."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "checklist-design"
   },
   {
     "title": "oh-my-hermes",
@@ -820,8 +1873,8 @@
       "github"
     ],
     "brief": "asx8678's entire review was \"crazy\". What the repo does is unverified from the message text.",
-    "id": "oh-my-hermes",
-    "warning": "What the repo does is unverified from the message text."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "oh-my-hermes"
   },
   {
     "title": "Kitesurf (Cloudflare blog)",
@@ -833,8 +1886,8 @@
       "article"
     ],
     "brief": "A Cloudflare blog post about Kitesurf. The post's claims are unverified; it's a vendor blog.",
-    "id": "kitesurf-cloudflare-blog",
-    "warning": "The post's claims are unverified; it's a vendor blog."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "kitesurf-cloudflare-blog"
   },
   {
     "title": "linus-torvalds-skill",
@@ -847,8 +1900,8 @@
       "github"
     ],
     "brief": "An agent skill themed on Linus Torvalds, presumably encoding his review style for code agents. Shared link-only; unverified.",
-    "id": "linus-torvalds-skill",
-    "warning": "Shared link-only; unverified."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "linus-torvalds-skill"
   },
   {
     "title": "bb",
@@ -861,8 +1914,8 @@
       "github"
     ],
     "brief": "Rykuuun found it \"interesting...\". What it does is unverified from the message text.",
-    "id": "bb",
-    "warning": "What it does is unverified from the message text."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "bb"
   },
   {
     "title": "Qwen3-8 Max on Artificial Analysis",
@@ -875,8 +1928,8 @@
       "web-app"
     ],
     "brief": "Artificial Analysis's model page for Qwen3-8 Max, with benchmarks and pricing. Shared link-only; the page's data is third-party and unverified.",
-    "id": "qwen3-8-max-on-artificial-analysis",
-    "warning": "Shared link-only; the page's data is third-party and unverified."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "qwen3-8-max-on-artificial-analysis"
   },
   {
     "title": "opencli",
@@ -889,8 +1942,8 @@
       "github"
     ],
     "brief": "A GitHub repo named opencli, shared link-only. What it does is unverified from the message text.",
-    "id": "opencli",
-    "warning": "What it does is unverified from the message text."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "opencli"
   },
   {
     "title": "desengs",
@@ -902,8 +1955,8 @@
       "web-app"
     ],
     "brief": "Shared link-only. Purpose unverified from the message text; the domain suggests a design/engineering resource.",
-    "id": "desengs",
-    "warning": "Purpose unverified from the message text; the domain suggests a design/engineering resource."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "desengs"
   },
   {
     "title": "Antidoom (Liquid AI blog)",
@@ -915,8 +1968,8 @@
       "article"
     ],
     "brief": "A Liquid AI blog post about \"Antidoom\". The post's claims are unverified; it's a vendor blog.",
-    "id": "antidoom-liquid-ai-blog",
-    "warning": "The post's claims are unverified; it's a vendor blog."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "antidoom-liquid-ai-blog"
   },
   {
     "title": "Kimi K3 on MI355X (Wafer blog)",
@@ -928,8 +1981,8 @@
       "article"
     ],
     "brief": "A Wafer blog post benchmarking Kimi K3 on AMD MI355X hardware. Claims unverified; vendor blog.",
-    "id": "kimi-k3-on-mi355x-wafer-blog",
-    "warning": "Claims unverified; vendor blog."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "kimi-k3-on-mi355x-wafer-blog"
   },
   {
     "title": "Snowflow",
@@ -941,8 +1994,8 @@
       "web-app"
     ],
     "brief": "A deployed demo called Snowflow. What it demonstrates is unverified from the link-only share.",
-    "id": "snowflow",
-    "warning": "What it demonstrates is unverified from the link-only share."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "snowflow"
   },
   {
     "title": "snowflow_demo",
@@ -955,8 +2008,8 @@
       "web-app"
     ],
     "brief": "The demo repo behind the Snowflow site above. Contents unverified from the link-only share.",
-    "id": "snowflow-demo",
-    "warning": "Contents unverified from the link-only share."
+    "_batch": "week-2026-07-30_to_2026-08-13.md",
+    "id": "snowflow-demo"
   },
   {
     "title": "AoAgents",
@@ -968,8 +2021,8 @@
       "ai-tool"
     ],
     "brief": "An AI agent platform whose pitch is \"Everything is an Agent\". Announcement-level description only; details unverified since the link was not opened.",
-    "id": "aoagents",
-    "warning": "Announcement-level description only; details unverified since the link was not opened."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "aoagents"
   },
   {
     "title": "Phoenix (Arize AI)",
@@ -982,8 +2035,8 @@
       "ai-tool"
     ],
     "brief": "Arize AI's open-source observability platform for LLM apps — tracing, evaluation, and experimentation for agent and RAG workloads. A standard choice for watching what production agents actually do.",
-    "id": "phoenix-arize-ai",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "phoenix-arize-ai"
   },
   {
     "title": "Prime Agent (Prime Intellect)",
@@ -996,8 +2049,8 @@
       "ai-tool"
     ],
     "brief": "Prime Intellect's framework for training AI agents with reinforcement learning. Per the sharer, its gimmick is collecting training data through its CLI — worth a look if you're into RL-for-agents; specifics unverified.",
-    "id": "prime-agent-prime-intellect",
-    "warning": "Per the sharer, its gimmick is collecting training data through its CLI — worth a look if you're into RL-for-agents; specifics unverified."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "prime-agent-prime-intellect"
   },
   {
     "title": "windows-harness (browser-use)",
@@ -1010,8 +2063,8 @@
       "ai-tool"
     ],
     "brief": "A Windows automation harness from the browser-use team (the web-agent library folks). Likely for running agents against Windows apps; details unverified.",
-    "id": "windows-harness-browser-use",
-    "warning": "Likely for running agents against Windows apps; details unverified."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "windows-harness-browser-use"
   },
   {
     "title": "Spec-PTC: Speculative Parallel Test-Time Compute",
@@ -1023,8 +2076,8 @@
       "article"
     ],
     "brief": "A write-up of Spec-PTC, a speculative parallel test-time compute framework for long-horizon agents. Interesting if you follow inference-scaling tricks for agentic workloads.",
-    "id": "spec-ptc-speculative-parallel-test-time-compute",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "spec-ptc-speculative-parallel-test-time-compute"
   },
   {
     "title": "Headlong (Laude Institute)",
@@ -1037,8 +2090,8 @@
       "ai-tool"
     ],
     "brief": "An open-source agent microharness with persistent agency and recursive LLMs — \"of bash, by bash\". Minimal by design; good for experimenting with agent loops without a heavy framework.",
-    "id": "headlong-laude-institute",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "headlong-laude-institute"
   },
   {
     "title": "Shading Motion — Maxime Heckel",
@@ -1050,8 +2103,8 @@
       "article"
     ],
     "brief": "Maxime Heckel's deep dive into shading-based motion design techniques. One of the better-written front-end animation articles; useful if you care about motion craft.",
-    "id": "shading-motion-maxime-heckel",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "shading-motion-maxime-heckel"
   },
   {
     "title": "Radius — The AI Browser for Research",
@@ -1064,8 +2117,8 @@
       "ai-tool"
     ],
     "brief": "An AI-native browser aimed at research workflows. Product claims unverified; notable as another entry in the agentic-browser wave.",
-    "id": "radius-the-ai-browser-for-research",
-    "warning": "Product claims unverified; notable as another entry in the agentic-browser wave."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "radius-the-ai-browser-for-research"
   },
   {
     "title": "darkbloom — MCP gateway",
@@ -1078,8 +2131,8 @@
       "ai-tool"
     ],
     "brief": "An MCP (Model Context Protocol) gateway that advertises an accuracy guarantee — unusual positioning in the MCP tooling space. Claims unverified; interesting if you run MCP servers in production.",
-    "id": "darkbloom-mcp-gateway",
-    "warning": "Claims unverified; interesting if you run MCP servers in production."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "darkbloom-mcp-gateway"
   },
   {
     "title": "pi harness v2 docs (earendil-works)",
@@ -1092,8 +2145,8 @@
       "ai-tool"
     ],
     "brief": "Deep link into the pi coding agent's v2 harness documentation. Worth reading if you use pi or are designing your own agent harness.",
-    "id": "pi-harness-v2-docs-earendil-works",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "pi-harness-v2-docs-earendil-works"
   },
   {
     "title": "ThreeUI",
@@ -1106,8 +2159,8 @@
       "dev-tool"
     ],
     "brief": "A browsable library of Three.js components and interactive shaders. Handy for dropping 3D effects into web projects without writing raw WebGL.",
-    "id": "threeui",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "threeui"
   },
   {
     "title": "kolu",
@@ -1120,8 +2173,8 @@
       "web-app"
     ],
     "brief": "A terminal tool that bills itself as \"the best way to run terminals\". Details unverified, but worth a look if your terminal setup needs rethinking.",
-    "id": "kolu",
-    "warning": "Details unverified, but worth a look if your terminal setup needs rethinking."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "kolu"
   },
   {
     "title": "anti-slop (dmmulroy)",
@@ -1134,8 +2187,8 @@
       "dev-tool"
     ],
     "brief": "Opinionated Oxlint rules that reject low-evidence TypeScript/JavaScript patterns — basically a linter config against AI-slop code. Fun and practical for teams drowning in generated code.",
-    "id": "anti-slop-dmmulroy",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "anti-slop-dmmulroy"
   },
   {
     "title": "Introducing Slack Code (Salesforce)",
@@ -1147,8 +2200,8 @@
       "article"
     ],
     "brief": "Salesforce's announcement of Slack Code, bringing coding-agent workflows into Slack. Announcement-level; the \"oh no\" from the sharer suggests healthy skepticism.",
-    "id": "introducing-slack-code-salesforce",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "introducing-slack-code-salesforce"
   },
   {
     "title": "claudish-to-english (gvzdv)",
@@ -1161,8 +2214,8 @@
       "ai-tool"
     ],
     "brief": "A small repo that translates \"Claudish\" — AI-assistant jargon — into plain English. Niche but amusing; useful if you've ever stared at a model hedging for three paragraphs.",
-    "id": "claudish-to-english-gvzdv",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "claudish-to-english-gvzdv"
   },
   {
     "title": "interior.dev",
@@ -1175,8 +2228,8 @@
       "dev-tool"
     ],
     "brief": "Micro-interactions for React, \"built for the half-second after a click\". A focused little library for the small animations that make UIs feel alive.",
-    "id": "interior-dev",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "interior-dev"
   },
   {
     "title": "eve — durable AI agent framework",
@@ -1189,8 +2242,8 @@
       "ai-tool"
     ],
     "brief": "A durable agent framework pitched as \"Next.js for agents\" — build agents with one folder, with durability baked in. Product claims unverified; the durability angle is the interesting bit.",
-    "id": "eve-durable-ai-agent-framework",
-    "warning": "Product claims unverified; the durability angle is the interesting bit."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "eve-durable-ai-agent-framework"
   },
   {
     "title": "OpenHistory",
@@ -1203,8 +2256,8 @@
       "ai-tool"
     ],
     "brief": "Turns your Mac activity into a private timeline for you and your AI — local activity history as agent context. Privacy-sensitive by nature; the \"private\" claim is unverified.",
-    "id": "openhistory",
-    "warning": "Privacy-sensitive by nature; the \"private\" claim is unverified."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "openhistory"
   },
   {
     "title": "Berd",
@@ -1217,8 +2270,8 @@
       "ai-tool"
     ],
     "brief": "A self-described \"weird, playful\" desktop app for building with AI agents — \"less chatting, more building\". Product claims unverified.",
-    "id": "berd",
-    "warning": "Product claims unverified."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "berd"
   },
   {
     "title": "fx — Vercel Labs coding agent",
@@ -1230,8 +2283,8 @@
       "ai-tool"
     ],
     "brief": "Vercel's announcement of fx, \"a tiny, open, native coding agent\" from Vercel Labs, originally an internal tool. Announcement-only source; details unverified.",
-    "id": "fx-vercel-labs-coding-agent",
-    "warning": "Announcement-only source; details unverified."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "fx-vercel-labs-coding-agent"
   },
   {
     "title": "skills (emilkowalski)",
@@ -1244,8 +2297,8 @@
       "dev-tool"
     ],
     "brief": "A collection of \"skills\" for designers and engineers from Emil Kowalski (of Vercel/animations fame). Likely agent-skill style playbooks; worth browsing.",
-    "id": "skills-emilkowalski",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "skills-emilkowalski"
   },
   {
     "title": "GPS-01 — interactive GPS explainer",
@@ -1258,8 +2311,8 @@
       "article"
     ],
     "brief": "A tiny interactive explainer of how your phone finds itself — satellites, signal timing, and trilateration. The good kind of technical storytelling.",
-    "id": "gps-01-interactive-gps-explainer",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "gps-01-interactive-gps-explainer"
   },
   {
     "title": "Rare UI",
@@ -1272,8 +2325,8 @@
       "dev-tool"
     ],
     "brief": "A library of animated React components. Another solid option in the crowded React-animation space; compare with the other UI libraries already in the archive.",
-    "id": "rare-ui",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "rare-ui"
   },
   {
     "title": "Cua Computer History (open source)",
@@ -1285,8 +2338,8 @@
       "ai-tool"
     ],
     "brief": "Cua's announcement of the first open-source \"Computer History\", in early preview. Announcement-only; interesting for computer-use agent research.",
-    "id": "cua-computer-history-open-source",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "cua-computer-history-open-source"
   },
   {
     "title": "watermarks-remover (guillaumemeyer)",
@@ -1299,8 +2352,8 @@
       "ai-tool"
     ],
     "brief": "Strips multi-vendor AI provenance marks — Unicode text hygiene, statistical rewrite hooks, and C2PA handling. Legitimate hygiene tooling; obviously dual-use.",
-    "id": "watermarks-remover-guillaumemeyer",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "watermarks-remover-guillaumemeyer"
   },
   {
     "title": "Beautiful UI",
@@ -1313,8 +2366,8 @@
       "dev-tool"
     ],
     "brief": "\"Crafted primitives for AI-native interfaces\" — a component library aimed at the AI-app UI wave. Claims unverified.",
-    "id": "beautiful-ui-2",
-    "warning": "Claims unverified."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "beautiful-ui-2"
   },
   {
     "title": "codedb (justrach)",
@@ -1327,8 +2380,8 @@
       "ai-tool"
     ],
     "brief": "A Zig code-intelligence server and MCP toolset for AI agents, recommended firsthand by the sharer. Native-speed code intelligence as agent context is a strong pitch.",
-    "id": "codedb-justrach",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "codedb-justrach"
   },
   {
     "title": "codebase-memory-mcp (DeusData)",
@@ -1341,8 +2394,8 @@
       "ai-tool"
     ],
     "brief": "Persistent semantic memory for coding agents — an MCP server that indexes your codebase. Useful when you have many repos and context windows aren't enough.",
-    "id": "codebase-memory-mcp-deusdata",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "codebase-memory-mcp-deusdata"
   },
   {
     "title": "quickbeam (elixir-volt)",
@@ -1355,8 +2408,8 @@
       "dev-tool"
     ],
     "brief": "A JavaScript runtime for the BEAM — Web APIs backed by OTP, native DOM, and a built-in TypeScript toolchain. Genuinely novel: Erlang's concurrency model meets JS.",
-    "id": "quickbeam-elixir-volt",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "quickbeam-elixir-volt"
   },
   {
     "title": "Qwen3.6-27B-MTP-GGUF (unsloth quant)",
@@ -1368,8 +2421,8 @@
       "ai-tool"
     ],
     "brief": "Unsloth's GGUF quantization of Qwen3.6-27B with MTP (multi-token prediction). For local inference of the 27B Qwen.",
-    "id": "qwen3-6-27b-mtp-gguf-unsloth-quant",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "qwen3-6-27b-mtp-gguf-unsloth-quant"
   },
   {
     "title": "Qwen3.8 open weights announcement",
@@ -1381,8 +2434,8 @@
       "ai-tool"
     ],
     "brief": "Alibaba's announcement that Qwen3.8's open weights are out. Announcement-only; pair with the unsloth GGUF quant below for local runs.",
-    "id": "qwen3-8-open-weights-announcement",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "qwen3-8-open-weights-announcement"
   },
   {
     "title": "Qwen3.8-27B-GGUF (unsloth quant)",
@@ -1394,8 +2447,8 @@
       "ai-tool"
     ],
     "brief": "Unsloth's GGUF quantization of Qwen3.8-27B for local inference. The practical artifact behind the open-weights announcement above.",
-    "id": "qwen3-8-27b-gguf-unsloth-quant",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "qwen3-8-27b-gguf-unsloth-quant"
   },
   {
     "title": "pi-acp-jetbrain (ryan-brosas)",
@@ -1408,8 +2461,8 @@
       "dev-tool"
     ],
     "brief": "A JetBrains IntelliJ ACP (Agent Client Protocol) adapter for the pi coding agent. Niche but exactly what you need if you want pi inside IntelliJ.",
-    "id": "pi-acp-jetbrain-ryan-brosas",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "pi-acp-jetbrain-ryan-brosas"
   },
   {
     "title": "Woxi (vs Mathematica comparison)",
@@ -1421,8 +2474,8 @@
       "article"
     ],
     "brief": "Woxi's comparison of itself against Mathematica — Woxi being an interpreter for a subset of the Wolfram Language. A decent way into what Woxi is and where it stands.",
-    "id": "woxi-vs-mathematica-comparison",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "woxi-vs-mathematica-comparison"
   },
   {
     "title": "spec-kit (GitHub)",
@@ -1435,8 +2488,8 @@
       "dev-tool"
     ],
     "brief": "GitHub's official toolkit for spec-driven development — write the spec, let agents implement. From GitHub itself, so it carries weight in the SDD workflow trend.",
-    "id": "spec-kit-github",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "spec-kit-github"
   },
   {
     "title": "pullfrog",
@@ -1450,8 +2503,8 @@
       "dev-tool"
     ],
     "brief": "An open-source, model-agnostic, BYOK GitHub bot that runs in GitHub Actions. Bring your own key, pick your model, automate your repo — the self-hosted answer to proprietary coding agents.",
-    "id": "pullfrog",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "pullfrog"
   },
   {
     "title": "DeepSeek Harness (developer preview)",
@@ -1464,8 +2517,8 @@
       "ai-tool"
     ],
     "brief": "DeepSeek's agent harness in developer preview — \"everything is a plugin\", with source released alongside. Every agent capability is a swappable plugin; the plugin architecture is the interesting idea here. Claims unverified.",
-    "id": "deepseek-harness-developer-preview",
-    "warning": "Claims unverified."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "deepseek-harness-developer-preview"
   },
   {
     "title": "Delta — multiplayer coding with agents",
@@ -1478,8 +2531,8 @@
       "ai-tool"
     ],
     "brief": "A multiplayer environment for coding with agents — shared threads where teammates and agents build and review together, with full conversation and code context. Product claims unverified.",
-    "id": "delta-multiplayer-coding-with-agents",
-    "warning": "Product claims unverified."
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "delta-multiplayer-coding-with-agents"
   },
   {
     "title": "Rust Foundation Trusted Training (RFTT)",
@@ -1491,8 +2544,8 @@
       "article"
     ],
     "brief": "The Rust Foundation's quality standard for Rust training. Reference material if you're evaluating Rust courses or building one.",
-    "id": "rust-foundation-trusted-training-rftt",
-    "warning": ""
+    "_batch": "week-2026-08-13_to_2026-08-27.md",
+    "id": "rust-foundation-trusted-training-rftt"
   },
   {
     "title": "Psychology for UX: Study Guide",
@@ -1504,8 +2557,8 @@
       "article"
     ],
     "brief": "Nielsen Norman Group's study guide on the psychology behind UX. A solid reference for grounding design decisions in research rather than taste.",
-    "id": "psychology-for-ux-study-guide",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "psychology-for-ux-study-guide"
   },
   {
     "title": "beUI motion components",
@@ -1518,8 +2571,8 @@
       "web-app"
     ],
     "brief": "Copy-paste animated React components from beUI. Drop-in motion without building animation primitives from scratch.",
-    "id": "beui-motion-components",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "beui-motion-components"
   },
   {
     "title": "Canvas UI",
@@ -1532,8 +2585,8 @@
       "web-app"
     ],
     "brief": "A creative component library for Canvas, WebGL and WebGPU. For interfaces that need GPU-level visuals rather than DOM elements.",
-    "id": "canvas-ui",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "canvas-ui"
   },
   {
     "title": "treg",
@@ -1546,8 +2599,8 @@
       "web-app"
     ],
     "brief": "A tool catalog for agents — 2,630 endpoints across 47 providers (SEO, social, enrichment, ads data) callable with one key, priced per call, plus support for your own keys and skills. Tom's 2 Sep share carried his referral param; normalized to the root domain.",
-    "id": "treg",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "treg"
   },
   {
     "title": "Claude for people-search (announcement)",
@@ -1559,8 +2612,8 @@
       "ai-tool"
     ],
     "brief": "Jason Zhou's announcement of \"Claude for people-search\" at a claimed $0.0089/lead versus $600 subscriptions. The pricing claims are the poster's and unverified; the tweet mentions a git repo \"below\" that wasn't captured.",
-    "id": "claude-for-people-search-announcement",
-    "warning": "The pricing claims are the poster's and unverified; the tweet mentions a git repo \"below\" that wasn't captured."
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "claude-for-people-search-announcement"
   },
   {
     "title": "Paper",
@@ -1573,8 +2626,8 @@
       "dev-tool"
     ],
     "brief": "Paper — \"design, share, ship.\" A design tool baanish was scouting; no verdict from the channel yet. (Rykuuun's pricing-page share from 8 Sep was dropped as context-free.)",
-    "id": "paper",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "paper"
   },
   {
     "title": "Paseo",
@@ -1587,8 +2640,8 @@
       "dev-tool"
     ],
     "brief": "Kenn wanted to fork Paseo for internal use cases but held off because it was AGPL — PR #3944 has now relicensed it to Apache. The shared link was the PR; normalized to the repo root. The license change is the news: it's forkable now.",
-    "id": "paseo",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "paseo"
   },
   {
     "title": "elxr",
@@ -1601,8 +2654,8 @@
       "ai-tool"
     ],
     "brief": "asx8678's own repo, built after burning through tokens fast. Context is thin, but it reads as a token-efficiency tool from someone feeling the pain directly.",
-    "id": "elxr",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "elxr"
   },
   {
     "title": "DSH — DeepSeek Harness (announcement)",
@@ -1614,8 +2667,8 @@
       "ai-tool"
     ],
     "brief": "The Elixir Forum announcing DSH, the DeepSeek Harness. Announcement only; no repo or docs link was captured.",
-    "id": "dsh-deepseek-harness-announcement",
-    "warning": "Announcement only; no repo or docs link was captured."
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "dsh-deepseek-harness-announcement"
   },
   {
     "title": "Fresh",
@@ -1627,8 +2680,8 @@
       "dev-tool"
     ],
     "brief": "Fresh — \"The Terminal IDE.\" A terminal-based IDE worth a look if you live in the shell.",
-    "id": "fresh",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "fresh"
   },
   {
     "title": "Markdown Graphs",
@@ -1641,8 +2694,8 @@
       "web-app"
     ],
     "brief": "Monospace charts and tables for MDX and React. Handy for rendering data visuals that stay crisp in markdown contexts.",
-    "id": "markdown-graphs",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "markdown-graphs"
   },
   {
     "title": "Eclipse Theia",
@@ -1655,8 +2708,8 @@
       "dev-tool"
     ],
     "brief": "Eclipse Theia — a cloud and desktop IDE framework implemented in TypeScript. The open foundation behind several well-known IDE products.",
-    "id": "eclipse-theia",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "eclipse-theia"
   },
   {
     "title": "Plane",
@@ -1669,8 +2722,8 @@
       "dev-tool"
     ],
     "brief": "Open-source alternative to Jira, Linear, Monday and ClickUp. A self-hostable project-management option for teams avoiding SaaS lock-in.",
-    "id": "plane",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "plane"
   },
   {
     "title": "Hy4-preview-FP8",
@@ -1682,8 +2735,8 @@
       "ai-tool"
     ],
     "brief": "Tencent's Hy4 preview weights in FP8 on Hugging Face — 770B total, 49B active, 1M context, open weights. For anyone with the hardware to run a frontier-scale open model.",
-    "id": "hy4-preview-fp8",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "hy4-preview-fp8"
   },
   {
     "title": "GLM-5.3-Flash-DFlash2",
@@ -1695,8 +2748,8 @@
       "ai-tool"
     ],
     "brief": "A GLM-5.3-Flash quant on Hugging Face. Context is thin — thelaggingway's whole review was \"Huh\" — but it's another fast-model option to know about.",
-    "id": "glm-5-3-flash-dflash2",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "glm-5-3-flash-dflash2"
   },
   {
     "title": "DBX",
@@ -1708,8 +2761,8 @@
       "dev-tool"
     ],
     "brief": "DBX — a 20 MB tool for managing 90+ databases. Remarkably small footprint for a universal database client.",
-    "id": "dbx",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "dbx"
   },
   {
     "title": "Brilliant",
@@ -1723,8 +2776,8 @@
       "ai-tool"
     ],
     "brief": "A professional vector design tool \"where you and your AI agents work directly on the canvas.\" Agent-native design tooling is still rare, which makes this one notable.",
-    "id": "brilliant",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "brilliant"
   },
   {
     "title": "ArgusAgent",
@@ -1737,8 +2790,8 @@
       "ai-tool"
     ],
     "brief": "Microsoft's ArgusAgent — a persistent, reviewed multi-agent runtime for long-horizon research and engineering. Directly relevant to anyone running agents on long tasks.",
-    "id": "argusagent",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "argusagent"
   },
   {
     "title": "PrettyMD",
@@ -1751,8 +2804,8 @@
       "web-app"
     ],
     "brief": "A markdown viewer \"for vibe coders\" — a simple, beautiful app for reading the .md files your AI writes: specs, plans, skills, agents and more. Pairs naturally with agent-heavy workflows.",
-    "id": "prettymd",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "prettymd"
   },
   {
     "title": "pi-warden",
@@ -1765,8 +2818,8 @@
       "ai-tool"
     ],
     "brief": "Guardrails for Pi built on pi-typesafe — \"steer the agent instead of interrupting you: Jev judges.\" Part of a small Pi-safety ecosystem from the same author as the next entry.",
-    "id": "pi-warden",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "pi-warden"
   },
   {
     "title": "pi-typesafe",
@@ -1779,8 +2832,8 @@
       "ai-tool"
     ],
     "brief": "TypeSafe decisions for Pi — a batched evaluation tool, terminal playground and typed API for extensions. The foundation pi-warden builds on.",
-    "id": "pi-typesafe",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "pi-typesafe"
   },
   {
     "title": "BrokenArXiv / ArXivMath (announcement)",
@@ -1792,8 +2845,8 @@
       "ai-tool"
     ],
     "brief": "Jasper Dekoninck releasing new versions of the BrokenArXiv and ArXivMath benchmarks. Announcement only; useful pointer for anyone tracking eval benchmarks.",
-    "id": "brokenarxiv-arxivmath-announcement",
-    "warning": "Announcement only; useful pointer for anyone tracking eval benchmarks."
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "brokenarxiv-arxivmath-announcement"
   },
   {
     "title": "Arrow 2 (announcement)",
@@ -1805,8 +2858,8 @@
       "ai-tool"
     ],
     "brief": "QuiverAI's Arrow 2 — their latest models for generating precise, editable vector graphics. Announcement only; a notable data point in AI vector-graphics generation.",
-    "id": "arrow-2-announcement",
-    "warning": "Announcement only; a notable data point in AI vector-graphics generation."
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "arrow-2-announcement"
   },
   {
     "title": "MiniCPM5-2B-PCD",
@@ -1818,8 +2871,8 @@
       "ai-tool"
     ],
     "brief": "MiniCPM5 2B PCD weights on Hugging Face — the same model family as the 16 Sept in-browser Pi announcement. The model behind that WebGPU coding-agent demo.",
-    "id": "minicpm5-2b-pcd",
-    "warning": ""
+    "_batch": "week-2026-08-27_to_2026-09-03.md",
+    "id": "minicpm5-2b-pcd"
   },
   {
     "title": "LFM2.5-2.6B-RLCD",
@@ -1831,8 +2884,8 @@
       "ai-tool"
     ],
     "brief": "LiquidAI's LFM2.5 2.6B model tuned for RLCD, shared in the context of Jev's API and concepts. A small local model for anyone experimenting with RLCD-style agent loops.",
-    "id": "lfm2-5-2-6b-rlcd",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "lfm2-5-2-6b-rlcd"
   },
   {
     "title": "Qwen-2.5-1B-RLCD",
@@ -1844,8 +2897,8 @@
       "ai-tool"
     ],
     "brief": "A 1B RLCD-tuned Qwen 2.5 that kenn tried locally \"to get a feel of how Jev's API and concepts might feel like\" — and found it did fine in a roguelike spike. Useful as a tiny testbed model before spending on bigger runs.",
-    "id": "qwen-2-5-1b-rlcd",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "qwen-2-5-1b-rlcd"
   },
   {
     "title": "Pi coding agent in the browser (announcement)",
@@ -1857,8 +2910,8 @@
       "ai-tool"
     ],
     "brief": "Announcement of a coding agent (Pi) running entirely in the browser on a 2B model via WebGPU — MiniCPM5-2B + Pi with Transformers.js and 4-bit ONNX weights. Announcement only; no repo was linked in the post.",
-    "id": "pi-coding-agent-in-the-browser-announcement",
-    "warning": "Announcement only; no repo was linked in the post."
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "pi-coding-agent-in-the-browser-announcement"
   },
   {
     "title": "varve",
@@ -1871,8 +2924,8 @@
       "dev-tool"
     ],
     "brief": "An experimental Rust time-series database with DuckDB SQL and tiered Parquet storage — \"time settles into layers.\" Early-stage but interesting for anyone into time-series storage design.",
-    "id": "varve",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "varve"
   },
   {
     "title": "ever-gauzy",
@@ -1885,8 +2938,8 @@
       "web-app"
     ],
     "brief": "Ever Gauzy — an open business management platform covering ERP, CRM, HRM, ATS and project management (gauzy.co). A full open-source suite if you ever need to stand up business tooling.",
-    "id": "ever-gauzy",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "ever-gauzy"
   },
   {
     "title": "Universal syntax highlighter / OpaqueRange (demo)",
@@ -1899,8 +2952,8 @@
       "article"
     ],
     "brief": "Demo of a universal syntax highlighter built on the new OpaqueRange web API (Chrome 152+, 2026) — syntax-highlighting different program fragments efficiently. Worth a look for anyone building code-rendering UI.",
-    "id": "universal-syntax-highlighter-opaquerange-demo",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "universal-syntax-highlighter-opaquerange-demo"
   },
   {
     "title": "The invisible side of design engineering",
@@ -1912,8 +2965,8 @@
       "article"
     ],
     "brief": "Jakub Krehel's essay on the invisible side of design engineering — the craft that doesn't show up in the final pixels. A thoughtful read for design-minded engineers.",
-    "id": "the-invisible-side-of-design-engineering",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "the-invisible-side-of-design-engineering"
   },
   {
     "title": "Inspo",
@@ -1926,8 +2979,8 @@
       "ai-tool"
     ],
     "brief": "A reference layer for AI coding agents — real production websites with desktop and mobile captures, \"real websites worth studying.\" Useful as grounding material when agents need to see how good sites are actually built.",
-    "id": "inspo",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "inspo"
   },
   {
     "title": "FeralUI",
@@ -1940,8 +2993,8 @@
       "web-app"
     ],
     "brief": "A small library of playful, physics-driven React elements — including a ceiling pull-cord with real Verlet rope physics. For interfaces that should feel alive rather than flat.",
-    "id": "feralui",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "feralui"
   },
   {
     "title": "GVS5H",
@@ -1954,8 +3007,8 @@
       "ai-tool"
     ],
     "brief": "A harness claiming five Qwen3.8-27B models match Claude Fable 5 on LiveCodeBench Hard — \"Fable 5 level coding.\" The performance claims are the poster's and unverified; scarywood75 noted the implementation is Python.",
-    "id": "gvs5h",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "gvs5h"
   },
   {
     "title": "transitions.dev",
@@ -1968,8 +3021,8 @@
       "dev-tool"
     ],
     "brief": "A collection of the most essential transitions for web apps, plus a skill for agents and a Refine tool. Drop-in motion craft for web projects and the agents building them.",
-    "id": "transitions-dev",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "transitions-dev"
   },
   {
     "title": "UI Skills",
@@ -1982,8 +3035,8 @@
       "dev-tool"
     ],
     "brief": "A collection of design-engineering skills covering accessibility, motion and frontend craft. Pairs well with the transitions.dev repo above for leveling up UI output.",
-    "id": "ui-skills",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "ui-skills"
   },
   {
     "title": "e2e agent testing framework (announcement)",
@@ -1995,8 +3048,8 @@
       "dev-tool"
     ],
     "brief": "Oskar's announcement of \"e2e\", a new agent-oriented testing framework — he ported React Native Pager View's test suite from Maestro to it. Announcement only; the framework itself is still being built.",
-    "id": "e2e-agent-testing-framework-announcement",
-    "warning": "Announcement only; the framework itself is still being built."
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "e2e-agent-testing-framework-announcement"
   },
   {
     "title": "pdfcn",
@@ -2009,8 +3062,8 @@
       "web-app"
     ],
     "brief": "A collection of beautifully designed, accessible and customizable PDF components built on Takumi. Handy if you ever need to render polished PDFs from a web stack.",
-    "id": "pdfcn",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "pdfcn"
   },
   {
     "title": "pascalorg/editor",
@@ -2023,8 +3076,8 @@
       "dev-tool"
     ],
     "brief": "An open-source 3D architectural editor with a local CLI, MCP tools and practical workflows for humans and agents. Niche but complete — 3D editing with agent integration baked in.",
-    "id": "pascalorg-editor",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "pascalorg-editor"
   },
   {
     "title": "Real API Pricing",
@@ -2037,8 +3090,8 @@
       "ai-tool"
     ],
     "brief": "Compares the real cost of AI — subscription allowances, model benchmarks and the price–performance frontier, with transparent sources. Useful before committing spend to any provider.",
-    "id": "real-api-pricing",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "real-api-pricing-2"
   },
   {
     "title": "pi-arm64-exec (announcement)",
@@ -2051,8 +3104,8 @@
       "ai-tool"
     ],
     "brief": "A pi extension giving the agent exactly one tool — doing file read/edit work in arm64 assembly — to stop Astra shelling out to python3, ruby and perl for file ops. Announcement; the actual link was promised in a follow-up tweet.",
-    "id": "pi-arm64-exec-announcement",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "pi-arm64-exec-announcement"
   },
   {
     "title": "Minara Harness (announcement)",
@@ -2064,8 +3117,8 @@
       "ai-tool"
     ],
     "brief": "Announcement of Minara Harness — pitched as \"general financial intelligence for everyone\", turning ideas into signals into execution, plus coding tasks like any other agent. The capability claims are the poster's and unverified.",
-    "id": "minara-harness-announcement",
-    "warning": "The capability claims are the poster's and unverified."
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "minara-harness-announcement"
   },
   {
     "title": "herdr fleet management update (announcement)",
@@ -2077,8 +3130,8 @@
       "dev-tool"
     ],
     "brief": "Daniel's post that a new herdrdev update is out with fleet management live. A product-update announcement; the herdr blog below has the substance.",
-    "id": "herdr-fleet-management-update-announcement",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "herdr-fleet-management-update-announcement"
   },
   {
     "title": "How to Build 3D Worlds with Astra",
@@ -2090,8 +3143,8 @@
       "article"
     ],
     "brief": "A step-by-step guide to making photorealistic 3D worlds and games — reference photos, Blender assets, sub-agents, blind critics, Three.js vs Unreal Engine, and a starter prompt. The \"GPT-6 Astra\" framing is the site's own marketing.",
-    "id": "how-to-build-3d-worlds-with-astra",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "how-to-build-3d-worlds-with-astra"
   },
   {
     "title": "OSIRIS",
@@ -2104,8 +3157,8 @@
       "dev-tool"
     ],
     "brief": "An open-source Palantir alternative — track 10K+ aircraft, 2K satellites and worldwide CCTV on a 3D globe, and run Nmap, DNS, WHOIS and threat-intel scans from the browser across 20+ live feeds. Free.",
-    "id": "osiris",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "osiris"
   },
   {
     "title": "open-pencil",
@@ -2118,8 +3171,8 @@
       "dev-tool"
     ],
     "brief": "An AI-native design editor pitched as an open-source Figma alternative. Worth watching if design tooling is on your radar.",
-    "id": "open-pencil",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "open-pencil"
   },
   {
     "title": "Herdr 0.9 — Connecting the machines",
@@ -2132,8 +3185,8 @@
       "dev-tool"
     ],
     "brief": "The Herdr blog on 0.9, which brings local and remote machines into one TUI client, with Herdr Cloud coming next. Herdr's pitch: run agents anywhere, leave them running.",
-    "id": "herdr-0-9-connecting-the-machines",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "herdr-0-9-connecting-the-machines"
   },
   {
     "title": "ECC",
@@ -2146,8 +3199,8 @@
       "ai-tool"
     ],
     "brief": "An agent-harness performance optimization system — skills, instincts, memory, security and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. Directly relevant if you're tuning agent setups.",
-    "id": "ecc",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "ecc"
   },
   {
     "title": "MarkItDown (announcement)",
@@ -2159,8 +3212,8 @@
       "dev-tool"
     ],
     "brief": "Matt Dancho's post on Microsoft's MarkItDown — turns almost any file (PDFs, Word, PowerPoint, Excel, images) into clean Markdown; claimed 100,000+ GitHub stars. Announcement only; the repo wasn't directly linked.",
-    "id": "markitdown-announcement",
-    "warning": "Announcement only; the repo wasn't directly linked."
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "markitdown-announcement"
   },
   {
     "title": "Magika (announcement)",
@@ -2172,8 +3225,8 @@
       "dev-tool"
     ],
     "brief": "Google's Magika — detects the real content of any file even when disguised (malware posing as PDF, scripts hidden as images); free and open-source. Announcement only; the repo wasn't directly linked.",
-    "id": "magika-announcement",
-    "warning": "Announcement only; the repo wasn't directly linked."
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "magika-announcement"
   },
   {
     "title": "teamai-cli",
@@ -2186,8 +3239,8 @@
       "ai-tool"
     ],
     "brief": "Tencent's \"Make Every Team AI Native\" CLI. The description is thin, but a Tencent-backed team-AI CLI is worth a look.",
-    "id": "teamai-cli",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "teamai-cli"
   },
   {
     "title": "pi-mockdeck",
@@ -2200,8 +3253,8 @@
       "ai-tool"
     ],
     "brief": "Cata's first pi extension — an ASCII showcase/mockup gallery of UIs for fast iteration. The shared link pointed at the commits page; normalized to the repo root.",
-    "id": "pi-mockdeck",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "pi-mockdeck"
   },
   {
     "title": "okf-agent-memory",
@@ -2214,8 +3267,8 @@
       "ai-tool"
     ],
     "brief": "Git-native persistent memory for AI coding agents — implements Google OKF v0.2 with sub-300µs in-memory BM25 search and an embedded MCP server. Claims to slash token bloat by 80%; that figure is the repo's and unverified.",
-    "id": "okf-agent-memory",
-    "warning": "Claims to slash token bloat by 80%; that figure is the repo's and unverified."
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "okf-agent-memory"
   },
   {
     "title": "tgrep (announcement)",
@@ -2227,8 +3280,8 @@
       "dev-tool"
     ],
     "brief": "Microsoft's tgrep — grep for large codebases with client/server support, claimed 7–50x faster than ripgrep and ugrep. Announcement only; the speedup claim is the poster's.",
-    "id": "tgrep-announcement",
-    "warning": "Announcement only; the speedup claim is the poster's."
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "tgrep-announcement"
   },
   {
     "title": "mobframework",
@@ -2241,8 +3294,8 @@
       "web-app"
     ],
     "brief": "\"BEAM on device\" — write mobile apps in Elixir with the whole BEAM running on the device, rendering native iOS and Android UI; your coding agent attaches to the running app with real state and hot-pushed fixes. Ambitious and unusual.",
-    "id": "mobframework",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "mobframework"
   },
   {
     "title": "ripwire",
@@ -2255,8 +3308,8 @@
       "ai-tool"
     ],
     "brief": "\"The ripgrep of AI context\" — a zero-dependency C++23 CLI plus MCP server that gives coding agents a ranked, deterministic map of any repo: blast radius, tests-to-run and quality deltas. From Red Hat's emerging-tech group.",
-    "id": "ripwire",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "ripwire"
   },
   {
     "title": "Architectural visualization with Astra",
@@ -2268,8 +3321,8 @@
       "article"
     ],
     "brief": "OpenAI's developer blog on using Astra to design a house, refine everyday details, and explore it through Blender camera tours and an Unreal Engine 5 walkthrough. A concrete agentic-design case study.",
-    "id": "architectural-visualization-with-astra",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "architectural-visualization-with-astra"
   },
   {
     "title": "SponsorBar (announcement)",
@@ -2281,8 +3334,8 @@
       "web-app"
     ],
     "brief": "SponsorBar — puts a small ad in your menu bar and shares the revenue with you (\"make money from your menu bar for doing nothing\"), with a 10%-extra launch promo. A real launched product, though a niche one.",
-    "id": "sponsorbar-announcement",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "sponsorbar-announcement"
   },
   {
     "title": "Factory Open Source AutoWikis",
@@ -2295,8 +3348,8 @@
       "dev-tool"
     ],
     "brief": "Browse Factory-generated wikis for popular open-source repositories — a preview of what living documentation looks like on real codebases before running it on your own. Nice for evaluating doc-generation tooling.",
-    "id": "factory-open-source-autowikis",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "factory-open-source-autowikis"
   },
   {
     "title": "monocode",
@@ -2309,8 +3362,8 @@
       "ai-tool"
     ],
     "brief": "A GUI for your coding agents. Description is minimal, but a visual front-end for agent harnesses is a gap worth filling.",
-    "id": "monocode",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "monocode"
   },
   {
     "title": "synthetic-search-mcp",
@@ -2323,8 +3376,8 @@
       "ai-tool"
     ],
     "brief": "A search MCP server from baanish, who vouched for PR #4 personally. The shared link was the PR; normalized to the repo root.",
-    "id": "synthetic-search-mcp",
-    "warning": ""
+    "_batch": "week-2026-09-03_to_2026-09-17.md",
+    "id": "synthetic-search-mcp"
   },
   {
     "title": "pi-claude-agent-sdk",
@@ -2337,8 +3390,8 @@
       "github"
     ],
     "brief": "An inference provider that lets Pi (a terminal agent harness) run on Claude Code Pro/Max subscriptions instead of API keys. Kenn is using a fork and admits he \"just closed my eyes and let the agent figure it out\" — expect rough edges.",
-    "id": "pi-claude-agent-sdk",
-    "warning": "Kenn is using a fork and admits he \"just closed my eyes and let the agent figure it out\" — expect rough edges."
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "pi-claude-agent-sdk"
   },
   {
     "title": "pi-claude-bridge",
@@ -2351,8 +3404,8 @@
       "github"
     ],
     "brief": "Lets you route Pi's model calls through a Claude subscription (\"allow sub usage in pi\"). Same cost-saving idea as pi-claude-agent-sdk: agentic coding without per-token API billing.",
-    "id": "pi-claude-bridge",
-    "warning": ""
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "pi-claude-bridge"
   },
   {
     "title": "spirula-studio",
@@ -2365,8 +3418,8 @@
       "github"
     ],
     "brief": "Cross-vendor 3D Gaussian Splatting trainer — video to splat to mesh, running on Vulkan or CUDA. Notable for not being CUDA-locked.",
-    "id": "spirula-studio",
-    "warning": ""
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "spirula-studio"
   },
   {
     "title": "Responsively App",
@@ -2379,8 +3432,8 @@
       "web-app"
     ],
     "brief": "A dedicated browser for responsive web development — preview a site at multiple screen sizes side by side. Built for faster, more precise responsive work.",
-    "id": "responsively-app",
-    "warning": ""
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "responsively-app"
   },
   {
     "title": "Grokbot Characters (Rege Lab)",
@@ -2392,8 +3445,8 @@
       "web-app"
     ],
     "brief": "A Rege Lab page with six little Grokbot character expressions to play with, plus downloadable editable CoAnimato files. A creative asset resource for bot and character design.",
-    "id": "grokbot-characters-rege-lab",
-    "warning": ""
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "grokbot-characters-rege-lab"
   },
   {
     "title": "Getting the most out of Opus 5.5",
@@ -2406,8 +3459,8 @@
       "ai-tool"
     ],
     "brief": "Official Claude guide to prompting Opus 5.5, steering long agent runs, and checking results in Claude apps and Claude Code. A practical reference for anyone driving long agent sessions.",
-    "id": "getting-the-most-out-of-opus-5-5",
-    "warning": ""
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "getting-the-most-out-of-opus-5-5"
   },
   {
     "title": "Grokbot Icon Studio",
@@ -2420,8 +3473,8 @@
       "ai-tool"
     ],
     "brief": "A minimal bot-icon studio — browse bot icon examples and copy a prompt to generate an icon of your own. Quick asset generation for bot projects.",
-    "id": "grokbot-icon-studio",
-    "warning": ""
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "grokbot-icon-studio"
   },
   {
     "title": "Cloudflare Quick Tunnels",
@@ -2433,8 +3486,8 @@
       "dev-tool"
     ],
     "brief": "Cloudflare Quick Tunnels — free encrypted tunnels that expose localhost as a public URL. Cata plans to use it instead of the VS Code tunnel.",
-    "id": "cloudflare-quick-tunnels",
-    "warning": ""
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "cloudflare-quick-tunnels"
   },
   {
     "title": "BendSR",
@@ -2446,8 +3499,8 @@
       "github"
     ],
     "brief": "Symbolic regression implemented in Bend. A research-flavoured repo for anyone exploring the Bend language.",
-    "id": "bendsr",
-    "warning": ""
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "bendsr"
   },
   {
     "title": "security-audit-skill",
@@ -2460,8 +3513,8 @@
       "ai-tool"
     ],
     "brief": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings. A drop-in skill for agentic security reviews.",
-    "id": "security-audit-skill",
-    "warning": ""
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "security-audit-skill"
   },
   {
     "title": "Saving 100TB of RAM with math",
@@ -2473,8 +3526,8 @@
       "article"
     ],
     "brief": "Cloudflare engineering deep-dive on saving 100TB of RAM with math (and Rust). A solid systems-engineering read.",
-    "id": "saving-100tb-of-ram-with-math",
-    "warning": ""
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "saving-100tb-of-ram-with-math"
   },
   {
     "title": "Bend",
@@ -2486,8 +3539,8 @@
       "github"
     ],
     "brief": "Bend 2 — a fast programming language that blocks AI mistakes via proof checking. Install with curl from bend-lang.com.",
-    "id": "bend",
-    "warning": ""
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "bend"
   },
   {
     "title": "Monid free agent search (announcement)",
@@ -2499,8 +3552,8 @@
       "ai-tool"
     ],
     "brief": "Announcement of a free agent search/fetch API — \"killed Exa, Tavily and Brave\", $0 with no quotas, from Tiny_Fish and MonidHQ. The pricing claims are the poster's and unverified; this link is the announcement, not documentation.",
-    "id": "monid-free-agent-search-announcement",
-    "warning": "The pricing claims are the poster's and unverified; this link is the announcement, not documentation."
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "monid-free-agent-search-announcement"
   },
   {
     "title": "jev-search",
@@ -2513,7 +3566,7 @@
       "ai-tool"
     ],
     "brief": "Shared by thelaggingway with just \"Another one\" — context is thin, but it landed in the search-tool thread. Worth a look if you're tracking search APIs.",
-    "id": "jev-search",
-    "warning": ""
+    "_batch": "week-2026-09-17_to_2026-09-24.md",
+    "id": "jev-search"
   }
 ]

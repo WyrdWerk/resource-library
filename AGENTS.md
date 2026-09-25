@@ -1,13 +1,15 @@
-# AGENTS.md — operating manual for the #share-tech resource library
+# AGENTS.md — operating manual for the CheapInfra resource library
 
 This repo is a curated, browsable archive of developer resources shared in the
-CheapInfra Discord server's `#share-tech` channel. It is designed so that any
-agent with repo access can extend it: collect a week, curate it, regenerate,
-push. This file is the full context you need. Read it before touching anything.
+CheapInfra Discord server's `#share-tech` channel, plus a curated inference-
+provider section from the `#providers` channel (scope expanded 2026-09-25 at
+the user's request). It is designed so that any agent with repo access can
+extend it: collect a week, curate it, regenerate, push. This file is the full
+context you need. Read it before touching anything.
 
 ## Ground rules (non-negotiable)
 
-1. **Scope: `#share-tech` on CheapInfra only.** Never expand to other channels, servers, or sources.
+1. **Scope: `#share-tech` and `#providers` on CheapInfra only.** Never expand to other channels, servers, or sources.
 2. **Collection is read-only.** No posting, reacting, clicking links, or DMing anyone. Ever.
 3. **Privacy.** Sharer names are Discord usernames already visible in the channel; keep them, but never add real names, emails, or anything not in the message itself.
 4. **No credentials in the repo.** Tokens, keys, and secrets never get committed.
@@ -17,6 +19,8 @@ push. This file is the full context you need. Read it before touching anything.
 ```
 Discord #share-tech  →  raw/      (raw weekly logs, unfiltered)
                      →  notes/    (curated: filtered + ~2-sentence briefs)
+Discord #providers  →  raw/providers_*.md  (raw collection logs, unfiltered)
+                     →  notes/providers.md  (curated provider entries)
                      →  scripts/build.py
                      →  index.html, data.json, weeks/, CHANGELOG.md  (generated)
                      →  push to main → deploy on any static host
@@ -44,6 +48,12 @@ Each file is one collection batch. Sections assign entries to weeks:
 ```markdown
 ## Week: 13–20 Aug 2026        <- entries below go to this week
 ## Fold into week: 3–10 Sep 2026  <- boundary-day catch-ups for an existing week
+```
+
+`notes/providers.md` is the exception: it uses a single `## Providers` section
+for the whole curated #providers collection (full-channel lifetime, earliest
+occurrence kept, deduped within the channel and against the published site).
+It renders as the leading "Providers" section of the site.
 
 ### Resource Title
 - URL: https://example.com/
@@ -63,9 +73,12 @@ Each file is one collection batch. Sections assign entries to weeks:
 
 ## Category taxonomy (fixed set)
 
-`ai-tool` · `dev-tool` · `github` · `web-app` · `article`
+`ai-tool` · `dev-tool` · `github` · `web-app` · `article` · `providers`
 
-Use one or two per resource. Do not invent new categories without discussion — the site's filter chips and colors are keyed to this set.
+Use one or two per resource. `providers` is for inference providers and
+provider-comparison/analysis resources (the #providers channel). Do not invent
+new categories without discussion — the site's filter chips and colors are
+keyed to this set.
 
 ## The boundary-date rule (important)
 
@@ -96,10 +109,11 @@ Never force-push. `main` is the only branch.
 The Analytics tab is generated at build time from `data.json` — no JavaScript chart
 libraries, just inline SVG. Charts: resources-per-week, top 10 sharers, stacked
 category mix per week with a weekly/fortnightly toggle, all-time category mix, and a
-spotlight on the top sharer's category breakdown. Theme colors come from CSS
-variables, so charts follow the dark/light toggle automatically. Never hand-edit the
-generated SVG; change the generator functions (`vol_chart`, `stacked_chart`,
-`hbar_chart`) in `scripts/build.py` instead.
+spotlight on the top sharer's category breakdown. The "Providers" collection
+appears as its own leading period (and `providers` as a category) in these
+charts. Theme colors come from CSS variables, so charts follow the dark/light
+toggle automatically. Never hand-edit the generated SVG; change the generator
+functions (`vol_chart`, `stacked_chart`, `hbar_chart`) in `scripts/build.py` instead.
 
 ## Deploying
 
