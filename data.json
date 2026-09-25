@@ -1285,9 +1285,9 @@
       "dev-tool",
       "github"
     ],
-    "brief": "A shell auto-completion tool for your terminal. Details unverified from the link-only share.",
+    "brief": "IRIS (Intelligent Real-time Input Suggestion) is an open-source shell auto-completion tool positioned as the successor to Fig: a single native Go binary that runs purely on TTY — no Electron, GUI, account, or telemetry — rendering suggestion menus inline in the real terminal, over SSH and inside tmux. It indexes your aliases and shell history, supports AI suggestions via API key or local models, and configures via a TOML file with instant reload. No Windows support, and it can conflict with other autosuggestion plugins (zsh-autosuggestions, atuin), which the README says to disable first.",
     "id": "iris",
-    "warning": "Details unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "kimi-k3-mlx",
@@ -1327,9 +1327,9 @@
       "ai-tool",
       "github"
     ],
-    "brief": "Permanent memory for AI agents, from Victor Taelin. Details unverified from the link-only share.",
+    "brief": "Permanent memory for AI agents by Victor Taelin: the whole integration is a 426-token prompt plus a single dependency-free Python script installed with one curl command. You paste a `## Memory` block into your agent's AGENTS.md/CLAUDE.md, then use `memo wake` (read memory at session start) and `memo note` (record one-liners), plus `nap`, `recall`, `zoom`, and `forget`; storage is an append-only log with a rebuildable binary-tree summary cache (1M memories ≈ 608 MB, wake in 0.03s).",
     "id": "optmem",
-    "warning": "Details unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "Content Architecture",
@@ -1338,12 +1338,12 @@
     "sharer": "Tom",
     "date": "28 Jul",
     "categories": [
-      "ai-tool",
+      "dev-tool",
       "web-app"
     ],
-    "brief": "An agent-ready Sanity + Next.js kit. Details unverified from the link-only share.",
+    "brief": "A commercial, agent-ready Sanity CMS starter kit in Next.js 16 and Astro 7 editions: a page-builder CMS with in-app Studio, visual editing, draft mode, SEO helpers, a seed dataset, and Plop scaffolding. Its differentiator is agentic-coding workflow support — it ships AGENTS.md plus scoped skills, two preconfigured MCP servers (one reads the running dev server, one drives real Chrome for screenshots/traces), an editable llms.txt, and token-light Markdown versions of every page served to agents via content negotiation. One license per buyer covers unlimited personal, commercial, and client projects; it is a paid product, not open source.",
     "id": "content-architecture",
-    "warning": "Details unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "nimbus-lite",
@@ -1355,9 +1355,9 @@
       "ai-tool",
       "github"
     ],
-    "brief": "A free, framework-free AI chat UI kit for AI projects. Details unverified from the link-only share.",
+    "brief": "A free, framework-free AI chat UI kit in vanilla HTML/CSS/JS — open index.html and it runs, no build step or dependencies. It includes a full chat layout with sidebar, live token streaming with blinking caret, Markdown plus syntax-highlighted code blocks with copy buttons, a model picker, and light/dark themes with accent colors; it is front-end only, so you bring your own backend (OpenAI, Anthropic, or a local model). The maintainer sells a fuller Nimbus kit ($19) adding citations, reasoning blocks, tool-call chips, and attachments.",
     "id": "nimbus-lite",
-    "warning": "Details unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "worldmonitor",
@@ -1369,9 +1369,9 @@
       "github",
       "web-app"
     ],
-    "brief": "A real-time global intelligence dashboard. Details unverified from the link-only share.",
+    "brief": "An open-source (AGPL-3.0) real-time global intelligence dashboard: AI-synthesized news briefs, a 3D globe and WebGL flat map, a live Country Instability Index for 31 Tier-1 countries, and cross-stream correlation of military, economic, and disaster signals. It is built for programmatic access too — MCP server, REST API with OpenAPI spec, CLI (`npx worldmonitor`), and Python/Ruby/Go SDKs, with local-AI support via Ollama — and ships as a web app, Tauri desktop binaries, and PWA. AGPL-3.0 copyleft applies, so commercial/SaaS use needs a separate license or AGPL compliance.",
     "id": "worldmonitor",
-    "warning": "Details unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "Amicro",
@@ -1382,9 +1382,9 @@
     "categories": [
       "web-app"
     ],
-    "brief": "Premium React micro-transitions and interaction components. Details unverified from the link-only share.",
+    "brief": "A curated gallery of premium React micro-interaction and transition components built with React and Motion, with layout inspired by transition.dev. It showcases around 36 named interactions — morph, glare shine, magnetic field, text reveal, focus blur, shake, rotate, color-morph buttons — as ready-to-use UI components. Licensing and copy-paste terms are not stated on the page, so reusability is uncertain.",
     "id": "amicro",
-    "warning": "Details unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "pi-dispatch",
@@ -1396,9 +1396,9 @@
       "ai-tool",
       "github"
     ],
-    "brief": "Run the pi coding agent as a service. Details unverified from the link-only share.",
+    "brief": "Runs the pi coding agent as a self-hosted background service: triggered on demand, on a cron schedule, or by GitHub/GitLab issues, comments, and pull/merge requests, each job executing in a locked-down ephemeral container with a durable queue. It enforces per-job/daily/weekly/monthly spend caps before a single token is spent, and ships a live admin panel with run history, cost insights, and per-trigger spend analytics; MIT-licensed. Note: the bare npm name `pi-dispatch` belongs to an unrelated package — the scoped `@edgehero/pi-dispatch` is the correct install.",
     "id": "pi-dispatch",
-    "warning": "Details unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "Componentry",
@@ -1420,11 +1420,12 @@
     "sharer": "Tom",
     "date": "24 Jul",
     "categories": [
+      "ai-tool",
       "web-app"
     ],
-    "brief": "\"Make the Web Spatial\" — a playground for spatial web experiences. Details unverified from the link-only share.",
+    "brief": "The public gallery for Mint's 3D-asset-creation tooling for AI agents: use Codex, Claude, or Cursor (via the Mint MCP server and Mint Skills) to generate, rig, and animate 3D models, build 3D worlds, and create PBR materials and asset packs. The playground showcases dozens of agent-built interactive 3D scenes, from mini-games to product configurators and data visualizations — though it is primarily a showcase for Mint's tooling rather than a tool you operate directly.",
     "id": "mint-playground",
-    "warning": "Details unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "delphitools",
@@ -1436,9 +1437,9 @@
       "dev-tool",
       "web-app"
     ],
-    "brief": "Privacy-first browser tools. Details unverified from the link-only share.",
+    "brief": "A handmade-web collection of small, single-purpose browser tools: colour utilities (contrast checker, palette generator/extractor, Tailwind shade scales), image tools (compressor, converter, background remover, favicon generator, SVG optimiser, metadata stripper), plus audio/video and typography tools. Everything is free with no logins, no paywalls, and no data collection; fully open source (0-BSD), with a native iOS app and an offline CLI offering the same tools.",
     "id": "delphitools",
-    "warning": "Details unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "modly",
@@ -1450,9 +1451,9 @@
       "ai-tool",
       "github"
     ],
-    "brief": "A desktop app that generates 3D models from images using local AI. Details unverified from the link-only share.",
+    "brief": "An open-source desktop app (Windows, Linux, Apple Silicon macOS) that turns a photo or text prompt into a 3D mesh using open-source AI models running entirely on your own GPU — no cloud inference. It ships an extension system for swapping in models like Hunyuan3D 2 and TripoSG, node-based generation workflows, and a CLI so agents and scripts can drive generation headlessly; MIT-licensed, around 7.7k stars.",
     "id": "modly",
-    "warning": "Details unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "img2threejs",
@@ -1461,12 +1462,12 @@
     "sharer": "Tom",
     "date": "23 Jul",
     "categories": [
-      "dev-tool",
+      "ai-tool",
       "github"
     ],
-    "brief": "Rebuilds the object in a reference image as code-only procedural Three.js. Details unverified from the link-only share.",
+    "brief": "A skill for coding agents (Claude Code, Codex, OpenCode) that rebuilds the object in a reference photo as a code-only, procedural Three.js model — reconstruction-by-code, not photogrammetry or mesh extraction — with a staged sculpting pipeline (blockout → material → lighting → optimization) and vision-review quality gates. It is deliberately token-efficient: deterministic scripts handle validation while model tokens are spent only on visual judgment and code; Apache 2.0, around 16.7k stars, with a live demo gallery.",
     "id": "img2threejs",
-    "warning": "Details unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "pi-openai-server-compaction",
@@ -1696,12 +1697,12 @@
     "sharer": "Rykuuun",
     "date": "12 Aug",
     "categories": [
-      "dev-tool",
+      "ai-tool",
       "github"
     ],
-    "brief": "A GitHub repo shared without description. What it does is unverified from the message text alone.",
+    "brief": "An AI coding agent (Rust, ratatui TUI) optimized for minimal context-token use: a tree-sitter `index` tool summarizes file structure before reading, system prompts stay concise, and subagents can pick weak/medium/strong models per task. It is extendable via neovim-like Lua plugins, supports skills/MCPs, session memory, and plan mode, and works as an agent backend for editors like Zed via ACP; MIT-licensed. Its benchmark claims are the author's own.",
     "id": "maki",
-    "warning": "What it does is unverified from the message text alone."
+    "warning": ""
   },
   {
     "title": "Inspora",
@@ -1752,9 +1753,9 @@
       "ai-tool",
       "github"
     ],
-    "brief": "An agent \"skill\" on GitHub. What it teaches the agent is unverified from the link-only share.",
+    "brief": "A one-file Agent Skills-format skill adding a `/bro` command: when a coding agent's last reply was too dense or jargon-heavy, `/bro` re-explains that same answer in plain language, with facts, paths, and commands preserved verbatim. It ships an installer covering Hermes, Claude Code, Cursor, Codex, and opencode; MIT-licensed.",
     "id": "bro-skill",
-    "warning": "What it teaches the agent is unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "Avoid z-index Whenever Possible",
@@ -1789,12 +1790,12 @@
     "sharer": "Tom",
     "date": "11 Aug",
     "categories": [
-      "github",
-      "web-app"
+      "ai-tool",
+      "github"
     ],
-    "brief": "A GitHub repo, likely a motion/animation library given the name. Shared link-only; unverified.",
+    "brief": "An agent-oriented skill (SKILL.md) for designing and implementing web animations that respond to scroll, drag, pointer, touch, or state changes. The agent confirms keyframes, generates in-between motion with AI video models, then converts it into controllable web assets (MP4, alpha WebP sprite sheets) with quality checks for frame consistency and mobile performance; MIT-licensed. The README is primarily in Chinese (an English README.en.md exists), and the generation step needs external AI video services and API keys.",
     "id": "oil-motion",
-    "warning": "Shared link-only; unverified."
+    "warning": ""
   },
   {
     "title": "Arlan Marat's Vault",
@@ -1805,9 +1806,9 @@
     "categories": [
       "web-app"
     ],
-    "brief": "A personal \"vault\" site by Arlan Marat. Contents are unverified from the link-only share.",
+    "brief": "A public vault of UI/design techniques by designer Arlan Marat — dated entries like \"Arcade pixel,\" \"Holo,\" \"Fade motion,\" \"Liquid UI,\" \"Kinetic typography,\" and \"Apple's corners,\" each demonstrating a copyable visual effect. Everything is MIT-licensed and explicitly free to copy.",
     "id": "arlan-marat-s-vault",
-    "warning": "Contents are unverified from the link-only share."
+    "warning": ""
   },
   {
     "title": "Refero Design Styles",
@@ -1816,11 +1817,12 @@
     "sharer": "Tom",
     "date": "10 Aug",
     "categories": [
-      "web-app"
+      "web-app",
+      "ai-tool"
     ],
-    "brief": "A design-styles reference site. Shared link-only; unverified beyond the domain.",
+    "brief": "A library of 2,000+ \"AI-readable\" design systems harvested from leading product websites (Apple, Cursor, Linear, Vercel, ElevenLabs). Each style exposes colors, typography, spacing, and components plus a DESIGN.md file meant to be fed into Cursor, Claude Code, Codex, v0, or Lovable to give AI builders better design taste; currently in beta with new styles added weekly.",
     "id": "refero-design-styles",
-    "warning": "Shared link-only; unverified beyond the domain."
+    "warning": ""
   },
   {
     "title": "There Is An Open Source For That",
@@ -1845,9 +1847,9 @@
       "dev-tool",
       "github"
     ],
-    "brief": "The josh project on GitHub, shared link-only. What it does is unverified from the message text.",
+    "brief": "\"Just One Single History\" — a git-at-scale platform built on fast, reversible Git history transformation. It presents any part of a repo (e.g. a monorepo subfolder) as an independent repository with history preserved, so repo boundaries can be decided per-context instead of reflecting org silos; it ships a `josh` CLI for partial repo projections and `josh-proxy`, a Git HTTP/SSH proxy with a GraphQL API for CI/build queries. A mature project (since 2016, MIT), though some listed features like the merge queue and Starlark filters are not fully mature yet.",
     "id": "josh",
-    "warning": "What it does is unverified from the message text."
+    "warning": ""
   },
   {
     "title": "Checklist Design",
