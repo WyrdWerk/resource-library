@@ -121,9 +121,10 @@ The site is `index.html` (+ `data.json`, `feed.xml`, `og-image.png`). Any static
 works; it's built for Cloudflare Pages with no build command and the repo root as the
 output directory.
 
-**Important:** `scripts/build.py` has a `SITE_URL` constant (used for `og:image` and the
-RSS channel link) that is currently a placeholder — update it to the real Pages URL once
-deployed, then re-run the build.
+**Important:** `scripts/build.py` has a `SITE_URL` constant (used for `og:image`,
+the RSS channel link, and the canonical URL). It points at the custom domain
+`https://cheapinfra-resources.wyrdwerk.com`; change it deliberately, then
+re-run the build.
 
 ## What NOT to do
 
