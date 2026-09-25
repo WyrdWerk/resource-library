@@ -285,12 +285,21 @@ def main():
     CAT_LABELS = {"ai-tool": "AI tools", "dev-tool": "Dev tools", "github": "GitHub repos",
                   "web-app": "Web apps", "article": "Articles", "providers": "Providers"}
     sections, nav = [], []
+    wseq = 0  # sequential number for dated week sections only
+    newest_week_badged = False  # "Latest"/"new" stay on the newest week, not providers
     for wi, label in enumerate(ordered):
         info = week_info[label]
         res = weeks[label]
         dlabel = info["label"]
-        wnum = f"{wi + 1:02d}" if label != "providers" else "◆"
-        latest = ' <span class="newdot">new</span>' if wi == 0 else ''
+        if label == "providers":
+            wnum_html = ""
+            is_newest_week = False
+        else:
+            wseq += 1
+            wnum_html = f'<span class="weeknum">{wseq:02d}</span>'
+            is_newest_week = not newest_week_badged
+            newest_week_badged = True
+        latest = ' <span class="newdot">new</span>' if is_newest_week else ''
         nav.append(f'<a class="wnav" href="#{info["slug"]}">{esc(dlabel)}{latest}<span>{len(res)}</span></a>')
         cards = []
         for ci, r in enumerate(res):
@@ -313,12 +322,13 @@ def main():
                 f'<div class="side-row">{esc(r["date"])} · <a class="plink" href="#r-{r["id"]}" title="Permalink">⧉</a></div>'
                 f'</div>'
                 f'</article>')
-        badge = ' <span class="latest">Latest</span>' if wi == 0 else ''
+        badge = ' <span class="latest">Latest</span>' if is_newest_week else ''
         heading = "Providers" if label == "providers" else f"Week of {esc(dlabel)}"
-        wsub = "inference providers" if label == "providers" else "resources"
+        wsub = ("inference provider" if len(res) == 1 else "inference providers") \
+            if label == "providers" else ("resource" if len(res) == 1 else "resources")
         sections.append(
             f'<section class="week" id="{info["slug"]}" data-week="{esc(dlabel)}">'
-            f'<div class="weekhead"><span class="weeknum">{wnum}</span><h2>{heading}</h2>{badge}'
+            f'<div class="weekhead">{wnum_html}<h2>{heading}</h2>{badge}'
             f'<span class="wcount">{len(res)} {wsub}</span></div>'
             + "\n".join(cards) + '</section>')
 
@@ -343,17 +353,21 @@ def main():
                 counts[c] = counts.get(c, 0) + 1
         arows.append({"label": label, "short": short_label(label),
                       "total": len(weeks[label]), "counts": counts})
+    # Fortnightly rows: pair dated weeks exactly as before (providers was not
+    # there), then append the providers pseudo-section as its own clean row.
+    warows = [r for r in arows if r["label"] != "providers"]
+    parows = [r for r in arows if r["label"] == "providers"]
     frows = []
-    for i in range(0, len(arows), 2):
-        grp = arows[i:i + 2]
+    for i in range(0, len(warows), 2):
+        grp = warows[i:i + 2]
         counts = {c: sum(g["counts"].get(c, 0) for g in grp) for c in cats}
-        if len(grp) == 2 and "–" in grp[0]["label"] and "–" in grp[1]["label"]:
-            fl = grp[0]["label"].split("–")[0] + "–" + grp[1]["label"].split("–")[1]
-        else:
-            # Odd group, or the non-week "providers" section: join plainly.
-            fl = " + ".join(g["label"] for g in grp)
+        fl = (grp[0]["label"].split("–")[0] + "–" + grp[1]["label"].split("–")[1]
+              if len(grp) == 2 else grp[0]["label"])
         frows.append({"label": fl, "short": short_label(fl),
                       "total": sum(g["total"] for g in grp), "counts": counts})
+    for p in parows:
+        frows.append({"label": p["label"], "short": p["short"],
+                      "total": p["total"], "counts": dict(p["counts"])})
     sharer_counts = Counter(r["sharer"] for r in all_res)
     top_sharers = sharer_counts.most_common(10)
     top_name, top_n = top_sharers[0]
