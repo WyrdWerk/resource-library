@@ -41,20 +41,6 @@
     "warning": "Very early (~12 stars); expect rough edges."
   },
   {
-    "title": "paseo.sh",
-    "week": "24 Sep–1 Oct 2026",
-    "url": "https://paseo.sh/",
-    "sharer": "ROman",
-    "date": "26 Sep",
-    "categories": [
-      "dev-tool",
-      "ai-tool"
-    ],
-    "brief": "A free, open-source (Apache 2.0) self-hosted daemon for running Claude Code, Codex, Copilot, OpenCode, and Pi from anywhere — phone, desktop, or web. Agents run on your own machine with your own credentials; optional end-to-end encrypted relay, MCP/CLI/TypeScript SDK, and local-first voice.",
-    "id": "paseo-sh",
-    "warning": ""
-  },
-  {
     "title": "gpui-kit",
     "week": "24 Sep–1 Oct 2026",
     "url": "https://github.com/longbridge/gpui-kit",
@@ -1942,9 +1928,9 @@
     "categories": [
       "web-app"
     ],
-    "brief": "A demo site showcasing a \"beautiful UI\". Shared link-only; what it demonstrates is unverified.",
+    "brief": "Beautiful UI — \"crafted primitives for AI-native interfaces\": a component library of around 21 UI primitives for the AI-app wave — loading states, thinking traces, streaming text with inline sources, approval cards, tool chips, task rows, tabbed chat, a prompt bar with @ sources and / commands, diff tables, records tables, agent screens, and more. Shared first as a Vercel deployment and later under its beatifului.dev domain; merged into one entry.",
     "id": "beautiful-ui",
-    "warning": "Shared link-only; what it demonstrates is unverified."
+    "warning": ""
   },
   {
     "title": "oil-motion",
@@ -2521,20 +2507,6 @@
     "warning": ""
   },
   {
-    "title": "Beautiful UI",
-    "week": "13–20 Aug 2026",
-    "url": "https://www.beautifului.dev/",
-    "sharer": "UT",
-    "date": "16 Aug",
-    "categories": [
-      "web-app",
-      "dev-tool"
-    ],
-    "brief": "\"Crafted primitives for AI-native interfaces\" — a component library aimed at the AI-app UI wave. Claims unverified.",
-    "id": "beautiful-ui-2",
-    "warning": "Claims unverified."
-  },
-  {
     "title": "codedb (justrach)",
     "week": "13–20 Aug 2026",
     "url": "https://github.com/justrach/codedb",
@@ -2804,7 +2776,7 @@
       "github",
       "dev-tool"
     ],
-    "brief": "Kenn wanted to fork Paseo for internal use cases but held off because it was AGPL — PR #3944 has now relicensed it to Apache. The shared link was the PR; normalized to the repo root. The license change is the news: it's forkable now.",
+    "brief": "Paseo is a free, open-source (Apache 2.0) self-hosted daemon for running Claude Code, Codex, Copilot, OpenCode, and Pi from anywhere — phone, desktop, or web. Agents run on your own machine with your own credentials; it offers an optional end-to-end encrypted relay, MCP/CLI/TypeScript SDK, and local-first voice. Kenn originally held off forking it for internal use because it was AGPL — PR #3944 has since relicensed it to Apache, so it's forkable now. (The paseo.sh site shared 26 Sep is the same project; merged here.)",
     "id": "paseo",
     "warning": ""
   },
