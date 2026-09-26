@@ -1,6 +1,12 @@
 # Inference providers — curated from CheapInfra #providers
 
-81 curated providers, with briefs.
+82 curated providers, with briefs.
+
+## Isoquant
+- URL: https://isoquant.ai/
+- Shared by: thelaggingway (25 Sep)
+- Categories: providers
+- Brief: A new PAYGO inference provider launching with GLM-5.3-Flash at $0.07/$0.20 per 1M input/output tokens with automatic prompt caching; drop-in OpenAI-compatible API, no top-up fees. Its published benchmarks claim the lowest latency and highest throughput versus Together, CoreWeave, Baseten, Fireworks, and Z.ai. Pricing and benchmark figures are vendor-reported and not independently verified.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
