@@ -149,6 +149,90 @@
     "warning": "Pricing and benchmark figures are vendor-reported and not independently verified."
   },
   {
+    "title": "kiro-fabric",
+    "week": "24 Sep–1 Oct 2026",
+    "url": "https://github.com/asx8678/kiro-fabric",
+    "sharer": "asx",
+    "date": "27 Sep",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "Kiro Fabric gives Kiro CLI a way to run several tool operations as one checked TypeScript program: Kiro writes the code, Fabric type-checks it and executes it in a fresh QuickJS context, with a repo-navigation layer (Navigator/Fovea) mapping symbols and change impact via ast-grep. Fresh repo (0 stars, MIT); expect rough edges.",
+    "id": "kiro-fabric",
+    "warning": "Fresh repo (0 stars, MIT); expect rough edges."
+  },
+  {
+    "title": "Claude Mods (function hooks proposal)",
+    "week": "24 Sep–1 Oct 2026",
+    "url": "https://github.com/anthropics/claude-code/issues/91870",
+    "sharer": "Alp",
+    "date": "27 Sep",
+    "categories": [
+      "article",
+      "dev-tool"
+    ],
+    "brief": "Anthropic's design proposal for Claude Code \"Mods\" (function hooks): hook into Claude Code with TypeScript functions à la Express/Koa, with side-effect tracking and middleware-style composition — even modifying how components render. Committed to ship in weeks; the first three built-in mods' source listings are linked in the thread.",
+    "id": "claude-mods-function-hooks-proposal",
+    "warning": ""
+  },
+  {
+    "title": "Jev Decision Index",
+    "week": "24 Sep–1 Oct 2026",
+    "url": "https://huggingface.co/spaces/multimodalart/jev-decision-index",
+    "sharer": "Tom",
+    "date": "27 Sep",
+    "categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "brief": "A Hugging Face Space tracking benchmarks and news on the various repros of TypeSafe's Jev — a handy index if you're following the Jev model race.",
+    "id": "jev-decision-index",
+    "warning": ""
+  },
+  {
+    "title": "jevgrep",
+    "week": "24 Sep–1 Oct 2026",
+    "url": "https://github.com/dzhng/jevgrep",
+    "sharer": "Tom",
+    "date": "28 Sep",
+    "categories": [
+      "ai-tool",
+      "dev-tool",
+      "github"
+    ],
+    "brief": "Find code by asking what it does: a CLI (plus an installable agent skill) that uses Jev to judge relevance across folders, files, and declarations, returning relevant files, reading leads, and verbatim source excerpts in one stdout response. Installs with `npm install -g @dzhng/jevgrep`; its own ten-task SWE-bench comparison claims ~30% lower coding-agent cost at equal task success. (~803 stars, MIT.) Cost figures are author-reported and not independently verified.",
+    "id": "jevgrep",
+    "warning": "Installs with `npm install -g @dzhng/jevgrep`; its own ten-task SWE-bench comparison claims ~30% lower coding-agent cost at equal task success. (~803 stars, MIT.) Cost figures are author-reported and not independently verified."
+  },
+  {
+    "title": "rust-llm-tidy",
+    "week": "24 Sep–1 Oct 2026",
+    "url": "https://github.com/Sewer56/rust-llm-tidy",
+    "sharer": "Sewer56",
+    "date": "27 Sep",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "An opinionated linter aimed at LLM-generated code (Rust, C#, Markdown): fix/reorder/visibility/spacing transforms plus read-only lint checks, runnable per-file, on git-changed files, or in CI via a GitHub Action. The author's personal tooling (\"largely written by LLMs\"); expect opinionated rules, 0 stars. Apache 2.0.",
+    "id": "rust-llm-tidy",
+    "warning": ""
+  },
+  {
+    "title": "sys-prompt.md",
+    "week": "24 Sep–1 Oct 2026",
+    "url": "https://gist.github.com/Sewer56/74cbf6d930ed67653370cc2d683c54dd",
+    "sharer": "Sewer56",
+    "date": "27 Sep",
+    "categories": [
+      "dev-tool"
+    ],
+    "brief": "A complete agent-harness system prompt as a gist: JSON tool schemas for edit, glob, grep, question, read, shell, subagent, and write with execution semantics spelled out. Useful reference if you're building or tuning a coding-agent CLI.",
+    "id": "sys-prompt-md",
+    "warning": ""
+  },
+  {
     "title": "Prism Inference",
     "week": "providers",
     "url": "https://prisminference.com/pricing",
@@ -274,9 +358,9 @@
     "categories": [
       "providers"
     ],
-    "brief": "Coding plans starting at $100/mo with 60M tokens/day. Shared via its pricing page.",
+    "brief": "An inference platform built for long-running coding agents, using runtime context compression to cut token bills on extended agentic traces; it drops into Claude Code, Codex, OpenCode, or any OpenAI-compatible harness, and can also be deployed inside your own cloud. Plans sell as daily token allocations with no per-seat pricing — Base at $100/month for 60M tokens/day, Pro at $500/month for 300M/day, Heavy at $2,000/month for 1.2B/day — plus per-token overflow billing. Its savings and performance claims (2× faster task completion, up to 80% cost reduction) are vendor-reported and not independently verified.",
     "id": "subconscious",
-    "warning": ""
+    "warning": "Its savings and performance claims (2× faster task completion, up to 80% cost reduction) are vendor-reported and not independently verified."
   },
   {
     "title": "FEIHOA",
@@ -326,7 +410,7 @@
     "categories": [
       "providers"
     ],
-    "brief": "Subscription plan for the OpenCode coding agent. Shared with a screenshot of the plan page.",
+    "brief": "OpenCode's own $10/month subscription bringing its agentic coding experience to OpenCode or any agent, with generous per-model request limits on a curated open-source lineup (Kimi K2.7 Code, MiniMax M3, GLM-5.3-Flash, DeepSeek V4.1 Flash, and others) — limits shown as estimated requests per 5-hour window, with optional top-up credits. Free rotating models appear on a limited-time basis; cancel any time. Usage limits are vendor-stated estimates, and the free rotating models are time-limited.",
     "id": "opencode-go",
     "warning": ""
   },
@@ -339,7 +423,7 @@
     "categories": [
       "providers"
     ],
-    "brief": "Inference API; a forwarded announcement noted DeepSeek-V4.1-Flash going live on it.",
+    "brief": "A unified AI gateway routing to DeepSeek, Kimi, GLM, and 300+ models through one endpoint, with smart routing by cost, speed, quality, or availability, built-in failover, and usage analytics; it also sells reserved GPU-lane capacity from $0.20/hr for dedicated inference and is currently offering 100% bonus credits on recharges up to $1,000. A forwarded announcement noted DeepSeek-V4.1-Flash going live on the platform. The homepage publishes no per-token price list, and the bonus-credit promo terms are vendor-published.",
     "id": "singularityapi",
     "warning": ""
   },
@@ -365,9 +449,9 @@
     "categories": [
       "providers"
     ],
-    "brief": "Inference API with a published pricing page; the sharer noted roughly 3.5x markup on its $10 plan.",
+    "brief": "A pass-based inference API: a free tier with a rotating model allowance, an Agent Pass at $1.99/month ($10 included usage, for always-on agent scripts), an Office Pass at $9.99/month ($35 usage), and a Frontier Pass at $99/month ($180 usage) — each tier unlocking progressively heavier models, with boosted models billing at reduced rates. 'Included usage' is measured at the site's own published per-token prices rather than as a cash wallet balance, so the effective deal is vendor-reported and not independently verified.",
     "id": "token-harbor",
-    "warning": ""
+    "warning": "'Included usage' is measured at the site's own published per-token prices rather than as a cash wallet balance, so the effective deal is vendor-reported and not independently verified."
   },
   {
     "title": "StreamLake",
@@ -456,7 +540,7 @@
     "categories": [
       "providers"
     ],
-    "brief": "Recently launched its own inference platform, announced on the company blog.",
+    "brief": "Inference company from the Inco (confidential-computing) team, branding itself 'inference, reimagined for the agentic era.' It open-sourced Splash, a local inference engine claiming 144 tokens/s on an M5 Max with Qwen3.8-27B (integrated into LM Studio), and its earlier DFlash speculative-decoding tech was adopted by SGLang, vLLM, TensorRT-LLM, llama.cpp, plus Meta, NVIDIA, and Xiaomi. The 144 tokens/s figure is a peak vendor-demonstration value, not an independently verified benchmark; the public site is still sparse with no visible pricing or hosted-API details.",
     "id": "inco",
     "warning": ""
   },
@@ -469,7 +553,7 @@
     "categories": [
       "providers"
     ],
-    "brief": "Indonesian inference API — one API key, paid in Rupiah. Shared via its pricing page.",
+    "brief": "An Indonesian AI cloud and gateway: one API key and one Rupiah wallet behind an OpenAI-compatible endpoint, with per-token prices quoted in Rupiah (e.g. DeepSeek V4 Flash at Rp 2,750 input / Rp 5,500 output per 1M tokens, GLM-5.3-Flash at Rp 2,000/Rp 6,000), top-ups from Rp 1,000, free models, and free BYOK routing through its dashboard. Also bundles one-click app hosting ('Pods' — n8n, OpenClaw, a WhatsApp gateway) and monthly plans from Rp 49rb.",
     "id": "kenari",
     "warning": ""
   },
@@ -482,9 +566,9 @@
     "categories": [
       "providers"
     ],
-    "brief": "Comparison and routing service claiming 40–80% savings on AI inference costs.",
+    "brief": "Unified API and SDK routing requests across 1,000+ models from many providers with automatic fallbacks, best-price optimization, and a real-time observability dashboard. Markets itself as one API for every AI model, advertising per-model 'up to 70% off' rates and 40–80% savings on inference spend. The savings and discount figures are vendor marketing, not independently verified.",
     "id": "inferencesaver",
-    "warning": ""
+    "warning": "The savings and discount figures are vendor marketing, not independently verified."
   },
   {
     "title": "Nube",
@@ -625,7 +709,7 @@
     "categories": [
       "providers"
     ],
-    "brief": "\"The open market for AI tokens\", with published plans.",
+    "brief": "Credit-subscription marketplace spanning 333 models, 100+ live routes, and 24+ providers: plans from $5/mo ($6 credits) to $99/mo ($110 credits), with credits that never expire and roll over. Every plan unlocks every model route; usage is billed per token based on the selected provider route, and one-time top-ups accept USDC.",
     "id": "openmodels",
     "warning": ""
   },
@@ -677,9 +761,9 @@
     "categories": [
       "providers"
     ],
-    "brief": "Inference API documented with DeepSeek-V4-Flash endpoints.",
+    "brief": "Unified LLM API at api.b.ai/v1 where one key speaks three protocols — OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages — with docs at docs.b.ai. It gained traction for generous free models (DeepSeek-V4-Flash, Tencent HY3, MiMo-V2.5, GLM-5.3-Flash), though its promotions page moved free offers to limited-time 10%-of-reference discounts on 16 Sep 2026, leaving only a 300,000-credit (~$0.30, 30-day) referral gift; login is via Web3 wallet or Google. Homepage details are unverified beyond third-party reviews from mid-Sep 2026, so confirm current pricing on the site itself.",
     "id": "b-ai",
-    "warning": ""
+    "warning": "Homepage details are unverified beyond third-party reviews from mid-Sep 2026, so confirm current pricing on the site itself."
   },
   {
     "title": "OrcaRouter",
@@ -768,7 +852,7 @@
     "categories": [
       "providers"
     ],
-    "brief": "Cheap pay-as-you-go multi-model router, reportedly built by the sharer's friend.",
+    "brief": "A pay-as-you-go multi-model router aimed at Indonesian developers: 47 models from 12 vendors behind one OpenAI-compatible endpoint, with credits at Rp 300 each, top-ups from Rp 15,000 via QRIS, and no subscription or foreign card required. A one-click installer wires it into VS Code, Claude Code, OpenCode, GitHub Copilot, and Hermes Agent, and a live status widget shows gateway response times.",
     "id": "griphubrouter",
     "warning": ""
   },
@@ -820,9 +904,9 @@
     "categories": [
       "providers"
     ],
-    "brief": "Inference provider, mentioned as a fan-out target in routing chatter.",
+    "brief": "AI-native cloud combining serverless model APIs (200+ models through one API, billed per token) with dedicated private endpoints, secure isolated agent sandboxes, and GPU cloud (on-demand instances, serverless GPU, bare metal). One platform for the full AI stack — model APIs, GPUs, and agent runtimes — backed by testimonials from Hugging Face, Kilo Code, and Fish Audio. Its 'up to 50% less than major cloud providers' claim is vendor-reported and not independently verified.",
     "id": "novita",
-    "warning": ""
+    "warning": "Its 'up to 50% less than major cloud providers' claim is vendor-reported and not independently verified."
   },
   {
     "title": "Command Code",
@@ -872,7 +956,7 @@
     "categories": [
       "providers"
     ],
-    "brief": "Flat-rate API keys for coding agents, $9–$99.",
+    "brief": "Credit-based subscription for coding agents: plans run $19/mo (3,000 credits) to $399/mo (72,000 credits), a typical request on their tuned Claudinio model costs about one credit, and there is no hourly cap — a hot month is fixed with a top-up instead of waiting for a clock. Catalogue models (DeepSeek V4.1 Flash, GLM-5.3, Kimi K3, Claude Opus, GPT-6, Gemini, Grok) cost a fixed 2×–36× multiple of a credit, and one API key plugs into Claude Code, Cursor, Cline, and other OpenAI/Anthropic-compatible clients.",
     "id": "claudin-io",
     "warning": ""
   },
@@ -924,9 +1008,9 @@
     "categories": [
       "providers"
     ],
-    "brief": "Inference provider; a forwarded announcement covered its scaling of Kimi K3.",
+    "brief": "$30/month subscription (or usage-based billing) for running LLMs privately, usable in its own app or any OpenAI-compatible tool (Roo, Cline, Octofriend). It also built Synbad, an open-source evaluation suite sourced from real coding-agent bugs, and positions itself as coding-agent-optimized inference. Synbad's '100% vs as low as 66%' pass-rate comparison is vendor marketing, not independently verified.",
     "id": "synthetic",
-    "warning": ""
+    "warning": "Synbad's '100% vs as low as 66%' pass-rate comparison is vendor marketing, not independently verified."
   },
   {
     "title": "Aster",
@@ -950,7 +1034,7 @@
     "categories": [
       "providers"
     ],
-    "brief": "Open-model inference provider. Only its status page was visible during research.",
+    "brief": "A serverless inference platform for open-weight models with a catalog of 40,000+ models on a single OpenAI-compatible API — headlined by a flat-rate Chat plan at $25/month with unlimited tokens. Also offers a usage-based Developer tier ($50/month in credits, per-token, with rollover) and custom dedicated-GPU Business plans; the company raised a $20M Series A in December 2025. The flat-rate Chat plan is for interactive human-driven use only — not for automation, reselling, app/API traffic, or benchmarking, and the site says misuse may lead to cancellation without refund.",
     "id": "featherless",
     "warning": ""
   },
@@ -1041,7 +1125,7 @@
     "categories": [
       "providers"
     ],
-    "brief": "Pay-as-you-go inference across 200+ one-click production-ready model endpoints.",
+    "brief": "Pay-as-you-go inference across 200+ production-ready models you can deploy with one click from its console. 'Ready now' endpoints publish per-token input/output/cached-input pricing, with promotional models showing the original rate crossed out beside the active InferX price — the catalog explicitly marks unpublished fields as missing rather than estimating them.",
     "id": "inferx",
     "warning": ""
   },
@@ -1080,9 +1164,9 @@
     "categories": [
       "providers"
     ],
-    "brief": "Coding-plan provider; the sharer noted a vague allowance but a free month on offer.",
+    "brief": "A privacy-first AI company selling a Coding Plan with 'near-endless messaging' for agents and coding tools on one API key, running open models including GLM 5.2, MiniMax M3, and Kimi K2.6, with per-token access from $5 and the first month free. It frames itself around data sovereignty and an 'altruistic AI' charter, and also sells a $3.95/month memory-migration tool (Memory Forge) and an AI workspace subscription. 'Near-endless messaging' is marketing language with no published allowance numbers — actual limits are unverified.",
     "id": "phoenix-grove",
-    "warning": ""
+    "warning": "'Near-endless messaging' is marketing language with no published allowance numbers — actual limits are unverified."
   },
   {
     "title": "Neuralwatt",
@@ -1106,9 +1190,9 @@
     "categories": [
       "providers"
     ],
-    "brief": "Inference provider that was notably early serving Kimi K3, per channel chatter.",
+    "brief": "Decentralized, open-source serverless compute platform in the Bittensor ecosystem, aiming to serve new SOTA open-source models 'minutes after release' across text, image, video, speech, and music. Pay-as-you-go billed per token consumed with a live cost estimator, plus TEE/secure compute and a Chutes Chat consumer app. Throughput claims are vendor-reported and not independently verified.",
     "id": "chutes",
-    "warning": ""
+    "warning": "Throughput claims are vendor-reported and not independently verified."
   },
   {
     "title": "Telnyx",
@@ -1132,7 +1216,7 @@
     "categories": [
       "providers"
     ],
-    "brief": "Free monthly credits plus a $20/mo plan, with an explicit zero-data-retention and GDPR claim.",
+    "brief": "Charm's coding-optimized inference for its Crush agent community: a free tier with 100 Hypercredits per month, a $20/month subscription with 250 Hypercredits refreshing daily, and prepaid bundles ($5–$20) that never expire — one Hypercredit currently maps to 5¢ of token spend. It ships with team governance features (master/sub keys, per-model and per-user usage reports) and advertises zero data retention with GDPR compliance. The zero-data-retention and GDPR claims are vendor-stated and not independently audited or verified.",
     "id": "charm-hyper",
     "warning": ""
   },
@@ -1158,7 +1242,7 @@
     "categories": [
       "providers"
     ],
-    "brief": "Subscription-based inference provider at zyloo.io.",
+    "brief": "Tiered subscriptions selling 'unlimited' access to named models: LITE at $4.22/week and LITE+ at $12.89/month (Gemini 3/2.5 previews, GPT-4.1, GPT-4o), up to ULTIMATE at $899/month (Claude Opus 4.7/4.8, GPT-5.5/5.6, Claude Sonnet 5, GPT-5.6-Sol). Card payments auto-renew via Stripe with a cancel-anytime portal; crypto, WeChat Pay, Alipay and UPI buy a single non-renewing period. The PRO+ ($199/mo) and ULTRA ($599/mo) tiers were sold out at research time, and the site publishes no fair-use or rate-limit policy behind the 'Unlimited' label.",
     "id": "zyloo",
     "warning": ""
   },
@@ -1323,7 +1407,7 @@
       "dev-tool",
       "github"
     ],
-    "brief": "Analyze coding (agent) CLI token usage and costs from local data.",
+    "brief": "Run `npx ccusage` and get daily, weekly, monthly, and session breakdowns of token usage and spend across Claude Code, Codex, OpenCode, Amp, Hermes Agent, and 15+ more coding CLIs, all read from local usage data. Colorful terminal tables, per-model cost breakdowns, cache-token tracking, JSON export, an offline pricing mode, and a Claude Code statusline hook make it the fastest way to see where your agent budget is going. (~19k stars, MIT.)",
     "id": "ccusage",
     "warning": ""
   },
@@ -1928,9 +2012,9 @@
     "categories": [
       "web-app"
     ],
-    "brief": "A demo site showcasing a \"beautiful UI\". Shared link-only; what it demonstrates is unverified.",
+    "brief": "A demo site showcasing 21 crafted UI primitives for AI-native interfaces — loading states, thinking traces, streaming text, approval cards, tool chips, task rows, prompt bars, diff and records tables, insight cards, and more. A handy design reference and pattern library for building agent chat interfaces and agentic tool UIs.",
     "id": "beautiful-ui",
-    "warning": "Shared link-only; what it demonstrates is unverified."
+    "warning": ""
   },
   {
     "title": "oil-motion",
@@ -2023,9 +2107,9 @@
       "dev-tool",
       "github"
     ],
-    "brief": "asx8678's entire review was \"crazy\". What the repo does is unverified from the message text.",
+    "brief": "An all-in-one plugin and workflow layer for Nous Research's Hermes Agent that installs 80+ generated workflow skills with a single `omh setup` — covering coding intelligence, long-term memory, and model-optimized workflow packages. A deterministic chat router turns free-form Korean/English requests into the right prepared workflow, with coding delegated to an explicitly selected executor (Claude Code, Codex, or the Hermes runtime); pure Python with zero runtime dependencies, MIT licensed.",
     "id": "oh-my-hermes",
-    "warning": "What the repo does is unverified from the message text."
+    "warning": ""
   },
   {
     "title": "Kitesurf (Cloudflare blog)",
@@ -2036,9 +2120,9 @@
     "categories": [
       "article"
     ],
-    "brief": "A Cloudflare blog post about Kitesurf. The post's claims are unverified; it's a vendor blog.",
+    "brief": "Cloudflare's announcement of Kitesurf, a headless browser built for AI agents that runs entirely on Cloudflare Workers in V8 isolates instead of Chromium — optimized for token efficiency and scale on agentic tasks like screenshots and HTML extraction. The post walks through the engineering (Rust compiled to Wasm, Blitz/Stylo rendering, Chrome DevTools Protocol compatibility), reports 215,000+ Web Platform Tests passing, and availability free during beta inside Browser Run. Benchmark and conformance claims are vendor-reported and not independently verified.",
     "id": "kitesurf-cloudflare-blog",
-    "warning": "The post's claims are unverified; it's a vendor blog."
+    "warning": "Benchmark and conformance claims are vendor-reported and not independently verified."
   },
   {
     "title": "linus-torvalds-skill",
@@ -2118,9 +2202,9 @@
     "categories": [
       "article"
     ],
-    "brief": "A Liquid AI blog post about \"Antidoom\". The post's claims are unverified; it's a vendor blog.",
+    "brief": "Liquid AI's method for killing the repetitive 'doom loops' that plague small reasoning models: Final Token Preference Optimization trains the model to prefer coherent alternatives at the exact token where a loop begins, leaving the rest of the distribution untouched. On an early LFM2.5-2.6B checkpoint it cut loop rates from 10.2% to 1.4%, and on Qwen3.5-4B from 22.9% to 1% under greedy sampling — with the generation, detection, and training code open-sourced. Results are vendor-reported on vendor checkpoints and not independently verified.",
     "id": "antidoom-liquid-ai-blog",
-    "warning": "The post's claims are unverified; it's a vendor blog."
+    "warning": "Results are vendor-reported on vendor checkpoints and not independently verified."
   },
   {
     "title": "Kimi K3 on MI355X (Wafer blog)",
@@ -2131,9 +2215,9 @@
     "categories": [
       "article"
     ],
-    "brief": "A Wafer blog post benchmarking Kimi K3 on AMD MI355X hardware. Claims unverified; vendor blog.",
+    "brief": "Wafer benchmarked Moonshot's 2.8T-parameter Kimi K3 on AMD's MI355X (288GB VRAM per GPU): 952 tok/s/node aggregate and 118 tok/s single-stream — over 3.8× the per-node throughput of a 2-node B200 deployment. With the MI355X ~2.4× cheaper per GPU than NVIDIA's B300, it wins decisively on performance per dollar; the post also details real ROCm fixes, including speculative decode via RadixArk's DSpark draft and zero-padding heads to unlock the AITER MLA prefill kernel. All throughput figures are vendor-reported and not independently verified.",
     "id": "kimi-k3-on-mi355x-wafer-blog",
-    "warning": "Claims unverified; vendor blog."
+    "warning": "All throughput figures are vendor-reported and not independently verified."
   },
   {
     "title": "Snowflow",
@@ -2816,7 +2900,7 @@
     "categories": [
       "dev-tool"
     ],
-    "brief": "Fresh — \"The Terminal IDE.\" A terminal-based IDE worth a look if you live in the shell.",
+    "brief": "An open-source terminal IDE with zero configuration that brings VS Code-style UX — familiar keybindings, full mouse support, command palette — to the shell. It packs IDE-level features including LSP, multi-cursor editing, magit-style git review with per-hunk staging, TypeScript plugins, multi-GB file handling, and SSH remote editing, plus an orchestrator that runs coding agents (claude, codex, opencode, aider) across worktrees.",
     "id": "fresh",
     "warning": ""
   },

@@ -62,7 +62,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://www.subconscious.dev/pricing
 - Posted by: Tom, 13 Sep
 - Category: providers
-- Brief: Coding plans starting at $100/mo with 60M tokens/day. Shared via its pricing page.
+- Brief: An inference platform built for long-running coding agents, using runtime context compression to cut token bills on extended agentic traces; it drops into Claude Code, Codex, OpenCode, or any OpenAI-compatible harness, and can also be deployed inside your own cloud. Plans sell as daily token allocations with no per-seat pricing — Base at $100/month for 60M tokens/day, Pro at $500/month for 300M/day, Heavy at $2,000/month for 1.2B/day — plus per-token overflow billing. Its savings and performance claims (2× faster task completion, up to 80% cost reduction) are vendor-reported and not independently verified.
 
 ### FEIHOA
 - URL: https://feihoa.com/
@@ -86,13 +86,13 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://opencode.ai/go
 - Posted by: UT, 10 Sep
 - Category: providers
-- Brief: Subscription plan for the OpenCode coding agent. Shared with a screenshot of the plan page.
+- Brief: OpenCode's own $10/month subscription bringing its agentic coding experience to OpenCode or any agent, with generous per-model request limits on a curated open-source lineup (Kimi K2.7 Code, MiniMax M3, GLM-5.3-Flash, DeepSeek V4.1 Flash, and others) — limits shown as estimated requests per 5-hour window, with optional top-up credits. Free rotating models appear on a limited-time basis; cancel any time. Usage limits are vendor-stated estimates, and the free rotating models are time-limited.
 
 ### SingularityAPI
 - URL: https://singularityapi.dev/
 - Posted by: uur, 10 Sep
 - Category: providers
-- Brief: Inference API; a forwarded announcement noted DeepSeek-V4.1-Flash going live on it.
+- Brief: A unified AI gateway routing to DeepSeek, Kimi, GLM, and 300+ models through one endpoint, with smart routing by cost, speed, quality, or availability, built-in failover, and usage analytics; it also sells reserved GPU-lane capacity from $0.20/hr for dedicated inference and is currently offering 100% bonus credits on recharges up to $1,000. A forwarded announcement noted DeepSeek-V4.1-Flash going live on the platform. The homepage publishes no per-token price list, and the bonus-credit promo terms are vendor-published.
 
 ### DeepSeek clock
 - URL: https://deepakness.com/deepseek/
@@ -104,7 +104,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://tokenharbor.ai/pricing
 - Posted by: thelaggingway, 8 Sep
 - Category: providers
-- Brief: Inference API with a published pricing page; the sharer noted roughly 3.5x markup on its $10 plan.
+- Brief: A pass-based inference API: a free tier with a rotating model allowance, an Agent Pass at $1.99/month ($10 included usage, for always-on agent scripts), an Office Pass at $9.99/month ($35 usage), and a Frontier Pass at $99/month ($180 usage) — each tier unlocking progressively heavier models, with boosted models billing at reduced rates. 'Included usage' is measured at the site's own published per-token prices rather than as a cash wallet balance, so the effective deal is vendor-reported and not independently verified.
 
 ### StreamLake
 - URL: https://www.streamlake.ai/
@@ -146,19 +146,19 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://inco.ai/
 - Posted by: Tom, 4 Sep
 - Category: providers
-- Brief: Recently launched its own inference platform, announced on the company blog.
+- Brief: Inference company from the Inco (confidential-computing) team, branding itself 'inference, reimagined for the agentic era.' It open-sourced Splash, a local inference engine claiming 144 tokens/s on an M5 Max with Qwen3.8-27B (integrated into LM Studio), and its earlier DFlash speculative-decoding tech was adopted by SGLang, vLLM, TensorRT-LLM, llama.cpp, plus Meta, NVIDIA, and Xiaomi. The 144 tokens/s figure is a peak vendor-demonstration value, not an independently verified benchmark; the public site is still sparse with no visible pricing or hosted-API details.
 
 ### Kenari
 - URL: https://kenari.id/
 - Posted by: ROman, 3 Sep
 - Category: providers
-- Brief: Indonesian inference API — one API key, paid in Rupiah. Shared via its pricing page.
+- Brief: An Indonesian AI cloud and gateway: one API key and one Rupiah wallet behind an OpenAI-compatible endpoint, with per-token prices quoted in Rupiah (e.g. DeepSeek V4 Flash at Rp 2,750 input / Rp 5,500 output per 1M tokens, GLM-5.3-Flash at Rp 2,000/Rp 6,000), top-ups from Rp 1,000, free models, and free BYOK routing through its dashboard. Also bundles one-click app hosting ('Pods' — n8n, OpenClaw, a WhatsApp gateway) and monthly plans from Rp 49rb.
 
 ### InferenceSaver
 - URL: https://www.inferencesaver.com/en
 - Posted by: Rykuuun, 3 Sep
 - Category: providers
-- Brief: Comparison and routing service claiming 40–80% savings on AI inference costs.
+- Brief: Unified API and SDK routing requests across 1,000+ models from many providers with automatic fallbacks, best-price optimization, and a real-time observability dashboard. Markets itself as one API for every AI model, advertising per-model 'up to 70% off' rates and 40–80% savings on inference spend. The savings and discount figures are vendor marketing, not independently verified.
 
 ### Nube
 - URL: https://nube.sh/
@@ -224,7 +224,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://openmodels.market/plans
 - Posted by: Rykuuun, 20 Aug
 - Category: providers
-- Brief: "The open market for AI tokens", with published plans.
+- Brief: Credit-subscription marketplace spanning 333 models, 100+ live routes, and 24+ providers: plans from $5/mo ($6 credits) to $99/mo ($110 credits), with credits that never expire and roll over. Every plan unlocks every model route; usage is billed per token based on the selected provider route, and one-time top-ups accept USDC.
 
 ### OpenRouter
 - URL: https://openrouter.ai/
@@ -248,7 +248,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://b.ai/
 - Posted by: Tom, 18 Aug
 - Category: providers
-- Brief: Inference API documented with DeepSeek-V4-Flash endpoints.
+- Brief: Unified LLM API at api.b.ai/v1 where one key speaks three protocols — OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages — with docs at docs.b.ai. It gained traction for generous free models (DeepSeek-V4-Flash, Tencent HY3, MiMo-V2.5, GLM-5.3-Flash), though its promotions page moved free offers to limited-time 10%-of-reference discounts on 16 Sep 2026, leaving only a 300,000-credit (~$0.30, 30-day) referral gift; login is via Web3 wallet or Google. Homepage details are unverified beyond third-party reviews from mid-Sep 2026, so confirm current pricing on the site itself.
 
 ### OrcaRouter
 - URL: https://www.orcarouter.ai/
@@ -290,7 +290,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://griphubrouter.com/
 - Posted by: Febryan, 14 Aug
 - Category: providers
-- Brief: Cheap pay-as-you-go multi-model router, reportedly built by the sharer's friend.
+- Brief: A pay-as-you-go multi-model router aimed at Indonesian developers: 47 models from 12 vendors behind one OpenAI-compatible endpoint, with credits at Rp 300 each, top-ups from Rp 15,000 via QRIS, and no subscription or foreign card required. A one-click installer wires it into VS Code, Claude Code, OpenCode, GitHub Copilot, and Hermes Agent, and a live status widget shows gateway response times.
 
 ### Melious
 - URL: https://melious.ai/
@@ -314,7 +314,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://novita.ai/
 - Posted by: kenn, 13 Aug
 - Category: providers
-- Brief: Inference provider, mentioned as a fan-out target in routing chatter.
+- Brief: AI-native cloud combining serverless model APIs (200+ models through one API, billed per token) with dedicated private endpoints, secure isolated agent sandboxes, and GPU cloud (on-demand instances, serverless GPU, bare metal). One platform for the full AI stack — model APIs, GPUs, and agent runtimes — backed by testimonials from Hugging Face, Kilo Code, and Fish Audio. Its 'up to 50% less than major cloud providers' claim is vendor-reported and not independently verified.
 
 ### Command Code
 - URL: https://commandcode.ai/docs/plans/goat
@@ -338,7 +338,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://claudin.io/
 - Posted by: Rykuuun, 12 Aug
 - Category: providers
-- Brief: Flat-rate API keys for coding agents, $9–$99.
+- Brief: Credit-based subscription for coding agents: plans run $19/mo (3,000 credits) to $399/mo (72,000 credits), a typical request on their tuned Claudinio model costs about one credit, and there is no hourly cap — a hot month is fixed with a top-up instead of waiting for a clock. Catalogue models (DeepSeek V4.1 Flash, GLM-5.3, Kimi K3, Claude Opus, GPT-6, Gemini, Grok) cost a fixed 2×–36× multiple of a credit, and one API key plugs into Claude Code, Cursor, Cline, and other OpenAI/Anthropic-compatible clients.
 
 ### regolo.ai
 - URL: https://regolo.ai/pricing/
@@ -362,7 +362,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://synthetic.new/
 - Posted by: baanish, 8 Aug
 - Category: providers
-- Brief: Inference provider; a forwarded announcement covered its scaling of Kimi K3.
+- Brief: $30/month subscription (or usage-based billing) for running LLMs privately, usable in its own app or any OpenAI-compatible tool (Roo, Cline, Octofriend). It also built Synbad, an open-source evaluation suite sourced from real coding-agent bugs, and positions itself as coding-agent-optimized inference. Synbad's '100% vs as low as 66%' pass-rate comparison is vendor marketing, not independently verified.
 
 ### Aster
 - URL: https://asterlab.ai/
@@ -374,7 +374,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://featherless.ai/
 - Posted by: whaaaat, 7 Aug
 - Category: providers
-- Brief: Open-model inference provider. Only its status page was visible during research.
+- Brief: A serverless inference platform for open-weight models with a catalog of 40,000+ models on a single OpenAI-compatible API — headlined by a flat-rate Chat plan at $25/month with unlimited tokens. Also offers a usage-based Developer tier ($50/month in credits, per-token, with rollover) and custom dedicated-GPU Business plans; the company raised a $20M Series A in December 2025. The flat-rate Chat plan is for interactive human-driven use only — not for automation, reselling, app/API traffic, or benchmarking, and the site says misuse may lead to cancellation without refund.
 
 ### Meituan LongCat
 - URL: https://longcat.ai/
@@ -416,7 +416,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://inferx.net/models
 - Posted by: thelaggingway, 30 Jul
 - Category: providers
-- Brief: Pay-as-you-go inference across 200+ one-click production-ready model endpoints.
+- Brief: Pay-as-you-go inference across 200+ production-ready models you can deploy with one click from its console. 'Ready now' endpoints publish per-token input/output/cached-input pricing, with promotional models showing the original rate crossed out beside the active InferX price — the catalog explicitly marks unpublished fields as missing rather than estimating them.
 
 ### xKiro
 - URL: https://xkiro.com/
@@ -434,7 +434,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://pgsgrove.com/
 - Posted by: thelaggingway, 29 Jul
 - Category: providers
-- Brief: Coding-plan provider; the sharer noted a vague allowance but a free month on offer.
+- Brief: A privacy-first AI company selling a Coding Plan with 'near-endless messaging' for agents and coding tools on one API key, running open models including GLM 5.2, MiniMax M3, and Kimi K2.6, with per-token access from $5 and the first month free. It frames itself around data sovereignty and an 'altruistic AI' charter, and also sells a $3.95/month memory-migration tool (Memory Forge) and an AI workspace subscription. 'Near-endless messaging' is marketing language with no published allowance numbers — actual limits are unverified.
 
 ### Neuralwatt
 - URL: https://portal.neuralwatt.com/
@@ -446,7 +446,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://chutes.ai/
 - Posted by: thelaggingway, 28 Jul
 - Category: providers
-- Brief: Inference provider that was notably early serving Kimi K3, per channel chatter.
+- Brief: Decentralized, open-source serverless compute platform in the Bittensor ecosystem, aiming to serve new SOTA open-source models 'minutes after release' across text, image, video, speech, and music. Pay-as-you-go billed per token consumed with a live cost estimator, plus TEE/secure compute and a Chutes Chat consumer app. Throughput claims are vendor-reported and not independently verified.
 
 ### Telnyx
 - URL: https://telnyx.com/pricing/inference-api
@@ -458,7 +458,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://hyper.charm.land/
 - Posted by: Alp, 27 Jul
 - Category: providers
-- Brief: Free monthly credits plus a $20/mo plan, with an explicit zero-data-retention and GDPR claim.
+- Brief: Charm's coding-optimized inference for its Crush agent community: a free tier with 100 Hypercredits per month, a $20/month subscription with 250 Hypercredits refreshing daily, and prepaid bundles ($5–$20) that never expire — one Hypercredit currently maps to 5¢ of token spend. It ships with team governance features (master/sub keys, per-model and per-user usage reports) and advertises zero data retention with GDPR compliance. The zero-data-retention and GDPR claims are vendor-stated and not independently audited or verified.
 
 ### TokenWatch
 - URL: https://tokenwatch.wyrdwerk.com/
@@ -470,7 +470,7 @@ Methodology: every link-bearing message in #providers across the channel's full 
 - URL: https://zyloo.io/subscription
 - Posted by: thelaggingway, 27 Jul
 - Category: providers
-- Brief: Subscription-based inference provider at zyloo.io.
+- Brief: Tiered subscriptions selling 'unlimited' access to named models: LITE at $4.22/week and LITE+ at $12.89/month (Gemini 3/2.5 previews, GPT-4.1, GPT-4o), up to ULTIMATE at $899/month (Claude Opus 4.7/4.8, GPT-5.5/5.6, Claude Sonnet 5, GPT-5.6-Sol). Card payments auto-renew via Stripe with a cancel-anytime portal; crypto, WeChat Pay, Alipay and UPI buy a single non-renewing period. The PRO+ ($199/mo) and ULTRA ($599/mo) tiers were sold out at research time, and the site publishes no fair-use or rate-limit policy behind the 'Unlimited' label.
 
 ### Moonshot platform docs
 - URL: https://platform.kimi.ai/docs
