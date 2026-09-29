@@ -131,7 +131,7 @@ reverting cannot break the deployed site.
    `scripts/migrate.py` (with a reviewed classification) after any
    data update, then `api_build.py`.
 
-## 8. Cloudflare handoff (issue #1) — preview-verified 2026-09-29
+## 8. Cloudflare handoff (issue #1) — production-verified 2026-09-29
 
 The dynamic routes ship as Pages Functions in `functions/api/v1/`
 (`search.js`, `resources.js`, `resources/[id].js`, shared engine in
@@ -157,7 +157,7 @@ npx wrangler pages deployment list --project-name resource-library
 npx wrangler pages deployment tail <uuid> --project-name resource-library
 ```
 
-Preview evidence (deployment of this branch, 2026-09-29):
+Preview evidence (direct-upload preview deployment, pre-merge, 2026-09-29):
 
 - [x] `edge_parity.py` vs the local adapter: **120/120** — all 40 gold
       queries byte-parity (parsed JSON), full contract battery
@@ -180,10 +180,16 @@ Preview evidence (deployment of this branch, 2026-09-29):
       control active ahead of the function (Cloudflare WAF 403s
       known-bot user agents, e.g. `Python-urllib`); rollback for
       git-connected production = redeploy any earlier commit (see §6).
-- [ ] Production: merge this branch to `main` → auto-deploy, then
-      smoke-test both `https://cheapinfra-resources.wyrdwerk.com/` and
-      `https://resource-library-7q4.pages.dev/` (custom domain last,
-      per issue #1). **Pending owner approval of the preview evidence.**
+- [x] Production: PR #4 merged to `main` (`8e15bac`) → Pages
+      auto-deploy `2f1ddab0` (2026-09-29). Both domains smoke-tested
+      with the full parity gate: `https://cheapinfra-resources.wyrdwerk.com`
+      and `https://resource-library-7q4.pages.dev` each **120/120**
+      (gold queries, contract battery, statics unshadowed, site root
+      200). Production latency on the custom domain (edge colo SEA,
+      200 requests over the gold queries): **p50 101 ms, p95 144 ms**,
+      p99 203 ms, 200/200 HTTP 200 — inside the spec's p95 < 200 ms
+      target. Preview numbers above were measured before the merge on
+      the direct-upload preview deployment.
 
 Notes: the issue text (from docs/api-spec.md §8) mentions
 `/api/v1/facets` and `/api/v1/meta` — those endpoints were never part
