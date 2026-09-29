@@ -1,7 +1,7 @@
 {
   "baseline_commit": "31773ab774ad5992542ed442171a7283c84ea827",
   "generated_sha256": {
-    "index.html": "bf06153989e267241f369082d4ea0fce9df9f8e84f3c7c2395f5fb179e72f4f1",
+    "index.html": "dc3aa906614a484061d5d0747dc51c4f391ca7460c76d12cee1a41c32200019c",
     "data.json": "d18a07a41b8bc3678227991968db766aeb8bedbdcb0fe30b03463aff50ea31bf",
     "feed.xml": "2c57fd7fd88eca0344566afefa2e6a0cdfcef9e6f9e93266dee9dbefb0fac70d",
     "og-image.png": "c5f85f14665f943b79042405559eeeed18080384aabb5cd9d5879b68cbc4529e",
@@ -22,7 +22,10 @@
     "weeks/2026-09-10_to_2026-09-17.md": "bc312d307cfe2ca8cd841b2e05783df0e2aba635401c5407e740d6f66bfa9d40",
     "weeks/2026-09-17_to_2026-09-24.md": "d23f05b8bddde2ad551921b2c4e8f3462078e87dce2250aa89b72c4d69ee7ac9",
     "weeks/2026-09-24_to_2026-10-01.md": "d0c78bcf4c8765c183b7274d194a8acae97a4b6ec7afccc4d1749480aebd8a4d",
-    "weeks/providers.md": "f1ef2ab92314bed2c8334351a51c2a6ca4fca120cc89fbb1140ef7319114102f"
+    "weeks/providers.md": "f1ef2ab92314bed2c8334351a51c2a6ca4fca120cc89fbb1140ef7319114102f",
+    "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
+    "sitemap.xml": "7cd3137411f78feeb4fd069af2d7b82ff0622811261b05e978d85f2b3f26c915",
+    "llms.txt": "c1d58f971b673765c45139b935d9a8eaa7bd40d1d8d7d4979e46a8ad5ab61383"
   },
   "ordered_ids": [
     "railway-changelog-0309-free-vms-without-an-account",
