@@ -18,6 +18,12 @@ A curated, browsable archive of developer resources shared in the [CheapInfra](h
 | `CHANGELOG.md` | One entry per collection batch | Generated — run `scripts/build.py` |
 | `scripts/build.py` | Regenerates `index.html`, `data.json`, `weeks/`, `CHANGELOG.md`, `feed.xml`, `og-image.png` from `notes/` | Hand-written |
 | `scripts/linkcheck.py` | Checks every URL in `data.json` for link rot | Hand-written |
+| `catalog/` | Canonical per-resource JSON (`resources/<id>.json`) + taxonomy registries (`taxonomy/*.json`) — the machine-readable source behind the API | Generated — `scripts/migrate.py`, validated against `schemas/` |
+| `api/v1/` | Static JSON API: `resources.json`, `taxonomy.json`, `index.json`, per-resource files | Generated — `scripts/api_build.py` |
+| `api/openapi.yaml` | OpenAPI 3.1 contract for the API | Hand-written |
+| `schemas/` | JSON Schemas for catalog resources, taxonomy, and exports | Hand-written |
+| `docs/runbook.md` | Exact build, test, audit, and smoke-test commands for the API surface | Hand-written |
+| `tests/` | Test suite (79 tests), including build-freeze tests that fail if any generated site file drifts | Hand-written — `python3 -m pytest tests/ -q` |
 | `AGENTS.md` | Operating manual for agents working on this repo | Hand-written |
 | `CONTRIBUTING.md` | How to suggest resources or send fixes | Hand-written |
 | `LICENSE` | CC-BY-4.0 — the curated content's license | Hand-written |
@@ -36,6 +42,16 @@ See [CHANGELOG.md](CHANGELOG.md) for the batch history. Weeks are collected newe
 ## Working on this repo
 
 Read [AGENTS.md](AGENTS.md) — it documents the full workflow: how to collect a new week, the `notes/` format, the category taxonomy, and how to regenerate and push.
+
+## Machine-readable API
+
+The library is also served as data. `catalog/` holds one canonical JSON record per
+resource plus the controlled taxonomy registries, and `api/v1/` holds the static JSON
+API (`resources.json`, `taxonomy.json`, `index.json`, per-resource files), with its
+contract in `api/openapi.yaml`. Everything there is generated — see
+[docs/runbook.md](docs/runbook.md) for the exact build, test, and audit commands.
+Search (`scripts/search.py`) is deterministic lexical search over the catalog: no
+vector database, no model calls.
 
 ## Deploying
 
