@@ -1296,7 +1296,11 @@ for (const b of fsw) b.addEventListener('click', () => {{
         "\n"
         f"Sitemap: {SITE_URL}/sitemap.xml\n")
 
-    lastmod = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    # lastmod from the newest collection window, not the build clock, so a
+    # rebuild with unchanged notes produces a byte-identical sitemap and
+    # crawlers only see a new lastmod when content actually changed
+    _lm = max(info["end"] for l, info in week_info.items() if info["end"])
+    lastmod = f"{_lm[0]:04d}-{_lm[1]:02d}-{_lm[2]:02d}"
     sitemap = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

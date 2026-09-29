@@ -252,6 +252,11 @@ by `scripts/build.py` (never hand-edit):
 - New `tests/test_site_meta.py` (5 tests; suite 98 → 103). Baseline
   sha refresh for `index.html` + the three new files; drift audit clean.
 
+- [x] Correction (2026-09-29, `248405f` follow-up): `sitemap.xml`
+      `<lastmod>` is derived from the newest collection window end, not
+      the build clock — rebuilds with unchanged notes are byte-identical
+      (verified by double-build diff) and crawlers only see a new
+      lastmod when content actually changes.
 - [x] Tests: 103 passed. Headless-Chromium render checks at 1280 px
       (dark + light) and 390 px: no horizontal overflow, no clipped
       content (DOM-measured, plus native-res crops), tab switching,
