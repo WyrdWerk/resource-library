@@ -19,12 +19,24 @@ Standard library only (`unittest`); the fixture build needs whatever
   `data.json` vs `fixtures/expected_data.json`.
 - `fixtures/expected_data.json` — approved snapshot. Regenerate only by
   deliberate review: run the fixture build, inspect the diff, then copy.
+- `test_schemas.py` — schema/taxonomy structural rules (Phase 2).
+- `test_migration.py` — Phase 3 gate: 285 canonical records, protected
+  fields preserved, dates evidenced, `_exceptions.json` empty.
+- `test_compat.py` — Phase 4 gate: canonical→legacy round-trip is
+  byte-exact; `api/v1` artifacts well-formed; manifest hashes match.
+- `gold_queries.json` — 40 reviewed search queries (Phase 5); review
+  harness: `scripts/review_gold.py`.
+- `test_search.py` — Phase 5 gate: 100% exact-ID top-1, 100% top-5
+  (gate ≥90%), no-result precision, stable pagination cursors.
+- `test_api_contract.py` — Phase 6 gate: local adapter contract (routes,
+  filters, sparse fields, pagination, errors, CORS, ETag/304).
 
 ## Run
 
 From the repo root:
 
-    python3 -m unittest discover -s tests -v
+    python3 -m pytest tests/ -q
+    # expected: 79 passed
 
 ## Environment
 
