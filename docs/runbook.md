@@ -237,3 +237,30 @@ search-weight retune (gold set already 100%).
       `from=2026-09-01` narrows `q=inference` 100 → 36,
       `sort=title` ascending, malformed `from=2026-02-30` → 400.
 
+## 10. Site agent docs + SEO meta (PR #6, 2026-09-29)
+
+In-site API documentation and crawler/agent entry points, all generated
+by `scripts/build.py` (never hand-edit):
+
+- Third SPA tab **API** (`#view=api`, shareable + restored on load):
+  quick-start curl examples, endpoints/parameters tables, conventions &
+  errors, machine-readable doc links. Sidebar "For agents" block +
+  footer API link.
+- `robots.txt` (allow all + Sitemap line), `sitemap.xml` (SPA root),
+  `llms.txt` (llmstxt.org format: H1 + blockquote + linked sections with
+  full param/error/cache facts for agents).
+- New `tests/test_site_meta.py` (5 tests; suite 98 → 103). Baseline
+  sha refresh for `index.html` + the three new files; drift audit clean.
+
+- [x] Tests: 103 passed. Headless-Chromium render checks at 1280 px
+      (dark + light) and 390 px: no horizontal overflow, no clipped
+      content (DOM-measured, plus native-res crops), tab switching,
+      sidebar link, and hash restore verified in-DOM.
+- [x] Production: PR #6 merged to `main` (`f2a05ea`) → Pages auto-deploy
+      `274981a6` (2026-09-29). Both domains smoke-tested: `robots.txt`,
+      `sitemap.xml`, `llms.txt` HTTP 200 and byte-identical to the repo
+      files and to each other; `index.html` carries the API-tab markers;
+      linked assets (`api/openapi.yaml`, `docs/runbook.md`,
+      `docs/api-spec.md`, `api/v1/facets.json`) all 200; live search
+      `q=vector&limit=1` → 1 result. Prod render check via headless
+      Chromium on the custom domain: API tab active, no overflow.
