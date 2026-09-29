@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "codex-auth",
+  "title": "codex-auth",
+  "canonical_url": "https://github.com/Loongphy/codex-auth",
+  "brief": "A Zig-written CLI for switching and managing multiple Codex accounts — handy for anyone juggling several Codex subscriptions or auth contexts from the terminal. ~2.7k stars.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "4–10 Jun 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-06-09",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

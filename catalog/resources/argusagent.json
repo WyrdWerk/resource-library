@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "id": "argusagent",
+  "title": "ArgusAgent",
+  "canonical_url": "https://github.com/microsoft/ArgusAgent",
+  "brief": "Microsoft's ArgusAgent — a persistent, reviewed multi-agent runtime for long-horizon research and engineering. Directly relevant to anyone running agents on long tasks.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "10–17 Sep 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-09-10",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

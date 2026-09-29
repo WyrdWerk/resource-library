@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "moonshot-platform-docs",
+  "title": "Moonshot platform docs",
+  "canonical_url": "https://platform.kimi.ai/docs",
+  "brief": "Moonshot AI's platform documentation for the Kimi model family. Shared originally via a Kimi-K3 Hugging Face link.",
+  "caveat": null,
+  "resource_type": "documentation",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference",
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Manar"
+  },
+  "shared_on": "2026-07-27",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

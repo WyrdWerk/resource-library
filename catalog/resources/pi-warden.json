@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "pi-warden",
+  "title": "pi-warden",
+  "canonical_url": "https://github.com/DevMortimer/pi-warden",
+  "brief": "Guardrails for Pi built on pi-typesafe — \"steer the agent instead of interrupting you: Jev judges.\" Part of a small Pi-safety ecosystem from the same author as the next entry.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "security"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "17–24 Sep 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Aspiring UBI Recipient"
+  },
+  "shared_on": "2026-09-17",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

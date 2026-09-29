@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "inferx",
+  "title": "InferX",
+  "canonical_url": "https://inferx.net/models",
+  "brief": "Pay-as-you-go inference across 200+ production-ready models you can deploy with one click from its console. 'Ready now' endpoints publish per-token input/output/cached-input pricing, with promotional models showing the original rate crossed out beside the active InferX price — the catalog explicitly marks unpublished fields as missing rather than estimating them.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference",
+    "host-models"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-07-30",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

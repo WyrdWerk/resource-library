@@ -1,0 +1,741 @@
+{
+  "resource-types": {
+    "$id": "https://cheapinfra-resources.wyrdwerk.com/api/v1/taxonomy/resource-types.json",
+    "cardinality": "exactly-one",
+    "facet": "resource_type",
+    "values": {
+      "article-guide": {
+        "aliases": [
+          "article",
+          "tutorial",
+          "guide",
+          "blog-post",
+          "changelog"
+        ],
+        "definition": "An article, tutorial, changelog post, or how-to guide.",
+        "label": "Article / Guide",
+        "status": "active"
+      },
+      "dataset": {
+        "aliases": [
+          "data",
+          "benchmark-data"
+        ],
+        "definition": "A dataset for training, evaluation, or benchmarking.",
+        "label": "Dataset",
+        "status": "active"
+      },
+      "directory-gallery": {
+        "aliases": [
+          "directory",
+          "gallery",
+          "collection",
+          "awesome-list",
+          "list"
+        ],
+        "definition": "A curated directory, gallery, or collection of resources.",
+        "label": "Directory / Gallery",
+        "status": "active"
+      },
+      "documentation": {
+        "aliases": [
+          "docs",
+          "reference"
+        ],
+        "definition": "Reference documentation or a docs site.",
+        "label": "Documentation",
+        "status": "active"
+      },
+      "library-framework": {
+        "aliases": [
+          "library",
+          "framework",
+          "sdk",
+          "component-library"
+        ],
+        "definition": "A reusable code library, UI kit, or application framework.",
+        "label": "Library / Framework",
+        "status": "active"
+      },
+      "other": {
+        "aliases": [],
+        "definition": "A resource that does not fit any type above.",
+        "label": "Other",
+        "status": "active"
+      },
+      "provider": {
+        "aliases": [
+          "inference-provider",
+          "api-provider"
+        ],
+        "definition": "An inference or API provider, or a comparison of providers.",
+        "label": "Provider",
+        "status": "active"
+      },
+      "repository": {
+        "aliases": [
+          "repo",
+          "repos",
+          "github-repo"
+        ],
+        "definition": "A source-code repository, usually hosted on GitHub.",
+        "label": "Repository",
+        "status": "active"
+      },
+      "service-platform": {
+        "aliases": [
+          "service",
+          "platform",
+          "saas",
+          "paas"
+        ],
+        "definition": "A hosted service or platform (SaaS/PaaS) the user signs up for.",
+        "label": "Service / Platform",
+        "status": "active"
+      },
+      "template-starter": {
+        "aliases": [
+          "template",
+          "starter",
+          "boilerplate",
+          "starter-kit"
+        ],
+        "definition": "A project template, starter kit, or boilerplate.",
+        "label": "Template / Starter",
+        "status": "active"
+      },
+      "tool": {
+        "aliases": [
+          "app",
+          "utility"
+        ],
+        "definition": "A standalone application or utility that performs a task for the user.",
+        "label": "Tool",
+        "status": "active"
+      }
+    }
+  },
+  "topics": {
+    "$id": "https://cheapinfra-resources.wyrdwerk.com/api/v1/taxonomy/topics.json",
+    "cardinality": "one-to-five",
+    "facet": "topics",
+    "values": {
+      "ai-agents": {
+        "aliases": [
+          "agents",
+          "agent-framework",
+          "ai-agent"
+        ],
+        "definition": "Autonomous or semi-autonomous AI agents, agent frameworks, harnesses, and skills.",
+        "label": "AI agents",
+        "status": "active"
+      },
+      "app-development": {
+        "aliases": [
+          "desktop-apps",
+          "mobile"
+        ],
+        "definition": "Building desktop, mobile, or general-purpose applications.",
+        "label": "App development",
+        "status": "active"
+      },
+      "backend": {
+        "aliases": [
+          "server-side",
+          "api-development"
+        ],
+        "definition": "Server-side application logic, APIs, and services.",
+        "label": "Backend",
+        "status": "active"
+      },
+      "cloud-infrastructure": {
+        "aliases": [
+          "cloud",
+          "hosting",
+          "vps"
+        ],
+        "definition": "Cloud platforms, hosting, VMs, and infrastructure services.",
+        "label": "Cloud infrastructure",
+        "status": "active"
+      },
+      "databases": {
+        "aliases": [
+          "db",
+          "database",
+          "sql"
+        ],
+        "definition": "Databases, query engines, ORMs, and data storage.",
+        "label": "Databases",
+        "status": "active"
+      },
+      "design": {
+        "aliases": [
+          "ui-design",
+          "ux",
+          "design-systems"
+        ],
+        "definition": "UI/UX design, design systems, and visual resources.",
+        "label": "Design",
+        "status": "active"
+      },
+      "developer-tools": {
+        "aliases": [
+          "devtools",
+          "dev-tools",
+          "dx"
+        ],
+        "definition": "Tooling that helps developers write, review, debug, or ship code.",
+        "label": "Developer tools",
+        "status": "active"
+      },
+      "devops": {
+        "aliases": [
+          "ci-cd",
+          "cicd",
+          "operations"
+        ],
+        "definition": "CI/CD, automation, deployment pipelines, and operations tooling.",
+        "label": "DevOps",
+        "status": "active"
+      },
+      "frontend": {
+        "aliases": [
+          "front-end",
+          "client-side",
+          "web-ui"
+        ],
+        "definition": "Client-side web development: components, styling, and browser UI.",
+        "label": "Frontend",
+        "status": "active"
+      },
+      "inference": {
+        "aliases": [
+          "model-serving",
+          "llm-inference"
+        ],
+        "definition": "Running AI models: inference engines, serving, and providers.",
+        "label": "Inference",
+        "status": "active"
+      },
+      "observability": {
+        "aliases": [
+          "monitoring",
+          "logging",
+          "tracing"
+        ],
+        "definition": "Monitoring, logging, tracing, and system visibility.",
+        "label": "Observability",
+        "status": "active"
+      },
+      "productivity": {
+        "aliases": [
+          "notes",
+          "pkm"
+        ],
+        "definition": "Personal and team productivity, notes, and workflows.",
+        "label": "Productivity",
+        "status": "active"
+      },
+      "security": {
+        "aliases": [
+          "appsec",
+          "infosec"
+        ],
+        "definition": "Application and infrastructure security tooling and practices.",
+        "label": "Security",
+        "status": "active"
+      },
+      "self-hosting": {
+        "aliases": [
+          "selfhosted",
+          "homelab"
+        ],
+        "definition": "Self-hosted software and homelab infrastructure.",
+        "label": "Self-hosting",
+        "status": "active"
+      },
+      "testing": {
+        "aliases": [
+          "test",
+          "qa"
+        ],
+        "definition": "Software testing frameworks, harnesses, and practices.",
+        "label": "Testing",
+        "status": "active"
+      },
+      "web-development": {
+        "aliases": [
+          "webdev",
+          "web-dev"
+        ],
+        "definition": "General web development spanning frontend and backend.",
+        "label": "Web development",
+        "status": "active"
+      }
+    }
+  },
+  "use-cases": {
+    "$id": "https://cheapinfra-resources.wyrdwerk.com/api/v1/taxonomy/use-cases.json",
+    "cardinality": "one-to-six",
+    "facet": "use_cases",
+    "values": {
+      "automate-workflows": {
+        "aliases": [
+          "automation",
+          "workflows"
+        ],
+        "definition": "Automate repetitive development or operational workflows.",
+        "label": "Automate workflows",
+        "status": "active"
+      },
+      "build-interfaces": {
+        "aliases": [
+          "ui-components",
+          "build-ui"
+        ],
+        "definition": "Build user interfaces from components, kits, or generators.",
+        "label": "Build interfaces",
+        "status": "active"
+      },
+      "create-media": {
+        "aliases": [
+          "image-generation",
+          "video-generation"
+        ],
+        "definition": "Create images, video, audio, or other media with AI.",
+        "label": "Create media",
+        "status": "active"
+      },
+      "deploy-applications": {
+        "aliases": [
+          "deploy",
+          "deployment",
+          "ship"
+        ],
+        "definition": "Deploy and release applications to hosting or edge.",
+        "label": "Deploy applications",
+        "status": "active"
+      },
+      "discover-design-references": {
+        "aliases": [
+          "design-inspiration",
+          "design-references"
+        ],
+        "definition": "Discover design references, inspiration, and visual patterns.",
+        "label": "Discover design references",
+        "status": "active"
+      },
+      "generate-code": {
+        "aliases": [
+          "code-generation",
+          "ai-coding"
+        ],
+        "definition": "Generate, complete, or edit code with AI assistance.",
+        "label": "Generate code",
+        "status": "active"
+      },
+      "host-models": {
+        "aliases": [
+          "model-hosting"
+        ],
+        "definition": "Host and serve AI models for inference.",
+        "label": "Host models",
+        "status": "active"
+      },
+      "learn-technique": {
+        "aliases": [
+          "learn",
+          "tutorials"
+        ],
+        "definition": "Learn a technique, concept, or tool from a guide.",
+        "label": "Learn a technique",
+        "status": "active"
+      },
+      "manage-agents": {
+        "aliases": [
+          "agent-orchestration",
+          "multi-agent"
+        ],
+        "definition": "Run, orchestrate, or supervise coding agents and agent sessions.",
+        "label": "Manage agents",
+        "status": "active"
+      },
+      "monitor-systems": {
+        "aliases": [
+          "alerting"
+        ],
+        "definition": "Monitor systems, track errors, and observe behavior in production.",
+        "label": "Monitor systems",
+        "status": "active"
+      },
+      "operate-databases": {
+        "aliases": [
+          "manage-databases"
+        ],
+        "definition": "Operate, query, or manage databases.",
+        "label": "Operate databases",
+        "status": "active"
+      },
+      "provision-infrastructure": {
+        "aliases": [
+          "iac",
+          "infra-as-code"
+        ],
+        "definition": "Provision and manage infrastructure as code.",
+        "label": "Provision infrastructure",
+        "status": "active"
+      },
+      "run-inference": {
+        "aliases": [
+          "llm-api"
+        ],
+        "definition": "Run inference against hosted or local AI models.",
+        "label": "Run inference",
+        "status": "active"
+      },
+      "search-code": {
+        "aliases": [
+          "code-search"
+        ],
+        "definition": "Search across codebases, repositories, or documentation.",
+        "label": "Search code",
+        "status": "active"
+      },
+      "test-software": {
+        "aliases": [
+          "run-tests"
+        ],
+        "definition": "Test software with frameworks, harnesses, or benchmarks.",
+        "label": "Test software",
+        "status": "active"
+      }
+    }
+  },
+  "interfaces": {
+    "$id": "https://cheapinfra-resources.wyrdwerk.com/api/v1/taxonomy/interfaces.json",
+    "cardinality": "zero-to-five",
+    "facet": "interfaces",
+    "values": {
+      "api": {
+        "aliases": [
+          "rest-api",
+          "http-api"
+        ],
+        "definition": "Consumed over HTTP as a REST or similar API.",
+        "label": "API",
+        "status": "active"
+      },
+      "cli": {
+        "aliases": [
+          "command-line",
+          "terminal",
+          "tui"
+        ],
+        "definition": "Used from the command line or terminal.",
+        "label": "CLI",
+        "status": "active"
+      },
+      "desktop": {
+        "aliases": [
+          "desktop-app",
+          "native-app"
+        ],
+        "definition": "A native desktop application.",
+        "label": "Desktop",
+        "status": "active"
+      },
+      "extension": {
+        "aliases": [
+          "browser-extension",
+          "vscode-extension",
+          "plugin"
+        ],
+        "definition": "A browser or editor extension/plugin.",
+        "label": "Extension",
+        "status": "active"
+      },
+      "mcp": {
+        "aliases": [],
+        "definition": "Exposed or consumed via the Model Context Protocol.",
+        "label": "MCP",
+        "status": "active"
+      },
+      "web": {
+        "aliases": [
+          "web-app",
+          "website",
+          "webapp"
+        ],
+        "definition": "Used in the browser as a web application or site.",
+        "label": "Web",
+        "status": "active"
+      }
+    }
+  },
+  "technologies": {
+    "$id": "https://cheapinfra-resources.wyrdwerk.com/api/v1/taxonomy/technologies.json",
+    "cardinality": "zero-to-eight",
+    "facet": "technologies",
+    "note": "Product and ecosystem names live here, not in topics (governance rule 3). Additive: new slugs may be appended; never rename without an alias.",
+    "values": {
+      "anthropic-api": {
+        "aliases": [
+          "claude-api"
+        ],
+        "definition": "Anthropic's Claude API.",
+        "label": "Anthropic API",
+        "status": "active"
+      },
+      "claude-code": {
+        "aliases": [],
+        "definition": "Anthropic's Claude Code agentic coding tool.",
+        "label": "Claude Code",
+        "status": "active"
+      },
+      "docker": {
+        "aliases": [],
+        "definition": "Docker container platform.",
+        "label": "Docker",
+        "status": "active"
+      },
+      "electron": {
+        "aliases": [],
+        "definition": "Electron desktop-app framework.",
+        "label": "Electron",
+        "status": "active"
+      },
+      "github-actions": {
+        "aliases": [
+          "gha"
+        ],
+        "definition": "GitHub Actions CI/CD.",
+        "label": "GitHub Actions",
+        "status": "active"
+      },
+      "go": {
+        "aliases": [
+          "golang"
+        ],
+        "definition": "The Go programming language.",
+        "label": "Go",
+        "status": "active"
+      },
+      "javascript": {
+        "aliases": [
+          "js",
+          "ecmascript"
+        ],
+        "definition": "The JavaScript language.",
+        "label": "JavaScript",
+        "status": "active"
+      },
+      "kubernetes": {
+        "aliases": [
+          "k8s"
+        ],
+        "definition": "Kubernetes container orchestration.",
+        "label": "Kubernetes",
+        "status": "active"
+      },
+      "mcp-protocol": {
+        "aliases": [
+          "model-context-protocol"
+        ],
+        "definition": "The Model Context Protocol standard.",
+        "label": "MCP protocol",
+        "status": "active"
+      },
+      "neovim": {
+        "aliases": [
+          "nvim"
+        ],
+        "definition": "Neovim text editor.",
+        "label": "Neovim",
+        "status": "active"
+      },
+      "next-js": {
+        "aliases": [
+          "nextjs"
+        ],
+        "definition": "The Next.js React framework.",
+        "label": "Next.js",
+        "status": "active"
+      },
+      "node-js": {
+        "aliases": [
+          "nodejs",
+          "node"
+        ],
+        "definition": "The Node.js runtime.",
+        "label": "Node.js",
+        "status": "active"
+      },
+      "ollama": {
+        "aliases": [],
+        "definition": "Ollama local model runner.",
+        "label": "Ollama",
+        "status": "active"
+      },
+      "openai-api": {
+        "aliases": [],
+        "definition": "OpenAI's API platform.",
+        "label": "OpenAI API",
+        "status": "active"
+      },
+      "postgres": {
+        "aliases": [
+          "postgresql"
+        ],
+        "definition": "PostgreSQL database.",
+        "label": "PostgreSQL",
+        "status": "active"
+      },
+      "python": {
+        "aliases": [
+          "py"
+        ],
+        "definition": "The Python language.",
+        "label": "Python",
+        "status": "active"
+      },
+      "react": {
+        "aliases": [],
+        "definition": "The React UI library.",
+        "label": "React",
+        "status": "active"
+      },
+      "rust": {
+        "aliases": [],
+        "definition": "The Rust language.",
+        "label": "Rust",
+        "status": "active"
+      },
+      "sqlite": {
+        "aliases": [],
+        "definition": "SQLite embedded database.",
+        "label": "SQLite",
+        "status": "active"
+      },
+      "svelte": {
+        "aliases": [],
+        "definition": "The Svelte UI framework.",
+        "label": "Svelte",
+        "status": "active"
+      },
+      "tailwind-css": {
+        "aliases": [
+          "tailwind"
+        ],
+        "definition": "Tailwind CSS utility framework.",
+        "label": "Tailwind CSS",
+        "status": "active"
+      },
+      "typescript": {
+        "aliases": [
+          "ts"
+        ],
+        "definition": "The TypeScript language.",
+        "label": "TypeScript",
+        "status": "active"
+      },
+      "vscode": {
+        "aliases": [
+          "visual-studio-code"
+        ],
+        "definition": "Visual Studio Code editor.",
+        "label": "VS Code",
+        "status": "active"
+      },
+      "vue": {
+        "aliases": [
+          "vuejs"
+        ],
+        "definition": "The Vue.js framework.",
+        "label": "Vue",
+        "status": "active"
+      },
+      "zed": {
+        "aliases": [],
+        "definition": "The Zed editor.",
+        "label": "Zed",
+        "status": "active"
+      }
+    }
+  },
+  "synonyms": {
+    "$id": "https://cheapinfra-resources.wyrdwerk.com/api/v1/taxonomy/synonyms.json",
+    "note": "Curated query-expansion synonyms only. Every target must resolve to a slug in exactly one taxonomy registry. Aliases listed inside registry files take precedence for facet resolution.",
+    "synonyms": {
+      "agent": "ai-agents",
+      "agents": "ai-agents",
+      "ai-coding": "generate-code",
+      "app": "tool",
+      "article": "article-guide",
+      "articles": "article-guide",
+      "awesome-list": "directory-gallery",
+      "blog": "article-guide",
+      "boilerplate": "template-starter",
+      "browser-extension": "extension",
+      "changelog": "article-guide",
+      "ci": "devops",
+      "cicd": "devops",
+      "code-search": "search-code",
+      "collection": "directory-gallery",
+      "component-library": "library-framework",
+      "components": "library-framework",
+      "database": "databases",
+      "db": "databases",
+      "deploy": "deploy-applications",
+      "deployment": "deploy-applications",
+      "desktop-app": "desktop",
+      "directory": "directory-gallery",
+      "docs": "documentation",
+      "framework": "library-framework",
+      "front-end": "frontend",
+      "frontend": "frontend",
+      "gallery": "directory-gallery",
+      "gha": "github-actions",
+      "github-repo": "repository",
+      "guide": "article-guide",
+      "homelab": "self-hosting",
+      "hosting": "cloud-infrastructure",
+      "ide": "developer-tools",
+      "inference-provider": "provider",
+      "js": "javascript",
+      "k8s": "kubernetes",
+      "library": "library-framework",
+      "llm-api": "run-inference",
+      "mcp": "mcp-protocol",
+      "monitoring": "observability",
+      "native-app": "desktop",
+      "nextjs": "next-js",
+      "nodejs": "node-js",
+      "nvim": "neovim",
+      "observability": "monitor-systems",
+      "paas": "service-platform",
+      "platform": "service-platform",
+      "py": "python",
+      "repo": "repository",
+      "repos": "repository",
+      "rest-api": "api",
+      "saas": "service-platform",
+      "sdk": "library-framework",
+      "selfhosted": "self-hosting",
+      "service": "service-platform",
+      "starter": "template-starter",
+      "template": "template-starter",
+      "terminal": "cli",
+      "testing": "test-software",
+      "tool": "tool",
+      "ts": "typescript",
+      "tutorial": "article-guide",
+      "tutorials": "learn-technique",
+      "ui-components": "build-interfaces",
+      "utility": "tool",
+      "vps": "cloud-infrastructure",
+      "web-app": "web",
+      "webapp": "web",
+      "website": "web"
+    }
+  }
+}

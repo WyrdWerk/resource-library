@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "ai-router",
+  "title": "AI Router",
+  "canonical_url": "https://airouter.ch/",
+  "brief": "Swiss-hosted inference API (\"All of AI. One API. Made in Switzerland\") with GDPR compliance and data hosted in Switzerland. Flat CHF 39/mo unlimited under a fair-use policy; OpenAI-compatible at api.airouter.ch/v1.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-08-18",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

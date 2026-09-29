@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "brokenarxiv-arxivmath-announcement",
+  "title": "BrokenArXiv / ArXivMath (announcement)",
+  "canonical_url": "https://x.com/j_dekoninck/status/2100180792601420138/photo/1",
+  "brief": "Jasper Dekoninck releasing new versions of the BrokenArXiv and ArXivMath benchmarks. Announcement only; useful pointer for anyone tracking eval benchmarks.",
+  "caveat": "Announcement only; useful pointer for anyone tracking eval benchmarks.",
+  "resource_type": "article-guide",
+  "topics": [
+    "testing"
+  ],
+  "use_cases": [
+    "learn-technique",
+    "test-software"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "17–24 Sep 2026",
+  "legacy_categories": [
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Rykuuun"
+  },
+  "shared_on": "2026-09-17",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

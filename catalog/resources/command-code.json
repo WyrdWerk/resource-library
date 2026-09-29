@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "command-code",
+  "title": "Command Code",
+  "canonical_url": "https://commandcode.ai/docs/plans/goat",
+  "brief": "GOAT plan — $10/mo for $70 in credits (limits $14/5h, $35/week, $70/month) across 30+ open and closed models. No zero-retention statement found.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Alp"
+  },
+  "shared_on": "2026-08-13",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

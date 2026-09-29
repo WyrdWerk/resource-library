@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "markdown-graphs",
+  "title": "Markdown Graphs",
+  "canonical_url": "https://mdx-graphs.kshv.me/",
+  "brief": "Monospace charts and tables for MDX and React. Handy for rendering data visuals that stay crisp in markdown contexts.",
+  "caveat": null,
+  "resource_type": "library-framework",
+  "topics": [
+    "frontend"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "react"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "27 Aug–3 Sep 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-08-31",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

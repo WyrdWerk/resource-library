@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "responsively-app",
+  "title": "Responsively App",
+  "canonical_url": "https://responsively.app/",
+  "brief": "A dedicated browser for responsive web development — preview a site at multiple screen sizes side by side. Built for faster, more precise responsive work.",
+  "caveat": null,
+  "resource_type": "tool",
+  "topics": [
+    "developer-tools",
+    "frontend"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "17–24 Sep 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "UT"
+  },
+  "shared_on": "2026-09-23",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

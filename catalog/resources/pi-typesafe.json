@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "pi-typesafe",
+  "title": "pi-typesafe",
+  "canonical_url": "https://github.com/DevMortimer/pi-typesafe",
+  "brief": "TypeSafe decisions for Pi — a batched evaluation tool, terminal playground and typed API for extensions. The foundation pi-warden builds on.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "testing",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "test-software"
+  ],
+  "interfaces": [
+    "cli",
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "17–24 Sep 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Aspiring UBI Recipient"
+  },
+  "shared_on": "2026-09-17",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

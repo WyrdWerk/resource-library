@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "teamai-cli",
+  "title": "teamai-cli",
+  "canonical_url": "https://github.com/Tencent/teamai-cli",
+  "brief": "Tencent's \"Make Every Team AI Native\" CLI. The description is thin, but a Tencent-backed team-AI CLI is worth a look.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx8678"
+  },
+  "shared_on": "2026-09-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

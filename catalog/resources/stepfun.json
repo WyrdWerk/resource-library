@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "stepfun",
+  "title": "StepFun",
+  "canonical_url": "https://platform.stepfun.ai/",
+  "brief": "StepFun's open platform with a usage-billed API (api.stepfun.ai/v1) and a 15-day trial needing no card. Serves Step 5 Preview and StepAudio 3.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-07-29",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

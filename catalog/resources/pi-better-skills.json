@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "pi-better-skills",
+  "title": "pi-better-skills",
+  "canonical_url": "https://github.com/edxeth/pi-better-skills",
+  "brief": "A pi extension that fixes skill ergonomics: skills resolve their bundled files from the skill directory (`$PI_SKILL_DIR` instead of the workspace), each SKILL.md loads whole on first read, and path guidance is injected into the system prompt so authors stop babysitting paths. Installs with `pi install git:github.com/edxeth/pi-better-skills`; ~20 stars, POSIX-only.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "extension"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "24 Sep–1 Oct 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Rykuuun"
+  },
+  "shared_on": "2026-09-28",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

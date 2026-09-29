@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "tensorx",
+  "title": "TensorX",
+  "canonical_url": "https://tensorx.ai/pricing/",
+  "brief": "EU-hosted pay-as-you-go inference whose pricing page states verbatim: \"all inference is zero data retention.\"",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Alp"
+  },
+  "shared_on": "2026-08-19",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

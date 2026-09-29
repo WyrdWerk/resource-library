@@ -1,0 +1,37 @@
+{
+  "brief": "A free, open-source Agent Development Environment (ADE): run Claude Code, Codex, Gemini, Cursor CLI, and other CLI agents in parallel across isolated git worktrees, with a Ghostty-class terminal, in-app diff review, embedded browser, and SSH dev built in. Bring your own subscriptions.",
+  "canonical_url": "http://www.onorca.dev/",
+  "caveat": null,
+  "display_period": "24 Sep–1 Oct 2026",
+  "id": "orca",
+  "interfaces": [
+    "desktop"
+  ],
+  "legacy_categories": [
+    "ai-tool",
+    "web-app"
+  ],
+  "license": null,
+  "open_source": true,
+  "resource_type": "tool",
+  "schema_version": "1.0",
+  "shared_on": "2026-09-26",
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "technologies": [],
+  "title": "Orca",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "verification": {
+    "checked_at": null,
+    "final_url": null,
+    "status": "unchecked"
+  }
+}

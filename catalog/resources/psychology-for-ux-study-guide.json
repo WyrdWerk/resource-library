@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "psychology-for-ux-study-guide",
+  "title": "Psychology for UX: Study Guide",
+  "canonical_url": "https://www.nngroup.com/articles/psychology-study-guide/",
+  "brief": "Nielsen Norman Group's study guide on the psychology behind UX. A solid reference for grounding design decisions in research rather than taste.",
+  "caveat": null,
+  "resource_type": "article-guide",
+  "topics": [
+    "design"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "27 Aug–3 Sep 2026",
+  "legacy_categories": [
+    "article"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-02",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

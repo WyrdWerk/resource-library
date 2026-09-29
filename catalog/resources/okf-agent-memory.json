@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "okf-agent-memory",
+  "title": "okf-agent-memory",
+  "canonical_url": "https://github.com/okf-memory/okf-agent-memory",
+  "brief": "Git-native persistent memory for AI coding agents — implements Google OKF v0.2 with sub-300µs in-memory BM25 search and an embedded MCP server. Claims to slash token bloat by 80%; that figure is the repo's and unverified.",
+  "caveat": "Claims to slash token bloat by 80%; that figure is the repo's and unverified.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "mcp"
+  ],
+  "technologies": [
+    "mcp-protocol"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Thoor"
+  },
+  "shared_on": "2026-09-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

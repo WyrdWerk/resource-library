@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "jevgrep",
+  "title": "jevgrep",
+  "canonical_url": "https://github.com/dzhng/jevgrep",
+  "brief": "Find code by asking what it does: a CLI (plus an installable agent skill) that uses Jev to judge relevance across folders, files, and declarations, returning relevant files, reading leads, and verbatim source excerpts in one stdout response. Installs with `npm install -g @dzhng/jevgrep`; its own ten-task SWE-bench comparison claims ~30% lower coding-agent cost at equal task success. (~803 stars, MIT.) Cost figures are author-reported and not independently verified.",
+  "caveat": "Installs with `npm install -g @dzhng/jevgrep`; its own ten-task SWE-bench comparison claims ~30% lower coding-agent cost at equal task success. (~803 stars, MIT.) Cost figures are author-reported and not independently verified.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "search-code"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "24 Sep–1 Oct 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "dev-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-28",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

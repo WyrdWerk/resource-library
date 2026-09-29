@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "minara-harness-announcement",
+  "title": "Minara Harness (announcement)",
+  "canonical_url": "https://x.com/minara/status/2097413018510618899",
+  "brief": "Announcement of Minara Harness — pitched as \"general financial intelligence for everyone\", turning ideas into signals into execution, plus coding tasks like any other agent. The capability claims are the poster's and unverified.",
+  "caveat": "The capability claims are the poster's and unverified.",
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-09",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

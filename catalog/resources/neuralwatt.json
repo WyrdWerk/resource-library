@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "neuralwatt",
+  "title": "Neuralwatt",
+  "canonical_url": "https://portal.neuralwatt.com/",
+  "brief": "$10/kWh pay-as-you-go (or per-token), $1 free credit after adding a payment method; monthly plans $20–$200. Hosted multi-model OpenAI-compatible API plus on-prem deployment; 14 models.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Blessed Piss Enjoyer"
+  },
+  "shared_on": "2026-07-28",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "heddlework",
+  "title": "heddlework",
+  "canonical_url": "https://github.com/monotykamary/heddlework",
+  "brief": "A native, harness-neutral workspace for agent sessions: task graphs, diffs, and durable work across coding agents — Pi first, Codex and Claude next. Very early (~12 stars); expect rough edges.",
+  "caveat": "Very early (~12 stars); expect rough edges.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "desktop"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "24 Sep–1 Oct 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Aspiring UBI Recipient"
+  },
+  "shared_on": "2026-09-26",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "pi-mockdeck",
+  "title": "pi-mockdeck",
+  "canonical_url": "https://github.com/1y33/pi-mockdeck",
+  "brief": "Cata's first pi extension — an ASCII showcase/mockup gallery of UIs for fast iteration. The shared link pointed at the commits page; normalized to the repo root.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "design",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "discover-design-references"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "cata"
+  },
+  "shared_on": "2026-09-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

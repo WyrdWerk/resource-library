@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "codebase-memory-mcp-deusdata",
+  "title": "codebase-memory-mcp (DeusData)",
+  "canonical_url": "https://github.com/DeusData/codebase-memory-mcp",
+  "brief": "Persistent semantic memory for coding agents — an MCP server that indexes your codebase. Useful when you have many repos and context windows aren't enough.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "search-code"
+  ],
+  "interfaces": [
+    "mcp"
+  ],
+  "technologies": [
+    "mcp-protocol"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "13–20 Aug 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Rykuuun"
+  },
+  "shared_on": "2026-08-15",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

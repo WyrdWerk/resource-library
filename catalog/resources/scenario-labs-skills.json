@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "scenario-labs-skills",
+  "title": "scenario-labs/skills",
+  "canonical_url": "https://github.com/scenario-labs/skills",
+  "brief": "Agent skills for Scenario: image, video, audio, texture, 3D, and custom-model workflows over the Scenario MCP, aimed at games, entertainment, and creative verticals. Installs with `npx skills add scenario-labs/skills`; ~450 stars.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "create-media",
+    "manage-agents"
+  ],
+  "interfaces": [
+    "cli",
+    "mcp"
+  ],
+  "technologies": [
+    "mcp-protocol"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "24 Sep–1 Oct 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-09-25",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

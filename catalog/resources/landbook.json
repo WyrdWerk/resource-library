@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "landbook",
+  "title": "Landbook",
+  "canonical_url": "https://land-book.com/",
+  "brief": "A website design inspiration gallery with a large curated collection of landing pages, e-commerce sites, portfolios, and templates, plus boards for saving references. Useful for browsing real-world site design by category.",
+  "caveat": null,
+  "resource_type": "directory-gallery",
+  "topics": [
+    "design"
+  ],
+  "use_cases": [
+    "discover-design-references"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "24 Sep–1 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Rykuuun"
+  },
+  "shared_on": "2026-09-25",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

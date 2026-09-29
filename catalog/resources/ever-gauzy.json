@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "ever-gauzy",
+  "title": "ever-gauzy",
+  "canonical_url": "https://github.com/ever-co/ever-gauzy",
+  "brief": "Ever Gauzy — an open business management platform covering ERP, CRM, HRM, ATS and project management (gauzy.co). A full open-source suite if you ever need to stand up business tooling.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "self-hosting",
+    "productivity"
+  ],
+  "use_cases": [
+    "automate-workflows"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "10–17 Sep 2026",
+  "legacy_categories": [
+    "github",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Alp"
+  },
+  "shared_on": "2026-09-15",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

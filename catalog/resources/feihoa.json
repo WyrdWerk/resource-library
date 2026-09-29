@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "feihoa",
+  "title": "FEIHOA",
+  "canonical_url": "https://feihoa.com/",
+  "brief": "Unlimited AI plans from €6. States prompts and outputs are not used for training, though it may retain data briefly for security, abuse prevention and legal reasons.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-13",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

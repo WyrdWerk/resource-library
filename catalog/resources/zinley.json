@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "zinley",
+  "title": "Zinley",
+  "canonical_url": "https://zinley.com/self-audit",
+  "brief": "\"Built to extend you. 10× your day\" — an AI extension of you across every device and person: takes your calls, writes your emails, and more. Vendor claims, unverified.",
+  "caveat": "Vendor claims, unverified.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "productivity"
+  ],
+  "use_cases": [
+    "automate-workflows"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "4–10 Jun 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-06-09",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

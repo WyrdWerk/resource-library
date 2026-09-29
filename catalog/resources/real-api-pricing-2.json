@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "id": "real-api-pricing-2",
+  "title": "Real API Pricing",
+  "canonical_url": "https://github.com/FeiZhuLulu/real-api-pricing",
+  "brief": "GitHub repo behind the real-api-pricing comparison of actual inference API prices. Its web app is already in this library's web-apps section; this is the distinct source repo.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "JohnDotOwl"
+  },
+  "shared_on": "2026-09-11",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

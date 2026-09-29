@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "ui-skills",
+  "title": "UI Skills",
+  "canonical_url": "https://www.ui-skills.com/",
+  "brief": "A collection of design-engineering skills covering accessibility, motion and frontend craft. Pairs well with the transitions.dev repo above for leveling up UI output.",
+  "caveat": null,
+  "resource_type": "directory-gallery",
+  "topics": [
+    "frontend",
+    "design"
+  ],
+  "use_cases": [
+    "build-interfaces",
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "10–17 Sep 2026",
+  "legacy_categories": [
+    "web-app",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-13",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

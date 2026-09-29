@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "pdfcn",
+  "title": "pdfcn",
+  "canonical_url": "https://www.pdfcn.dev/",
+  "brief": "A collection of beautifully designed, accessible and customizable PDF components built on Takumi. Handy if you ever need to render polished PDFs from a web stack.",
+  "caveat": null,
+  "resource_type": "library-framework",
+  "topics": [
+    "frontend",
+    "design"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "10–17 Sep 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-13",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

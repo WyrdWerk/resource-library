@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "linus-torvalds-skill",
+  "title": "linus-torvalds-skill",
+  "canonical_url": "https://github.com/Mte90/linus-torvalds-skill",
+  "brief": "Distills Linus Torvalds' code-review methodology from ~38k review moves extracted from 31k of his LKML emails (2002–2026) plus 67 interview transcripts into a reusable, language-agnostic agent skill. Ships four variants distilled by different LLMs (gpt-oss, GLM, Mistral, Qwen) with validation reports comparing skilled vs. baseline reviews; the gpt-oss variant is the recommended default.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "test-software"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "6–12 Aug 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-08-06",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

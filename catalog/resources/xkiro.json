@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "xkiro",
+  "title": "xKiro",
+  "canonical_url": "https://xkiro.com/",
+  "brief": "Unified gateway — free tier with 40+ free models and 5M tokens/day (no card), pay-as-you-go about 35% below official prices on select models. 90+ models across 16 providers on one API key.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-07-30",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

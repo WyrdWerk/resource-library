@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "verboo-code",
+  "title": "Verboo Code",
+  "canonical_url": "https://verboo.ai/",
+  "brief": "Free trial, then unlimited-token subscriptions from Junior $24/mo to Ultra $269/mo, plus a usage API from $0.12/1M input tokens. Coding agent plus OpenAI-compatible API on Brazilian servers; states it does not train on or review code and calls.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "generate-code"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-07-25",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
