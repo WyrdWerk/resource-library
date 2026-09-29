@@ -1,6 +1,6 @@
 {
   "api_version": "1",
-  "generated_at": "2026-09-29T06:26:30Z",
+  "generated_at": "2026-09-29T07:54:31Z",
   "record_count": 285,
   "channels": [
     "providers",
@@ -9,6 +9,7 @@
   "resources_sha256": "95a4942e5fe0c2a8bd3ce059b1c9da669a5dcdc3490c2406fe287ad9761f5374",
   "endpoints": {
     "records": "api/v1/resources.json",
-    "taxonomy": "api/v1/taxonomy.json"
+    "taxonomy": "api/v1/taxonomy.json",
+    "facets": "api/v1/facets.json"
   }
 }

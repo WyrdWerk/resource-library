@@ -10,20 +10,27 @@ here.
 Routes:
   GET  /api/v1/index.json
   GET  /api/v1/taxonomy.json
+  GET  /api/v1/facets.json
   GET  /api/v1/resources.json[?fields=&limit=&cursor=]
   GET  /api/v1/resources/<id>
   GET  /api/v1/search?q=&resource_type=&topic=&use_case=&interface=&
-                       technology=&channel=&open_source=&sort=&limit=&
-                       cursor=&fields=
+                       technology=&channel=&open_source=&from=&to=&
+                       sort=&limit=&cursor=&fields=
 HEAD and OPTIONS are supported on every route. ETag (sha256 of the exact
 response body) + If-None-Match -> 304. CORS: Access-Control-Allow-Origin: *.
+
+Facet filters accept CSV (comma-separated values OR within the family,
+families AND together). from/to are inclusive YYYY-MM-DD bounds on
+shared_on. sort: relevance | newest | oldest | title.
 
 Usage: python3 scripts/api_server.py [port]   (default 8765)
 """
 import hashlib
 import json
+import re
 import sys
 import urllib.parse
+from datetime import datetime
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
@@ -41,8 +48,9 @@ def load_state():
     records = json.loads((API / "resources.json").read_text(encoding="utf-8"))
     taxonomy = json.loads((API / "taxonomy.json").read_text(encoding="utf-8"))
     manifest = json.loads((API / "index.json").read_text(encoding="utf-8"))
+    facets_data = json.loads((API / "facets.json").read_text(encoding="utf-8"))
     _state.update(records=records, by_id={r["id"]: r for r in records},
-                  taxonomy=taxonomy, manifest=manifest,
+                  taxonomy=taxonomy, manifest=manifest, facets_data=facets_data,
                   index=build_index(records, load_taxonomy()),
                   facets=_facets(taxonomy))
 
@@ -54,8 +62,24 @@ def _facets(taxonomy):
                       ("technologies", "technology")):
         out[key] = set(taxonomy[name]["values"].keys())
     out["channel"] = {"share-tech", "providers"}
-    out["sort"] = {"relevance", "newest", "oldest"}
+    out["sort"] = {"relevance", "newest", "oldest", "title"}
     return out
+
+
+DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
+
+
+def valid_date(v):
+    """Strict YYYY-MM-DD that is also a real calendar date. Must agree with
+    isValidIsoDate() in functions/api/v1/_lib.js (edge parity compares the
+    accept/reject decisions byte-for-byte via the error payloads)."""
+    if not DATE_RE.fullmatch(v):
+        return False
+    try:
+        datetime.strptime(v, "%Y-%m-%d")
+    except ValueError:
+        return False
+    return True
 
 
 FIELD_ALLOW = {"schema_version", "id", "title", "canonical_url", "brief", "caveat",
@@ -115,15 +139,21 @@ def route_search(qs):
     for key in ("resource_type", "topic", "use_case", "interface", "technology", "channel"):
         v = qs.get(key, [None])[0]
         if v:
-            if v not in _state["facets"][key]:
-                return err("bad_filter", f"unknown {key}: {v}", 400)
-            filters[key] = v
+            # CSV: values OR within the family. A single value keeps today's
+            # string echo; multiple values echo as a deduped array.
+            parts = v.split(",")
+            for p in parts:
+                if p not in _state["facets"][key]:
+                    return err("bad_filter", f"unknown {key}: {p}", 400)
+            filters[key] = parts[0] if len(parts) == 1 else list(dict.fromkeys(parts))
     # `type` is accepted as an alias of resource_type
     if "type" in qs and "resource_type" not in filters:
         v = qs["type"][0]
-        if v not in _state["facets"]["resource_type"]:
-            return err("bad_filter", f"unknown resource_type: {v}", 400)
-        filters["resource_type"] = v
+        parts = v.split(",")
+        for p in parts:
+            if p not in _state["facets"]["resource_type"]:
+                return err("bad_filter", f"unknown resource_type: {p}", 400)
+        filters["resource_type"] = parts[0] if len(parts) == 1 else list(dict.fromkeys(parts))
     os_raw = qs.get("open_source", [None])[0]
     if os_raw is not None:
         if os_raw == "true":
@@ -132,9 +162,21 @@ def route_search(qs):
             filters["open_source"] = False
         else:
             return err("bad_filter", "open_source must be true or false", 400)
+    from_raw = qs.get("from", [None])[0]
+    if from_raw is not None:
+        if not valid_date(from_raw):
+            return err("bad_filter", "invalid from: expected YYYY-MM-DD", 400)
+        filters["from"] = from_raw
+    to_raw = qs.get("to", [None])[0]
+    if to_raw is not None:
+        if not valid_date(to_raw):
+            return err("bad_filter", "invalid to: expected YYYY-MM-DD", 400)
+        filters["to"] = to_raw
+    if filters.get("from") and filters.get("to") and filters["from"] > filters["to"]:
+        return err("bad_filter", "from must be <= to", 400)
     sort = qs.get("sort", ["relevance"])[0]
     if sort not in _state["facets"]["sort"]:
-        return err("bad_sort", "sort must be relevance|newest|oldest", 400)
+        return err("bad_sort", "sort must be relevance|newest|oldest|title", 400)
     fields, e = parse_fields(qs)
     if e:
         return e
@@ -153,6 +195,8 @@ def route(path, qs):
         return 200, _state["manifest"]
     if path == "/api/v1/taxonomy.json":
         return 200, _state["taxonomy"]
+    if path == "/api/v1/facets.json":
+        return 200, _state["facets_data"]
     if path == "/api/v1/resources.json":
         fields, e = parse_fields(qs)
         if e:

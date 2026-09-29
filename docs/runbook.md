@@ -30,7 +30,7 @@ the build-freeze tests fail (see §3).
 
 ```bash
 python3 -m pytest tests/ -q
-# expected: 79 passed
+# expected: 98 passed
 ```
 
 Suite breakdown:
@@ -43,8 +43,8 @@ Suite breakdown:
 | `test_schemas.py` | schema/taxonomy structural rules | 18 |
 | `test_migration.py` | 285 records migrated, fields preserved, dates evidenced, exceptions empty | 7 |
 | `test_compat.py` | canonical→legacy round-trip byte-exact; api/v1 well-formed; manifest hashes | 6 |
-| `test_search.py` | 40 gold queries: 100% exact-ID top-1, 100% top-5 (gate ≥90%), no-result precision, stable cursors | 7 |
-| `test_api_contract.py` | local adapter: routes, filters, sparse fields, pagination, errors, CORS, ETag/304 | 17 |
+| `test_search.py` | 40 gold queries: 100% exact-ID top-1, 100% top-5 (gate ≥90%), no-result precision, stable cursors; title sort, CSV (OR-within-family) filters, from/to date bounds | 14 |
+| `test_api_contract.py` | local adapter: routes, filters, CSV + date-bound validation, sparse fields, pagination, errors, CORS, ETag/304, facets.json | 29 |
 
 ## 3. Audit / diff / smoke
 

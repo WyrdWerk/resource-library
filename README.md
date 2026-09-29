@@ -19,12 +19,12 @@ A curated, browsable archive of developer resources shared in the [CheapInfra](h
 | `scripts/build.py` | Regenerates `index.html`, `data.json`, `weeks/`, `CHANGELOG.md`, `feed.xml`, `og-image.png` from `notes/` | Hand-written |
 | `scripts/linkcheck.py` | Checks every URL in `data.json` for link rot | Hand-written |
 | `catalog/` | Canonical per-resource JSON (`resources/<id>.json`) + taxonomy registries (`taxonomy/*.json`) — the machine-readable source behind the API | Generated — `scripts/migrate.py`, validated against `schemas/` |
-| `api/v1/` | Static JSON API: `resources.json`, `taxonomy.json`, `index.json`, per-resource files | Generated — `scripts/api_build.py` |
+| `api/v1/` | Static JSON API: `resources.json`, `taxonomy.json`, `facets.json`, `index.json`, per-resource files | Generated — `scripts/api_build.py` |
 | `api/openapi.yaml` | OpenAPI 3.1 contract for the API | Hand-written |
 | `functions/api/v1/` | Cloudflare Pages Functions: dynamic `/api/v1/search` and `/api/v1/resources` routes (JS port of the adapter) | Hand-written |
 | `schemas/` | JSON Schemas for catalog resources, taxonomy, and exports | Hand-written |
 | `docs/runbook.md` | Exact build, test, audit, and smoke-test commands for the API surface | Hand-written |
-| `tests/` | Test suite (79 tests), including build-freeze tests that fail if any generated site file drifts | Hand-written — `python3 -m pytest tests/ -q` |
+| `tests/` | Test suite (98 tests), including build-freeze tests that fail if any generated site file drifts | Hand-written — `python3 -m pytest tests/ -q` |
 | `AGENTS.md` | Operating manual for agents working on this repo | Hand-written |
 | `CONTRIBUTING.md` | How to suggest resources or send fixes | Hand-written |
 | `LICENSE` | CC-BY-4.0 — the curated content's license | Hand-written |
@@ -48,11 +48,17 @@ Read [AGENTS.md](AGENTS.md) — it documents the full workflow: how to collect a
 
 The library is also served as data. `catalog/` holds one canonical JSON record per
 resource plus the controlled taxonomy registries, and `api/v1/` holds the static JSON
-API (`resources.json`, `taxonomy.json`, `index.json`, per-resource files), with its
-contract in `api/openapi.yaml`. Everything there is generated — see
+API (`resources.json`, `taxonomy.json`, `facets.json`, `index.json`, per-resource
+files), with its contract in `api/openapi.yaml`. Everything there is generated — see
 [docs/runbook.md](docs/runbook.md) for the exact build, test, and audit commands.
 Search (`scripts/search.py`) is deterministic lexical search over the catalog: no
 vector database, no model calls.
+
+Search filters accept CSV (`?topic=frontend,design` OR-s within the facet, families
+AND together), `from`/`to` are inclusive `YYYY-MM-DD` bounds on `shared_on`, and
+`sort` is `relevance` (default), `newest`, `oldest`, or `title`. `facets.json` lists
+every filterable value with its corpus count, generated from the same catalog as the
+search index.
 
 Dynamic endpoints — `GET /api/v1/search` (live query ranking and filters) and
 `GET /api/v1/resources` (+ `/api/v1/resources/{id}`) — are served by Cloudflare Pages
