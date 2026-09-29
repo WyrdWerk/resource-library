@@ -102,3 +102,59 @@ def test_filters_narrow_results(index):
     assert len(page_f) <= len(page_all)
     docs = index["docs"]
     assert all(docs[rid]["record"]["resource_type"] == "provider" for rid, _ in page_f)
+
+
+def test_sort_title_is_ascending_and_stable(index):
+    docs = index["docs"]
+    p1, _ = search(index, "inference", sort="title", limit=100)
+    p2, _ = search(index, "inference", sort="title", limit=100)
+    assert [rid for rid, _ in p1] == [rid for rid, _ in p2], "title sort must be deterministic"
+    titles = [docs[rid]["record"]["title"].lower() for rid, _ in p1]
+    assert titles == sorted(titles)
+    # id tiebreak: no two pages can reorder records with equal titles
+    ids = [rid for rid, _ in p1]
+    assert len(ids) == len(set(ids))
+
+
+def test_csv_filter_ors_within_family(index):
+    # multi-value topic filter == union of the single-value filters
+    q = "agent"
+    fa, _ = search(index, q, {"topic": "frontend"}, limit=100)
+    fd, _ = search(index, q, {"topic": "design"}, limit=100)
+    fboth, _ = search(index, q, {"topic": ["frontend", "design"]}, limit=100)
+    assert {rid for rid, _ in fboth} == {rid for rid, _ in fa} | {rid for rid, _ in fd}
+
+
+def test_csv_filters_and_across_families(index):
+    docs = index["docs"]
+    page, _ = search(index, "tool", {"topic": ["frontend", "design"],
+                                     "resource_type": ["tool", "library-framework"]}, limit=100)
+    assert page, "expected at least one tool/library-framework in frontend+design"
+    for rid, _ in page:
+        r = docs[rid]["record"]
+        assert ({"frontend", "design"} & set(r["topics"]))
+        assert r["resource_type"] in ("tool", "library-framework")
+
+
+def test_date_bounds_filter(index):
+    docs = index["docs"]
+    page, _ = search(index, "inference", {"from": "2026-09-01"}, limit=100)
+    assert page, "q=inference must have September records"
+    assert all(docs[rid]["record"]["shared_on"] >= "2026-09-01" for rid, _ in page)
+    page, _ = search(index, "inference", {"to": "2026-06-30"}, limit=100)
+    assert all(docs[rid]["record"]["shared_on"] <= "2026-06-30" for rid, _ in page)
+    # inclusive on both ends
+    page, _ = search(index, "inference", {"from": "2026-06-09", "to": "2026-06-09"}, limit=100)
+    assert all(docs[rid]["record"]["shared_on"] == "2026-06-09" for rid, _ in page)
+
+
+def test_date_bounds_apply_to_exact_id_shortcut(index):
+    # the exact-ID short-circuit must respect filters, including dates
+    page, _ = search(index, "openrouter", {"from": "2099-01-01"}, limit=10)
+    assert page == []
+
+
+def test_inverted_date_bounds_yield_no_results(index):
+    # engine applies bounds literally; from>to is an adapter-level 400
+    page, _ = search(index, "inference", {"from": "2026-09-29", "to": "2026-06-09"}, limit=100)
+    assert page == []

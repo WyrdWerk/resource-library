@@ -143,3 +143,106 @@ def test_static_files_usable():
     """The static catalog must not depend on the adapter."""
     recs = json.loads((ROOT / "api" / "v1" / "resources.json").read_text(encoding="utf-8"))
     assert len(recs) == 285 and recs[0]["id"]
+
+
+def test_facets_json(server):
+    s, _, b = req("GET", "/api/v1/facets.json")
+    assert s == 200
+    assert b["topic"]["ai-agents"] == 121
+    assert b["resource_type"]["provider"] == 72
+    assert sum(b["channel"].values()) == 285
+    assert set(b) == {"resource_type", "topic", "use_case", "interface",
+                      "technology", "channel", "open_source"}
+
+
+def test_facets_json_matches_catalog():
+    """Independent recount from resources.json must reproduce facets.json."""
+    facets = json.loads((ROOT / "api" / "v1" / "facets.json").read_text(encoding="utf-8"))
+    recs = json.loads((ROOT / "api" / "v1" / "resources.json").read_text(encoding="utf-8"))
+    assert facets["channel"] == {
+        "share-tech": sum(1 for r in recs if r["source"]["channel"] == "share-tech"),
+        "providers": sum(1 for r in recs if r["source"]["channel"] == "providers")}
+    assert facets["topic"]["inference"] == sum("inference" in r["topics"] for r in recs)
+    assert facets["open_source"]["true"] == sum(r.get("open_source") is True for r in recs)
+
+
+def test_search_sort_title(server):
+    s, _, b = req("GET", "/api/v1/search?q=inference&sort=title&limit=50")
+    assert s == 200
+    titles = [r["title"].lower() for r in b["results"]]
+    assert titles == sorted(titles)
+    assert b["sort"] == "title"
+
+
+def test_search_sort_title_cursor_stable(server):
+    s, _, p1 = req("GET", "/api/v1/search?q=inference&sort=title&limit=10")
+    cur = p1["next_cursor"]
+    s, _, p2 = req("GET", f"/api/v1/search?q=inference&sort=title&limit=10&cursor={cur}")
+    assert s == 200
+    ids1 = {r["id"] for r in p1["results"]}
+    ids2 = {r["id"] for r in p2["results"]}
+    assert not ids1 & ids2
+
+
+def test_search_csv_filter_ors_within_family(server):
+    s, _, both = req("GET", "/api/v1/search?q=tool&topic=frontend,design&limit=100")
+    assert s == 200
+    assert both["filters"]["topic"] == ["frontend", "design"]
+    assert all({"frontend", "design"} & set(r["topics"]) for r in both["results"])
+    _, _, a = req("GET", "/api/v1/search?q=tool&topic=frontend&limit=100")
+    _, _, d = req("GET", "/api/v1/search?q=tool&topic=design&limit=100")
+    union = {r["id"] for r in a["results"]} | {r["id"] for r in d["results"]}
+    assert {r["id"] for r in both["results"]} == union
+
+
+def test_search_csv_single_value_keeps_string_echo(server):
+    s, _, b = req("GET", "/api/v1/search?q=tool&topic=frontend&limit=5")
+    assert s == 200 and b["filters"]["topic"] == "frontend"
+
+
+def test_search_csv_unknown_value_400(server):
+    s, _, b = req("GET", "/api/v1/search?topic=frontend,bogus")
+    assert s == 400 and b["error"]["code"] == "bad_filter"
+    assert "bogus" in b["error"]["message"]
+
+
+def test_search_bad_sort_message_lists_title(server):
+    s, _, b = req("GET", "/api/v1/search?q=x&sort=bogus")
+    assert s == 400 and b["error"]["code"] == "bad_sort"
+    assert "title" in b["error"]["message"]
+
+
+def test_search_from_bound_narrows(server):
+    s, _, bounded = req("GET", "/api/v1/search?q=inference&from=2026-09-01&limit=100")
+    assert s == 200
+    assert bounded["filters"]["from"] == "2026-09-01"
+    assert all(r["shared_on"] >= "2026-09-01" for r in bounded["results"])
+    s, _, unbounded = req("GET", "/api/v1/search?q=inference&limit=100")
+    assert len(bounded["results"]) < len(unbounded["results"]), "bound must actually narrow"
+
+
+def test_search_to_bound_excludes_newer(server):
+    s, _, b = req("GET", "/api/v1/search?q=inference&to=2026-06-30&limit=100")
+    assert s == 200
+    assert all(r["shared_on"] <= "2026-06-30" for r in b["results"])
+
+
+def test_search_bad_date_400(server):
+    for bad in ("2026-02-30", "2026-9-1", "not-a-date", "20260901"):
+        s, _, b = req("GET", f"/api/v1/search?q=x&from={bad}")
+        assert s == 400, bad
+        assert b["error"]["code"] == "bad_filter"
+        assert "invalid from" in b["error"]["message"], bad
+    s, _, b = req("GET", "/api/v1/search?q=x&to=2026-13-01")
+    assert s == 400 and "invalid to" in b["error"]["message"]
+
+
+def test_search_from_after_to_400(server):
+    s, _, b = req("GET", "/api/v1/search?q=x&from=2026-09-29&to=2026-06-09")
+    assert s == 400 and b["error"]["code"] == "bad_filter"
+    assert b["error"]["message"] == "from must be <= to"
+
+
+def test_search_date_bound_applies_to_exact_id(server):
+    s, _, b = req("GET", "/api/v1/search?q=openrouter&from=2099-01-01")
+    assert s == 200 and b["results"] == []

@@ -151,19 +151,38 @@ export function buildFacets(taxonomy) {
     interface: reg("interfaces"),
     technology: reg("technologies"),
     channel: new Set(["share-tech", "providers"]),
-    sort: new Set(["relevance", "newest", "oldest"]),
+    sort: new Set(["relevance", "newest", "oldest", "title"]),
   };
+}
+
+// Strict YYYY-MM-DD that is also a real calendar date. Must agree with
+// valid_date() in scripts/api_server.py (edge parity compares the
+// accept/reject decisions byte-for-byte via the error payloads).
+export function isValidIsoDate(v) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(v)) return false;
+  const y = Number(v.slice(0, 4));
+  const m = Number(v.slice(5, 7));
+  const d = Number(v.slice(8, 10));
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  return dt.getUTCFullYear() === y && dt.getUTCMonth() === m - 1 && dt.getUTCDate() === d;
+}
+
+function asList(v) {
+  return Array.isArray(v) ? v : [v];
 }
 
 function matchesFilters(r, f) {
   if (!f) return true;
-  if (f.resource_type && r.resource_type !== f.resource_type) return false;
-  if (f.topic && !r.topics.includes(f.topic)) return false;
-  if (f.use_case && !r.use_cases.includes(f.use_case)) return false;
-  if (f.interface && !r.interfaces.includes(f.interface)) return false;
-  if (f.technology && !r.technologies.includes(f.technology)) return false;
-  if (f.channel && r.source.channel !== f.channel) return false;
+  if (f.resource_type && !asList(f.resource_type).includes(r.resource_type)) return false;
+  if (f.topic && !asList(f.topic).some((t) => r.topics.includes(t))) return false;
+  if (f.use_case && !asList(f.use_case).some((t) => r.use_cases.includes(t))) return false;
+  if (f.interface && !asList(f.interface).some((t) => r.interfaces.includes(t))) return false;
+  if (f.technology && !asList(f.technology).some((t) => r.technologies.includes(t))) return false;
+  if (f.channel && !asList(f.channel).includes(r.source.channel)) return false;
   if (f.open_source != null && !!r.open_source !== f.open_source) return false;
+  // inclusive date bounds on shared_on (ISO strings compare lexically)
+  if (f.from && r.shared_on < f.from) return false;
+  if (f.to && r.shared_on > f.to) return false;
   return true;
 }
 
@@ -225,6 +244,9 @@ export function search(index, query, filters = null, sort = "relevance", limit =
     }
   } else if (sort === "oldest") {
     scored.sort((a, b) => cmpStr(son(a), son(b)) || cmpStr(a[0], b[0]));
+  } else if (sort === "title") {
+    const ttl = (x) => docs.get(x[0]).record.title.toLowerCase();
+    scored.sort((a, b) => cmpStr(ttl(a), ttl(b)) || cmpStr(a[0], b[0]));
   } else {
     scored.sort((a, b) => (b[1] - a[1]) || cmpStr(a[0], b[0]));
   }
@@ -310,15 +332,23 @@ export function parseFilters(qs, facets) {
   for (const key of ["resource_type", "topic", "use_case", "interface", "technology", "channel"]) {
     const v = qs.get(key);
     if (v) {
-      if (!facets[key].has(v)) return [null, errorPayload("bad_filter", `unknown ${key}: ${v}`)];
-      filters[key] = v;
+      // CSV: values OR within the family. A single value keeps today's
+      // string echo; multiple values echo as a deduped array.
+      const parts = v.split(",");
+      for (const p of parts) {
+        if (!facets[key].has(p)) return [null, errorPayload("bad_filter", `unknown ${key}: ${p}`)];
+      }
+      filters[key] = parts.length === 1 ? parts[0] : [...new Set(parts)];
     }
   }
   // `type` is accepted as an alias of resource_type
   if (qs.has("type") && !("resource_type" in filters)) {
     const v = qs.get("type");
-    if (!facets.resource_type.has(v)) return [null, errorPayload("bad_filter", `unknown resource_type: ${v}`)];
-    filters.resource_type = v;
+    const parts = v.split(",");
+    for (const p of parts) {
+      if (!facets.resource_type.has(p)) return [null, errorPayload("bad_filter", `unknown resource_type: ${p}`)];
+    }
+    filters.resource_type = parts.length === 1 ? parts[0] : [...new Set(parts)];
   }
   const osRaw = qs.has("open_source") ? qs.get("open_source") : null;
   if (osRaw !== null) {
@@ -326,8 +356,21 @@ export function parseFilters(qs, facets) {
     else if (osRaw === "false") filters.open_source = false;
     else return [null, errorPayload("bad_filter", "open_source must be true or false")];
   }
+  const fromRaw = qs.get("from");
+  if (fromRaw !== null) {
+    if (!isValidIsoDate(fromRaw)) return [null, errorPayload("bad_filter", "invalid from: expected YYYY-MM-DD")];
+    filters.from = fromRaw;
+  }
+  const toRaw = qs.get("to");
+  if (toRaw !== null) {
+    if (!isValidIsoDate(toRaw)) return [null, errorPayload("bad_filter", "invalid to: expected YYYY-MM-DD")];
+    filters.to = toRaw;
+  }
+  if (filters.from && filters.to && filters.from > filters.to) {
+    return [null, errorPayload("bad_filter", "from must be <= to")];
+  }
   const sort = qs.get("sort") || "relevance";
-  if (!facets.sort.has(sort)) return [null, errorPayload("bad_sort", "sort must be relevance|newest|oldest")];
+  if (!facets.sort.has(sort)) return [null, errorPayload("bad_sort", "sort must be relevance|newest|oldest|title")];
   return [filters, null];
 }
 

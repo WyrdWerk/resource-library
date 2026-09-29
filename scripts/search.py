@@ -12,8 +12,12 @@ Query:  exact-ID match and normalized-URL match short-circuit to rank 1;
         plus exact-phrase bonuses. Ties break by id (ascending).
 
 Filters: resource_type, topic, use_case, interface, technology, channel,
-         open_source. Sort: relevance | newest | oldest. Pagination: stable
-         cursor over (sort-key, id) — same input always yields same pages.
+         open_source. Each facet family accepts a single value or a list
+         (CSV at the HTTP layer) — multiple values OR within the family,
+         families AND together. Date bounds: from/to are inclusive
+         YYYY-MM-DD filters on shared_on.
+Sort: relevance | newest | oldest | title. Pagination: stable cursor
+         over (sort-key, id) — same input always yields same pages.
 
 CLI: python3 scripts/search.py "open source react components" --type library-framework --limit 10
 """
@@ -145,22 +149,32 @@ def build_index(records, tax=None):
     return {"docs": docs, "idf": idf, "n": n}
 
 
+def _aslist(v):
+    """Facet filter values may be a single slug or a CSV-parsed list."""
+    return v if isinstance(v, list) else [v]
+
+
 def _matches_filters(r, f):
     if not f:
         return True
-    if f.get("resource_type") and r["resource_type"] != f["resource_type"]:
+    if f.get("resource_type") and r["resource_type"] not in _aslist(f["resource_type"]):
         return False
-    if f.get("topic") and f["topic"] not in r["topics"]:
+    if f.get("topic") and not any(t in r["topics"] for t in _aslist(f["topic"])):
         return False
-    if f.get("use_case") and f["use_case"] not in r["use_cases"]:
+    if f.get("use_case") and not any(t in r["use_cases"] for t in _aslist(f["use_case"])):
         return False
-    if f.get("interface") and f["interface"] not in r["interfaces"]:
+    if f.get("interface") and not any(t in r["interfaces"] for t in _aslist(f["interface"])):
         return False
-    if f.get("technology") and f["technology"] not in r["technologies"]:
+    if f.get("technology") and not any(t in r["technologies"] for t in _aslist(f["technology"])):
         return False
-    if f.get("channel") and r["source"]["channel"] != f["channel"]:
+    if f.get("channel") and r["source"]["channel"] not in _aslist(f["channel"]):
         return False
     if f.get("open_source") is not None and bool(r["open_source"]) != f["open_source"]:
+        return False
+    # inclusive date bounds on shared_on (ISO strings compare lexically)
+    if f.get("from") and r["shared_on"] < f["from"]:
+        return False
+    if f.get("to") and r["shared_on"] > f["to"]:
         return False
     return True
 
@@ -217,6 +231,8 @@ def search(index, query, filters=None, sort="relevance", limit=20, cursor=None):
             scored.sort(key=lambda x: (docs[x[0]]["record"]["shared_on"], x[0]), reverse=True)
     elif sort == "oldest":
         scored.sort(key=lambda x: (docs[x[0]]["record"]["shared_on"], x[0]))
+    elif sort == "title":
+        scored.sort(key=lambda x: (docs[x[0]]["record"]["title"].lower(), x[0]))
     else:  # relevance
         scored.sort(key=lambda x: (-x[1], x[0]))
 
@@ -243,7 +259,11 @@ def main(argv):
     ap.add_argument("--technology")
     ap.add_argument("--channel")
     ap.add_argument("--open-source", dest="open_source", action="store_true")
-    ap.add_argument("--sort", default="relevance", choices=["relevance", "newest", "oldest"])
+    ap.add_argument("--from", dest="date_from",
+                    help="inclusive YYYY-MM-DD lower bound on shared_on")
+    ap.add_argument("--to", dest="date_to",
+                    help="inclusive YYYY-MM-DD upper bound on shared_on")
+    ap.add_argument("--sort", default="relevance", choices=["relevance", "newest", "oldest", "title"])
     ap.add_argument("--limit", type=int, default=10)
     args = ap.parse_args(argv)
 
@@ -253,7 +273,8 @@ def main(argv):
         "resource_type": args.resource_type, "topic": args.topic,
         "use_case": args.use_case, "interface": args.interface,
         "technology": args.technology, "channel": args.channel,
-        "open_source": True if args.open_source else None}.items() if v is not None}
+        "open_source": True if args.open_source else None,
+        "from": args.date_from, "to": args.date_to}.items() if v is not None}
     page, nxt = search(index, args.query, filters, args.sort, args.limit)
     for rid, score in page:
         r = index["docs"][rid]["record"]

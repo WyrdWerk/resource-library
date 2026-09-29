@@ -104,6 +104,7 @@ def main():
     for path, repo_file in [
         ("/api/v1/index.json", "api/v1/index.json"),
         ("/api/v1/taxonomy.json", "api/v1/taxonomy.json"),
+        ("/api/v1/facets.json", "api/v1/facets.json"),
         ("/api/v1/resources.json", "api/v1/resources.json"),
     ]:
         status, _, body = http("GET", edge + path)
@@ -209,6 +210,18 @@ def main():
         ("blank limit falls back to default", search_path({"q": "x", "limit": ""})),
         ("newest sort", search_path({"q": "agent", "sort": "newest", "limit": "10"})),
         ("oldest sort", search_path({"q": "agent", "sort": "oldest", "limit": "10"})),
+        ("title sort", search_path({"q": "inference", "sort": "title", "limit": "50"})),
+        ("csv filter (OR within family)", search_path({"q": "tool", "topic": "frontend,design", "limit": "100"})),
+        ("csv filter deduped echo", search_path({"q": "tool", "topic": "frontend,design,frontend", "limit": "100"})),
+        ("csv filter bad part", search_path({"q": "tool", "topic": "frontend,bogus"})),
+        ("csv filter via type alias", search_path({"q": "tool", "type": "provider,repository", "limit": "100"})),
+        ("from bound", search_path({"q": "inference", "from": "2026-09-01", "limit": "100"})),
+        ("from+to bounds", search_path({"q": "inference", "from": "2026-08-01", "to": "2026-08-31", "limit": "100"})),
+        ("bad from (not a calendar date)", search_path({"q": "x", "from": "2026-02-30"})),
+        ("bad from (loose format)", search_path({"q": "x", "from": "2026-9-1"})),
+        ("bad to", search_path({"q": "x", "to": "not-a-date"})),
+        ("from after to", search_path({"q": "x", "from": "2026-09-29", "to": "2026-06-09"})),
+        ("date bound applies to exact id", search_path({"q": "openrouter", "from": "2099-01-01"})),
     ]
     for label, path in cases:
         both(path, path, f"search {label}")
