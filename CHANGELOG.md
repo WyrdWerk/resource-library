@@ -27,6 +27,9 @@ Counts are curated resources kept after filtering.
 ## providers.md
 - 81 resources → providers
 
+## daily-2026-09-29.md
+- 4 resources → 24 Sep–1 Oct 2026
+
 ## daily-2026-09-28.md
 - 6 resources → 24 Sep–1 Oct 2026
 

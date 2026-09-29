@@ -233,6 +233,61 @@
     "warning": ""
   },
   {
+    "title": "boxd",
+    "week": "24 Sep–1 Oct 2026",
+    "url": "https://boxd.sh/",
+    "sharer": "Tom",
+    "date": "28 Sep",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "Boxd offers \"composable computers\": persistent KVM dev VMs (2 vCPU, 8 GB RAM, 100 GB disk by default) with live memory forking in under 200ms, snapshots, checkpoints, per-machine HTTPS subdomains, and a CLI/API plus MCP integrations for GitHub, Linear, and Slack — pitched for giving agents root and walking away. Billing is credit-based (about €0.22/h for a default machine per the site; €30 of free credits for new accounts). Pricing figures come from the site and are not independently verified.",
+    "id": "boxd",
+    "warning": "Pricing figures come from the site and are not independently verified."
+  },
+  {
+    "title": "boat",
+    "week": "24 Sep–1 Oct 2026",
+    "url": "https://boat.dev/",
+    "sharer": "Tom",
+    "date": "28 Sep",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "Boat sells cloud sandbox VMs for long-running agents: full VMs (Docker, systemd, databases), an integrated desktop/browser, and a CLI (`boat new`, `boat prompt` runs Claude Code or Codex inside), API, and SDKs, with stop/resume snapshots that pause billing. They claim $0.036/h for 4 vCPU / 8 GB RAM on a $20/mo plan ($20 of sandbox time), with a price table pitching themselves well under E2B, Daytona, Modal, and Vercel Sandbox. These price comparisons are the vendor's own and are not independently verified.",
+    "id": "boat",
+    "warning": "These price comparisons are the vendor's own and are not independently verified."
+  },
+  {
+    "title": "pi-better-skills",
+    "week": "24 Sep–1 Oct 2026",
+    "url": "https://github.com/edxeth/pi-better-skills",
+    "sharer": "Rykuuun",
+    "date": "28 Sep",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "A pi extension that fixes skill ergonomics: skills resolve their bundled files from the skill directory (`$PI_SKILL_DIR` instead of the workspace), each SKILL.md loads whole on first read, and path guidance is injected into the system prompt so authors stop babysitting paths. Installs with `pi install git:github.com/edxeth/pi-better-skills`; ~20 stars, POSIX-only.",
+    "id": "pi-better-skills",
+    "warning": ""
+  },
+  {
+    "title": "pi-coralbricks-provider",
+    "week": "24 Sep–1 Oct 2026",
+    "url": "https://www.npmjs.com/package/pi-coralbricks-provider",
+    "sharer": "Linus Sex Tips",
+    "date": "29 Sep",
+    "categories": [
+      "dev-tool"
+    ],
+    "brief": "An npm package (v1.0.19, by monotykamary — also behind pi-tool-repair and pi-mockdeck in this library) that registers CoralBricks as a provider extension for the pi coding agent: GLM 5.3, GLM 5.3 Flash, and DeepSeek V4.1 Flash through the Coral Inference API. It was shared in a support thread asking whether it uses completions or responses endpoints — check the repo README for the current endpoint behavior.",
+    "id": "pi-coralbricks-provider",
+    "warning": ""
+  },
+  {
     "title": "Prism Inference",
     "week": "providers",
     "url": "https://prisminference.com/pricing",

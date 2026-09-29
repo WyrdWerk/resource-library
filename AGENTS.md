@@ -132,7 +132,3 @@ re-run the build.
 - Don't edit or delete anything under `raw/`.
 - Don't rename categories or change the `notes/` section-header format without updating `scripts/build.py`.
 - Don't widen the collection scope, and don't break the read-only rule.
-
-## Amp environment: global skills
-
-Specifically within Amp environments, reusable global skills may be available under `~/.config/agents/skills/`. Before relevant work, inspect that directory for an applicable skill. When using one, read its complete `SKILL.md` and all referenced bundled resources before proceeding.
