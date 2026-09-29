@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "markitdown-announcement",
+  "title": "MarkItDown (announcement)",
+  "canonical_url": "https://x.com/mdancho84/status/2096623235576053935",
+  "brief": "Matt Dancho's post on Microsoft's MarkItDown — turns almost any file (PDFs, Word, PowerPoint, Excel, images) into clean Markdown; claimed 100,000+ GitHub stars. Announcement only; the repo wasn't directly linked.",
+  "caveat": "Announcement only; the repo wasn't directly linked.",
+  "resource_type": "article-guide",
+  "topics": [
+    "developer-tools",
+    "productivity"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx8678"
+  },
+  "shared_on": "2026-09-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "rust-llm-tidy",
+  "title": "rust-llm-tidy",
+  "canonical_url": "https://github.com/Sewer56/rust-llm-tidy",
+  "brief": "An opinionated linter aimed at LLM-generated code (Rust, C#, Markdown): fix/reorder/visibility/spacing transforms plus read-only lint checks, runnable per-file, on git-changed files, or in CI via a GitHub Action. The author's personal tooling (\"largely written by LLMs\"); expect opinionated rules, 0 stars. Apache 2.0.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "test-software"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [
+    "rust"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "24 Sep–1 Oct 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Sewer56"
+  },
+  "shared_on": "2026-09-27",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

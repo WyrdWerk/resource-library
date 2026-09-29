@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "checklist-design",
+  "title": "Checklist Design",
+  "canonical_url": "https://www.checklist.design/",
+  "brief": "An AI-powered design review tool: run a UX/UI quality check on any screen and get instant analysis of what's working, what's missing, and what to improve. It also hosts a searchable library of design checklists covering websites, web apps, mobile, components, and flows, plus a Figma plugin for in-canvas reviews.",
+  "caveat": null,
+  "resource_type": "tool",
+  "topics": [
+    "design",
+    "frontend"
+  ],
+  "use_cases": [
+    "test-software",
+    "discover-design-references"
+  ],
+  "interfaces": [
+    "web",
+    "extension"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "6–12 Aug 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-08-08",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

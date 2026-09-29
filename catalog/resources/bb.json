@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "bb",
+  "title": "bb",
+  "canonical_url": "https://github.com/get-bb/bb",
+  "brief": "An agentic IDE that \"builds itself\" — it can control, customize, and automate itself, pitched as the groundwork for your own software factory. Desktop app, web app, CLI, and HTTP API are all first-class surfaces; work runs in threads you can follow live, steer at any point, or hand off to another agent. In active development; core architecture is stable, workflows and surfaces still evolving.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools",
+    "app-development"
+  ],
+  "use_cases": [
+    "generate-code",
+    "manage-agents"
+  ],
+  "interfaces": [
+    "desktop",
+    "web",
+    "cli",
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "6–12 Aug 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Rykuuun"
+  },
+  "shared_on": "2026-08-06",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

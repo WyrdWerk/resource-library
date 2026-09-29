@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "threeui",
+  "title": "ThreeUI",
+  "canonical_url": "https://threeui.com/browse",
+  "brief": "A browsable library of Three.js components and interactive shaders. Handy for dropping 3D effects into web projects without writing raw WebGL.",
+  "caveat": null,
+  "resource_type": "directory-gallery",
+  "topics": [
+    "frontend"
+  ],
+  "use_cases": [
+    "build-interfaces",
+    "discover-design-references"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "20–27 Aug 2026",
+  "legacy_categories": [
+    "web-app",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Alp"
+  },
+  "shared_on": "2026-08-21",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

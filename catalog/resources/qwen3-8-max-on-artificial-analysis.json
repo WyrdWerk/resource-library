@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "qwen3-8-max-on-artificial-analysis",
+  "title": "Qwen3-8 Max on Artificial Analysis",
+  "canonical_url": "https://artificialanalysis.ai/models/qwen3-8-max",
+  "brief": "Artificial Analysis's model page for Qwen3-8 Max, with benchmarks and pricing. Shared link-only; the page's data is third-party and unverified.",
+  "caveat": "Shared link-only; the page's data is third-party and unverified.",
+  "resource_type": "article-guide",
+  "topics": [
+    "inference",
+    "testing"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "6–12 Aug 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "simply soy"
+  },
+  "shared_on": "2026-08-06",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "id": "dsh-deepseek-harness-announcement",
+  "title": "DSH — DeepSeek Harness (announcement)",
+  "canonical_url": "https://x.com/elixirforum/status/2094106034298044867",
+  "brief": "The Elixir Forum announcing DSH, the DeepSeek Harness. Announcement only; no repo or docs link was captured.",
+  "caveat": "Announcement only; no repo or docs link was captured.",
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "27 Aug–3 Sep 2026",
+  "legacy_categories": [
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-08-31",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "there-is-an-open-source-for-that",
+  "title": "There Is An Open Source For That",
+  "canonical_url": "https://thereisanopensourceforthat.com/",
+  "brief": "A directory of open-source alternatives to popular software. The description is inferred from the site's name; unverified from the message.",
+  "caveat": "The description is inferred from the site's name; unverified from the message.",
+  "resource_type": "directory-gallery",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "6–12 Aug 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-08-09",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

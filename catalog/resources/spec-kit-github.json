@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "spec-kit-github",
+  "title": "spec-kit (GitHub)",
+  "canonical_url": "https://github.com/github/spec-kit",
+  "brief": "GitHub's official toolkit for spec-driven development — write the spec, let agents implement. From GitHub itself, so it carries weight in the SDD workflow trend.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "generate-code"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "13–20 Aug 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx8678"
+  },
+  "shared_on": "2026-08-14",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "id": "boxd",
+  "title": "boxd",
+  "canonical_url": "https://boxd.sh/",
+  "brief": "Boxd offers \"composable computers\": persistent KVM dev VMs (2 vCPU, 8 GB RAM, 100 GB disk by default) with live memory forking in under 200ms, snapshots, checkpoints, per-machine HTTPS subdomains, and a CLI/API plus MCP integrations for GitHub, Linear, and Slack — pitched for giving agents root and walking away. Billing is credit-based (about €0.22/h for a default machine per the site; €30 of free credits for new accounts). Pricing figures come from the site and are not independently verified.",
+  "caveat": "Pricing figures come from the site and are not independently verified.",
+  "resource_type": "service-platform",
+  "topics": [
+    "cloud-infrastructure",
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "provision-infrastructure",
+    "manage-agents"
+  ],
+  "interfaces": [
+    "cli",
+    "api",
+    "mcp"
+  ],
+  "technologies": [
+    "mcp-protocol"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "24 Sep–1 Oct 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-28",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

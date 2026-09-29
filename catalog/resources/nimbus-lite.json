@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "nimbus-lite",
+  "title": "nimbus-lite",
+  "canonical_url": "https://github.com/vojtasve-droid/nimbus-lite",
+  "brief": "A free, framework-free AI chat UI kit in vanilla HTML/CSS/JS — open index.html and it runs, no build step or dependencies. It includes a full chat layout with sidebar, live token streaming with blinking caret, Markdown plus syntax-highlighted code blocks with copy buttons, a model picker, and light/dark themes with accent colors; it is front-end only, so you bring your own backend (OpenAI, Anthropic, or a local model). The maintainer sells a fuller Nimbus kit ($19) adding citations, reasoning blocks, tool-call chips, and attachments.",
+  "caveat": null,
+  "resource_type": "library-framework",
+  "topics": [
+    "frontend",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "23–29 Jul 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Rykuuun"
+  },
+  "shared_on": "2026-07-26",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "cozy",
+  "title": "Cozy",
+  "canonical_url": "https://cozyjournal.app/",
+  "brief": "A local-first private journal: entries live as plain files in a folder on your own device — no cloud, no account, no AI reading your diary — with photos, audio, tags, mood/location tracking, and password-lockable journals. Imports from Notion, Day One, Obsidian, and Bear; $49 one-time ($89 forever) for macOS, Windows, iPhone, and iPad.",
+  "caveat": null,
+  "resource_type": "tool",
+  "topics": [
+    "productivity"
+  ],
+  "use_cases": [
+    "create-media"
+  ],
+  "interfaces": [
+    "desktop"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "4–10 Jun 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-06-09",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

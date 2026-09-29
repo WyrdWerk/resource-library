@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "venice",
+  "title": "Venice",
+  "canonical_url": "https://venice.ai/",
+  "brief": "Private AI chat and API with free entry and paid tiers (Pro $18/mo). Its API carries a zero-data-retention promise.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference",
+    "security"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "tom (App)"
+  },
+  "shared_on": "2026-09-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

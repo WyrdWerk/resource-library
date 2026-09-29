@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "es-git-pr-213",
+  "title": "es-git PR #213",
+  "canonical_url": "https://github.com/toss/es-git/pull/213",
+  "brief": "A fix by monotykamary — diff.print() (default Patch format) was stripping the +/-/space line-origin prefixes from output; this PR prepends them back.",
+  "caveat": null,
+  "resource_type": "article-guide",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "11–17 Jun 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-06-14",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

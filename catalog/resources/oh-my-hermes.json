@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "oh-my-hermes",
+  "title": "oh-my-hermes",
+  "canonical_url": "https://github.com/rlaope/oh-my-hermes",
+  "brief": "An all-in-one plugin and workflow layer for Nous Research's Hermes Agent that installs 80+ generated workflow skills with a single `omh setup` — covering coding intelligence, long-term memory, and model-optimized workflow packages. A deterministic chat router turns free-form Korean/English requests into the right prepared workflow, with coding delegated to an explicitly selected executor (Claude Code, Codex, or the Hermes runtime); pure Python with zero runtime dependencies, MIT licensed.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "productivity"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "automate-workflows"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [
+    "python",
+    "claude-code"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "6–12 Aug 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx8678"
+  },
+  "shared_on": "2026-08-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

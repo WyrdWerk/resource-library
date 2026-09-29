@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "id": "elxr",
+  "title": "elxr",
+  "canonical_url": "https://github.com/asx8678/elxr",
+  "brief": "asx8678's own repo, built after burning through tokens fast. Context is thin, but it reads as a token-efficiency tool from someone feeling the pain directly.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "27 Aug–3 Sep 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx8678"
+  },
+  "shared_on": "2026-08-31",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "magika-announcement",
+  "title": "Magika (announcement)",
+  "canonical_url": "https://x.com/_guillecasaus/status/2096913125266079843",
+  "brief": "Google's Magika — detects the real content of any file even when disguised (malware posing as PDF, scripts hidden as images); free and open-source. Announcement only; the repo wasn't directly linked.",
+  "caveat": "Announcement only; the repo wasn't directly linked.",
+  "resource_type": "article-guide",
+  "topics": [
+    "security"
+  ],
+  "use_cases": [
+    "learn-technique",
+    "test-software"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx8678"
+  },
+  "shared_on": "2026-09-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

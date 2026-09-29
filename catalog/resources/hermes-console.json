@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "hermes-console",
+  "title": "Hermes Console",
+  "canonical_url": "https://hermes.xpetalab.dev/",
+  "brief": "A self-hosted AI agent console (\"Tu agente AI self-hosted\") that thelaggingway is giving a go. The self-hosted claim is unverified beyond the site's tagline.",
+  "caveat": "The self-hosted claim is unverified beyond the site's tagline.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "self-hosting"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "23–29 Jul 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-07-28",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

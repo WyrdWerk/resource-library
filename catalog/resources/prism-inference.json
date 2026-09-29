@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "prism-inference",
+  "title": "Prism Inference",
+  "canonical_url": "https://prisminference.com/pricing",
+  "brief": "Pay-as-you-go inference with no minimums across serverless, elastic, private and dedicated endpoints, plus batch. Lists per-model rates (GLM-5.3 $1.40/$4.40, Kimi K3 $3/$15 per 1M tokens) and states strict zero data retention — inputs and outputs are never used for training.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-09-25",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "refero-design-styles",
+  "title": "Refero Design Styles",
+  "canonical_url": "https://styles.refero.design/",
+  "brief": "A library of 2,000+ \"AI-readable\" design systems harvested from leading product websites (Apple, Cursor, Linear, Vercel, ElevenLabs). Each style exposes colors, typography, spacing, and components plus a DESIGN.md file meant to be fed into Cursor, Claude Code, Codex, v0, or Lovable to give AI builders better design taste; currently in beta with new styles added weekly.",
+  "caveat": null,
+  "resource_type": "directory-gallery",
+  "topics": [
+    "design",
+    "frontend",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "build-interfaces",
+    "discover-design-references"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "6–12 Aug 2026",
+  "legacy_categories": [
+    "web-app",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-08-10",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

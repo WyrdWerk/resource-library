@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "pi-arm64-exec-announcement",
+  "title": "pi-arm64-exec (announcement)",
+  "canonical_url": "https://x.com/aliceisplaying/status/2097387613086683232",
+  "brief": "A pi extension giving the agent exactly one tool — doing file read/edit work in arm64 assembly — to stop Astra shelling out to python3, ruby and perl for file ops. Announcement; the actual link was promised in a follow-up tweet.",
+  "caveat": null,
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Blessed Piss Enjoyer"
+  },
+  "shared_on": "2026-09-09",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

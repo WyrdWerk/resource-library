@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "codedb-justrach",
+  "title": "codedb (justrach)",
+  "canonical_url": "https://github.com/justrach/codedb",
+  "brief": "A Zig code-intelligence server and MCP toolset for AI agents, recommended firsthand by the sharer. Native-speed code intelligence as agent context is a strong pitch.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "search-code"
+  ],
+  "interfaces": [
+    "mcp"
+  ],
+  "technologies": [
+    "mcp-protocol"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "13–20 Aug 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Aditya Borkar"
+  },
+  "shared_on": "2026-08-16",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

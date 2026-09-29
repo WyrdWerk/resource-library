@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "coreweave",
+  "title": "CoreWeave",
+  "canonical_url": "https://www.coreweave.com/",
+  "brief": "GPU cloud infrastructure company offering serverless inference APIs, dedicated endpoints and GPU clusters. Infrastructure rather than a retail model API.",
+  "caveat": null,
+  "resource_type": "service-platform",
+  "topics": [
+    "cloud-infrastructure",
+    "inference"
+  ],
+  "use_cases": [
+    "provision-infrastructure",
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "tom (App)"
+  },
+  "shared_on": "2026-09-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

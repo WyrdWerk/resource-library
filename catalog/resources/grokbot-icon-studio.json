@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "grokbot-icon-studio",
+  "title": "Grokbot Icon Studio",
+  "canonical_url": "https://grokbot-icon-studio.serio-ai.chatgpt.site/en",
+  "brief": "A minimal bot-icon studio — browse bot icon examples and copy a prompt to generate an icon of your own. Quick asset generation for bot projects.",
+  "caveat": null,
+  "resource_type": "tool",
+  "topics": [
+    "design"
+  ],
+  "use_cases": [
+    "create-media"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "17–24 Sep 2026",
+  "legacy_categories": [
+    "web-app",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-21",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

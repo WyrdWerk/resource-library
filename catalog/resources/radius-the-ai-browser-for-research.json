@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "radius-the-ai-browser-for-research",
+  "title": "Radius — The AI Browser for Research",
+  "canonical_url": "https://radiusbrowser.com/",
+  "brief": "An AI-native browser aimed at research workflows. Product claims unverified; notable as another entry in the agentic-browser wave.",
+  "caveat": "Product claims unverified; notable as another entry in the agentic-browser wave.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "productivity"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "automate-workflows"
+  ],
+  "interfaces": [
+    "desktop"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "20–27 Aug 2026",
+  "legacy_categories": [
+    "web-app",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-08-24",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

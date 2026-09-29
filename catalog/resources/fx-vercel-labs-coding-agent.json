@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "fx-vercel-labs-coding-agent",
+  "title": "fx — Vercel Labs coding agent",
+  "canonical_url": "https://x.com/vercel_dev/status/2089828083415355806?s=46",
+  "brief": "Vercel's announcement of fx, \"a tiny, open, native coding agent\" from Vercel Labs, originally an internal tool. Announcement-only source; details unverified.",
+  "caveat": "Announcement-only source; details unverified.",
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "13–20 Aug 2026",
+  "legacy_categories": [
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx8678"
+  },
+  "shared_on": "2026-08-19",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

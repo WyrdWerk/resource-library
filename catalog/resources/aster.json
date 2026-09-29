@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "aster",
+  "title": "Aster",
+  "canonical_url": "https://asterlab.ai/",
+  "brief": "OpenAI-compatible inference with free, Pro and Max tiers. States zero data retention on the free tier; Pro around $20 for $30 in tokens.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "scarywood75"
+  },
+  "shared_on": "2026-08-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

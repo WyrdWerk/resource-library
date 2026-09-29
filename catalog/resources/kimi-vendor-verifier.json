@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "id": "kimi-vendor-verifier",
+  "title": "Kimi-Vendor-Verifier",
+  "canonical_url": "https://github.com/MoonshotAI/Kimi-Vendor-Verifier",
+  "brief": "A vendor verifier from MoonshotAI; baanish asked if anyone has run it. Details unverified from the message text.",
+  "caveat": "Details unverified from the message text.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "test-software"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "2–8 Jul 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "baanish"
+  },
+  "shared_on": "2026-07-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

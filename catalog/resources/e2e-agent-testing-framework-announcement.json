@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "e2e-agent-testing-framework-announcement",
+  "title": "e2e agent testing framework (announcement)",
+  "canonical_url": "https://x.com/o_kwasniewski/status/2098804833880817728",
+  "brief": "Oskar's announcement of \"e2e\", a new agent-oriented testing framework — he ported React Native Pager View's test suite from Maestro to it. Announcement only; the framework itself is still being built.",
+  "caveat": "Announcement only; the framework itself is still being built.",
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents",
+    "testing"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "10–17 Sep 2026",
+  "legacy_categories": [
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-13",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

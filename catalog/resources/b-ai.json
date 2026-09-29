@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "b-ai",
+  "title": "B.AI",
+  "canonical_url": "https://b.ai/",
+  "brief": "Unified LLM API at api.b.ai/v1 where one key speaks three protocols — OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages — with docs at docs.b.ai. It gained traction for generous free models (DeepSeek-V4-Flash, Tencent HY3, MiMo-V2.5, GLM-5.3-Flash), though its promotions page moved free offers to limited-time 10%-of-reference discounts on 16 Sep 2026, leaving only a 300,000-credit (~$0.30, 30-day) referral gift; login is via Web3 wallet or Google. Homepage details are unverified beyond third-party reviews from mid-Sep 2026, so confirm current pricing on the site itself.",
+  "caveat": "Homepage details are unverified beyond third-party reviews from mid-Sep 2026, so confirm current pricing on the site itself.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-08-18",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

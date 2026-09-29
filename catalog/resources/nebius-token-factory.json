@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "nebius-token-factory",
+  "title": "Nebius Token Factory",
+  "canonical_url": "https://tokenfactory.nebius.com/",
+  "brief": "Nebius's pay-per-token hosted inference for open text/vision models (~23 models incl. DeepSeek, Llama, Qwen). New accounts get trial credit; uses separate v1 API credentials.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "ajthemacboy"
+  },
+  "shared_on": "2026-08-30",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

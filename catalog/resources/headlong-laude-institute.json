@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "headlong-laude-institute",
+  "title": "Headlong (Laude Institute)",
+  "canonical_url": "https://github.com/laude-institute/headlong",
+  "brief": "An open-source agent microharness with persistent agency and recursive LLMs — \"of bash, by bash\". Minimal by design; good for experimenting with agent loops without a heavy framework.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "20–27 Aug 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-08-25",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
