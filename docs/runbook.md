@@ -131,19 +131,64 @@ reverting cannot break the deployed site.
    `scripts/migrate.py` (with a reviewed classification) after any
    data update, then `api_build.py`.
 
-## 8. Cloudflare operator checklist (separate from repo-side work)
+## 8. Cloudflare handoff (issue #1) — preview-verified 2026-09-29
 
-> Not done in this PR. No dashboard/config/deployment work, no
-> production-edge claims.
+The dynamic routes ship as Pages Functions in `functions/api/v1/`
+(`search.js`, `resources.js`, `resources/[id].js`, shared engine in
+`_lib.js`). The engine is a faithful port of `scripts/search.py`; the
+function loads `api/v1/*.json` from its own deployment's static assets
+(`env.ASSETS`), so function and catalog can never skew across deploys.
 
-- [ ] Create the Function (or static route) that serves `api/v1/*`
-      with the repo as source; confirm `GET /api/v1/index.json`
-      returns 200 at the edge.
-- [ ] Verify `ETag`/`If-None-Match` → 304 behavior through the edge
-      cache (matches local adapter semantics in `scripts/api_server.py`).
-- [ ] Confirm CORS `Access-Control-Allow-Origin: *` on
-      `/api/v1/search` if the site UI will call it cross-origin.
-- [ ] Point the UI at the edge search endpoint only after the above;
-      UI changes need separate approval (frozen since 2026-09-25).
-- [ ] After the daily updater adds records, re-run §1 and redeploy;
-      `resources_sha256` in `index.json` is the deploy fingerprint.
+Commands (run from the repo root; needs a Pages-enabled token):
+
+```bash
+# local parity gate (adapter on 8765, functions via workerd on 8788)
+python3 scripts/api_server.py 8765 &
+npx wrangler pages dev . --port 8788 &
+python3 scripts/edge_parity.py --edge http://127.0.0.1:8788
+
+# preview deployment (direct upload; no git push)
+npx wrangler pages deploy . --project-name resource-library \
+  --branch <preview-branch> --commit-dirty=true
+python3 scripts/edge_parity.py --edge https://<preview>.resource-library-7q4.pages.dev
+
+# live function logs for a deployment (needs the full deployment UUID)
+npx wrangler pages deployment list --project-name resource-library
+npx wrangler pages deployment tail <uuid> --project-name resource-library
+```
+
+Preview evidence (deployment of this branch, 2026-09-29):
+
+- [x] `edge_parity.py` vs the local adapter: **120/120** — all 40 gold
+      queries byte-parity (parsed JSON), full contract battery
+      (filters, fields, limit/cursor walks, all error envelopes), and
+      static assets unshadowed (`/`, `/weeks/*`, `api/v1/*.json` raw).
+- [x] Routing: `/api/v1/index.json`, `taxonomy.json`, `resources.json`
+      still serve as static assets; unknown `/api/v1/*` paths get the
+      same site fallback as before the Functions existed.
+- [x] Edge HTTP behavior: `Cache-Control` (60s search / 300s
+      resources / 3600s record), strong `ETag` + `If-None-Match` → 304,
+      `Access-Control-Allow-Origin: *` (no credentials), HEAD/OPTIONS
+      (204), 405 `method_not_allowed` for POST/PUT/DELETE, 400/404
+      envelopes match the adapter.
+- [x] Latency (measured from one client, edge colo SEA, 200 sequential
+      requests over the gold queries): p50 **76 ms**, p95 **106 ms**,
+      p99 133 ms — inside the spec's p95 < 200 ms target. The target is
+      now a measurement from this location, not a claim for all
+      clients. Function CPU per request: 1–2 ms (from `wrangler tail`).
+- [x] Ops: live logs via `wrangler pages deployment tail`; abuse
+      control active ahead of the function (Cloudflare WAF 403s
+      known-bot user agents, e.g. `Python-urllib`); rollback for
+      git-connected production = redeploy any earlier commit (see §6).
+- [ ] Production: merge this branch to `main` → auto-deploy, then
+      smoke-test both `https://cheapinfra-resources.wyrdwerk.com/` and
+      `https://resource-library-7q4.pages.dev/` (custom domain last,
+      per issue #1). **Pending owner approval of the preview evidence.**
+
+Notes: the issue text (from docs/api-spec.md §8) mentions
+`/api/v1/facets` and `/api/v1/meta` — those endpoints were never part
+of the implemented contract (api/openapi.yaml is authoritative; the
+manifest lives at `/api/v1/index.json` and facet values at
+`/api/v1/taxonomy.json`). The spec's error names (`invalid_query`,
+`invalid_filter`) similarly map to the implemented `bad_*` codes above.
+

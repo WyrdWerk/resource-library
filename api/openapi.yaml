@@ -8,6 +8,17 @@ info:
     api_server.py is a stdlib-only local adapter that serves the same
     payloads plus live lexical search for contract verification. No auth,
     no write endpoints, no vector search.
+
+    On Cloudflare Pages, functions/api/v1/ adds the dynamic routes
+    (/resources, /resources/{id}, /search) as a JS port of the adapter,
+    reading this deployment's own static assets. All routes accept
+    GET, HEAD, and OPTIONS (CORS: Access-Control-Allow-Origin: *); any
+    other method returns 405 with error code "method_not_allowed".
+    Successful responses carry ETag (If-None-Match -> 304) and
+    Cache-Control: 60s for /search, 300s for /resources, 3600s for
+    /resources/{id}. Error codes: bad_fields, bad_limit, bad_cursor,
+    bad_filter, bad_sort, not_found, method_not_allowed,
+    catalog_unavailable, internal.
   contact:
     url: https://github.com/WyrdWerk/resource-library
 servers:
@@ -36,7 +47,27 @@ paths:
                 type: object
   /resources.json:
     get:
-      summary: Full canonical record array (paginated)
+      summary: Full canonical record array (static asset)
+      description: |
+        The raw, ordered array of all records. On Cloudflare Pages this is
+        served as a static file; query parameters are ignored. The
+        paginated view with fields/limit/cursor lives at /resources.
+      responses:
+        '200':
+          description: All records in canonical order
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Resource'
+  /resources:
+    get:
+      summary: Canonical records in stable order (paginated)
+      description: |
+        Same payload shape as the local adapter's /resources.json route.
+        On Cloudflare Pages this is a Pages Function; the static
+        resources.json asset is unaffected.
       parameters:
         - $ref: '#/components/parameters/Fields'
         - $ref: '#/components/parameters/Limit'

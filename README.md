@@ -21,6 +21,7 @@ A curated, browsable archive of developer resources shared in the [CheapInfra](h
 | `catalog/` | Canonical per-resource JSON (`resources/<id>.json`) + taxonomy registries (`taxonomy/*.json`) — the machine-readable source behind the API | Generated — `scripts/migrate.py`, validated against `schemas/` |
 | `api/v1/` | Static JSON API: `resources.json`, `taxonomy.json`, `index.json`, per-resource files | Generated — `scripts/api_build.py` |
 | `api/openapi.yaml` | OpenAPI 3.1 contract for the API | Hand-written |
+| `functions/api/v1/` | Cloudflare Pages Functions: dynamic `/api/v1/search` and `/api/v1/resources` routes (JS port of the adapter) | Hand-written |
 | `schemas/` | JSON Schemas for catalog resources, taxonomy, and exports | Hand-written |
 | `docs/runbook.md` | Exact build, test, audit, and smoke-test commands for the API surface | Hand-written |
 | `tests/` | Test suite (79 tests), including build-freeze tests that fail if any generated site file drifts | Hand-written — `python3 -m pytest tests/ -q` |
@@ -52,6 +53,14 @@ contract in `api/openapi.yaml`. Everything there is generated — see
 [docs/runbook.md](docs/runbook.md) for the exact build, test, and audit commands.
 Search (`scripts/search.py`) is deterministic lexical search over the catalog: no
 vector database, no model calls.
+
+Dynamic endpoints — `GET /api/v1/search` (live query ranking and filters) and
+`GET /api/v1/resources` (+ `/api/v1/resources/{id}`) — are served by Cloudflare Pages
+Functions in `functions/api/v1/`, a faithful port of the local adapter
+(`scripts/api_server.py`) that reads the same deployment's static assets.
+`scripts/edge_parity.py` proves the port: it replays the 40-query gold set and the
+whole local contract battery against any deployment (local wrangler or a live
+preview URL) and requires identical responses.
 
 ## Deploying
 

@@ -53,6 +53,7 @@ don't improvise.
 | `catalog/taxonomy/*.json` | Controlled facet vocabularies: resource-types, topics, use-cases, interfaces, technologies, synonyms. **Hand-edited** — classification vocabulary changes here. |
 | `schemas/*.schema.json` | JSON Schemas validating catalog records, taxonomy, and exports. **Hand-maintained.** |
 | `api/v1/` | **Generated.** Static API (`resources.json`, `taxonomy.json`, `index.json`, per-resource files). Regenerate with `scripts/api_build.py`; never hand-edit. |
+| `functions/api/v1/` | **Hand-written.** Cloudflare Pages Functions serving the dynamic `/api/v1/search` and `/api/v1/resources` routes — a JS port of `scripts/api_server.py` + `scripts/search.py` that reads the deployment's own static assets. Must stay behavior-identical; `scripts/edge_parity.py` is the gate (run it against local `wrangler pages dev` before committing, and against the preview after deploying). |
 | `api/openapi.yaml` | OpenAPI 3.1 contract for the API. **Hand-maintained** alongside `scripts/api_server.py`. |
 | `scripts/migrate.py` | Builds `catalog/` from `notes/` + `data.json`. **Hand-written.** |
 | `scripts/api_build.py` | Builds `api/v1/` from `catalog/`. **Hand-written.** Reads `catalog/`, writes `api/v1/` only — never touches site files. |
@@ -158,6 +159,11 @@ output directory.
 the RSS channel link, and the canonical URL). It points at the custom domain
 `https://cheapinfra-resources.wyrdwerk.com`; change it deliberately, then
 re-run the build.
+
+The dynamic `/api/v1/search` and `/api/v1/resources` routes are Pages Functions
+in `functions/api/v1/` — they deploy automatically with the site (same repo-root
+output, no build command). Verify with `scripts/edge_parity.py` against the
+preview before merging to `main` (see `docs/runbook.md` §8).
 
 ## What NOT to do
 
