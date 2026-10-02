@@ -288,20 +288,6 @@
     "warning": ""
   },
   {
-    "title": "tester-army/e2e",
-    "week": "1–8 Oct 2026",
-    "url": "https://github.com/tester-army/e2e",
-    "sharer": "simply_roo",
-    "date": "2 Oct",
-    "categories": [
-      "dev-tool",
-      "github"
-    ],
-    "brief": "tester-army/e2e is a next-generation end-to-end testing framework for web and mobile apps, per its GitHub description. It was a link-only share with no additional context, so treat its capabilities as unverified until you read the README.",
-    "id": "tester-army-e2e",
-    "warning": "It was a link-only share with no additional context, so treat its capabilities as unverified until you read the README."
-  },
-  {
     "title": "The next Git platform on Cloudflare",
     "week": "1–8 Oct 2026",
     "url": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",

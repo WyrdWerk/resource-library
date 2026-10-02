@@ -36,7 +36,12 @@ CLASS_PATH = Path(sys.argv[1])
 OUT_DIR = ROOT / "catalog" / "resources"
 
 PROV_START = date(2026, 7, 20)
-PROV_END = date(2026, 9, 25)
+# Channel creation is fixed; the end bound tracks the calendar year because the
+# #providers channel is ongoing (daily incremental collection since 2026-09-26).
+# Year is hard-coded to 2026 in parse_posted, so this bound only guards against
+# impossible/pre-channel dates. (Extended 2026-10-02: was 2026-09-25, the date
+# of the original full-channel sweep.)
+PROV_END = date(2026, 12, 31)
 
 
 def parse_posted(posted_date, week_label):
