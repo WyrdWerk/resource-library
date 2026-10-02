@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "beui-motion-components",
+  "title": "beUI motion components",
+  "canonical_url": "https://beui.dev/components/motion",
+  "brief": "Copy-paste animated React components from beUI. Drop-in motion without building animation primitives from scratch.",
+  "caveat": null,
+  "resource_type": "library-framework",
+  "topics": [
+    "frontend"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "react"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "27 Aug–3 Sep 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-02",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

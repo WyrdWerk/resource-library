@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "id": "claude-for-people-search-announcement",
+  "title": "Claude for people-search (announcement)",
+  "canonical_url": "https://x.com/jasonzhou1993/status/2094740336895840605",
+  "brief": "Jason Zhou's announcement of \"Claude for people-search\" at a claimed $0.0089/lead versus $600 subscriptions. The pricing claims are the poster's and unverified; the tweet mentions a git repo \"below\" that wasn't captured.",
+  "caveat": "The pricing claims are the poster's and unverified; the tweet mentions a git repo \"below\" that wasn't captured.",
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "27 Aug–3 Sep 2026",
+  "legacy_categories": [
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-02",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

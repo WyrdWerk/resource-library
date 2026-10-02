@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "anti-slop-dmmulroy",
+  "title": "anti-slop (dmmulroy)",
+  "canonical_url": "https://github.com/dmmulroy/anti-slop",
+  "brief": "Opinionated Oxlint rules that reject low-evidence TypeScript/JavaScript patterns — basically a linter config against AI-slop code. Fun and practical for teams drowning in generated code.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "test-software"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [
+    "javascript",
+    "typescript"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "20–27 Aug 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Rykuuun"
+  },
+  "shared_on": "2026-08-21",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

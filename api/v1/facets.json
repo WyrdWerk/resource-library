@@ -1,0 +1,93 @@
+{
+  "resource_type": {
+    "repository": 77,
+    "provider": 72,
+    "article-guide": 44,
+    "tool": 30,
+    "directory-gallery": 23,
+    "library-framework": 19,
+    "service-platform": 8,
+    "dataset": 7,
+    "documentation": 4,
+    "template-starter": 1,
+    "other": 0
+  },
+  "topic": {
+    "ai-agents": 121,
+    "inference": 104,
+    "developer-tools": 56,
+    "design": 34,
+    "frontend": 29,
+    "productivity": 15,
+    "cloud-infrastructure": 12,
+    "security": 7,
+    "backend": 5,
+    "self-hosting": 5,
+    "testing": 5,
+    "app-development": 4,
+    "devops": 4,
+    "databases": 2,
+    "observability": 2,
+    "web-development": 1
+  },
+  "use_case": {
+    "run-inference": 88,
+    "manage-agents": 69,
+    "learn-technique": 56,
+    "build-interfaces": 21,
+    "automate-workflows": 18,
+    "discover-design-references": 18,
+    "generate-code": 18,
+    "create-media": 13,
+    "test-software": 12,
+    "search-code": 7,
+    "monitor-systems": 3,
+    "provision-infrastructure": 3,
+    "deploy-applications": 2,
+    "host-models": 2,
+    "operate-databases": 2
+  },
+  "interface": {
+    "web": 90,
+    "api": 87,
+    "cli": 35,
+    "mcp": 12,
+    "desktop": 11,
+    "extension": 2
+  },
+  "technology": {
+    "mcp-protocol": 13,
+    "claude-code": 9,
+    "rust": 9,
+    "typescript": 8,
+    "react": 7,
+    "python": 4,
+    "docker": 2,
+    "go": 2,
+    "javascript": 2,
+    "github-actions": 1,
+    "neovim": 1,
+    "next-js": 1,
+    "node-js": 1,
+    "ollama": 1,
+    "openai-api": 1,
+    "sqlite": 1,
+    "anthropic-api": 0,
+    "electron": 0,
+    "kubernetes": 0,
+    "postgres": 0,
+    "svelte": 0,
+    "tailwind-css": 0,
+    "vscode": 0,
+    "vue": 0,
+    "zed": 0
+  },
+  "channel": {
+    "share-tech": 203,
+    "providers": 82
+  },
+  "open_source": {
+    "true": 22,
+    "false": 0
+  }
+}

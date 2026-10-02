@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "isoquant",
+  "title": "Isoquant",
+  "canonical_url": "https://isoquant.ai/",
+  "brief": "A new PAYGO inference provider launching with GLM-5.3-Flash at $0.07/$0.20 per 1M input/output tokens with automatic prompt caching; drop-in OpenAI-compatible API, no top-up fees. Its published benchmarks claim the lowest latency and highest throughput versus Together, CoreWeave, Baseten, Fireworks, and Z.ai. Pricing and benchmark figures are vendor-reported and not independently verified.",
+  "caveat": "Pricing and benchmark figures are vendor-reported and not independently verified.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-09-25",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

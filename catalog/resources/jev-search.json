@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "jev-search",
+  "title": "jev-search",
+  "canonical_url": "https://github.com/superagents-lab/jev-search",
+  "brief": "Shared by thelaggingway with just \"Another one\" — context is thin, but it landed in the search-tool thread. Worth a look if you're tracking search APIs.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "backend"
+  ],
+  "use_cases": [
+    "search-code"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "17–24 Sep 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-09-18",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

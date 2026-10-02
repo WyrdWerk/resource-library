@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "tgrep-announcement",
+  "title": "tgrep (announcement)",
+  "canonical_url": "https://x.com/jedisct1/status/2096919996412666296",
+  "brief": "Microsoft's tgrep — grep for large codebases with client/server support, claimed 7–50x faster than ripgrep and ugrep. Announcement only; the speedup claim is the poster's.",
+  "caveat": "Announcement only; the speedup claim is the poster's.",
+  "resource_type": "article-guide",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx8678"
+  },
+  "shared_on": "2026-09-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

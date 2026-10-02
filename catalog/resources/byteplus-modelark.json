@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "byteplus-modelark",
+  "title": "BytePlus ModelArk",
+  "canonical_url": "https://www.byteplus.com/en/activity/codingplan",
+  "brief": "BytePlus's Coding Plan for Claude Code, Cursor, Cline, Kilo Code, Roo Code and OpenCode, covering models like Dola-Seed-2.0-pro, GLM-5.1 and DeepSeek V4. Exact plan prices weren't visible on the promo page.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "generate-code"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Rykuuun"
+  },
+  "shared_on": "2026-09-14",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

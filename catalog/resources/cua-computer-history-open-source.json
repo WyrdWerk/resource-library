@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "id": "cua-computer-history-open-source",
+  "title": "Cua Computer History (open source)",
+  "canonical_url": "https://x.com/trycua/status/2089770780053643397?s=46&t=vWq9H9xzeo6jZ1ywa-gPvg",
+  "brief": "Cua's announcement of the first open-source \"Computer History\", in early preview. Announcement-only; interesting for computer-use agent research.",
+  "caveat": null,
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "13–20 Aug 2026",
+  "legacy_categories": [
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "baanish"
+  },
+  "shared_on": "2026-08-19",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

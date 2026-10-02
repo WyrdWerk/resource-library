@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "eclipse-theia",
+  "title": "Eclipse Theia",
+  "canonical_url": "https://github.com/eclipse-theia/theia",
+  "brief": "Eclipse Theia — a cloud and desktop IDE framework implemented in TypeScript. The open foundation behind several well-known IDE products.",
+  "caveat": null,
+  "resource_type": "library-framework",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "generate-code"
+  ],
+  "interfaces": [
+    "web",
+    "desktop"
+  ],
+  "technologies": [
+    "typescript"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "27 Aug–3 Sep 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx8678"
+  },
+  "shared_on": "2026-08-30",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

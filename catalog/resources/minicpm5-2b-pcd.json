@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "id": "minicpm5-2b-pcd",
+  "title": "MiniCPM5-2B-PCD",
+  "canonical_url": "https://huggingface.co/monotykamary/MiniCPM5-2B-PCD",
+  "brief": "MiniCPM5 2B PCD weights on Hugging Face — the same model family as the 16 Sept in-browser Pi announcement. The model behind that WebGPU coding-agent demo.",
+  "caveat": null,
+  "resource_type": "dataset",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "17–24 Sep 2026",
+  "legacy_categories": [
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-17",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

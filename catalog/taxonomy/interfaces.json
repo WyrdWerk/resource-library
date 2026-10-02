@@ -1,0 +1,61 @@
+{
+  "$id": "https://cheapinfra-resources.wyrdwerk.com/api/v1/taxonomy/interfaces.json",
+  "cardinality": "zero-to-five",
+  "facet": "interfaces",
+  "values": {
+    "api": {
+      "aliases": [
+        "rest-api",
+        "http-api"
+      ],
+      "definition": "Consumed over HTTP as a REST or similar API.",
+      "label": "API",
+      "status": "active"
+    },
+    "cli": {
+      "aliases": [
+        "command-line",
+        "terminal",
+        "tui"
+      ],
+      "definition": "Used from the command line or terminal.",
+      "label": "CLI",
+      "status": "active"
+    },
+    "desktop": {
+      "aliases": [
+        "desktop-app",
+        "native-app"
+      ],
+      "definition": "A native desktop application.",
+      "label": "Desktop",
+      "status": "active"
+    },
+    "extension": {
+      "aliases": [
+        "browser-extension",
+        "vscode-extension",
+        "plugin"
+      ],
+      "definition": "A browser or editor extension/plugin.",
+      "label": "Extension",
+      "status": "active"
+    },
+    "mcp": {
+      "aliases": [],
+      "definition": "Exposed or consumed via the Model Context Protocol.",
+      "label": "MCP",
+      "status": "active"
+    },
+    "web": {
+      "aliases": [
+        "web-app",
+        "website",
+        "webapp"
+      ],
+      "definition": "Used in the browser as a web application or site.",
+      "label": "Web",
+      "status": "active"
+    }
+  }
+}

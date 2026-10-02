@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "streamlake",
+  "title": "StreamLake",
+  "canonical_url": "https://www.streamlake.ai/",
+  "brief": "Kuaishou's AI cloud / model-as-a-service platform with API and SDK integration for online inference. Holds ISO 27001/27017/42001 and MLPS Level 3; no explicit zero-retention statement found.",
+  "caveat": null,
+  "resource_type": "service-platform",
+  "topics": [
+    "cloud-infrastructure",
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "tom (App)"
+  },
+  "shared_on": "2026-09-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

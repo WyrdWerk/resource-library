@@ -750,7 +750,7 @@ footer a {{ color: var(--accent); }}
 [data-theme="light"] .theme-toggle .icon-moon {{ display: block; }}
 /* ---- tabs ---- */
 .tabs {{
-  display: grid; grid-template-columns: 1fr 1fr; gap: 3px; padding: 3px;
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3px; padding: 3px;
   border: 1px solid var(--line); border-radius: 8px;
 }}
 .tab {{
@@ -787,6 +787,33 @@ footer a {{ color: var(--accent); }}
 .an-card.wide {{ grid-column: 1 / -1; }}
 .an-card h3 {{ margin: 0 0 4px; font-size: 16px; font-weight: 650; }}
 .an-card .sub {{ color: var(--muted); font-size: 13px; margin: 0 0 14px; }}
+/* ---- api docs ---- */
+.codeblock {{
+  margin: 0; padding: 13px 15px; background: var(--card); border: 1px solid var(--line);
+  border-radius: 10px; overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere;
+  font: 500 12px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: var(--ink);
+}}
+.codeblock .cmt {{ color: var(--muted); }}
+.codeblock + .codeblock {{ margin-top: 10px; }}
+.apitb {{ width: 100%; border-collapse: collapse; margin-top: 4px; font-size: 13px; }}
+.apitb th {{
+  text-align: left; font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--muted); font-weight: 700; padding: 6px 14px 6px 0; border-bottom: 1px solid var(--line);
+}}
+.apitb td {{ padding: 9px 14px 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; }}
+.apitb td:first-child {{
+  font: 500 12px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  white-space: normal; overflow-wrap: break-word;
+}}
+.apitb code {{
+  color: var(--accent); background: var(--accent-soft); padding: 1px 5px; border-radius: 4px;
+  overflow-wrap: anywhere;
+  font: 500 12px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}}
+.apilinks {{ display: grid; gap: 12px; margin-top: 4px; }}
+.apilinks a {{ color: var(--accent); text-decoration: none; font-weight: 650; font-size: 13.5px; }}
+.apilinks a:hover {{ text-decoration: underline; }}
+.apilinks span {{ display: block; color: var(--muted); font-weight: 400; font-size: 12.5px; }}
 .chart {{ width: 100%; height: auto; display: block; }}
 .an-card.wide .chart {{ max-height: 380px; }}
 .ax {{ fill: var(--muted); font-size: 11px; }}
@@ -845,9 +872,10 @@ footer a {{ color: var(--accent); }}
   <aside class="side" aria-label="Views and filters">
     <div class="sblock">
       <div class="shead"><span class="eyebrow">View</span></div>
-      <div class="tabs" role="tablist" aria-label="Library or analytics">
+      <div class="tabs" role="tablist" aria-label="Library, analytics, or API">
         <button class="tab active" data-tab="library" role="tab" aria-selected="true">Library</button>
         <button class="tab" data-tab="analytics" role="tab" aria-selected="false">Analytics</button>
+        <button class="tab" data-tab="api" role="tab" aria-selected="false">API</button>
       </div>
     </div>
     <div class="sblock side-lib">
@@ -871,6 +899,14 @@ footer a {{ color: var(--accent); }}
         <a class="navrow" href="https://x.com/intent/post?text={quote(share_text)}&amp;url={quote(SITE_URL + '/', safe='')}" target="_blank" rel="noopener"><span>Share on X</span><b>↗</b></a>
         <a class="navrow" href="https://www.linkedin.com/sharing/share-offsite/?url={quote(SITE_URL + '/', safe='')}" target="_blank" rel="noopener"><span>Share on LinkedIn</span><b>↗</b></a>
         <a class="navrow" href="feed.xml"><span>RSS feed</span><b>↗</b></a>
+      </nav>
+    </div>
+    <div class="sblock">
+      <div class="shead"><span class="eyebrow">For agents</span></div>
+      <nav class="navlist">
+        <a class="navrow" href="#view=api"><span>API documentation</span><b>→</b></a>
+        <a class="navrow" href="llms.txt" target="_blank" rel="noopener"><span>llms.txt</span><b>↗</b></a>
+        <a class="navrow" href="api/openapi.yaml" target="_blank" rel="noopener"><span>OpenAPI contract</span><b>↗</b></a>
       </nav>
     </div>
     <details class="cut">
@@ -928,12 +964,85 @@ footer a {{ color: var(--accent); }}
       </div>
     </div>
   </section>
+  <section id="apidocs" hidden>
+    <div class="mainhead"><h2 class="shortlist-h">API</h2><span class="mcount">v1 · read-only · no auth</span></div>
+    <p class="an-sub">The same curated catalog this site renders, served as plain JSON over plain GETs — built for scripts and agents, documented for humans. No keys, no accounts; responses carry ETags and per-endpoint cache headers, and cross-origin reads are allowed from anywhere.</p>
+    <div class="an-grid">
+      <div class="an-card wide">
+        <h3>Quick start</h3>
+        <p class="sub">Search ranks by a fixed lexical score over titles, briefs, taxonomy labels and curated aliases — deterministic, no embeddings. Facet filters are comma-separated lists: OR within a family, AND across families.</p>
+        <pre class="codeblock"><span class="cmt"># search — 20 per page by default, cursor-paginated</span>
+curl "{SITE_URL}/api/v1/search?q=vector+database"
+
+<span class="cmt"># CSV facet filters (OR within a family), open-source only</span>
+curl "{SITE_URL}/api/v1/search?topic=ai-inference,quantization&amp;open_source=true"
+
+<span class="cmt"># date-bounded, title-sorted, trimmed to three fields</span>
+curl "{SITE_URL}/api/v1/search?from=2026-08-01&amp;to=2026-08-31&amp;sort=title&amp;fields=id,title,canonical_url"</pre>
+      </div>
+      <div class="an-card wide">
+        <h3>Endpoints</h3>
+        <p class="sub">Base path <code>/api/v1/</code>. Undocumented paths under it fall back to this site's HTML, so use only the documented ones. Full contract: <a href="api/openapi.yaml">api/openapi.yaml</a>.</p>
+        <table class="apitb">
+          <tr><th>Endpoint</th><th>Returns</th><th>Cache</th></tr>
+          <tr><td>GET /search</td><td>Lexical search with facet filters, date bounds, sort and cursor pagination — the workhorse. Response: <code>results</code> + <code>next_cursor</code> (+ echoed <code>query</code>, <code>filters</code>, <code>sort</code>, <code>limit</code>).</td><td>60 s</td></tr>
+          <tr><td>GET /resources</td><td>Canonical records in stable order, paginated via <code>limit</code>/<code>cursor</code>. Response: <code>records</code> + <code>next_cursor</code> + <code>total</code>.</td><td>300 s</td></tr>
+          <tr><td>GET /resources/{{id}}</td><td>One canonical record by id, e.g. <code>/api/v1/resources/openrouter</code>.</td><td>1 h</td></tr>
+          <tr><td>GET /resources.json</td><td>Static snapshot: the full raw array of all records, no envelope.</td><td>asset</td></tr>
+          <tr><td>GET /facets.json</td><td>Every valid filter value with its count, grouped by filter family.</td><td>asset</td></tr>
+          <tr><td>GET /taxonomy.json</td><td>The controlled vocabularies behind the facets.</td><td>asset</td></tr>
+          <tr><td>GET /index.json</td><td>Manifest: API version, record count, channels, checksums, endpoint registry.</td><td>asset</td></tr>
+        </table>
+      </div>
+      <div class="an-card wide">
+        <h3>Parameters</h3>
+        <p class="sub">All optional; combined with AND logic. Search-only params are marked.</p>
+        <table class="apitb">
+          <tr><th>Param</th><th>Meaning</th></tr>
+          <tr><td>q</td><td>Free-text search query <span style="color:var(--muted)">(search only)</span>. Optional — filters alone work. Exact id or URL queries rank first.</td></tr>
+          <tr><td>resource_type</td><td>Facet filter, CSV allowed — values OR-ed. Valid values in <a href="api/v1/facets.json">facets.json</a>. Alias: <code>type</code>.</td></tr>
+          <tr><td>topic · use_case · interface · technology</td><td>Facet filters, CSV allowed — values OR-ed within each family.</td></tr>
+          <tr><td>channel</td><td><code>share-tech</code> or <code>providers</code> — which Discord channel the resource came from.</td></tr>
+          <tr><td>open_source</td><td><code>true</code> or <code>false</code>.</td></tr>
+          <tr><td>from · to</td><td>Inclusive <code>YYYY-MM-DD</code> bounds on the shared date <span style="color:var(--muted)">(search only)</span>; <code>from ≤ to</code> required.</td></tr>
+          <tr><td>sort</td><td><code>relevance</code> (default) · <code>newest</code> · <code>oldest</code> · <code>title</code> <span style="color:var(--muted)">(search only)</span>.</td></tr>
+          <tr><td>limit</td><td>Page size, 1–100, default 20.</td></tr>
+          <tr><td>cursor</td><td>Opaque pagination cursor — pass back the <code>next_cursor</code> from the previous page.</td></tr>
+          <tr><td>fields</td><td>CSV projection of a record's fields, e.g. <code>fields=id,title,canonical_url</code>. Valid names are in the OpenAPI contract.</td></tr>
+        </table>
+      </div>
+      <div class="an-card">
+        <h3>Conventions &amp; errors</h3>
+        <p class="sub">Predictable by design — the whole surface is byte-reproducible and covered by a parity gate against production.</p>
+        <table class="apitb">
+          <tr><th>Thing</th><th>Behavior</th></tr>
+          <tr><td>Methods</td><td>GET, HEAD, OPTIONS only — anything else is a 405.</td></tr>
+          <tr><td>CORS</td><td><code>Access-Control-Allow-Origin: *</code> on every response.</td></tr>
+          <tr><td>Caching</td><td>ETag on every response; send <code>If-None-Match</code> to get a 304.</td></tr>
+          <tr><td>Errors</td><td><code>{{"error": {{"code", "message"}}}}</code> — codes: <code>bad_fields</code>, <code>bad_limit</code>, <code>bad_cursor</code>, <code>bad_filter</code>, <code>bad_sort</code>, <code>not_found</code>, <code>method_not_allowed</code>, <code>catalog_unavailable</code>, <code>internal</code>.</td></tr>
+          <tr><td>Versioning</td><td>Within v1, changes are additive only — fields and endpoints are never renamed or removed.</td></tr>
+        </table>
+      </div>
+      <div class="an-card">
+        <h3>Machine-readable docs</h3>
+        <p class="sub">Everything an agent needs, linked for direct fetching.</p>
+        <div class="apilinks">
+          <a href="llms.txt" target="_blank" rel="noopener">llms.txt<span>A compact, agent-oriented index of this site and its API, with usage examples.</span></a>
+          <a href="api/openapi.yaml" target="_blank" rel="noopener">api/openapi.yaml<span>The OpenAPI 3.1 contract for every endpoint.</span></a>
+          <a href="api/v1/facets.json" target="_blank" rel="noopener">api/v1/facets.json<span>Every valid filter value, with counts.</span></a>
+          <a href="docs/runbook.md" target="_blank" rel="noopener">docs/runbook.md<span>How the API is built, tested, audited and deployed.</span></a>
+          <a href="docs/api-spec.md" target="_blank" rel="noopener">docs/api-spec.md<span>The design spec behind the API surface.</span></a>
+          <a href="{REPO_URL}" target="_blank" rel="noopener">GitHub repository<span>Source, catalog records, and the full history.</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
   </div>
   </div>
   <footer>
     <span class="fsrc">Source: CheapInfra Discord · #share-tech + #providers</span> · Last updated {today_str}<br>
     Briefs are editorial summaries (~2 sentences); entries flagged <span class="warnmark">⚠</span> carry a caveat — typically unverified claims from Discord posts — lifted from the brief at build time.<br>
-    Data: <a href="data.json">data.json</a> · Weekly lists: <a href="weeks/">weeks/</a> · Raw logs: <a href="raw/">raw/</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="feed.xml">RSS</a>
+    Data: <a href="data.json">data.json</a> · Weekly lists: <a href="weeks/">weeks/</a> · Raw logs: <a href="raw/">raw/</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="feed.xml">RSS</a> · <a href="#view=api">API</a>
   </footer>
 </div>
 <button class="top" id="top" aria-label="Back to top">↑</button>
@@ -996,6 +1105,8 @@ function syncUrl() {{
   if (q.value.trim()) p.set('q', q.value.trim());
   const anEl = document.getElementById('analytics');
   if (anEl && !anEl.hidden) p.set('view', 'analytics');
+  const apiEl = document.getElementById('apidocs');
+  if (apiEl && !apiEl.hidden) p.set('view', 'api');
   const s = p.toString();
   if (s) history.replaceState(null, '', '#' + s);
   else if (location.hash.includes('=')) history.replaceState(null, '', location.pathname + location.search);
@@ -1078,32 +1189,41 @@ addEventListener('keydown', (e) => {{
   const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
   if (e.key === '/' && !typing && !e.metaKey && !e.ctrlKey) {{
     e.preventDefault();
-    if (an && !an.hidden) showTab('library');
+    if ((an && !an.hidden) || (apid && !apid.hidden)) showTab('library');
     q.focus();
   }} else if (e.key === 'Escape' && document.activeElement === q) {{
     setFilters(activeCat, activeWeek, '');
     q.blur();
   }}
 }});
-// tabs: library / analytics
+// tabs: library / analytics / api
 const tabs = [...document.querySelectorAll('.tab')];
 const an = document.getElementById('analytics');
+const apid = document.getElementById('apidocs');
 const libEls = [...document.querySelectorAll('.side-lib, .content > .mainhead, .shortlist-sub, #main')];
 function showTab(name) {{
   const showAn = name === 'analytics';
+  const showApi = name === 'api';
+  const hideLib = showAn || showApi;
   tabs.forEach(x => {{
     const on = x.dataset.tab === name;
     x.classList.toggle('active', on);
     x.setAttribute('aria-selected', on ? 'true' : 'false');
   }});
   if (an) an.hidden = !showAn;
-  libEls.forEach(e => e.classList.toggle('lib-hidden', showAn));
-  if (empty) empty.classList.toggle('lib-hidden', showAn);
-  const target = showAn ? an : resultsH;
+  if (apid) apid.hidden = !showApi;
+  libEls.forEach(e => e.classList.toggle('lib-hidden', hideLib));
+  if (empty) empty.classList.toggle('lib-hidden', hideLib);
+  const target = showAn ? an : (showApi ? apid : resultsH);
   if (target && target.getBoundingClientRect().top < 0) target.scrollIntoView({{behavior: 'smooth', block: 'start'}});
   syncUrl();
 }}
 for (const t of tabs) t.addEventListener('click', () => showTab(t.dataset.tab));
+// sidebar/footer links with href="#view=api" open the API tab in place (and stay shareable)
+for (const a of document.querySelectorAll('a[href="#view=api"]')) a.addEventListener('click', (e) => {{
+  e.preventDefault();
+  showTab('api');
+}});
 // restore shared filter state from the URL
 if (location.hash.includes('=')) {{
   const p = new URLSearchParams(location.hash.slice(1));
@@ -1111,6 +1231,7 @@ if (location.hash.includes('=')) {{
   const week = wchips.some(c => c.dataset.week === p.get('week')) ? p.get('week') : null;
   setFilters(cat, week, p.get('q') || '');
   if (p.get('view') === 'analytics') showTab('analytics');
+  else if (p.get('view') === 'api') showTab('api');
 }}
 // on narrow screens the sidebar stacks above the list, so start with the week list collapsed
 const weekBlock = document.getElementById('weekBlock');
@@ -1167,6 +1288,58 @@ for (const b of fsw) b.addEventListener('click', () => {{
            f"<description>{xml_esc(desc)}</description>"
            + "\n".join(items) + "</channel></rss>")
     (ROOT / "feed.xml").write_text(rss)
+
+    # ---- robots.txt / sitemap.xml / llms.txt ----
+    (ROOT / "robots.txt").write_text(
+        "User-agent: *\n"
+        "Allow: /\n"
+        "\n"
+        f"Sitemap: {SITE_URL}/sitemap.xml\n")
+
+    # lastmod from the newest collection window, not the build clock, so a
+    # rebuild with unchanged notes produces a byte-identical sitemap and
+    # crawlers only see a new lastmod when content actually changed
+    _lm = max(info["end"] for l, info in week_info.items() if info["end"])
+    lastmod = f"{_lm[0]:04d}-{_lm[1]:02d}-{_lm[2]:02d}"
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f'<url><loc>{SITE_URL}/</loc><lastmod>{lastmod}</lastmod>'
+        '<changefreq>weekly</changefreq><priority>1.0</priority></url>\n'
+        '</urlset>\n')
+    (ROOT / "sitemap.xml").write_text(sitemap)
+
+    llms = f"""# Resource Library — CheapInfra #share-tech + #providers
+> {total} curated developer resources shared in the CheapInfra Discord's #share-tech and #providers channels: AI tools, dev tools, websites, articles, GitHub repos, and inference providers. Every entry carries a two-sentence brief, its sharer, and taxonomy facets. The site is a single HTML page ({SITE_URL}/); the same catalog is served by a read-only JSON API v1 — all GET, no auth, CORS-open, ETag-cached, deterministic.
+
+API (base {SITE_URL}/api/v1):
+- [Search]({SITE_URL}/api/v1/search?q=): lexical search over title/brief/taxonomy/aliases. Params: q (optional), resource_type (alias type), topic, use_case, interface, technology, channel, open_source, from/to (inclusive YYYY-MM-DD), sort=relevance|newest|oldest|title, limit (1-100, default 20), cursor, fields. Facet params accept CSV lists — OR within a family, AND across families. Example: /api/v1/search?q=rag&topic=ai-inference&open_source=true
+- [All records]({SITE_URL}/api/v1/resources): canonical records in stable order, paginated (fields, limit, cursor)
+- [One record]({SITE_URL}/api/v1/resources/openrouter): canonical record by id
+- [Static snapshot]({SITE_URL}/api/v1/resources.json): full raw array of all records
+- [Facets]({SITE_URL}/api/v1/facets.json): every valid filter value with counts, grouped by filter family
+- [Taxonomy]({SITE_URL}/api/v1/taxonomy.json): the controlled vocabularies behind the facets
+- [Manifest]({SITE_URL}/api/v1/index.json): API version, record count, channels, checksums, endpoint registry
+
+Docs:
+- [OpenAPI 3.1 contract]({SITE_URL}/api/openapi.yaml): every endpoint, param, and response schema
+- [Runbook]({SITE_URL}/docs/runbook.md): build, test, audit, and deploy commands
+- [API spec]({SITE_URL}/docs/api-spec.md): the design spec behind the API surface
+
+Site:
+- [Home]({SITE_URL}/): the browsable library (single-page app; filters shareable via URL hash)
+- [data.json]({SITE_URL}/data.json): full site dataset
+- [RSS]({SITE_URL}/feed.xml): all resources, newest first
+- [Sitemap]({SITE_URL}/sitemap.xml)
+
+Notes:
+- Errors are JSON: {{"error": {{"code", "message"}}}}. Codes: bad_fields, bad_limit, bad_cursor, bad_filter, bad_sort, not_found, method_not_allowed, catalog_unavailable, internal.
+- Methods: GET, HEAD, OPTIONS only (405 otherwise). CORS: Access-Control-Allow-Origin: * on every response. ETag/If-None-Match honored (304).
+- Unknown paths under /api/v1/ return the site's HTML, not JSON — use only the documented paths.
+- Cache-Control: search 60s, resources 300s, single record 3600s; static *.json assets use asset caching.
+- Versioning: within v1, changes are additive only — fields and endpoints are never renamed or removed.
+"""
+    (ROOT / "llms.txt").write_text(llms)
 
     print(f"resources: {total}")
     for label in ordered:

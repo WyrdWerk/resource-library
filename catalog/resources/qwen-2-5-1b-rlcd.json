@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "id": "qwen-2-5-1b-rlcd",
+  "title": "Qwen-2.5-1B-RLCD",
+  "canonical_url": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD",
+  "brief": "A 1B RLCD-tuned Qwen 2.5 that kenn tried locally \"to get a feel of how Jev's API and concepts might feel like\" — and found it did fine in a roguelike spike. Useful as a tiny testbed model before spending on bigger runs.",
+  "caveat": null,
+  "resource_type": "dataset",
+  "topics": [
+    "inference",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "10–17 Sep 2026",
+  "legacy_categories": [
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "kenn"
+  },
+  "shared_on": "2026-09-16",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

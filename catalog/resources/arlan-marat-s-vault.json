@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "arlan-marat-s-vault",
+  "title": "Arlan Marat's Vault",
+  "canonical_url": "https://www.arlan.me/vault",
+  "brief": "A public vault of UI/design techniques by designer Arlan Marat — dated entries like \"Arcade pixel,\" \"Holo,\" \"Fade motion,\" \"Liquid UI,\" \"Kinetic typography,\" and \"Apple's corners,\" each demonstrating a copyable visual effect. Everything is MIT-licensed and explicitly free to copy.",
+  "caveat": null,
+  "resource_type": "directory-gallery",
+  "topics": [
+    "design",
+    "frontend"
+  ],
+  "use_cases": [
+    "discover-design-references"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "6–12 Aug 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-08-10",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

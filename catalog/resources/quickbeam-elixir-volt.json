@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "quickbeam-elixir-volt",
+  "title": "quickbeam (elixir-volt)",
+  "canonical_url": "https://github.com/elixir-volt/quickbeam",
+  "brief": "A JavaScript runtime for the BEAM — Web APIs backed by OTP, native DOM, and a built-in TypeScript toolchain. Genuinely novel: Erlang's concurrency model meets JS.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "backend",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "javascript",
+    "typescript"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "13–20 Aug 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Blessed Piss Enjoyer"
+  },
+  "shared_on": "2026-08-15",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

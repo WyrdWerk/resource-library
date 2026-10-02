@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "id": "desengs",
+  "title": "desengs",
+  "canonical_url": "https://desengs.com/",
+  "brief": "Shared link-only. Purpose unverified from the message text; the domain suggests a design/engineering resource.",
+  "caveat": "Purpose unverified from the message text; the domain suggests a design/engineering resource.",
+  "resource_type": "tool",
+  "topics": [
+    "design"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "30 Jul–5 Aug 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-08-05",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

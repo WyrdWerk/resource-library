@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "sponsorbar-announcement",
+  "title": "SponsorBar (announcement)",
+  "canonical_url": "https://x.com/henry_kutrieb/status/2095901727425786300",
+  "brief": "SponsorBar — puts a small ad in your menu bar and shares the revenue with you (\"make money from your menu bar for doing nothing\"), with a 10%-extra launch promo. A real launched product, though a niche one.",
+  "caveat": null,
+  "resource_type": "article-guide",
+  "topics": [
+    "productivity"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "cata"
+  },
+  "shared_on": "2026-09-05",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

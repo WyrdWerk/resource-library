@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "id": "bendsr",
+  "title": "BendSR",
+  "canonical_url": "https://github.com/k3ybladewielder/BendSR",
+  "brief": "Symbolic regression implemented in Bend. A research-flavoured repo for anyone exploring the Bend language.",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "17–24 Sep 2026",
+  "legacy_categories": [
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-20",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

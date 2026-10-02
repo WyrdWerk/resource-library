@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "60fps-design",
+  "title": "60fps.design",
+  "canonical_url": "https://60fps.design/",
+  "brief": "An endlessly browsable gallery of ~2,000+ UI/UX animation shots from best-in-class mobile and web apps — buttons, sheets, onboarding, loading states, micro-interactions — tagged across 108 filters. Useful swipe-reference for motion details before implementing your own.",
+  "caveat": null,
+  "resource_type": "directory-gallery",
+  "topics": [
+    "design"
+  ],
+  "use_cases": [
+    "discover-design-references"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "16–22 Jul 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-07-20",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

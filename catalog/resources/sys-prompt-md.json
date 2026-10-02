@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "sys-prompt-md",
+  "title": "sys-prompt.md",
+  "canonical_url": "https://gist.github.com/Sewer56/74cbf6d930ed67653370cc2d683c54dd",
+  "brief": "A complete agent-harness system prompt as a gist: JSON tool schemas for edit, glob, grep, question, read, shell, subagent, and write with execution semantics spelled out. Useful reference if you're building or tuning a coding-agent CLI.",
+  "caveat": null,
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "24 Sep–1 Oct 2026",
+  "legacy_categories": [
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Sewer56"
+  },
+  "shared_on": "2026-09-27",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "optmem",
+  "title": "OptMem",
+  "canonical_url": "https://github.com/VictorTaelin/OptMem",
+  "brief": "Permanent memory for AI agents by Victor Taelin: the whole integration is a 426-token prompt plus a single dependency-free Python script installed with one curl command. You paste a `## Memory` block into your agent's AGENTS.md/CLAUDE.md, then use `memo wake` (read memory at session start) and `memo note` (record one-liners), plus `nap`, `recall`, `zoom`, and `forget`; storage is an append-only log with a rebuildable binary-tree summary cache (1M memories ≈ 608 MB, wake in 0.03s).",
+  "caveat": null,
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "productivity"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "23–29 Jul 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-07-28",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

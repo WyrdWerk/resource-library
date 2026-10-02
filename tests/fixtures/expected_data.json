@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Fixture Provider",
+    "week": "providers",
+    "url": "https://example.com/fixture-provider",
+    "sharer": "tester3",
+    "date": "5 Jan",
+    "categories": [
+      "providers"
+    ],
+    "brief": "A fixture inference provider for testing provider ordering.",
+    "id": "fixture-provider",
+    "warning": ""
+  },
+  {
+    "title": "Fixture Provider",
+    "week": "providers",
+    "url": "https://example.com/fixture-provider-2",
+    "sharer": "tester4",
+    "date": "6 Jan",
+    "categories": [
+      "providers"
+    ],
+    "brief": "A second provider with a colliding title. Use at your own risk.",
+    "id": "fixture-provider-2",
+    "warning": "Use at your own risk."
+  },
+  {
+    "title": "Fixture Widget",
+    "week": "1–7 Jan 2026",
+    "url": "https://example.com/fixture-widget",
+    "sharer": "tester1",
+    "date": "3 Jan",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "A widget for testing the fixture build. Small and fast.",
+    "id": "fixture-widget",
+    "warning": ""
+  },
+  {
+    "title": "Fixture Widget",
+    "week": "1–7 Jan 2026",
+    "url": "https://example.com/fixture-widget-2",
+    "sharer": "tester2",
+    "date": "4 Jan",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "A second resource with the same title to exercise slug collision. Expect rough edges.",
+    "id": "fixture-widget-2",
+    "warning": "Expect rough edges."
+  },
+  {
+    "title": "Folded Gadget",
+    "week": "1–7 Jan 2026",
+    "url": "https://example.com/folded-gadget",
+    "sharer": "tester1",
+    "date": "1 Jan",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "A boundary-day catch-up folded into the existing week.",
+    "id": "folded-gadget",
+    "warning": ""
+  }
+]

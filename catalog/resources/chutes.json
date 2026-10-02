@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "chutes",
+  "title": "Chutes",
+  "canonical_url": "https://chutes.ai/",
+  "brief": "Decentralized, open-source serverless compute platform in the Bittensor ecosystem, aiming to serve new SOTA open-source models 'minutes after release' across text, image, video, speech, and music. Pay-as-you-go billed per token consumed with a live cost estimator, plus TEE/secure compute and a Chutes Chat consumer app. Throughput claims are vendor-reported and not independently verified.",
+  "caveat": "Throughput claims are vendor-reported and not independently verified.",
+  "resource_type": "service-platform",
+  "topics": [
+    "inference",
+    "cloud-infrastructure"
+  ],
+  "use_cases": [
+    "run-inference",
+    "host-models"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-07-28",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

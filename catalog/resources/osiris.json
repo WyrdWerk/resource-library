@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "osiris",
+  "title": "OSIRIS",
+  "canonical_url": "https://osirisai.live/",
+  "brief": "An open-source Palantir alternative — track 10K+ aircraft, 2K satellites and worldwide CCTV on a 3D globe, and run Nmap, DNS, WHOIS and threat-intel scans from the browser across 20+ live feeds. Free.",
+  "caveat": null,
+  "resource_type": "tool",
+  "topics": [
+    "security"
+  ],
+  "use_cases": [
+    "monitor-systems"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "web-app",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-08",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

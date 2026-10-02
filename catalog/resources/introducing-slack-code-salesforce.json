@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "id": "introducing-slack-code-salesforce",
+  "title": "Introducing Slack Code (Salesforce)",
+  "canonical_url": "https://www.salesforce.com/introducing-slack-code/",
+  "brief": "Salesforce's announcement of Slack Code, bringing coding-agent workflows into Slack. Announcement-level; the \"oh no\" from the sharer suggests healthy skepticism.",
+  "caveat": null,
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents",
+    "productivity"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "20–27 Aug 2026",
+  "legacy_categories": [
+    "article"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "simply soy"
+  },
+  "shared_on": "2026-08-20",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

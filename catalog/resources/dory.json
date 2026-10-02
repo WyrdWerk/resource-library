@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "dory",
+  "title": "Dory",
+  "canonical_url": "https://augani.github.io/dory/",
+  "brief": "Docker & Linux containers native to Mac — free, open source, one shared VM for all containers, claiming ~4.7x less idle memory than per-container setups. The memory claim is the vendor's and unverified.",
+  "caveat": "The memory claim is the vendor's and unverified.",
+  "resource_type": "tool",
+  "topics": [
+    "devops",
+    "cloud-infrastructure"
+  ],
+  "use_cases": [
+    "deploy-applications"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "docker"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "2–8 Jul 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-07-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "how-to-build-3d-worlds-with-astra",
+  "title": "How to Build 3D Worlds with Astra",
+  "canonical_url": "https://somethingbig.ai/3d-worlds",
+  "brief": "A step-by-step guide to making photorealistic 3D worlds and games — reference photos, Blender assets, sub-agents, blind critics, Three.js vs Unreal Engine, and a starter prompt. The \"GPT-6 Astra\" framing is the site's own marketing.",
+  "caveat": null,
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents",
+    "app-development"
+  ],
+  "use_cases": [
+    "learn-technique",
+    "create-media"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "article"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-08",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

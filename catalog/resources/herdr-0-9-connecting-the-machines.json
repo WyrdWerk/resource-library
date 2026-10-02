@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "herdr-0-9-connecting-the-machines",
+  "title": "Herdr 0.9 — Connecting the machines",
+  "canonical_url": "https://herdr.dev/blog/connecting-the-machines/",
+  "brief": "The Herdr blog on 0.9, which brings local and remote machines into one TUI client, with Herdr Cloud coming next. Herdr's pitch: run agents anywhere, leave them running.",
+  "caveat": null,
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "learn-technique",
+    "manage-agents"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "article",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-09-08",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
