@@ -17,12 +17,8 @@ posts, duplicates of things already listed, and links with no usable description
 ## 2. Fix a bad link or a wrong brief
 
 Open a pull request **against `notes/`**, not against the generated files. The site
-(`index.html`), `data.json`, `weeks/`, `CHANGELOG.md`, and the API artifacts
-(`catalog/`, `api/v1/`) are regenerated — edits to them directly will be overwritten.
-
-If you're building tooling on the data rather than fixing content, use
-`catalog/resources/<id>.json` (canonical record) or `api/v1/` (static API, contract
-in `api/openapi.yaml`) as your source. Both are generated; don't edit them.
+(`index.html`), `data.json`, `weeks/`, and `CHANGELOG.md` are regenerated from the notes
+by `scripts/build.py` — edits to them directly will be overwritten.
 
 A notes entry looks like this:
 
@@ -41,10 +37,7 @@ Add it under the right `## Week: …` section (or a new one for the current week
 
 PRs to `scripts/build.py`, the styles in the generated page, or `scripts/linkcheck.py`
 are welcome. Keep the site dependency-free (single `index.html`, no build step) so it
-stays deployable on any static host. If you touch anything under `scripts/`,
-`catalog/`, `api/`, or `schemas/`, run `python3 -m pytest tests/ -q` — the
-build-freeze tests fail if generated site files drift, and the contract tests
-cover the API surface (see `docs/runbook.md`).
+stays deployable on any static host.
 
 ## Ground rules
 

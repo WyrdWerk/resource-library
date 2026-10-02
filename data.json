@@ -288,6 +288,100 @@
     "warning": ""
   },
   {
+    "title": "tester-army/e2e",
+    "week": "1–8 Oct 2026",
+    "url": "https://github.com/tester-army/e2e",
+    "sharer": "simply_roo",
+    "date": "2 Oct",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "tester-army/e2e is a next-generation end-to-end testing framework for web and mobile apps, per its GitHub description. It was a link-only share with no additional context, so treat its capabilities as unverified until you read the README.",
+    "id": "tester-army-e2e",
+    "warning": "It was a link-only share with no additional context, so treat its capabilities as unverified until you read the README."
+  },
+  {
+    "title": "The next Git platform on Cloudflare",
+    "week": "1–8 Oct 2026",
+    "url": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
+    "sharer": "thelaggingway",
+    "date": "1 Oct",
+    "categories": [
+      "article"
+    ],
+    "brief": "Cloudflare's blog announces a competition to build the next Git platform on Cloudflare, aimed at an AI-agent era of coding. Read it for the contest details and Cloudflare's take on where agent-driven development tooling is headed.",
+    "id": "the-next-git-platform-on-cloudflare",
+    "warning": ""
+  },
+  {
+    "title": "ccdeck",
+    "week": "1–8 Oct 2026",
+    "url": "https://ccdeck.dev/",
+    "sharer": "Tom",
+    "date": "1 Oct",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "ccdeck is a free, open-source local dashboard for Claude Code and Codex sessions — live session and tool-call views plus cost tracking. Useful if you run multiple agent sessions and want a single pane of glass.",
+    "id": "ccdeck",
+    "warning": ""
+  },
+  {
+    "title": "hpc-sandbox-benchmarks",
+    "week": "24 Sep–1 Oct 2026",
+    "url": "https://github.com/starslingdev/hpc-sandbox-benchmarks",
+    "sharer": "thelaggingway",
+    "date": "30 Sep",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "A benchmark suite comparing sandbox providers using real high-performance developer and CI/CD workloads, shared as \"new benchmarks in town\". Check it when choosing between sandbox VM offerings for agents — the results are the author's own and are not independently verified.",
+    "id": "hpc-sandbox-benchmarks",
+    "warning": "Check it when choosing between sandbox VM offerings for agents — the results are the author's own and are not independently verified."
+  },
+  {
+    "title": "PrimaLabs: MiMo-V2.6-Pro speed benchmark",
+    "week": "providers",
+    "url": "https://www.primalabs.ai/blog/mimo-v2-6-pro-faster-output",
+    "sharer": "Felix",
+    "date": "1 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "PrimaLabs benchmarks MiMo-V2.6-Pro on its serverless platform at 407 output tokens/sec (vs Xiaomi's 45 at 10k input tokens), priced at $0.43 in / $0.87 out per million tokens with $0.0036 cache. Speed and pricing figures come from PrimaLabs' post (measured by Artificial Analysis, 24 Sep 2026) and are not independently verified.",
+    "id": "primalabs-mimo-v2-6-pro-speed-benchmark",
+    "warning": "Speed and pricing figures come from PrimaLabs' post (measured by Artificial Analysis, 24 Sep 2026) and are not independently verified."
+  },
+  {
+    "title": "Bitdeer AI Cloud model pricing",
+    "week": "providers",
+    "url": "https://www.bitdeer.ai/en/pricing/ai-models",
+    "sharer": "Felix",
+    "date": "1 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Bitdeer AI Cloud's inference pricing page for hosted open-source and enterprise AI models, shared citing GLM-5.3-Flash at $0.075 in / $0.25 out per million tokens ($0.015 cached input) with ~200 tokens/sec. Pricing and throughput figures come from the vendor and are not independently verified.",
+    "id": "bitdeer-ai-cloud-model-pricing",
+    "warning": "Pricing and throughput figures come from the vendor and are not independently verified."
+  },
+  {
+    "title": "Artificial Analysis: GLM-5.3 Flash providers",
+    "week": "providers",
+    "url": "https://artificialanalysis.ai/models/glm-5-3-flash/providers",
+    "sharer": "Felix",
+    "date": "1 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Artificial Analysis' provider comparison page for GLM-5.3-Flash: which inference providers serve it, at what price and speed. Handy when shopping for the cheapest or fastest GLM-5.3-Flash endpoint.",
+    "id": "artificial-analysis-glm-5-3-flash-providers",
+    "warning": ""
+  },
+  {
     "title": "Prism Inference",
     "week": "providers",
     "url": "https://prisminference.com/pricing",

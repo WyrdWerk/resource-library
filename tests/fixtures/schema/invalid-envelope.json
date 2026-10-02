@@ -1,9 +1,0 @@
-{
-  "error": {
-    "code": "bogus",
-    "message": "x"
-  },
-  "meta": {
-    "api_version": "v1"
-  }
-}

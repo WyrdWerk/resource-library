@@ -1,12 +1,30 @@
 # Inference providers — curated from CheapInfra #providers
 
-82 curated providers, with briefs.
+85 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
 - Shared by: thelaggingway (25 Sep)
 - Categories: providers
 - Brief: A new PAYGO inference provider launching with GLM-5.3-Flash at $0.07/$0.20 per 1M input/output tokens with automatic prompt caching; drop-in OpenAI-compatible API, no top-up fees. Its published benchmarks claim the lowest latency and highest throughput versus Together, CoreWeave, Baseten, Fireworks, and Z.ai. Pricing and benchmark figures are vendor-reported and not independently verified.
+
+## PrimaLabs: MiMo-V2.6-Pro speed benchmark
+- URL: https://www.primalabs.ai/blog/mimo-v2-6-pro-faster-output
+- Shared by: Felix (1 Oct)
+- Categories: providers
+- Brief: PrimaLabs benchmarks MiMo-V2.6-Pro on its serverless platform at 407 output tokens/sec (vs Xiaomi's 45 at 10k input tokens), priced at $0.43 in / $0.87 out per million tokens with $0.0036 cache. Speed and pricing figures come from PrimaLabs' post (measured by Artificial Analysis, 24 Sep 2026) and are not independently verified.
+
+## Bitdeer AI Cloud model pricing
+- URL: https://www.bitdeer.ai/en/pricing/ai-models
+- Shared by: Felix (1 Oct)
+- Categories: providers
+- Brief: Bitdeer AI Cloud's inference pricing page for hosted open-source and enterprise AI models, shared citing GLM-5.3-Flash at $0.075 in / $0.25 out per million tokens ($0.015 cached input) with ~200 tokens/sec. Pricing and throughput figures come from the vendor and are not independently verified.
+
+## Artificial Analysis: GLM-5.3 Flash providers
+- URL: https://artificialanalysis.ai/models/glm-5-3-flash/providers
+- Shared by: Felix (1 Oct)
+- Categories: providers
+- Brief: Artificial Analysis' provider comparison page for GLM-5.3-Flash: which inference providers serve it, at what price and speed. Handy when shopping for the cheapest or fastest GLM-5.3-Flash endpoint.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
