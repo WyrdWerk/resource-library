@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "ccdeck",
+  "title": "ccdeck",
+  "canonical_url": "https://ccdeck.dev/",
+  "brief": "ccdeck is a free, open-source local dashboard for Claude Code and Codex sessions — live session and tool-call views plus cost tracking. Useful if you run multiple agent sessions and want a single pane of glass.",
+  "caveat": null,
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "developer-tools",
+    "observability"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "monitor-systems"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-01",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

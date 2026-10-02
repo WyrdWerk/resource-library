@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "bitdeer-ai-cloud-model-pricing",
+  "title": "Bitdeer AI Cloud model pricing",
+  "canonical_url": "https://www.bitdeer.ai/en/pricing/ai-models",
+  "brief": "Bitdeer AI Cloud's inference pricing page for hosted open-source and enterprise AI models, shared citing GLM-5.3-Flash at $0.075 in / $0.25 out per million tokens ($0.015 cached input) with ~200 tokens/sec. Pricing and throughput figures come from the vendor and are not independently verified.",
+  "caveat": "Pricing and throughput figures come from the vendor and are not independently verified.",
+  "resource_type": "documentation",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Felix"
+  },
+  "shared_on": "2026-10-01",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

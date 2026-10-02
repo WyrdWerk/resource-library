@@ -1,5 +1,5 @@
 {
-  "rows": 285,
+  "rows": 291,
   "all_rows_equal": true,
   "mismatched_ids": [],
   "note": "derived via scripts.api_build.legacy_row vs data.json written by scripts/build.py"

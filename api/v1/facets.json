@@ -1,54 +1,54 @@
 {
   "resource_type": {
-    "repository": 77,
+    "repository": 78,
     "provider": 72,
-    "article-guide": 44,
-    "tool": 30,
+    "article-guide": 47,
+    "tool": 31,
     "directory-gallery": 23,
     "library-framework": 19,
     "service-platform": 8,
     "dataset": 7,
-    "documentation": 4,
+    "documentation": 5,
     "template-starter": 1,
     "other": 0
   },
   "topic": {
-    "ai-agents": 121,
-    "inference": 104,
-    "developer-tools": 56,
+    "ai-agents": 123,
+    "inference": 107,
+    "developer-tools": 59,
     "design": 34,
     "frontend": 29,
     "productivity": 15,
-    "cloud-infrastructure": 12,
+    "cloud-infrastructure": 13,
     "security": 7,
+    "testing": 6,
     "backend": 5,
     "self-hosting": 5,
-    "testing": 5,
     "app-development": 4,
     "devops": 4,
+    "observability": 3,
     "databases": 2,
-    "observability": 2,
     "web-development": 1
   },
   "use_case": {
-    "run-inference": 88,
-    "manage-agents": 69,
-    "learn-technique": 56,
+    "run-inference": 89,
+    "manage-agents": 70,
+    "learn-technique": 59,
     "build-interfaces": 21,
     "automate-workflows": 18,
     "discover-design-references": 18,
     "generate-code": 18,
     "create-media": 13,
-    "test-software": 12,
+    "test-software": 13,
     "search-code": 7,
-    "monitor-systems": 3,
+    "monitor-systems": 4,
     "provision-infrastructure": 3,
     "deploy-applications": 2,
     "host-models": 2,
     "operate-databases": 2
   },
   "interface": {
-    "web": 90,
+    "web": 94,
     "api": 87,
     "cli": 35,
     "mcp": 12,
@@ -83,11 +83,11 @@
     "zed": 0
   },
   "channel": {
-    "share-tech": 203,
-    "providers": 82
+    "share-tech": 206,
+    "providers": 85
   },
   "open_source": {
-    "true": 22,
+    "true": 23,
     "false": 0
   }
 }

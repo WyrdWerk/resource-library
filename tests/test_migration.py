@@ -14,7 +14,7 @@ import pytest
 
 ROOT = Path(__file__).resolve().parent.parent
 CAT = ROOT / "catalog" / "resources"
-PROV_START, PROV_END = date(2026, 7, 20), date(2026, 9, 25)
+PROV_START, PROV_END = date(2026, 7, 20), date(2026, 12, 31)
 
 
 @pytest.fixture(scope="module")
@@ -33,7 +33,7 @@ def records(rows):
 
 def test_catalog_covers_every_legacy_row(rows, records):
     ids = [r["id"] for r in rows]
-    assert len(records) == len(rows) == 285
+    assert len(records) == len(rows) == 291
     assert sorted(records) == sorted(ids)
 
 
@@ -80,7 +80,7 @@ def test_exceptions_file_is_empty():
 
 def test_migration_report_claims_hold():
     rep = json.loads((ROOT / "catalog" / "_migration_report.json").read_text(encoding="utf-8"))
-    assert rep["migrated"] == rep["source_rows"] == 285
+    assert rep["migrated"] == rep["source_rows"] == 291
     assert rep["order_preserved"] is True
     assert rep["all_fields_equal"] is True
     assert all(r["all_equal"] for r in rep["rows"])
