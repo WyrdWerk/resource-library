@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "hyperiux",
+  "title": "hyperiux",
+  "canonical_url": "https://vault.hyperiux.com",
+  "brief": "Hyperiux Vault is a source-first library of interaction effects for React and Next.js — scroll systems, cursor effects, text reveals, page transitions and WebGL scenes that install as editable code in your own repo via the Hyperiux CLI. The free core includes 50+ effects; Pro unlocks all 150+ with new effects added regularly, and code you have installed stays yours even if you cancel.",
+  "caveat": null,
+  "resource_type": "library-framework",
+  "topics": [
+    "frontend"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "web",
+    "cli"
+  ],
+  "technologies": [
+    "react",
+    "next-js"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "obsidian-ui",
+  "title": "obsidian ui",
+  "canonical_url": "https://obsidianui.dev",
+  "brief": "ObsidianUI is a React and Tailwind CSS component library with an emphasis on motion — featured components and interactive effects you can preview, read the source of, and try directly in your project. From @athrix_codes; a customizable starting point for interfaces where the details matter.",
+  "caveat": null,
+  "resource_type": "library-framework",
+  "topics": [
+    "frontend"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "react",
+    "tailwind-css"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
