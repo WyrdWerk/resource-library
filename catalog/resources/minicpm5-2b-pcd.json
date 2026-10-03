@@ -5,7 +5,7 @@
   "canonical_url": "https://huggingface.co/monotykamary/MiniCPM5-2B-PCD",
   "brief": "MiniCPM5 2B PCD weights on Hugging Face — the same model family as the 16 Sept in-browser Pi announcement. The model behind that WebGPU coding-agent demo.",
   "caveat": null,
-  "details": null,
+  "details": "An experimental inference package (monotykamary) applying Parallel Constrained Decoding (PCD) to the unchanged openbmb/MiniCPM5-2B weights — no training, RL, LoRA, or weight modification — for fast finite-choice classification and structured extraction on a 2B model. Token mode branches one question per field and projects the LM head only onto allowed token rows; sequence mode scores complete serialized candidates by normalized log-likelihood. Measured on one L40S in FP32: token PCD averaged 85.61ms versus 694.99ms for autoregressive JSON (8.1x faster), with 88.9% field accuracy versus 94.4% — and 100% schema-valid objects in both. The card is unusually honest about limits: accuracy equivalence is not established, returned probabilities are uncalibrated, sequence mode keeps length bias, and only closed flat objects (required fields, enums/booleans, no nesting or cross-field constraints) are supported. Includes a Modal scale-to-zero deployment path and a conservative FP32 configuration. Code MIT; weights Apache-2.0 (OpenBMB).",
   "resource_type": "dataset",
   "topics": [
     "inference"

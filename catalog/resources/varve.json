@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/monotykamary/varve",
   "brief": "An experimental Rust time-series database with DuckDB SQL and tiered Parquet storage — \"time settles into layers.\" Early-stage but interesting for anyone into time-series storage design.",
   "caveat": null,
-  "details": null,
+  "details": "Varve (monotykamary) is an experimental local-first, tiered time-series database in Rust — \"time settles into layers.\" The design makes data aging a first-class concern without inheriting a full PostgreSQL server: Rust owns the write path, partitions, durability, and policy; Arrow/Parquet owns the columnar representation; DuckDB (v2 alpha) owns SQL execution. Data path: validated measurements → local WAL with fsync → hot rows and incremental rollups → sorted ZSTD Parquet segments → async publication to an S3-compatible object store. Features include append-only numeric time-series tables, stable hash shards with event-time windows, continuous count/sum/min/max/avg and OHLC rollups with retained-raw backfill, lifecycle jobs (flush, compaction, archive/eviction, expiration, GC), and Rust + TypeScript clients plus a JSON CLI, HTTP/WebSocket service, and opt-in PostgreSQL-wire compatibility. The README is explicit about boundaries: experimental v0.1, single-node only, not a production claim or distributed database. Apache-2.0.",
   "resource_type": "repository",
   "topics": [
     "databases",

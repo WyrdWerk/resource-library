@@ -5,7 +5,7 @@
   "canonical_url": "https://x.com/j_dekoninck/status/2100180792601420138/photo/1",
   "brief": "Jasper Dekoninck releasing new versions of the BrokenArXiv and ArXivMath benchmarks. Announcement only; useful pointer for anyone tracking eval benchmarks.",
   "caveat": "Announcement only; useful pointer for anyone tracking eval benchmarks.",
-  "details": null,
+  "details": "An X announcement from Jasper Dekoninck releasing new versions of the BrokenArXiv and ArXivMath benchmarks — eval benchmarks for mathematical reasoning, where \"broken\" arXiv-style problems test whether models can work through real mathematical content rather than memorized answers. The link is the announcement itself (a photo post), not the benchmark documentation, so it serves as a pointer for anyone tracking eval benchmarks rather than a usable resource on its own. (x.com is not directly fetchable from this environment; the breakdown reflects the announcement's subject as curated.)",
   "resource_type": "article-guide",
   "topics": [
     "testing"

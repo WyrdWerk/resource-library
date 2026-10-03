@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/okf-memory/okf-agent-memory",
   "brief": "Git-native persistent memory for AI coding agents — implements Google OKF v0.2 with sub-300µs in-memory BM25 search and an embedded MCP server. Claims to slash token bloat by 80%; that figure is the repo's and unverified.",
   "caveat": "Claims to slash token bloat by 80%; that figure is the repo's and unverified.",
-  "details": null,
+  "details": "OKF Agent Memory (okf-memory/okf-agent-memory, 746 stars) is Git-native persistent memory for AI coding agents, implementing Google's Open Knowledge Format v0.2 in pure Go with zero dependencies. Its core idea is the Dual-Memory Agent Architecture: a tiny normative push layer (a ~100-150 token AGENTS.md codex in a compact \"Agent Action Grammar\") plus a semantic pull layer (an OKF knowledge bundle that costs 0 tokens at baseline, queried on demand). The pitch against the status quo: it avoids both the \"prompt monolith\" (stuffing everything into AGENTS.md) and the \"RAG blindspot\" (rules in vector DBs that agents never search for), claiming an 80% token reduction. Technical highlights: sub-300µs in-memory BM25 search, ~4ms graph validation, 4-tier memory scopes (project → vendor → user → system) with shadowing, provenance and trust tiers, search-before-write convention, code-to-knowledge binding, an embedded MCP server, and a registry for pulling vendor bundles. MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

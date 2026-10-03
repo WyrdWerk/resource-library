@@ -5,7 +5,7 @@
   "canonical_url": "https://usehax.dev/",
   "brief": "A minimalist coding agent that runs natively in the terminal. The \"minimalist\" claim comes from the sharer's one-line description and is unverified.",
   "caveat": "The \"minimalist\" claim comes from the sharer's one-line description and is unverified.",
-  "details": null,
+  "details": "hax (usehax.dev, OleksandrChekhovskyi/hax) — a minimalist, terminal-native coding agent: a single native C binary with a small dependency set that starts instantly and uses only a few MB of memory — leaving more RAM for local models. Local models are first-class (`hax --provider llama.cpp` auto-discovers the model, no provider config block needed); broad provider support otherwise (OpenAI + compatible, Anthropic + compatible, Codex via ChatGPT subscription, OpenRouter, OpenCode Zen/Go…). It respects your terminal: streaming Markdown and live tool output reflowed, only the current line redrawn, native scrollback preserved, never a full-screen takeover. Inspectable via a transcript view (Ctrl+T) and optional wire-protocol traces. Well-behaved Unix tooling: XDG paths, clean stdout in `-p` one-shot mode with resume hints on stderr, plain-text config/session files, composition via subprocesses instead of plugins — and a philosophy doc explaining each deliberate omission (no MCP marketplaces, plugin runtime, IDE panels, or per-command permission prompts). Homebrew tap, AUR, static Linux binaries, builds on Linux/macOS/FreeBSD/OpenBSD (Windows via WSL).",
   "resource_type": "tool",
   "topics": [
     "ai-agents",

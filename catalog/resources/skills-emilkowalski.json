@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/emilkowalski/skills",
   "brief": "A collection of \"skills\" for designers and engineers from Emil Kowalski (of Vercel/animations fame). Likely agent-skill style playbooks; worth browsing.",
   "caveat": null,
-  "details": null,
+  "details": "emilkowalski/skills (~43k stars) — \"Skills for Designers and Engineers\" from Emil Kowalski (Vercel/Linear, animation fame), a set of agent skills for building better interfaces. The premise: \"agents don't have great taste\" — they pick ease-in for enter animations when it should be ease-out, solid borders where a semi-transparent shadow belongs — and these skills list the little mistakes agents make and how to fix them, a shortcut to standing out \"in a sea of slop.\" Skills include: emil-design-eng (the main one, mostly animation plus design advice), animate (build an animation from scratch with correct curves/durations/properties), animate-expo (React Native gestures/sheets/haptics, off the JS thread), review-animations (strict audit by his rules), improve-animations (prioritized self-contained plans any agent can execute), find-animation-opportunities, animation-vocabulary, apple-design (WWDC principles translated for the web), write-swift, pick-ui-library, prototype, mobile-native, break-ui (worst-case data testing), and ask-sonner (his toast library). Install: `npx skills@latest add emilkowalski/skills`. MIT.",
   "resource_type": "directory-gallery",
   "topics": [
     "ai-agents",

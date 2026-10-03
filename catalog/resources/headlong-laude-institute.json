@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/laude-institute/headlong",
   "brief": "An open-source agent microharness with persistent agency and recursive LLMs — \"of bash, by bash\". Minimal by design; good for experimenting with agent loops without a heavy framework.",
   "caveat": null,
-  "details": null,
+  "details": "Headlong (laude-institute/headlong, 1.2k stars) — an open-source agent microharness from the Laude Institute whose core is ~11K lines of Bash: \"of bash, by bash, for bash; it's shells all the way down.\" Its defining idea is persistent agency — the agent never sleeps and keeps thinking in a self-guided loop between external interactions; messages from humans land in its thought stream as one more observation, and it decides whether and when to respond. One agent is built to be shared by a whole team over Slack, Telegram, and chat, all in a single timeline. At the heart is `shellm`, a Bash implementation of a recursive language model: the agent thinks by writing shell commands, running them, and reading the output. Tooling philosophy is pure Unix — small composable executables (`shellm`, `traj`, `llm`, `context`, `mem`, `skills`), trajectories as append-only jsonl DAGs with fork/merge, tiered context compaction at exponentially decaying resolution, subagents that see ancestors' trajectories, Docker by default, and self-improvement by fork-test-merge. One-line install (`curl https://headlong.ai/install.sh | bash`); alpha research software, run it sandboxed with a spend-capped key (~$1-2/hr thinking). Apache-2.0.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

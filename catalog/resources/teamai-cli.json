@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/Tencent/teamai-cli",
   "brief": "Tencent's \"Make Every Team AI Native\" CLI. The description is thin, but a Tencent-backed team-AI CLI is worth a look.",
   "caveat": null,
-  "details": null,
+  "details": "TeamAI (Tencent/teamai-cli, 5.1k stars) is \"the shared foundation for how your team works, learns, and improves with AI\" — it turns individual AI capabilities into shared team capabilities across agents, machines, and members. Everything is built on Git: an admin creates a shared-experience repo, members run `teamai init <repo>` (project or user scope), and every AI session then auto-pulls the latest skills, rules, docs, env, hooks, MCP servers, and models published by admins — no manual sync. Three layers: Team Execution (every agent works the team's way), Team Context beta (learnings, codebase graph, teamwiki), and Team Improvement beta (usage, sessions, dashboard). Broad agent coverage: full feature support for Claude Code, Codex, Cursor, Copilot CLI, and Qoder, with capability-limited support for OpenCode, Pi, OpenClaw, and others. Setup is one line to your AI tool or `npm install -g teamai-cli`. MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/ever-co/ever-gauzy",
   "brief": "Ever Gauzy — an open business management platform covering ERP, CRM, HRM, ATS and project management (gauzy.co). A full open-source suite if you ever need to stand up business tooling.",
   "caveat": null,
-  "details": null,
+  "details": "Ever Gauzy (ever-co/ever-gauzy, 8.2k stars, 28k commits since 2019) is an open business-management platform covering ERP, CRM, HRM, applicant tracking, project management, and employee time/activity tracking — aimed at collaborative, on-demand, and sharing-economy businesses. Feature breadth is the point: dashboards, time tracking with screenshots, employee onboarding, sales pipelines, proposals, accounting/invoicing, payroll, inventory, multi-organization and multi-currency support, and integrations like Upwork. Ships as headless APIs plus web UI, desktop apps (Windows/Mac/Linux), and a desktop timer app; runnable via Docker Compose, Kubernetes, or one-click deployers, with a live demo and an alpha SaaS. The same org recently released Ever Works, an open agentic runtime. License note: the community edition is under a Gauzy-specific license with AGPL-3.0 roots — check LICENSES.md before building on it commercially.",
   "resource_type": "repository",
   "topics": [
     "self-hosting",

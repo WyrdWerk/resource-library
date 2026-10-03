@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/microsoft/ArgusAgent",
   "brief": "Microsoft's ArgusAgent — a persistent, reviewed multi-agent runtime for long-horizon research and engineering. Directly relevant to anyone running agents on long tasks.",
   "caveat": null,
-  "details": null,
+  "details": "ArgusAgent (microsoft/ArgusAgent, 135 stars) is a persistent, reviewed multi-agent runtime for long-horizon research and engineering — agent work that can plan, execute, verify, pause, and continue beyond a single model turn. Its core idea is the Driver-Harness split: the Driver's seat (what to do next, whether the last result was any good, when to stop) is divided across four roles that may not do each other's jobs — Manager (stage transitions), Planner (next task + required evidence), Engineer (implementation), and Reviewer (read-only verdict). Because the worker can't grade its own work, nobody has to watch it: across 27 campaigns and 1,548 hours it needed a human research decision about once every 310 hours at 95–99% duty cycle. Improvements compound without retraining via scoped Skills and source-linked Wiki findings, and new domains ship as verticals (24 included). Native backends span Copilot CLI, Pi, Codex, Claude Code, Cursor, OpenCode, Grok Build, Qoder, and DeepSeek; interfaces include a Windows desktop app, terminal cockpit, web UI, and phone. Credentials, payment, irreversible actions, and publication always stop for a human. Technical report on arXiv (2608.05144). MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

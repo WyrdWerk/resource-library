@@ -5,7 +5,7 @@
   "canonical_url": "https://x.com/sebastienlorber/status/2099883816718323949",
   "brief": "Demo of a universal syntax highlighter built on the new OpaqueRange web API (Chrome 152+, 2026) — syntax-highlighting different program fragments efficiently. Worth a look for anyone building code-rendering UI.",
   "caveat": null,
-  "details": null,
+  "details": "A demo from Sébastien Lorber of a universal syntax highlighter built on the OpaqueRange web API (new in Chrome 152, 2026) — a way to syntax-highlight different program fragments efficiently by styling ranges the browser treats opaquely, avoiding the DOM churn of traditional token-span highlighters. Worth a look for anyone building code-rendering UI where highlighting performance on large files matters. The link is the demo announcement, not a library. (x.com is not directly fetchable from this environment; the breakdown reflects the announcement's subject as curated.)",
   "resource_type": "article-guide",
   "topics": [
     "frontend",

@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/Jakubantalik/transitions.dev",
   "brief": "A collection of the most essential transitions for web apps, plus a skill for agents and a Refine tool. Drop-in motion craft for web projects and the agents building them.",
   "caveat": null,
-  "details": null,
+  "details": "Transitions.dev (Jakubantalik, 4.5k stars) is an interactive collection of reusable CSS transitions — 43+ crafted motion patterns, each demonstrated on a card with a copy-ready, portable CSS snippet (semantic custom properties, `t-*` namespaced classes, and a `prefers-reduced-motion` guard, so snippets paste into any project without demo baggage). Three ways to consume: the CLI (`npx transitions-dev add card-resize`, free, no account; Pro transitions unlock via passwordless browser sign-in), an agent skill (`npx skills add Jakubantalik/transitions.dev`) that lets Cursor/Claude Code/Codex apply the transitions directly — generated from index.html so snippets always match the showcase — and Refine, a live agent-driven companion that drops a timeline panel onto your running app and asks your coding agent to align its motion to the library's tokens, with reversible overrides. License: use transitions and skills in unlimited personal/commercial projects; don't redistribute the library itself as a competing kit; tooling is MIT.",
   "resource_type": "library-framework",
   "topics": [
     "frontend",

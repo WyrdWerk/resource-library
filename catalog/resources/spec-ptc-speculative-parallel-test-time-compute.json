@@ -5,7 +5,7 @@
   "canonical_url": "https://alexzhang13.github.io/blog/2026/spec-ptc/",
   "brief": "A write-up of Spec-PTC, a speculative parallel test-time compute framework for long-horizon agents. Interesting if you follow inference-scaling tricks for agentic workloads.",
   "caveat": null,
-  "details": null,
+  "details": "Speculative Programmatic Tool Calling (alexzhang13.github.io) — a 2026 blog post by Alex L. Zhang (of RLM fame) proposing a latency trick for code-action agent harnesses: speculate and pre-launch tool calls from partially generated REPL calls while tokens are still streaming, rather than waiting for the whole generation to finish. The high-level design: imported tool calls get a hook so a \"shadow REPL\" (a deepcopy fork of the main code REPL, with unsafe functions like `open` marked as blocked) parses the partial output and launches speculatable calls asynchronously; when the real REPL later invokes them, they resolve from a promise store. Handles literals immediately, safely-computable dependencies after evaluation, and tracks unique instances of identical non-deterministic calls. Reported gains on RLMs: generally 1-1.2x on OOLONG benchmarks (Qwen3-30B-A3B, 8xH100 vLLM). The post surveys related work (Conveyor, Speculative Interaction Agents, AsyncFC) and links the full reference implementation (github.com/alexzhang13/spec-ptc). Worth reading for anyone building code-first agent harnesses.",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

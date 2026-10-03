@@ -5,7 +5,7 @@
   "canonical_url": "https://gps-01.dmytro.fyi/",
   "brief": "A tiny interactive explainer of how your phone finds itself — satellites, signal timing, and trilateration. The good kind of technical storytelling.",
   "caveat": null,
-  "details": null,
+  "details": "GPS-01 (gps-01.dmytro.fyi, by Dmytro Kondakov) — a tiny, playful interactive explainer of how your phone finds itself: satellites orbiting 20,200 km above Earth broadcasting nanosecond-accurate timestamps at light speed. The interface is the whole demo — click or tap anywhere on the globe to place a receiver (\"that's you, holding a phone\") and watch the telemetry panel (position, sim offset, tracking, FIX/3, FIX/4, CLOCK/4, geometry) work through trilateration live. The good kind of technical storytelling: one screen, one idea, satellites plus signal timing plus a bit of math. Report issues to the author via DM.",
   "resource_type": "article-guide",
   "topics": [
     "frontend"

@@ -5,7 +5,7 @@
   "canonical_url": "https://rustfoundation.org/rust-foundation-trusted-training/",
   "brief": "The Rust Foundation's quality standard for Rust training. Reference material if you're evaluating Rust courses or building one.",
   "caveat": null,
-  "details": null,
+  "details": "Rust Foundation Trusted Training (RFTT, rustfoundation.org) — the Rust Foundation's accreditation program: a quality standard recognizing organizations whose Rust training meets its bar for technical accuracy, instructor quality, and learner experience. Accreditation ($3,000/year + $500 one-time application fee, two-year period) requires Rust Foundation membership, 2+ years in business, 1+ year offering Rust training, and review across five areas (credibility/ethics, content quality, instructor competence, transparency/accessibility, evaluation/feedback) by a committee of active training professionals. Five founding providers accredited June 2026: Doulos, Ferrous Systems, Integer 32, Mainmatter, and Wyliodrin. Benefits include the official designation, public listing on rustfoundation.org, referral when organizations ask the Foundation for training, amplification, RustConf perks, and coordinated sales. Note: this accredits organizations and their training, not individual developers — it's not a certification for individuals.",
   "resource_type": "article-guide",
   "topics": [
     "developer-tools"

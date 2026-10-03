@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/eclipse-theia/theia",
   "brief": "Eclipse Theia — a cloud and desktop IDE framework implemented in TypeScript. The open foundation behind several well-known IDE products.",
   "caveat": null,
-  "details": null,
+  "details": "Eclipse Theia (eclipse-theia/theia, 21.7k stars) — a cloud and desktop IDE framework in TypeScript for building full-fledged multi-language IDEs and tools with web technologies. The framework behind many custom IDEs: highly flexible architecture, VS Code extension protocol support, browser-based or Electron desktop targets, under vendor-neutral Eclipse Foundation governance. The repo is the platform source; adopters build their own IDE products on it (examples, extension mechanisms, and VS Code-extension compatibility reports in the docs). Every release now ships an SBOM to the Eclipse Foundation registry. EPL-2.0 (with GPL-2.0-with-classpath-exception as secondary license).",
   "resource_type": "library-framework",
   "topics": [
     "developer-tools"

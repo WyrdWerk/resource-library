@@ -5,7 +5,7 @@
   "canonical_url": "https://www.pdfcn.dev/",
   "brief": "A collection of beautifully designed, accessible and customizable PDF components built on Takumi. Handy if you ever need to render polished PDFs from a web stack.",
   "caveat": null,
-  "details": null,
+  "details": "pdfcn (pdfcn.dev) — \"beautiful PDFs, made simple.\" Ready-to-use, customizable PDF components for React (e.g. corporate-invoice templates), built on Takumi and Forme and distributed via shadcn (`pnpm dlx shadcn add @pdfcn/forme/alert`). The pitch is bringing the shadcn-style copy-paste component experience to PDF generation in React apps — invoices, reports, and documents that look designed rather than default. Includes a theme builder for customization.",
   "resource_type": "library-framework",
   "topics": [
     "frontend",

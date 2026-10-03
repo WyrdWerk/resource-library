@@ -5,7 +5,7 @@
   "canonical_url": "https://www.darkbloom.dev/",
   "brief": "An MCP (Model Context Protocol) gateway that advertises an accuracy guarantee — unusual positioning in the MCP tooling space. Claims unverified; interesting if you run MCP servers in production.",
   "caveat": "Claims unverified; interesting if you run MCP servers in production.",
-  "details": null,
+  "details": "Darkbloom (darkbloom.dev, by Eigen Labs) — \"the only MCP gateway with an accuracy guarantee,\" an unusual positioning in the MCP tooling space that makes it worth a look if you run MCP servers in production. The underlying network is a decentralized compute grid of hardware-attested Apple Silicon Macs (the homepage quotes ~1,231 Macs, 287B tokens generated, 72M requests): each request is end-to-end encrypted on your device, decrypted only inside a hardened process on an attested node, and the response is signed by the specific machine that produced it, so the node operator can never see your prompts. The API is OpenAI-compatible (api.darkbloom.dev/v1, cursor SDK examples exist); community integrations include Shroud TEE proxy routing. First response per session can be slow (15-60s warm-up) per community notes; product claims beyond the public docs are unverified.",
   "resource_type": "tool",
   "topics": [
     "ai-agents"

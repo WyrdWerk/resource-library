@@ -5,7 +5,7 @@
   "canonical_url": "https://www.ui-skills.com/",
   "brief": "A collection of design-engineering skills covering accessibility, motion and frontend craft. Pairs well with the transitions.dev repo above for leveling up UI output.",
   "caveat": null,
-  "details": null,
+  "details": "UI Skills (ui-skills.com) is a curated catalog of design-engineering agent skills, installable via CLI (`npx ui-skills`) or MCP. The catalog routes by topic, stack, and intent: ibelick's router skill picks the smallest useful set; then specialists like anthropics' anti-generic frontend interfaces, emilkowalski's motion audit, shadcn's read-only codebase audit, jakubkrehel's UI polish principles, raphaelsalaja's Disney 12-principles motion, antfu's guideline-compliance review, and pbakaus's flagship production-grade craft skill. The pattern is advisor-style: survey the codebase read-only, then produce prioritized, self-contained implementation plans for another agent to execute. Also hosts a design/design-engineering jobs board. Useful when you want your agent's UI output to stop looking like default AI slop.",
   "resource_type": "directory-gallery",
   "topics": [
     "frontend",

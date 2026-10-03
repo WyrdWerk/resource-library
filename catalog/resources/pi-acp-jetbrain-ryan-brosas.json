@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/ryan-brosas/pi-acp-jetbrain",
   "brief": "A JetBrains IntelliJ ACP (Agent Client Protocol) adapter for the pi coding agent. Niche but exactly what you need if you want pi inside IntelliJ.",
   "caveat": null,
-  "details": null,
+  "details": "pi-acp-jetbrain (ryan-brosas) — an Agent Client Protocol (ACP) adapter that runs the pi coding agent inside JetBrains IntelliJ (IntelliJ is the primary host; other ACP clients get partial coverage). Architecture: the adapter is an ACP server over stdio; each session spawns one `pi --mode rpc` subprocess and translates messages — assistant text streams as `agent_message_chunk`, reasoning as `agent_thought_chunk`, tool runs as `tool_call`/`tool_call_update`, slash commands and pi skills surface as ACP commands (`/skill:<name>`). The JetBrains bridge is the standout: IntelliJ's built-in MCP server descriptor is exposed to pi as `ide_<server>_<tool>` extension tools, guarded by two allowlists, with three coding modes (`off`/`prefer`/`required`) where mutations can flow through IntelliJ's own apply_patch/rename/reformat — plus a per-turn inspection gate that flags files changed without an IDE mutation event. Install: `pi install npm:pi-acp-jetbrain` (or `npm install -g pi-acp-jetbrain`), register in `~/.jetbrains/acp.json`; npm releases carry signed provenance. MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

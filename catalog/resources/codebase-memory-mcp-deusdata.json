@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/DeusData/codebase-memory-mcp",
   "brief": "Persistent semantic memory for coding agents — an MCP server that indexes your codebase. Useful when you have many repos and context windows aren't enough.",
   "caveat": null,
-  "details": null,
+  "details": "codebase-memory-mcp (DeusData, ~45.7k stars) — a high-performance, pure-C code-intelligence MCP server that indexes codebases into a persistent knowledge graph: claims average repos in milliseconds, the Linux kernel (28M LOC, 75k files) in 3 minutes, sub-ms structural queries, and up to 120x fewer tokens than file-by-file exploration (83% answer quality, 10x fewer tokens, 2.1x fewer tool calls across 31 real repos in the associated arXiv preprint 2603.27277). Tree-sitter AST analysis across 162 vendored languages, enhanced with Hybrid LSP semantic resolution for 12 major languages; 17 MCP tools (search, trace, architecture, impact analysis, dead-code detection, Cypher queries, ADR management); a built-in 3D graph visualization UI served from the binary; infrastructure-as-code indexing (Dockerfiles, K8s manifests as graph nodes); single static binary, zero dependencies, no API key, 45 supported client surfaces. Security posture is explicit: full source open, per-release VirusTotal scans, SHA-256-pinned artifacts, 100% local processing, SECURITY.md with a known Defender false-positive disclosure. MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

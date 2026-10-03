@@ -5,7 +5,7 @@
   "canonical_url": "https://dbxio.com/en",
   "brief": "DBX — a 20 MB tool for managing 90+ databases. Remarkably small footprint for a universal database client.",
   "caveat": null,
-  "details": null,
+  "details": "DBX (dbxio.com, 24k+ GitHub stars) — \"25MB to manage 100+ databases\": a fully open-source database client pitching itself as the lightweight answer to Navicat's pricing and DBeaver's heaviness. One ~25MB Tauri desktop installer (no embedded Chromium) covering 100+ engines — SQL, NoSQL, vector, time-series, embedded, message queues — with a CodeMirror 6 SQL editor (metadata-aware completion), virtualized data grids, schema navigation, schema diff and cross-engine data transfer. AI-era touches: a built-in AI SQL assistant (write, explain, optimize, fix) and a native MCP server so Claude Code and Cursor can query your database directly. Also: SSH tunnels, destructive-action guards, ER diagrams, field lineage, and self-hosted web deployment from the same project. Reviewers consistently praise the speed and the \"everything it has is done well\" feel. Desktop, Docker, and CLI modes.",
   "resource_type": "tool",
   "topics": [
     "databases",

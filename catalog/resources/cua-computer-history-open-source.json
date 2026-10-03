@@ -5,7 +5,7 @@
   "canonical_url": "https://x.com/trycua/status/2089770780053643397?s=46&t=vWq9H9xzeo6jZ1ywa-gPvg",
   "brief": "Cua's announcement of the first open-source \"Computer History\", in early preview. Announcement-only; interesting for computer-use agent research.",
   "caveat": null,
-  "details": null,
+  "details": "Cua Computer History (announced via @trycua on X) — \"the first open-source Computer History,\" in early preview for Cua Driver. It gives users an encrypted, device-local record of what Cua Driver did: which actions ran, which applications were targeted, which actions were confirmed/partial/refused/unverifiable, when history was enabled/paused/resumed/deleted. The privacy boundary is the headline feature and is permanent: no screenshots, no raw keystrokes or typed text, no clipboard contents, no raw tool arguments/results, no accessibility trees, no file paths, no free-form diagnostics. Preview 0 is action-history-first — it records only Cua-mediated session lifecycle events after you opt in (`cua-driver history enable`), never ambient desktop activity; 7-day retention, 100 MiB encrypted-store quota. Agents get two permission-gated read-only tools (`history_status`, `history_query`), with an access-audit event recorded; they cannot enable, pause, delete, export, or obtain the key. Docs live in trycua/cua under libs/cua-driver/docs/ (architecture, preview guide, agent-integration RFC). (x.com is not directly fetchable from this environment; the product detail is corroborated from the public repo docs.)",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents"

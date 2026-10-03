@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/justrach/codedb",
   "brief": "A Zig code-intelligence server and MCP toolset for AI agents, recommended firsthand by the sharer. Native-speed code intelligence as agent context is a strong pitch.",
   "caveat": null,
-  "details": null,
+  "details": "codedb (justrach, ~1.4k stars) — a Zig code-intelligence server and MCP toolset for AI agents: \"big repo, little map.\" It draws the map your agent needs: file trees with symbol counts, outlines, symbol definitions and callers, call paths A→B, trigram-accelerated search, dependency graphs, portable snapshots, and remote GitHub repo queries via a DeepWiki-style remote MCP. Seventeen MCP tools by default (`codedb_context`, `codedb_explain`, `codedb_callpath`, `codedb_search`, `codedb_deps`…); a context engine, not an editor — it has no edit tool, you use your client's native editing. Installers auto-register it in Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Devin, Copilot CLI, OpenCode and more; npm ships as `codedeebee` (name squat) with SHA256-verified native binaries. Parsers for Zig, C/C++, Python, TS/JS, Rust, Go, PHP, Ruby, HCL, R, Dart, OCaml. Structural search runs locally; the default hybrid retrieval uses hosted embeddings, with `semantic=local` for on-device-only. Alpha; BSD-3-Clause. There's also a companion desktop app (Harness) from the same org.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

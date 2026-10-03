@@ -5,7 +5,7 @@
   "canonical_url": "https://paper.design/",
   "brief": "Paper — \"design, share, ship.\" A design tool baanish was scouting; no verdict from the channel yet. (Rykuuun's pricing-page share from 8 Sep was dropped as context-free.)",
   "caveat": null,
-  "details": null,
+  "details": "Paper (paper.design) — \"the connected canvas for teams shipping with agents\": a design platform that connects teams, agents, code, and data on a single HTML/CSS-based design space, so design exports as code with nothing lost in translation. The pitch is the continuous loop: agents sync design tokens, styles, and components between codebase and canvas (one source of truth), pull real content and data from any app/CMS/database instead of lorem ipsum, and handle boilerplate (responsive variants, consistency checks) while humans keep the creative calls. Paper Desktop connects the canvas to all your apps, agents, and repos via MCP; agents can read and write on the canvas. Used in production by designers at companies like Ramp, Vercel, Perplexity, and Lovable. Recently raised a $34M Series A from Accel and ICONIQ.",
   "resource_type": "tool",
   "topics": [
     "design"

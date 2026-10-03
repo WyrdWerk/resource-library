@@ -5,7 +5,7 @@
   "canonical_url": "https://x.com/o_kwasniewski/status/2098804833880817728",
   "brief": "Oskar's announcement of \"e2e\", a new agent-oriented testing framework — he ported React Native Pager View's test suite from Maestro to it. Announcement only; the framework itself is still being built.",
   "caveat": "Announcement only; the framework itself is still being built.",
-  "details": null,
+  "details": "An X announcement from Oskar Kwasniewski of \"e2e,\" a new agent-oriented testing framework — he ported React Native Pager View's test suite from Maestro to it as the proving ground. The link is the announcement only; the framework itself was still being built at announcement time. (x.com is not directly fetchable from this environment; the breakdown reflects the announcement's subject as curated.)",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

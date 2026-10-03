@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/asx8678/elxr",
   "brief": "asx8678's own repo, built after burning through tokens fast. Context is thin, but it reads as a token-efficiency tool from someone feeling the pain directly.",
   "caveat": null,
-  "details": null,
+  "details": "Elxr Fabric (asx8678/elxr) — \"native Elixir foundations for long-running, cache-efficient, independently verified coding agents.\" An experimental research codebase (from the CheapInfra community's own asx8678) exploring how to make agents reliable over long horizons: governing boundaries are WorkCell (correctness), Context Epoch (prompt efficiency), and an append-only typed event log (truth). The current vertical slice implements canonical event hashing, parent-linked storage, typed semantic turn commits, bounded certified child handoffs, deterministic reducers, verified snapshots, fixed-section 32KiB checkpoints, integrity-bound recall, and OpenAI/Anthropic cache plans — plus a fail-closed checked-code sidecar prototype and a measurable long-horizon research loop (`./autoresearch.sh`). Very much infrastructure research, not a product. Apache-2.0.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"
