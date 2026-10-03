@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/toss/es-git/pull/213",
   "brief": "A fix by monotykamary — diff.print() (default Patch format) was stripping the +/-/space line-origin prefixes from output; this PR prepends them back.",
   "caveat": null,
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "developer-tools"

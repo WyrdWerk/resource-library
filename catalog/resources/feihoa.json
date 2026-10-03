@@ -5,6 +5,7 @@
   "canonical_url": "https://feihoa.com/",
   "brief": "Unlimited AI plans from €6. States prompts and outputs are not used for training, though it may retain data briefly for security, abuse prevention and legal reasons.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

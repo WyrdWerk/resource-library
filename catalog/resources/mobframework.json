@@ -5,6 +5,7 @@
   "canonical_url": "https://mobframework.com/",
   "brief": "\"BEAM on device\" — write mobile apps in Elixir with the whole BEAM running on the device, rendering native iOS and Android UI; your coding agent attaches to the running app with real state and hot-pushed fixes. Ambitious and unusual.",
   "caveat": null,
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "app-development",

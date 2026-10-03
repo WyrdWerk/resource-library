@@ -5,6 +5,7 @@
   "canonical_url": "https://xkiro.com/",
   "brief": "Unified gateway — free tier with 40+ free models and 5M tokens/day (no card), pay-as-you-go about 35% below official prices on select models. 90+ models across 16 providers on one API key.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

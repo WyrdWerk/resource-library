@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/MoonshotAI/Kimi-Vendor-Verifier",
   "brief": "A vendor verifier from MoonshotAI; baanish asked if anyone has run it. Details unverified from the message text.",
   "caveat": "Details unverified from the message text.",
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

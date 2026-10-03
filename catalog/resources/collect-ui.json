@@ -5,6 +5,7 @@
   "canonical_url": "https://collectui.com/",
   "brief": "A gallery of collected user interfaces for design inspiration. Shared link-only; the description is inferred from the site's name and unverified from the message.",
   "caveat": "Shared link-only; the description is inferred from the site's name and unverified from the message.",
+  "details": null,
   "resource_type": "directory-gallery",
   "topics": [
     "design"

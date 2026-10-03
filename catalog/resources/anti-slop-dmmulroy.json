@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/dmmulroy/anti-slop",
   "brief": "Opinionated Oxlint rules that reject low-evidence TypeScript/JavaScript patterns — basically a linter config against AI-slop code. Fun and practical for teams drowning in generated code.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "developer-tools"

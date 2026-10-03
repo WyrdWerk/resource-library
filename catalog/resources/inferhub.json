@@ -5,6 +5,7 @@
   "canonical_url": "https://inferhub.dev/pricing",
   "brief": "Proxy service that pools AI subscriptions into one API. Shared as \"a rly interesting proxy\" with per-plan pricing on its site.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

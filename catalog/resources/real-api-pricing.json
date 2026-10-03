@@ -5,6 +5,7 @@
   "canonical_url": "https://real-api-pricing.vercel.app/",
   "brief": "Compares the real cost of AI — subscription allowances, model benchmarks and the price–performance frontier, with transparent sources. Useful before committing spend to any provider.",
   "caveat": null,
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "inference",

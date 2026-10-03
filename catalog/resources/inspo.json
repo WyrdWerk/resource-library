@@ -5,6 +5,7 @@
   "canonical_url": "https://inspomcp.dev/",
   "brief": "A reference layer for AI coding agents — real production websites with desktop and mobile captures, \"real websites worth studying.\" Useful as grounding material when agents need to see how good sites are actually built.",
   "caveat": null,
+  "details": null,
   "resource_type": "directory-gallery",
   "topics": [
     "design",

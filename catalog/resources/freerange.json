@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/chenglou/freerange",
   "brief": "From chenglou (React core team alumnus): a static verifier that checks ordinary TypeScript layout code at compile time, without a layout engine. ~650 stars.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "frontend",

@@ -5,6 +5,7 @@
   "canonical_url": "https://singularityapi.dev/",
   "brief": "A unified AI gateway routing to DeepSeek, Kimi, GLM, and 300+ models through one endpoint, with smart routing by cost, speed, quality, or availability, built-in failover, and usage analytics; it also sells reserved GPU-lane capacity from $0.20/hr for dedicated inference and is currently offering 100% bonus credits on recharges up to $1,000. A forwarded announcement noted DeepSeek-V4.1-Flash going live on the platform. The homepage publishes no per-token price list, and the bonus-credit promo terms are vendor-published.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

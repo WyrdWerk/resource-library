@@ -5,6 +5,7 @@
   "canonical_url": "https://artificialanalysis.ai/models/qwen3-8-max",
   "brief": "Artificial Analysis's model page for Qwen3-8 Max, with benchmarks and pricing. Shared link-only; the page's data is third-party and unverified.",
   "caveat": "Shared link-only; the page's data is third-party and unverified.",
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "inference",

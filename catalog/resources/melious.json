@@ -5,6 +5,7 @@
   "canonical_url": "https://melious.ai/",
   "brief": "EU-hosted pay-as-you-go inference; the sharer cited ~240 tok/s on DeepSeek V4 Flash. States it does not train on user data.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

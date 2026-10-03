@@ -5,6 +5,7 @@
   "canonical_url": "https://feralui.dev/",
   "brief": "A small library of playful, physics-driven React elements — including a ceiling pull-cord with real Verlet rope physics. For interfaces that should feel alive rather than flat.",
   "caveat": null,
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "frontend"

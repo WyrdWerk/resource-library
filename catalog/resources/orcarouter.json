@@ -5,6 +5,7 @@
   "canonical_url": "https://www.orcarouter.ai/",
   "brief": "Zero-markup BYOK router with an open-source self-hostable Lite (MIT); the hosted plan includes free credits. Pass-through per-token pricing, e.g. DeepSeek V4 Flash $0.15/$0.29 per 1M in/out.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

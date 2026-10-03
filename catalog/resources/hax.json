@@ -5,6 +5,7 @@
   "canonical_url": "https://usehax.dev/",
   "brief": "A minimalist coding agent that runs natively in the terminal. The \"minimalist\" claim comes from the sharer's one-line description and is unverified.",
   "caveat": "The \"minimalist\" claim comes from the sharer's one-line description and is unverified.",
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "ai-agents",

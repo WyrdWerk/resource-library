@@ -5,6 +5,7 @@
   "canonical_url": "https://www.coreweave.com/",
   "brief": "GPU cloud infrastructure company offering serverless inference APIs, dedicated endpoints and GPU clusters. Infrastructure rather than a retail model API.",
   "caveat": null,
+  "details": null,
   "resource_type": "service-platform",
   "topics": [
     "cloud-infrastructure",

@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/pascalorg/editor",
   "brief": "An open-source 3D architectural editor with a local CLI, MCP tools and practical workflows for humans and agents. Niche but complete — 3D editing with agent integration baked in.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

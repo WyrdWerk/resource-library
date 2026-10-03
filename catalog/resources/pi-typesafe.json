@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/DevMortimer/pi-typesafe",
   "brief": "TypeSafe decisions for Pi — a batched evaluation tool, terminal playground and typed API for extensions. The foundation pi-warden builds on.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "testing",

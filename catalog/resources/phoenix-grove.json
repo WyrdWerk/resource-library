@@ -5,6 +5,7 @@
   "canonical_url": "https://pgsgrove.com/",
   "brief": "A privacy-first AI company selling a Coding Plan with 'near-endless messaging' for agents and coding tools on one API key, running open models including GLM 5.2, MiniMax M3, and Kimi K2.6, with per-token access from $5 and the first month free. It frames itself around data sovereignty and an 'altruistic AI' charter, and also sells a $3.95/month memory-migration tool (Memory Forge) and an AI workspace subscription. 'Near-endless messaging' is marketing language with no published allowance numbers — actual limits are unverified.",
   "caveat": "'Near-endless messaging' is marketing language with no published allowance numbers — actual limits are unverified.",
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference",

@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/get-bb/bb",
   "brief": "An agentic IDE that \"builds itself\" — it can control, customize, and automate itself, pitched as the groundwork for your own software factory. Desktop app, web app, CLI, and HTTP API are all first-class surfaces; work runs in threads you can follow live, steer at any point, or hand off to another agent. In active development; core architecture is stable, workflows and surfaces still evolving.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

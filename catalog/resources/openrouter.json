@@ -5,6 +5,7 @@
   "canonical_url": "https://openrouter.ai/",
   "brief": "Multi-provider model gateway charging a 5.5% fee, with 50 free requests/day. Shared via its GLM 5.3 provider/pricing page.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

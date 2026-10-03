@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/makeplane/plane",
   "brief": "Open-source alternative to Jira, Linear, Monday and ClickUp. A self-hostable project-management option for teams avoiding SaaS lock-in.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "self-hosting",

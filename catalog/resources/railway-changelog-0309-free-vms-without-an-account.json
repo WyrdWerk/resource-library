@@ -5,6 +5,7 @@
   "canonical_url": "https://railway.com/changelog/2026-09-25-free-vms-without-an-account#free-vms-without-an-account",
   "brief": "Railway Changelog #0309 opens free Linux VMs with no account: `ssh railway.new` gets a 2 vCPU/2 GB box with coding agents preinstalled, 60 minutes to build and 24 hours to claim it before deletion. The same edition adds request tracing in Priority Boarding (edge-to-database waterfalls with no code changes) and OpenCode on Cloud Agents for persistent agent VMs.",
   "caveat": null,
+  "details": "Railway's changelog #0309 (September 25, 2026) with three launches. Free VMs without an account: `ssh railway.new` spins up a free Linux VM (2 vCPU, 2 GB RAM) with coding agents preinstalled and a preview URL — no signup or credit card; you get 60 minutes to build and 24 hours to claim the VM into an account before it is deleted. Tracing in Priority Boarding: follow a request from Railway's edge through your services into database calls as a timing waterfall, via OpenTelemetry SDK or automatic instrumentation, with agent skills updated so coding agents can use traces alongside logs and metrics. OpenCode on Cloud Agents: run OpenCode on a persistent Railway VM (`railway ca desktop --opencode` or `railway code --opencode`) and pick work up from anywhere; sleep keeps files on disk. Plus CLI fixes to `railway up` error output and installer reliability.",
   "resource_type": "article-guide",
   "topics": [
     "cloud-infrastructure",

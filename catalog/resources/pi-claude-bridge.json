@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/elidickinson/pi-claude-bridge",
   "brief": "Lets you route Pi's model calls through a Claude subscription (\"allow sub usage in pi\"). Same cost-saving idea as pi-claude-agent-sdk: agentic coding without per-token API billing.",
   "caveat": null,
+  "details": "The original Pi extension by Eli Dickinson integrating Claude Code via the Agent SDK (538 stars, 132 forks) — the project that pi-claude-agent-sdk was forked from (itself originally based on Prateek Sunal's claude-agent-sdk-pi). Two features: a provider that runs Opus, Sonnet, and Haiku inside Pi with all tool calls flowing through Pi's TUI, and the opt-in AskClaude tool, which lets Pi's LLM delegate tasks or questions to Claude Code while using another provider (\"Ask Claude to plan a fix\", \"ask claude to poke holes in this theory\", \"ask an isolated claude to review the implementation\"). AskClaude supports read-only, none, or full (read+write+bash) modes, per-call model and thinking-effort selection, and isolated sessions. Model list auto-tracks Pi's Anthropic catalog, 1M context on newer models, and billing currently draws on your regular Pro/Max subscription quota like Claude Code. MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

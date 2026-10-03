@@ -5,6 +5,7 @@
   "canonical_url": "https://www.makora.com/",
   "brief": "Inference provider and optimization service — Starter $20/mo and Developer $200/mo (both shown sold out), with private model serving and on-prem options. Starter covers unlimited models under 40B parameters.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

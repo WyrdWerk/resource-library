@@ -5,6 +5,7 @@
   "canonical_url": "https://www.minimax.io/blog/minimax-m3",
   "brief": "MiniMax's M3 announcement — frontier coding capability, 1M context, native multimodality, and a new MSA architecture. All vendor claims, unverified.",
   "caveat": "All vendor claims, unverified.",
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "ai-agents"

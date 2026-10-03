@@ -5,6 +5,7 @@
   "canonical_url": "https://fast.inference.net/pricing",
   "brief": "Gateway for AI models and coding agents with provider failover. $9/mo gives $10 gateway credit, $49/mo gives $60, then pay-as-you-go at direct rates.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

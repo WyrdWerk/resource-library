@@ -39,7 +39,7 @@ def test_legacy_round_trip_is_exact(records):
 
 
 def test_legacy_key_order_matches_build_py(records):
-    expected = ["title", "week", "url", "sharer", "date", "categories", "brief", "id", "warning"]
+    expected = ["title", "week", "url", "sharer", "date", "categories", "brief", "id", "warning", "details"]
     assert list(legacy_row(records[0]).keys()) == expected
 
 

@@ -5,6 +5,7 @@
   "canonical_url": "https://hypercli.com/pricing/",
   "brief": "Flat-rate provider plans for coding agents — Solo $39/month (25M tokens/day), Team $79/month (50M pooled), Pro $149/month (100M pooled) — with OpenAI- and Anthropic-compatible API keys drawing from the same daily pool, capped with throttling instead of overage billing. Shared for the same 36B tokens/month request; 7-day free trial, no card. Plan figures are vendor-reported and not independently verified.",
   "caveat": "Plan figures are vendor-reported and not independently verified.",
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference",

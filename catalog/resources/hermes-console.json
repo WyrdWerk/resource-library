@@ -5,6 +5,7 @@
   "canonical_url": "https://hermes.xpetalab.dev/",
   "brief": "A self-hosted AI agent console (\"Tu agente AI self-hosted\") that thelaggingway is giving a go. The self-hosted claim is unverified beyond the site's tagline.",
   "caveat": "The self-hosted claim is unverified beyond the site's tagline.",
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "ai-agents",

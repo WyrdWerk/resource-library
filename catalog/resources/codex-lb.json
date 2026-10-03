@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/Soju06/codex-lb",
   "brief": "A Codex/ChatGPT multiple-account load balancer and proxy with usage tracking, a dashboard, and OpenCode compatibility. Tom: \"gonna try first.\"",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

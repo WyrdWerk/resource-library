@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/hardbeat920/monocode",
   "brief": "A GUI for your coding agents. Description is minimal, but a visual front-end for agent harnesses is a gap worth filling.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

@@ -5,6 +5,7 @@
   "canonical_url": "https://huggingface.co/tencent/Hy4-preview-FP8",
   "brief": "Tencent's Hy4 preview weights in FP8 on Hugging Face — 770B total, 49B active, 1M context, open weights. For anyone with the hardware to run a frontier-scale open model.",
   "caveat": null,
+  "details": null,
   "resource_type": "dataset",
   "topics": [
     "inference"

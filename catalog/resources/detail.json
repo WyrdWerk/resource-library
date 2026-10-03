@@ -5,6 +5,7 @@
   "canonical_url": "https://detail.design/",
   "brief": "A curated gallery of the small UI decisions that make products feel considered — smarter word breaks, corner-morph animations, name-derived placeholders — each shown as a short clip. Curated by Rene Wang; a good reference for stealing micro-interaction ideas.",
   "caveat": null,
+  "details": "Detail (detail.design) is a curated gallery of the small interaction and copy decisions that make products feel considered — bite-size video examples like smarter word-break for translation-proof interfaces, hold-Option to reveal underlying details, name-derived placeholders, hold-to-reveal shortcut hints, inline regex testers, and adaptive text color. Curated by Rene Wang, it is more design-inspiration reference than component source: browse it when you want concrete, steal-able micro-interactions and UX copy patterns rather than generic UI kits. Also runs a social presence (@detaildotdesign) with exclusive content for followers.",
   "resource_type": "directory-gallery",
   "topics": [
     "design"

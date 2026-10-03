@@ -5,6 +5,7 @@
   "canonical_url": "https://ccdeck.dev/",
   "brief": "ccdeck is a free, open-source local dashboard for Claude Code and Codex sessions — live session and tool-call views plus cost tracking. Useful if you run multiple agent sessions and want a single pane of glass.",
   "caveat": null,
+  "details": "ccdeck is a free, open-source (AGPL-3.0) live dashboard for Claude Code and OpenAI Codex CLI sessions that runs on your machine — start it with `npx ccdeck` or the desktop app (macOS, Windows, Linux). It draws every session, subagent, and tool call as a tree on one canvas, surfaces which session is waiting for your input (permission prompts, questions, and finished turns sorted longest-wait first, with desktop notifications), and tracks cost, token usage, and quota pace across Claude and Codex accounts — including multi-account switching and login sharing or repair across paired machines. It watches but cannot steer: the hook only forwards events, never approves tool calls or edits code. Privacy-conscious by design: sessions and prompts never leave the machine (the dashboard listens on 127.0.0.1); only version checks, quota reads with your own credentials, and opt-out usage reports go out.",
   "resource_type": "tool",
   "topics": [
     "ai-agents",

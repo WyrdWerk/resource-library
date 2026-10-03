@@ -5,6 +5,7 @@
   "canonical_url": "https://tokenfactory.nebius.com/",
   "brief": "Nebius's pay-per-token hosted inference for open text/vision models (~23 models incl. DeepSeek, Llama, Qwen). New accounts get trial credit; uses separate v1 API credentials.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

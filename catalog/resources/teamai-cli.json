@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/Tencent/teamai-cli",
   "brief": "Tencent's \"Make Every Team AI Native\" CLI. The description is thin, but a Tencent-backed team-AI CLI is worth a look.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

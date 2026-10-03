@@ -5,6 +5,7 @@
   "canonical_url": "https://ui.beste.co",
   "brief": "Beste UI is a collection of production-ready shadcn/tailwind blocks and components — 2189+ blocks (heroes, pricing, testimonials, error pages) and 1326+ smaller pieces, each self-contained and installed with one shadcn CLI command and no runtime dependency. Free pieces are MIT-licensed for commercial use; Pro blocks need a Beste UI license, though installed code keeps working if the license lapses.",
   "caveat": null,
+  "details": "Beste UI is a curated collection of production-ready shadcn/tailwind blocks and components for React 19 — 2189+ full page sections (heroes, feature grids, pricing tables, testimonials, error pages, plus elaborate WebGL/Canvas showpieces like a CRT broadcast hero and a starling murmuration) and 1326+ smaller composable pieces. Every piece is self-contained and installs with a one-line shadcn CLI command that writes files into your components directory, registers shadcn primitives, and installs npm packages; there is no runtime dependency and no upgrade path to fight. Free blocks are MIT-licensed for commercial use; Pro blocks need a Beste UI license, though installed code keeps working if the license lapses. From @withbeste.",
   "resource_type": "library-framework",
   "topics": [
     "frontend"

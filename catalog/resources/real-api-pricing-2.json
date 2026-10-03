@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/FeiZhuLulu/real-api-pricing",
   "brief": "GitHub repo behind the real-api-pricing comparison of actual inference API prices. Its web app is already in this library's web-apps section; this is the distinct source repo.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "inference"

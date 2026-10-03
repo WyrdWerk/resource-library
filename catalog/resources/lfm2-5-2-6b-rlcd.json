@@ -5,6 +5,7 @@
   "canonical_url": "https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD",
   "brief": "LiquidAI's LFM2.5 2.6B model tuned for RLCD, shared in the context of Jev's API and concepts. A small local model for anyone experimenting with RLCD-style agent loops.",
   "caveat": null,
+  "details": null,
   "resource_type": "dataset",
   "topics": [
     "ai-agents",

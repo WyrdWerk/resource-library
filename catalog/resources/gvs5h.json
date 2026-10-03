@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/slee-persis/GVS5H",
   "brief": "A harness claiming five Qwen3.8-27B models match Claude Fable 5 on LiveCodeBench Hard — \"Fable 5 level coding.\" The performance claims are the poster's and unverified; scarywood75 noted the implementation is Python.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

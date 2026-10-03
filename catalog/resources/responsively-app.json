@@ -5,6 +5,7 @@
   "canonical_url": "https://responsively.app/",
   "brief": "A dedicated browser for responsive web development — preview a site at multiple screen sizes side by side. Built for faster, more precise responsive work.",
   "caveat": null,
+  "details": "Responsively App is a free, open-source dev-tool browser (responsively-org/responsively-app) for building responsive web apps faster. It shows all target devices side by side in one window, mirrors every click, scroll, and navigation across all of them in real time, syncs Chrome DevTools inspection, hot-reloads previews, screenshots one device or all at once (full page or element), offers real-time preview of PRs and deploys, and supports custom device profiles with network throttling. Save favorite device combinations as \"Preview Suits\" and switch between them while testing. A Chrome extension jumps to a quick preview from your existing browser.",
   "resource_type": "tool",
   "topics": [
     "developer-tools",

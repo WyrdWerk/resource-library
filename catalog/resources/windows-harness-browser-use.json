@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/browser-use/windows-harness",
   "brief": "A Windows automation harness from the browser-use team (the web-agent library folks). Likely for running agents against Windows apps; details unverified.",
   "caveat": "Likely for running agents against Windows apps; details unverified.",
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

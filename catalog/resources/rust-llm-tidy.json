@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/Sewer56/rust-llm-tidy",
   "brief": "An opinionated linter aimed at LLM-generated code (Rust, C#, Markdown): fix/reorder/visibility/spacing transforms plus read-only lint checks, runnable per-file, on git-changed files, or in CI via a GitHub Action. The author's personal tooling (\"largely written by LLMs\"); expect opinionated rules, 0 stars. Apache 2.0.",
   "caveat": null,
+  "details": "An opinionated Rust (plus C# and Markdown) linter and tidier aimed squarely at LLM-written code, from Sewer56 — with the author's own preferences baked in and an upfront disclaimer that it is personal tooling, largely LLM-written and reviewed line by line, not held to production quality standards. One command (`rust-llm-tidy`) runs a pipeline of ops — GFM table alignment, fence-delimiter fixes, link hoisting, review-friendly item reordering, visibility narrowing, member spacing, plus read-only lints — with dry-run previews, JSON output, diff-base scoping, YAML config, and a GitHub Action to gate pull requests. Install via `cargo install rust-llm-tidy-cli` or prebuilt binaries from GitHub releases. Apache-2.0.",
   "resource_type": "repository",
   "topics": [
     "developer-tools"

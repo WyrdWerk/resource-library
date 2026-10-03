@@ -5,6 +5,7 @@
   "canonical_url": "https://huggingface.co/monotykamary/MiniCPM5-2B-PCD",
   "brief": "MiniCPM5 2B PCD weights on Hugging Face — the same model family as the 16 Sept in-browser Pi announcement. The model behind that WebGPU coding-agent demo.",
   "caveat": null,
+  "details": null,
   "resource_type": "dataset",
   "topics": [
     "inference"

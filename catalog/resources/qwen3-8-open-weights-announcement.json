@@ -5,6 +5,7 @@
   "canonical_url": "https://x.com/alibaba_qwen/status/2088280182356611304",
   "brief": "Alibaba's announcement that Qwen3.8's open weights are out. Announcement-only; pair with the unsloth GGUF quant below for local runs.",
   "caveat": null,
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "inference"

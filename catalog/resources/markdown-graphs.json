@@ -5,6 +5,7 @@
   "canonical_url": "https://mdx-graphs.kshv.me/",
   "brief": "Monospace charts and tables for MDX and React. Handy for rendering data visuals that stay crisp in markdown contexts.",
   "caveat": null,
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "frontend"

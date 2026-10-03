@@ -79,7 +79,7 @@ def legacy_row(rec):
     """Derive the exact legacy data.json row shape from a canonical record.
 
     Key order must match scripts/build.py exactly:
-    title, week, url, sharer, date, categories, brief, id, warning.
+    title, week, url, sharer, date, categories, brief, id, warning, details.
     """
     shared = datetime.strptime(rec["shared_on"], "%Y-%m-%d").date()
     return {
@@ -92,6 +92,7 @@ def legacy_row(rec):
         "brief": rec["brief"],
         "id": rec["id"],
         "warning": rec["caveat"] or "",
+        "details": rec.get("details") or "",
     }
 
 

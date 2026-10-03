@@ -5,6 +5,7 @@
   "canonical_url": "https://snowflow-lilac.vercel.app/",
   "brief": "The live demo of the snowflow_demo repo below: real-time procedural snow rendering in the browser via WebGPU, Babylon.js, and hand-written WGSL — GPU-generated terrain, snow deformation, procedural characters, cloth, and post-processing with zero textures, meshes, HDRIs, or animation assets. Requires a WebGPU-capable browser (Chrome 113+ on desktop GPU) to load.",
   "caveat": null,
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "frontend"

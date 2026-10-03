@@ -5,6 +5,7 @@
   "canonical_url": "https://runinfra.ai/",
   "brief": "Inference provider; its DeepSeek V4 Flash $0.13/M input price was corroborated. A \"1.8¢/M blended\" figure seen in chatter is not a list price.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

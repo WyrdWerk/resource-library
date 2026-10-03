@@ -5,6 +5,7 @@
   "canonical_url": "https://zro.moonmath.ai/pricing",
   "brief": "$20/mo including $60 of inference spend, OpenAI/Anthropic-compatible. Explicit zero request retention — prompts and completions are never used for training, evaluation or analytics.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

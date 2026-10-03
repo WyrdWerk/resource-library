@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/starslingdev/hpc-sandbox-benchmarks",
   "brief": "A benchmark suite comparing sandbox providers using real high-performance developer and CI/CD workloads, shared as \"new benchmarks in town\". Check it when choosing between sandbox VM offerings for agents — the results are the author's own and are not independently verified.",
   "caveat": "Check it when choosing between sandbox VM offerings for agents — the results are the author's own and are not independently verified.",
+  "details": "hpc-sandbox-benchmarks compares sandbox providers on real high-performance developer and CI/CD workloads rather than synthetic micro-benchmarks. Every provider runs the same target hardware shape (4 vCPU, 8 GiB RAM, 40 GB disk) through end-to-end workflows developers actually experience — clone, dependency install, lint, build, test — because a provider can top a creation-time chart and still lose badly on thousands of small random file writes. Synthetics follow versioned Phoronix Test Suite profiles via OpenBenchmarking.org for reproducibility, and the methodology is strict: fresh sandboxes per result, pinned toolchains, raw samples retained, and failed or non-comparable results disclosed rather than zeroed. Results publish to a leaderboard with full dataset and architecture docs. MIT-licensed, from starslingdev.",
   "resource_type": "repository",
   "topics": [
     "cloud-infrastructure",

@@ -5,6 +5,7 @@
   "canonical_url": "https://woxi.ad-si.com/docs/comparison/mathematica/",
   "brief": "Woxi's comparison of itself against Mathematica — Woxi being an interpreter for a subset of the Wolfram Language. A decent way into what Woxi is and where it stands.",
   "caveat": null,
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "developer-tools"

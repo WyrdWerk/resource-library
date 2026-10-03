@@ -5,6 +5,7 @@
   "canonical_url": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD",
   "brief": "A 1B RLCD-tuned Qwen 2.5 that kenn tried locally \"to get a feel of how Jev's API and concepts might feel like\" — and found it did fine in a roguelike spike. Useful as a tiny testbed model before spending on bigger runs.",
   "caveat": null,
+  "details": null,
   "resource_type": "dataset",
   "topics": [
     "inference",

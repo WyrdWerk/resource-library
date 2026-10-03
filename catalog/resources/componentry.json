@@ -5,6 +5,7 @@
   "canonical_url": "https://componentry.dev/",
   "brief": "Beautiful animated UI components for React. Rykuuun shared it as a front-end dev finding; details unverified beyond the site's tagline.",
   "caveat": "Rykuuun shared it as a front-end dev finding; details unverified beyond the site's tagline.",
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "frontend"

@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/eclipse-theia/theia",
   "brief": "Eclipse Theia — a cloud and desktop IDE framework implemented in TypeScript. The open foundation behind several well-known IDE products.",
   "caveat": null,
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "developer-tools"

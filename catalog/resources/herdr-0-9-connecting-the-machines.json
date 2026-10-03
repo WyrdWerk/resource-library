@@ -5,6 +5,7 @@
   "canonical_url": "https://herdr.dev/blog/connecting-the-machines/",
   "brief": "The Herdr blog on 0.9, which brings local and remote machines into one TUI client, with Herdr Cloud coming next. Herdr's pitch: run agents anywhere, leave them running.",
   "caveat": null,
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

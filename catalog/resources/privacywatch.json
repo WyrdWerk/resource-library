@@ -5,6 +5,7 @@
   "canonical_url": "https://privacywatch.wyrdwerk.com/",
   "brief": "Open-source comparison of 86+ provider families (97 surfaces) on training, retention, zero-retention and data location, quoting each provider's own ToS and privacy docs. Maintained by the same crew as this library.",
   "caveat": null,
+  "details": null,
   "resource_type": "directory-gallery",
   "topics": [
     "inference",

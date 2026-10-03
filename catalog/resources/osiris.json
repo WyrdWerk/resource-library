@@ -5,6 +5,7 @@
   "canonical_url": "https://osirisai.live/",
   "brief": "An open-source Palantir alternative — track 10K+ aircraft, 2K satellites and worldwide CCTV on a 3D globe, and run Nmap, DNS, WHOIS and threat-intel scans from the browser across 20+ live feeds. Free.",
   "caveat": null,
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "security"

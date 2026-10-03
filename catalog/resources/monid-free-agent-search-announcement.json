@@ -5,6 +5,7 @@
   "canonical_url": "https://x.com/MonidHQ/status/2100705843453079718",
   "brief": "Announcement of a free agent search/fetch API — \"killed Exa, Tavily and Brave\", $0 with no quotas, from Tiny_Fish and MonidHQ. The pricing claims are the poster's and unverified; this link is the announcement, not documentation.",
   "caveat": "The pricing claims are the poster's and unverified; this link is the announcement, not documentation.",
+  "details": "An X announcement from MonidHQ (shared by Rykuuun) for a free agent search/fetch API from TinyFish and Monid, framed by the poster as a \"$0 with no quotas\" alternative to Exa, Tavily, and Brave — those pricing claims are the poster's, not verified. Context: Monid is an \"OpenRouter for agent tools\" platform where agents discover, inspect, and run 1,800+ APIs through one connection (MCP server, skill, CLI, or HTTP API); TinyFish is its zero-cost live-web search and multi-URL fetch provider (browser-rendered, never cached, deterministic). A companion npm plugin (hermes-monid-websearch) routes a Hermes agent's web_search/web_extract calls through it. X.com is not directly fetchable from this environment, so treat the announcement's claims as unverified; the link is the announcement, not documentation.",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents"

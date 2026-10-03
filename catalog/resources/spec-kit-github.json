@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/github/spec-kit",
   "brief": "GitHub's official toolkit for spec-driven development — write the spec, let agents implement. From GitHub itself, so it carries weight in the SDD workflow trend.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

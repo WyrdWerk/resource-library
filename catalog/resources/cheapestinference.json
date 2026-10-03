@@ -5,6 +5,7 @@
   "canonical_url": "https://cheapestinference.com/",
   "brief": "Flat-rate unlimited time-block subscriptions — Core pool from $22/mo per 8-hour daily block, Frontier $71/mo, Flagship $199/mo. Prompts and completions are processed in memory and discarded, never used for training.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

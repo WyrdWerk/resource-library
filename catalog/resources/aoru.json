@@ -5,6 +5,7 @@
   "canonical_url": "https://aoru.ai/pricing",
   "brief": "Inference provider serving resident open models with zero-log inference behind one OpenAI-compatible endpoint; Plus at $12/month and Pro at $25/month with refilled token balances, plus usage-based PAYG credits from $5. Shared in reply to a 36B tokens/month, $2000/month budget request; pricing and zero-log claims are vendor-reported and not independently verified.",
   "caveat": "Shared in reply to a 36B tokens/month, $2000/month budget request; pricing and zero-log claims are vendor-reported and not independently verified.",
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

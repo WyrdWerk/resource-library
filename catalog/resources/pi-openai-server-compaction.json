@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/algal/pi-openai-server-compaction",
   "brief": "Shared without description; the name suggests an OpenAI-compatible server with context compaction for the pi agent. Unverified.",
   "caveat": "Unverified.",
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

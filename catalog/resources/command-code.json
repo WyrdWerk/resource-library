@@ -5,6 +5,7 @@
   "canonical_url": "https://commandcode.ai/docs/plans/goat",
   "brief": "GOAT plan — $10/mo for $70 in credits (limits $14/5h, $35/week, $70/month) across 30+ open and closed models. No zero-retention statement found.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

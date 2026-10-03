@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/DeusData/codebase-memory-mcp",
   "brief": "Persistent semantic memory for coding agents — an MCP server that indexes your codebase. Useful when you have many repos and context windows aren't enough.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

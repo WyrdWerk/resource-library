@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/k3ybladewielder/BendSR",
   "brief": "Symbolic regression implemented in Bend. A research-flavoured repo for anyone exploring the Bend language.",
   "caveat": null,
+  "details": "BendSR (k3ybladewielder) is a native symbolic-regression implementation built with Bend, Higher Order Company's massively parallel functional language. An evolutionary algorithm breeds expression ASTs concurrently across GPUs/CPUs, and Bend 2's integrated proof checker (LAWS.bend/PROOF.bend) enforces safety invariants — determinism, immutability, numerical safety — during stochastic mutation and crossover, so no division-by-zero or silent NaNs. The cases directory is the fun part: recovering Feynman physics laws, multivariable surfaces, embedded closed-loop control laws for edge devices, interpretable quantitative-finance alpha factors, dynamic-pricing demand curves, GDPR-compliant churn risk scoring, and supply-chain reorder formulas. Runs with `bend src/Main.bend` (CPU) or `bend -c` (GPU); published on Bend Hub as a content-addressed package you can import into your own Bend project. A dataset-loader script converts your CSV/XLSX/Parquet into Bend AST structures. Beyond the algorithm, it is an interesting case study of Bend doing real work plus formal verification of ML-flavored code. MIT.",
   "resource_type": "repository",
   "topics": [
     "developer-tools"

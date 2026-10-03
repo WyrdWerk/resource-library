@@ -5,6 +5,7 @@
   "canonical_url": "https://openference.ai/",
   "brief": "Inference API at openference.ai; public evidence is snippet-based only. A Discord claim that its GLM 5.2 \"is not even real\" is unverified.",
   "caveat": "A Discord claim that its GLM 5.2 \"is not even real\" is unverified.",
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

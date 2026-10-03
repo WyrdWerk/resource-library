@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/ryan-brosas/pi-acp-jetbrain",
   "brief": "A JetBrains IntelliJ ACP (Agent Client Protocol) adapter for the pi coding agent. Niche but exactly what you need if you want pi inside IntelliJ.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

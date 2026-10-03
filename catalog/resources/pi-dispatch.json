@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/edgehero/pi-dispatch",
   "brief": "Runs the pi coding agent as a self-hosted background service: triggered on demand, on a cron schedule, or by GitHub/GitLab issues, comments, and pull/merge requests, each job executing in a locked-down ephemeral container with a durable queue. It enforces per-job/daily/weekly/monthly spend caps before a single token is spent, and ships a live admin panel with run history, cost insights, and per-trigger spend analytics; MIT-licensed. Note: the bare npm name `pi-dispatch` belongs to an unrelated package — the scoped `@edgehero/pi-dispatch` is the correct install.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

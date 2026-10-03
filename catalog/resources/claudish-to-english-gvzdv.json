@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/gvzdv/claudish-to-english",
   "brief": "A small repo that translates \"Claudish\" — AI-assistant jargon — into plain English. Niche but amusing; useful if you've ever stared at a model hedging for three paragraphs.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

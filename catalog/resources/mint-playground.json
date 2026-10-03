@@ -5,6 +5,7 @@
   "canonical_url": "https://play.mint.gg/",
   "brief": "The public gallery for Mint's 3D-asset-creation tooling for AI agents: use Codex, Claude, or Cursor (via the Mint MCP server and Mint Skills) to generate, rig, and animate 3D models, build 3D worlds, and create PBR materials and asset packs. The playground showcases dozens of agent-built interactive 3D scenes, from mini-games to product configurators and data visualizations — though it is primarily a showcase for Mint's tooling rather than a tool you operate directly.",
   "caveat": null,
+  "details": null,
   "resource_type": "directory-gallery",
   "topics": [
     "ai-agents",

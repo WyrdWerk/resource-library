@@ -5,6 +5,7 @@
   "canonical_url": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
   "brief": "Cloudflare's blog announces a competition to build the next Git platform on Cloudflare, aimed at an AI-agent era of coding. Read it for the contest details and Cloudflare's take on where agent-driven development tooling is headed.",
   "caveat": null,
+  "details": "A Cloudflare blog post announcing a competition to build the next Git platform for the agentic era on Cloudflare Workers and Artifacts. The premise: GitHub was built for humans, but agents now write most code — so what should repositories, branches, pull requests, and code review look like when hundreds or thousands of agents work on the same codebase concurrently? It also announces new Artifacts capabilities in open beta: deploying Artifacts repos to Workers, managing repos from Workers via bindings, event subscriptions on repo activity, data jurisdiction controls, and dashboard metrics (billing starts October 15, 2026). To enter: submit a 5–10 minute demo video plus permissively licensed source by October 14, 2026; the top three teams fly to Cloudflare Connect in San Francisco and first place gets $25,000 in credits.",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

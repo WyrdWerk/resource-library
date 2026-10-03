@@ -5,6 +5,7 @@
   "canonical_url": "https://danielrotter.at/2020/04/08/avoid-z-index-whenever-possible.html",
   "brief": "A 2020 article by Daniel Rotter arguing for CSS layouts that avoid z-index. The thesis is in the URL slug; the article's quality is unverified.",
   "caveat": "The thesis is in the URL slug; the article's quality is unverified.",
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "frontend"

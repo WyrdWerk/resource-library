@@ -3,7 +3,7 @@
 
 Reads curated research notes from notes/*.md and regenerates:
   index.html   — the browsable site (search + category + week filters)
-  data.json    — the full dataset (title, url, sharer, date, categories, brief, warning, week, id)
+  data.json    — the full dataset (title, url, sharer, date, categories, brief, warning, week, id, details)
   weeks/*.md   — per-week curated lists with briefs
   CHANGELOG.md — batch history derived from notes/
 
@@ -112,6 +112,45 @@ def parse_notes(path):
             continue
         i += 1
     return resources
+
+
+def parse_details(path):
+    """Parse a details sidecar file (notes/details-*.md).
+
+    Sections: '## Details' with '### <record-id>' entries carrying a
+    '- Details:' bullet (multi-line continuations joined like briefs).
+    Returns {record_id: details_text}. Ignored by parse_notes: no '## Week:'.
+    """
+    out = {}
+    in_details = False
+    lines = path.read_text().splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        s = line.strip()
+        if s.startswith("## Details"):
+            in_details = True
+        elif s.startswith("## ") and in_details:
+            in_details = False
+        elif line.startswith("### ") and in_details:
+            rid = line[4:].strip()
+            i += 1
+            field, parts = None, []
+            while i < len(lines) and not lines[i].startswith("#"):
+                l = lines[i].rstrip()
+                if l.startswith("- Details:"):
+                    parts = [l[len("- Details:"):].strip()]; field = "details"
+                elif field == "details" and l.strip():
+                    parts.append(l.strip())
+                elif not l.strip():
+                    field = None
+                i += 1
+            text = " ".join(parts).strip()
+            if text:
+                out[rid] = text
+            continue
+        i += 1
+    return out
 
 
 def esc(s):
@@ -288,13 +327,26 @@ def main():
         if r["week"] == "providers":
             r["id"] = slugify(r["title"], seen)
 
+    # Details sidecars: notes/details-*.md merge a long-form breakdown into
+    # the record by id ("" when a record has none yet). Sidecars keep existing
+    # notes files byte-identical; parse_notes ignores them (no '## Week:').
+    details_map = {}
+    for f in sorted(NOTES_DIR.glob("details-*.md")):
+        details_map.update(parse_details(f))
+    for r in all_res:
+        r["details"] = details_map.get(r["id"], "")
+
     dropped = count_dropped(NOTES_DIR.glob("*.md"))
     total = len(all_res)
     cats = sorted({c for r in all_res for c in r["categories"]})
     cat_counts = {c: sum(1 for r in all_res if c in r["categories"]) for c in cats}
 
-    data = [{k: v for k, v in r.items() if not k.startswith("_")} | {"warning": r["_warn"]}
-            for r in all_res]
+    data = []
+    for r in all_res:
+        row = {k: v for k, v in r.items() if not k.startswith("_") and k != "details"}
+        row["warning"] = r["_warn"]
+        row["details"] = r.get("details", "")
+        data.append(row)
     (ROOT / "data.json").write_text(json.dumps(data, indent=2, ensure_ascii=False))
 
     # ---- weeks/*.md ----
@@ -365,14 +417,22 @@ def main():
                 dom = dom[:51] + "…"
             warnbar = (f'<p class="warnbar"><span class="warnmark">⚠</span> {esc(r["_warn"])}</p>'
                        if r["_warn"] else "")
+            det = ""
+            card_cls = "card"
+            if r.get("details"):
+                card_cls = "card has-details"
+                det = (f'<button class="detail-toggle" aria-expanded="false" title="Show the detailed breakdown">'
+                       f'Detailed breakdown <span class="dt-arrow">↓</span></button>'
+                       f'<div class="detail-body"><p class="detail-kicker">In detail</p><p>{esc(r["details"])}</p></div>')
             cards.append(
-                f'<article class="card" id="r-{r["id"]}" data-cats="{" ".join(r["categories"])}" data-search="{blob}">'
+                f'<article class="{card_cls}" id="r-{r["id"]}" data-cats="{" ".join(r["categories"])}" data-search="{blob}">'
                 f'<span class="cardnum">{ci + 1:02d}</span>'
                 f'<div class="card-main">'
                 f'<h3><a href="{esc(r["url"])}" target="_blank" rel="noopener">{esc(r["title"])}</a></h3>'
                 f'<p>{esc(r["_desc"])}</p>'
                 f'{warnbar}'
                 f'<a class="dlink" href="{esc(r["url"])}" target="_blank" rel="noopener">{esc(dom)} ↗</a>'
+                f'{det}'
                 f'</div>'
                 f'<div class="card-side">'
                 f'<div class="meta">{chips}</div>'
@@ -685,6 +745,22 @@ body {{
   word-break: break-all; -webkit-tap-highlight-color: transparent;
 }}
 .dlink:hover {{ text-decoration-thickness: 2px; }}
+.card.has-details {{ cursor: pointer; }}
+.detail-toggle {{
+  display: block; margin: 10px 0 0; padding: 0; border: 0; background: none;
+  font-size: 12.5px; font-weight: 700; color: var(--muted); cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}}
+.detail-toggle:hover {{ color: var(--accent); }}
+.detail-toggle .dt-arrow {{ display: inline-block; transition: transform 0.15s ease; }}
+.card.open .detail-toggle .dt-arrow {{ transform: rotate(180deg); }}
+.detail-body {{ display: none; margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--line); }}
+.card.open .detail-body {{ display: block; }}
+.detail-body .detail-kicker {{
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10.5px;
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 8px;
+}}
+.detail-body p:last-child {{ margin-bottom: 0; }}
 .card-side {{ font-size: 11.5px; color: var(--muted); padding-top: 6px; line-height: 1.5; }}
 .card-side .meta {{ margin-bottom: 12px; }}
 .side-row .who {{
@@ -1070,6 +1146,21 @@ const cchips = [...document.querySelectorAll('.navrow[data-cat]')];
 const wchips = [...document.querySelectorAll('.navrow[data-week]')];
 const mcount = document.getElementById('mcount');
 const cards = [...document.querySelectorAll('.card')];
+// expandable detail breakdowns: clicking anywhere on a card toggles its
+// detail section, except on links and buttons which keep native behavior
+for (const c of document.querySelectorAll('.card.has-details')) {{
+  const btn = c.querySelector('.detail-toggle');
+  const toggle = () => {{
+    const open = !c.classList.contains('open');
+    c.classList.toggle('open', open);
+    if (btn) btn.setAttribute('aria-expanded', String(open));
+  }};
+  if (btn) btn.addEventListener('click', (e) => {{ e.stopPropagation(); toggle(); }});
+  c.addEventListener('click', (e) => {{
+    if (e.target.closest('a, button')) return;
+    toggle();
+  }});
+}}
 const weeks = [...document.querySelectorAll('.week')];
 const empty = document.getElementById('empty');
 const resultsH = document.getElementById('results');

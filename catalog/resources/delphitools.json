@@ -5,6 +5,7 @@
   "canonical_url": "https://tools.rmv.fyi/",
   "brief": "A handmade-web collection of small, single-purpose browser tools: colour utilities (contrast checker, palette generator/extractor, Tailwind shade scales), image tools (compressor, converter, background remover, favicon generator, SVG optimiser, metadata stripper), plus audio/video and typography tools. Everything is free with no logins, no paywalls, and no data collection; fully open source (0-BSD), with a native iOS app and an offline CLI offering the same tools.",
   "caveat": null,
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "developer-tools",

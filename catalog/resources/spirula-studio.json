@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/harry7557558/spirula-studio",
   "brief": "Cross-vendor 3D Gaussian Splatting trainer — video to splat to mesh, running on Vulkan or CUDA. Notable for not being CUDA-locked.",
   "caveat": null,
+  "details": "Spirula Studio (harry7557558) is a cross-vendor 3D Gaussian Splatting trainer that goes from raw photo/video to splat to textured mesh in one self-contained binary — no Python, PyTorch, or separate COLMAP install. Its differentiator is cross-vendor GPU support: a Vulkan compute backend runs on NVIDIA, AMD, Intel, and Apple Silicon (a legacy CUDA backend remains for NVIDIA). Extreme VRAM efficiency via quantized training — up to 10M full-SH Gaussians in 8GB VRAM — plus native fisheye and 360°/equirectangular camera support, a built-in lightning-fast SfM module with LoMa feature matching, AI masking via SAM, frame extraction from videos, and metric-scale recovery from telemetry metadata. Recent 2026 additions include model/sparse-reconstruction editing and image/video export rendering; macOS/Apple Silicon support was validated in August 2026. Downloadable binaries for Windows, Linux, and macOS, with a CLI for remote/cloud GPU training. 1.4k stars, 967 commits, GPL-3.0, maintained almost entirely by one person. Named after the deep-ocean cephalopod.",
   "resource_type": "repository",
   "topics": [
     "developer-tools"

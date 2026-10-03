@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/PrimeIntellect-ai/prime-agent",
   "brief": "Prime Intellect's framework for training AI agents with reinforcement learning. Per the sharer, its gimmick is collecting training data through its CLI — worth a look if you're into RL-for-agents; specifics unverified.",
   "caveat": "Per the sharer, its gimmick is collecting training data through its CLI — worth a look if you're into RL-for-agents; specifics unverified.",
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "ai-agents"

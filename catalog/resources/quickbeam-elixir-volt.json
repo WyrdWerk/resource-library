@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/elixir-volt/quickbeam",
   "brief": "A JavaScript runtime for the BEAM — Web APIs backed by OTP, native DOM, and a built-in TypeScript toolchain. Genuinely novel: Erlang's concurrency model meets JS.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "backend",

@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/tt-a1i/archify",
   "brief": "An agent skill (Claude/Codex/OpenCode compatible) that generates architecture, workflow, sequence, data-flow, and lifecycle diagrams as self-contained HTML with motion, then exports crisp PNG/JPEG. ~72k stars; positions itself as a verifiable, agentic alternative to Mermaid.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

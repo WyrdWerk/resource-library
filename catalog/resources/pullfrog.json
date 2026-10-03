@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/pullfrog/pullfrog",
   "brief": "An open-source, model-agnostic, BYOK GitHub bot that runs in GitHub Actions. Bring your own key, pick your model, automate your repo — the self-hosted answer to proprietary coding agents.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

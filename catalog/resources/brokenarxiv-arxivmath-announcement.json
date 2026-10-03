@@ -5,6 +5,7 @@
   "canonical_url": "https://x.com/j_dekoninck/status/2100180792601420138/photo/1",
   "brief": "Jasper Dekoninck releasing new versions of the BrokenArXiv and ArXivMath benchmarks. Announcement only; useful pointer for anyone tracking eval benchmarks.",
   "caveat": "Announcement only; useful pointer for anyone tracking eval benchmarks.",
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "testing"

@@ -5,6 +5,7 @@
   "canonical_url": "https://cozyjournal.app/",
   "brief": "A local-first private journal: entries live as plain files in a folder on your own device — no cloud, no account, no AI reading your diary — with photos, audio, tags, mood/location tracking, and password-lockable journals. Imports from Notion, Day One, Obsidian, and Bear; $49 one-time ($89 forever) for macOS, Windows, iPhone, and iPad.",
   "caveat": null,
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "productivity"

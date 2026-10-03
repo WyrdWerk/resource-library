@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/monotykamary/pi-tool-repair",
   "brief": "A validate-then-repair extension for pi that fixes common LLM tool-call mistakes (null fields, stringified arrays, wrong field names, anchor bleed) before tools execute. Tom: \"technically their tool repair brought over to pi (+ my additions).\"",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

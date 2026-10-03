@@ -5,6 +5,7 @@
   "canonical_url": "https://www.siliconflow.com/",
   "brief": "One OpenAI-compatible API for open and commercial LLMs with serverless pay-as-you-go and dedicated endpoints. Homepage claim: \"No data stored, ever.\"",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

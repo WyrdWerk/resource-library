@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/laude-institute/headlong",
   "brief": "An open-source agent microharness with persistent agency and recursive LLMs — \"of bash, by bash\". Minimal by design; good for experimenting with agent loops without a heavy framework.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"
