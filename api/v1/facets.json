@@ -1,25 +1,25 @@
 {
   "resource_type": {
     "repository": 78,
-    "provider": 72,
-    "article-guide": 47,
-    "tool": 31,
+    "provider": 76,
+    "article-guide": 48,
+    "tool": 32,
     "directory-gallery": 23,
     "library-framework": 19,
-    "service-platform": 8,
+    "service-platform": 12,
     "dataset": 7,
     "documentation": 5,
     "template-starter": 1,
     "other": 0
   },
   "topic": {
-    "ai-agents": 123,
-    "inference": 107,
-    "developer-tools": 59,
+    "ai-agents": 127,
+    "inference": 111,
+    "developer-tools": 60,
     "design": 34,
     "frontend": 29,
+    "cloud-infrastructure": 18,
     "productivity": 15,
-    "cloud-infrastructure": 13,
     "security": 7,
     "testing": 6,
     "backend": 5,
@@ -31,32 +31,32 @@
     "web-development": 1
   },
   "use_case": {
-    "run-inference": 89,
-    "manage-agents": 70,
-    "learn-technique": 59,
+    "run-inference": 93,
+    "manage-agents": 72,
+    "learn-technique": 61,
     "build-interfaces": 21,
     "automate-workflows": 18,
     "discover-design-references": 18,
     "generate-code": 18,
     "create-media": 13,
     "test-software": 13,
+    "provision-infrastructure": 7,
     "search-code": 7,
     "monitor-systems": 4,
-    "provision-infrastructure": 3,
     "deploy-applications": 2,
     "host-models": 2,
     "operate-databases": 2
   },
   "interface": {
-    "web": 94,
-    "api": 87,
+    "web": 102,
+    "api": 90,
     "cli": 35,
-    "mcp": 12,
+    "mcp": 13,
     "desktop": 11,
     "extension": 2
   },
   "technology": {
-    "mcp-protocol": 13,
+    "mcp-protocol": 14,
     "claude-code": 9,
     "rust": 9,
     "typescript": 8,
@@ -83,8 +83,8 @@
     "zed": 0
   },
   "channel": {
-    "share-tech": 206,
-    "providers": 85
+    "share-tech": 213,
+    "providers": 88
   },
   "open_source": {
     "true": 23,

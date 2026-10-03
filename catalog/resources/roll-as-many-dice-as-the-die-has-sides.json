@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "roll-as-many-dice-as-the-die-has-sides",
+  "title": "Roll as many dice as the die has sides",
+  "canonical_url": "https://sacchen.github.io/papers/hog/",
+  "brief": "A probability paper proving that in the Hog dice game, rolling n dice maximizes the expected turn score for an n-sided die — expectation derived via the law of total expectation, with a full maximum proof and charts. Link-only share with no surrounding context; classifiable from the page itself.",
+  "caveat": "Link-only share with no surrounding context; classifiable from the page itself.",
+  "resource_type": "article-guide",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "article"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-02",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

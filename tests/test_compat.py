@@ -33,7 +33,7 @@ def records():
 def test_legacy_round_trip_is_exact(records):
     live = json.loads((ROOT / "data.json").read_text(encoding="utf-8"))
     derived = [legacy_row(r) for r in records]
-    assert len(derived) == len(live) == 291
+    assert len(derived) == len(live) == 301
     for d, l, rec in zip(derived, live, records):
         assert d == l, f"legacy row mismatch for {rec['id']}"
 
@@ -59,7 +59,7 @@ def test_api_resources_match_catalog(records):
 def test_api_manifest_is_consistent():
     manifest = json.loads((API / "index.json").read_text(encoding="utf-8"))
     assert manifest["api_version"] == "1"
-    assert manifest["record_count"] == 291
+    assert manifest["record_count"] == 301
     assert set(manifest["channels"]) == {"share-tech", "providers"}
     body = (API / "resources.json").read_bytes()
     assert manifest["resources_sha256"] == hashlib.sha256(body).hexdigest()
@@ -67,6 +67,6 @@ def test_api_manifest_is_consistent():
 
 def test_compat_report_claims_hold():
     rep = json.loads((API / "_compat_report.json").read_text(encoding="utf-8"))
-    assert rep["rows"] == 291
+    assert rep["rows"] == 301
     assert rep["all_rows_equal"] is True
     assert rep["mismatched_ids"] == []

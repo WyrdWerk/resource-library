@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "hostup",
+  "title": "HostUp",
+  "canonical_url": "https://cloud.hostup.se/signup?ref=K4X7KLS8",
+  "brief": "Swedish VPS provider at ~$10/month + tax for 8 GB RAM, used and vouched for by thelaggingway in reply to ROman. Note: the signup page's bot protection rejected the automated link check, so the URL is posted as-shared and only sharer-verified.",
+  "caveat": null,
+  "resource_type": "service-platform",
+  "topics": [
+    "cloud-infrastructure"
+  ],
+  "use_cases": [
+    "provision-infrastructure"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-02",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

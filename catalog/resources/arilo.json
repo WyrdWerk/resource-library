@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "arilo",
+  "title": "Arilo",
+  "canonical_url": "https://arilo.id/#pricing",
+  "brief": "Flat-rate coding-inference provider with predictable 30-day plans — Coder $0.99, Starter $4.99, Pro $19.99, Hacker $100, up to Small Business $490 — each a prepaid credit allowance against per-token metered pricing, plus an off-peak JSONL batch path at 50% off PAYG. thelaggingway shared it \"still to be evaluated\", so treat all of this as unevaluated marketing until checked. Conversations are not used for training unless you opt into their Research Program.",
+  "caveat": null,
+  "resource_type": "provider",
+  "topics": [
+    "inference",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-02",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

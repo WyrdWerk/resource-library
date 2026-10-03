@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "battleships",
+  "title": "Battleships",
+  "canonical_url": "https://battleships.dev/",
+  "brief": "An agent-readable comparison of sandbox, VM and runtime pricing for AI agents — 366 providers priced through one engine with every figure quoted from the source pricing page, published as llms.txt, JSON files and a Node pricing engine. Built by boat.dev, one of the providers it ranks; the rankings are not independently verified, so take them with a grain of salt.",
+  "caveat": "Built by boat.dev, one of the providers it ranks; the rankings are not independently verified, so take them with a grain of salt.",
+  "resource_type": "provider",
+  "topics": [
+    "inference",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "run-inference",
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-03",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

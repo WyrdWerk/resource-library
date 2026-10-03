@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "heavencloud",
+  "title": "HeavenCloud",
+  "canonical_url": "https://heavencloud.in/",
+  "brief": "Indian hosting provider (Mumbai, plus US/Singapore/Germany) for Discord/Telegram bots, Lavalink nodes, game servers and Ryzen VPS — a free 24/7 Discord bot tier with no credit card, paid bot plans from ₹20/mo. The share cites a 99.5% SLA, but the site's FAQ reserves uptime SLAs for paid plans; take the SLA claim with caution.",
+  "caveat": null,
+  "resource_type": "service-platform",
+  "topics": [
+    "cloud-infrastructure"
+  ],
+  "use_cases": [
+    "provision-infrastructure"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-02",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

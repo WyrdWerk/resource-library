@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-85 curated providers, with briefs.
+88 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -25,6 +25,24 @@
 - Shared by: Felix (1 Oct)
 - Categories: providers
 - Brief: Artificial Analysis' provider comparison page for GLM-5.3-Flash: which inference providers serve it, at what price and speed. Handy when shopping for the cheapest or fastest GLM-5.3-Flash endpoint.
+
+## Aoru
+- URL: https://aoru.ai/pricing
+- Shared by: Tom (3 Oct)
+- Categories: providers
+- Brief: Inference provider serving resident open models with zero-log inference behind one OpenAI-compatible endpoint; Plus at $12/month and Pro at $25/month with refilled token balances, plus usage-based PAYG credits from $5. Shared in reply to a 36B tokens/month, $2000/month budget request; pricing and zero-log claims are vendor-reported and not independently verified.
+
+## HyperCLI
+- URL: https://hypercli.com/pricing/
+- Shared by: Tom (3 Oct)
+- Categories: providers
+- Brief: Flat-rate provider plans for coding agents — Solo $39/month (25M tokens/day), Team $79/month (50M pooled), Pro $149/month (100M pooled) — with OpenAI- and Anthropic-compatible API keys drawing from the same daily pool, capped with throttling instead of overage billing. Shared for the same 36B tokens/month request; 7-day free trial, no card. Plan figures are vendor-reported and not independently verified.
+
+## Arilo
+- URL: https://arilo.id/#pricing
+- Shared by: thelaggingway (2 Oct)
+- Categories: providers
+- Brief: Flat-rate coding-inference provider with predictable 30-day plans — Coder $0.99, Starter $4.99, Pro $19.99, Hacker $100, up to Small Business $490 — each a prepaid credit allowance against per-token metered pricing, plus an off-peak JSONL batch path at 50% off PAYG. thelaggingway shared it "still to be evaluated", so treat all of this as unevaluated marketing until checked. Conversations are not used for training unless you opt into their Research Program.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "tierhive",
+  "title": "TierHive",
+  "canonical_url": "https://tierhive.com/",
+  "brief": "Hourly-billed NAT VPS hosting aimed at small-VPS needs — deploy instantly, scale dynamically, pay only for hours used, with load balancing and automatic failover included. thelaggingway recommends it for small-VPS needs but hasn't tried it; pricing and feature claims are vendor-reported and not independently verified.",
+  "caveat": null,
+  "resource_type": "service-platform",
+  "topics": [
+    "cloud-infrastructure"
+  ],
+  "use_cases": [
+    "provision-infrastructure"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-02",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
