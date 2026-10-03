@@ -33,7 +33,7 @@ def records(rows):
 
 def test_catalog_covers_every_legacy_row(rows, records):
     ids = [r["id"] for r in rows]
-    assert len(records) == len(rows) == 291
+    assert len(records) == len(rows) == 301
     assert sorted(records) == sorted(ids)
 
 
@@ -68,9 +68,9 @@ def test_shared_on_dates_are_real_and_evidenced(rows, records):
             # documented #providers lifetime (raw/providers_2026-07-20_to_2026-09-25.md)
             assert PROV_START <= dt <= PROV_END, row["id"]
         else:
-            # share-tech weeks run through the latest week ending 1 Oct 2026;
+            # share-tech weeks run through the latest week ending 8 Oct 2026;
             # in-week containment is proven per-row by the migration report
-            assert date(2026, 6, 1) <= dt <= date(2026, 10, 1), row["id"]
+            assert date(2026, 6, 1) <= dt <= date(2026, 10, 8), row["id"]
 
 
 def test_exceptions_file_is_empty():
@@ -80,7 +80,7 @@ def test_exceptions_file_is_empty():
 
 def test_migration_report_claims_hold():
     rep = json.loads((ROOT / "catalog" / "_migration_report.json").read_text(encoding="utf-8"))
-    assert rep["migrated"] == rep["source_rows"] == 291
+    assert rep["migrated"] == rep["source_rows"] == 301
     assert rep["order_preserved"] is True
     assert rep["all_fields_equal"] is True
     assert all(r["all_equal"] for r in rep["rows"])

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "cua-spaces",
+  "title": "Cua Spaces",
+  "canonical_url": "https://spaces.cua.ai/",
+  "brief": "A free full-desktop Space for every agent — macOS VMs on machines you own or in your own cloud (Apple silicon Macs for macOS Spaces, Docker or Podman for Linux), connectable to Claude Code, Codex, Cursor, Gemini CLI, Cline, Kiro and OpenClaw through the Cua MCP. Its Teleport feature moves an app's whole session (tabs, profile, sign-ins) from your Mac into a Space, with nothing read until you approve and Touch ID gating on sensitive items.",
+  "caveat": null,
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "cloud-infrastructure"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "web",
+    "mcp"
+  ],
+  "technologies": [
+    "mcp-protocol"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "web-app",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "baanish"
+  },
+  "shared_on": "2026-10-03",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

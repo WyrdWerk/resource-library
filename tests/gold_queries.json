@@ -85,14 +85,14 @@
   "filters": {},
   "expect_top1": null,
   "expect_top5": [
+   "artificial-analysis-glm-5-3-flash-providers",
+   "battleships",
    "parasail",
    "pi-coralbricks-provider",
-   "tokenwatch",
-   "openmodels",
-   "antseed"
+   "tokenwatch"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "reviewed 2026-10-03 against 301-record catalog; new records (battleships, aoru, hpc-sandbox-benchmarks, primalabs benchmark) legitimately rank"
  },
  {
   "query": "LLM gateway",
@@ -117,10 +117,10 @@
    "boat",
    "openai-api-pricing",
    "tokenwatch",
-   "real-api-pricing-2"
+   "artificial-analysis-glm-5-3-flash-providers"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "reviewed 2026-10-03 against 301-record catalog; new records (battleships, aoru, hpc-sandbox-benchmarks, primalabs benchmark) legitimately rank"
  },
  {
   "query": "open source react components",
@@ -207,10 +207,10 @@
    "prism-inference",
    "inco",
    "fast-inference",
-   "tensorx"
+   "aoru"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "reviewed 2026-10-03 against 301-record catalog; new records (battleships, aoru, hpc-sandbox-benchmarks, primalabs benchmark) legitimately rank"
  },
  {
   "query": "components",
@@ -466,12 +466,13 @@
   "filters": {},
   "expect_top1": null,
   "expect_top5": [
+   "hpc-sandbox-benchmarks",
+   "primalabs-mimo-v2-6-pro-speed-benchmark",
    "brokenarxiv-arxivmath-announcement",
    "isoquant",
-   "gliner2-5-decide",
-   "inco"
+   "featherless"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "reviewed 2026-10-03 against 301-record catalog; new records (battleships, aoru, hpc-sandbox-benchmarks, primalabs benchmark) legitimately rank"
  }
 ]

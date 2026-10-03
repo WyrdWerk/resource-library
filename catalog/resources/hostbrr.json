@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "hostbrr",
+  "title": "HostBrr",
+  "canonical_url": "https://hostbrr.com/",
+  "brief": "European VPS and hosting provider (cloud VPS from €3.50/mo, web hosting from €1.25/mo) on AMD EPYC/Threadripper with NVMe storage, a 10Gbps network and included DDoS mitigation; Felix strongly recommends it for non-serious projects, citing best performance-per-dollar in Europe. Felix notes the site's \"order\" tab is quirky; the performance-per-dollar claim is the sharer's and is not independently verified.",
+  "caveat": "Felix notes the site's \"order\" tab is quirky; the performance-per-dollar claim is the sharer's and is not independently verified.",
+  "resource_type": "service-platform",
+  "topics": [
+    "cloud-infrastructure"
+  ],
+  "use_cases": [
+    "provision-infrastructure"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Felix"
+  },
+  "shared_on": "2026-10-02",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

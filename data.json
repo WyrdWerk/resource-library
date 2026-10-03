@@ -368,6 +368,137 @@
     "warning": ""
   },
   {
+    "title": "Cua Spaces",
+    "week": "1–8 Oct 2026",
+    "url": "https://spaces.cua.ai/",
+    "sharer": "baanish",
+    "date": "3 Oct",
+    "categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "brief": "A free full-desktop Space for every agent — macOS VMs on machines you own or in your own cloud (Apple silicon Macs for macOS Spaces, Docker or Podman for Linux), connectable to Claude Code, Codex, Cursor, Gemini CLI, Cline, Kiro and OpenClaw through the Cua MCP. Its Teleport feature moves an app's whole session (tabs, profile, sign-ins) from your Mac into a Space, with nothing read until you approve and Touch ID gating on sensitive items.",
+    "id": "cua-spaces",
+    "warning": ""
+  },
+  {
+    "title": "Battleships",
+    "week": "1–8 Oct 2026",
+    "url": "https://battleships.dev/",
+    "sharer": "thelaggingway",
+    "date": "3 Oct",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "An agent-readable comparison of sandbox, VM and runtime pricing for AI agents — 366 providers priced through one engine with every figure quoted from the source pricing page, published as llms.txt, JSON files and a Node pricing engine. Built by boat.dev, one of the providers it ranks; the rankings are not independently verified, so take them with a grain of salt.",
+    "id": "battleships",
+    "warning": "Built by boat.dev, one of the providers it ranks; the rankings are not independently verified, so take them with a grain of salt."
+  },
+  {
+    "title": "HostBrr",
+    "week": "1–8 Oct 2026",
+    "url": "https://hostbrr.com/",
+    "sharer": "Felix",
+    "date": "2 Oct",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "European VPS and hosting provider (cloud VPS from €3.50/mo, web hosting from €1.25/mo) on AMD EPYC/Threadripper with NVMe storage, a 10Gbps network and included DDoS mitigation; Felix strongly recommends it for non-serious projects, citing best performance-per-dollar in Europe. Felix notes the site's \"order\" tab is quirky; the performance-per-dollar claim is the sharer's and is not independently verified.",
+    "id": "hostbrr",
+    "warning": "Felix notes the site's \"order\" tab is quirky; the performance-per-dollar claim is the sharer's and is not independently verified."
+  },
+  {
+    "title": "HostUp",
+    "week": "1–8 Oct 2026",
+    "url": "https://cloud.hostup.se/signup?ref=K4X7KLS8",
+    "sharer": "thelaggingway",
+    "date": "2 Oct",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "Swedish VPS provider at ~$10/month + tax for 8 GB RAM, used and vouched for by thelaggingway in reply to ROman. Note: the signup page's bot protection rejected the automated link check, so the URL is posted as-shared and only sharer-verified.",
+    "id": "hostup",
+    "warning": ""
+  },
+  {
+    "title": "TierHive",
+    "week": "1–8 Oct 2026",
+    "url": "https://tierhive.com/",
+    "sharer": "thelaggingway",
+    "date": "2 Oct",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "Hourly-billed NAT VPS hosting aimed at small-VPS needs — deploy instantly, scale dynamically, pay only for hours used, with load balancing and automatic failover included. thelaggingway recommends it for small-VPS needs but hasn't tried it; pricing and feature claims are vendor-reported and not independently verified.",
+    "id": "tierhive",
+    "warning": ""
+  },
+  {
+    "title": "HeavenCloud",
+    "week": "1–8 Oct 2026",
+    "url": "https://heavencloud.in/",
+    "sharer": "ROman",
+    "date": "2 Oct",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "Indian hosting provider (Mumbai, plus US/Singapore/Germany) for Discord/Telegram bots, Lavalink nodes, game servers and Ryzen VPS — a free 24/7 Discord bot tier with no credit card, paid bot plans from ₹20/mo. The share cites a 99.5% SLA, but the site's FAQ reserves uptime SLAs for paid plans; take the SLA claim with caution.",
+    "id": "heavencloud",
+    "warning": ""
+  },
+  {
+    "title": "Roll as many dice as the die has sides",
+    "week": "1–8 Oct 2026",
+    "url": "https://sacchen.github.io/papers/hog/",
+    "sharer": "Tom",
+    "date": "2 Oct",
+    "categories": [
+      "article"
+    ],
+    "brief": "A probability paper proving that in the Hog dice game, rolling n dice maximizes the expected turn score for an n-sided die — expectation derived via the law of total expectation, with a full maximum proof and charts. Link-only share with no surrounding context; classifiable from the page itself.",
+    "id": "roll-as-many-dice-as-the-die-has-sides",
+    "warning": "Link-only share with no surrounding context; classifiable from the page itself."
+  },
+  {
+    "title": "Aoru",
+    "week": "providers",
+    "url": "https://aoru.ai/pricing",
+    "sharer": "Tom",
+    "date": "3 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Inference provider serving resident open models with zero-log inference behind one OpenAI-compatible endpoint; Plus at $12/month and Pro at $25/month with refilled token balances, plus usage-based PAYG credits from $5. Shared in reply to a 36B tokens/month, $2000/month budget request; pricing and zero-log claims are vendor-reported and not independently verified.",
+    "id": "aoru",
+    "warning": "Shared in reply to a 36B tokens/month, $2000/month budget request; pricing and zero-log claims are vendor-reported and not independently verified."
+  },
+  {
+    "title": "HyperCLI",
+    "week": "providers",
+    "url": "https://hypercli.com/pricing/",
+    "sharer": "Tom",
+    "date": "3 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Flat-rate provider plans for coding agents — Solo $39/month (25M tokens/day), Team $79/month (50M pooled), Pro $149/month (100M pooled) — with OpenAI- and Anthropic-compatible API keys drawing from the same daily pool, capped with throttling instead of overage billing. Shared for the same 36B tokens/month request; 7-day free trial, no card. Plan figures are vendor-reported and not independently verified.",
+    "id": "hypercli",
+    "warning": "Plan figures are vendor-reported and not independently verified."
+  },
+  {
+    "title": "Arilo",
+    "week": "providers",
+    "url": "https://arilo.id/#pricing",
+    "sharer": "thelaggingway",
+    "date": "2 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Flat-rate coding-inference provider with predictable 30-day plans — Coder $0.99, Starter $4.99, Pro $19.99, Hacker $100, up to Small Business $490 — each a prepaid credit allowance against per-token metered pricing, plus an off-peak JSONL batch path at 50% off PAYG. thelaggingway shared it \"still to be evaluated\", so treat all of this as unevaluated marketing until checked. Conversations are not used for training unless you opt into their Research Program.",
+    "id": "arilo",
+    "warning": ""
+  },
+  {
     "title": "Prism Inference",
     "week": "providers",
     "url": "https://prisminference.com/pricing",
