@@ -82,7 +82,12 @@ Each file is one collection batch. Sections assign entries to weeks:
 `notes/providers.md` is the exception: it uses a single `## Providers` section
 for the whole curated #providers collection (full-channel lifetime, earliest
 occurrence kept, deduped within the channel and against the published site).
-It renders as the leading "Providers" section of the site.
+The website intermixes providers with other resources by share date, newest
+first. Its sort control also offers oldest-first, name A–Z/Z–A, and category
+A–Z/Z–A (first listed category, newest within each category). These are
+presentation-only: source batches, exported data order, and week-filter
+membership stay unchanged. Sort and filter choices are shareable in the URL;
+Clear all restores the unfiltered, newest-first view.
 
 ### Resource Title
 - URL: https://example.com/
