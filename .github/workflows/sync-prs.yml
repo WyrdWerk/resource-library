@@ -46,6 +46,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ ! -f scripts/sync_main.py ]; then echo "scripts/sync_main.py not on main yet; nothing to do"; exit 0; fi
           cp scripts/sync_main.py "$RUNNER_TEMP/sync_main.py"   # main's copy, even for older branches
           if [ -n "$PR" ]; then
             prs="$PR"
