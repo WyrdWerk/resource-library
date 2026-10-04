@@ -1,29 +1,47 @@
 # Resource Library — CheapInfra #share-tech + #providers
-> 306 curated developer resources shared in the CheapInfra Discord's #share-tech and #providers channels: AI tools, dev tools, websites, articles, GitHub repos, and inference providers. Every entry carries a two-sentence brief, its sharer, and taxonomy facets. The site is a single HTML page (https://cheapinfra-resources.wyrdwerk.com/); the same catalog is served by a read-only JSON API v1 — all GET, no auth, CORS-open, ETag-cached, deterministic.
+> 306 curated developer resources shared in the CheapInfra Discord's #share-tech and #providers channels: AI tools, dev tools, websites, articles, GitHub repos, and inference providers. Every entry carries a ~2-sentence editorial brief, its sharer, its share date, and controlled taxonomy facets; 200 also carry a researched long-form `details` breakdown. The site is a single HTML page (https://cheapinfra-resources.wyrdwerk.com/); the same catalog is served by a read-only JSON API v1 — GET only, no auth, CORS-open, ETag-cached, deterministic.
 
-API (base https://cheapinfra-resources.wyrdwerk.com/api/v1):
-- [Search](https://cheapinfra-resources.wyrdwerk.com/api/v1/search?q=): lexical search over title/brief/taxonomy/aliases. Params: q (optional), resource_type (alias type), topic, use_case, interface, technology, channel, open_source, from/to (inclusive YYYY-MM-DD), sort=relevance|newest|oldest|title, limit (1-100, default 20), cursor, fields. Facet params accept CSV lists — OR within a family, AND across families. Example: /api/v1/search?q=rag&topic=ai-inference&open_source=true
-- [All records](https://cheapinfra-resources.wyrdwerk.com/api/v1/resources): canonical records in stable order, paginated (fields, limit, cursor)
-- [One record](https://cheapinfra-resources.wyrdwerk.com/api/v1/resources/openrouter): canonical record by id
-- [Static snapshot](https://cheapinfra-resources.wyrdwerk.com/api/v1/resources.json): full raw array of all records
-- [Facets](https://cheapinfra-resources.wyrdwerk.com/api/v1/facets.json): every valid filter value with counts, grouped by filter family
-- [Taxonomy](https://cheapinfra-resources.wyrdwerk.com/api/v1/taxonomy.json): the controlled vocabularies behind the facets
-- [Manifest](https://cheapinfra-resources.wyrdwerk.com/api/v1/index.json): API version, record count, channels, checksums, endpoint registry
+Base URL: https://cheapinfra-resources.wyrdwerk.com/api/v1 — collected read-only from Discord, refreshed by a daily run; content is CC-BY-4.0.
 
-Docs:
-- [OpenAPI 3.1 contract](https://cheapinfra-resources.wyrdwerk.com/api/openapi.yaml): every endpoint, param, and response schema
+## API
+
+- [Search](https://cheapinfra-resources.wyrdwerk.com/api/v1/search?q=vector+database): deterministic lexical search over title, brief, taxonomy labels, and curated aliases; exact id or URL queries rank first. `q` is required to get results — filters narrow a query, they do not browse on their own. Params: q, resource_type (alias type), topic, use_case, interface, technology, channel, open_source, from/to (inclusive YYYY-MM-DD on shared_on), sort=relevance|newest|oldest|title, limit (1-100, default 20), cursor, fields. Facet params accept CSV lists — OR within a family, AND across families; every value must exist in facets.json. Response: query, filters, sort, limit, results, next_cursor.
+- [All records](https://cheapinfra-resources.wyrdwerk.com/api/v1/resources?limit=100): every canonical record in stable order, paginated (fields, limit, cursor). Response: records, next_cursor, total. Use this (or resources.json) to browse or filter without a query.
+- [One record](https://cheapinfra-resources.wyrdwerk.com/api/v1/resources/openrouter): canonical record by immutable id
+- [Static snapshot](https://cheapinfra-resources.wyrdwerk.com/api/v1/resources.json): full raw array of all records in one request (no envelope, no params)
+- [Facets](https://cheapinfra-resources.wyrdwerk.com/api/v1/facets.json): every valid filter value with its record count, keyed by filter param name
+- [Taxonomy](https://cheapinfra-resources.wyrdwerk.com/api/v1/taxonomy.json): label, definition, and aliases for every facet value, plus the query synonym map
+- [Manifest](https://cheapinfra-resources.wyrdwerk.com/api/v1/index.json): api_version, generated_at, record_count, channels, resources_sha256 — compare the hash to detect catalog updates
+
+Examples:
+- https://cheapinfra-resources.wyrdwerk.com/api/v1/search?q=react+components&topic=frontend,design
+- https://cheapinfra-resources.wyrdwerk.com/api/v1/search?q=gpu&channel=providers&sort=newest&fields=id,title,canonical_url,shared_on
+- https://cheapinfra-resources.wyrdwerk.com/api/v1/search?q=agent&from=2026-09-01&to=2026-09-30&sort=title&limit=50
+- https://cheapinfra-resources.wyrdwerk.com/api/v1/search?q=mcp&interface=mcp&open_source=true
+
+## Record fields
+
+id, title, canonical_url, brief, caveat (warning lifted from the brief, or null), details (long-form breakdown, or null), resource_type, topics, use_cases, interfaces, technologies, license (null unless verified), open_source (true / null — never inferred), display_period (site week label or "providers"), legacy_categories (ai-tool, dev-tool, github, web-app, article, providers), source {channel, sharer}, shared_on (YYYY-MM-DD), verification {status, checked_at, final_url}, schema_version. `fields` can select any of these except details.
+
+## Docs
+
+- [OpenAPI 3.1 contract](https://cheapinfra-resources.wyrdwerk.com/api/openapi.yaml): every endpoint, param, header, error, and response schema
 - [Runbook](https://cheapinfra-resources.wyrdwerk.com/docs/runbook.md): build, test, audit, and deploy commands
-- [API spec](https://cheapinfra-resources.wyrdwerk.com/docs/api-spec.md): the design spec behind the API surface
+- [API spec](https://cheapinfra-resources.wyrdwerk.com/docs/api-spec.md): the original design spec (the OpenAPI contract wins where they differ)
 
-Site:
-- [Home](https://cheapinfra-resources.wyrdwerk.com/): the browsable library (single-page app; filters shareable via URL hash)
-- [data.json](https://cheapinfra-resources.wyrdwerk.com/data.json): full site dataset
+## Site
+
+- [Home](https://cheapinfra-resources.wyrdwerk.com/): the browsable library — Library, Analytics, and API tabs; filters shareable via URL hash
+- [data.json](https://cheapinfra-resources.wyrdwerk.com/data.json): full site dataset (legacy row shape)
 - [RSS](https://cheapinfra-resources.wyrdwerk.com/feed.xml): all resources, newest first
 - [Sitemap](https://cheapinfra-resources.wyrdwerk.com/sitemap.xml)
 
-Notes:
-- Errors are JSON: {"error": {"code", "message"}}. Codes: bad_fields, bad_limit, bad_cursor, bad_filter, bad_sort, not_found, method_not_allowed, catalog_unavailable, internal.
-- Methods: GET, HEAD, OPTIONS only (405 otherwise). CORS: Access-Control-Allow-Origin: * on every response. ETag/If-None-Match honored (304).
+## Notes
+
+- Errors are JSON: {"error": {"code", "message"}}. Codes: bad_fields, bad_limit, bad_cursor, bad_filter, bad_sort (400), not_found (404), method_not_allowed (405), internal (500), catalog_unavailable (503).
+- Methods: GET, HEAD, OPTIONS only (405 otherwise). CORS: Access-Control-Allow-Origin: * on every response. ETag/If-None-Match honored (304); Last-Modified is the catalog build time.
 - Unknown paths under /api/v1/ return the site's HTML, not JSON — use only the documented paths.
 - Cache-Control: search 60s, resources 300s, single record 3600s; static *.json assets use asset caching.
+- open_source=false matches every record not known to be open source (license unknown included), not "closed source".
+- Pagination: pass next_cursor back unchanged with the same params. On /search an unknown cursor restarts at page one; on /resources it is a 400 bad_cursor. Search responses have no total.
 - Versioning: within v1, changes are additive only — fields and endpoints are never renamed or removed.

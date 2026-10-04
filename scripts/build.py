@@ -1046,15 +1046,22 @@ footer a {{ color: var(--accent); }}
     <div class="an-grid">
       <div class="an-card wide">
         <h3>Quick start</h3>
-        <p class="sub">Search ranks by a fixed lexical score over titles, briefs, taxonomy labels and curated aliases — deterministic, no embeddings. Facet filters are comma-separated lists: OR within a family, AND across families.</p>
+        <p class="sub">Search ranks by a fixed lexical score over titles, briefs, taxonomy labels and curated aliases — deterministic, no embeddings. A query (<code>q</code>) is what selects results; facet filters narrow it, as comma-separated lists: OR within a family, AND across families. To browse without a query, page through <code>/resources</code>.</p>
         <pre class="codeblock"><span class="cmt"># search — 20 per page by default, cursor-paginated</span>
 curl "{SITE_URL}/api/v1/search?q=vector+database"
 
-<span class="cmt"># CSV facet filters (OR within a family), open-source only</span>
-curl "{SITE_URL}/api/v1/search?topic=ai-inference,quantization&amp;open_source=true"
+<span class="cmt"># CSV facet filters (OR within a family)</span>
+curl "{SITE_URL}/api/v1/search?q=react+components&amp;topic=frontend,design"
 
-<span class="cmt"># date-bounded, title-sorted, trimmed to three fields</span>
-curl "{SITE_URL}/api/v1/search?from=2026-08-01&amp;to=2026-08-31&amp;sort=title&amp;fields=id,title,canonical_url"</pre>
+<span class="cmt"># providers only, newest first, trimmed to four fields</span>
+curl "{SITE_URL}/api/v1/search?q=gpu&amp;channel=providers&amp;sort=newest&amp;fields=id,title,canonical_url,shared_on"
+
+<span class="cmt"># date-bounded (inclusive), title-sorted</span>
+curl "{SITE_URL}/api/v1/search?q=agent&amp;from=2026-09-01&amp;to=2026-09-30&amp;sort=title"
+
+<span class="cmt"># one record by id; the whole catalog, 100 per page</span>
+curl "{SITE_URL}/api/v1/resources/openrouter"
+curl "{SITE_URL}/api/v1/resources?limit=100"</pre>
       </div>
       <div class="an-card wide">
         <h3>Endpoints</h3>
@@ -1064,27 +1071,43 @@ curl "{SITE_URL}/api/v1/search?from=2026-08-01&amp;to=2026-08-31&amp;sort=title&
           <tr><td>GET /search</td><td>Lexical search with facet filters, date bounds, sort and cursor pagination — the workhorse. Response: <code>results</code> + <code>next_cursor</code> (+ echoed <code>query</code>, <code>filters</code>, <code>sort</code>, <code>limit</code>).</td><td>60 s</td></tr>
           <tr><td>GET /resources</td><td>Canonical records in stable order, paginated via <code>limit</code>/<code>cursor</code>. Response: <code>records</code> + <code>next_cursor</code> + <code>total</code>.</td><td>300 s</td></tr>
           <tr><td>GET /resources/{{id}}</td><td>One canonical record by id, e.g. <code>/api/v1/resources/openrouter</code>.</td><td>1 h</td></tr>
-          <tr><td>GET /resources.json</td><td>Static snapshot: the full raw array of all records, no envelope.</td><td>asset</td></tr>
+          <tr><td>GET /resources.json</td><td>Static snapshot: the full raw array of all records in one request, no envelope, no params.</td><td>asset</td></tr>
           <tr><td>GET /facets.json</td><td>Every valid filter value with its count, grouped by filter family.</td><td>asset</td></tr>
-          <tr><td>GET /taxonomy.json</td><td>The controlled vocabularies behind the facets.</td><td>asset</td></tr>
-          <tr><td>GET /index.json</td><td>Manifest: API version, record count, channels, checksums, endpoint registry.</td><td>asset</td></tr>
+          <tr><td>GET /taxonomy.json</td><td>The controlled vocabularies behind the facets: label, definition and aliases per value, plus the query synonym map.</td><td>asset</td></tr>
+          <tr><td>GET /index.json</td><td>Manifest: API version, build time, record count, channels, <code>resources_sha256</code> (compare it to detect updates), endpoint registry.</td><td>asset</td></tr>
         </table>
       </div>
       <div class="an-card wide">
         <h3>Parameters</h3>
-        <p class="sub">All optional; combined with AND logic. Search-only params are marked.</p>
+        <p class="sub">Filters combine with AND logic. Search-only params are marked; <code>/resources</code> takes only <code>fields</code>, <code>limit</code> and <code>cursor</code>. Unknown params are ignored.</p>
         <table class="apitb">
           <tr><th>Param</th><th>Meaning</th></tr>
-          <tr><td>q</td><td>Free-text search query <span style="color:var(--muted)">(search only)</span>. Optional — filters alone work. Exact id or URL queries rank first.</td></tr>
-          <tr><td>resource_type</td><td>Facet filter, CSV allowed — values OR-ed. Valid values in <a href="api/v1/facets.json">facets.json</a>. Alias: <code>type</code>.</td></tr>
-          <tr><td>topic · use_case · interface · technology</td><td>Facet filters, CSV allowed — values OR-ed within each family.</td></tr>
-          <tr><td>channel</td><td><code>share-tech</code> or <code>providers</code> — which Discord channel the resource came from.</td></tr>
-          <tr><td>open_source</td><td><code>true</code> or <code>false</code>.</td></tr>
+          <tr><td>q</td><td>Free-text search query <span style="color:var(--muted)">(search only)</span>. Needed for results — a request with filters but no <code>q</code> returns an empty list. Exact id or URL queries rank first.</td></tr>
+          <tr><td>resource_type</td><td>Facet filter, CSV allowed — values OR-ed. Alias: <code>type</code>. <span style="color:var(--muted)">(search only)</span></td></tr>
+          <tr><td>topic · use_case · interface · technology</td><td>Facet filters, CSV allowed — values OR-ed within each family. Every value must exist in <a href="api/v1/facets.json">facets.json</a>, or the request is a 400 <code>bad_filter</code>. <span style="color:var(--muted)">(search only)</span></td></tr>
+          <tr><td>channel</td><td><code>share-tech</code> or <code>providers</code> — which Discord channel the resource came from. <span style="color:var(--muted)">(search only)</span></td></tr>
+          <tr><td>open_source</td><td><code>true</code> keeps resources whose brief says open source; <code>false</code> keeps everything else, including unknown licenses — it means “not known to be open source”. <span style="color:var(--muted)">(search only)</span></td></tr>
           <tr><td>from · to</td><td>Inclusive <code>YYYY-MM-DD</code> bounds on the shared date <span style="color:var(--muted)">(search only)</span>; <code>from ≤ to</code> required.</td></tr>
           <tr><td>sort</td><td><code>relevance</code> (default) · <code>newest</code> · <code>oldest</code> · <code>title</code> <span style="color:var(--muted)">(search only)</span>.</td></tr>
           <tr><td>limit</td><td>Page size, 1–100, default 20.</td></tr>
           <tr><td>cursor</td><td>Opaque pagination cursor — pass back the <code>next_cursor</code> from the previous page.</td></tr>
-          <tr><td>fields</td><td>CSV projection of a record's fields, e.g. <code>fields=id,title,canonical_url</code>. Valid names are in the OpenAPI contract.</td></tr>
+          <tr><td>fields</td><td>CSV projection of a record's top-level fields, e.g. <code>fields=id,title,canonical_url</code>. Any field below except <code>details</code>; unknown names are a 400 <code>bad_fields</code>.</td></tr>
+        </table>
+      </div>
+      <div class="an-card wide">
+        <h3>Record shape</h3>
+        <p class="sub">One canonical record per resource, validated against a JSON Schema at build time. Unknown facts stay <code>null</code> — nothing is inferred.</p>
+        <table class="apitb">
+          <tr><th>Field</th><th>Meaning</th></tr>
+          <tr><td>id</td><td>Immutable slug, e.g. <code>openrouter</code>. Never regenerated.</td></tr>
+          <tr><td>title · canonical_url</td><td>Display name and HTTPS destination (unique across the catalog).</td></tr>
+          <tr><td>brief · caveat</td><td>The ~2-sentence editorial summary, and any warning lifted from it (typically an unverified claim), else <code>null</code>.</td></tr>
+          <tr><td>details</td><td>Researched long-form breakdown written from the live page, or <code>null</code> until enriched — the “In detail” text on library cards.</td></tr>
+          <tr><td>resource_type · topics · use_cases · interfaces · technologies</td><td>Taxonomy facets — the same slugs the filters take.</td></tr>
+          <tr><td>source · shared_on</td><td><code>{{"channel", "sharer"}}</code> (Discord channel and username) and the <code>YYYY-MM-DD</code> date it was shared.</td></tr>
+          <tr><td>open_source · license</td><td><code>true</code> only when the brief says so, else <code>null</code>; license is <code>null</code> unless verified.</td></tr>
+          <tr><td>display_period · legacy_categories</td><td>The site's week label (or <code>providers</code>) and its six display categories.</td></tr>
+          <tr><td>verification · schema_version</td><td>Link-check status (<code>unchecked</code> for now) and the record schema version (<code>1.0</code>).</td></tr>
         </table>
       </div>
       <div class="an-card">
@@ -1094,8 +1117,9 @@ curl "{SITE_URL}/api/v1/search?from=2026-08-01&amp;to=2026-08-31&amp;sort=title&
           <tr><th>Thing</th><th>Behavior</th></tr>
           <tr><td>Methods</td><td>GET, HEAD, OPTIONS only — anything else is a 405.</td></tr>
           <tr><td>CORS</td><td><code>Access-Control-Allow-Origin: *</code> on every response.</td></tr>
-          <tr><td>Caching</td><td>ETag on every response; send <code>If-None-Match</code> to get a 304.</td></tr>
-          <tr><td>Errors</td><td><code>{{"error": {{"code", "message"}}}}</code> — codes: <code>bad_fields</code>, <code>bad_limit</code>, <code>bad_cursor</code>, <code>bad_filter</code>, <code>bad_sort</code>, <code>not_found</code>, <code>method_not_allowed</code>, <code>catalog_unavailable</code>, <code>internal</code>.</td></tr>
+          <tr><td>Caching</td><td>ETag on every response; send <code>If-None-Match</code> to get a 304. <code>Last-Modified</code> is the catalog build time.</td></tr>
+          <tr><td>Pagination</td><td>Pass <code>next_cursor</code> back unchanged with the same params; <code>null</code> means the last page. Search responses carry no total.</td></tr>
+          <tr><td>Errors</td><td><code>{{"error": {{"code", "message"}}}}</code> — 400: <code>bad_fields</code>, <code>bad_limit</code>, <code>bad_cursor</code>, <code>bad_filter</code>, <code>bad_sort</code>; 404: <code>not_found</code>; 405: <code>method_not_allowed</code>; 500: <code>internal</code>; 503: <code>catalog_unavailable</code>.</td></tr>
           <tr><td>Versioning</td><td>Within v1, changes are additive only — fields and endpoints are never renamed or removed.</td></tr>
         </table>
       </div>
@@ -1107,7 +1131,7 @@ curl "{SITE_URL}/api/v1/search?from=2026-08-01&amp;to=2026-08-31&amp;sort=title&
           <a href="api/openapi.yaml" target="_blank" rel="noopener">api/openapi.yaml<span>The OpenAPI 3.1 contract for every endpoint.</span></a>
           <a href="api/v1/facets.json" target="_blank" rel="noopener">api/v1/facets.json<span>Every valid filter value, with counts.</span></a>
           <a href="docs/runbook.md" target="_blank" rel="noopener">docs/runbook.md<span>How the API is built, tested, audited and deployed.</span></a>
-          <a href="docs/api-spec.md" target="_blank" rel="noopener">docs/api-spec.md<span>The design spec behind the API surface.</span></a>
+          <a href="docs/api-spec.md" target="_blank" rel="noopener">docs/api-spec.md<span>The original design spec — the OpenAPI contract wins where they differ.</span></a>
           <a href="{REPO_URL}" target="_blank" rel="noopener">GitHub repository<span>Source, catalog records, and the full history.</span></a>
         </div>
       </div>
@@ -1400,34 +1424,53 @@ for (const b of fsw) b.addEventListener('click', () => {{
         '</urlset>\n')
     (ROOT / "sitemap.xml").write_text(sitemap)
 
+    n_details = sum(1 for r in all_res if r.get("details"))
     llms = f"""# Resource Library — CheapInfra #share-tech + #providers
-> {total} curated developer resources shared in the CheapInfra Discord's #share-tech and #providers channels: AI tools, dev tools, websites, articles, GitHub repos, and inference providers. Every entry carries a two-sentence brief, its sharer, and taxonomy facets. The site is a single HTML page ({SITE_URL}/); the same catalog is served by a read-only JSON API v1 — all GET, no auth, CORS-open, ETag-cached, deterministic.
+> {total} curated developer resources shared in the CheapInfra Discord's #share-tech and #providers channels: AI tools, dev tools, websites, articles, GitHub repos, and inference providers. Every entry carries a ~2-sentence editorial brief, its sharer, its share date, and controlled taxonomy facets; {n_details} also carry a researched long-form `details` breakdown. The site is a single HTML page ({SITE_URL}/); the same catalog is served by a read-only JSON API v1 — GET only, no auth, CORS-open, ETag-cached, deterministic.
 
-API (base {SITE_URL}/api/v1):
-- [Search]({SITE_URL}/api/v1/search?q=): lexical search over title/brief/taxonomy/aliases. Params: q (optional), resource_type (alias type), topic, use_case, interface, technology, channel, open_source, from/to (inclusive YYYY-MM-DD), sort=relevance|newest|oldest|title, limit (1-100, default 20), cursor, fields. Facet params accept CSV lists — OR within a family, AND across families. Example: /api/v1/search?q=rag&topic=ai-inference&open_source=true
-- [All records]({SITE_URL}/api/v1/resources): canonical records in stable order, paginated (fields, limit, cursor)
-- [One record]({SITE_URL}/api/v1/resources/openrouter): canonical record by id
-- [Static snapshot]({SITE_URL}/api/v1/resources.json): full raw array of all records
-- [Facets]({SITE_URL}/api/v1/facets.json): every valid filter value with counts, grouped by filter family
-- [Taxonomy]({SITE_URL}/api/v1/taxonomy.json): the controlled vocabularies behind the facets
-- [Manifest]({SITE_URL}/api/v1/index.json): API version, record count, channels, checksums, endpoint registry
+Base URL: {SITE_URL}/api/v1 — collected read-only from Discord, refreshed by a daily run; content is CC-BY-4.0.
 
-Docs:
-- [OpenAPI 3.1 contract]({SITE_URL}/api/openapi.yaml): every endpoint, param, and response schema
+## API
+
+- [Search]({SITE_URL}/api/v1/search?q=vector+database): deterministic lexical search over title, brief, taxonomy labels, and curated aliases; exact id or URL queries rank first. `q` is required to get results — filters narrow a query, they do not browse on their own. Params: q, resource_type (alias type), topic, use_case, interface, technology, channel, open_source, from/to (inclusive YYYY-MM-DD on shared_on), sort=relevance|newest|oldest|title, limit (1-100, default 20), cursor, fields. Facet params accept CSV lists — OR within a family, AND across families; every value must exist in facets.json. Response: query, filters, sort, limit, results, next_cursor.
+- [All records]({SITE_URL}/api/v1/resources?limit=100): every canonical record in stable order, paginated (fields, limit, cursor). Response: records, next_cursor, total. Use this (or resources.json) to browse or filter without a query.
+- [One record]({SITE_URL}/api/v1/resources/openrouter): canonical record by immutable id
+- [Static snapshot]({SITE_URL}/api/v1/resources.json): full raw array of all records in one request (no envelope, no params)
+- [Facets]({SITE_URL}/api/v1/facets.json): every valid filter value with its record count, keyed by filter param name
+- [Taxonomy]({SITE_URL}/api/v1/taxonomy.json): label, definition, and aliases for every facet value, plus the query synonym map
+- [Manifest]({SITE_URL}/api/v1/index.json): api_version, generated_at, record_count, channels, resources_sha256 — compare the hash to detect catalog updates
+
+Examples:
+- {SITE_URL}/api/v1/search?q=react+components&topic=frontend,design
+- {SITE_URL}/api/v1/search?q=gpu&channel=providers&sort=newest&fields=id,title,canonical_url,shared_on
+- {SITE_URL}/api/v1/search?q=agent&from=2026-09-01&to=2026-09-30&sort=title&limit=50
+- {SITE_URL}/api/v1/search?q=mcp&interface=mcp&open_source=true
+
+## Record fields
+
+id, title, canonical_url, brief, caveat (warning lifted from the brief, or null), details (long-form breakdown, or null), resource_type, topics, use_cases, interfaces, technologies, license (null unless verified), open_source (true / null — never inferred), display_period (site week label or "providers"), legacy_categories (ai-tool, dev-tool, github, web-app, article, providers), source {{channel, sharer}}, shared_on (YYYY-MM-DD), verification {{status, checked_at, final_url}}, schema_version. `fields` can select any of these except details.
+
+## Docs
+
+- [OpenAPI 3.1 contract]({SITE_URL}/api/openapi.yaml): every endpoint, param, header, error, and response schema
 - [Runbook]({SITE_URL}/docs/runbook.md): build, test, audit, and deploy commands
-- [API spec]({SITE_URL}/docs/api-spec.md): the design spec behind the API surface
+- [API spec]({SITE_URL}/docs/api-spec.md): the original design spec (the OpenAPI contract wins where they differ)
 
-Site:
-- [Home]({SITE_URL}/): the browsable library (single-page app; filters shareable via URL hash)
-- [data.json]({SITE_URL}/data.json): full site dataset
+## Site
+
+- [Home]({SITE_URL}/): the browsable library — Library, Analytics, and API tabs; filters shareable via URL hash
+- [data.json]({SITE_URL}/data.json): full site dataset (legacy row shape)
 - [RSS]({SITE_URL}/feed.xml): all resources, newest first
 - [Sitemap]({SITE_URL}/sitemap.xml)
 
-Notes:
-- Errors are JSON: {{"error": {{"code", "message"}}}}. Codes: bad_fields, bad_limit, bad_cursor, bad_filter, bad_sort, not_found, method_not_allowed, catalog_unavailable, internal.
-- Methods: GET, HEAD, OPTIONS only (405 otherwise). CORS: Access-Control-Allow-Origin: * on every response. ETag/If-None-Match honored (304).
+## Notes
+
+- Errors are JSON: {{"error": {{"code", "message"}}}}. Codes: bad_fields, bad_limit, bad_cursor, bad_filter, bad_sort (400), not_found (404), method_not_allowed (405), internal (500), catalog_unavailable (503).
+- Methods: GET, HEAD, OPTIONS only (405 otherwise). CORS: Access-Control-Allow-Origin: * on every response. ETag/If-None-Match honored (304); Last-Modified is the catalog build time.
 - Unknown paths under /api/v1/ return the site's HTML, not JSON — use only the documented paths.
 - Cache-Control: search 60s, resources 300s, single record 3600s; static *.json assets use asset caching.
+- open_source=false matches every record not known to be open source (license unknown included), not "closed source".
+- Pagination: pass next_cursor back unchanged with the same params. On /search an unknown cursor restarts at page one; on /resources it is a 400 bad_cursor. Search responses have no total.
 - Versioning: within v1, changes are additive only — fields and endpoints are never renamed or removed.
 """
     (ROOT / "llms.txt").write_text(llms)
