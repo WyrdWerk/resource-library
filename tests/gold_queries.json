@@ -131,10 +131,10 @@
    "obsidian-ui",
    "amicro",
    "bencho",
-   "componentry"
+   "annnimate"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-10-04 against 310-record catalog (daily rebase; new records legitimately re-ranked)"
+  "note": "re-reviewed 2026-10-04 against 331-record catalog (annnimate, a React motion component library, legitimately re-ranked in)"
  },
  {
   "query": "coding agent",
@@ -224,10 +224,10 @@
    "gpui-kit",
    "obsidian-ui",
    "bencho",
-   "beste"
+   "annnimate"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-10-04 against 310-record catalog (daily rebase; new records legitimately re-ranked)"
+  "note": "re-reviewed 2026-10-04 against 331-record catalog (annnimate, a React motion component library, legitimately re-ranked in)"
  },
  {
   "query": "inference",
