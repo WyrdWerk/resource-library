@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "react-native-deploy",
+  "title": "React Native Deploy",
+  "canonical_url": "https://reactnativefeel.com/deploy",
+  "brief": "\"Unlimited free EAS-compatible builds on GitHub\" — `rnd build` / `rnd submit` take the same commands and flags as Expo's eas-cli, reading `eas.json` unchanged, but every build runs as a GitHub Actions workflow in your own repo (signing keys in repo secrets, no Expo account or build queue). Free and unlimited on public repositories; on private repos you pay GitHub's runner minutes ($0.062/min macOS) with no subscription. TestFlight submission and QR-code preview installs included; pricing and eas-cli parity claims are vendor-reported.",
+  "caveat": null,
+  "resource_type": "tool",
+  "topics": [
+    "app-development",
+    "devops"
+  ],
+  "use_cases": [
+    "deploy-applications",
+    "automate-workflows"
+  ],
+  "interfaces": [
+    "cli",
+    "web"
+  ],
+  "technologies": [
+    "github-actions"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "web-app",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "simply_roo"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

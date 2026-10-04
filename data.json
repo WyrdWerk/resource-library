@@ -499,6 +499,61 @@
     "warning": ""
   },
   {
+    "title": "Kotoba",
+    "week": "1–8 Oct 2026",
+    "url": "https://github.com/hattoriai/kotoba",
+    "sharer": "simply_roo",
+    "date": "4 Oct",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "Kotoba (言葉, \"words\") is an open-source rich-text editor for Phoenix LiveView forms built on Lexical — formatting, code blocks, tables, file attachments, @-mentions, live collaboration with per-author undo, and safe HTML/text/Markdown rendering, with documents stored through a `Kotoba.Content` Ecto type. It ships as a prebuilt JS bundle in the Hex package so the app needs no Node.js; MIT-licensed, created 25 Sep 2026 (11 stars) — treat it as early-stage.",
+    "id": "kotoba",
+    "warning": ""
+  },
+  {
+    "title": "React Native Deploy",
+    "week": "1–8 Oct 2026",
+    "url": "https://reactnativefeel.com/deploy",
+    "sharer": "simply_roo",
+    "date": "4 Oct",
+    "categories": [
+      "web-app",
+      "dev-tool"
+    ],
+    "brief": "\"Unlimited free EAS-compatible builds on GitHub\" — `rnd build` / `rnd submit` take the same commands and flags as Expo's eas-cli, reading `eas.json` unchanged, but every build runs as a GitHub Actions workflow in your own repo (signing keys in repo secrets, no Expo account or build queue). Free and unlimited on public repositories; on private repos you pay GitHub's runner minutes ($0.062/min macOS) with no subscription. TestFlight submission and QR-code preview installs included; pricing and eas-cli parity claims are vendor-reported.",
+    "id": "react-native-deploy",
+    "warning": ""
+  },
+  {
+    "title": "open-slide",
+    "week": "1–8 Oct 2026",
+    "url": "https://github.com/open-slide/open-slide",
+    "sharer": "thelaggingway",
+    "date": "4 Oct",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "\"The slide framework built for agents\" — describe a deck in natural language and your coding agent writes the React; open-slide provides the 1920×1080 canvas, hot reload, a present mode with speaker notes, an in-browser click-to-comment inspector, asset management with svgl logo search, and export to static HTML, PDF and PPTX. Ships agent skills (`/create-slide`, `/slide-authoring`) for Claude Code, Codex and Cursor; open-source (MIT), 8.8k stars. thelaggingway shared it untried, so treat the agent-authoring claims as unevaluated.",
+    "id": "open-slide",
+    "warning": ""
+  },
+  {
+    "title": "Artificial Analysis: MiMo-V2.6-Pro providers",
+    "week": "providers",
+    "url": "https://artificialanalysis.ai/models/mimo-v2-6-pro/providers",
+    "sharer": "nixerman",
+    "date": "3 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Artificial Analysis's provider benchmarking page for Xiaomi's MiMo-V2.6-Pro — compares API providers (Xiaomi, DeepInfra, PrimaLabs, Novita per the link embed) on latency (time to first token), output speed and price. A third-party comparison in the same per-model series as the published GLM-5.3-Flash page; treat the figures as benchmark snapshots, not live prices.",
+    "id": "artificial-analysis-mimo-v2-6-pro-providers",
+    "warning": ""
+  },
+  {
     "title": "Prism Inference",
     "week": "providers",
     "url": "https://prisminference.com/pricing",

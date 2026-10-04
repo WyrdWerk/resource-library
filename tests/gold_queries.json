@@ -86,13 +86,13 @@
   "expect_top1": null,
   "expect_top5": [
    "artificial-analysis-glm-5-3-flash-providers",
+   "artificial-analysis-mimo-v2-6-pro-providers",
    "battleships",
    "parasail",
-   "pi-coralbricks-provider",
-   "tokenwatch"
+   "pi-coralbricks-provider"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-10-03 against 301-record catalog; new records (battleships, aoru, hpc-sandbox-benchmarks, primalabs benchmark) legitimately rank"
+  "note": "reviewed 2026-10-04 against 305-record catalog (daily update: AA MiMo-V2.6-Pro providers page and React Native Deploy legitimately rank)"
  },
  {
   "query": "LLM gateway",
@@ -115,12 +115,12 @@
   "expect_top5": [
    "woxi-vs-mathematica-comparison",
    "boat",
+   "artificial-analysis-mimo-v2-6-pro-providers",
    "openai-api-pricing",
-   "tokenwatch",
-   "artificial-analysis-glm-5-3-flash-providers"
+   "tokenwatch"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-10-03 against 301-record catalog; new records (battleships, aoru, hpc-sandbox-benchmarks, primalabs benchmark) legitimately rank"
+  "note": "reviewed 2026-10-04 against 305-record catalog (daily update: AA MiMo-V2.6-Pro providers page and React Native Deploy legitimately rank)"
  },
  {
   "query": "open source react components",
@@ -375,14 +375,14 @@
   "filters": {},
   "expect_top1": null,
   "expect_top5": [
+   "react-native-deploy",
    "zyloo",
    "ai-router",
    "featherless",
-   "makora",
-   "cheapestinference"
+   "makora"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "reviewed 2026-10-04 against 305-record catalog (daily update: AA MiMo-V2.6-Pro providers page and React Native Deploy legitimately rank)"
  },
  {
   "query": "zero data retention",
@@ -468,11 +468,11 @@
   "expect_top5": [
    "hpc-sandbox-benchmarks",
    "primalabs-mimo-v2-6-pro-speed-benchmark",
+   "artificial-analysis-mimo-v2-6-pro-providers",
    "brokenarxiv-arxivmath-announcement",
-   "isoquant",
-   "featherless"
+   "isoquant"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-10-03 against 301-record catalog; new records (battleships, aoru, hpc-sandbox-benchmarks, primalabs benchmark) legitimately rank"
+  "note": "reviewed 2026-10-04 against 305-record catalog (daily update: AA MiMo-V2.6-Pro providers page and React Native Deploy legitimately rank)"
  }
 ]

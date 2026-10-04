@@ -2,10 +2,10 @@
   "resource_type": {
     "repository": 78,
     "provider": 76,
-    "article-guide": 48,
-    "tool": 32,
+    "article-guide": 49,
+    "tool": 33,
     "directory-gallery": 23,
-    "library-framework": 19,
+    "library-framework": 21,
     "service-platform": 12,
     "dataset": 7,
     "documentation": 5,
@@ -13,59 +13,59 @@
     "other": 0
   },
   "topic": {
-    "ai-agents": 127,
-    "inference": 111,
+    "ai-agents": 128,
+    "inference": 112,
     "developer-tools": 60,
     "design": 34,
-    "frontend": 29,
+    "frontend": 31,
     "cloud-infrastructure": 18,
     "productivity": 15,
     "security": 7,
     "testing": 6,
+    "app-development": 5,
     "backend": 5,
+    "devops": 5,
     "self-hosting": 5,
-    "app-development": 4,
-    "devops": 4,
     "observability": 3,
     "databases": 2,
-    "web-development": 1
+    "web-development": 2
   },
   "use_case": {
     "run-inference": 93,
     "manage-agents": 72,
-    "learn-technique": 61,
-    "build-interfaces": 21,
-    "automate-workflows": 18,
+    "learn-technique": 62,
+    "build-interfaces": 22,
+    "automate-workflows": 19,
+    "generate-code": 19,
     "discover-design-references": 18,
-    "generate-code": 18,
-    "create-media": 13,
+    "create-media": 14,
     "test-software": 13,
     "provision-infrastructure": 7,
     "search-code": 7,
     "monitor-systems": 4,
-    "deploy-applications": 2,
+    "deploy-applications": 3,
     "host-models": 2,
     "operate-databases": 2
   },
   "interface": {
-    "web": 102,
+    "web": 106,
     "api": 90,
-    "cli": 35,
+    "cli": 37,
     "mcp": 13,
     "desktop": 11,
     "extension": 2
   },
   "technology": {
     "mcp-protocol": 14,
+    "typescript": 10,
     "claude-code": 9,
     "rust": 9,
-    "typescript": 8,
-    "react": 7,
+    "react": 8,
     "python": 4,
     "docker": 2,
+    "github-actions": 2,
     "go": 2,
     "javascript": 2,
-    "github-actions": 1,
     "neovim": 1,
     "next-js": 1,
     "node-js": 1,
@@ -83,11 +83,11 @@
     "zed": 0
   },
   "channel": {
-    "share-tech": 213,
-    "providers": 88
+    "share-tech": 216,
+    "providers": 89
   },
   "open_source": {
-    "true": 23,
+    "true": 25,
     "false": 0
   }
 }

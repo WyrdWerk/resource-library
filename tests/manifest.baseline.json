@@ -1,11 +1,11 @@
 {
  "baseline_commit": "9cb3c9ed",
  "generated_sha256": {
-  "index.html": "76c74dd1f259cdccfe27ad0e61768c5c385f51297a63949c69a6ed21a5cff2a9",
-  "data.json": "744cf5043b0150641daed57e0280483af1accc10fae6e7b0bf1c15d23a586a4b",
-  "feed.xml": "cdc2af13c20a3acd4e4ea41bd0c343f80583cf28d62d77b7da679b405da3510c",
-  "og-image.png": "dda6d9c861fae8151fd90d2b4a188b13255a128f6373dec30f42cf6770f9e1a4",
-  "CHANGELOG.md": "182356bc72e81d8b35aac412e94b62d4e05b7e4838f985ce42ca0511a1242887",
+  "index.html": "e803cc0fe83a0c0652366dbf081c268d0527b3543a94cae061085af834426cb9",
+  "data.json": "f28d32ec5d772f6c461e7ab001231224cba79cd2c364b2c4bec657600fc4ab9f",
+  "feed.xml": "43b76ff323c50e4f4e1b84578fbb41dc6ecb74d3e64df592dcb26510fd39c4b6",
+  "og-image.png": "1b8321ebbc79ea0861d8a98161565d1073043699a96d2d65c3d22c8b1a796b7e",
+  "CHANGELOG.md": "f1c67676ba351b6c66250e35796410bae2791f0a8e50708a56993b55d737fa50",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
   "weeks/2026-06-11_to_2026-06-17.md": "76fb6d1145cbc7599fd1da5786c3a6227ac84f9350125fbbba53fa462b57928a",
   "weeks/2026-06-18_to_2026-06-24.md": "7e9d9cd53a38a0fb7719b0df782b0914782d2fc505dfd1084fa99ae17f1d2b92",
@@ -22,11 +22,11 @@
   "weeks/2026-09-10_to_2026-09-17.md": "bc312d307cfe2ca8cd841b2e05783df0e2aba635401c5407e740d6f66bfa9d40",
   "weeks/2026-09-17_to_2026-09-24.md": "d23f05b8bddde2ad551921b2c4e8f3462078e87dce2250aa89b72c4d69ee7ac9",
   "weeks/2026-09-24_to_2026-10-01.md": "797e19c5f55f215c6213c9a6f9fc77a2060df2d77634f5ae1ec616023674b6f5",
-  "weeks/2026-10-01_to_2026-10-08.md": "b6aad722cb0815258eeaf844543d4ca5bde8944104af9fbd05a42a6637f76a5c",
-  "weeks/providers.md": "57d283dbdc884f0501562bfe80a1459b95362624d490a8fc7da99644ab5d3aad",
+  "weeks/2026-10-01_to_2026-10-08.md": "b795476a52ec60c05670d732602c2e2a3631d9f333a6f7013a35a2ec1ddde291",
+  "weeks/providers.md": "850d9c2d27d27dde3e26e98ee52aa20ab0f98c568d1d6aadd0ca1044f7795a65",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "9a9c311df47b89f7a218c4a0002fbc2016b627b0420a73541ad6ea228ff945ca",
-  "llms.txt": "3f9a5021498f9b0d74f59a8d9e9d9aa7cc6234b5fcd360812d5e8dfac743549a"
+  "llms.txt": "54fd054f3298f1f2c47e59e1444000c373efd268122e6c351d673208c1144f08"
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -66,6 +66,10 @@
   "aoru",
   "hypercli",
   "arilo",
+  "kotoba",
+  "react-native-deploy",
+  "open-slide",
+  "artificial-analysis-mimo-v2-6-pro-providers",
   "prism-inference",
   "inferhub",
   "aihubmix",
@@ -332,11 +336,11 @@
   "jev-search"
  ],
  "inventory": {
-  "total": 301,
-  "share_tech": 213,
-  "providers": 88,
-  "unique_ids": 301,
-  "unique_urls": 301,
+  "total": 305,
+  "share_tech": 216,
+  "providers": 89,
+  "unique_ids": 305,
+  "unique_urls": 305,
   "nonempty_warnings": 77,
   "categories": [
    "ai-tool",
@@ -346,6 +350,6 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 301
+  "https_urls": 305
  }
 }
