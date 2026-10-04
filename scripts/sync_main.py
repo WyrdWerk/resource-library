@@ -103,7 +103,10 @@ def main():
             git("rm", "-q", "--cached", "--", p)
 
     def bail(msg):
+        # --abort alone keeps regen's unstaged rewrites; the tree was clean
+        # before we started, so a hard reset loses nothing.
         git("merge", "--abort", check=False)
+        git("reset", "-q", "--hard")
         print(msg)
         return 2
 
