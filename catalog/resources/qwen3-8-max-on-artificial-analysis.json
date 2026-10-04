@@ -5,7 +5,7 @@
   "canonical_url": "https://artificialanalysis.ai/models/qwen3-8-max",
   "brief": "Artificial Analysis's model page for Qwen3-8 Max, with benchmarks and pricing. Shared link-only; the page's data is third-party and unverified.",
   "caveat": "Shared link-only; the page's data is third-party and unverified.",
-  "details": null,
+  "details": "This Artificial Analysis page benchmarks Qwen3.8 Max (0902), Alibaba's proprietary reasoning model released September 2026. It scores 45 on the Artificial Analysis Intelligence Index (well above the 26 median for its price tier), costs $2 per 1M input tokens and $6 per 1M output tokens, generates 37.5 tokens/sec, and offers a 980k-token context window with text and image input. Useful as an independent, numbers-driven reference for deciding whether this model fits your cost, speed, and intelligence budget before committing to an API provider.",
   "resource_type": "article-guide",
   "topics": [
     "inference",

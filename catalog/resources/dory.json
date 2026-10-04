@@ -5,7 +5,7 @@
   "canonical_url": "https://augani.github.io/dory/",
   "brief": "Docker & Linux containers native to Mac — free, open source, one shared VM for all containers, claiming ~4.7x less idle memory than per-container setups. The memory claim is the vendor's and unverified.",
   "caveat": "The memory claim is the vendor's and unverified.",
-  "details": null,
+  "details": "Dory is a free and open-source (GPL-3.0) native macOS app billed as the development computer rethought: a local Linux workspace bundling its own Docker 29 engine, Compose, Buildx, one-click k3s Kubernetes, managed Linux desktops (Ubuntu GNOME, Debian or Kali Xfce), and headless Linux servers, all stored in one managed .dorydrive. There is no account, no telemetry, and no paid commercial tier; the UI is native SwiftUI rather than Electron, and it can migrate existing Docker Desktop, OrbStack, Colima, or Rancher Desktop setups. For agent automation it publishes a versioned JSON contract, a stdio MCP server, wait primitives, event streams, and policy-enforced sandbox VMs instead of screen scraping.",
   "resource_type": "tool",
   "topics": [
     "devops",

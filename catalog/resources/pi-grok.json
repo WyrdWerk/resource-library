@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/stnly/pi-grok",
   "brief": "Use your x.com Premium/SuperGrok subscription in pi with OAuth login, auto-refresh, and live model discovery; supports grok-4.5, grok-composer-2.5-fast, grok-build, grok-4.3, and x_search. Feature claims come from the repo description and are unverified.",
   "caveat": "Feature claims come from the repo description and are unverified.",
-  "details": null,
+  "details": "pi-grok is an xAI Grok OAuth provider for the Pi coding agent, letting you use an x.com Premium or SuperGrok subscription inside Pi with no API keys and no billing setup. You log in once via an OAuth 2.0 device-code flow with PKCE, tokens auto-refresh, and requests route through xAI's CLI chat proxy so they ride your subscription quota instead of billed API credits. It supports grok-4.7, grok-4.7-build-fast, grok-4.6, and grok-4.5 (256k default, 500k extended context windows) with live model discovery, plus /xai-status, /xai-usage, an /xai-privacy coding-data privacy toggle, and an x_search tool that lets any model search X. MIT licensed.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

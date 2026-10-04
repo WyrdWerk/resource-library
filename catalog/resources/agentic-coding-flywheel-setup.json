@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/Dicklesworthstone/agentic_coding_flywheel_setup",
   "brief": "An agentic coding setup that Rykuuun found \"more flexible\" than alternatives. Details unverified from the message text.",
   "caveat": "Details unverified from the message text.",
-  "details": null,
+  "details": "Agentic Coding Flywheel Setup (ACFS) by Dicklesworthstone bootstraps a fresh Ubuntu VPS into a complete multi-agent AI development environment in about 30 minutes with a single install.sh. It installs compatible AI coding agents, session management (tmux), safety tooling (a destructive-command guard and checksum-verified downloads), and coordination infrastructure including Agent Mail over MCP and the beads issue tracker. A manifest-driven TypeScript generator produces the installer from acfs.manifest.yaml, and the repo ships acfs CLI commands, an interactive TUI onboarding, a learning-hub website, a doctor command with safe auto-fixes, and extensive architecture documentation.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

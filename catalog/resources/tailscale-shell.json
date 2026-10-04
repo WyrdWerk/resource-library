@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/monotykamary/tailscale-shell",
   "brief": "A zsh-based proxied shell plus exit-node picker for Tailscale userspace networking: pick an exit node by country, city, or code and route egress through Mullvad or your own relay via SOCKS5. Small repo (~4 stars), but a practical wrapper around the tailscale CLI.",
   "caveat": null,
-  "details": null,
+  "details": "tailscale-shell by monotykamary is a proxied shell plus exit-node picker for Tailscale userspace networking, built around a single ts command. ts finland (or any country, city, or hostname token) picks a Mullvad or self-hosted exit node and re-running cycles through matches; bare ts drops you into a login shell with ALL_PROXY and HTTPS_PROXY pointed at the local 127.0.0.1:1055 proxy, and ts off clears the exit node. It includes a launchd installer for userspace-networking tailscaled on macOS, SSH/scp/sftp wrappers, a ts doctor diagnostic, and offline tests covering real proxy traffic for curl, Node, Python, Go, and JVM clients. MIT licensed; early release, macOS-focused.",
   "resource_type": "repository",
   "topics": [
     "developer-tools"

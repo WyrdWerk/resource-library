@@ -5,7 +5,7 @@
   "canonical_url": "https://hermes.xpetalab.dev/",
   "brief": "A self-hosted AI agent console (\"Tu agente AI self-hosted\") that thelaggingway is giving a go. The self-hosted claim is unverified beyond the site's tagline.",
   "caveat": "The self-hosted claim is unverified beyond the site's tagline.",
-  "details": null,
+  "details": "Hermes Console (by XPeta Lab) is an Android app that puts a self-hosted AI agent in your pocket. It offers streaming chat with visible reasoning, a full workspace (sessions, task kanban, model picker, agent profiles), a real SSH terminal with PTY plus SFTP file transfer, cron job creation and triggering from the phone, and risk-graded approval prompts you can accept or reject from a notification. It pairs in seconds via QR code with your own Hermes Agent server (Gateway, Dashboard and Mobile Bridge services installed by a setup script on Linux, macOS, Termux or Windows/WSL2). Privacy-first by design: no XPeta Lab account required, no analytics, and API keys stored encrypted in the Android Keystore.",
   "resource_type": "tool",
   "topics": [
     "ai-agents",

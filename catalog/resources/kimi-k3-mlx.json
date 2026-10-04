@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/PipeNetwork/kimi-k3-mlx",
   "brief": "An MLX port of moonshotai's Kimi-K3 (2.78T multimodal MoE); the weights are converted from the original release and requantized. Conversion quality is unverified.",
   "caveat": "Conversion quality is unverified.",
-  "details": null,
+  "details": "An MLX (Apple Silicon) port of Moonshot's Kimi K3 — a 2.78T-total / 104B-active native-multimodal mixture-of-experts model with 1M-token context, built on Kimi Delta Attention and Attention Residuals. The repo ships a streaming weight converter (stock mlx_lm convert can't be used since K3 is 5.6 TB in bf16), REAP expert-pruning tooling, and per-language expert-overlap analysis, with published pruned builds on HuggingFace. It is unusually honest about practicality: nothing here runs on a single Mac, with the smallest tier around 870 GB against the 512 GB ceiling of the largest Apple Silicon machine. The REAP73 build hits about 5.5 tok/s on a 512 GiB M3 Ultra.",
   "resource_type": "repository",
   "topics": [
     "inference"

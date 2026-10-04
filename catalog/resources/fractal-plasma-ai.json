@@ -5,7 +5,7 @@
   "canonical_url": "https://www.plasma.ai/research/fractal",
   "brief": "Plasma AI's Fractal wraps Claude Code and Codex in bounded recursive loops. Details beyond the truncated preview are unverified.",
   "caveat": "Details beyond the truncated preview are unverified.",
-  "details": null,
+  "details": "Fractal is Plasma AI's open-source (Apache 2.0) framework for recursive agent loops aimed at work that outlives a single context window: large refactors, cross-service features, research campaigns. It organizes work as a hierarchy of agents where each node runs its own persistent loop in its own git worktree, with a budget at every level and a five-step default loop (prepare, plan, execute, review, commit); nodes keep what they learn as Markdown memory pages in a knowledge graph and coordinate over a built-in message channel called Fractal Radio. Plasma dogfooded it on its own repo: a 187-node tree found 135 issues, fixed 55 of them test-first, and tuned the defaults by keeping only changes that helped across six kinds of work. Drive it from inside Claude Code or Codex with the /fractal skill and watch it in the fractal open terminal UI.",
   "resource_type": "tool",
   "topics": [
     "ai-agents"

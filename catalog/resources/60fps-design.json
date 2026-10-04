@@ -5,7 +5,7 @@
   "canonical_url": "https://60fps.design/",
   "brief": "An endlessly browsable gallery of ~2,000+ UI/UX animation shots from best-in-class mobile and web apps — buttons, sheets, onboarding, loading states, micro-interactions — tagged across 108 filters. Useful swipe-reference for motion details before implementing your own.",
   "caveat": null,
-  "details": null,
+  "details": "60fps.design is an endlessly browsable gallery of UI/UX animation inspiration for mobile and web apps, with over 2,000 individual interaction shots from best-in-class apps like X, Netflix, CRED, Revolut, Duolingo, Claude, and Airbnb. Each shot names the app and the exact interaction (for example, CRED Swipe to Pay or Netflix Poster Reflection on Bottom Tabs), tagged across 108 filters such as 3D, AI, Apple, and Assistant. Followed by over 151.8K designers and engineers with weekly updates, it works as swipe-reference for motion details before implementing your own animations.",
   "resource_type": "directory-gallery",
   "topics": [
     "design"

@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/MoonshotAI/Kimi-Vendor-Verifier",
   "brief": "A vendor verifier from MoonshotAI; baanish asked if anyone has run it. Details unverified from the message text.",
   "caveat": "Details unverified from the message text.",
-  "details": null,
+  "details": "Kimi-Vendor-Verifier is Moonshot AI's open-source toolkit for verifying third-party vendors serving Kimi models, so buyers can check a vendor's API actually behaves like Kimi's. It runs inspect-ai benchmarks (OCRBench, MMMU Pro Vision, AIME 2025, the BEAM 1M-token long-term memory benchmark, and the DeepSWE multi-step agent benchmark) alongside pytest pre-flight checks for API parameter constraints, tool-call JSON schema validation, K3 feature contracts, and prompt-token accuracy. The README publishes per-provider K3 evaluation results comparing Moonshot, Fireworks, Baseten, Together, DigitalOcean, Inferact, Nebius, Modal, and RadixArk. MIT licensed; install with uv sync.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

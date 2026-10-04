@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/jackwener/opencli",
   "brief": "Turns any website into a CLI an AI agent can use: opencli drives your logged-in browser session (Playwright-based) so agents can operate sites through a command line instead of fragile DOM scripting. ~30k stars.",
   "caveat": null,
-  "details": null,
+  "details": "OpenCLI (github.com/jackwener/opencli) turns any website into a CLI and lets AI agents drive your logged-in browser. It ships built-in adapters for sites like Bilibili, Zhihu, Xiaohongshu, Reddit, HackerNews, Twitter/X and LinkedIn, plus an opencli-browser skill (installable via npx skills add) so agents in Claude Code or Cursor can navigate, click, fill forms and extract data through your real Chrome session via a lightweight Browser Bridge extension. You can also author new adapters end-to-end with the opencli-adapter-author skill. Roughly 30k stars, Apache-2.0 licensed, with a desktop app bundling the runtime for macOS and Windows.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",
