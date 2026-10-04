@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/Loongphy/codex-auth",
   "brief": "A Zig-written CLI for switching and managing multiple Codex accounts — handy for anyone juggling several Codex subscriptions or auth contexts from the terminal. ~2.7k stars.",
   "caveat": null,
-  "details": null,
+  "details": "codex-auth (Loongphy) is a CLI tool for switching and managing multiple Codex accounts, written in Zig. It supports Codex CLI, the VS Code extension, and the Codex App, with commands to list, login, switch, remove, alias, import, and export accounts, plus live usage-limit refresh (API-backed by default, local-only with --skip-api) and JSON output for building GUIs. Install via npm (npm install -g @loongphy/codex-auth) or run with npx. MIT-licensed with ~2.8k stars; also ships an experimental Codex App launcher and a codext fork for seamless switching without restarts.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

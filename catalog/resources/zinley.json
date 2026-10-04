@@ -5,7 +5,7 @@
   "canonical_url": "https://zinley.com/self-audit",
   "brief": "\"Built to extend you. 10× your day\" — an AI extension of you across every device and person: takes your calls, writes your emails, and more. Vendor claims, unverified.",
   "caveat": "Vendor claims, unverified.",
-  "details": null,
+  "details": "Zinley is an autonomous personal agent you control: give it tasks and rules and it carries out multi-step work — reading emails, reviewing calls, managing its own calendar, following up without re-prompting — while you set boundaries on what it handles alone versus what needs approval. It learns your people with sourced, editable relationship memory, has its own inbox and phone number, and works across web, desktop, iMessage, and Telegram. The self-audit page emphasizes user control: review its history, adjust workflows from your phone, and pause it anytime.",
   "resource_type": "tool",
   "topics": [
     "ai-agents",

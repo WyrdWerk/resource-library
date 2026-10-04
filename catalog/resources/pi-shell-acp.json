@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/junghan0611/pi-shell-acp/",
   "brief": "A Herdr/tmux setup where sibling AI sessions — pi, Claude Code, Codex, Copilot, OMP, Antigravity — can message and spawn each other while keeping their own auth, tools, and transcripts. The repo has since been renamed from pi-shell-acp to \"entwurf\" and now covers the Agent Client Protocol and MCP agent protocols more broadly.",
   "caveat": null,
-  "details": null,
+  "details": "Note: this URL now redirects to junghan0611/entwurf — the project was renamed from pi-shell-acp around the dispatch substrate rather than the pi adapter. Entwurf is a thin bridge that lets independent agent harnesses (pi, Claude Code, Codex, Copilot, OMP, Antigravity) address each other by stable garden ids and exchange messages or spawn visible sibling sessions, while each keeps its own auth, tools, and transcripts. The canonical entwurf_v2 dispatch verb routes over control sockets, self-fetch mailboxes, or native push depending on the target, with delivery receipts and explicit failure modes rather than silent drops. Install globally via npm and set up per project; a Herdr plugin path exists for workbench users, and an ACP plugin exposes backend turns as pi providers under the operator's own auth.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

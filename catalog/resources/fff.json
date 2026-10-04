@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/dmtrKovalenko/fff",
   "brief": "\"The fastest and the most accurate file search toolkit for AI agents, Neovim, Rust, C, and NodeJS.\" The performance claim is the project's and unverified.",
   "caveat": null,
-  "details": null,
+  "details": "fff (dmtrKovalenko/fff) is a Rust-based file search toolkit billed as the fastest and most accurate file search SDK, with typo-resistant path and content search, frequency-ranked file access, a background watcher, and a lightweight in-memory content index. Originally a beloved Neovim plugin, it grew into a library for AI harnesses and editors that need fast programmatic search, plus an MCP server (ffgrep, fffind, fff-multi-grep tools) that gives Claude Code, Codex, Cursor, and other agents faster, more token-efficient search than their built-ins. MIT-licensed with ~10.9k stars; ships a Neovim plugin, a Pi agent extension, and Node/Bun, Python, Rust, and C bindings.",
   "resource_type": "library-framework",
   "topics": [
     "developer-tools",
