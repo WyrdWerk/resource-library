@@ -8,10 +8,12 @@ Open an issue with:
 
 - The URL
 - What it is, in a sentence or two (and why a developer would care)
-- Which category it fits: `ai-tool`, `dev-tool`, `github`, `web-app`, `article`
+- Which category it fits: `ai-tool`, `dev-tool`, `github`, `web-app`, `article`, or
+  `providers` (inference providers and provider comparisons)
 
 What gets accepted: AI tools, dev/general tools, useful websites and web apps, GitHub
-repos, articles — the same bar as the `#share-tech` curation. What's skipped: hype-only
+repos, articles, inference providers — the same bar as the `#share-tech` and
+`#providers` curation. What's skipped: hype-only
 posts, duplicates of things already listed, and links with no usable description.
 
 ## 2. Fix a bad link or a wrong brief
@@ -34,17 +36,23 @@ A notes entry looks like this:
 - Brief: Two sentences, tops. What it is and why it's useful.
 ```
 
-Add it under the right `## Week: …` section (or a new one for the current week), then run
-`python3 scripts/build.py` to regenerate and check the counts it prints.
+Add it under the right `## Week: …` section (or a new one for the current week; providers
+go under `## Providers`), then run `python3 scripts/build.py` to regenerate and check the
+counts it prints. To fix a long-form "In detail" breakdown, edit the record's entry in
+`notes/details-*.md` (keyed by record id). New records also need a catalog entry — the
+maintainers handle the taxonomy classification (`docs/runbook.md` §1).
 
 ## 3. Improve the site or tooling
 
 PRs to `scripts/build.py`, the styles in the generated page, or `scripts/linkcheck.py`
 are welcome. Keep the site dependency-free (single `index.html`, no build step) so it
 stays deployable on any static host. If you touch anything under `scripts/`,
-`catalog/`, `api/`, or `schemas/`, run `python3 -m pytest tests/ -q` — the
-build-freeze tests fail if generated site files drift, and the contract tests
-cover the API surface (see `docs/runbook.md`).
+`catalog/`, `api/`, `functions/`, or `schemas/`, run `python3 -m pytest tests/ -q`
+(needs `pillow`, `pytest`, `jsonschema==4.17.3`) — the build-freeze tests fail if
+generated site files drift, and the contract tests cover the API surface. Changes to
+`functions/api/v1/` must also pass `scripts/edge_parity.py` (see `docs/runbook.md` §8).
+API behavior changes update `api/openapi.yaml`, the API tab and `llms.txt` templates in
+`scripts/build.py`, and the README together.
 
 ## Ground rules
 

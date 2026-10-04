@@ -2,6 +2,18 @@
 
 > Converted from the reviewed specification document (baseline: repo `main` @ `31773ab`, 29 September 2026). This is the reference for the API v1 implementation (PR #2) and the Cloudflare handoff (issue #1).
 
+> **Status (2026-10-04): implemented, and kept here for history.** API v1 shipped in PRs #2–#6, and the Pages Functions have been serving production since 2026-09-29. The authoritative contract is [`api/openapi.yaml`](../api/openapi.yaml), and agents should start from [`llms.txt`](../llms.txt). Where this spec and the shipped API differ, the shipped API wins:
+>
+> | Spec (this document) | Shipped v1 |
+> | --- | --- |
+> | `{data, meta}` response envelope | Bare payloads: search returns `{query, filters, sort, limit, results, next_cursor}`, `/resources` returns `{records, next_cursor, total}`, and a single record is returned unwrapped. Renaming would need v2. |
+> | Error codes `invalid_query`, `invalid_filter`, `internal_error`, `rate_limited`; `field` and `meta` in the error body | `bad_fields`, `bad_limit`, `bad_cursor`, `bad_filter`, `bad_sort`, `not_found`, `method_not_allowed`, `internal`, `catalog_unavailable`; the body is `{error: {code, message}}`. Rate limiting is Cloudflare WAF, outside the API. |
+> | `GET /api/v1/facets`, `/taxonomy`, `/meta`, `/catalog.json`, `/openapi.json` | Static `facets.json`, `taxonomy.json`, and `index.json` (the manifest), plus `resources.json` (the full export). The contract lives at `/api/openapi.yaml`. |
+> | `/resources` lists **and filters** | `/resources` paginates only. Filtering happens on `/search`, and only when `q` is set (filter-only browse is a candidate, see runbook §11). |
+> | `q` 2–256 chars | No length validation. An empty `q` returns no results. |
+> | `sort`: relevance, newest, title | Also `oldest`. |
+> | Single canonical record fields (§5) | As specified, plus `details`: a researched long-form breakdown added 2026-10-03, which is null until enriched. |
+
 ---
 
 | DRAFT TECHNICAL SPECIFICATION  /  VERSION 1.0<br>Resource Library<br>API & Search<br>An evidence-backed implementation plan for a canonical catalog, search index, and public read-only API — with the current interface held unchanged.<br>**Baseline: repository main @ 31773ab  ·  29 September 2026** |

@@ -1,13 +1,29 @@
 # API v1 — Runbook
 
-Branch `api-v1` off `main` (`31773ab`). This runbook is the exact,
-copy-pasteable record of how the API surface is built, tested, and
-audited. Every command runs from the repo root.
+The exact, copy-pasteable record of how the site, catalog, and API are
+built, tested, audited, and deployed. Every command runs from the repo
+root. Sections 8–11 are dated change records; §1–§3 are the current
+procedure. (Originally written for the `api-v1` branch off `main@31773ab`,
+2026-09-29; kept current since.)
 
 ## 0. Prerequisites
 
-Python 3.10+ stdlib only, plus `pytest` for the suite
-(`pip install pytest`). No other dependencies anywhere in this branch.
+Python 3.10+ plus three packages:
+
+```bash
+pip install pillow pytest "jsonschema==4.17.3"
+# or, without touching the system Python:
+uv run --with pillow --with pytest --with jsonschema==4.17.3 --python 3.12 python -m pytest tests/ -q
+```
+
+- `pillow` — `scripts/build.py` renders `og-image.png`.
+- `jsonschema` — `scripts/validate_catalog.py` and `tests/test_schemas.py`.
+  Pinned: newer releases reword the "too short" error that one schema
+  test asserts on (4.26 says "should be non-empty").
+- `pytest` — the suite.
+
+Edge work (§8) additionally needs Node + `npx wrangler`. Everything else
+is stdlib.
 
 ## 1. Build (exact order)
 
@@ -15,12 +31,37 @@ Python 3.10+ stdlib only, plus `pytest` for the suite
 # 1a. Legacy site files — UNCHANGED pipeline, sole writer of site output
 python3 scripts/build.py
 
-# 1b. Static API artifacts (reads catalog/, writes api/v1/ only)
+# 1b. Canonical catalog (reads data.json + a reviewed classification,
+#     rewrites catalog/resources/ deterministically). The classification
+#     is not stored in the repo: export it from the current catalog, add a
+#     reviewed entry for each new id, then migrate. Any id without an entry
+#     is BLOCKED and the script exits 1.
+python3 - <<'EOF'
+import json, glob
+keys = ["resource_type", "topics", "use_cases", "interfaces", "technologies", "open_source"]
+cls = {}
+for p in glob.glob("catalog/resources/*.json"):
+    r = json.load(open(p))
+    cls[r["id"]] = {k: r[k] for k in keys}
+json.dump(cls, open("/tmp/classification.json", "w"), indent=1)
+EOF
+# ...add reviewed entries for new ids to /tmp/classification.json...
+python3 scripts/migrate.py /tmp/classification.json
+# expect: migrated N/N | order_ok=True | all_equal=True | exceptions=0
+
+# 1c. Static API artifacts (reads catalog/, writes api/v1/ only)
 python3 scripts/api_build.py
 
-# 1c. Catalog validation (schemas + taxonomy + 285 records)
+# 1d. Catalog validation (schemas + taxonomy + every record)
 python3 scripts/validate_catalog.py
 ```
+
+Classification values must come from `catalog/taxonomy/*.json`
+(`api/v1/facets.json` lists them with counts). `migrate.py` also carries
+`details` through from `data.json`, so details-only changes need 1a →
+1b → 1c with an unchanged classification. When resources are added,
+refresh `tests/manifest.baseline.json` (`ordered_ids`, `inventory`, and
+the generated-file hashes) in the same PR.
 
 `api_build.py` never touches `index.html`, `data.json`, `weeks/`,
 `feed.xml`, `CHANGELOG.md`, or `og-image.png`. If any of those drift,
@@ -30,22 +71,23 @@ the build-freeze tests fail (see §3).
 
 ```bash
 python3 -m pytest tests/ -q
-# expected: 103 passed
+# expected: 108 passed (the browser-driven sorting test skips if agent-browser is not installed)
 ```
 
 Suite breakdown:
 
 | File | What it gates | Count |
 |---|---|---|
-| `test_invariants.py` | legacy parsing invariants | 25 total Phase 1 |
-| `test_parsing.py` | (with above) | |
-| `test_build_freeze.py` | (with above) | |
+| `test_invariants.py` | data.json invariants vs `manifest.baseline.json`: row count, ID order, uniqueness, HTTPS, categories, row shape, channel split | 8 |
+| `test_parsing.py` | `parse_week`, `slugify`, `split_warning`, notes section handling | 11 |
+| `test_build_freeze.py` | fixture build is byte-identical to `fixtures/expected_data.json` | 6 |
 | `test_schemas.py` | schema/taxonomy structural rules | 18 |
-| `test_migration.py` | 285 records migrated, fields preserved, dates evidenced, exceptions empty | 7 |
+| `test_migration.py` | every row migrated, fields preserved, dates evidenced, exceptions empty | 6 |
 | `test_compat.py` | canonical→legacy round-trip byte-exact; api/v1 well-formed; manifest hashes | 6 |
-| `test_search.py` | 40 gold queries: 100% exact-ID top-1, 100% top-5 (gate ≥90%), no-result precision, stable cursors; title sort, CSV (OR-within-family) filters, from/to date bounds | 14 |
-| `test_api_contract.py` | local adapter: routes, filters, CSV + date-bound validation, sparse fields, pagination, errors, CORS, ETag/304, facets.json | 29 |
+| `test_search.py` | 40 gold queries: 100% exact-ID top-1, 100% top-5 (gate ≥90%), no-result precision, stable cursors; title sort, CSV (OR-within-family) filters, from/to date bounds | 13 |
+| `test_api_contract.py` | local adapter: routes, filters, CSV + date-bound validation, sparse fields, pagination, errors, CORS, ETag/304, facets.json | 30 |
 | `test_site_meta.py` | robots.txt, sitemap.xml, llms.txt shape/content; API tab wired into index.html | 5 |
+| `test_library_sorting.py` | newest-first default + sort control; export/data order unchanged; one real-browser interaction test (skipped without `agent-browser`) | 5 |
 
 ## 3. Audit / diff / smoke
 
@@ -66,23 +108,43 @@ python3 scripts/search.py "zero data retention" --limit 5
 # local API smoke (contract tests already cover this end-to-end)
 python3 scripts/api_server.py 8765 &
 curl -s localhost:8765/api/v1/search?q=openrouter | head -c 300; echo
+curl -s "localhost:8765/api/v1/search?q=react+components&topic=frontend,design&limit=2&fields=id"; echo
 curl -sI localhost:8765/api/v1/index.json | grep -i etag
 kill %1
+
+# OpenAPI contract lint (optional; needs pyyaml + openapi-spec-validator,
+# which want a newer jsonschema — use a throwaway env)
+uv run --with pyyaml --with openapi-spec-validator python -c \
+  "import yaml; from openapi_spec_validator import validate; validate(yaml.safe_load(open('api/openapi.yaml'))); print('openapi ok')"
+
+# gold-set review harness (writes /tmp/apiv1/gold_observed.json)
+mkdir -p /tmp/apiv1 && python3 scripts/review_gold.py
 ```
 
-## 4. Generated sizes (2026-09-29, 285 records)
+The drift audit only reports; it is expected to list files changed by a
+PR until that PR refreshes the hashes in `tests/manifest.baseline.json`.
+Note that `index.html` embeds the build date ("Last updated"), so its
+hash changes whenever the site is rebuilt on a new day.
+
+## 4. Generated sizes (2026-10-04, 310 records, 218 with details)
 
 | Path | Size |
 |---|---|
-| `api/v1/resources.json` | 289 KB |
+| `api/v1/resources.json` | 504 KB |
 | `api/v1/taxonomy.json` | 20 KB |
-| `api/v1/index.json` | 335 B |
+| `api/v1/facets.json` | 1.8 KB |
+| `api/v1/index.json` | 371 B |
 | `api/v1/_compat_report.json` | 162 B |
-| `catalog/` (285 records + reports) | 1.3 MB |
+| `catalog/` (310 records + reports) | 660 KB (apparent size) |
+
+(2026-09-29 baseline at 285 records: resources.json 289 KB — the jump is
+mostly the `details` breakdowns.)
 
 ## 5. Gold report (search)
 
-40 queries reviewed 2026-09-29 against the 285-record catalog
+The gates below run on every `pytest` invocation against the current
+catalog; re-review with `scripts/review_gold.py` when new records change
+rankings. Original review: 40 queries, 2026-09-29, against the 285-record catalog
 (`tests/gold_queries.json`; review harness: `scripts/review_gold.py`):
 
 - exact-ID queries top-1: **7/7 (100%)** — gate: 100%
@@ -97,18 +159,19 @@ exact-ID and normalized-URL matches short-circuit to rank 1.
 
 ## 6. Rollback
 
-Every phase is a separate commit on `api-v1`; nothing on `main` is
-touched. To roll back:
+Everything lands on `main` through merged PRs, and Cloudflare Pages
+auto-deploys each `main` commit. To roll back:
 
-```bash
-git checkout main          # the branch is unmerged; delete it to drop everything
-git branch -D api-v1      # local only — no force-push to main ever happened
-```
+- **Fastest:** in the Pages dashboard (or `npx wrangler pages deployment
+  list --project-name resource-library`), roll production back to an
+  earlier deployment. No git change needed; the next merge redeploys.
+- **Durable:** `git revert -m 1 <merge-commit>` on a branch, open a PR,
+  merge. Never force-push `main`.
 
-To roll back one phase, `git revert <phase-commit>` in reverse order
-(api → search → generator → migration → schemas → harness → baseline).
 The static site does not read `catalog/`, `api/`, or `schemas/`, so
-reverting cannot break the deployed site.
+reverting API-only changes cannot break the Library or Analytics tabs.
+The Pages Functions read `api/v1/*.json` from the same deployment, so a
+rollback always moves functions and catalog together.
 
 ## 7. Unresolved decisions (deliberately left open)
 
@@ -126,11 +189,10 @@ reverting cannot break the deployed site.
 4. **`open_source: true` requires the literal string** "open-source" /
    "open source" in the brief. "MIT-licensed", "Apache 2.0", and "open
    weights" stay `null` — license is never inferred.
-5. **The daily 08:00 IST updater is untouched.** It still writes
-   `notes/` + `data.json` via `build.py`. A future change must teach it
-   to also emit `catalog/resources/<id>.json`; until then, re-run
-   `scripts/migrate.py` (with a reviewed classification) after any
-   data update, then `api_build.py`.
+5. ~~**The daily 08:00 IST updater is untouched.**~~ Resolved: daily
+   runs now execute the full §1 pipeline (build → migrate with a
+   reviewed classification for new ids → api_build → validate → tests)
+   inside each `daily/<date>` PR (e.g. PR #8, PR #14).
 
 ## 8. Cloudflare handoff (issue #1) — production-verified 2026-09-29
 
@@ -269,3 +331,52 @@ by `scripts/build.py` (never hand-edit):
       `docs/api-spec.md`, `api/v1/facets.json`) all 200; live search
       `q=vector&limit=1` → 1 result. Prod render check via headless
       Chromium on the custom domain: API tab active, no overflow.
+
+## 11. Documentation refresh + API gap register (2026-10-04)
+
+Docs brought in line with the shipped state at 310 records (README,
+AGENTS.md, CONTRIBUTING.md, tests/README.md, this runbook, the
+docs/api-spec.md status banner, api/openapi.yaml, and the build.py
+templates for the API tab and llms.txt). No API behavior changed.
+
+Corrections to previously published docs, each verified against the
+local adapter and production:
+
+- The API tab and llms.txt examples used `topic=ai-inference` and
+  `topic=quantization`, which are not taxonomy values; both returned
+  400 `bad_filter`. Replaced with examples that return results.
+- "q optional — filters alone work" was wrong: `/search` scores only
+  records that match a non-empty `q`, so a filter-only request returns
+  `results: []` (production: `?topic=frontend` → 0 results). Now
+  documented as a v1 limit, with `/resources` as the browse path.
+- `open_source=false` matches every record whose flag is not `true`,
+  including the unknown (`null`) ones. Now documented.
+- The `details` field (218 records) was missing from the docs, and
+  `fields=details` is rejected (400 `bad_fields`) because it is absent
+  from `FIELD_ALLOW` in both implementations.
+- llms.txt now uses H2 sections (llmstxt.org shape). OpenAPI gained
+  operationIds, tags, absolute servers, full facet enums, response
+  headers, 304/405/500/503 responses, and Facets/Taxonomy/SearchResponse/
+  ResourcePage schemas. It validates under openapi-spec-validator.
+
+API expansion candidates, roughly ordered by value and risk. Each one is
+additive within v1 and needs matching changes in `scripts/api_server.py`,
+`functions/api/v1/_lib.js`, tests, and `edge_parity.py`:
+
+1. **Filter-only search (browse mode).** When `q` is empty and filters are
+   set, return every matching record (sorted by `sort`, defaulting to
+   `newest`) instead of `[]`. The `sort=newest` branch in `search.py`
+   already expects a query-less case.
+2. **`details` in `FIELD_ALLOW`.** One-line change on each side, plus a
+   contract test.
+3. **Index `details` for search.** Low-weight field (below brief) so
+   long-form breakdowns improve recall. This changes ranking, so re-run
+   the gold set.
+4. **`total` on `/search`.** Clients currently can't size a result set
+   without paging to the end.
+5. **Filters on `/resources`.** Accept the same facet/date params as
+   `/search` for a list view with a real browse path.
+6. **JSON 404 for unknown `/api/v1/*` paths** via a catch-all function
+   (today they fall back to the SPA HTML).
+7. **Link verification.** Populate `verification` from
+   `scripts/linkcheck.py` (every record says `unchecked` today).
