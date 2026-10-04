@@ -4,20 +4,24 @@
 # this job merges main into each affected PR branch, rebuilds the derived
 # files with scripts/regen.py, runs the tests, and pushes. If a conflict is
 # in a hand-written file (notes/, scripts/, ...) it leaves a PR comment.
+#
+# Triggers are push-based on purpose: since June 2026 GitHub parks
+# pull_request runs caused by a GITHUB_TOKEN push in "approval required",
+# while a GITHUB_TOKEN push starts no runs at all. So the bot's own pushes
+# trigger nothing, and this job reports its pytest run on the commit it
+# pushed as a "pytest (sync-prs)" commit status instead.
 name: Sync PRs with main
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    types: [opened, reopened, synchronize]
+  push:            # main: sync every open PR; other branches: sync that branch's PR
   workflow_dispatch:
   schedule:
-    - cron: "23 * * * *"   # backstop: GitHub skips pull_request runs while a PR conflicts
+    - cron: "23 * * * *"   # backstop
 
 permissions:
   contents: write
   pull-requests: write
+  statuses: write
 
 concurrency:
   group: sync-prs
@@ -26,7 +30,6 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     steps:
       - uses: actions/checkout@v4
         with:
@@ -42,17 +45,19 @@ jobs:
       - name: Sync PR branches
         env:
           GH_TOKEN: ${{ github.token }}
-          PR: ${{ github.event.pull_request.number }}
+          EVENT: ${{ github.event_name }}
+          REF: ${{ github.ref_name }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if [ ! -f scripts/sync_main.py ]; then echo "scripts/sync_main.py not on main yet; nothing to do"; exit 0; fi
           cp scripts/sync_main.py "$RUNNER_TEMP/sync_main.py"   # main's copy, even for older branches
-          if [ -n "$PR" ]; then
-            prs="$PR"
+          filter='.[] | select(.isCrossRepository | not) | .number'
+          if [ "$EVENT" = push ] && [ "$REF" != main ]; then
+            prs=$(gh pr list --base main --state open --head "$REF" --json number,isCrossRepository --jq "$filter")
           else
-            prs=$(gh pr list --base main --state open --limit 100 \
-                    --json number,isCrossRepository --jq '.[] | select(.isCrossRepository | not) | .number')
+            prs=$(gh pr list --base main --state open --limit 100 --json number,isCrossRepository --jq "$filter")
           fi
           status=0
           for n in $prs; do
@@ -65,7 +70,13 @@ jobs:
             set -e
             echo "$out"
             if [ $rc -eq 0 ] && [ "$(git rev-parse HEAD)" != "$before" ]; then
-              git push origin "HEAD:refs/heads/$branch" || status=1
+              if git push origin "HEAD:refs/heads/$branch"; then
+                gh api "repos/$GITHUB_REPOSITORY/statuses/$(git rev-parse HEAD)" \
+                  -f state=success -f context="pytest (sync-prs)" -f target_url="$RUN_URL" \
+                  -f description="Full suite passed on this exact commit before push" >/dev/null
+              else
+                status=1
+              fi
             elif [ $rc -ne 0 ]; then
               body=$(printf '**sync-prs:** could not auto-merge `main` into this branch (exit %s).\n\n```\n%s\n```\n\nResolve the hand-written conflicts listed above, then run `python3 scripts/sync_main.py` (it rebuilds every generated file) and push.' "$rc" "$(echo "$out" | tail -n 30)")
               gh pr comment "$n" --edit-last --body "$body" 2>/dev/null || gh pr comment "$n" --body "$body"

@@ -1,9 +1,11 @@
+# Runs on push (any branch), not pull_request: PR checks attach to the head
+# commit either way, and pushes made by the sync-prs bot start no runs
+# (instead of parking in "approval required"; sync-prs tests those itself).
 name: Tests
 
 on:
-  pull_request:
   push:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
   pytest:
