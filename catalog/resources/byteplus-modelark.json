@@ -5,6 +5,7 @@
   "canonical_url": "https://www.byteplus.com/en/activity/codingplan",
   "brief": "BytePlus's Coding Plan for Claude Code, Cursor, Cline, Kilo Code, Roo Code and OpenCode, covering models like Dola-Seed-2.0-pro, GLM-5.1 and DeepSeek V4. Exact plan prices weren't visible on the promo page.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference",

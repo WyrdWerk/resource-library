@@ -5,6 +5,7 @@
   "canonical_url": "https://brilliant.design/",
   "brief": "A professional vector design tool \"where you and your AI agents work directly on the canvas.\" Agent-native design tooling is still rare, which makes this one notable.",
   "caveat": null,
+  "details": "Brilliant (brilliant.design) is a professional design tool built for human-plus-agent collaboration: \"the professional design tool your agents already know how to drive.\" Point Claude Code, Cursor, or any MCP agent at a real canvas — Brilliant is both an MCP server and client — and most AI edits in it already come from users' own CLI agents. The canvas is real vectors (not HTML mockups): a world-class GPU engine with liquid glass, refraction, iridescent metal, and animated shader fills, all live in the browser. Workflow: describe → get editable vectors → refine in place → export PNG, SVG, React, MP4. Design-system support includes multi-mode tokens, OKLCH ramps, and a plain-text DSL; every design is Blueprint, a published lossless 2D-vector language ~20x more token-efficient than JSON, so designs can be git-blamed and PR-reviewed like code. One-click round-trip with Figma, and an AI chat where you @-mention elements, point at positions, eyedrop colors, and switch providers/models with your own keys. Their thesis: everyone else bet the canvas is HTML/CSS; Brilliant bets the design is the contract above the code.",
   "resource_type": "tool",
   "topics": [
     "design",

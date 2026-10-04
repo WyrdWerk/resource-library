@@ -5,6 +5,7 @@
   "canonical_url": "https://arliai.com/",
   "brief": "Inference API with unlimited-request plans and an explicit zero-logging statement. The sharer noted it seemed new and unstable.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/guillaumemeyer/watermarks-remover",
   "brief": "Strips multi-vendor AI provenance marks — Unicode text hygiene, statistical rewrite hooks, and C2PA handling. Legitimate hygiene tooling; obviously dual-use.",
   "caveat": null,
+  "details": "watermarks-remover (guillaumemeyer, ~23.3k stars) — a privacy-first app plus agent skill and stdlib-Python service that strips multi-vendor AI provenance marks from content you own. Three layers: A (deterministic scripts for invisible Unicode, exotic spaces, bidi, tag chars), B (statistical token-sampling text watermarks via agent rewrite), and file metadata (C2PA/EXIF/XMP/doc properties across PNG, JPEG, WebP, AVIF, HEIC, PDF, DOCX, XLSX, PPTX, EPUB, MP4/MOV, WAV/MP3/FLAC…). Coverage spans Claude, Gemini/SynthID-Text, OpenAI provenance surfaces, and open-LLM Kirchenbauer-style and keyed-Gumbel marks. Distributed three ways: a Claude Code plugin/marketplace (two slash skills), an install script for Claude Code/Cursor/Cowork (the skill is markdown-only and drives the service over HTTP, so the agent host needs no Python), and a stdlib-only HTTP service with `/detect`, `/watermark`, and `/clean` endpoints plus Docker compose. A `PostToolUse` hook can deterministically clean files the agent writes (check or clean mode). Includes benchmarks, verification harnesses, a pre-commit hook, and an honest ethics/disclaimer section about what removal costs and residual risk. MIT.",
   "resource_type": "repository",
   "topics": [
     "developer-tools"

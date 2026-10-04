@@ -5,6 +5,7 @@
   "canonical_url": "https://aihubmix.com/",
   "brief": "Multi-model API with per-model pricing, including a GLM 5.3 coding endpoint. Shared via its GLM 5.3 API pricing page.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

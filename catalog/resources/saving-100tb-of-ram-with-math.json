@@ -5,6 +5,7 @@
   "canonical_url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
   "brief": "Cloudflare engineering deep-dive on saving 100TB of RAM with math (and Rust). A solid systems-engineering read.",
   "caveat": null,
+  "details": "A Cloudflare engineering blog post on how small changes to the consistent-hashing algorithm in the Pingora Backend Router reclaimed over 100TB of RAM globally — on top of 100TB the DNS team shed earlier. The root cause: PBR needed dozens of separate consistent-hash rings (one per feature combination), each holding many hashes per server, ballooning to 6GB of hash structures in some cases. Two fixes: a struct-layout insight (the 32-bit server index was wasteful since PBR will never coordinate 65k+ servers; shrinking to a raw `[u8; 6]` byte array with getters dodged Rust's alignment padding and cut memory 25%), and exact math for the error margin per hash count, showing the last 90,000 hashes bought a minuscule 0.7% reduction — so fewer hashes suffice. The post is also a genuinely good explainer: day-one probability (expected value, standard deviation, coefficient of variation), why 160 hashes per server is the NGINX default, how ketama weighting scales by disk space, and why `#[repr(packed)]` was passed over. Worth reading for any systems engineer — a masterclass in how layout awareness plus a little math saves hardware at scale.",
   "resource_type": "article-guide",
   "topics": [
     "cloud-infrastructure"

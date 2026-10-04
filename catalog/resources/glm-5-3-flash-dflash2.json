@@ -5,6 +5,7 @@
   "canonical_url": "https://huggingface.co/incoai/GLM-5.3-Flash-DFlash2",
   "brief": "A GLM-5.3-Flash quant on Hugging Face. Context is thin — thelaggingway's whole review was \"Huh\" — but it's another fast-model option to know about.",
   "caveat": null,
+  "details": "GLM-5.3-Flash-DFlash2 (incoai) — not a standalone model but the DFlash 2 draft model for z-ai's GLM-5.3-Flash, used inside a speculative-decoding server. DFlash 2 is a block-diffusion drafter: it predicts a whole block of tokens in a single pass, keeps the top candidates at every position, and a lightweight selector traces one coherent path through them; two-tap dynamic convolutions keep the draft from decaying toward the end of the block. Decoding is lossless — greedy output matches the target model exactly, sampling preserves its distribution. Serve with SGLang (`--speculative-algorithm DFLASH`). Benchmark numbers for this checkpoint were still being re-measured at card time. License is CC BY-NC-ND 4.0 for research/evaluation only — contact Inco AI for commercial use. Relevant if you're self-hosting GLM-5.3-Flash and want faster inference without changing outputs.",
   "resource_type": "dataset",
   "topics": [
     "inference"

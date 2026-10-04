@@ -5,6 +5,7 @@
   "canonical_url": "https://vantaui.com",
   "brief": "VantaUI is a UI library built from real products — production-grade site templates, app templates, components, blocks and Figma files for Next.js, React and LLM-assisted builds, from @vanta_ui. It doubles as a reference for how world-class products handle UI patterns, copywriting and user flows.",
   "caveat": null,
+  "details": "VantaUI is a UI library built from real products — production-grade site templates, app templates, components, blocks, and Figma files, pitched as a shortcut past the blank canvas for Next.js, React, and LLM-assisted builds. Its angle is \"more than inspiration\": instead of generic kit components it documents how actual world-class products handle UI patterns, copywriting, and user flows, so it doubles as a design reference. The homepage leads with latest additions and reviews from developers and studios using it as their go-to UI reference. From @vanta_ui.",
   "resource_type": "library-framework",
   "topics": [
     "frontend"

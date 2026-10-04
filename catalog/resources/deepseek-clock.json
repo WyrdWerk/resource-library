@@ -5,6 +5,7 @@
   "canonical_url": "https://deepakness.com/deepseek/",
   "brief": "Personal utility page showing DeepSeek's live peak/off-peak status in local time with both models' prices either way. Rates match the official docs.",
   "caveat": null,
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "inference"

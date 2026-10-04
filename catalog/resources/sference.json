@@ -5,6 +5,7 @@
   "canonical_url": "https://sference.com/",
   "brief": "Managed inference for open models on European GPUs. Public evidence is snippet-based; details unverified.",
   "caveat": "Public evidence is snippet-based; details unverified.",
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

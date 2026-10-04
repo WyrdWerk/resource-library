@@ -5,6 +5,7 @@
   "canonical_url": "https://try.cloudflare.com/#overview",
   "brief": "Cloudflare Quick Tunnels — free encrypted tunnels that expose localhost as a public URL. Cata plans to use it instead of the VS Code tunnel.",
   "caveat": null,
+  "details": "Cloudflare's Quick Tunnels page — \"put localhost on the Internet.\" One command (`cloudflared tunnel --url http://localhost:8000`) creates a public, encrypted `trycloudflare.com` URL for anything running on your machine: no account, no DNS records, no open ports, ready in seconds. The architecture is outbound-only — cloudflared establishes an encrypted connection to the nearest Cloudflare edge and requests return through it, so your router never accepts inbound traffic. You get automatic HTTPS, edge DDoS protection, and global reachability by default. Made for development loops: share previews, receive webhooks, run browser tests, or give a coding agent a real endpoint. JSON output mode (`--output json`) for scripts. Install with your package manager (`brew install cloudflared`); no Cloudflare account required.",
   "resource_type": "tool",
   "topics": [
     "devops",

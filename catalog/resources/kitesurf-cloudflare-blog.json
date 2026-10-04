@@ -5,6 +5,7 @@
   "canonical_url": "https://blog.cloudflare.com/kitesurf/",
   "brief": "Cloudflare's announcement of Kitesurf, a headless browser built for AI agents that runs entirely on Cloudflare Workers in V8 isolates instead of Chromium — optimized for token efficiency and scale on agentic tasks like screenshots and HTML extraction. The post walks through the engineering (Rust compiled to Wasm, Blitz/Stylo rendering, Chrome DevTools Protocol compatibility), reports 215,000+ Web Platform Tests passing, and availability free during beta inside Browser Run. Benchmark and conformance claims are vendor-reported and not independently verified.",
   "caveat": "Benchmark and conformance claims are vendor-reported and not independently verified.",
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

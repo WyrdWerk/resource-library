@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/hardbeat920/monocode",
   "brief": "A GUI for your coding agents. Description is minimal, but a visual front-end for agent harnesses is a gap worth filling.",
   "caveat": null,
+  "details": "MonoCode (hardbeat920/monocode, 2.5k stars) — \"a GUI for your coding agents\": a Tauri desktop app where tabs are agent sessions and the composer is the input. It doesn't sell tokens — it drives the CLIs you're already logged into: Claude Code, Codex, Cursor, Grok Build, OpenCode, Antigravity, Pi, omp, fx, and Hermes Agent. Distinctive features: agents can access MonoCode itself via `/operator` (start/list sessions, read notes, organize panes and worktrees through a local CLI, scoped to the active turn), experimental remote sessions on an always-on machine, and session folders/notes. Ships for macOS (Apple Silicon + Intel), Linux (.deb/AppImage/.rpm), and Windows. Self-described as very early — expect bugs. MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

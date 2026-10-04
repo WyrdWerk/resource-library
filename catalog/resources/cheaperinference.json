@@ -5,6 +5,7 @@
   "canonical_url": "https://cheaperinference.com/",
   "brief": "Pay-as-you-go inference with published example rates. Prompt and response bodies are not logged, with zero data retention on supported routes.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

@@ -5,6 +5,7 @@
   "canonical_url": "https://factory.com/open-source-wikis",
   "brief": "Browse Factory-generated wikis for popular open-source repositories — a preview of what living documentation looks like on real codebases before running it on your own. Nice for evaluating doc-generation tooling.",
   "caveat": null,
+  "details": "Factory's Open Source AutoWikis — auto-generated, always-current wikis for major open-source projects, built by an AI agent that reads the codebase. The page lists heavyweight projects with their star counts, primary language, and one-line descriptions: Grafana (74k, Go), Ansible (69k), Trivy (35k), Bitwarden Server (19k, C#), Cilium (24k), CockroachDB (32k), curl (42k, C), Elasticsearch (77k, Java), Express (69k), FastAPI (98k), wgpu (17k, Rust), GitLab, Consul (30k), Terraform (48k, BSL), Vault (36k), Transformers (161k), Istio (38k), Laravel (84k), MinIO (61k, AGPL), Neon (22k, Rust), Ollama (171k, Go), Bun (90k, Zig), TiDB (40k), PostgreSQL (21k), Prisma (46k), Redis (74k), Solid (36k), Starship (57k), Supabase (102k), Tauri (107k), and Zed (83k). Useful as a quick \"read the codebase for me\" entry point before diving into any of these repos — the wiki gives you the lay of the land without cloning 40k stars of code.",
   "resource_type": "directory-gallery",
   "topics": [
     "developer-tools"

@@ -5,6 +5,7 @@
   "canonical_url": "https://telnyx.com/pricing/inference-api",
   "brief": "Inference API with published per-token pricing — Kimi K3 at $2.70/M input, $0.27/M cached input, $13.50/M output. The sharer noted they're open to negotiating volume pricing.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

@@ -5,6 +5,7 @@
   "canonical_url": "https://delta.dev/",
   "brief": "A multiplayer environment for coding with agents — shared threads where teammates and agents build and review together, with full conversation and code context. Product claims unverified.",
   "caveat": "Product claims unverified.",
+  "details": "Delta (delta.dev) — a multiplayer environment for coding with agents (from the Zed folks, per the blog assets). The unit of work is a thread: the conversation with an agent plus the checkout of the repository it works in, kept together as one shareable artifact. Invite teammates into the same thread to review, comment, and work alongside the agent in real time — the thread stays connected to every change so you see the decisions and prompts behind the code, and review feedback stays anchored to lines as the work evolves. Move between desktop, web, or a cloud runner with conversation and code synchronized. Underneath sits DeltaDB, a version-control layer that records work as a stream of fine-grained deltas rather than Git-style commit snapshots — each delta has a stable identity, so a reference anchors to a change instead of a line number and survives as code moves. Thousands of developers reportedly already use Delta as their primary agentic platform; the blog carries pieces on planning in Delta and on agent benchmarks beyond pass rates.",
   "resource_type": "tool",
   "topics": [
     "ai-agents",

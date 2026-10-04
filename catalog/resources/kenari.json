@@ -5,6 +5,7 @@
   "canonical_url": "https://kenari.id/",
   "brief": "An Indonesian AI cloud and gateway: one API key and one Rupiah wallet behind an OpenAI-compatible endpoint, with per-token prices quoted in Rupiah (e.g. DeepSeek V4 Flash at Rp 2,750 input / Rp 5,500 output per 1M tokens, GLM-5.3-Flash at Rp 2,000/Rp 6,000), top-ups from Rp 1,000, free models, and free BYOK routing through its dashboard. Also bundles one-click app hosting ('Pods' — n8n, OpenClaw, a WhatsApp gateway) and monthly plans from Rp 49rb.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

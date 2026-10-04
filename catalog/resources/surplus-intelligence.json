@@ -5,6 +5,7 @@
   "canonical_url": "https://www.surplusintelligence.ai/",
   "brief": "OpenAI-compatible inference marketplace that routes each request to the cheapest current offer. Vendor claims ~38% savings via routing; pricing and retention terms weren't independently verified.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

@@ -5,6 +5,7 @@
   "canonical_url": "https://blog.maximeheckel.com/posts/shading-motion/",
   "brief": "Maxime Heckel's deep dive into shading-based motion design techniques. One of the better-written front-end animation articles; useful if you care about motion craft.",
   "caveat": null,
+  "details": "\"Shading Motion\" (blog.maximeheckel.com) — a deep, code-heavy creative-graphics essay by Maxime Heckel exploring motion as a creative medium: \"how to shade motion.\" Using WebGPU compute shaders, he builds a pipeline that extracts motion via frame differencing (current vs previous frame luminance, thresholded and smoothed) and encodes it into motion masks and velocity maps, then treats those as inputs to effects: stylized trails with temporal decay, blob tracking by clustering motion regions, directional effects, optical flow, and motion blur with object smearing. The article is full of WGSL snippets (compute passes for the motion mask, render passes for heatmaps and pixelated trails) and interactive widgets demonstrating each stage on 3D scenes, videos, and webcam input. Compounds elegantly with his earlier post-processing work (volumetric lighting, atmospheric scattering, pixel manipulation). A strong reference for anyone doing WebGPU/R3F post-processing who wants to treat motion — not luminance or depth — as the primary shading input.",
   "resource_type": "article-guide",
   "topics": [
     "design",

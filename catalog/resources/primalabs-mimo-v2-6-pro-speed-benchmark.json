@@ -5,6 +5,7 @@
   "canonical_url": "https://www.primalabs.ai/blog/mimo-v2-6-pro-faster-output",
   "brief": "PrimaLabs benchmarks MiMo-V2.6-Pro on its serverless platform at 407 output tokens/sec (vs Xiaomi's 45 at 10k input tokens), priced at $0.43 in / $0.87 out per million tokens with $0.0036 cache. Speed and pricing figures come from PrimaLabs' post (measured by Artificial Analysis, 24 Sep 2026) and are not independently verified.",
   "caveat": "Speed and pricing figures come from PrimaLabs' post (measured by Artificial Analysis, 24 Sep 2026) and are not independently verified.",
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "inference"

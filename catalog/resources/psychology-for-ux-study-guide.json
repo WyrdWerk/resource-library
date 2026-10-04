@@ -5,6 +5,7 @@
   "canonical_url": "https://www.nngroup.com/articles/psychology-study-guide/",
   "brief": "Nielsen Norman Group's study guide on the psychology behind UX. A solid reference for grounding design decisions in research rather than taste.",
   "caveat": null,
+  "details": "NNGroup's Psychology for UX study guide — a curated index of their articles and videos on the human psychology that UX design is built on, organized by topic: attention (tunnel vision, change blindness), Gestalt principles (common region, closure, similarity, proximity, figure/ground, continuation, common fate), memory (short-term limits, chunking, cognitive load, peak-end rule, Zeigarnik effect), sensemaking (mental models, information scent/foraging), decision making (prospect theory, choice overload, Hick's law, satisficing), motor processes (Fitts's law, interaction cost, response-time limits), motivation (self-determination theory, fresh-start effect), cognitive biases (halo effect, confirmation bias, anchoring, negativity bias), persuasion and influence, emotion and delight, and attitudes toward technology. Each topic links to both articles and videos with one-line descriptions. The framing: you don't need a psychology degree — the best designs are built for people as they really are. A solid self-study syllabus for designers and design engineers.",
   "resource_type": "article-guide",
   "topics": [
     "design"

@@ -5,6 +5,7 @@
   "canonical_url": "https://claudin.io/",
   "brief": "Credit-based subscription for coding agents: plans run $19/mo (3,000 credits) to $399/mo (72,000 credits), a typical request on their tuned Claudinio model costs about one credit, and there is no hourly cap — a hot month is fixed with a top-up instead of waiting for a clock. Catalogue models (DeepSeek V4.1 Flash, GLM-5.3, Kimi K3, Claude Opus, GPT-6, Gemini, Grok) cost a fixed 2×–36× multiple of a credit, and one API key plugs into Claude Code, Cursor, Cline, and other OpenAI/Anthropic-compatible clients.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference",

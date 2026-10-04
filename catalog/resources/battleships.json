@@ -5,6 +5,7 @@
   "canonical_url": "https://battleships.dev/",
   "brief": "An agent-readable comparison of sandbox, VM and runtime pricing for AI agents — 366 providers priced through one engine with every figure quoted from the source pricing page, published as llms.txt, JSON files and a Node pricing engine. Built by boat.dev, one of the providers it ranks; the rankings are not independently verified, so take them with a grain of salt.",
   "caveat": "Built by boat.dev, one of the providers it ranks; the rankings are not independently verified, so take them with a grain of salt.",
+  "details": "Battleships is an agent-readable price comparison of sandbox, VM, and runtime providers for AI agents — 361 providers priced through one engine, with every figure quoted from the provider's own pricing page. Everything is published as plain files (llms.txt, per-provider JSON/Markdown with quoted evidence, and a Node pricing engine) so a coding agent can run the comparison for you. The methodology is strict: agents read pricing pages in a real browser, every answer links and quotes its source verbatim, unpublished prices are never read as free, and the same rules apply to boat.dev — the company that built it. What it can't check: whether features actually work end to end, reliability and uptime, sales and support quality, or company health. Data and code are open and contributions are welcome.",
   "resource_type": "provider",
   "topics": [
     "inference",

@@ -5,6 +5,7 @@
   "canonical_url": "https://asterlab.ai/",
   "brief": "OpenAI-compatible inference with free, Pro and Max tiers. States zero data retention on the free tier; Pro around $20 for $30 in tokens.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

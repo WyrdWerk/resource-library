@@ -5,6 +5,7 @@
   "canonical_url": "https://unifically.com/",
   "brief": "Pay-per-use multi-model API (no subscription) with a $0.20 free balance and per-generation pricing, e.g. $0.03 per image. The sharer called it \"sus\" — treat vendor claims cautiously.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

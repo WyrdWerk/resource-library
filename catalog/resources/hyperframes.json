@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/heygen-com/hyperframes#framemd",
   "brief": "HeyGen's TypeScript framework for generating video from HTML — describe motion with GSAP-style animations, render via Puppeteer/ffmpeg, and expose it to coding agents over MCP. The linked framemd section documents a Markdown-first animation format so agents can author motion graphics programmatically; ~53k stars.",
   "caveat": null,
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "ai-agents",

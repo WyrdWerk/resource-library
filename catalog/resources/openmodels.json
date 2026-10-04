@@ -5,6 +5,7 @@
   "canonical_url": "https://openmodels.market/plans",
   "brief": "Credit-subscription marketplace spanning 333 models, 100+ live routes, and 24+ providers: plans from $5/mo ($6 credits) to $99/mo ($110 credits), with credits that never expire and roll over. Every plan unlocks every model route; usage is billed per token based on the selected provider route, and one-time top-ups accept USDC.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

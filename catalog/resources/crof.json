@@ -5,6 +5,7 @@
   "canonical_url": "https://crof.ai/",
   "brief": "Inference provider at crof.ai; public evidence is thin (snippet-based). Third-party substitution allegations seen during research are unverified and not repeated here.",
   "caveat": "Third-party substitution allegations seen during research are unverified and not repeated here.",
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

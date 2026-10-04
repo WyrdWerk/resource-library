@@ -5,6 +5,7 @@
   "canonical_url": "https://artificialanalysis.ai/models/glm-5-3-flash/providers",
   "brief": "Artificial Analysis' provider comparison page for GLM-5.3-Flash: which inference providers serve it, at what price and speed. Handy when shopping for the cheapest or fastest GLM-5.3-Flash endpoint.",
   "caveat": null,
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "inference"

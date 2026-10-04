@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/anthropics/claude-code/issues/91870",
   "brief": "Anthropic's design proposal for Claude Code \"Mods\" (function hooks): hook into Claude Code with TypeScript functions à la Express/Koa, with side-effect tracking and middleware-style composition — even modifying how components render. Committed to ship in weeks; the first three built-in mods' source listings are linked in the thread.",
   "caveat": null,
+  "details": "The GitHub issue where Anthropic proposed function hooks for Claude Code — TypeScript functions (Express/Koa-style, composed through a `$` sigil object) that let you hook deeply into Claude Code: modify behavior, restrict capabilities, even change how components render, with safety through side-effect tracking and a registration-order `next()` continuation model. Community feedback materially shaped the design; Anthropic committed to shipping within weeks under the product name \"Claude Mods\" (function hooks remain the engineering primitive), publishing the first three built-in mods' source and a public testing flag (`CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1`). The thread includes demo videos and a technical architecture doc. If you build Claude Code plugins, this is the thread tracking the extensibility primitive they will be built on.",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

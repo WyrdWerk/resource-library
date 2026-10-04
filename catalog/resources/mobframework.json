@@ -5,6 +5,7 @@
   "canonical_url": "https://mobframework.com/",
   "brief": "\"BEAM on device\" — write mobile apps in Elixir with the whole BEAM running on the device, rendering native iOS and Android UI; your coding agent attaches to the running app with real state and hot-pushed fixes. Ambitious and unusual.",
   "caveat": null,
+  "details": "Mob (mobframework.com) — \"BEAM on device\": Elixir plus the BEAM runtime with native iOS/Android UI, so OTP supervision, GenServers, pattern matching, and the pipe operator run on the phone with the same mental model as the backend. One language, one runtime — no server, no JavaScript, no Swift/Kotlin. Half the point is agent operability: it's plain Erlang distribution, so an AI agent attaches to the live app over the wire and gets real state, real UI, and millisecond feedback — read state (`Mob.Test.assigns`), drive interactions (tap, type, swipe), measure native results (frames, sampled pixels), and hot-load fixes with no rebuild. The harness refuses to lie: `tap_xy` returns an error when nothing actually handled the tap rather than a false success, and coverage gaps are published per platform. Since v0.8 every action gets a \"receipt\" naming the stages it reached, defects land on a bus as fingerprinted capsules, and post-mortems (BEAM crash dumps, MetricKit, Android exit reasons) can be swept onto the same bus. Includes a two-part agentic coding guide (one agent vs a fleet). Pre-1.0 (v0.9), so the surface still moves.",
   "resource_type": "library-framework",
   "topics": [
     "app-development",

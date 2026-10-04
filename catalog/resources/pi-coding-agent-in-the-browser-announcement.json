@@ -5,6 +5,7 @@
   "canonical_url": "https://x.com/victormustar/status/2099794150879121471",
   "brief": "Announcement of a coding agent (Pi) running entirely in the browser on a 2B model via WebGPU — MiniCPM5-2B + Pi with Transformers.js and 4-bit ONNX weights. Announcement only; no repo was linked in the post.",
   "caveat": "Announcement only; no repo was linked in the post.",
+  "details": "An X announcement from Victor Mustar of a coding agent (Pi) running entirely in the browser on a 2B model via WebGPU — MiniCPM5-2B with Transformers.js and 4-bit ONNX weights, matching his \"MiniCPM5-2B WebGPU Pi\" Hugging Face Space. Notable because it pushes a real agentic coding loop (not just chat) into a zero-install browser tab on commodity hardware. The link is the announcement only; no repo was linked in the post. (x.com is not directly fetchable from this environment; the breakdown reflects the announcement's subject as curated.)",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents"

@@ -5,6 +5,7 @@
   "canonical_url": "https://x.com/mdancho84/status/2096623235576053935",
   "brief": "Matt Dancho's post on Microsoft's MarkItDown — turns almost any file (PDFs, Word, PowerPoint, Excel, images) into clean Markdown; claimed 100,000+ GitHub stars. Announcement only; the repo wasn't directly linked.",
   "caveat": "Announcement only; the repo wasn't directly linked.",
+  "details": "An X post from Matt Dancho about Microsoft's MarkItDown — a Python tool that converts almost any file (PDFs, Word, PowerPoint, Excel, images) into clean Markdown, claimed at 100,000+ GitHub stars and trending. The link is the announcement; the repo wasn't directly linked. (x.com is not directly fetchable from this environment; the breakdown reflects the announcement's subject as curated.)",
   "resource_type": "article-guide",
   "topics": [
     "developer-tools",

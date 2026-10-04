@@ -5,6 +5,7 @@
   "canonical_url": "https://openhistory.sh/",
   "brief": "Turns your Mac activity into a private timeline for you and your AI — local activity history as agent context. Privacy-sensitive by nature; the \"private\" claim is unverified.",
   "caveat": "Privacy-sensitive by nature; the \"private\" claim is unverified.",
+  "details": "OpenHistory (openhistory.sh) — an open-source, local-first Mac app that turns your activity into \"a private timeline for you & your AI.\" It observes foreground apps and the macOS Accessibility context you permit (window names, document context, browser domains, visible interface text) — no screenshots, audio, camera, keystrokes, passwords, or private browsing — and summarizes the day into a timeline of completed work, decisions, and unfinished work. Privacy posture is explicit: everything stored in a permission-restricted local directory, no analytics/telemetry, on-device summaries via Apple on-device models or fully off; cloud providers (OpenAI, Anthropic, Kimi) are opt-in with your own key and an approved disclosure. Approved local agents (ChatGPT Desktop, Claude Cowork, any local-MCP agent) get a redacted, read-only view through an authenticated MCP server running only on your Mac. Pause at any time, exclude apps, and \"delete all local data\" wipes everything. Requires macOS 14+.",
   "resource_type": "tool",
   "topics": [
     "ai-agents",

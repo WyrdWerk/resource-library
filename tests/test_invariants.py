@@ -15,7 +15,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = json.loads((REPO_ROOT / "tests" / "manifest.baseline.json").read_text())
 KNOWN_CATEGORIES = {"ai-tool", "dev-tool", "github", "web-app", "article", "providers"}
 EXPECTED_KEYS = ["title", "week", "url", "sharer", "date", "categories",
-                 "brief", "id", "warning"]
+                 "brief", "id", "warning", "details"]
 
 
 def load_data():

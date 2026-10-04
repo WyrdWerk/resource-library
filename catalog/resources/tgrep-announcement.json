@@ -5,6 +5,7 @@
   "canonical_url": "https://x.com/jedisct1/status/2096919996412666296",
   "brief": "Microsoft's tgrep — grep for large codebases with client/server support, claimed 7–50x faster than ripgrep and ugrep. Announcement only; the speedup claim is the poster's.",
   "caveat": "Announcement only; the speedup claim is the poster's.",
+  "details": "An X post from Frank (jedisct1) about Microsoft's tgrep — grep for large codebases with client/server support, claimed 7–50x faster than ripgrep and ugrep. The link is the announcement; the speedup claim is the poster's. (x.com is not directly fetchable from this environment; the breakdown reflects the announcement's subject as curated.)",
   "resource_type": "article-guide",
   "topics": [
     "developer-tools"

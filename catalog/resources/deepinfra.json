@@ -5,6 +5,7 @@
   "canonical_url": "https://deepinfra.com/",
   "brief": "Pay-as-you-go inference across 100+ models with explicit zero data retention. Example: GLM-5.3 Flash $0.075/$0.25 per 1M.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

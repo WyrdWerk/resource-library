@@ -5,6 +5,7 @@
   "canonical_url": "https://beui.dev/components/motion",
   "brief": "Copy-paste animated React components from beUI. Drop-in motion without building animation primitives from scratch.",
   "caveat": null,
+  "details": "beUI's motion components page — free, open-source animated React components built with Motion and Tailwind, copy-paste TypeScript you own and customize. A large catalog: tilt cards, spring/magnetic/metallic buttons, expressive CTA buttons, expandable controls, adaptive steppers, marquees, tabs with spring layoutId indicators, vaul-inspired bottom sheets, pull-to-refresh, gooey popovers, morphing modals, text/number animations (shimmer, scramble, rolling tickers), theme toggles via the View Transition API, virtualized tables smooth at 10k+ rows, shader backgrounds, cylinder carousels, iOS-style wheel pickers, and loaders with seventeen variants. Composable primitives (sortable lists, image viewers, date pickers, selects, comboboxes) with keyboard navigation, controlled/uncontrolled state, and reduced-motion safety throughout. New additions highlighted at top. For teams that want crafted motion without a dependency — paste it in and tune it.",
   "resource_type": "library-framework",
   "topics": [
     "frontend"

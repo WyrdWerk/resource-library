@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/earendil-works/pi/blob/harness-v2/j4/packages/agent/docs/harness-v2.md",
   "brief": "Deep link into the pi coding agent's v2 harness documentation. Worth reading if you use pi or are designing your own agent harness.",
   "caveat": null,
+  "details": "Pi harness-v2 design doc (earendil-works/pi, branch harness-v2/j4) — a 3,446-line Durable AgentHarness design document for the pi coding agent, worth reading if you use pi or are designing your own agent harness. Core concepts: durable runs (an accepted prompt is a durable operation — after a crash a new process restores the session and resumes from the last safe boundary, with no partial outcomes); lanes (a session hosts one or more named positions in the conversation tree, each running at most one operation at a time, executing in parallel — e.g. a Slack thread per lane); a session = append-only conversation tree + lanes + per-lane operation logs + global facts; single writer per session; deterministic stepping where every effect crosses an injectable boundary (a `manual` drive mode parks before each effect so tests can drive crash-recovery call by call); hooks that intercept execution vs events that only observe; tiered context compaction. Backward-compat requirement is only that old coding-agent v3 JSONL sessions open and restore idle. A serious piece of harness engineering, not a README.",
   "resource_type": "documentation",
   "topics": [
     "ai-agents"

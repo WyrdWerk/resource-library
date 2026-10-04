@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/edxeth/pi-better-skills",
   "brief": "A pi extension that fixes skill ergonomics: skills resolve their bundled files from the skill directory (`$PI_SKILL_DIR` instead of the workspace), each SKILL.md loads whole on first read, and path guidance is injected into the system prompt so authors stop babysitting paths. Installs with `pi install git:github.com/edxeth/pi-better-skills`; ~20 stars, POSIX-only.",
   "caveat": null,
+  "details": "A pi extension that fixes quality-of-life gaps in pi's Agent Skills support. The core problem it solves: pi runs tools from your workspace, so skills that bundle scripts, references, or templates break when they assume relative paths start at the skill folder — this extension makes skills resolve bundled files from the skill directory, injects a `<skill_context>` block so the model knows which paths belong to the skill versus the workspace, and ensures a SKILL.md loads whole on first read (no more rules lost to partial reads). It also adds skill composition via inline references, glob-based auto-injection, model and thinking overrides, and an option to convert pi's built-in docs prompt block into an on-demand skill to save context. Install with `pi install git:github.com/edxeth/pi-better-skills`; needs a POSIX environment (macOS/Linux, no Windows). From edxeth.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

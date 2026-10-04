@@ -5,6 +5,7 @@
   "canonical_url": "https://www.rareui.com/",
   "brief": "A library of animated React components. Another solid option in the crowded React-animation space; compare with the other UI libraries already in the archive.",
   "caveat": null,
+  "details": "Rare UI (rareui.com) — a free, open-source collection of \"rare\" animated React components: 21+ unique components (orb effects, tactile sidebars, portfolio flourishes) aimed at making products stand out rather than blending into shadcn sameness. One file per component, installed with the shadcn CLI under any package manager. The homepage is mostly social proof — dozens of designers and engineers report shipping Rare UI components in real products and portfolios, with comparisons to Skiper UI — but the components themselves are browsable in action on the site. Solid option in the crowded React-animation-component space; compare with the other UI libraries already in the archive.",
   "resource_type": "library-framework",
   "topics": [
     "frontend"

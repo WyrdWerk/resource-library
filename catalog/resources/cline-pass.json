@@ -5,6 +5,7 @@
   "canonical_url": "https://cline.bot/",
   "brief": "Subscription for Cline's coding agent at $9.99/mo, positioned as 2–5x the quota versus direct API spend. The \"5x cheaper than API\" phrasing seen in chatter is not verified.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference",

@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/lightningpixel/modly",
   "brief": "An open-source desktop app (Windows, Linux, Apple Silicon macOS) that turns a photo or text prompt into a 3D mesh using open-source AI models running entirely on your own GPU — no cloud inference. It ships an extension system for swapping in models like Hunyuan3D 2 and TripoSG, node-based generation workflows, and a CLI so agents and scripts can drive generation headlessly; MIT-licensed, around 7.7k stars.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "inference",

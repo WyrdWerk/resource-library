@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/scenario-labs/skills",
   "brief": "Agent skills for Scenario: image, video, audio, texture, 3D, and custom-model workflows over the Scenario MCP, aimed at games, entertainment, and creative verticals. Installs with `npx skills add scenario-labs/skills`; ~450 stars.",
   "caveat": null,
+  "details": "Agent Skills from Scenario that teach AI coding agents (Claude Code, Cursor, Codex, Copilot, and 70+ others) to produce production-ready images, video, audio, and 3D through the Scenario MCP server. The 65 skills cover the full creative pipeline — model picking, pricing before spending, character and brand consistency, storyboarding, product shots, textures, skyboxes, 3D assets, video editing, music, and custom model training — installable a la carte or grouped by role and goal via `npx skills add scenario-labs/skills`. A separate family of \"expert tool\" skills drives DCC software and game engines installed on your machine (Blender, Maya, ZBrush, Unreal Engine, Unity), distilled from expert tutorials, conference talks, and official docs. Requires the Scenario MCP server plus a Scenario account or API key. MIT, 850 stars.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

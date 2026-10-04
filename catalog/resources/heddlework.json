@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/monotykamary/heddlework",
   "brief": "A native, harness-neutral workspace for agent sessions: task graphs, diffs, and durable work across coding agents — Pi first, Codex and Claude next. Very early (~12 stars); expect rough edges.",
   "caveat": "Very early (~12 stars); expect rough edges.",
+  "details": "Heddlework is a native, harness-neutral workspace for agent sessions — built on the idea that the workspace (conversations, diffs, task graphs, review state) should outlive any one agent harness. Pi is the first adapter (rendered with GPUIX on macOS, Linux, and Windows), with Codex and Claude adapters planned; harnesses stay authoritative for execution while Heddlework projects their work into durable, searchable, GPU-rendered native surfaces including virtualized diffs, queued steering, session branches, and Fabric-powered orchestration. The status is honest: under active development and useful today as a source-built Pi desktop client, but not yet a signed or supported release. Install from source (`bun install`, `bun run setup:native`) or via the guided `install.sh`; a web/PWA companion and container host exist as previews. MIT, from monotykamary (Tom).",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

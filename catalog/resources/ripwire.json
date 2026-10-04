@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/redhat-et/ripwire",
   "brief": "\"The ripgrep of AI context\" — a zero-dependency C++23 CLI plus MCP server that gives coding agents a ranked, deterministic map of any repo: blast radius, tests-to-run and quality deltas. From Red Hat's emerging-tech group.",
   "caveat": null,
+  "details": "Ripwire (redhat-et/ripwire, 2.4k stars) — \"the ripgrep of AI context\": a zero-dependency C++23 CLI plus MCP server for coding agents. Two jobs: find what you want without reading the repo (ranked, deterministic call graph — what to touch, what it breaks, which tests to run; signatures at 74.7% fewer bytes than bodies), and check what you built (blast radius, tests-to-run, quality deltas). The quality panel automates review judgments from published research — eleven quality kinds reporting only what got worse, forgotten co-changes, fields read/written, ambiguous name resolutions — built on 49 repositories and 71 papers (McCabe through 2026 preprints) documented in docs/LINEAGE.md. Its honesty contract is unusual: every guess is labelled, every loss published, known false-positive modes documented with what to run instead. A field report (from a Claude-orchestrated 20-agent engagement on a 1,500-file codebase) claims it halved research spend and turned quality hygiene into a per-task mechanical gate — presented as one engagement's report, not a controlled measurement. Apache-2.0.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

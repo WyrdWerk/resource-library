@@ -5,6 +5,7 @@
   "canonical_url": "https://www.contentarchitecture.dev/",
   "brief": "A commercial, agent-ready Sanity CMS starter kit in Next.js 16 and Astro 7 editions: a page-builder CMS with in-app Studio, visual editing, draft mode, SEO helpers, a seed dataset, and Plop scaffolding. Its differentiator is agentic-coding workflow support — it ships AGENTS.md plus scoped skills, two preconfigured MCP servers (one reads the running dev server, one drives real Chrome for screenshots/traces), an editable llms.txt, and token-light Markdown versions of every page served to agents via content negotiation. One license per buyer covers unlimited personal, commercial, and client projects; it is a paid product, not open source.",
   "caveat": null,
+  "details": null,
   "resource_type": "template-starter",
   "topics": [
     "ai-agents",

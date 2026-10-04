@@ -5,6 +5,7 @@
   "canonical_url": "https://www.npmjs.com/package/pi-coralbricks-provider",
   "brief": "An npm package (v1.0.19, by monotykamary — also behind pi-tool-repair and pi-mockdeck in this library) that registers CoralBricks as a provider extension for the pi coding agent: GLM 5.3, GLM 5.3 Flash, and DeepSeek V4.1 Flash through the Coral Inference API. It was shared in a support thread asking whether it uses completions or responses endpoints — check the repo README for the current endpoint behavior.",
   "caveat": null,
+  "details": "pi-coralbricks-provider is a provider extension for pi (the agentic coding framework) that routes model calls through the Coral Inference API, giving pi access to GLM 5.2/5.3, Kimi K3, and GPT-OSS 120B. Published on npm by monotykamary (Tom) under MIT, it plugs into pi's extension system so agent runs can use CoralBricks-served models as drop-in providers. The npm page itself blocks automated fetching, so this summary is drawn from the registry metadata and the package description rather than the rendered page. Useful if you run pi agents and want those models behind one inference endpoint.",
   "resource_type": "provider",
   "topics": [
     "ai-agents",

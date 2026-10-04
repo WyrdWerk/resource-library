@@ -5,6 +5,7 @@
   "canonical_url": "https://threeui.com/browse",
   "brief": "A browsable library of Three.js components and interactive shaders. Handy for dropping 3D effects into web projects without writing raw WebGL.",
   "caveat": null,
+  "details": "ThreeUI (threeui.com/browse) — a browsable library of Three.js components, templates, and interactive shaders for dropping 3D effects into web projects without writing raw WebGL. The catalog is organized by section type (Testimonials, Footers, Pricing, Features & Benefits, How It Works, Call to Action, About & Story, Product Showcases…) with each entry extracted from a complete authored page — e.g. glass testimonial cards with iridescent helixes, shader-lit pricing calculators, 3D cylinder client carousels, animated parchment footers — preserving assets, motion, and responsive layout. Handy reference library for front-end devs who want production-quality 3D flourishes as copyable components rather than starting from shaders.",
   "resource_type": "directory-gallery",
   "topics": [
     "frontend"

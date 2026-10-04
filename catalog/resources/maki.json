@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/tontinton/maki",
   "brief": "An AI coding agent (Rust, ratatui TUI) optimized for minimal context-token use: a tree-sitter `index` tool summarizes file structure before reading, system prompts stay concise, and subagents can pick weak/medium/strong models per task. It is extendable via neovim-like Lua plugins, supports skills/MCPs, session memory, and plan mode, and works as an agent backend for editors like Zed via ACP; MIT-licensed. Its benchmark claims are the author's own.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

@@ -5,6 +5,7 @@
   "canonical_url": "https://sacchen.github.io/papers/hog/",
   "brief": "A probability paper proving that in the Hog dice game, rolling n dice maximizes the expected turn score for an n-sided die — expectation derived via the law of total expectation, with a full maximum proof and charts. Link-only share with no surrounding context; classifiable from the page itself.",
   "caveat": "Link-only share with no surrounding context; classifiable from the page itself.",
+  "details": "A probability paper on Samuel Chen's blog proving that in the Hog dice game (from CS61A), rolling n dice maximizes the expected turn score for an n-sided die. It derives the expected turn score via the law of total expectation — accounting for the \"Sow Sad\" rule where any 1 collapses the turn score to 1 — then proves the maximum sits exactly at m = n by analyzing the sign of the marginal gain between rolling m+1 and m dice, with charts showing each curve peaking at m = n for 4-, 6-, and 10-sided dice. A neat, self-contained read if you like seeing a game-theory intuition made rigorous.",
   "resource_type": "article-guide",
   "topics": [
     "developer-tools"

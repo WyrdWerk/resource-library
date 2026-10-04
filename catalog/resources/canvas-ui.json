@@ -5,6 +5,7 @@
   "canonical_url": "https://canvasui.dev/",
   "brief": "A creative component library for Canvas, WebGL and WebGPU. For interfaces that need GPU-level visuals rather than DOM elements.",
   "caveat": null,
+  "details": "Canvas UI (canvasui.dev) is an open-source library of tasteful html-in-canvas components in WebGL or WebGPU — framework-agnostic, with every effect shipping in six flavors (React, Solid, Preact, Vue, Svelte, dependency-free vanilla TypeScript) with the same engine and props. Effects like Blaze, Liquid, Laser, Clouds, Bubble, Droplets, Glass, Magnify, Grid, and Ripple render on the GPU outside React's render cycle, pause off-screen, clean up on unmount, and respect reduced-motion. It's built for agents too: the registry speaks the shadcn protocol, so any assistant with the shadcn MCP server can browse, read docs, and install components from one prompt. License is MIT + Commons Clause — free forever in any app, with resale/redistribution of the components themselves prohibited. Graceful degradation: where the experimental html-on-canvas capability isn't available, content renders as regular HTML and GPU effects run as overlays.",
   "resource_type": "library-framework",
   "topics": [
     "frontend"

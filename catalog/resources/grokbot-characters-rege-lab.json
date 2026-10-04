@@ -5,6 +5,7 @@
   "canonical_url": "https://www.rege-dev.xyz/lab/grokbot-characters",
   "brief": "A Rege Lab page with six little Grokbot character expressions to play with, plus downloadable editable CoAnimato files. A creative asset resource for bot and character design.",
   "caveat": null,
+  "details": "Rege Lab's \"Grokbot Characters\" page is a demo of image-to-SVG character animation made with AI agents inside CoAnimator — the Grokbot character playing as a 13-second SVG animation alongside its timeline and AI agent. Rather than a code library, it is a showcase you can edit: download the animation file, open it in the free CoAnimator app, and ask your AI agent to change the expressions, motion, or colors.",
   "resource_type": "directory-gallery",
   "topics": [
     "design"

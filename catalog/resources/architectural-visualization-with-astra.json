@@ -5,6 +5,7 @@
   "canonical_url": "https://developers.openai.com/blog/architectural-visualization-with-astra",
   "brief": "OpenAI's developer blog on using Astra to design a house, refine everyday details, and explore it through Blender camera tours and an Unreal Engine 5 walkthrough. A concrete agentic-design case study.",
   "caveat": null,
+  "details": "An OpenAI Developers blog post walking through a full architectural-visualization project with Astra in Codex: from a one-line brief (\"design a beautiful house... make it cinematic\") to an editable Blender scene of a furnished family home, a concept floor plan, an Unreal Engine 5 walkthrough, and a directed 30-second camera tour. The method: start with atmosphere, draw the floor plan before modeling (a U-shaped garden house around a planted courtyard), build rooms and furniture as real geometry (sofa piping, hollow steel sinks, cable-managed desks), inspect geometry without materials, then push a \"lived-in\" pass (dishes, journals, warm practical lighting). Astra iterated on its own renders, corrected surface normals, placed cameras at 1.65m with 24–26mm lenses, and assembled 900 Cycles frames into film. The post includes the actual evolving prompts — a rare honest look at how much direction and iteration a good agent-built 3D scene takes, and a useful template for anyone directing agents at Blender/UE5 work.",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

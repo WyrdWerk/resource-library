@@ -5,6 +5,7 @@
   "canonical_url": "https://feralui.dev/",
   "brief": "A small library of playful, physics-driven React elements — including a ceiling pull-cord with real Verlet rope physics. For interfaces that should feel alive rather than flat.",
   "caveat": null,
+  "details": "FeralUI (feralui.dev) is a small library of playful, physics-driven React elements by mortspace — less a component kit, more a showcase of interactive experiments with real physics, hand-tuned animation, and whimsy, built in React and TypeScript. Each piece is a self-contained demo at its own address: PullCord (a cloth cord that really hangs — pull it to switch the lights), ClawCaptcha (prove you're human by winning the claw machine), Gradient Builder (soft gradients from traditional Japanese colours), Screenery (finished app screens, each with a signature move), DeskFolio (a book that blooms open on a spring), Blob (a squishy jelly mascot in a log-out modal), AniMaps (exportable animated route maps), Fur (pettable fur painted strand by strand), Vacuum (a vacuum that sucks up tiles), Crumple (notes crumple into paper balls), Hologram (a foil card that catches light as you tilt), and Matchday (Letterboxd for football). Browse it for interaction ideas with genuine craft.",
   "resource_type": "library-framework",
   "topics": [
     "frontend"

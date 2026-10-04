@@ -5,6 +5,7 @@
   "canonical_url": "https://mdx-graphs.kshv.me/",
   "brief": "Monospace charts and tables for MDX and React. Handy for rendering data visuals that stay crisp in markdown contexts.",
   "caveat": null,
+  "details": "mdxcn (mdx-graphs.kshv.me) — \"markdown-friendly components\": a free, open-source set of callouts, steps, terminals, charts, and timelines for MDX, installed via the shadcn CLI. The agent angle: install the skill and your agent can choose a graph, fill in real props, and place it beside the prose — writing JSX for MDX, `::graph-*` for comark, or a knap filter, and in plain Markdown pasting the official ASCII instead of inventing an unreusable diagram. The idea is giving your agent the same component library you have, so generated docs come with real charts rather than ASCII approximations. Browse every component in the library section; the FAQ covers what you install, where it works, and how agents use it.",
   "resource_type": "library-framework",
   "topics": [
     "frontend"

@@ -5,6 +5,7 @@
   "canonical_url": "https://x.com/vercel_dev/status/2089828083415355806?s=46",
   "brief": "Vercel's announcement of fx, \"a tiny, open, native coding agent\" from Vercel Labs, originally an internal tool. Announcement-only source; details unverified.",
   "caveat": "Announcement-only source; details unverified.",
+  "details": "fx (Vercel Labs) — announced via the Vercel Developers X account as \"a tiny, open, native coding agent,\" originally an internal tool. It is a Unix-like coding-agent CLI written in Zig (vercel-labs/fx, Apache-2.0, ~3.3k stars): a single ~6-8 MiB native binary with no hosted service and no public HTTP API — just the binary. It runs in four places: the terminal (with a shell-like scrollback UI rather than a full-screen TUI), shell scripts, ACP-speaking editors, and your own Node app via `libfx` (the same agent core embedded in your product, with tools written in JavaScript). Model-agnostic: sign in with Vercel AI Gateway, reuse a ChatGPT or Grok subscription, or point it at a local Ollama server. Security-minded: a cloned project's files can't choose your model or permission rules, and bundled MCP servers don't start until you trust them. Marked experimental (0.0.x at announcement); community deep dives and an fx-on-workers demo (libfx WASM in a Cloudflare Worker) already exist. (The link is the X announcement; the project detail above is corroborated from the public repo and independent coverage.)",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents"

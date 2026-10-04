@@ -5,6 +5,7 @@
   "canonical_url": "https://real-api-pricing.vercel.app/",
   "brief": "Compares the real cost of AI — subscription allowances, model benchmarks and the price–performance frontier, with transparent sources. Useful before committing spend to any provider.",
   "caveat": null,
+  "details": "Real API Pricing (real-api-pricing.vercel.app) — \"the cost behind the capability.\" It computes effective price as monthly subscription fee divided by the tokens you can actually use, plotted against independent leaderboards (Artificial Analysis Intelligence Index snapshots). The point is honest comparison: sticker per-token prices and subscription tiers obscure what you really pay per usable token, so the site maps plan × model points onto a frontier of current selection, marking models with no matching archived score rather than inferring. Useful when choosing between API plans and subscriptions for agent workloads — the number that matters is dollars per token you actually get, not the headline rate.",
   "resource_type": "tool",
   "topics": [
     "inference",

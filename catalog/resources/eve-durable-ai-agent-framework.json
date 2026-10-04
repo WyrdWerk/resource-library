@@ -5,6 +5,7 @@
   "canonical_url": "https://eve.dev/",
   "brief": "A durable agent framework pitched as \"Next.js for agents\" — build agents with one folder, with durability baked in. Product claims unverified; the durability angle is the interesting bit.",
   "caveat": "Product claims unverified; the durability angle is the interesting bit.",
+  "details": "eve (eve.dev) — a filesystem-first, Apache-2.0 framework for building durable backend AI agents, pitched as \"like Next.js for agents\" — \"build durable agents with one folder.\" You add channels, tools, skills, sandboxes, hooks, and schedules through filesystem conventions and deploy agent workloads on Vercel or self-host them as Node services. The site is agent-friendly by design: docs and integration pages expose Markdown via `.md`/`.mdx` extensions, with `/llms.txt`, `/llms-full.txt`, and a semantic sitemap for agent navigation. A template gallery bootstraps common shapes: persisted chat with per-user long-term memory, an LLM council (four models + judge), Slack agents, a GitHub maintainer (weekly digests, PR summaries, @mentions, Linear delegation), a software factory (classifier → analyst → implementer → reviewer → draft PR), incident response with live Datadog/GitHub/Vercel evidence, and marketing/social/Sanity/Mux agents. Currently in beta.",
   "resource_type": "library-framework",
   "topics": [
     "ai-agents"

@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/pullfrog/pullfrog",
   "brief": "An open-source, model-agnostic, BYOK GitHub bot that runs in GitHub Actions. Bring your own key, pick your model, automate your repo — the self-hosted answer to proprietary coding agents.",
   "caveat": null,
+  "details": "Pullfrog (pullfrog/pullfrog, ~1.3k stars) — \"the BYOK CodeRabbit that runs in your GitHub Actions.\" It's not an agent itself; it wraps vanilla Claude Code, Codex, and OpenCode (whichever matches your BYOK or subscription configuration) and listens for GitHub events — PRs opened, issues created, reviews submitted, CI failures — triggering agent runs from a `pullfrog.yml` workflow via the open-source action. You control the infrastructure, the keys, and the costs. Out of the box: auto-review on new PRs (verdicts can gate merges via status checks), addressing review comments, CI autofix, merge-conflict autofix, issue triage, and `@pullfrog` ad-hoc invocation. Batteries included: a purpose-built MCP server for git/GitHub ops, isolated shell without sensitive env, a headless browser for e2e/screenshots, short-lived auto-revoked installation tokens, hooks (setup/post-checkout/pre-push/stop — a failing stop script resumes the agent with context), and GitHub-native permissions. Pricing: free for personal accounts and open source; Pro is $30/mo per org, no per-run or per-seat. The same action works standalone as a pipeline step with a JSON-schema `output_schema` for structured output. MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

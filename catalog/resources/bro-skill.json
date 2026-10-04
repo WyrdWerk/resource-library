@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/luchasarie/bro-skill",
   "brief": "A one-file Agent Skills-format skill adding a `/bro` command: when a coding agent's last reply was too dense or jargon-heavy, `/bro` re-explains that same answer in plain language, with facts, paths, and commands preserved verbatim. It ships an installer covering Hermes, Claude Code, Cursor, Codex, and opencode; MIT-licensed.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

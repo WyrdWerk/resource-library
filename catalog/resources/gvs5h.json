@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/slee-persis/GVS5H",
   "brief": "A harness claiming five Qwen3.8-27B models match Claude Fable 5 on LiveCodeBench Hard — \"Fable 5 level coding.\" The performance claims are the poster's and unverified; scarywood75 noted the implementation is Python.",
   "caveat": null,
+  "details": "GVS5H (slee-persis, 717 stars — \"Gorilla vs. 5 Humans\") is a research repo showing that inference-time organization can match frontier coding models at a fraction of the cost. The method is ledger-based zero-shot self-orchestration: fresh instances of one model decompose problems and coordinate through a shared filesystem holding the plan, notes, and current solution — no training required. Across the 100 latest hard LiveCodeBench problems, orchestrated Qwen3.8 Flash Next reached 93.0% pass@1 against Claude Fable 5's 90.4% at 9% of the cost, and locally served open-weight Qwen3.8-27B rose from 66.8% to 92.4% — \"Fable 5 level coding for a fifth the price, or on a single GPU.\" Gains aren't universal (some models unchanged or worse); transcript analysis credits decomposition and persistent context. The repo includes the paper, benchmark harness, and run data. Code MIT; paper/figures CC BY 4.0.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

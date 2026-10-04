@@ -5,6 +5,7 @@
   "canonical_url": "https://obsidianui.dev",
   "brief": "ObsidianUI is a React and Tailwind CSS component library with an emphasis on motion — featured components and interactive effects you can preview, read the source of, and try directly in your project. From @athrix_codes; a customizable starting point for interfaces where the details matter.",
   "caveat": null,
+  "details": "ObsidianUI is a React and Tailwind CSS component library with an emphasis on motion — featured components plus cursor and scroll effects you can preview, read the source of, and try directly in your project. The intended flow is deliberately simple: preview it, read the code, drop it into your build, then customize styling and behavior to fit the interface you are actually shipping. Positioned for people who want a customizable starting point for expressive interfaces rather than rebuilding every interaction. From @athrix_codes.",
   "resource_type": "library-framework",
   "topics": [
     "frontend"

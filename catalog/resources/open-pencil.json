@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/open-pencil/open-pencil",
   "brief": "An AI-native design editor pitched as an open-source Figma alternative. Worth watching if design tooling is on your radar.",
   "caveat": null,
+  "details": "OpenPencil (open-pencil/open-pencil, 8.7k stars) is an AI-native design editor — an open-source Figma alternative with Skia/WebGPU rendering in a ~15MB Tauri desktop app, a PWA, and a web app. It opens and writes native .fig files (plus .pen), with components/variants, auto layout via Yoga WASM, real-time P2P collaboration over WebRTC (no server, no account), and image vectorization. The AI story is deep: built-in chat with 100+ design tools (bring your own key — OpenRouter, Anthropic, OpenAI, Google, DeepSeek, Z.ai, MiniMax), an MCP server with 100+ tools for headless inspection/modification/export, an agent skill (`npx skills add open-pencil/open-pencil`), and desktop integration where Claude Code/Codex/Gemini CLI drive the editor through MCP. A headless CLI inspects node trees, queries with XPath, lints design files, extracts design tokens, scripts via the Figma Plugin API, and exports to PNG/SVG/PDF/PPTX/JSX/Storybook. Design-to-code export and a headless Vue SDK for embedding round it out. Active development, MIT.",
   "resource_type": "repository",
   "topics": [
     "design"

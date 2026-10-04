@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/koala73/worldmonitor",
   "brief": "An open-source (AGPL-3.0) real-time global intelligence dashboard: AI-synthesized news briefs, a 3D globe and WebGL flat map, a live Country Instability Index for 31 Tier-1 countries, and cross-stream correlation of military, economic, and disaster signals. It is built for programmatic access too — MCP server, REST API with OpenAPI spec, CLI (`npx worldmonitor`), and Python/Ruby/Go SDKs, with local-AI support via Ollama — and ships as a web app, Tauri desktop binaries, and PWA. AGPL-3.0 copyleft applies, so commercial/SaaS use needs a separate license or AGPL compliance.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "observability"

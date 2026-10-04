@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/Noniv/snowflow_demo",
   "brief": "Source repo for the Snowflow demo above: a fully procedural real-time snow scene built on WebGPU + Babylon.js with hand-written WGSL shaders — terrain, snow deformation, surf wakes, water spells, atmosphere, and post-processing, all generated at runtime. ~580 stars.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "frontend"

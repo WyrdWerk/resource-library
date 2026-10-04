@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/PipeNetwork/kimi-k3-mlx",
   "brief": "An MLX port of moonshotai's Kimi-K3 (2.78T multimodal MoE); the weights are converted from the original release and requantized. Conversion quality is unverified.",
   "caveat": "Conversion quality is unverified.",
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "inference"

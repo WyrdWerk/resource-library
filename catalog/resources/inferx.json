@@ -5,6 +5,7 @@
   "canonical_url": "https://inferx.net/models",
   "brief": "Pay-as-you-go inference across 200+ production-ready models you can deploy with one click from its console. 'Ready now' endpoints publish per-token input/output/cached-input pricing, with promotional models showing the original rate crossed out beside the active InferX price — the catalog explicitly marks unpublished fields as missing rather than estimating them.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

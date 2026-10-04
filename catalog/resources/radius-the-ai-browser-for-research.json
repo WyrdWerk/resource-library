@@ -5,6 +5,7 @@
   "canonical_url": "https://radiusbrowser.com/",
   "brief": "An AI-native browser aimed at research workflows. Product claims unverified; notable as another entry in the agentic-browser wave.",
   "caveat": "Product claims unverified; notable as another entry in the agentic-browser wave.",
+  "details": "Radius (radiusbrowser.com) — a Chromium-based macOS browser that doubles as an IDE for running coding agents in parallel next to your PRs, docs, terminals, and localhost servers. The core idea: everything is a tab — your agent runs in a tab, so does the terminal, the diff viewer, and every PR, doc, dashboard, and localhost server you keep open, so context never gets lost switching windows. Spaces auto-organize per project; git worktrees get their own tab groups. Privacy posture is local-first: worktrees, sessions, and agent state live on your machine; agents authenticate with their providers directly (Claude, Codex, or Cursor — use the subscription you already have); analytics can be opted out of at any time. Free; Radius adds no additional subscription beyond your existing agent accounts. Download for Apple Silicon or Intel.",
   "resource_type": "tool",
   "topics": [
     "ai-agents",

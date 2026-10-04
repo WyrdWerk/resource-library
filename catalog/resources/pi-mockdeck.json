@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/1y33/pi-mockdeck",
   "brief": "Cata's first pi extension — an ASCII showcase/mockup gallery of UIs for fast iteration. The shared link pointed at the commits page; normalized to the repo root.",
   "caveat": null,
+  "details": "Mockdeck (1y33/pi-mockdeck) is a UI ideation extension and skill for the Pi coding agent — \"ASCII interface exploration and mockup gallery for Pi.\" It turns a short product brief into several structurally different ASCII interface concepts (via the `ascii-ui-design` skill, which pushes for meaningful alternatives rather than cosmetic variations), then opens them in a responsive, colorized, keyboard-first TUI gallery. The loop is brief → agent explores → concepts validated → gallery → selection → implementation: pick a concept and Mockdeck drops an implementation-ready prompt into Pi's editor. Safety is designed in — the model never emits executable terminal styling, only semantic color tags the extension maps to the active theme, and malformed concepts are rejected with exact row/column diagnostics. Artifacts persist as atomic JSON under `.pi/mockdeck/`, exportable as Markdown, and everything is diffable in Git. Install with `pi install git:github.com/1y33/pi-mockdeck`. MIT.",
   "resource_type": "repository",
   "topics": [
     "design",

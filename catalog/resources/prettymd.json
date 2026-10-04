@@ -5,6 +5,7 @@
   "canonical_url": "https://prettymd.app/",
   "brief": "A markdown viewer \"for vibe coders\" — a simple, beautiful app for reading the .md files your AI writes: specs, plans, skills, agents and more. Pairs naturally with agent-heavy workflows.",
   "caveat": null,
+  "details": "PrettyMD (prettymd.app) is a markdown viewer built for the vibe-coding workflow — \"a markdown viewer for vibe coders.\" It renders the .md files your AI writes (specs, plans, skills, AGENTS.md) beautifully, and its two killer features close the loop with your agent: highlight any line and leave a comment that your agent picks up and replies to right there, and a change-highlighter that shows what's new since you last looked so you read only the changed lines. Comments live in a plain `.md.comments.json` sidecar your agent can also write to (agent comments are tagged by name). Also: outline navigation, tabs, instant search, focus mode, keyboard-first shortcuts, Mermaid/code/full Markdown spec support, light and dark themes, Mac and Windows, fully offline. One-time $19 lifetime license (not a subscription), 7-day free trial with no credit card, free updates forever, two computers per license. Solo-built by Somya.",
   "resource_type": "tool",
   "topics": [
     "productivity",

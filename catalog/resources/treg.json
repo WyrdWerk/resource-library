@@ -5,6 +5,7 @@
   "canonical_url": "https://treg.to/",
   "brief": "A tool catalog for agents — 2,630 endpoints across 47 providers (SEO, social, enrichment, ads data) callable with one key, priced per call, plus support for your own keys and skills. Tom's 2 Sep share carried his referral param; normalized to the root domain.",
   "caveat": null,
+  "details": "treg.to — \"OpenRouter for agent tools and data, pay per call.\" One unified key across 108 providers and 3,800+ endpoints: your agent holds a single treg token and every tool in the catalog answers to it, with credentials injected server-side (never on a machine). The model: your agent asks for the task, not the tool — treg shows what each provider charges and what they've measured it doing (success rate, speed, last answered), so the agent picks on evidence. No subscription: seats you'd never buy for one agent run (Semrush, Moz, Crunchbase, Hunter) become fractions of a cent per call, price quoted up front, $1 free to start; bring your own key and those calls route unmetered. Zero additional markup — they earn on vendor volume pricing. 100% open source, AGPL. Aimed at giving agents metered access to the data-tool economy without key sprawl.",
   "resource_type": "service-platform",
   "topics": [
     "ai-agents",

@@ -5,6 +5,7 @@
   "canonical_url": "https://kitani.ai/",
   "brief": "Open inference on independent hardware with a prepaid USD balance — the max request cost is reserved, then settled on completion. API is OpenAI-compatible at api.kitani.ai/v1.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

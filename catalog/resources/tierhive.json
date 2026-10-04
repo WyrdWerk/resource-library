@@ -5,6 +5,7 @@
   "canonical_url": "https://tierhive.com/",
   "brief": "Hourly-billed NAT VPS hosting aimed at small-VPS needs — deploy instantly, scale dynamically, pay only for hours used, with load balancing and automatic failover included. thelaggingway recommends it for small-VPS needs but hasn't tried it; pricing and feature claims are vendor-reported and not independently verified.",
   "caveat": null,
+  "details": "TierHive is hourly-billed NAT VPS hosting pitched as the cheapest of its kind — deploy in seconds, scale CPU, RAM, and disk live without downtime, pay only for the hours used, and cancel anytime, with plans from tiny 128 MB instances (about $0.10/mo equivalent) upward. Each customer gets a full /24 private subnet with WireGuard mesh networking between locations, plus built-in HAProxy load balancing with automatic Let's Encrypt SSL, automatic failover, scheduled backups with instant restore, and one-click community recipes (WordPress, LAMP, Docker, Laravel). A $3 minimum top-up is required after registration; locations span Europe, North America, Singapore, Sydney, and Tokyo. From TierHive, London.",
   "resource_type": "service-platform",
   "topics": [
     "cloud-infrastructure"

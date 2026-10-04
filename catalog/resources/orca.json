@@ -5,6 +5,7 @@
   "canonical_url": "https://www.onorca.dev/",
   "brief": "A free, open-source Agent Development Environment (ADE): run Claude Code, Codex, Gemini, Cursor CLI, and other CLI agents in parallel across isolated git worktrees, with a Ghostty-class terminal, in-app diff review, embedded browser, and SSH dev built in. Bring your own subscriptions — agents run side by side without interfering.",
   "caveat": null,
+  "details": "Orca is a free, open-source (MIT) Agent Development Environment — a desktop app for shipping with coding agents, positioned as a terminal-first Cursor alternative. It is worktree-first: each AI agent runs in its own isolated git worktree, so Claude Code, Codex, OpenCode, and 25+ other CLI agents (Grok, Gemini, Cursor, Copilot, Amp, Pi, Kiro, and more — bring your own subscription) can work side by side without conflicts. It bundles a Ghostty-class terminal with infinite splits, in-app diff review, an embedded browser, and remote SSH dev, with status tracking and notifications across parallel sessions. Recent releases added PDF diff preview, hidden-file quick-open, configurable worktree cards, and improved merge-conflict and CI review. Download for macOS, Windows, or Linux at onorca.dev.",
   "resource_type": "tool",
   "topics": [
     "ai-agents",

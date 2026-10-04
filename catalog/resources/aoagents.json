@@ -5,6 +5,7 @@
   "canonical_url": "https://aoagents.dev/",
   "brief": "An AI agent platform whose pitch is \"Everything is an Agent\". Announcement-level description only; details unverified since the link was not opened.",
   "caveat": "Announcement-level description only; details unverified since the link was not opened.",
+  "details": "AO (aoagents.dev) — an open-source agent orchestrator for running multiple coding agents in parallel. You describe the outcome; the main orchestrator plans the work and spawns workers into their own isolated git worktrees so they can work on different branches or features simultaneously without conflicts. Every session flows across one board (working / needs you / in review / ready to merge) with agent, branch, and PR state on the card. It watches every PR it opens and routes failed CI checks and review comments back to the session that owns the branch until approval. Supports ~25 CLI-based coding-agent harnesses (Claude Code, Codex, Cursor, OpenCode, Aider, Goose, more) with per-project agent choice, and a mobile companion app (paired over LAN or Tailscale) so you can watch sessions, open a terminal, and get notified when an agent needs you — while execution and code stay on your own machine. Runs as a local daemon; code never leaves localhost. Apache 2.0.",
   "resource_type": "tool",
   "topics": [
     "ai-agents"

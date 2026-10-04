@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/ranxianglei/billion-context-pi",
   "brief": "Rykuuun shared this asking \"this is pi-vcc right?\", suggesting it's related to a \"pi\" coding agent with very large context. Details are unverified from the message text alone.",
   "caveat": "Details are unverified from the message text alone.",
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

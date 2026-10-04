@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/josh-project/josh",
   "brief": "\"Just One Single History\" — a git-at-scale platform built on fast, reversible Git history transformation. It presents any part of a repo (e.g. a monorepo subfolder) as an independent repository with history preserved, so repo boundaries can be decided per-context instead of reflecting org silos; it ships a `josh` CLI for partial repo projections and `josh-proxy`, a Git HTTP/SSH proxy with a GraphQL API for CI/build queries. A mature project (since 2016, MIT), though some listed features like the merge queue and Starlark filters are not fully mature yet.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "developer-tools",

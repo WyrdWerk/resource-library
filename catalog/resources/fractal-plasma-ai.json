@@ -5,6 +5,7 @@
   "canonical_url": "https://www.plasma.ai/research/fractal",
   "brief": "Plasma AI's Fractal wraps Claude Code and Codex in bounded recursive loops. Details beyond the truncated preview are unverified.",
   "caveat": "Details beyond the truncated preview are unverified.",
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "ai-agents"

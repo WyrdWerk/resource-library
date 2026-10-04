@@ -5,6 +5,7 @@
   "canonical_url": "https://berd.xyz/",
   "brief": "A self-described \"weird, playful\" desktop app for building with AI agents — \"less chatting, more building\". Product claims unverified.",
   "caveat": "Product claims unverified.",
+  "details": "Berd (berd.xyz) — \"Less chatting, more building. Berd is a weird, playful desktop app for building with AI agents.\" The homepage is deliberately minimal, so the substance is in the positioning: a desktop-first, playful take on building software with AI agents that de-emphasizes chat and emphasizes making. (Coverage-limited: the site exposes little beyond the premise; the breakdown reflects the resource's subject as curated rather than verified feature detail.)",
   "resource_type": "tool",
   "topics": [
     "ai-agents"

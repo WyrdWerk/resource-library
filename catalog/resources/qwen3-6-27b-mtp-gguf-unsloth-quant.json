@@ -5,6 +5,7 @@
   "canonical_url": "https://huggingface.co/unsloth/Qwen3.6-27B-MTP-GGUF",
   "brief": "Unsloth's GGUF quantization of Qwen3.6-27B with MTP (multi-token prediction). For local inference of the 27B Qwen.",
   "caveat": null,
+  "details": "Qwen3.6-27B-MTP-GGUF (unsloth) — GGUF quantizations of Qwen3.6-27B with Multi-Token Prediction (MTP) enabled, for ~1.5-2x faster local inference with no accuracy loss. Qwen3.6-27B is the first open-weight Qwen3.6: a 27B causal LM with a vision encoder, built for agentic coding — 64 layers of a Gated DeltaNet + Gated Attention hybrid layout, 262K native context (extensible to ~1M), thinking preservation, and improved tool calling. Unsloth's MTP build runs in llama.cpp (`--spec-type draft-mtp --spec-draft-n-max 2`), also loadable in Unsloth Studio (which auto-tunes MTP per hardware) with Dynamic 2.0 quants and developer-role support for Codex/OpenCode. Serving recipes for SGLang, vLLM (qwen3_next_mtp speculative config), KTransformers, and Transformers are documented. Good for anyone self-hosting Qwen3.6 and wanting draft-speculative speedups without changing outputs. License follows the upstream Qwen release.",
   "resource_type": "dataset",
   "topics": [
     "inference"

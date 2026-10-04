@@ -5,6 +5,7 @@
   "canonical_url": "https://woxi.ad-si.com/docs/comparison/mathematica/",
   "brief": "Woxi's comparison of itself against Mathematica — Woxi being an interpreter for a subset of the Wolfram Language. A decent way into what Woxi is and where it stands.",
   "caveat": null,
+  "details": "Woxi vs Mathematica (woxi.ad-si.com docs) — the comparison page for Woxi, an alternative to WolframScript, and Woxi Studio, an alternative to the Mathematica notebook frontend. Woxi aims for compatibility with the Wolfram Language but deliberately deviates in a few UX ways: Unicode identifiers (`woxi eval 'N[2π * 4]'`), direct evaluation of `.nb` notebook Input/Code cells from the command line (`woxi run notebook.nb` — something WolframScript can't do), and even an `Import` for CERN ROOT files (1-D/2-D histograms, TTree branch data, TLorentzVector) that the Wolfram Language doesn't natively support. Woxi Studio runs cells strictly top-down (no out-of-order evaluation) and drops `%` (last-result reference) as too brittle for kernel-state clarity. Honest coverage of what's missing: the Wolfram Knowledgebase, ML/neural nets, optimization, FEM, chemistry, audio/video computation, and per-release marquee features are mostly unimplemented, with conformance gaps against `wolframscript` catalogued and verified but not yet fixed. Worth reading if you do symbolic computation on a CLI budget.",
   "resource_type": "article-guide",
   "topics": [
     "developer-tools"

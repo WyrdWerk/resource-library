@@ -5,6 +5,7 @@
   "canonical_url": "https://inspomcp.dev/",
   "brief": "A reference layer for AI coding agents — real production websites with desktop and mobile captures, \"real websites worth studying.\" Useful as grounding material when agents need to see how good sites are actually built.",
   "caveat": null,
+  "details": "Inspo (inspomcp.dev) is a curated archive of 832 production websites \"worth studying,\" aimed squarely at coding agents as much as humans. Browse the archive yourself or search 2,320 captured screens — each entry carries style tags (minimalist saas hero, brutalist fintech, dark mode saas hero) that read like design-vocabulary search terms. The agent angle is the differentiator: one line (`npx -y inspo-mcp install`) turns the whole archive into an MCP server, so your agent can pull real captures, reference components, and each site's DESIGN.md when building. The pitch: \"your agent doesn't have taste — lend it some.\" Useful when you want agent-generated UI grounded in real production references instead of generic defaults.",
   "resource_type": "directory-gallery",
   "topics": [
     "design",

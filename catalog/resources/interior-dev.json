@@ -5,6 +5,7 @@
   "canonical_url": "https://www.interior.dev/",
   "brief": "Micro-interactions for React, \"built for the half-second after a click\". A focused little library for the small animations that make UIs feel alive.",
   "caveat": null,
+  "details": "interior.dev — free, open-source React micro-interaction components, \"argued out to the frame\": buttons, spinners, copy buttons, and the fiddly half-second-after-a-click details that make software feel expensive instead of cheap. The model is shadcn-style — one file per component, you keep the source and restyle freely (React + Tailwind + Motion, TypeScript throughout). Install via `npx shadcn@latest add https://www.interior.dev/r/copy-button.json`. The behavior is finished; the style is yours. MIT licensed. Named \"Library of the Month\" on 21st.dev.",
   "resource_type": "library-framework",
   "topics": [
     "frontend"
