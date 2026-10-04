@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "arc-ui",
+  "title": "Arc UI",
+  "canonical_url": "https://uiarc.dev",
+  "brief": "React component and block library installable via the shadcn CLI (@uiarc registry) — from the shared UI-libraries list.",
+  "caveat": null,
+  "details": "Arc UI is an animated React component library for shadcn and Next.js with 147 components and 85 blocks, every example live and interactive. Components cover focused jobs (morphing selects, date range pickers, command palettes, animated charts); blocks combine them into complete product flows like onboarding, scheduling, and an animated inbox. Install via the shadcn CLI or copy source, and AI tools can consume every component through Markdown pages, an llms.txt index, and an MCP server. Arc Pro unlocks the 42 motion-heavy components, most larger blocks, and new releases. Motion respects reduced-motion device preferences, and source lives in your project with semantic color tokens for easy restyling.",
+  "resource_type": "library-framework",
+  "topics": [
+    "design",
+    "frontend"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "web",
+    "cli"
+  ],
+  "technologies": [
+    "react"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

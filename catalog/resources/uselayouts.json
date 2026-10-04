@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "uselayouts",
+  "title": "UseLayouts",
+  "canonical_url": "https://uselayouts.com",
+  "brief": "Premium animated React components and micro-interactions (Framer Motion + Tailwind) — one of the libraries in the shared UI-libraries list; Bencho and HyperUIX from the same list were already published.",
+  "caveat": null,
+  "details": "useLayouts is a free library of animated React components built with Framer Motion (Motion) and Tailwind CSS. It covers 12+ layouts (grids, bento, hero sections), 14+ navigation patterns (navbars, tabs, sidebars), 18+ interactions (hover, drag, press, reveal), and 20+ UI pieces (cards, forms, galleries, pricing), each with purposeful motion, clean editable source, and a copy-customize-ship workflow that plays nicely with Next.js, TypeScript, shadcn, Radix, and Lucide. Praised by shadcn ecosystem builders like the founders of shadcnblocks and htmlrev, and maintained by 0xUrvish with a sponsor link. Free and open source.",
+  "resource_type": "library-framework",
+  "topics": [
+    "design",
+    "frontend"
+  ],
+  "use_cases": [
+    "build-interfaces",
+    "discover-design-references"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "react",
+    "tailwind-css"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

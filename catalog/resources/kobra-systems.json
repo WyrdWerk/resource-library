@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "kobra-systems",
+  "title": "Kobra Systems",
+  "canonical_url": "https://kobra.systems",
+  "brief": "Polished React components and micro-interactions (OTP inputs, AI editor, streaming text) — from the shared UI-libraries list.",
+  "caveat": null,
+  "details": "Kobra Systems is a React component library and micro-interaction collection built with React and Tailwind, offering dozens of free polished components plus a paid Pro tier. Each component is copy-paste ready with three files (the .tsx component, styles.css, and a prompt.md for AI-assisted customization) and live demos showing every state — inputs and form controls, OTP inputs, carousels, toasts, chat interfaces, tables, charts, navigation, overlays, and animated micro-interactions like magnetic buttons, halftone dots, and shimmer effects. Light and dark themes are designed per component, with examples built on input-otp and Motion.",
+  "resource_type": "library-framework",
+  "topics": [
+    "design",
+    "frontend"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "react"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

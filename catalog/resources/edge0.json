@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "edge0",
+  "title": "Edge0",
+  "canonical_url": "https://github.com/Edge0-AI/Edge0",
+  "brief": "Open-source (Apache-2.0) streaming mixture-of-experts inference framework by Samuel Zeng — Edge0-35B runs locally.",
+  "caveat": null,
+  "details": "edge0 is an open-source streaming MoE inference framework by Edge0-AI built on three ideas: SSD expert offload, Recover-LoRA, and prerouter routing prediction. Expert weights stream from storage on demand so peak memory is bounded by the active expert set, not the parameter count, letting large sparse-MoE models run on consumer hardware. A trained prerouter head predicts expert routing one step ahead so expert loads overlap the forward pass instead of stalling it — up to +59% decode throughput, growing with storage latency, model size, and routed width K. Recover-LoRA keeps the int4 base frozen and trains LoRA adapters by distillation from the FP teacher to recover most 4-bit quantization loss; adapters stay unmerged so one read-only base serves multiple adapter sets. It ships per-platform runtimes: Python on Apple Silicon (MLX), a Rust macOS app and CLI, Swift iOS app, Kotlin Android engine, and Windows (all open-sourced Sep 2026), with a unified framework on the Q4 2026 roadmap. It also ships two preview models — Edge0-35B-A3B-preview and Edge0-8B-A1B-preview — on Hugging Face and ModelScope, plus an arXiv technical report (2609.18063). Apache-2.0 licensed.",
+  "resource_type": "repository",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference",
+    "host-models"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-02",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

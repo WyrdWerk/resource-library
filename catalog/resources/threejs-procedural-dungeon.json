@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "threejs-procedural-dungeon",
+  "title": "threejs-procedural-dungeon",
+  "canonical_url": "https://github.com/majidmanzarpour/threejs-procedural-dungeon",
+  "brief": "Open-source three.js procedural dungeon generator by Majid Manzarpour.",
+  "caveat": null,
+  "details": "Dungeon Forge is a real-time procedural dungeon generator rendered live with Three.js, by Majid Manzarpour (MIT, 507 stars). A single seed drives the entire deterministic pipeline via one mulberry32 stream: scatter room rectangles, relax overlaps, Delaunay-triangulate room centers, reduce to a minimum spanning tree for guaranteed connectivity, then add back a tunable fraction of edges as loops, assign room semantics (entrance, combat, elite, treasure, shrine, boss) by BFS depth and critical path from the entrance, carve rooms and L-shaped corridors into a tile grid, rasterize with ambient occlusion, and decorate. Five hand-tuned themes (Ancient, Molten, Frost, Grim, Verdant, plus seed-picked AUTO) swap palettes, lighting, liquids, props, and particles (embers, snow, spores, wisps). Everything is procedural: canvas-generated textures, instanced rendering for thousands of tiles, and a hand-written post-processing stack (bloom, separable blur, tilt-shift, color grade, vignette, film grain) giving a painted-miniature look. The panel lets you type a seed, pick a theme, adjust room count (12-80), loopiness, and decor density, with overlays for the graph and difficulty heatmap plus live FPS/triangle telemetry. Quick start: npm install, npm run dev; builds to a static bundle. One self-contained main.js, migrated to current Three.js ES modules. A rich study in procedural generation, graph algorithms, and WebGL optimization.",
+  "resource_type": "repository",
+  "topics": [
+    "web-development",
+    "design"
+  ],
+  "use_cases": [
+    "create-media"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "javascript"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "2–8 Jul 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-07-06",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

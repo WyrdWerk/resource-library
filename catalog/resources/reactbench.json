@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "reactbench",
+  "title": "ReactBench",
+  "canonical_url": "https://github.com/millionco/reactbench",
+  "brief": "An evaluation benchmark for coding agents on realistic React work — 39 scored tasks where solutions must actually work.",
+  "caveat": null,
+  "details": "ReactBench is an evaluation benchmark for coding agents on realistic React work, built by Million (million.dev). Models that pass conventional tests can still write React that fails in production, so ReactBench holds solutions to a higher bar: every solution must pass held-out behavioral tests and produce no new React Doctor issues (their React linter/static analyzer). The suite has 39 scored tasks grounded in real open-source React projects plus a hello-react smoke test. Two task types: Write React (implement a feature/fix from a merged PR given the base repo and an issue-style prompt, with the reference patch withheld) and Fix React (remove every target React Doctor finding from source alone without introducing new graded issues, with the task's own test suite still passing). Tasks use the Harbor sandboxed-eval format with task.toml metadata, environment Dockerfiles, vitest/Playwright verifiers, and held-out reference solutions; agent and verifier run in separate containers with oracle/nop controls, each task getting 4 CPUs, 8GB RAM, 10GB storage. Quickstart needs Docker and uv: uv run harbor run -p tasks/hello-react -a oracle. No license file published; from millionco, ~274 stars.",
+  "resource_type": "repository",
+  "topics": [
+    "testing",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "test-software"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "react",
+    "javascript"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "9–15 Jul 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-07-15",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

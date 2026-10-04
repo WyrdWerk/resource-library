@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "sidequest-for-pi",
+  "title": "Sidequest for Pi",
+  "canonical_url": "https://github.com/peterp/pi-sidequest",
+  "brief": "A context-aware side channel for coding-agent tangents in Pi — \"a better /btw\" that keeps tangents grounded instead of polluting the main session.",
+  "caveat": null,
+  "details": "Sidequest is a Pi coding-agent extension by PeterP that adds a side channel for asking context-aware questions without derailing the main conversation, described as a better /btw. It runs its own isolated, tool-capable Pi worker, grounded in the active Pi session, with threaded, persistent questions. Install with `pi install npm:pi-sidequest` or `pi install git:github.com/peterp/pi-sidequest`, then open it inside Pi with /sidequest or a quake-console hotkey (default section/tilde, configurable via PI_SIDEQUEST_QUAKE_KEY(S) or ~/.pi/agent/sidequest.json). The UI has two focus areas: selection (choose root or a thread) and prompt (type the next question), switching with Tab. The side worker's default tool allowlist is read, grep, find, ls, plus sidequest_web_search and sidequest_web_fetch (Brave Search when BRAVE_SEARCH_API_KEY is set, otherwise DuckDuckGo HTML search; fetch extracts readable text from public pages), overridable via PI_SIDEQUEST_TOOLS. Releases use Changesets with npm trusted publishing. MIT-licensed, 49 stars, small active project. Useful for Pi users who want a scratch pad that can read the codebase and the web mid-session.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "25 Jun–1 Jul 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-06-29",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
