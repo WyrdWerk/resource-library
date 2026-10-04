@@ -18,6 +18,9 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from api_build import legacy_row
 
 API = ROOT / "api" / "v1"
+# Record count comes from the baseline (refreshed by scripts/regen.py), never a
+# literal: hard-coded counts made every parallel resource PR conflict here.
+TOTAL = json.loads((ROOT / "tests" / "manifest.baseline.json").read_text())["inventory"]["total"]
 
 
 @pytest.fixture(scope="module")
@@ -33,7 +36,7 @@ def records():
 def test_legacy_round_trip_is_exact(records):
     live = json.loads((ROOT / "data.json").read_text(encoding="utf-8"))
     derived = [legacy_row(r) for r in records]
-    assert len(derived) == len(live) == 330
+    assert len(derived) == len(live) == TOTAL
     for d, l, rec in zip(derived, live, records):
         assert d == l, f"legacy row mismatch for {rec['id']}"
 
@@ -59,7 +62,7 @@ def test_api_resources_match_catalog(records):
 def test_api_manifest_is_consistent():
     manifest = json.loads((API / "index.json").read_text(encoding="utf-8"))
     assert manifest["api_version"] == "1"
-    assert manifest["record_count"] == 330
+    assert manifest["record_count"] == TOTAL
     assert set(manifest["channels"]) == {"share-tech", "providers"}
     body = (API / "resources.json").read_bytes()
     assert manifest["resources_sha256"] == hashlib.sha256(body).hexdigest()
@@ -67,6 +70,6 @@ def test_api_manifest_is_consistent():
 
 def test_compat_report_claims_hold():
     rep = json.loads((API / "_compat_report.json").read_text(encoding="utf-8"))
-    assert rep["rows"] == 330
+    assert rep["rows"] == TOTAL
     assert rep["all_rows_equal"] is True
     assert rep["mismatched_ids"] == []

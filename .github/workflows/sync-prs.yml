@@ -1,0 +1,75 @@
+# Keeps open PRs mergeable. Every resource PR regenerates the same derived
+# files (index.html, data.json, api/v1/, tests/manifest.baseline.json, ...),
+# so once one merges, the rest conflict. Those conflicts never need a human:
+# this job merges main into each affected PR branch, rebuilds the derived
+# files with scripts/regen.py, runs the tests, and pushes. If a conflict is
+# in a hand-written file (notes/, scripts/, ...) it leaves a PR comment.
+name: Sync PRs with main
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, reopened, synchronize]
+  workflow_dispatch:
+  schedule:
+    - cron: "23 * * * *"   # backstop: GitHub skips pull_request runs while a PR conflicts
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-prs
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install build deps
+        run: |
+          sudo apt-get install -y -qq fonts-dejavu-core
+          pip install -q pillow pytest "jsonschema==4.17.3"
+      - name: Sync PR branches
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp scripts/sync_main.py "$RUNNER_TEMP/sync_main.py"   # main's copy, even for older branches
+          if [ -n "$PR" ]; then
+            prs="$PR"
+          else
+            prs=$(gh pr list --base main --state open --limit 100 \
+                    --json number,isCrossRepository --jq '.[] | select(.isCrossRepository | not) | .number')
+          fi
+          status=0
+          for n in $prs; do
+            branch=$(gh pr view "$n" --json headRefName --jq .headRefName)
+            echo "::group::PR #$n ($branch)"
+            git checkout -q -B "$branch" "origin/$branch"
+            before=$(git rev-parse HEAD)
+            set +e
+            out=$(python "$RUNNER_TEMP/sync_main.py" --base origin/main --test 2>&1); rc=$?
+            set -e
+            echo "$out"
+            if [ $rc -eq 0 ] && [ "$(git rev-parse HEAD)" != "$before" ]; then
+              git push origin "HEAD:refs/heads/$branch" || status=1
+            elif [ $rc -ne 0 ]; then
+              body=$(printf '**sync-prs:** could not auto-merge `main` into this branch (exit %s).\n\n```\n%s\n```\n\nResolve the hand-written conflicts listed above, then run `python3 scripts/sync_main.py` (it rebuilds every generated file) and push.' "$rc" "$(echo "$out" | tail -n 30)")
+              gh pr comment "$n" --edit-last --body "$body" 2>/dev/null || gh pr comment "$n" --body "$body"
+            fi
+            git reset -q --hard && git clean -fdq && git checkout -q main
+            echo "::endgroup::"
+          done
+          exit $status
