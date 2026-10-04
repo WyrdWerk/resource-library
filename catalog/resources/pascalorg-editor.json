@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/pascalorg/editor",
   "brief": "An open-source 3D architectural editor with a local CLI, MCP tools and practical workflows for humans and agents. Niche but complete — 3D editing with agent integration baked in.",
   "caveat": null,
-  "details": null,
+  "details": "Pascal Editor (pascalorg/editor, 24.6k stars) is an open-source, local-first 3D architectural editor built with React Three Fiber and WebGPU — BIM/CAD-style building design with parametric workflows, floorplans, and node-based scenes, runnable in the browser or from a local CLI. The differentiator is agent-native operation: a local CLI (`npx @pascal-app/cli editor`) that starts the editor plus an authenticated MCP service, agent skills (`pascal-3d`, `furniture-fit`) installable via `npx skills add` or as Claude Code/Codex plugins, and an MCP registry manifest — so AI agents can do verified scene work (with bounded, evidence-based assessments) through the same tools a human uses. A \"Pascal Next\" hosted preview shows where the product is headed (exploded/cut views, X-ray of building systems, walkthroughs) for facility management and architecture use cases. Turborepo monorepo with published npm packages (@pascal-app/core, viewer, editor, nodes, cli, mcp). MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/PrimeIntellect-ai/prime-agent",
   "brief": "Prime Intellect's framework for training AI agents with reinforcement learning. Per the sharer, its gimmick is collecting training data through its CLI — worth a look if you're into RL-for-agents; specifics unverified.",
   "caveat": "Per the sharer, its gimmick is collecting training data through its CLI — worth a look if you're into RL-for-agents; specifics unverified.",
-  "details": null,
+  "details": "Prime Agent (PrimeIntellect-ai/prime-agent, ~21.5k stars) — an open-source coding and research agent built around two abstractions: a Recursive Language Model (RLM) that treats context as variables and recursive subagents as function calls inside a persistent Python REPL, and a Continual Harness that stores supplemental prompts, memories, skill descriptions, and reusable subagent specs as durable, refinable state. Key mechanics: everything is programmatic through the REPL (files, shell, tools, subagents); `rlm.spawn(...)` spawns real child agents for parallel/background work; `/refine` applies small evidence-backed updates to harness state (base system prompt is immutable, snapshots support rollback); skills are importable Python packages; daemon-backed agents keep running when the terminal disconnects; agents can communicate directly with each other; automatic compaction, persistent goals, heartbeats/schedules, and bounded autonomous mode (`/autonomous` with turn/token/time budgets) keep long tasks moving. Install: `curl -fsSL https://app.primeintellect.ai/prime-agent/install.sh | sh`. MIT licensed. Accompanies the arXiv paper \"Prime Agent: A Self-Improving RLM Harness\".",
   "resource_type": "library-framework",
   "topics": [
     "ai-agents"

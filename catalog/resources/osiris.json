@@ -5,7 +5,7 @@
   "canonical_url": "https://osirisai.live/",
   "brief": "An open-source Palantir alternative — track 10K+ aircraft, 2K satellites and worldwide CCTV on a 3D globe, and run Nmap, DNS, WHOIS and threat-intel scans from the browser across 20+ live feeds. Free.",
   "caveat": null,
-  "details": null,
+  "details": "OSIRIS (osirisai.live) is an open-source-intelligence platform with a striking mission-control interface — real-time global monitoring across flights, maritime traffic, satellites, CCTV, weather, and cyber threats. The v5.0 web app presents a dark global map with layer toggles (recon, space, markets, alerts, route search, ArcGIS), location hover, and keyboard shortcuts, styled like a secure terminal establishing its connection. A playground for OSINT-style visualization and live data layers rather than a documented API product — open it for the experience of a global intelligence dashboard in the browser.",
   "resource_type": "tool",
   "topics": [
     "security"

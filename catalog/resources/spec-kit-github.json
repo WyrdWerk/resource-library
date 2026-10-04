@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/github/spec-kit",
   "brief": "GitHub's official toolkit for spec-driven development — write the spec, let agents implement. From GitHub itself, so it carries weight in the SDD workflow trend.",
   "caveat": null,
-  "details": null,
+  "details": "Spec Kit (github/spec-kit, ~140k stars) — GitHub's open-source toolkit for giving AI coding agents structured processes, reusable templates, and documented outcomes. Three independent entry points: Spec-Driven Development (define what/why before how — `/speckit-constitution` once per project, then `/speckit-specify` → `/speckit-plan` → `/speckit-tasks` → `/speckit-implement` → `/speckit-converge` per feature, repeating implement→converge until it reports Converged), bug fixing (assess → fix → test, with a recorded verdict of verified/partial/failed — \"missing verification is not a successful fix\"), and idea assessment (intake → research → define → shape → decide, ending in go / needs-clarification / kill). The commands are agent skills invoked in your agent's chat, not terminal commands; extensions add capabilities, presets adapt behavior, workflows automate steps, bundles package role-based setups. Setup: `uv tool install specify-cli`, then `specify init my-project --integration copilot` (supports many agents; English/Chinese/Japanese READMEs). MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

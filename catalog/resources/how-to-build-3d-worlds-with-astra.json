@@ -5,7 +5,7 @@
   "canonical_url": "https://somethingbig.ai/3d-worlds",
   "brief": "A step-by-step guide to making photorealistic 3D worlds and games — reference photos, Blender assets, sub-agents, blind critics, Three.js vs Unreal Engine, and a starter prompt. The \"GPT-6 Astra\" framing is the site's own marketing.",
   "caveat": null,
-  "details": null,
+  "details": "Matt Shumer's detailed guide to building photorealistic 3D worlds and games with GPT-6 Astra (in Blender, Three.js, and Unreal Engine) — the method behind his viral builds like a photorealistic 3D Manhattan in Unreal and a 1:1 browser-native replica of his childhood neighborhood with a playable zombie survival game (15M+ views on X). The loop is Reference → Assets → Assembly → Critique → Ship: anchor on real-world reference imagery (Street View, satellite, real-estate listings) rather than the model's imagination; drive Blender headlessly via Python for assets; fan out specialized subagents so each owns one element; enforce blind side-by-side audits where a fresh-context critic picks which image is the photograph; and run a production loop with a second agent optimizing while the first builds. Includes the exact kickoff prompt, a Three.js-vs-Unreal decision table (browser link vs cinematic scale), and a consolidated starter prompt. A practical playbook for anyone directing agents at 3D work.",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

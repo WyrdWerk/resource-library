@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/makeplane/plane",
   "brief": "Open-source alternative to Jira, Linear, Monday and ClickUp. A self-hostable project-management option for teams avoiding SaaS lock-in.",
   "caveat": null,
-  "details": null,
+  "details": "Plane (makeplane/plane, 60.3k stars) — the heavyweight open-source Jira/Linear/Monday/ClickUp alternative for modern project management: work items with a rich-text editor, cycles (sprints) with burn-down charts, modules for breaking down complex projects, customizable filtered views, Pages (docs with AI), and real-time analytics. Install options: Plane Cloud (fastest), or self-host via Docker/Kubernetes with full control of your data — instance admins get a \"God mode\" for configuration. Built with React Router, Django, and Node. Active community (forum + GitHub Discussions), 64 releases. AGPL-3.0 — fine for self-hosting, but the copyleft matters if you modify and offer it as a service.",
   "resource_type": "repository",
   "topics": [
     "self-hosting",

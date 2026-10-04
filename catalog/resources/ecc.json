@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/affaan-m/ECC",
   "brief": "An agent-harness performance optimization system — skills, instincts, memory, security and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. Directly relevant if you're tuning agent setups.",
   "caveat": null,
-  "details": null,
+  "details": "ECC (affaan-m/ECC, 272k stars) is \"the agent harness performance optimization system\" — now calling itself the agent harness operating system. It installs a coordinated engineering loop (plan → test → implement → review → verify → remember → improve) into how your agent works, instead of rebuilding that process in every prompt: 68 specialized agents (planning, review, build repair, security, architecture), 293 skills, 94 commands, plus hooks, rules, persistent memory, continuous learning, and AgentShield security scanning. The mantra is \"optimize the context window, persist everything else.\" Works best with Claude Code, with a supported Codex sync path and capability-limited adapters for Cursor, OpenCode, Gemini, Zed, Copilot, and others. Install via `npx ecc-universal@2.2.3 setup` (guided, per-harness). OSS stays free under MIT; ECC Pro is a hosted GitHub App for private repos. The repo warns to install only from official sources — third-party re-uploads may carry malware.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

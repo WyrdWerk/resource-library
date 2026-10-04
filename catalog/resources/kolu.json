@@ -5,7 +5,7 @@
   "canonical_url": "https://kolu.dev/",
   "brief": "A terminal tool that bills itself as \"the best way to run terminals\". Details unverified, but worth a look if your terminal setup needs rethinking.",
   "caveat": "Details unverified, but worth a look if your terminal setup needs rethinking.",
-  "details": null,
+  "details": "kolu (kolu.dev) — a terminal tool that bills itself as \"the best way to run terminals,\" aimed squarely at the agent era. The pitch: keep the Mac as the window, run agents on Linux — a headless box is fast (especially the filesystem) and stays up; your Mac gets a real launcher app showing real terminals on an infinite canvas running claude, codex, opencode, grok, pi, xyne, omp, or anything in a shell. The dock mirrors every terminal (repo, agent, how long it's been waiting); a pinned \"Needs-you\" strip surfaces permission questions from any agent no matter how buried its tile is; answer inline (maximize tile, approve) without tab-hunting. A built-in code browser lets you leave PR-style review comments on lines and hand them to the agent in one paste. Another machine is one tab away via SSH (only Nix needed on the far end). Free and open source (AGPL-3.0), self-hosted, no account. The team blogs about their Effect 4-based architecture.",
   "resource_type": "tool",
   "topics": [
     "developer-tools"

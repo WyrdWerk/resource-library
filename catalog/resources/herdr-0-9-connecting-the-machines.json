@@ -5,7 +5,7 @@
   "canonical_url": "https://herdr.dev/blog/connecting-the-machines/",
   "brief": "The Herdr blog on 0.9, which brings local and remote machines into one TUI client, with Herdr Cloud coming next. Herdr's pitch: run agents anywhere, leave them running.",
   "caveat": null,
-  "details": null,
+  "details": "The Herdr 0.9 blog post \"Connecting the machines\" — the substance behind the fleet-management announcement. Herdr (a terminal UI for managing coding agents, 700k+ downloads, ~1,000 plugins) previously had one client attached to one server; agents that run for hours want a machine that stays alive 24/7, but each remote machine needed its own client in another terminal tab. In 0.9 the outer UI moved to the client while servers keep owning their sessions and terminal views, so `herdr machine add workbox` brings a remote machine's workspaces, tabs, and agents into the same TUI over SSH — agents keep running when you disconnect. The post is honest about why it took months: multiplexers like tmux/Zellij don't support one TUI managing independent servers, and aggregating sessions meant restructuring where the UI lives. Next: Herdr Cloud as the zero-config middleman (end-to-end encrypted), then cross-machine agent collaboration and session migration as the road to 1.0.",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

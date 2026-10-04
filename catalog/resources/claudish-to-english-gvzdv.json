@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/gvzdv/claudish-to-english",
   "brief": "A small repo that translates \"Claudish\" — AI-assistant jargon — into plain English. Niche but amusing; useful if you've ever stared at a model hedging for three paragraphs.",
   "caveat": null,
-  "details": null,
+  "details": "claudish-to-english (gvzdv, ~2.7k stars) — a Claude Code plugin that shows a plain-English rewrite of each assistant message, produced by a local LLM via ollama (default, e.g. gemma4:26b-mlx), the Codex CLI, the Anthropic API, or any OpenAI-compatible API. It is strictly display-only: Claude's reasoning and the saved transcript keep the original text; only what you read on screen changes. Controlled live via `/claudish` (on/off, append/replace display modes, styles like tldr/5y/caveman, output language, model — changes take effect mid-session and persist via flag files), plus `CLAUDISH_*` env vars for durable defaults. An optional second hook rewrites Markdown files into plain language on write (opt-in, off by default). Every hook fails open — provider down, timeout, or missing model and you just see the original text with a one-time notice, never a swallowed or corrupted answer. Privacy note: with the default ollama provider everything stays local. MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

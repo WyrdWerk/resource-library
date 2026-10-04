@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/dmmulroy/anti-slop",
   "brief": "Opinionated Oxlint rules that reject low-evidence TypeScript/JavaScript patterns — basically a linter config against AI-slop code. Fun and practical for teams drowning in generated code.",
   "caveat": null,
-  "details": null,
+  "details": "anti-slop (dmmulroy/anti-slop, ~5.1k stars) — opinionated Oxlint rules that reject low-evidence, low-signal TypeScript/JavaScript patterns — \"a linter config against AI-slop code.\" Roughly 20 generic rules (no-array-filter-map, no-chained-type-assertions, no-unknown-returns/params, no-widen-then-assert, no-runtime-typeof, no-module-mocking, require-safety-comment-for-type-assertion…) plus an opt-in Effect rule group (no-manual-effect-error-tag, prefer-effect-match…). The project is explicitly meant to be vendored, not npm-installed: a bundled agent skill (`npx skills add dmmulroy/anti-slop --skill install-anti-slop`) copies the plugin into your repo, merges it into your lint config, matches your existing Oxlint version, and three-way-merges updates while preserving local customizations. Rules use Oxlint's ESTree/scope APIs rather than a full type checker, and the README documents each violation with before/after examples. MIT.",
   "resource_type": "repository",
   "topics": [
     "developer-tools"

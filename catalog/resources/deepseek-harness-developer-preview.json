@@ -5,7 +5,7 @@
   "canonical_url": "https://www.deepseek.com/harness/en/",
   "brief": "DeepSeek's agent harness in developer preview — \"everything is a plugin\", with source released alongside. Every agent capability is a swappable plugin; the plugin architecture is the interesting idea here. Claims unverified.",
   "caveat": "Claims unverified.",
-  "details": null,
+  "details": "DeepSeek Harness (deepseek.com/harness, `dsh`) — DeepSeek's open-source (MIT) agent harness, launched in developer preview. The architecture's headline: \"everything is a plugin\" — models, tools, skills, sessions, sandboxes, storage, the agent loop itself all sit behind Cordis plugin boundaries, so you can assemble agent runtimes in configuration without changing source. An append-only session log is the single source of truth (resume/fork/replay share one typed-event stream), and the docs promise compatibility-breaking changes as it iterates. Run it with `npx @deepseek-ai/dsh web` (web UI at 127.0.0.1:3080) or from source at deepseek-ai/deepseek-harness; a Discord community and GitHub Discussions carry feedback. (The deepseek.com/harness page currently returns a \"Page moved\" placeholder, so this breakdown is corroborated from the public repository and independent coverage rather than the landing page itself.)",
   "resource_type": "library-framework",
   "topics": [
     "ai-agents"

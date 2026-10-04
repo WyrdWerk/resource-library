@@ -5,7 +5,7 @@
   "canonical_url": "https://jakub.kr/writing/the-invisible-side-of-design-engineering",
   "brief": "Jakub Krehel's essay on the invisible side of design engineering — the craft that doesn't show up in the final pixels. A thoughtful read for design-minded engineers.",
   "caveat": null,
-  "details": null,
+  "details": "An essay by Jakub (jakub.kr, author of the Interfaces design-engineering magazine) on what design engineering actually looks like day to day. His argument: social media makes the discipline look like animated eye-candy components, but the invisible half — accessibility, responsiveness, performance, edge cases that only appear when real people use the product — is just as important, if not more. Concrete examples: an afternoon fixing an accessibility issue few will notice, obsessing over landing-page load time. The throughline is that a great experience is mostly invisible, and the job is making sure the experience is great for all kinds of people, not just building what photographs well. A good corrective read for anyone whose sense of the craft comes from Twitter demos.",
   "resource_type": "article-guide",
   "topics": [
     "design"

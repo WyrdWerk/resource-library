@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/elixir-volt/quickbeam",
   "brief": "A JavaScript runtime for the BEAM — Web APIs backed by OTP, native DOM, and a built-in TypeScript toolchain. Genuinely novel: Erlang's concurrency model meets JS.",
   "caveat": null,
-  "details": null,
+  "details": "QuickBEAM (elixir-volt/quickbeam) — a JavaScript runtime for the BEAM: Web APIs backed by OTP, a native DOM, and a built-in TypeScript toolchain. The core idea: JS runtimes are GenServers — they live in supervision trees (crash recovery included), send and receive messages, and call into Erlang/OTP libraries, all without leaving the BEAM. JS can call Elixir handlers via `Beam.call`, send to any PID, monitor processes, and even do `Beam.rpc` across connected nodes; contexts can be pooled for high-concurrency workloads (e.g. one pool behind a Phoenix LiveView mount, each context with its own global scope, memory limits, and opcode budgets). An isolated `QuickBEAM.VM` mode decodes QuickJS bytecode with a BEAM interpreter for bounded evaluation with per-call fresh heaps — good for SSR-style workloads with step/memory/timeout limits. Supports browser APIs, Node.js compatibility, granular API groups (fetch, websocket, crypto, dom… down to 58 KB for bare), TypeScript compile support, npm packages, and bytecode disassembly for introspection. Install as a hex package (`{:quickbeam, \"~> 0.11.2\"}`); precompiled NIFs via Zig. MIT.",
   "resource_type": "repository",
   "topics": [
     "backend",

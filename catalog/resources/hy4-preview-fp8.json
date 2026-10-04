@@ -5,7 +5,7 @@
   "canonical_url": "https://huggingface.co/tencent/Hy4-preview-FP8",
   "brief": "Tencent's Hy4 preview weights in FP8 on Hugging Face — 770B total, 49B active, 1M context, open weights. For anyone with the hardware to run a frontier-scale open model.",
   "caveat": null,
-  "details": null,
+  "details": "Hy4 preview-FP8 (tencent) — the FP8-quantized open-weights release of Tencent's new Hy4 preview flagship MoE: 770B total parameters, 49B activated per token, 78 layers (256 routed experts + 1 shared per MoE layer, top-8 routed), 1M context, plus a built-in 10B MTP layer for speculative decoding. Architecture borrows from DeepSeek/GLM: gated sparse attention with cross-layer index reuse, identity hyper-connections on the residual path. Tencent positions it at the open-source frontier — blind side-by-side evals by 163 internal experts on 203 engineering tasks had it slightly ahead of GLM 5.3 and Kimi K3. Training data was co-built with in-house software, game, finance, and security experts, and the model is co-designed with Tencent's CodeBuddy/WorkBuddy products. Deploy via vLLM or SGLang (official prebuilt images, OpenAI-compatible API); finetuning pipeline and the AngelSlim compression toolkit included. Apache-2.0. The card is candid about known issues: it can over-reason and over-verify.",
   "resource_type": "dataset",
   "topics": [
     "inference"

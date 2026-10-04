@@ -5,7 +5,7 @@
   "canonical_url": "https://docs.turso.tech/agentfs/introduction",
   "brief": "Turso's introduction to AgentFS, which Rykuuun found interesting. It appears to be an agent-oriented filesystem from Turso; anything beyond the docs link is unverified.",
   "caveat": "It appears to be an agent-oriented filesystem from Turso; anything beyond the docs link is unverified.",
-  "details": null,
+  "details": "AgentFS (docs.turso.tech) — Turso's filesystem for AI agents. The core idea is copy-on-write isolation: run agents in sandboxed sessions where every file modification is isolated from your source tree, so the agent can mutate freely while the originals stay untouched. Everything lives in one portable SQLite database (easy to share and snapshot); every file operation is recorded and queryable for built-in auditing; optional sync of agent state to Turso Cloud. Ships two ways: a CLI that wraps an existing program in a sandboxed session, and an SDK for building custom agents on top of the filesystem abstraction. The natural answer to \"what filesystem should my agent run on\" for agent builders who want isolation, auditability, and portability without building a sandbox layer themselves.",
   "resource_type": "documentation",
   "topics": [
     "ai-agents"

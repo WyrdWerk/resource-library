@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/DevMortimer/pi-typesafe",
   "brief": "TypeSafe decisions for Pi — a batched evaluation tool, terminal playground and typed API for extensions. The foundation pi-warden builds on.",
   "caveat": null,
-  "details": null,
+  "details": "pi-typesafe (DevMortimer) puts TypeSafe's Jev judgment model inside the Pi coding agent. Jev answers typed questions — choice (which option fits, with probabilities), score (position on an ordered rubric), noul (probability a statement is true) — in well under a second for a fraction of a cent, returning calibrated numbers instead of prose. The package gives Pi three things: the `typesafe_evaluate` agent tool (opt-in per session via `/typesafe enable`) for batched structured judgments like triaging issue lists or scoring candidates against a rubric, a terminal playground (`/typesafe test`, `/typesafe playground`) that runs requests without touching model context, and a typed API so other extensions (like pi-warden) share one client, one key store, and one login prompt instead of each asking for a key. Spending is fenced with per-session attempt caps, daily request/token/USD caps that survive restarts, and a usage ledger; backends beyond TypeSafe itself include OpenRouter, CommandCode, and Liquid AI (whose free d1 model is slow enough to need longer timeouts). MIT.",
   "resource_type": "repository",
   "topics": [
     "testing",

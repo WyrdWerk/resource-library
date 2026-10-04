@@ -5,7 +5,7 @@
   "canonical_url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
   "brief": "Unsloth's GGUF quantization of Qwen3.8-27B for local inference. The practical artifact behind the open-weights announcement above.",
   "caveat": null,
-  "details": null,
+  "details": "Qwen3.8-27B-GGUF (unsloth) — Unsloth's Dynamic 3.0 GGUF quantizations of Qwen3.8-27B (1-bit through 16-bit), which Unsloth claims delivers >10% better top-1 accuracy at the same size than other providers. Qwen3.8-27B is \"the most capable generation in the Qwen open-model family to date\": a 27B dense model on the Qwen3.5 architectural foundation (16 × [3 × (Gated DeltaNet → FFN) + 1 × (Gated Attention → FFN)]), a native vision-language model understanding images, videos (hour-scale), STEM diagrams, and documents, with 262K native context (up to 1M). Thinking is on by default, disable-able per request, with tunable `reasoning_effort` and `preserve_thinking` for multi-turn agent work; Apache 2.0, commercial use allowed. Runs in Unsloth Desktop with thinking toggles, with recommended sampling params documented (temp 1.0/top_p 0.95 thinking, temp 0.7/top_p 0.80 instruct). ~6.3M downloads last month at card time; 1,305 derivative quants on the tree. The compact deployment-friendly counterpart to the 2.4T-A95B flagship — the one most teams will actually run on a single GPU.",
   "resource_type": "dataset",
   "topics": [
     "inference"

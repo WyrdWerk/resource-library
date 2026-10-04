@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/baanish/synthetic-search-mcp",
   "brief": "A search MCP server from baanish, who vouched for PR #4 personally. The shared link was the PR; normalized to the repo root.",
   "caveat": null,
-  "details": null,
+  "details": "synthetic-search-mcp (baanish) is a minimal MCP server exposing Synthetic's web search over stdio — two tools: `search` (query → url, title, published date, truncated page text) and `search_quota` (hourly/subscription limits so an agent stays within budget). Designed for local MCP clients (Claude Code, Codex CLI, Cursor, VS Code); needs a Synthetic API key in `SYNTHETIC_API_KEY`. Care points the README handles well: credential redaction of upstream error bodies so the key can't be reflected back through tool output, bounded requests (30s timeout, 10MB cap), dropped non-http(s) results, and clear 429 handling. Speaks both the stateless 2026-07-28 MCP protocol revision and the 2025-era initialize handshake from one server factory, and runs its tests across both eras. MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

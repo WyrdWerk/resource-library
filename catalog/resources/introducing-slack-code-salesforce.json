@@ -5,7 +5,7 @@
   "canonical_url": "https://www.salesforce.com/introducing-slack-code/",
   "brief": "Salesforce's announcement of Slack Code, bringing coding-agent workflows into Slack. Announcement-level; the \"oh no\" from the sharer suggests healthy skepticism.",
   "caveat": null,
-  "details": null,
+  "details": "Slack Code (salesforce.com announcement) — Salesforce's \"agentic coding is now multiplayer\" product: dedicated code channels in Slack where teams and coding agents write, review, and ship code together in the open. Tag in a coding agent and it spins up a code channel; everyone in the channel sees the conversation, reviews diffs, checks live previews, gives feedback, and approves before anything ships; the channel archives itself when done while history stays searchable. Launch partners building agents for it: Anthropic (Claude), Cognition (Devin), GitHub (Copilot), ChatGPT, Vercel. Beyond code channels, the announcement adds an Agents tab (browse all agents/sessions, statuses, stop mid-task), Agent DMs with real thread titles, and Add to Slack one-click agent publishing from NanoClaw, Lovable, n8n, LangChain, etc. Security posture: agents inherit Slack's permissions and admin controls, and high-stakes moves like pushing to production require an in-channel human sign-off. Available on any Slack plan (partner agent access required); pricing/packaging subject to change.",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

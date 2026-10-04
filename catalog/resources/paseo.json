@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/getpaseo/paseo",
   "brief": "Kenn wanted to fork Paseo for internal use cases but held off because it was AGPL — PR #3944 has now relicensed it to Apache. The shared link was the PR; normalized to the repo root. The license change is the news: it's forkable now.",
   "caveat": null,
-  "details": null,
+  "details": "Paseo (getpaseo/paseo, 19.4k stars) — \"orchestrate multiple coding agents from desktop and mobile\": one interface for Claude Code, Codex, Copilot, OpenCode, Pi, Antigravity, and Muse Code agents. Architecture: a local self-hosted daemon manages your agents on your own machines with your full dev environment; clients span desktop, iOS, Android, web, and CLI, with an end-to-end encrypted relay for phone pairing. Run agents in parallel, pick the right model per job, dictate tasks in voice mode, script everything from the CLI (`paseo run --provider claude/opus-4.6 \"...\"`), or build on the TypeScript SDK. Skills (`/paseo-handoff`, `/paseo-advisor`, `/paseo-committee`) teach your agent to orchestrate other agents — plan with Claude, hand off to Codex. Privacy-first: no telemetry, tracking, or forced logins. Plugins extend it with themes, panels, and providers. Built by one person, community-funded. Apache-2.0.",
   "resource_type": "repository",
   "topics": [
     "developer-tools"
