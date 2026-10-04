@@ -192,9 +192,12 @@ Work lands through PRs: push a topic branch (`daily/<date>`, `batch-NN/...`,
 `fix/...`) and open a PR against `main`; merging deploys. Several PRs touching
 generated files at once will conflict with each other. **Never hand-merge
 generated files.** `.github/workflows/sync-prs.yml` fixes this automatically:
-after every merge to `main` (and hourly) it merges `main` into each open PR,
-rebuilds every generated file with `scripts/regen.py`, checks no resource id
-was lost, runs the tests, and pushes. To do the same by hand:
+after every merge to `main`, on every push to a PR branch, and hourly, it
+merges `main` into each open PR that is behind, rebuilds every generated file
+with `scripts/regen.py`, checks no resource id was lost, runs the tests, and
+pushes (marking that commit with a `pytest (sync-prs)` status). CI is
+push-triggered, not `pull_request`, so the bot's pushes never sit waiting
+for workflow approval. To do the same by hand:
 `git fetch origin && python3 scripts/sync_main.py --test`. It stops (exit 2,
 plus a PR comment from the workflow) only when a *hand-written* file such as
 `notes/` or `scripts/` conflicts. Never hard-code record counts in tests —
