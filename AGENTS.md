@@ -129,7 +129,7 @@ claims as unverified. Ids with no fetchable page are simply omitted.
 ## Filter policy
 
 **Keep:** AI tools, general tools, useful websites/webpages, GitHub repositories, and (from #providers) inference providers and provider comparisons — things a developer would actually use.
-**Drop:** hype-only posts, exact duplicates, redundant announcement tweets when the underlying resource is already present, content with no usable resource (videos, memes), links with no context that can't be classified.
+**Drop:** hype-only posts, exact duplicates, content with no usable resource (videos, memes), links with no context that can't be classified. **Announcement tweets are never dropped for being announcements** — extract every outbound link inside the tweet and evaluate each link individually as a resource (Yash's 2026-10-04 rule); attribute each added resource to the tweet's Discord sharer.
 **Briefs:** ~2 sentences. Descriptions come from message text and embed previews — links are *not* opened during collection. Flag unverified claims from announcement posts as unverified.
 
 ## Category taxonomy (fixed set)

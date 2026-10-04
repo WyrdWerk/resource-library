@@ -1,6 +1,6 @@
 {
-  "migrated": 310,
-  "source_rows": 310,
+  "migrated": 311,
+  "source_rows": 311,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -659,6 +659,22 @@
       "all_equal": true,
       "shared_on": "2026-10-03",
       "date_evidence": "posted '3 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "annnimate",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-04",
+      "date_evidence": "posted '4 Oct' inside week label '1–8 Oct 2026'"
     },
     {
       "id": "hyperiux",

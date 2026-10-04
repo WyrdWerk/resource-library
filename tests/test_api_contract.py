@@ -51,7 +51,7 @@ def req(method, path, headers=None):
 def test_index_manifest(server):
     s, _, b = req("GET", "/api/v1/index.json")
     assert s == 200
-    assert b["api_version"] == "1" and b["record_count"] == 310
+    assert b["api_version"] == "1" and b["record_count"] == 311
 
 
 def test_taxonomy(server):
@@ -62,7 +62,7 @@ def test_taxonomy(server):
 
 def test_collection_pagination(server):
     s, _, b = req("GET", "/api/v1/resources.json?limit=5")
-    assert s == 200 and b["total"] == 310 and len(b["records"]) == 5
+    assert s == 200 and b["total"] == 311 and len(b["records"]) == 5
     cur = b["next_cursor"]
     s, _, b2 = req("GET", f"/api/v1/resources.json?limit=5&cursor={cur}")
     ids1 = [r["id"] for r in b["records"]]
@@ -142,7 +142,7 @@ def test_unknown_route_404(server):
 def test_static_files_usable():
     """The static catalog must not depend on the adapter."""
     recs = json.loads((ROOT / "api" / "v1" / "resources.json").read_text(encoding="utf-8"))
-    assert len(recs) == 310 and recs[0]["id"]
+    assert len(recs) == 311 and recs[0]["id"]
 
 
 def test_facets_json(server):
@@ -150,7 +150,7 @@ def test_facets_json(server):
     assert s == 200
     assert b["topic"]["ai-agents"] == 128
     assert b["resource_type"]["provider"] == 76
-    assert sum(b["channel"].values()) == 310
+    assert sum(b["channel"].values()) == 311
     assert set(b) == {"resource_type", "topic", "use_case", "interface",
                       "technology", "channel", "open_source"}
 
