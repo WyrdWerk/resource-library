@@ -595,6 +595,21 @@
     "details": ""
   },
   {
+    "title": "Annnimate",
+    "week": "1–8 Oct 2026",
+    "url": "https://annnimate.com",
+    "sharer": "thelaggingway",
+    "date": "4 Oct",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "Annnimate is a GSAP-powered motion component library for React, Vue, and plain HTML/CSS/JS — production-grade scroll reveals, magnetic buttons, text effects, and page transitions built on real GSAP (ScrollTrigger, timelines) instead of CSS wrappers. Every component ships framework-native (Server-Component-safe React, Nuxt-ready Vue SFCs), respects prefers-reduced-motion, and the paid library adds new signature components regularly.",
+    "id": "annnimate",
+    "warning": "",
+    "details": "Annnimate (annnimate.com) is a paid GSAP motion-component library by Good Fella for React, Vue, and plain HTML/CSS/JS. Every component — scroll reveals, magnetic buttons, text effects, page transitions, shader transitions — is built directly on GSAP (ScrollTrigger, timelines, plugins) rather than CSS wrappers, giving you the engine studios use for award-level brand work. Components ship framework-native: the React versions are Server-Component-safe for the Next.js App Router, the Vue versions are real single-file components ready for Nuxt 3, and each component exists in all three flavors so you can prototype in one and hand off in another. Production tuning is the selling point: prefers-reduced-motion fallbacks, keyboard and ARIA handling, and GSAP context cleanup on unmount are built in. New signature components land regularly under the Library subscription, and the site publishes honest comparison pages (vs Aceternity, Magic UI, Hover.dev) positioning Annnimate as the GSAP-native, multi-framework option for teams that treat motion as production craft."
+  },
+  {
     "title": "hyperiux",
     "week": "1–8 Oct 2026",
     "url": "https://vault.hyperiux.com",

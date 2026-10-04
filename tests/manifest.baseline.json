@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "2fa8738b40ee6dfcdf4ab8790257ad53f75b31e3929bb8d41726a4579c2fae1c",
-  "data.json": "fa8140ccfb5dadd5e09749a07476058a6344026099cba4078ea6f128b42f4d0f",
-  "feed.xml": "81a446f66c304930feb0611b0fd723e9ef26fb544605304763497f7da4f87f9e",
-  "index.html": "e3ce261cff3093c34ea0d164ace1cb9d40fa1fd6417ba73be136c34e9e02c144",
-  "llms.txt": "ea2b40c89f4c2a385dc7314fbd4dd693291c07a5b6adeadc7a26ede4543cea7a",
-  "og-image.png": "826d6df005f70186c7ef716aea75bd0ef75151c9523b0df50c193bf04ff0b0ed",
+  "CHANGELOG.md": "55c806416eb3fab3ee7da701bc3484c78f6bd628753233399cdf5fa9aa49254e",
+  "data.json": "a4b0f61ec0e0a563895b94a5a0f82c21964f6fd8572d8889fafba7eeb8513fcc",
+  "feed.xml": "7c7ebc15815907319cf62786365d5efc21e4a12567c32179eba0fb2a94c310ca",
+  "index.html": "da0f28b837ae85e487640ed08b2f38b4a261420054983c47421b1b6b9027f27f",
+  "llms.txt": "4edfe6fb6441444bb93b74232924926b4cbb3f270af8e129bcb4aad86c6ef9c3",
+  "og-image.png": "2a3b6775a24f7506741d1fdf69a391cb743610b65475c503fd8edc3d0ddd0616",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "9a9c311df47b89f7a218c4a0002fbc2016b627b0420a73541ad6ea228ff945ca",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -26,7 +26,7 @@
   "weeks/2026-09-10_to_2026-09-17.md": "bc312d307cfe2ca8cd841b2e05783df0e2aba635401c5407e740d6f66bfa9d40",
   "weeks/2026-09-17_to_2026-09-24.md": "d23f05b8bddde2ad551921b2c4e8f3462078e87dce2250aa89b72c4d69ee7ac9",
   "weeks/2026-09-24_to_2026-10-01.md": "a38ab8bce05993227a8fdadb6f78cd1c96797e00c742a4853ff804d346c88cfd",
-  "weeks/2026-10-01_to_2026-10-08.md": "e4ee20eff436eb6a18b6d70e2c222bfca3622995140e1410e5c068e86e650fde",
+  "weeks/2026-10-01_to_2026-10-08.md": "cc0bf7d95a4ccc0cc83ba4e3acb2af308fa9f462062cd41ce69e7a05b825ba11",
   "weeks/providers.md": "850d9c2d27d27dde3e26e98ee52aa20ab0f98c568d1d6aadd0ca1044f7795a65"
  },
  "inventory": {
@@ -38,13 +38,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 330,
+  "https_urls": 331,
   "nonempty_warnings": 77,
   "providers": 89,
-  "share_tech": 241,
-  "total": 330,
-  "unique_ids": 330,
-  "unique_urls": 330
+  "share_tech": 242,
+  "total": 331,
+  "unique_ids": 331,
+  "unique_urls": 331
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -88,6 +88,7 @@
   "react-native-deploy",
   "open-slide",
   "artificial-analysis-mimo-v2-6-pro-providers",
+  "annnimate",
   "hyperiux",
   "vanta-ui",
   "bencho",

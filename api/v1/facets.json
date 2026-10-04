@@ -4,7 +4,7 @@
     "provider": 76,
     "article-guide": 50,
     "tool": 33,
-    "library-framework": 30,
+    "library-framework": 31,
     "directory-gallery": 23,
     "service-platform": 14,
     "dataset": 7,
@@ -16,8 +16,8 @@
     "ai-agents": 135,
     "inference": 119,
     "developer-tools": 66,
-    "design": 39,
-    "frontend": 39,
+    "design": 40,
+    "frontend": 40,
     "cloud-infrastructure": 19,
     "productivity": 15,
     "security": 7,
@@ -34,7 +34,7 @@
     "run-inference": 100,
     "manage-agents": 75,
     "learn-technique": 63,
-    "build-interfaces": 31,
+    "build-interfaces": 32,
     "generate-code": 21,
     "automate-workflows": 19,
     "discover-design-references": 19,
@@ -48,7 +48,7 @@
     "operate-databases": 2
   },
   "interface": {
-    "web": 117,
+    "web": 118,
     "api": 93,
     "cli": 41,
     "mcp": 13,
@@ -56,13 +56,13 @@
     "extension": 3
   },
   "technology": {
-    "react": 17,
+    "react": 18,
     "mcp-protocol": 14,
     "python": 12,
     "typescript": 11,
     "rust": 10,
     "claude-code": 9,
-    "javascript": 5,
+    "javascript": 6,
     "next-js": 3,
     "tailwind-css": 3,
     "docker": 2,
@@ -74,20 +74,20 @@
     "ollama": 1,
     "openai-api": 1,
     "sqlite": 1,
+    "vue": 1,
     "anthropic-api": 0,
     "electron": 0,
     "postgres": 0,
     "svelte": 0,
     "vscode": 0,
-    "vue": 0,
     "zed": 0
   },
   "channel": {
-    "share-tech": 241,
+    "share-tech": 242,
     "providers": 89
   },
   "open_source": {
     "true": 30,
-    "false": 0
+    "false": 1
   }
 }
