@@ -19,6 +19,7 @@ class LibraryHTML(HTMLParser):
         self.ids = []
         self.group = None
         self.options = []
+        self.week_filters = []
         self.feed(html)
 
     def handle_starttag(self, tag, attrs):
@@ -32,6 +33,8 @@ class LibraryHTML(HTMLParser):
             self.cards.append({**attrs, "parent": self.group})
         if tag == "option":
             self.options.append(attrs.get("value"))
+        if tag == "button" and "data-week" in attrs:
+            self.week_filters.append(attrs["data-week"])
 
 
 def entry(title, day, categories):
@@ -96,6 +99,11 @@ def test_existing_anchors_and_all_six_sort_choices_exist(built_library):
     assert len(html.ids) == len(set(html.ids))
 
 
+def test_week_filter_contains_only_date_batches(built_library):
+    _, html = built_library
+    assert html.week_filters == ["1–8 Oct 2026", "24 Sep–1 Oct 2026"]
+
+
 def test_dataset_order_and_fields_remain_source_order(built_library):
     tmp, _ = built_library
     rows = json.loads((tmp / "data.json").read_text())
@@ -148,6 +156,10 @@ def test_interactive_sorts_preserve_filters_details_and_url(built_library):
             check(new URLSearchParams(location.hash.slice(1)).get('sort') ===
               (mode === 'newest' ? null : mode), 'Sort URL mismatch');
           }
+          document.getElementById('clearAll').click();
+          check(!document.querySelector('#weekBlock [data-week="providers"]'), 'Providers is not a week');
+          document.querySelector('.navrow[data-cat="providers"]').click();
+          equal(ids(), ['gamma-provider','omega-provider','early-provider'], 'Providers category lost its resources');
           document.getElementById('clearAll').click();
           document.querySelector('.navrow[data-cat="github"]').click();
           for (const mode of Object.keys(expectations)) {
