@@ -1,12 +1,12 @@
 {
-  "baseline_commit": "pilot-expandable-details (pending PR)",
+  "baseline_commit": "daily/2026-10-04 (rebased onto main post-#13, pending PR)",
   "generated_sha256": {
-    "CHANGELOG.md": "2ee6f2b10df02120f448f2010e628e011f4b6caa05a1118de0159632c0dad666",
-    "data.json": "b1ca68946162ba9053fa0d00a9fbe4ef0e3fb1f6032c9b9afb3294a81f67c760",
-    "feed.xml": "cc50cec83e610451a9379c61b4ebe2c1a7f16bf39f0b5a69d3e5c4a1db7cb3cb",
-    "index.html": "2594c84eff8dcbb25a6f6bbd33f888c5d8578457a8eb98206e594c443876804f",
-    "llms.txt": "1132f5913b60cb08008cef84253a4650809887e1c206a24dc30a8de4ecca1326",
-    "og-image.png": "5b574a7259812fdb0f5343f6aa9869455a49e5008ed44d5bad5e928689c2e218",
+    "CHANGELOG.md": "074f7e3248c8a78bda563ed13f177df9623deb8a27ce7ba72d600ee44d3cc68c",
+    "data.json": "977e0fbb560ac5370cd1cfa89e44ce4efc4a32e7d97aed9dcc90d4a66c9e2942",
+    "feed.xml": "e030ed9e9cbd323d3a4edd6e76cd28bb9539a6ddddfbe499916a2f900ad96d4d",
+    "index.html": "78e4884cace96db63cb42c4b16dd898e18d70d83efb2cb211950ee09470f8734",
+    "llms.txt": "22baacfaac410144f543416b40719ae032f5606178a327d5706d00dec21750ad",
+    "og-image.png": "624d6412796f7ab19f77af0e81f3362bd63fcd84d1e843142a367240858a5c51",
     "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
     "sitemap.xml": "9a9c311df47b89f7a218c4a0002fbc2016b627b0420a73541ad6ea228ff945ca",
     "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -25,8 +25,8 @@
     "weeks/2026-09-10_to_2026-09-17.md": "bc312d307cfe2ca8cd841b2e05783df0e2aba635401c5407e740d6f66bfa9d40",
     "weeks/2026-09-17_to_2026-09-24.md": "d23f05b8bddde2ad551921b2c4e8f3462078e87dce2250aa89b72c4d69ee7ac9",
     "weeks/2026-09-24_to_2026-10-01.md": "797e19c5f55f215c6213c9a6f9fc77a2060df2d77634f5ae1ec616023674b6f5",
-    "weeks/2026-10-01_to_2026-10-08.md": "e3aef5c5454be18a0579de4895e39d10bc9e41fb631e5cb60088877ccaaff875",
-    "weeks/providers.md": "57d283dbdc884f0501562bfe80a1459b95362624d490a8fc7da99644ab5d3aad"
+    "weeks/2026-10-01_to_2026-10-08.md": "9ed48acffa06711a82146fb24ae6432b76a05945615a675f9978ab7eb861858b",
+    "weeks/providers.md": "850d9c2d27d27dde3e26e98ee52aa20ab0f98c568d1d6aadd0ca1044f7795a65"
   },
   "inventory": {
     "categories": [
@@ -37,13 +37,13 @@
       "providers",
       "web-app"
     ],
-    "https_urls": 306,
+    "https_urls": 310,
     "nonempty_warnings": 77,
-    "providers": 88,
-    "share_tech": 218,
-    "total": 306,
-    "unique_ids": 306,
-    "unique_urls": 306
+    "providers": 89,
+    "share_tech": 221,
+    "total": 310,
+    "unique_ids": 310,
+    "unique_urls": 310
   },
   "ordered_ids": [
     "railway-changelog-0309-free-vms-without-an-account",
@@ -83,6 +83,10 @@
     "aoru",
     "hypercli",
     "arilo",
+    "kotoba",
+    "react-native-deploy",
+    "open-slide",
+    "artificial-analysis-mimo-v2-6-pro-providers",
     "hyperiux",
     "vanta-ui",
     "bencho",

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "kotoba",
+  "title": "Kotoba",
+  "canonical_url": "https://github.com/hattoriai/kotoba",
+  "brief": "Kotoba (言葉, \"words\") is an open-source rich-text editor for Phoenix LiveView forms built on Lexical — formatting, code blocks, tables, file attachments, @-mentions, live collaboration with per-author undo, and safe HTML/text/Markdown rendering, with documents stored through a `Kotoba.Content` Ecto type. It ships as a prebuilt JS bundle in the Hex package so the app needs no Node.js; MIT-licensed, created 25 Sep 2026 (11 stars) — treat it as early-stage.",
+  "caveat": null,
+  "details": null,
+  "resource_type": "library-framework",
+  "topics": [
+    "frontend",
+    "web-development"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "typescript"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "simply_roo"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
