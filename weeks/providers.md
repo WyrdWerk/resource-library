@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-88 curated providers, with briefs.
+89 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -43,6 +43,12 @@
 - Shared by: thelaggingway (2 Oct)
 - Categories: providers
 - Brief: Flat-rate coding-inference provider with predictable 30-day plans — Coder $0.99, Starter $4.99, Pro $19.99, Hacker $100, up to Small Business $490 — each a prepaid credit allowance against per-token metered pricing, plus an off-peak JSONL batch path at 50% off PAYG. thelaggingway shared it "still to be evaluated", so treat all of this as unevaluated marketing until checked. Conversations are not used for training unless you opt into their Research Program.
+
+## Artificial Analysis: MiMo-V2.6-Pro providers
+- URL: https://artificialanalysis.ai/models/mimo-v2-6-pro/providers
+- Shared by: nixerman (3 Oct)
+- Categories: providers
+- Brief: Artificial Analysis's provider benchmarking page for Xiaomi's MiMo-V2.6-Pro — compares API providers (Xiaomi, DeepInfra, PrimaLabs, Novita per the link embed) on latency (time to first token), output speed and price. A third-party comparison in the same per-model series as the published GLM-5.3-Flash page; treat the figures as benchmark snapshots, not live prices.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

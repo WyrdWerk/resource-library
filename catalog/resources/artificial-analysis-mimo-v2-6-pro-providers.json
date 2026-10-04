@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "artificial-analysis-mimo-v2-6-pro-providers",
+  "title": "Artificial Analysis: MiMo-V2.6-Pro providers",
+  "canonical_url": "https://artificialanalysis.ai/models/mimo-v2-6-pro/providers",
+  "brief": "Artificial Analysis's provider benchmarking page for Xiaomi's MiMo-V2.6-Pro — compares API providers (Xiaomi, DeepInfra, PrimaLabs, Novita per the link embed) on latency (time to first token), output speed and price. A third-party comparison in the same per-model series as the published GLM-5.3-Flash page; treat the figures as benchmark snapshots, not live prices.",
+  "caveat": null,
+  "details": null,
+  "resource_type": "article-guide",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "nixerman"
+  },
+  "shared_on": "2026-10-03",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
