@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/nktkt/pi",
   "brief": "A GitHub repo named \"pi\", shared without description. Given the surrounding chatter about pi-vcc, likely an agent project; unverified from the message text.",
   "caveat": "Given the surrounding chatter about pi-vcc, likely an agent project; unverified from the message text.",
-  "details": null,
+  "details": "pi (nktkt) is a Rust port of the earendil-works/pi coding agent harness, focused on the core coding-agent loop. The TypeScript upstream is roughly 189k lines; this port covers the agent runtime, a multi-provider LLM API, and a working pi CLI end to end, talking to Anthropic, OpenAI, Google, and any OpenAI-compatible endpoint, with SSE streaming, retry, cancellation tokens, and a per-tool permission gate. The CLI offers print mode, an interactive REPL with streaming render, session persistence with resume, AGENTS.md and CLAUDE.md loading, slash commands, and a yolo flag to skip permission prompts. The pi-ai and pi-agent crates are published on crates.io for reuse; MIT-licensed.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

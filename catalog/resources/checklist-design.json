@@ -5,7 +5,7 @@
   "canonical_url": "https://www.checklist.design/",
   "brief": "An AI-powered design review tool: run a UX/UI quality check on any screen and get instant analysis of what's working, what's missing, and what to improve. It also hosts a searchable library of design checklists covering websites, web apps, mobile, components, and flows, plus a Figma plugin for in-canvas reviews.",
   "caveat": null,
-  "details": null,
+  "details": "Checklist Design offers 129 browsable design checklists covering mobile apps, web apps, websites, design systems, and user flows — from onboarding and paywalls to buttons, modals, empty states, and cancel-subscription flows. Each checklist breaks a screen or flow into the concrete details worth verifying before shipping. The checklists are also packaged as an agent skill and a Figma skill, so the same guidance can run inside AI coding assistants and design tools.",
   "resource_type": "tool",
   "topics": [
     "design",

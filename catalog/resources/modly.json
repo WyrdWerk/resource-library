@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/lightningpixel/modly",
   "brief": "An open-source desktop app (Windows, Linux, Apple Silicon macOS) that turns a photo or text prompt into a 3D mesh using open-source AI models running entirely on your own GPU — no cloud inference. It ships an extension system for swapping in models like Hunyuan3D 2 and TripoSG, node-based generation workflows, and a CLI so agents and scripts can drive generation headlessly; MIT-licensed, around 7.7k stars.",
   "caveat": null,
-  "details": null,
+  "details": "Modly (lightningpixel/modly, MIT) is a local, open-source desktop app for AI-powered image-to-3D mesh generation that runs entirely on your GPU — turn any photo into a 3D model with no cloud involved. Available for Windows, Linux, and Apple Silicon macOS (Electron app with a Python backend), it works through node-graph workflows such as Image to Generate Mesh to Add to Scene, with in-app mesh smoothing and decimation, and an extension system for swapping in different open models (official extensions cover Hunyuan3D 2 Mini variants, TripoSG, and Trellis2 GGUF, installable from any GitHub repo URL). Agents and scripts can drive a running Modly instance without the UI via the stdlib-only modly CLI, which emits machine-readable JSON for health checks, model management, and workflow runs. The project has a Discord community and about eight thousand GitHub stars.",
   "resource_type": "repository",
   "topics": [
     "inference",

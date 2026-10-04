@@ -5,7 +5,7 @@
   "canonical_url": "https://www.inspora.design/",
   "brief": "A design-focused site, shared link-only. Its exact purpose is unverified from the message text; the domain suggests a design inspiration or resource site.",
   "caveat": "Its exact purpose is unverified from the message text; the domain suggests a design inspiration or resource site.",
-  "details": null,
+  "details": "Inspora (inspora.design) is a design-focused web app. The live page renders as a JavaScript shell with no fetchable content, so this is written from web coverage: an AI operator index lists it under Design and Frontend as a curated visual and social inspiration reference for designers gathering references before building. (Coverage note: written from web search coverage — the live page was not directly fetchable.)",
   "resource_type": "directory-gallery",
   "topics": [
     "design"

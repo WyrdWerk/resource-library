@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/algal/pi-openai-server-compaction",
   "brief": "Shared without description; the name suggests an OpenAI-compatible server with context compaction for the pi agent. Unverified.",
   "caveat": "Unverified.",
-  "details": null,
+  "details": "A Pi extension by algal that adds Codex-style remote compaction for OpenAI models. Instead of relying only on Pi's text-summary compaction, it calls OpenAI's server-side Responses compaction protocol (sending a compaction_trigger through POST /v1/responses and receiving an encrypted compaction item), mimicking exactly how the open-source Codex CLI uses the endpoint. It runs this in parallel with Pi's native portable text summary, so you get high-fidelity continuity on OpenAI turns while session exports, forking, and non-OpenAI models keep working. Their held-out benchmark reports 78.0% exact recall for the extension's native policy versus 48.0% for Pi's default compactor, with caveats about token cost. MIT licensed; install with pi install git:github.com/algal/pi-openai-server-compaction.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

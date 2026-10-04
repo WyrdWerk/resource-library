@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/rlaope/oh-my-hermes",
   "brief": "An all-in-one plugin and workflow layer for Nous Research's Hermes Agent that installs 80+ generated workflow skills with a single `omh setup` — covering coding intelligence, long-term memory, and model-optimized workflow packages. A deterministic chat router turns free-form Korean/English requests into the right prepared workflow, with coding delegated to an explicitly selected executor (Claude Code, Codex, or the Hermes runtime); pure Python with zero runtime dependencies, MIT licensed.",
   "caveat": null,
-  "details": null,
+  "details": "oh-my-hermes is an all-in-one plugin for Hermes Agent (Nous Research's coding agent) that adds a professional operating layer on top: per-model prompt tuning, parallel task splitting into isolated worktrees, a long-term project memory system, and 108 specialist omh-* skills that load automatically when a request touches their domain. Setup interviews your providers and reorders model chains per machine, and everything is measured — the README shows the same coding tasks solved for $0.66 instead of $4.29. MIT-licensed, installable with a single curl command.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

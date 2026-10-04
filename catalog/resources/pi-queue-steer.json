@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/tmustier/pi-queue-steer",
   "brief": "A pi extension adding a Cursor-style visible follow-up queue: pending agent tasks are listed, inline-editable, and steerable from a terminal UI while pi works. Small repo (~35 stars) but fills a real gap in agent-driven workflows.",
   "caveat": null,
-  "details": null,
+  "details": "pi-queue-steer is a Pi extension by tmustier that adds a Cursor-style visible steering and follow-up timeline for the Pi coding agent. While the agent works you can queue instructions: steering goes into a blue next-turn box delivered at Pi's next safe turn boundary, follow-ups into a yellow after-this-run box beneath it, each lane an independent FIFO queue. Any queued row can be moved into and edited inline with the live Pi editor (cursor, wrapping, paste, autocomplete intact), and special command rows execute /compact or /reload instead of becoming LLM messages. Install via pi install npm:@tmustier/pi-queue-steer; MIT licensed.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

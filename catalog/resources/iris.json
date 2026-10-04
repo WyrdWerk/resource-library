@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/versenilvis/iris",
   "brief": "IRIS (Intelligent Real-time Input Suggestion) is an open-source shell auto-completion tool positioned as the successor to Fig: a single native Go binary that runs purely on TTY — no Electron, GUI, account, or telemetry — rendering suggestion menus inline in the real terminal, over SSH and inside tmux. It indexes your aliases and shell history, supports AI suggestions via API key or local models, and configures via a TOML file with instant reload. No Windows support, and it can conflict with other autosuggestion plugins (zsh-autosuggestions, atuin), which the README says to disable first.",
   "caveat": null,
-  "details": null,
+  "details": "IRIS (Intelligent Real-time Input Suggestion, github.com/versenilvis/iris) is a shell auto-completion tool that works like an editor's IntelliSense inside your terminal. Built as a single native Go binary on raw TTY, it renders the suggestion menu inline in your real terminal session, so it works over SSH, in tmux and in Linux virtual terminals without breaking full-screen TUIs. It indexes your aliases and shell history to suggest commands matching your workflow, supports zsh, bash and fish, and offers optional AI suggestions via Groq or Ollama. Positioned as the lightweight, zero-telemetry, open-source (0BSD) successor to Fig, which was sunset in September 2024. Linux and macOS only.",
   "resource_type": "repository",
   "topics": [
     "developer-tools"

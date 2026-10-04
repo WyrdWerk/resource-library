@@ -5,7 +5,7 @@
   "canonical_url": "https://www.liquid.ai/blog/antidoom",
   "brief": "Liquid AI's method for killing the repetitive 'doom loops' that plague small reasoning models: Final Token Preference Optimization trains the model to prefer coherent alternatives at the exact token where a loop begins, leaving the rest of the distribution untouched. On an early LFM2.5-2.6B checkpoint it cut loop rates from 10.2% to 1.4%, and on Qwen3.5-4B from 22.9% to 1% under greedy sampling — with the generation, detection, and training code open-sourced. Results are vendor-reported on vendor checkpoints and not independently verified.",
   "caveat": "Results are vendor-reported on vendor checkpoints and not independently verified.",
-  "details": null,
+  "details": "Liquid AI blog post \"Reducing Doom Loops with Final Token Preference Optimization\" tackling repetitive degeneration in reasoning models, where the model repeats a span like \"Wait, let me reconsider\" until the context window is exhausted. The Antidoom method identifies the exact token that begins a loop and trains the model to prefer coherent alternatives at that single position using Final Token Preference Optimization (FTPO), adapting Antislop, leaving the rest of the distribution largely untouched. On an early LFM2.5-2.6B checkpoint the doom-loop rate fell from 10.2 percent to 1.4 percent with eval scores improving across the board; Qwen3.5-4B dropped from 22.9 percent to 1 percent. Code (generation, detection, FTPO trainer) is published at Liquid4All/antidoom.",
   "resource_type": "article-guide",
   "topics": [
     "inference"

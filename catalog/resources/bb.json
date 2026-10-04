@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/get-bb/bb",
   "brief": "An agentic IDE that \"builds itself\" — it can control, customize, and automate itself, pitched as the groundwork for your own software factory. Desktop app, web app, CLI, and HTTP API are all first-class surfaces; work runs in threads you can follow live, steer at any point, or hand off to another agent. In active development; core architecture is stable, workflows and surfaces still evolving.",
   "caveat": null,
-  "details": null,
+  "details": "bb is an agentic IDE that bills itself as building itself — every surface (desktop app, web app, CLI, HTTP API) is a first-class way to drive it, and it can control, customize, and automate its own development. Work happens in live threads you can follow, steer mid-flight, or hand off to another agent, using whichever provider CLI you already have authenticated. Available as a macOS desktop app or via npx bb-app@latest, with nightly builds for early adopters. MIT-licensed and in active development.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",
