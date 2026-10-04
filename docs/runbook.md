@@ -27,6 +27,12 @@ is stdlib.
 
 ## 1. Build (exact order)
 
+Shortcut: `python3 scripts/regen.py [--classification new-ids.json]` runs
+1a–1d below in order and refreshes `tests/manifest.baseline.json`. To bring a
+branch up to date with `main` (resolving generated-file conflicts by
+rebuilding), run `git fetch origin && python3 scripts/sync_main.py --test`;
+CI does this automatically for open PRs (`.github/workflows/sync-prs.yml`).
+
 ```bash
 # 1a. Legacy site files — UNCHANGED pipeline, sole writer of site output
 python3 scripts/build.py
