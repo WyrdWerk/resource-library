@@ -33,7 +33,7 @@ def records(rows):
 
 def test_catalog_covers_every_legacy_row(rows, records):
     ids = [r["id"] for r in rows]
-    assert len(records) == len(rows) == 310
+    assert len(records) == len(rows) == 330
     assert sorted(records) == sorted(ids)
 
 
@@ -80,7 +80,7 @@ def test_exceptions_file_is_empty():
 
 def test_migration_report_claims_hold():
     rep = json.loads((ROOT / "catalog" / "_migration_report.json").read_text(encoding="utf-8"))
-    assert rep["migrated"] == rep["source_rows"] == 310
+    assert rep["migrated"] == rep["source_rows"] == 330
     assert rep["order_preserved"] is True
     assert rep["all_fields_equal"] is True
     assert all(r["all_equal"] for r in rep["rows"])

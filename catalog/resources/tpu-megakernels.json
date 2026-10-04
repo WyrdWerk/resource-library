@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "tpu-megakernels",
+  "title": "TPU Megakernels",
+  "canonical_url": "https://github.com/Inferact/tpu-megakernels",
+  "brief": "Inferact's open-source TPU megakernels for Kimi K3 — 709 tokens/s decode on 16x TPU v7 via a single Pallas kernel. Shared in #providers as a benchmark claim; curated here as the code resource, not a provider listing.",
+  "caveat": null,
+  "details": "TPU megakernels is the companion code for Inferact's blog post on TPU megakernels: fused decode implementations (JAX) for two models. Kimi K3 with DSpark runs on 32 TPU devices across four hosts, where one megakernel executes KDA, MLA, MoE, residual, normalization, and collective work; DSpark provides fused speculative decoding with one anchor and seven draft rows. Qwen3.8-27B with DFlash2 runs on eight TPUs on one host with a dense BF16 megakernel covering the hybrid gated-delta-net and grouped-query-attention stack. With speculative decoding at acceptance length 6 they hit 709 accepted tokens/s on Kimi K3 (16x TPU v7 vs 16x GB200, 1.57x) and 1,515 on Qwen3.8-27B (2.18x); without speculative decoding it's roughly 1.4–2x the GB200 baseline decode throughput. Both demos support terminal interaction and an OpenAI-compatible HTTP server. Setup is uv sync with model snapshots pre-cached (HF offline mode); Kimi needs a four-node Slurm allocation with 8 TPUs per host, Qwen one host with 8 TPUs. Apache-2.0 licensed.",
+  "resource_type": "repository",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "24 Sep–1 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "emirsoyturk"
+  },
+  "shared_on": "2026-09-25",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

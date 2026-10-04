@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "numbat",
+  "title": "numbat",
+  "canonical_url": "https://github.com/perplexityai/numbat",
+  "brief": "Perplexity's open-source numbat repository, linked from their announcement.",
+  "caveat": null,
+  "details": "numbat is Perplexity's open-source endpoint-security tool that gives visibility into AI agent activity on developer machines. It observes desktop, CLI, IDE, and gateway agents through local hooks and plugins, OTLP/HTTP log exporters, and on-disk session artifacts, normalizing live and at-rest activity into one event model evaluated by a CEL rule engine. Detection runs locally, records can go to stdout or a local file, with optional HTTP delivery. Features: live monitoring via hooks/plugins, endpoint-local detection with built-in CEL rules plus multi-step sequence and custom YAML rules, opt-in pre-action blocking (off by default; all shipped rules are monitor-only), and forensic reconstruction from session artifacts without prior instrumentation. Output is versioned NDJSON with read-only artifact scanning and secret redaction, plus inventory/investigation tools and portable case bundles with SHA-256 manifests. Distributed as a single static binary for macOS, Linux, and Windows, built without cgo — install with go install github.com/perplexityai/numbat/cmd/numbat@latest. Use commands like numbat agents, numbat scan, and numbat hook install --agent codex --emit all. Apache-2.0 licensed, ~1.1k stars.",
+  "resource_type": "repository",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "generate-code"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "30 Jul–5 Aug 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx8678"
+  },
+  "shared_on": "2026-07-31",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

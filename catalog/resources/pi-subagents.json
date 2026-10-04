@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "pi-subagents",
+  "title": "pi-subagents",
+  "canonical_url": "https://github.com/nicobailon/pi-subagents",
+  "brief": "A collection of subagents for the pi coding agent, linked from the shared tweet's embed.",
+  "caveat": null,
+  "details": "pi-subagents is a Pi extension by nicobailon that lets the Pi coding agent delegate work to focused child agents — for code review, scouting, implementation, parallel audits, saved workflows, and background jobs. Install with pi install npm:pi-subagents, then ask in plain language like \"Use reviewer to review this diff\" or \"Run parallel reviewers for correctness, tests, and cleanup\" — Pi decides which subagent to call and composes the work. It ships seven built-in agents: scout (fast local codebase recon), researcher (web/docs research with sources), evidence-auditor (checks whether research claims are supported by their sources), worker (implementation with file edits), reviewer (code review and small fixes), oracle (second opinion that challenges assumptions without editing), and delegate (lightweight general delegate). Foreground children stream inside the parent session; background children run detached and can be checked later via FleetView or /subagents-fleet. Includes /council and council-mode profiles for debating material decisions with model-based advisors, plus packaged workflow shortcuts like /parallel-review and /review-loop. MIT licensed, ~3.8k stars — the most popular of the five repos.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "6–12 Aug 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-08-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

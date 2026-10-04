@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "tinyrouter",
+  "title": "TinyRouter",
+  "canonical_url": "https://github.com/harrrshall/tinyrouter",
+  "brief": "A tiny (~10K-parameter) LLM router that learns which open-source model should answer each query.",
+  "caveat": null,
+  "details": "TinyRouter by harrrshall is a deliberately tiny learned router for LLM routing: a frozen 0.6B encoder turns each question into a single 1024-dim vector, and a ~10K-parameter head decides which of three open-source models answers and in what role (Thinker, Worker, or Verifier), with a multi-turn loop of up to 5 turns that a Verifier can accept early. The routing head is trained by separable CMA-ES, a derivative-free evolution strategy, against a simple right/wrong reward, following TRINITY (Xu et al., ICLR 2026), rebuilt with an all-open-source pool served through Fireworks AI: deepseek-v4-pro (knowledge/MMLU), glm-5p2 (math), kimi-k2p6 (general). Evaluation on 120 held-out questions per task shows the router averaging 0.858 across math and MMLU, beating any single model and random routing, because it sends each task to the right specialist (0.925 on MMLU where models differ widely). An oracle-ceiling diagnostic found ~4.9 points of real headroom on math that the router doesn't capture, and supervised warm-start plus shaped-fitness upgrades were implemented but remain unproven on held-out data. The repo is notable for honest, well-documented negative results and exact API spend tracking (about $62 total). A practical reference for anyone building learned LLM routers or evolutionary training loops.",
+  "resource_type": "repository",
+  "topics": [
+    "inference",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "2–8 Jul 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-07-05",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

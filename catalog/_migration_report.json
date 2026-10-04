@@ -1,6 +1,6 @@
 {
-  "migrated": 310,
-  "source_rows": 310,
+  "migrated": 330,
+  "source_rows": 330,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -2035,6 +2035,326 @@
       "all_equal": true,
       "shared_on": "2026-07-25",
       "date_evidence": "posted '25 Jul' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "skypilot-sandboxes",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-06-13",
+      "date_evidence": "posted '13 Jun' inside week label '11–17 Jun 2026'"
+    },
+    {
+      "id": "deepspec-dspark",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-06-27",
+      "date_evidence": "posted '27 Jun' inside week label '25 Jun–1 Jul 2026'"
+    },
+    {
+      "id": "sidequest-for-pi",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-06-29",
+      "date_evidence": "posted '29 Jun' inside week label '25 Jun–1 Jul 2026'"
+    },
+    {
+      "id": "tinyrouter",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-07-05",
+      "date_evidence": "posted '5 Jul' inside week label '2–8 Jul 2026'"
+    },
+    {
+      "id": "threejs-procedural-dungeon",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-07-06",
+      "date_evidence": "posted '6 Jul' inside week label '2–8 Jul 2026'"
+    },
+    {
+      "id": "reactbench",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-07-15",
+      "date_evidence": "posted '15 Jul' inside week label '9–15 Jul 2026'"
+    },
+    {
+      "id": "numbat",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-07-31",
+      "date_evidence": "posted '31 Jul' inside week label '30 Jul–5 Aug 2026'"
+    },
+    {
+      "id": "mixture-of-kittens",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-08-04",
+      "date_evidence": "posted '4 Aug' inside week label '30 Jul–5 Aug 2026'"
+    },
+    {
+      "id": "pi-subagents",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-08-07",
+      "date_evidence": "posted '7 Aug' inside week label '6–12 Aug 2026'"
+    },
+    {
+      "id": "ai-design-skills",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-08-14",
+      "date_evidence": "posted '14 Aug' inside week label '13–20 Aug 2026'"
+    },
+    {
+      "id": "astral-war",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-09-05",
+      "date_evidence": "posted '5 Sep' inside week label '3–10 Sep 2026'"
+    },
+    {
+      "id": "typellm",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-09-25",
+      "date_evidence": "posted '25 Sep' inside week label '24 Sep–1 Oct 2026'"
+    },
+    {
+      "id": "respan",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-09-25",
+      "date_evidence": "posted '25 Sep' inside week label '24 Sep–1 Oct 2026'"
+    },
+    {
+      "id": "tpu-megakernels",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-09-25",
+      "date_evidence": "posted '25 Sep' inside week label '24 Sep–1 Oct 2026'"
+    },
+    {
+      "id": "edge0",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-02",
+      "date_evidence": "posted '2 Oct' inside week label '1–8 Oct 2026'"
+    },
+    {
+      "id": "vllm-semantic-router",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-03",
+      "date_evidence": "posted '3 Oct' inside week label '1–8 Oct 2026'"
+    },
+    {
+      "id": "ruddr",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-04",
+      "date_evidence": "posted '4 Oct' inside week label '1–8 Oct 2026'"
+    },
+    {
+      "id": "uselayouts",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-04",
+      "date_evidence": "posted '4 Oct' inside week label '1–8 Oct 2026'"
+    },
+    {
+      "id": "arc-ui",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-04",
+      "date_evidence": "posted '4 Oct' inside week label '1–8 Oct 2026'"
+    },
+    {
+      "id": "kobra-systems",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-04",
+      "date_evidence": "posted '4 Oct' inside week label '1–8 Oct 2026'"
     },
     {
       "id": "loop-library-forwardfuture-signals",

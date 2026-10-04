@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "mixture-of-kittens",
+  "title": "Mixture-of-Kittens",
+  "canonical_url": "https://github.com/cursor/mixture-of-kittens",
+  "brief": "Cursor's open-source, fully-deterministic mixture-of-experts training megakernel (Apache-2.0).",
+  "caveat": null,
+  "details": "Mixture-of-Kittens (MoK) is Cursor's fully deterministic mixture-of-experts (MoE) training megakernel for NVIDIA NVL72 systems, built from first principles and powering production training of Cursor's Composer. It fuses all MoE computation and communication into a single kernel, overlapping compute and inter-GPU networking at configurable granularity while fully eliminating CPU-GPU synchronization. Supports BF16 and MXFP8 for both forward and backward passes. Benchmarked up to 2.37x faster than the fastest baseline on MXFP8 forward (1.78x backward, 1.92x BF16 forward, 1.58x BF16 backward) on standalone MoE layers. Requires NVIDIA Blackwell SM100/SM103 GPUs (GB200/GB300 NVL72), Python 3.12+, PyTorch 2.10+, CUDA 13.0+. Install with pip install . --no-build-isolation (builds for SM103 by default, set MOK_ARCH=SM100 for SM100). Two APIs: an ops layer (mok/ops.py) calling CUDA kernels directly, and a functional layer (mok/functional.py) with config/workspace management, schedule(), forward(), backward() — the functional layer is the production choice. Companion paper at arxiv.org/abs/2609.36070. Apache-2.0 licensed, ~605 stars.",
+  "resource_type": "repository",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "30 Jul–5 Aug 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "simply soy"
+  },
+  "shared_on": "2026-08-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
