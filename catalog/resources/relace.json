@@ -5,6 +5,7 @@
   "canonical_url": "https://www.relace.ai/",
   "brief": "Coding-focused API (Instant Apply model, code retrieval, embeddings, reranking) rather than general LLM inference. Available via Continue.dev, with a self-host/VPC option.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference",

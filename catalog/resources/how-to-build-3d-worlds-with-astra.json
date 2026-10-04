@@ -5,6 +5,7 @@
   "canonical_url": "https://somethingbig.ai/3d-worlds",
   "brief": "A step-by-step guide to making photorealistic 3D worlds and games — reference photos, Blender assets, sub-agents, blind critics, Three.js vs Unreal Engine, and a starter prompt. The \"GPT-6 Astra\" framing is the site's own marketing.",
   "caveat": null,
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

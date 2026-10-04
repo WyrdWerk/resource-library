@@ -10,7 +10,8 @@
     ],
     "brief": "A fixture inference provider for testing provider ordering.",
     "id": "fixture-provider",
-    "warning": ""
+    "warning": "",
+    "details": ""
   },
   {
     "title": "Fixture Provider",
@@ -23,7 +24,8 @@
     ],
     "brief": "A second provider with a colliding title. Use at your own risk.",
     "id": "fixture-provider-2",
-    "warning": "Use at your own risk."
+    "warning": "Use at your own risk.",
+    "details": ""
   },
   {
     "title": "Fixture Widget",
@@ -37,7 +39,8 @@
     ],
     "brief": "A widget for testing the fixture build. Small and fast.",
     "id": "fixture-widget",
-    "warning": ""
+    "warning": "",
+    "details": ""
   },
   {
     "title": "Fixture Widget",
@@ -50,7 +53,8 @@
     ],
     "brief": "A second resource with the same title to exercise slug collision. Expect rough edges.",
     "id": "fixture-widget-2",
-    "warning": "Expect rough edges."
+    "warning": "Expect rough edges.",
+    "details": ""
   },
   {
     "title": "Folded Gadget",
@@ -63,6 +67,7 @@
     ],
     "brief": "A boundary-day catch-up folded into the existing week.",
     "id": "folded-gadget",
-    "warning": ""
+    "warning": "",
+    "details": ""
   }
 ]

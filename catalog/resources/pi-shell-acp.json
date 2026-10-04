@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/junghan0611/pi-shell-acp/",
   "brief": "A Herdr/tmux setup where sibling AI sessions — pi, Claude Code, Codex, Copilot, OMP, Antigravity — can message and spawn each other while keeping their own auth, tools, and transcripts. The repo has since been renamed from pi-shell-acp to \"entwurf\" and now covers the Agent Client Protocol and MCP agent protocols more broadly.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

@@ -5,6 +5,7 @@
   "canonical_url": "https://verboo.ai/",
   "brief": "Free trial, then unlimited-token subscriptions from Junior $24/mo to Ultra $269/mo, plus a usage API from $0.12/1M input tokens. Coding agent plus OpenAI-compatible API on Brazilian servers; states it does not train on or review code and calls.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference",

@@ -5,6 +5,7 @@
   "canonical_url": "https://rustfoundation.org/rust-foundation-trusted-training/",
   "brief": "The Rust Foundation's quality standard for Rust training. Reference material if you're evaluating Rust courses or building one.",
   "caveat": null,
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "developer-tools"

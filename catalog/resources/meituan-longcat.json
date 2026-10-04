@@ -5,6 +5,7 @@
   "canonical_url": "https://longcat.ai/",
   "brief": "Meituan's LongCat with Token Packs — 50M tokens for $4.90 (promotion corroborated). Surfaced via an X post.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

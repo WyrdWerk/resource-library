@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/redhat-et/ripwire",
   "brief": "\"The ripgrep of AI context\" — a zero-dependency C++23 CLI plus MCP server that gives coding agents a ranked, deterministic map of any repo: blast radius, tests-to-run and quality deltas. From Red Hat's emerging-tech group.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

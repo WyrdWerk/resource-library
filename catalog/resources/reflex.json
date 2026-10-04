@@ -5,6 +5,7 @@
   "canonical_url": "https://spark.reflex.inc/",
   "brief": "Post-trained Kimi K3 served with 6x context at a claimed 490 tokens/sec. Performance claims come from the provider's own page.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

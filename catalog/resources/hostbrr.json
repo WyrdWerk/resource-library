@@ -5,6 +5,7 @@
   "canonical_url": "https://hostbrr.com/",
   "brief": "European VPS and hosting provider (cloud VPS from €3.50/mo, web hosting from €1.25/mo) on AMD EPYC/Threadripper with NVMe storage, a 10Gbps network and included DDoS mitigation; Felix strongly recommends it for non-serious projects, citing best performance-per-dollar in Europe. Felix notes the site's \"order\" tab is quirky; the performance-per-dollar claim is the sharer's and is not independently verified.",
   "caveat": "Felix notes the site's \"order\" tab is quirky; the performance-per-dollar claim is the sharer's and is not independently verified.",
+  "details": "HostBrr is a European budget hosting provider (operating since 2023) selling shared web hosting from €1.25/mo, cPanel reseller plans, storage boxes up to 16 TB, and KVM VPS on AMD EPYC/Threadripper with NVMe storage — performance VPS from €3.50/mo, storage VPS from €3.90/mo. Included across plans: Layer 4/7 DDoS mitigation (up to 3.6 Tbps capacity), a 99.9% uptime guarantee, free daily backups, and 24/7 support, with datacenters in Germany, the US, and Luxembourg. 30-day money-back on shared hosting and 7 days on VPS/storage (crypto payments are non-refundable). Positioned as enterprise-grade infrastructure without the enterprise price; the performance-per-dollar claim comes from the vendor and the sharer and is not independently verified.",
   "resource_type": "service-platform",
   "topics": [
     "cloud-infrastructure"

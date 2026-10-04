@@ -5,6 +5,7 @@
   "canonical_url": "https://www.subconscious.dev/pricing",
   "brief": "An inference platform built for long-running coding agents, using runtime context compression to cut token bills on extended agentic traces; it drops into Claude Code, Codex, OpenCode, or any OpenAI-compatible harness, and can also be deployed inside your own cloud. Plans sell as daily token allocations with no per-seat pricing — Base at $100/month for 60M tokens/day, Pro at $500/month for 300M/day, Heavy at $2,000/month for 1.2B/day — plus per-token overflow billing. Its savings and performance claims (2× faster task completion, up to 80% cost reduction) are vendor-reported and not independently verified.",
   "caveat": "Its savings and performance claims (2× faster task completion, up to 80% cost reduction) are vendor-reported and not independently verified.",
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference",

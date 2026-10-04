@@ -5,6 +5,7 @@
   "canonical_url": "https://cloud.hostup.se/signup?ref=K4X7KLS8",
   "brief": "Swedish VPS provider at ~$10/month + tax for 8 GB RAM, used and vouched for by thelaggingway in reply to ROman. Note: the signup page's bot protection rejected the automated link check, so the URL is posted as-shared and only sharer-verified.",
   "caveat": null,
+  "details": "HostUp (hostup.se) is a Swedish hosting provider — VPS, web hosting, and domains — pitching on local infrastructure: their own hardware in Stockholm, with customer data never leaving Sweden. Their onboarding pitch is human-led migration (they move your websites and email accounts for you, by hand rather than robots), instant activation, 14-day money-back guarantee, and support ranging from WordPress to email configuration. Relevant in a providers channel for anyone wanting EU/Sweden-based hosting rather than the usual US clouds. (Note: the shared link was a referral signup URL, `cloud.hostup.se/signup?ref=K4X7KLS8`, which returns 403 to anonymous fetch — the breakdown is based on their public homepage.)",
   "resource_type": "service-platform",
   "topics": [
     "cloud-infrastructure"

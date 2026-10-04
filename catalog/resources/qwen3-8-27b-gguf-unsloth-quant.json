@@ -5,6 +5,7 @@
   "canonical_url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
   "brief": "Unsloth's GGUF quantization of Qwen3.8-27B for local inference. The practical artifact behind the open-weights announcement above.",
   "caveat": null,
+  "details": null,
   "resource_type": "dataset",
   "topics": [
     "inference"

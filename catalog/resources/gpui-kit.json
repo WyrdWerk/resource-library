@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/longbridge/gpui-kit",
   "brief": "Rust GUI components for building cross-platform desktop apps on GPUI (the framework behind Zed). ~14.8k stars — one of the more-starred GPUI component libraries.",
   "caveat": null,
+  "details": "GPUI Kit is a comprehensive Rust desktop application framework built on GPUI (the UI framework from Zed Industries) — 75+ documented components and primitives with polished interactions, GPU-accelerated 120 FPS rendering, virtualized data tables and lists, a code editor stable at 200K lines with Tree-sitter and LSP, dock layouts, native Markdown/HTML rendering, AccessKit accessibility, UI integration testing, and WebAssembly support. Three layers: gpui-component (the complete styled system, best for applications), gpui-base (unstyled behavior and infrastructure, best for building your own design system), and gpui-shell (a JavaScript extension runtime). One dependency (`gpui-kit = \"0.7\"`) pins the matching GPUI release. It was extracted from Longbridge Pro, a publicly shipped commercial desktop app — production-proven rather than designed in isolation — and carries 15.8k stars. Apache-2.0 (docs prose CC BY 4.0); agent skills installable via `npx skills add longbridge/gpui-kit`.",
   "resource_type": "library-framework",
   "topics": [
     "app-development",

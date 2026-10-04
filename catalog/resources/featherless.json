@@ -5,6 +5,7 @@
   "canonical_url": "https://featherless.ai/",
   "brief": "A serverless inference platform for open-weight models with a catalog of 40,000+ models on a single OpenAI-compatible API — headlined by a flat-rate Chat plan at $25/month with unlimited tokens. Also offers a usage-based Developer tier ($50/month in credits, per-token, with rollover) and custom dedicated-GPU Business plans; the company raised a $20M Series A in December 2025. The flat-rate Chat plan is for interactive human-driven use only — not for automation, reselling, app/API traffic, or benchmarking, and the site says misuse may lead to cancellation without refund.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

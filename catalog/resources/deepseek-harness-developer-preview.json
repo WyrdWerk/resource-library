@@ -5,6 +5,7 @@
   "canonical_url": "https://www.deepseek.com/harness/en/",
   "brief": "DeepSeek's agent harness in developer preview — \"everything is a plugin\", with source released alongside. Every agent capability is a swappable plugin; the plugin architecture is the interesting idea here. Claims unverified.",
   "caveat": "Claims unverified.",
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "ai-agents"

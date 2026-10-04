@@ -328,6 +328,10 @@ components:
           type: [string, 'null']
         open_source:
           type: [boolean, 'null']
+        details:
+          type: [string, 'null']
+          maxLength: 2000
+          description: Researched long-form breakdown of what the resource is, written from the live page. Null until enriched.
         display_period:
           type: string
         legacy_categories:

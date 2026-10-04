@@ -102,6 +102,7 @@ def main():
             "canonical_url": row["url"],
             "brief": row["brief"],
             "caveat": row["warning"] or None,
+            "details": row.get("details") or None,
             "resource_type": cls["resource_type"],
             "topics": cls["topics"],
             "use_cases": cls["use_cases"],

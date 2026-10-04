@@ -5,6 +5,7 @@
   "canonical_url": "https://huggingface.co/unsloth/Qwen3.6-27B-MTP-GGUF",
   "brief": "Unsloth's GGUF quantization of Qwen3.6-27B with MTP (multi-token prediction). For local inference of the 27B Qwen.",
   "caveat": null,
+  "details": null,
   "resource_type": "dataset",
   "topics": [
     "inference"

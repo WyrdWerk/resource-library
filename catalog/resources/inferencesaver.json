@@ -5,6 +5,7 @@
   "canonical_url": "https://www.inferencesaver.com/en",
   "brief": "Unified API and SDK routing requests across 1,000+ models from many providers with automatic fallbacks, best-price optimization, and a real-time observability dashboard. Markets itself as one API for every AI model, advertising per-model 'up to 70% off' rates and 40–80% savings on inference spend. The savings and discount figures are vendor marketing, not independently verified.",
   "caveat": "The savings and discount figures are vendor marketing, not independently verified.",
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

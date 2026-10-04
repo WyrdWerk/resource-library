@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/DevMortimer/pi-warden",
   "brief": "Guardrails for Pi built on pi-typesafe — \"steer the agent instead of interrupting you: Jev judges.\" Part of a small Pi-safety ecosystem from the same author as the next entry.",
   "caveat": null,
+  "details": "pi-warden (DevMortimer, 157 stars) — guardrails for the Pi coding agent that steer instead of interrupt. It enforces your project rules on every write (a `pi-warden.md` rule like \"a bare TODO without a ticket reference is a violation\", judged in ~250ms by TypeSafe's Jev decision model), holds only hard-to-undo actions before they run (force push, `reset --hard`, `rm -rf`, DROP — measured at 3 holds per 1,000 calls on real sessions), and crucially tells the agent what it got wrong so the agent fixes it without you: unverified \"done\" claims get sent back to run the tests (76% of fake \"done\"s became real test runs in the maintainer's 1,168-session field report), repeated failing fixes trigger a request for a new hypothesis, and huge tool outputs get trimmed to what matters. Everything is calibrated on recorded sessions with published eval reports — rules broken went from 6/150 runs to 0/150 with warden on; features that didn't earn their cost (working-memory pruning, stale-result stubs) didn't ship. Install via `pi install npm:pi-warden`, then `/warden enable` and `/warden init`; the offline guards work without a key. MIT.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

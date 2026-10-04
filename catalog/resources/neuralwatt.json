@@ -5,6 +5,7 @@
   "canonical_url": "https://portal.neuralwatt.com/",
   "brief": "$10/kWh pay-as-you-go (or per-token), $1 free credit after adding a payment method; monthly plans $20–$200. Hosted multi-model OpenAI-compatible API plus on-prem deployment; 14 models.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

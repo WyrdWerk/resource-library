@@ -5,6 +5,7 @@
   "canonical_url": "https://gist.github.com/Sewer56/74cbf6d930ed67653370cc2d683c54dd",
   "brief": "A complete agent-harness system prompt as a gist: JSON tool schemas for edit, glob, grep, question, read, shell, subagent, and write with execution semantics spelled out. Useful reference if you're building or tuning a coding-agent CLI.",
   "caveat": null,
+  "details": "A gist by Sewer56 publishing a `sys-prompt.md` — the system prompt and tool definitions for an agent harness, documenting its full tool surface as JSON schemas: edit, glob, grep, question (ask-the-user with choices), read (files, directories, images, PDFs), shell (zsh commands with timeouts and background execution), subagent (spawning child sessions, including codebase-explorer and web-search specialists), and write. Useful as a reference for what a well-specified agent tool API looks like — exact shapes, required fields, and behavioral notes (e.g., line-number prefixes are not part of file content; background commands notify on completion). If you are designing tool definitions for your own agent, this is a concrete template to crib from.",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents"

@@ -5,6 +5,7 @@
   "canonical_url": "https://entrim.ai/",
   "brief": "$10 in credits plus pay-as-you-go inference. Processes prompts and outputs in RAM only and does not train on them.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

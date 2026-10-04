@@ -5,6 +5,7 @@
   "canonical_url": "https://x.com/aliceisplaying/status/2097387613086683232",
   "brief": "A pi extension giving the agent exactly one tool — doing file read/edit work in arm64 assembly — to stop Astra shelling out to python3, ruby and perl for file ops. Announcement; the actual link was promised in a follow-up tweet.",
   "caveat": null,
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

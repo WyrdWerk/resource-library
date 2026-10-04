@@ -5,6 +5,7 @@
   "canonical_url": "https://freebuff.com/",
   "brief": "Free, ad-supported coding agent (CLI, desktop, web, cloud, chat) powered by open models like DeepSeek V4 Pro/Flash and MiniMax M3. Explicit no-training stance — it doesn't share data with third parties that would train on it.",
   "caveat": null,
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "ai-agents"

@@ -5,6 +5,7 @@
   "canonical_url": "https://factory.com/open-source-wikis",
   "brief": "Browse Factory-generated wikis for popular open-source repositories — a preview of what living documentation looks like on real codebases before running it on your own. Nice for evaluating doc-generation tooling.",
   "caveat": null,
+  "details": null,
   "resource_type": "directory-gallery",
   "topics": [
     "developer-tools"

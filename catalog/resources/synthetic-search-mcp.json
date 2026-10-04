@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/baanish/synthetic-search-mcp",
   "brief": "A search MCP server from baanish, who vouched for PR #4 personally. The shared link was the PR; normalized to the repo root.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

@@ -5,6 +5,7 @@
   "canonical_url": "https://huggingface.co/spaces/multimodalart/jev-decision-index",
   "brief": "A Hugging Face Space tracking benchmarks and news on the various repros of TypeSafe's Jev — a handy index if you're following the Jev model race.",
   "caveat": null,
+  "details": "A Hugging Face Space by multimodalart titled \"Jev Decision Index\", connected to the Jev retrieval tooling behind jevgrep (also in this library). The Space page is a JavaScript app whose content does not render for automated fetching, so this breakdown is thin: it appears to be an interactive demo or index around Jev's decision and relevance judgments. Worth opening directly if you use jevgrep and want to see the relevance engine's behavior firsthand.",
   "resource_type": "directory-gallery",
   "topics": [
     "testing"

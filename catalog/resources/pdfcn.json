@@ -5,6 +5,7 @@
   "canonical_url": "https://www.pdfcn.dev/",
   "brief": "A collection of beautifully designed, accessible and customizable PDF components built on Takumi. Handy if you ever need to render polished PDFs from a web stack.",
   "caveat": null,
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "frontend",

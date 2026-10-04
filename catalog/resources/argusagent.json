@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/microsoft/ArgusAgent",
   "brief": "Microsoft's ArgusAgent — a persistent, reviewed multi-agent runtime for long-horizon research and engineering. Directly relevant to anyone running agents on long tasks.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

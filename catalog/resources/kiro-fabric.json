@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/asx8678/kiro-fabric",
   "brief": "Kiro Fabric gives Kiro CLI a way to run several tool operations as one checked TypeScript program: Kiro writes the code, Fabric type-checks it and executes it in a fresh QuickJS context, with a repo-navigation layer (Navigator/Fovea) mapping symbols and change impact via ast-grep. Fresh repo (0 stars, MIT); expect rough edges.",
   "caveat": "Fresh repo (0 stars, MIT); expect rough edges.",
+  "details": "Kiro Fabric gives the Kiro CLI a \"Code Mode\": instead of many model/tool round trips, Kiro writes a small TypeScript program that runs several tool operations as one checked execution via the `@fabric/fabric_exec` tool — tools become async function calls supporting variables, conditions, loops, and bounded parallelism, executed in a fresh QuickJS context through a private MCP backend with type checking, argument validation, and approval policies. Its Fovea component (\"Navigator\", the `repo.*` API) maps repository structure with ast-grep into a symbol-and-relationship graph for focused code navigation, change-impact estimation, and hybrid search within a token budget. Requires macOS or glibc Linux, Node 24+, pnpm, ripgrep, and Kiro CLI 2.21.1+; install from the repo with `bash ./install.sh`. MIT, from asx8678. Note the documented limitation: as of September 2026, approval-dependent edits fail on newer Kiro CLI versions.",
   "resource_type": "repository",
   "topics": [
     "developer-tools",

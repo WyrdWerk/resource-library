@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/superagents-lab/jev-search",
   "brief": "Shared by thelaggingway with just \"Another one\" — context is thin, but it landed in the search-tool thread. Worth a look if you're tracking search APIs.",
   "caveat": null,
+  "details": "Jev Search (superagents-lab, 507 stars) — search the web in plain language, with a decision model doing the query understanding. Type the request as you would say it (\"Rust async runtimes on Hacker News this month\"), and a decision model such as TypeSafe's Jev or Cloudflare's Clef chooses the sources, time range, and search terms, then ranks results returned through Search1API. You get links and snippets with visible relevance scores and editable filters — no generated answers. Under the hood: Google, DuckDuckGo, and Yandex for open web; Hacker News, Reddit, and GitHub combine site-restricted Google with dedicated engines; X, arXiv, YouTube, Wikipedia, IMDb, and WeChat use vertical engines — all called concurrently and streamed as newline-delimited JSON. Deployable to Cloudflare Workers (TanStack Start, React, KV cache, rate limits), installable as a PWA, with a model selector (Jev, Clef, Clef-flash) and fallback provider chains. Built by Search1API as an independent project, not an official TypeSafe product. MIT.",
   "resource_type": "repository",
   "topics": [
     "backend"

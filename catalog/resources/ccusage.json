@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/ryoppippi/ccusage",
   "brief": "Run `npx ccusage` and get daily, weekly, monthly, and session breakdowns of token usage and spend across Claude Code, Codex, OpenCode, Amp, Hermes Agent, and 15+ more coding CLIs, all read from local usage data. Colorful terminal tables, per-model cost breakdowns, cache-token tracking, JSON export, an offline pricing mode, and a Claude Code statusline hook make it the fastest way to see where your agent budget is going. (~19k stars, MIT.)",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

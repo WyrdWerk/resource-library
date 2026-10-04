@@ -6,6 +6,7 @@
     "canonical_url": "https://railway.com/changelog/2026-09-25-free-vms-without-an-account#free-vms-without-an-account",
     "brief": "Railway Changelog #0309 opens free Linux VMs with no account: `ssh railway.new` gets a 2 vCPU/2 GB box with coding agents preinstalled, 60 minutes to build and 24 hours to claim it before deletion. The same edition adds request tracing in Priority Boarding (edge-to-database waterfalls with no code changes) and OpenCode on Cloud Agents for persistent agent VMs.",
     "caveat": null,
+    "details": "Railway's changelog #0309 (September 25, 2026) with three launches. Free VMs without an account: `ssh railway.new` spins up a free Linux VM (2 vCPU, 2 GB RAM) with coding agents preinstalled and a preview URL — no signup or credit card; you get 60 minutes to build and 24 hours to claim the VM into an account before it is deleted. Tracing in Priority Boarding: follow a request from Railway's edge through your services into database calls as a timing waterfall, via OpenTelemetry SDK or automatic instrumentation, with agent skills updated so coding agents can use traces alongside logs and metrics. OpenCode on Cloud Agents: run OpenCode on a persistent Railway VM (`railway ca desktop --opencode` or `railway code --opencode`) and pick work up from anywhere; sleep keeps files on disk. Plus CLI fixes to `railway up` error output and installer reliability.",
     "resource_type": "article-guide",
     "topics": [
       "cloud-infrastructure",
@@ -42,6 +43,7 @@
     "canonical_url": "https://www.onorca.dev/",
     "brief": "A free, open-source Agent Development Environment (ADE): run Claude Code, Codex, Gemini, Cursor CLI, and other CLI agents in parallel across isolated git worktrees, with a Ghostty-class terminal, in-app diff review, embedded browser, and SSH dev built in. Bring your own subscriptions — agents run side by side without interfering.",
     "caveat": null,
+    "details": "Orca is a free, open-source (MIT) Agent Development Environment — a desktop app for shipping with coding agents, positioned as a terminal-first Cursor alternative. It is worktree-first: each AI agent runs in its own isolated git worktree, so Claude Code, Codex, OpenCode, and 25+ other CLI agents (Grok, Gemini, Cursor, Copilot, Amp, Pi, Kiro, and more — bring your own subscription) can work side by side without conflicts. It bundles a Ghostty-class terminal with infinite splits, in-app diff review, an embedded browser, and remote SSH dev, with status tracking and notifications across parallel sessions. Recent releases added PDF diff preview, hidden-file quick-open, configurable worktree cards, and improved merge-conflict and CI review. Download for macOS, Windows, or Linux at onorca.dev.",
     "resource_type": "tool",
     "topics": [
       "ai-agents",
@@ -80,6 +82,7 @@
     "canonical_url": "https://github.com/monotykamary/heddlework",
     "brief": "A native, harness-neutral workspace for agent sessions: task graphs, diffs, and durable work across coding agents — Pi first, Codex and Claude next. Very early (~12 stars); expect rough edges.",
     "caveat": "Very early (~12 stars); expect rough edges.",
+    "details": "Heddlework is a native, harness-neutral workspace for agent sessions — built on the idea that the workspace (conversations, diffs, task graphs, review state) should outlive any one agent harness. Pi is the first adapter (rendered with GPUIX on macOS, Linux, and Windows), with Codex and Claude adapters planned; harnesses stay authoritative for execution while Heddlework projects their work into durable, searchable, GPU-rendered native surfaces including virtualized diffs, queued steering, session branches, and Fabric-powered orchestration. The status is honest: under active development and useful today as a source-built Pi desktop client, but not yet a signed or supported release. Install from source (`bun install`, `bun run setup:native`) or via the guided `install.sh`; a web/PWA companion and container host exist as previews. MIT, from monotykamary (Tom).",
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -116,6 +119,7 @@
     "canonical_url": "https://github.com/longbridge/gpui-kit",
     "brief": "Rust GUI components for building cross-platform desktop apps on GPUI (the framework behind Zed). ~14.8k stars — one of the more-starred GPUI component libraries.",
     "caveat": null,
+    "details": "GPUI Kit is a comprehensive Rust desktop application framework built on GPUI (the UI framework from Zed Industries) — 75+ documented components and primitives with polished interactions, GPU-accelerated 120 FPS rendering, virtualized data tables and lists, a code editor stable at 200K lines with Tree-sitter and LSP, dock layouts, native Markdown/HTML rendering, AccessKit accessibility, UI integration testing, and WebAssembly support. Three layers: gpui-component (the complete styled system, best for applications), gpui-base (unstyled behavior and infrastructure, best for building your own design system), and gpui-shell (a JavaScript extension runtime). One dependency (`gpui-kit = \"0.7\"`) pins the matching GPUI release. It was extracted from Longbridge Pro, a publicly shipped commercial desktop app — production-proven rather than designed in isolation — and carries 15.8k stars. Apache-2.0 (docs prose CC BY 4.0); agent skills installable via `npx skills add longbridge/gpui-kit`.",
     "resource_type": "library-framework",
     "topics": [
       "app-development",
@@ -153,6 +157,7 @@
     "canonical_url": "https://github.com/scenario-labs/skills",
     "brief": "Agent skills for Scenario: image, video, audio, texture, 3D, and custom-model workflows over the Scenario MCP, aimed at games, entertainment, and creative verticals. Installs with `npx skills add scenario-labs/skills`; ~450 stars.",
     "caveat": null,
+    "details": "Agent Skills from Scenario that teach AI coding agents (Claude Code, Cursor, Codex, Copilot, and 70+ others) to produce production-ready images, video, audio, and 3D through the Scenario MCP server. The 65 skills cover the full creative pipeline — model picking, pricing before spending, character and brand consistency, storyboarding, product shots, textures, skyboxes, 3D assets, video editing, music, and custom model training — installable a la carte or grouped by role and goal via `npx skills add scenario-labs/skills`. A separate family of \"expert tool\" skills drives DCC software and game engines installed on your machine (Blender, Maya, ZBrush, Unreal Engine, Unity), distilled from expert tutorials, conference talks, and official docs. Requires the Scenario MCP server plus a Scenario account or API key. MIT, 850 stars.",
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -193,6 +198,7 @@
     "canonical_url": "https://detail.design/",
     "brief": "A curated gallery of the small UI decisions that make products feel considered — smarter word breaks, corner-morph animations, name-derived placeholders — each shown as a short clip. Curated by Rene Wang; a good reference for stealing micro-interaction ideas.",
     "caveat": null,
+    "details": "Detail (detail.design) is a curated gallery of the small interaction and copy decisions that make products feel considered — bite-size video examples like smarter word-break for translation-proof interfaces, hold-Option to reveal underlying details, name-derived placeholders, hold-to-reveal shortcut hints, inline regex testers, and adaptive text color. Curated by Rene Wang, it is more design-inspiration reference than component source: browse it when you want concrete, steal-able micro-interactions and UX copy patterns rather than generic UI kits. Also runs a social presence (@detaildotdesign) with exclusive content for followers.",
     "resource_type": "directory-gallery",
     "topics": [
       "design"
@@ -228,6 +234,7 @@
     "canonical_url": "https://land-book.com/",
     "brief": "A website design inspiration gallery with a large curated collection of landing pages, e-commerce sites, portfolios, and templates, plus boards for saving references. Useful for browsing real-world site design by category.",
     "caveat": null,
+    "details": "Land-book is a curated, daily-updated gallery of website design inspiration for creatives — hand-picked landing pages, portfolios, blogs, and ecommerce sites, browsable by category (landing, portfolio, blog, ecommerce), section, mobile, motion, OG images, and headlines, and sortable by most recent, recommended, most liked, or most viewed. Each entry shows the site with like counts and a copy link; some entries are paid Framer templates. A solid reference when you need real-world landing-page patterns rather than generic templates.",
     "resource_type": "directory-gallery",
     "topics": [
       "design"
@@ -263,6 +270,7 @@
     "canonical_url": "https://maxibestof.one/",
     "brief": "A website design and typography inspiration feed updated every weekday, pairing featured sites with their font stacks (e.g., Geist, Neue Haas Grotesk). A Pro tier adds private collections and HD screenshots.",
     "caveat": null,
+    "details": "MaxiBestOf (maxibestof.one) is a curated gallery of web design inspiration — websites, sections, and fonts — updated every weekday. Entries are organized by industry and type (agency, ecommerce, portfolio, fashion, technology, AI, restaurant, SaaS, editorial, and many more), and each featured site names the exact typefaces it uses (Space Grotesk, TWK Lausanne, Neue Haas Grotesk, Suisse Int'l, Geist Sans, ABC Diatype, GT Eesti, and dozens more) — useful when hunting for type-pairing ideas from real production sites. Also has a dedicated section-designs area with hero, footer, and newsletter section examples. A Pro tier adds private inspiration collections and HD screenshots, and there is a free weekly Monday newsletter of top sites.",
     "resource_type": "directory-gallery",
     "topics": [
       "design"
@@ -298,6 +306,7 @@
     "canonical_url": "https://github.com/proxysoul/SoulStack",
     "brief": "ProxySoul × Empryo: a bundle of skills, agents, an \"immune system,\" and habits for coding agents. Very early (~17 stars); concept-heavy and expect rough edges.",
     "caveat": "Very early (~17 stars); concept-heavy and expect rough edges.",
+    "details": "SoulStack (proxysoul/SoulStack) is the published skill, preset, prompt, and habit collection behind Empryo — a coding agent from ProxySoul — packaged so you can point your own agent at it. Contents include skills like ensoul (reads the code and your vibe, builds a product's design system and redesigns its website, proven with screenshots), enliven (makes an app measurably faster with an A/B harness and an HTML report where every figure comes from JSON), marketing (turns product evidence into positioning without exposing private data), plus performance-traps, working habits, and takeaways rule sets. Its signature idea is an immune-system approach to testing: ten \"immune cells\" (tcell-hunter attacks, dendritic finds gaps, negative-selection kills false alarms, memory-cell turns confirmed bugs into permanent checks, natural-killer guards security, and more) grown per project. Installable per-skill via `npx skills add proxysoul/SoulStack`, as a Copilot plugin, or via a setup script that links skills and immune cells into Empryo, Claude Code, Copilot CLI, pi, OpenCode, and Gemini CLI — backing up every file it touches and adding a `soulstack` command for update/remove. Best in Empryo (live rule reload, genome-aware cells, background agents), with docs at soulstack.proxysoul.com.",
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -332,6 +341,7 @@
     "canonical_url": "https://fastino.ai/blog/gliner-2-5-decide-open-weight-decision-model",
     "brief": "Fastino's 340M-parameter open-weight model for schema-defined decision-making: feed it text plus typed questions and get valid answers with probabilities, confidence scores, and constraint-feasibility metadata. Apache 2.0, CPU-capable, strong on routing/triage/guardrail tasks. Benchmark figures are vendor-reported and not independently verified.",
     "caveat": "Benchmark figures are vendor-reported and not independently verified.",
+    "details": "Fastino's announcement of GLiNER2.5-Decide, a 340M-parameter open-weight (Apache 2.0) model built for schema-defined structured decision-making. Given text plus a set of typed questions — each with permitted answers, cardinality (single, multi, ordered), and cross-question rules — it returns answers with probabilities, confidence scores, and constraint-feasibility metadata. A constrained decoder evaluates related answers jointly, so decisions stay coherent (e.g., detecting prompt injection forces the safety verdict to `unsafe` rather than contradicting it). It also extracts character-level spans and relations and supports full or LoRA fine-tuning. Deliberately compact and non-generative: ~38ms p50 latency on a V100 GPU, ~167ms on a 48-vCPU CPU, runs locally and in air-gapped environments. Topped its unseen 17-dataset internal benchmark (60.1%) — intent routing, ticket triage, banking, sentiment, news topics — beating 4B-class decoder baselines. Natural fits: model routing, tool calling, browser/computer-use action selection, guardrails, context pruning, and LLM-as-judge.",
     "resource_type": "article-guide",
     "topics": [
       "inference"
@@ -366,6 +376,7 @@
     "canonical_url": "https://isoquant.ai/",
     "brief": "A new PAYGO inference provider launching with GLM-5.3-Flash at $0.07/$0.20 per 1M input/output tokens with automatic prompt caching; drop-in OpenAI-compatible API, no top-up fees. Its published benchmarks claim the lowest latency and highest throughput versus Together, CoreWeave, Baseten, Fireworks, and Z.ai. Pricing and benchmark figures are vendor-reported and not independently verified.",
     "caveat": "Pricing and benchmark figures are vendor-reported and not independently verified.",
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -401,6 +412,7 @@
     "canonical_url": "https://github.com/asx8678/kiro-fabric",
     "brief": "Kiro Fabric gives Kiro CLI a way to run several tool operations as one checked TypeScript program: Kiro writes the code, Fabric type-checks it and executes it in a fresh QuickJS context, with a repo-navigation layer (Navigator/Fovea) mapping symbols and change impact via ast-grep. Fresh repo (0 stars, MIT); expect rough edges.",
     "caveat": "Fresh repo (0 stars, MIT); expect rough edges.",
+    "details": "Kiro Fabric gives the Kiro CLI a \"Code Mode\": instead of many model/tool round trips, Kiro writes a small TypeScript program that runs several tool operations as one checked execution via the `@fabric/fabric_exec` tool — tools become async function calls supporting variables, conditions, loops, and bounded parallelism, executed in a fresh QuickJS context through a private MCP backend with type checking, argument validation, and approval policies. Its Fovea component (\"Navigator\", the `repo.*` API) maps repository structure with ast-grep into a symbol-and-relationship graph for focused code navigation, change-impact estimation, and hybrid search within a token budget. Requires macOS or glibc Linux, Node 24+, pnpm, ripgrep, and Kiro CLI 2.21.1+; install from the repo with `bash ./install.sh`. MIT, from asx8678. Note the documented limitation: as of September 2026, approval-dependent edits fail on newer Kiro CLI versions.",
     "resource_type": "repository",
     "topics": [
       "developer-tools",
@@ -440,6 +452,7 @@
     "canonical_url": "https://github.com/anthropics/claude-code/issues/91870",
     "brief": "Anthropic's design proposal for Claude Code \"Mods\" (function hooks): hook into Claude Code with TypeScript functions à la Express/Koa, with side-effect tracking and middleware-style composition — even modifying how components render. Committed to ship in weeks; the first three built-in mods' source listings are linked in the thread.",
     "caveat": null,
+    "details": "The GitHub issue where Anthropic proposed function hooks for Claude Code — TypeScript functions (Express/Koa-style, composed through a `$` sigil object) that let you hook deeply into Claude Code: modify behavior, restrict capabilities, even change how components render, with safety through side-effect tracking and a registration-order `next()` continuation model. Community feedback materially shaped the design; Anthropic committed to shipping within weeks under the product name \"Claude Mods\" (function hooks remain the engineering primitive), publishing the first three built-in mods' source and a public testing flag (`CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1`). The thread includes demo videos and a technical architecture doc. If you build Claude Code plugins, this is the thread tracking the extensibility primitive they will be built on.",
     "resource_type": "article-guide",
     "topics": [
       "ai-agents",
@@ -480,6 +493,7 @@
     "canonical_url": "https://huggingface.co/spaces/multimodalart/jev-decision-index",
     "brief": "A Hugging Face Space tracking benchmarks and news on the various repros of TypeSafe's Jev — a handy index if you're following the Jev model race.",
     "caveat": null,
+    "details": "A Hugging Face Space by multimodalart titled \"Jev Decision Index\", connected to the Jev retrieval tooling behind jevgrep (also in this library). The Space page is a JavaScript app whose content does not render for automated fetching, so this breakdown is thin: it appears to be an interactive demo or index around Jev's decision and relevance judgments. Worth opening directly if you use jevgrep and want to see the relevance engine's behavior firsthand.",
     "resource_type": "directory-gallery",
     "topics": [
       "testing"
@@ -516,6 +530,7 @@
     "canonical_url": "https://github.com/dzhng/jevgrep",
     "brief": "Find code by asking what it does: a CLI (plus an installable agent skill) that uses Jev to judge relevance across folders, files, and declarations, returning relevant files, reading leads, and verbatim source excerpts in one stdout response. Installs with `npm install -g @dzhng/jevgrep`; its own ten-task SWE-bench comparison claims ~30% lower coding-agent cost at equal task success. (~803 stars, MIT.) Cost figures are author-reported and not independently verified.",
     "caveat": "Installs with `npm install -g @dzhng/jevgrep`; its own ten-task SWE-bench comparison claims ~30% lower coding-agent cost at equal task success. (~803 stars, MIT.) Cost figures are author-reported and not independently verified.",
+    "details": "jevgrep is a CLI for coding agents that finds code by asking what it does: run `jg \"How are telemetry events recorded and sent?\" ./my-project` and it returns relevant files, reading leads, and verbatim source excerpts in one stdout response. It uses the Jev relevance engine to judge relevance across folders, files, and declarations (Python, TypeScript/JavaScript, Go, and Rust get declaration parsing), exploring the repo hierarchy rather than forcing results into a fixed top-k list. The pitch is cost: in their ten-task SWE-bench comparison it solved the same 8 of 10 tasks as the baseline at ~30% lower coding-agent cost. Requires Node 22+ and a key for Vercel AI Gateway, TypeSafe, OpenRouter, OpenCode Zen, or a TypeSafe-compatible endpoint; install the companion agent skill too (`jg skill`), since the CLI alone doesn't teach your agent to use it. MIT, from dzhng; searches send eligible source content to Jev, so choose a search root you intend to share.",
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -554,6 +569,7 @@
     "canonical_url": "https://github.com/Sewer56/rust-llm-tidy",
     "brief": "An opinionated linter aimed at LLM-generated code (Rust, C#, Markdown): fix/reorder/visibility/spacing transforms plus read-only lint checks, runnable per-file, on git-changed files, or in CI via a GitHub Action. The author's personal tooling (\"largely written by LLMs\"); expect opinionated rules, 0 stars. Apache 2.0.",
     "caveat": null,
+    "details": "An opinionated Rust (plus C# and Markdown) linter and tidier aimed squarely at LLM-written code, from Sewer56 — with the author's own preferences baked in and an upfront disclaimer that it is personal tooling, largely LLM-written and reviewed line by line, not held to production quality standards. One command (`rust-llm-tidy`) runs a pipeline of ops — GFM table alignment, fence-delimiter fixes, link hoisting, review-friendly item reordering, visibility narrowing, member spacing, plus read-only lints — with dry-run previews, JSON output, diff-base scoping, YAML config, and a GitHub Action to gate pull requests. Install via `cargo install rust-llm-tidy-cli` or prebuilt binaries from GitHub releases. Apache-2.0.",
     "resource_type": "repository",
     "topics": [
       "developer-tools"
@@ -592,6 +608,7 @@
     "canonical_url": "https://gist.github.com/Sewer56/74cbf6d930ed67653370cc2d683c54dd",
     "brief": "A complete agent-harness system prompt as a gist: JSON tool schemas for edit, glob, grep, question, read, shell, subagent, and write with execution semantics spelled out. Useful reference if you're building or tuning a coding-agent CLI.",
     "caveat": null,
+    "details": "A gist by Sewer56 publishing a `sys-prompt.md` — the system prompt and tool definitions for an agent harness, documenting its full tool surface as JSON schemas: edit, glob, grep, question (ask-the-user with choices), read (files, directories, images, PDFs), shell (zsh commands with timeouts and background execution), subagent (spawning child sessions, including codebase-explorer and web-search specialists), and write. Useful as a reference for what a well-specified agent tool API looks like — exact shapes, required fields, and behavioral notes (e.g., line-number prefixes are not part of file content; background commands notify on completion). If you are designing tool definitions for your own agent, this is a concrete template to crib from.",
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -627,6 +644,7 @@
     "canonical_url": "https://boxd.sh/",
     "brief": "Boxd offers \"composable computers\": persistent KVM dev VMs (2 vCPU, 8 GB RAM, 100 GB disk by default) with live memory forking in under 200ms, snapshots, checkpoints, per-machine HTTPS subdomains, and a CLI/API plus MCP integrations for GitHub, Linear, and Slack — pitched for giving agents root and walking away. Billing is credit-based (about €0.22/h for a default machine per the site; €30 of free credits for new accounts). Pricing figures come from the site and are not independently verified.",
     "caveat": "Pricing figures come from the site and are not independently verified.",
+    "details": "boxd offers \"composable computers\" — persistent Linux VMs (real KVM virtual machines on Ubuntu 24.04, not containers) aimed at developers and AI agents, where running processes, open files, and shell state survive between sessions. The standout primitive is live memory forking: copy a running machine, disk and all, in under 200ms to experiment at the speed of thought, plus snapshots and in-place checkpoints (save points for memory and disk). The platform is fully configurable rather than a black box: checkpoints, snapshots, private domains, org-scoped secrets and env vars, GitHub/Linear/Slack integrations, an MCP server for Claude Code/Codex/opencode, per-machine HTTPS subdomains, and a self-hosted option. Billing is credit-based (about €0.22/hour for the default 2 vCPU/8 GiB machine while running; hibernated machines pay for disk only), every account starts with €30 free credits, and support is direct with the engineers — no ticket queue.",
     "resource_type": "service-platform",
     "topics": [
       "cloud-infrastructure",
@@ -670,6 +688,7 @@
     "canonical_url": "https://boat.dev/",
     "brief": "Boat sells cloud sandbox VMs for long-running agents: full VMs (Docker, systemd, databases), an integrated desktop/browser, and a CLI (`boat new`, `boat prompt` runs Claude Code or Codex inside), API, and SDKs, with stop/resume snapshots that pause billing. They claim $0.036/h for 4 vCPU / 8 GB RAM on a $20/mo plan ($20 of sandbox time), with a price table pitching themselves well under E2B, Daytona, Modal, and Vercel Sandbox. These price comparisons are the vendor's own and are not independently verified.",
     "caveat": "These price comparisons are the vendor's own and are not independently verified.",
+    "details": "boat.dev sells sandboxes for agents as full cloud VMs — real virtual machines where you can run Docker, systemd, databases, and cron, with an integrated desktop and browser for opening web apps, games, 3D scenes, and IDEs. You spawn up to thousands of sandboxes and drive them from the outside via CLI (`boat new/ssh/exec/prompt/events/host/desktop/stop/resume`), API, or SDKs: agents run inside while you prompt and observe from outside. Pricing starts at $20/mo converted into sandbox time, billed per second only while running (stopped sandboxes snapshot and pause billing), with 100–2,000 concurrent sandboxes by plan and EU regions (Germany, Finland, France). Their headline comparison claims a long-running agent workload costs $131/mo on boat versus $265–$1,764/mo across fourteen competitors — vendor numbers, treat as marketing until independently checked. The same team builds Battleships, the open agent-readable sandbox pricing comparison also in this library.",
     "resource_type": "service-platform",
     "topics": [
       "ai-agents",
@@ -712,6 +731,7 @@
     "canonical_url": "https://github.com/edxeth/pi-better-skills",
     "brief": "A pi extension that fixes skill ergonomics: skills resolve their bundled files from the skill directory (`$PI_SKILL_DIR` instead of the workspace), each SKILL.md loads whole on first read, and path guidance is injected into the system prompt so authors stop babysitting paths. Installs with `pi install git:github.com/edxeth/pi-better-skills`; ~20 stars, POSIX-only.",
     "caveat": null,
+    "details": "A pi extension that fixes quality-of-life gaps in pi's Agent Skills support. The core problem it solves: pi runs tools from your workspace, so skills that bundle scripts, references, or templates break when they assume relative paths start at the skill folder — this extension makes skills resolve bundled files from the skill directory, injects a `<skill_context>` block so the model knows which paths belong to the skill versus the workspace, and ensures a SKILL.md loads whole on first read (no more rules lost to partial reads). It also adds skill composition via inline references, glob-based auto-injection, model and thinking overrides, and an option to convert pi's built-in docs prompt block into an on-demand skill to save context. Install with `pi install git:github.com/edxeth/pi-better-skills`; needs a POSIX environment (macOS/Linux, no Windows). From edxeth.",
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -749,6 +769,7 @@
     "canonical_url": "https://www.npmjs.com/package/pi-coralbricks-provider",
     "brief": "An npm package (v1.0.19, by monotykamary — also behind pi-tool-repair and pi-mockdeck in this library) that registers CoralBricks as a provider extension for the pi coding agent: GLM 5.3, GLM 5.3 Flash, and DeepSeek V4.1 Flash through the Coral Inference API. It was shared in a support thread asking whether it uses completions or responses endpoints — check the repo README for the current endpoint behavior.",
     "caveat": null,
+    "details": "pi-coralbricks-provider is a provider extension for pi (the agentic coding framework) that routes model calls through the Coral Inference API, giving pi access to GLM 5.2/5.3, Kimi K3, and GPT-OSS 120B. Published on npm by monotykamary (Tom) under MIT, it plugs into pi's extension system so agent runs can use CoralBricks-served models as drop-in providers. The npm page itself blocks automated fetching, so this summary is drawn from the registry metadata and the package description rather than the rendered page. Useful if you run pi agents and want those models behind one inference endpoint.",
     "resource_type": "provider",
     "topics": [
       "ai-agents",
@@ -785,6 +806,7 @@
     "canonical_url": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
     "brief": "Cloudflare's blog announces a competition to build the next Git platform on Cloudflare, aimed at an AI-agent era of coding. Read it for the contest details and Cloudflare's take on where agent-driven development tooling is headed.",
     "caveat": null,
+    "details": "A Cloudflare blog post announcing a competition to build the next Git platform for the agentic era on Cloudflare Workers and Artifacts. The premise: GitHub was built for humans, but agents now write most code — so what should repositories, branches, pull requests, and code review look like when hundreds or thousands of agents work on the same codebase concurrently? It also announces new Artifacts capabilities in open beta: deploying Artifacts repos to Workers, managing repos from Workers via bindings, event subscriptions on repo activity, data jurisdiction controls, and dashboard metrics (billing starts October 15, 2026). To enter: submit a 5–10 minute demo video plus permissively licensed source by October 14, 2026; the top three teams fly to Cloudflare Connect in San Francisco and first place gets $25,000 in credits.",
     "resource_type": "article-guide",
     "topics": [
       "ai-agents",
@@ -819,6 +841,7 @@
     "canonical_url": "https://ccdeck.dev/",
     "brief": "ccdeck is a free, open-source local dashboard for Claude Code and Codex sessions — live session and tool-call views plus cost tracking. Useful if you run multiple agent sessions and want a single pane of glass.",
     "caveat": null,
+    "details": "ccdeck is a free, open-source (AGPL-3.0) live dashboard for Claude Code and OpenAI Codex CLI sessions that runs on your machine — start it with `npx ccdeck` or the desktop app (macOS, Windows, Linux). It draws every session, subagent, and tool call as a tree on one canvas, surfaces which session is waiting for your input (permission prompts, questions, and finished turns sorted longest-wait first, with desktop notifications), and tracks cost, token usage, and quota pace across Claude and Codex accounts — including multi-account switching and login sharing or repair across paired machines. It watches but cannot steer: the hook only forwards events, never approves tool calls or edits code. Privacy-conscious by design: sessions and prompts never leave the machine (the dashboard listens on 127.0.0.1); only version checks, quota reads with your own credentials, and opt-out usage reports go out.",
     "resource_type": "tool",
     "topics": [
       "ai-agents",
@@ -858,6 +881,7 @@
     "canonical_url": "https://github.com/starslingdev/hpc-sandbox-benchmarks",
     "brief": "A benchmark suite comparing sandbox providers using real high-performance developer and CI/CD workloads, shared as \"new benchmarks in town\". Check it when choosing between sandbox VM offerings for agents — the results are the author's own and are not independently verified.",
     "caveat": "Check it when choosing between sandbox VM offerings for agents — the results are the author's own and are not independently verified.",
+    "details": "hpc-sandbox-benchmarks compares sandbox providers on real high-performance developer and CI/CD workloads rather than synthetic micro-benchmarks. Every provider runs the same target hardware shape (4 vCPU, 8 GiB RAM, 40 GB disk) through end-to-end workflows developers actually experience — clone, dependency install, lint, build, test — because a provider can top a creation-time chart and still lose badly on thousands of small random file writes. Synthetics follow versioned Phoronix Test Suite profiles via OpenBenchmarking.org for reproducibility, and the methodology is strict: fresh sandboxes per result, pinned toolchains, raw samples retained, and failed or non-comparable results disclosed rather than zeroed. Results publish to a leaderboard with full dataset and architecture docs. MIT-licensed, from starslingdev.",
     "resource_type": "repository",
     "topics": [
       "cloud-infrastructure",
@@ -894,6 +918,7 @@
     "canonical_url": "https://www.primalabs.ai/blog/mimo-v2-6-pro-faster-output",
     "brief": "PrimaLabs benchmarks MiMo-V2.6-Pro on its serverless platform at 407 output tokens/sec (vs Xiaomi's 45 at 10k input tokens), priced at $0.43 in / $0.87 out per million tokens with $0.0036 cache. Speed and pricing figures come from PrimaLabs' post (measured by Artificial Analysis, 24 Sep 2026) and are not independently verified.",
     "caveat": "Speed and pricing figures come from PrimaLabs' post (measured by Artificial Analysis, 24 Sep 2026) and are not independently verified.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "inference"
@@ -929,6 +954,7 @@
     "canonical_url": "https://www.bitdeer.ai/en/pricing/ai-models",
     "brief": "Bitdeer AI Cloud's inference pricing page for hosted open-source and enterprise AI models, shared citing GLM-5.3-Flash at $0.075 in / $0.25 out per million tokens ($0.015 cached input) with ~200 tokens/sec. Pricing and throughput figures come from the vendor and are not independently verified.",
     "caveat": "Pricing and throughput figures come from the vendor and are not independently verified.",
+    "details": null,
     "resource_type": "documentation",
     "topics": [
       "inference"
@@ -964,6 +990,7 @@
     "canonical_url": "https://artificialanalysis.ai/models/glm-5-3-flash/providers",
     "brief": "Artificial Analysis' provider comparison page for GLM-5.3-Flash: which inference providers serve it, at what price and speed. Handy when shopping for the cheapest or fastest GLM-5.3-Flash endpoint.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "inference"
@@ -999,6 +1026,7 @@
     "canonical_url": "https://spaces.cua.ai/",
     "brief": "A free full-desktop Space for every agent — macOS VMs on machines you own or in your own cloud (Apple silicon Macs for macOS Spaces, Docker or Podman for Linux), connectable to Claude Code, Codex, Cursor, Gemini CLI, Cline, Kiro and OpenClaw through the Cua MCP. Its Teleport feature moves an app's whole session (tabs, profile, sign-ins) from your Mac into a Space, with nothing read until you approve and Touch ID gating on sensitive items.",
     "caveat": null,
+    "details": "Cua Spaces gives every AI agent a free full desktop — a \"Space\" running as a VM or container on your Mac, machines you own, or your own cloud, streamed to you as a live desktop via Cua's RCDP remote desktop protocol (low latency over QUIC on local networks). Its Teleport feature moves an entire app session — open tabs, profile, sign-ins — from your Mac into a Space as an encrypted session bundle that nothing reads until you approve, with Touch ID gating on sensitive items and end-to-end sealing to the Space's own key. Spaces come agent-ready with permissions granted and tools installed; Claude Code, Codex, Cursor, Gemini CLI, Cline, Kiro, and OpenClaw connect through the Cua MCP. Spaces on your own machines are free (hosted relay free during early access); the stack is source-available under FSL-1.1-MIT, converting to MIT two years after each release, with Cua Driver and Lume under MIT. Note: anonymous usage telemetry is on by default but can be switched off in settings. From the Cua team (trycua/cua on GitHub).",
     "resource_type": "tool",
     "topics": [
       "ai-agents",
@@ -1039,6 +1067,7 @@
     "canonical_url": "https://battleships.dev/",
     "brief": "An agent-readable comparison of sandbox, VM and runtime pricing for AI agents — 366 providers priced through one engine with every figure quoted from the source pricing page, published as llms.txt, JSON files and a Node pricing engine. Built by boat.dev, one of the providers it ranks; the rankings are not independently verified, so take them with a grain of salt.",
     "caveat": "Built by boat.dev, one of the providers it ranks; the rankings are not independently verified, so take them with a grain of salt.",
+    "details": "Battleships is an agent-readable price comparison of sandbox, VM, and runtime providers for AI agents — 361 providers priced through one engine, with every figure quoted from the provider's own pricing page. Everything is published as plain files (llms.txt, per-provider JSON/Markdown with quoted evidence, and a Node pricing engine) so a coding agent can run the comparison for you. The methodology is strict: agents read pricing pages in a real browser, every answer links and quotes its source verbatim, unpublished prices are never read as free, and the same rules apply to boat.dev — the company that built it. What it can't check: whether features actually work end to end, reliability and uptime, sales and support quality, or company health. Data and code are open and contributions are welcome.",
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -1076,6 +1105,7 @@
     "canonical_url": "https://hostbrr.com/",
     "brief": "European VPS and hosting provider (cloud VPS from €3.50/mo, web hosting from €1.25/mo) on AMD EPYC/Threadripper with NVMe storage, a 10Gbps network and included DDoS mitigation; Felix strongly recommends it for non-serious projects, citing best performance-per-dollar in Europe. Felix notes the site's \"order\" tab is quirky; the performance-per-dollar claim is the sharer's and is not independently verified.",
     "caveat": "Felix notes the site's \"order\" tab is quirky; the performance-per-dollar claim is the sharer's and is not independently verified.",
+    "details": "HostBrr is a European budget hosting provider (operating since 2023) selling shared web hosting from €1.25/mo, cPanel reseller plans, storage boxes up to 16 TB, and KVM VPS on AMD EPYC/Threadripper with NVMe storage — performance VPS from €3.50/mo, storage VPS from €3.90/mo. Included across plans: Layer 4/7 DDoS mitigation (up to 3.6 Tbps capacity), a 99.9% uptime guarantee, free daily backups, and 24/7 support, with datacenters in Germany, the US, and Luxembourg. 30-day money-back on shared hosting and 7 days on VPS/storage (crypto payments are non-refundable). Positioned as enterprise-grade infrastructure without the enterprise price; the performance-per-dollar claim comes from the vendor and the sharer and is not independently verified.",
     "resource_type": "service-platform",
     "topics": [
       "cloud-infrastructure"
@@ -1111,6 +1141,7 @@
     "canonical_url": "https://cloud.hostup.se/signup?ref=K4X7KLS8",
     "brief": "Swedish VPS provider at ~$10/month + tax for 8 GB RAM, used and vouched for by thelaggingway in reply to ROman. Note: the signup page's bot protection rejected the automated link check, so the URL is posted as-shared and only sharer-verified.",
     "caveat": null,
+    "details": "HostUp (hostup.se) is a Swedish hosting provider — VPS, web hosting, and domains — pitching on local infrastructure: their own hardware in Stockholm, with customer data never leaving Sweden. Their onboarding pitch is human-led migration (they move your websites and email accounts for you, by hand rather than robots), instant activation, 14-day money-back guarantee, and support ranging from WordPress to email configuration. Relevant in a providers channel for anyone wanting EU/Sweden-based hosting rather than the usual US clouds. (Note: the shared link was a referral signup URL, `cloud.hostup.se/signup?ref=K4X7KLS8`, which returns 403 to anonymous fetch — the breakdown is based on their public homepage.)",
     "resource_type": "service-platform",
     "topics": [
       "cloud-infrastructure"
@@ -1146,6 +1177,7 @@
     "canonical_url": "https://tierhive.com/",
     "brief": "Hourly-billed NAT VPS hosting aimed at small-VPS needs — deploy instantly, scale dynamically, pay only for hours used, with load balancing and automatic failover included. thelaggingway recommends it for small-VPS needs but hasn't tried it; pricing and feature claims are vendor-reported and not independently verified.",
     "caveat": null,
+    "details": "TierHive is hourly-billed NAT VPS hosting pitched as the cheapest of its kind — deploy in seconds, scale CPU, RAM, and disk live without downtime, pay only for the hours used, and cancel anytime, with plans from tiny 128 MB instances (about $0.10/mo equivalent) upward. Each customer gets a full /24 private subnet with WireGuard mesh networking between locations, plus built-in HAProxy load balancing with automatic Let's Encrypt SSL, automatic failover, scheduled backups with instant restore, and one-click community recipes (WordPress, LAMP, Docker, Laravel). A $3 minimum top-up is required after registration; locations span Europe, North America, Singapore, Sydney, and Tokyo. From TierHive, London.",
     "resource_type": "service-platform",
     "topics": [
       "cloud-infrastructure"
@@ -1181,6 +1213,7 @@
     "canonical_url": "https://heavencloud.in/",
     "brief": "Indian hosting provider (Mumbai, plus US/Singapore/Germany) for Discord/Telegram bots, Lavalink nodes, game servers and Ryzen VPS — a free 24/7 Discord bot tier with no credit card, paid bot plans from ₹20/mo. The share cites a 99.5% SLA, but the site's FAQ reserves uptime SLAs for paid plans; take the SLA claim with caution.",
     "caveat": null,
+    "details": "HeavenCloud is an Indian hosting provider (Mumbai, plus US, Singapore, and Germany) specializing in Discord/Telegram bot hosting, managed Lavalink v4 audio nodes for music bots, game servers (Minecraft, FiveM, Hytale), and Ryzen VPS — on AMD Ryzen 9 9950X with NVMe storage and DDoS-protected uplinks, managed through a Pterodactyl panel. Pricing is in INR: a free 24/7 Discord bot tier with no credit card, paid bots from ₹20/mo, managed Lavalink from ₹200/mo, game servers from ₹60/mo, and VPS from ₹293/mo. DDoS protection is included on every plan including the free tier; paid plans carry a 95–99.95% network uptime SLA while free tiers aim for 24/7 without a paid guarantee. Google reviews show 5.0 from 12 reviews as of late September 2026 — a small sample, so take it with a grain of salt.",
     "resource_type": "service-platform",
     "topics": [
       "cloud-infrastructure"
@@ -1216,6 +1249,7 @@
     "canonical_url": "https://sacchen.github.io/papers/hog/",
     "brief": "A probability paper proving that in the Hog dice game, rolling n dice maximizes the expected turn score for an n-sided die — expectation derived via the law of total expectation, with a full maximum proof and charts. Link-only share with no surrounding context; classifiable from the page itself.",
     "caveat": "Link-only share with no surrounding context; classifiable from the page itself.",
+    "details": "A probability paper on Samuel Chen's blog proving that in the Hog dice game (from CS61A), rolling n dice maximizes the expected turn score for an n-sided die. It derives the expected turn score via the law of total expectation — accounting for the \"Sow Sad\" rule where any 1 collapses the turn score to 1 — then proves the maximum sits exactly at m = n by analyzing the sign of the marginal gain between rolling m+1 and m dice, with charts showing each curve peaking at m = n for 4-, 6-, and 10-sided dice. A neat, self-contained read if you like seeing a game-theory intuition made rigorous.",
     "resource_type": "article-guide",
     "topics": [
       "developer-tools"
@@ -1251,6 +1285,7 @@
     "canonical_url": "https://aoru.ai/pricing",
     "brief": "Inference provider serving resident open models with zero-log inference behind one OpenAI-compatible endpoint; Plus at $12/month and Pro at $25/month with refilled token balances, plus usage-based PAYG credits from $5. Shared in reply to a 36B tokens/month, $2000/month budget request; pricing and zero-log claims are vendor-reported and not independently verified.",
     "caveat": "Shared in reply to a 36B tokens/month, $2000/month budget request; pricing and zero-log claims are vendor-reported and not independently verified.",
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -1286,6 +1321,7 @@
     "canonical_url": "https://hypercli.com/pricing/",
     "brief": "Flat-rate provider plans for coding agents — Solo $39/month (25M tokens/day), Team $79/month (50M pooled), Pro $149/month (100M pooled) — with OpenAI- and Anthropic-compatible API keys drawing from the same daily pool, capped with throttling instead of overage billing. Shared for the same 36B tokens/month request; 7-day free trial, no card. Plan figures are vendor-reported and not independently verified.",
     "caveat": "Plan figures are vendor-reported and not independently verified.",
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -1323,6 +1359,7 @@
     "canonical_url": "https://arilo.id/#pricing",
     "brief": "Flat-rate coding-inference provider with predictable 30-day plans — Coder $0.99, Starter $4.99, Pro $19.99, Hacker $100, up to Small Business $490 — each a prepaid credit allowance against per-token metered pricing, plus an off-peak JSONL batch path at 50% off PAYG. thelaggingway shared it \"still to be evaluated\", so treat all of this as unevaluated marketing until checked. Conversations are not used for training unless you opt into their Research Program.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -1360,6 +1397,7 @@
     "canonical_url": "https://vault.hyperiux.com",
     "brief": "Hyperiux Vault is a source-first library of interaction effects for React and Next.js — scroll systems, cursor effects, text reveals, page transitions and WebGL scenes that install as editable code in your own repo via the Hyperiux CLI. The free core includes 50+ effects; Pro unlocks all 150+ with new effects added regularly, and code you have installed stays yours even if you cancel.",
     "caveat": null,
+    "details": "Hyperiux Vault is a source-first library of interaction effects for React and Next.js — scroll systems, cursor effects, text reveals, page transitions, and WebGL/Three.js scenes — built on the premise that most component libraries stop at the static interface while memorability lives in motion. Effects install as editable code directly into your project via the Hyperiux CLI, so you own and can tune the implementation (copy, timing, easing, breakpoints, reduced-motion behavior) instead of depending on a black-box kit. The free core includes 50+ production-ready effects with commercial-friendly usage; Pro unlocks all 150+ effects with regular new releases and per-effect dependency and performance notes. Code already installed stays in your repo even if you cancel. From @_hyperiux_ (Hyperiux, India); agency licensing is offered for client work.",
     "resource_type": "library-framework",
     "topics": [
       "frontend"
@@ -1400,6 +1438,7 @@
     "canonical_url": "https://vantaui.com",
     "brief": "VantaUI is a UI library built from real products — production-grade site templates, app templates, components, blocks and Figma files for Next.js, React and LLM-assisted builds, from @vanta_ui. It doubles as a reference for how world-class products handle UI patterns, copywriting and user flows.",
     "caveat": null,
+    "details": "VantaUI is a UI library built from real products — production-grade site templates, app templates, components, blocks, and Figma files, pitched as a shortcut past the blank canvas for Next.js, React, and LLM-assisted builds. Its angle is \"more than inspiration\": instead of generic kit components it documents how actual world-class products handle UI patterns, copywriting, and user flows, so it doubles as a design reference. The homepage leads with latest additions and reviews from developers and studios using it as their go-to UI reference. From @vanta_ui.",
     "resource_type": "library-framework",
     "topics": [
       "frontend"
@@ -1439,6 +1478,7 @@
     "canonical_url": "https://bencho.dev",
     "brief": "Bencho is a library of interactive React components and micro-interactions — asset swap, heat map, image compare, dynamic island, magnetic select, slide-to-confirm and dozens more — each explorable live and liftable straight into your projects. From @cabralorenzo; a shortcut to polished interactions without building them from scratch.",
     "caveat": null,
+    "details": "Bencho is a library of interactive React components and micro-interactions you can explore live and lift straight into your projects. The catalog covers dozens of tactile patterns — asset swap, heat map, image compare, dynamic island, magnetic select, slide to confirm, pull to refresh, tilt card, reorder list, radial menu, and more — each labeled with its gesture (press, hover, drag, swipe, type, slide, select). A shortcut to polished, tactile UI without building each interaction from scratch. From @cabralorenzo.",
     "resource_type": "library-framework",
     "topics": [
       "frontend"
@@ -1477,6 +1517,7 @@
     "canonical_url": "https://obsidianui.dev",
     "brief": "ObsidianUI is a React and Tailwind CSS component library with an emphasis on motion — featured components and interactive effects you can preview, read the source of, and try directly in your project. From @athrix_codes; a customizable starting point for interfaces where the details matter.",
     "caveat": null,
+    "details": "ObsidianUI is a React and Tailwind CSS component library with an emphasis on motion — featured components plus cursor and scroll effects you can preview, read the source of, and try directly in your project. The intended flow is deliberately simple: preview it, read the code, drop it into your build, then customize styling and behavior to fit the interface you are actually shipping. Positioned for people who want a customizable starting point for expressive interfaces rather than rebuilding every interaction. From @athrix_codes.",
     "resource_type": "library-framework",
     "topics": [
       "frontend"
@@ -1516,6 +1557,7 @@
     "canonical_url": "https://ui.beste.co",
     "brief": "Beste UI is a collection of production-ready shadcn/tailwind blocks and components — 2189+ blocks (heroes, pricing, testimonials, error pages) and 1326+ smaller pieces, each self-contained and installed with one shadcn CLI command and no runtime dependency. Free pieces are MIT-licensed for commercial use; Pro blocks need a Beste UI license, though installed code keeps working if the license lapses.",
     "caveat": null,
+    "details": "Beste UI is a curated collection of production-ready shadcn/tailwind blocks and components for React 19 — 2189+ full page sections (heroes, feature grids, pricing tables, testimonials, error pages, plus elaborate WebGL/Canvas showpieces like a CRT broadcast hero and a starling murmuration) and 1326+ smaller composable pieces. Every piece is self-contained and installs with a one-line shadcn CLI command that writes files into your components directory, registers shadcn primitives, and installs npm packages; there is no runtime dependency and no upgrade path to fight. Free blocks are MIT-licensed for commercial use; Pro blocks need a Beste UI license, though installed code keeps working if the license lapses. From @withbeste.",
     "resource_type": "library-framework",
     "topics": [
       "frontend"
@@ -1555,6 +1597,7 @@
     "canonical_url": "https://prisminference.com/pricing",
     "brief": "Pay-as-you-go inference with no minimums across serverless, elastic, private and dedicated endpoints, plus batch. Lists per-model rates (GLM-5.3 $1.40/$4.40, Kimi K3 $3/$15 per 1M tokens) and states strict zero data retention — inputs and outputs are never used for training.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -1590,6 +1633,7 @@
     "canonical_url": "https://inferhub.dev/pricing",
     "brief": "Proxy service that pools AI subscriptions into one API. Shared as \"a rly interesting proxy\" with per-plan pricing on its site.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -1625,6 +1669,7 @@
     "canonical_url": "https://aihubmix.com/",
     "brief": "Multi-model API with per-model pricing, including a GLM 5.3 coding endpoint. Shared via its GLM 5.3 API pricing page.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -1660,6 +1705,7 @@
     "canonical_url": "https://www.surplusintelligence.ai/",
     "brief": "OpenAI-compatible inference marketplace that routes each request to the cheapest current offer. Vendor claims ~38% savings via routing; pricing and retention terms weren't independently verified.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -1695,6 +1741,7 @@
     "canonical_url": "https://kitani.ai/",
     "brief": "Open inference on independent hardware with a prepaid USD balance — the max request cost is reserved, then settled on completion. API is OpenAI-compatible at api.kitani.ai/v1.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -1730,6 +1777,7 @@
     "canonical_url": "https://paretoinference.com/",
     "brief": "Pay-per-token inference running on Pareto's own GPUs, including GLM 5.3 Flash. Shared via its pricing page.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -1765,6 +1813,7 @@
     "canonical_url": "https://www.byteplus.com/en/activity/codingplan",
     "brief": "BytePlus's Coding Plan for Claude Code, Cursor, Cline, Kilo Code, Roo Code and OpenCode, covering models like Dola-Seed-2.0-pro, GLM-5.1 and DeepSeek V4. Exact plan prices weren't visible on the promo page.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -1801,6 +1850,7 @@
     "canonical_url": "https://parasail.io/",
     "brief": "Inference provider whose homepage FAQ states explicit zero data retention alongside SLA terms. Surfaced in #providers via a comparisons board post.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -1836,6 +1886,7 @@
     "canonical_url": "https://inceptron.io/",
     "brief": "Inference provider with ISO 27001 certification, GDPR compliance and EU residency. No zero-retention statement was found on its site.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -1871,6 +1922,7 @@
     "canonical_url": "https://www.subconscious.dev/pricing",
     "brief": "An inference platform built for long-running coding agents, using runtime context compression to cut token bills on extended agentic traces; it drops into Claude Code, Codex, OpenCode, or any OpenAI-compatible harness, and can also be deployed inside your own cloud. Plans sell as daily token allocations with no per-seat pricing — Base at $100/month for 60M tokens/day, Pro at $500/month for 300M/day, Heavy at $2,000/month for 1.2B/day — plus per-token overflow billing. Its savings and performance claims (2× faster task completion, up to 80% cost reduction) are vendor-reported and not independently verified.",
     "caveat": "Its savings and performance claims (2× faster task completion, up to 80% cost reduction) are vendor-reported and not independently verified.",
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -1908,6 +1960,7 @@
     "canonical_url": "https://feihoa.com/",
     "brief": "Unlimited AI plans from €6. States prompts and outputs are not used for training, though it may retain data briefly for security, abuse prevention and legal reasons.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -1943,6 +1996,7 @@
     "canonical_url": "https://crof.ai/",
     "brief": "Inference provider at crof.ai; public evidence is thin (snippet-based). Third-party substitution allegations seen during research are unverified and not repeated here.",
     "caveat": "Third-party substitution allegations seen during research are unverified and not repeated here.",
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -1978,6 +2032,7 @@
     "canonical_url": "https://github.com/FeiZhuLulu/real-api-pricing",
     "brief": "GitHub repo behind the real-api-pricing comparison of actual inference API prices. Its web app is already in this library's web-apps section; this is the distinct source repo.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "inference"
@@ -2011,6 +2066,7 @@
     "canonical_url": "https://opencode.ai/go",
     "brief": "OpenCode's own $10/month subscription bringing its agentic coding experience to OpenCode or any agent, with generous per-model request limits on a curated open-source lineup (Kimi K2.7 Code, MiniMax M3, GLM-5.3-Flash, DeepSeek V4.1 Flash, and others) — limits shown as estimated requests per 5-hour window, with optional top-up credits. Free rotating models appear on a limited-time basis; cancel any time. Usage limits are vendor-stated estimates, and the free rotating models are time-limited.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -2047,6 +2103,7 @@
     "canonical_url": "https://singularityapi.dev/",
     "brief": "A unified AI gateway routing to DeepSeek, Kimi, GLM, and 300+ models through one endpoint, with smart routing by cost, speed, quality, or availability, built-in failover, and usage analytics; it also sells reserved GPU-lane capacity from $0.20/hr for dedicated inference and is currently offering 100% bonus credits on recharges up to $1,000. A forwarded announcement noted DeepSeek-V4.1-Flash going live on the platform. The homepage publishes no per-token price list, and the bonus-credit promo terms are vendor-published.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2082,6 +2139,7 @@
     "canonical_url": "https://deepakness.com/deepseek/",
     "brief": "Personal utility page showing DeepSeek's live peak/off-peak status in local time with both models' prices either way. Rates match the official docs.",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "inference"
@@ -2117,6 +2175,7 @@
     "canonical_url": "https://tokenharbor.ai/pricing",
     "brief": "A pass-based inference API: a free tier with a rotating model allowance, an Agent Pass at $1.99/month ($10 included usage, for always-on agent scripts), an Office Pass at $9.99/month ($35 usage), and a Frontier Pass at $99/month ($180 usage) — each tier unlocking progressively heavier models, with boosted models billing at reduced rates. 'Included usage' is measured at the site's own published per-token prices rather than as a cash wallet balance, so the effective deal is vendor-reported and not independently verified.",
     "caveat": "'Included usage' is measured at the site's own published per-token prices rather than as a cash wallet balance, so the effective deal is vendor-reported and not independently verified.",
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2152,6 +2211,7 @@
     "canonical_url": "https://www.streamlake.ai/",
     "brief": "Kuaishou's AI cloud / model-as-a-service platform with API and SDK integration for online inference. Holds ISO 27001/27017/42001 and MLPS Level 3; no explicit zero-retention statement found.",
     "caveat": null,
+    "details": null,
     "resource_type": "service-platform",
     "topics": [
       "cloud-infrastructure",
@@ -2188,6 +2248,7 @@
     "canonical_url": "https://www.coreweave.com/",
     "brief": "GPU cloud infrastructure company offering serverless inference APIs, dedicated endpoints and GPU clusters. Infrastructure rather than a retail model API.",
     "caveat": null,
+    "details": null,
     "resource_type": "service-platform",
     "topics": [
       "cloud-infrastructure",
@@ -2226,6 +2287,7 @@
     "canonical_url": "https://gmicloud.ai/",
     "brief": "GPU cloud with serverless inference APIs and dedicated endpoints; lists H100 at $2/GPU-hour and H200 at $2.60/GPU-hour.",
     "caveat": null,
+    "details": null,
     "resource_type": "service-platform",
     "topics": [
       "cloud-infrastructure",
@@ -2262,6 +2324,7 @@
     "canonical_url": "https://venice.ai/",
     "brief": "Private AI chat and API with free entry and paid tiers (Pro $18/mo). Its API carries a zero-data-retention promise.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -2299,6 +2362,7 @@
     "canonical_url": "https://www.relace.ai/",
     "brief": "Coding-focused API (Instant Apply model, code retrieval, embeddings, reranking) rather than general LLM inference. Available via Continue.dev, with a self-host/VPC option.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -2335,6 +2399,7 @@
     "canonical_url": "https://antseed.com/",
     "brief": "Open market for AI inference with no account or email required and optional TEE-backed providers. That design is not the same as a universal zero-retention promise.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2370,6 +2435,7 @@
     "canonical_url": "https://inco.ai/",
     "brief": "Inference company from the Inco (confidential-computing) team, branding itself 'inference, reimagined for the agentic era.' It open-sourced Splash, a local inference engine claiming 144 tokens/s on an M5 Max with Qwen3.8-27B (integrated into LM Studio), and its earlier DFlash speculative-decoding tech was adopted by SGLang, vLLM, TensorRT-LLM, llama.cpp, plus Meta, NVIDIA, and Xiaomi. The 144 tokens/s figure is a peak vendor-demonstration value, not an independently verified benchmark; the public site is still sparse with no visible pricing or hosted-API details.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2405,6 +2471,7 @@
     "canonical_url": "https://kenari.id/",
     "brief": "An Indonesian AI cloud and gateway: one API key and one Rupiah wallet behind an OpenAI-compatible endpoint, with per-token prices quoted in Rupiah (e.g. DeepSeek V4 Flash at Rp 2,750 input / Rp 5,500 output per 1M tokens, GLM-5.3-Flash at Rp 2,000/Rp 6,000), top-ups from Rp 1,000, free models, and free BYOK routing through its dashboard. Also bundles one-click app hosting ('Pods' — n8n, OpenClaw, a WhatsApp gateway) and monthly plans from Rp 49rb.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2441,6 +2508,7 @@
     "canonical_url": "https://www.inferencesaver.com/en",
     "brief": "Unified API and SDK routing requests across 1,000+ models from many providers with automatic fallbacks, best-price optimization, and a real-time observability dashboard. Markets itself as one API for every AI model, advertising per-model 'up to 70% off' rates and 40–80% savings on inference spend. The savings and discount figures are vendor marketing, not independently verified.",
     "caveat": "The savings and discount figures are vendor marketing, not independently verified.",
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2477,6 +2545,7 @@
     "canonical_url": "https://nube.sh/",
     "brief": "Inference API with published per-token pricing. States explicit zero data retention with an upstream no-training clause.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2512,6 +2581,7 @@
     "canonical_url": "https://cline.bot/",
     "brief": "Subscription for Cline's coding agent at $9.99/mo, positioned as 2–5x the quota versus direct API spend. The \"5x cheaper than API\" phrasing seen in chatter is not verified.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -2548,6 +2618,7 @@
     "canonical_url": "https://tokenfactory.nebius.com/",
     "brief": "Nebius's pay-per-token hosted inference for open text/vision models (~23 models incl. DeepSeek, Llama, Qwen). New accounts get trial credit; uses separate v1 API credentials.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2583,6 +2654,7 @@
     "canonical_url": "https://www.coralbricks.ai/",
     "brief": "High-throughput inference aimed at agents. A forwarded promo code (SUPERINT) covered GLM 5.2 and Kimi K3.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2618,6 +2690,7 @@
     "canonical_url": "https://fast.inference.net/pricing",
     "brief": "Gateway for AI models and coding agents with provider failover. $9/mo gives $10 gateway credit, $49/mo gives $60, then pay-as-you-go at direct rates.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2653,6 +2726,7 @@
     "canonical_url": "https://entrim.ai/",
     "brief": "$10 in credits plus pay-as-you-go inference. Processes prompts and outputs in RAM only and does not train on them.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2688,6 +2762,7 @@
     "canonical_url": "https://merge.dev/",
     "brief": "Multi-provider gateway. A Discord-shared \"75% off DeepSeek V4 Flash through September 30\" promo was not corroborated on its site.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2723,6 +2798,7 @@
     "canonical_url": "https://sference.com/",
     "brief": "Managed inference for open models on European GPUs. Public evidence is snippet-based; details unverified.",
     "caveat": "Public evidence is snippet-based; details unverified.",
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2758,6 +2834,7 @@
     "canonical_url": "https://unifically.com/",
     "brief": "Pay-per-use multi-model API (no subscription) with a $0.20 free balance and per-generation pricing, e.g. $0.03 per image. The sharer called it \"sus\" — treat vendor claims cautiously.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2793,6 +2870,7 @@
     "canonical_url": "https://spark.reflex.inc/",
     "brief": "Post-trained Kimi K3 served with 6x context at a claimed 490 tokens/sec. Performance claims come from the provider's own page.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2828,6 +2906,7 @@
     "canonical_url": "https://openmodels.market/plans",
     "brief": "Credit-subscription marketplace spanning 333 models, 100+ live routes, and 24+ providers: plans from $5/mo ($6 credits) to $99/mo ($110 credits), with credits that never expire and roll over. Every plan unlocks every model route; usage is billed per token based on the selected provider route, and one-time top-ups accept USDC.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2863,6 +2942,7 @@
     "canonical_url": "https://openrouter.ai/",
     "brief": "Multi-provider model gateway charging a 5.5% fee, with 50 free requests/day. Shared via its GLM 5.3 provider/pricing page.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2898,6 +2978,7 @@
     "canonical_url": "https://tensorx.ai/pricing/",
     "brief": "EU-hosted pay-as-you-go inference whose pricing page states verbatim: \"all inference is zero data retention.\"",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2933,6 +3014,7 @@
     "canonical_url": "https://airouter.ch/",
     "brief": "Swiss-hosted inference API (\"All of AI. One API. Made in Switzerland\") with GDPR compliance and data hosted in Switzerland. Flat CHF 39/mo unlimited under a fair-use policy; OpenAI-compatible at api.airouter.ch/v1.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -2968,6 +3050,7 @@
     "canonical_url": "https://b.ai/",
     "brief": "Unified LLM API at api.b.ai/v1 where one key speaks three protocols — OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages — with docs at docs.b.ai. It gained traction for generous free models (DeepSeek-V4-Flash, Tencent HY3, MiMo-V2.5, GLM-5.3-Flash), though its promotions page moved free offers to limited-time 10%-of-reference discounts on 16 Sep 2026, leaving only a 300,000-credit (~$0.30, 30-day) referral gift; login is via Web3 wallet or Google. Homepage details are unverified beyond third-party reviews from mid-Sep 2026, so confirm current pricing on the site itself.",
     "caveat": "Homepage details are unverified beyond third-party reviews from mid-Sep 2026, so confirm current pricing on the site itself.",
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3003,6 +3086,7 @@
     "canonical_url": "https://www.orcarouter.ai/",
     "brief": "Zero-markup BYOK router with an open-source self-hostable Lite (MIT); the hosted plan includes free credits. Pass-through per-token pricing, e.g. DeepSeek V4 Flash $0.15/$0.29 per 1M in/out.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3038,6 +3122,7 @@
     "canonical_url": "https://openference.ai/",
     "brief": "Inference API at openference.ai; public evidence is snippet-based only. A Discord claim that its GLM 5.2 \"is not even real\" is unverified.",
     "caveat": "A Discord claim that its GLM 5.2 \"is not even real\" is unverified.",
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3073,6 +3158,7 @@
     "canonical_url": "https://wafer.ai/",
     "brief": "Inference provider, with DeepSeek V4 Flash mentioned on it in later chatter. Surfaced via an X post from @wafer_ai.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3108,6 +3194,7 @@
     "canonical_url": "https://fireworks.ai/",
     "brief": "Serverless inference from $0.10/1M tokens (under 4B params), $1 free starter credit, 50% off batch. 100–400+ open models with an OpenAI-compatible API, FireAttention engine, LoRA/RFT fine-tuning and dedicated GPUs.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3143,6 +3230,7 @@
     "canonical_url": "https://runinfra.ai/",
     "brief": "Inference provider; its DeepSeek V4 Flash $0.13/M input price was corroborated. A \"1.8¢/M blended\" figure seen in chatter is not a list price.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3178,6 +3266,7 @@
     "canonical_url": "https://freebuff.com/",
     "brief": "Free, ad-supported coding agent (CLI, desktop, web, cloud, chat) powered by open models like DeepSeek V4 Pro/Flash and MiniMax M3. Explicit no-training stance — it doesn't share data with third parties that would train on it.",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "ai-agents"
@@ -3216,6 +3305,7 @@
     "canonical_url": "https://griphubrouter.com/",
     "brief": "A pay-as-you-go multi-model router aimed at Indonesian developers: 47 models from 12 vendors behind one OpenAI-compatible endpoint, with credits at Rp 300 each, top-ups from Rp 15,000 via QRIS, and no subscription or foreign card required. A one-click installer wires it into VS Code, Claude Code, OpenCode, GitHub Copilot, and Hermes Agent, and a live status widget shows gateway response times.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3251,6 +3341,7 @@
     "canonical_url": "https://melious.ai/",
     "brief": "EU-hosted pay-as-you-go inference; the sharer cited ~240 tok/s on DeepSeek V4 Flash. States it does not train on user data.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3286,6 +3377,7 @@
     "canonical_url": "https://www.siliconflow.com/",
     "brief": "One OpenAI-compatible API for open and commercial LLMs with serverless pay-as-you-go and dedicated endpoints. Homepage claim: \"No data stored, ever.\"",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3321,6 +3413,7 @@
     "canonical_url": "https://cheaperinference.com/",
     "brief": "Pay-as-you-go inference with published example rates. Prompt and response bodies are not logged, with zero data retention on supported routes.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3356,6 +3449,7 @@
     "canonical_url": "https://novita.ai/",
     "brief": "AI-native cloud combining serverless model APIs (200+ models through one API, billed per token) with dedicated private endpoints, secure isolated agent sandboxes, and GPU cloud (on-demand instances, serverless GPU, bare metal). One platform for the full AI stack — model APIs, GPUs, and agent runtimes — backed by testimonials from Hugging Face, Kilo Code, and Fish Audio. Its 'up to 50% less than major cloud providers' claim is vendor-reported and not independently verified.",
     "caveat": "Its 'up to 50% less than major cloud providers' claim is vendor-reported and not independently verified.",
+    "details": null,
     "resource_type": "service-platform",
     "topics": [
       "cloud-infrastructure",
@@ -3393,6 +3487,7 @@
     "canonical_url": "https://commandcode.ai/docs/plans/goat",
     "brief": "GOAT plan — $10/mo for $70 in credits (limits $14/5h, $35/week, $70/month) across 30+ open and closed models. No zero-retention statement found.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3428,6 +3523,7 @@
     "canonical_url": "https://api-docs.deepseek.com/quick_start/pricing",
     "brief": "DeepSeek's official API pricing: pay-as-you-go with 50% off-peak discounts (Flash $0.15/$0.60, Pro $0.66/$1.98 per 1M in/out on cache miss; peak is 2x). The $0.13/$0.30 figures seen in Discord are stale.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3463,6 +3559,7 @@
     "canonical_url": "https://yolo-auto.com/",
     "brief": "Unlimited-token API plans, currently $19/$39 — the Discord-era $6/mo claim is superseded. Shared as an unlimited Qwen3.6-35B API.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3498,6 +3595,7 @@
     "canonical_url": "https://claudin.io/",
     "brief": "Credit-based subscription for coding agents: plans run $19/mo (3,000 credits) to $399/mo (72,000 credits), a typical request on their tuned Claudinio model costs about one credit, and there is no hourly cap — a hot month is fixed with a top-up instead of waiting for a clock. Catalogue models (DeepSeek V4.1 Flash, GLM-5.3, Kimi K3, Claude Opus, GPT-6, Gemini, Grok) cost a fixed 2×–36× multiple of a credit, and one API key plugs into Claude Code, Cursor, Cline, and other OpenAI/Anthropic-compatible clients.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -3534,6 +3632,7 @@
     "canonical_url": "https://regolo.ai/pricing/",
     "brief": "European inference platform with EUR per-token pay-as-you-go (e.g. Llama-3.3-70B €0.60/€2.70 per 1M in/out) and 70% off the first 3 months. Marketing claim: \"Zero data retention on European green infrastructure.\"",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3569,6 +3668,7 @@
     "canonical_url": "https://arliai.com/",
     "brief": "Inference API with unlimited-request plans and an explicit zero-logging statement. The sharer noted it seemed new and unstable.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3604,6 +3704,7 @@
     "canonical_url": "https://inference.hetzner.com/api/v1",
     "brief": "Hetzner's free experimental open-weight LLM inference API (announced July 2026), EU-hosted. Roughly 4M input / 100k output tokens per 60s per key, no SLA — not for production.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3639,6 +3740,7 @@
     "canonical_url": "https://synthetic.new/",
     "brief": "$30/month subscription (or usage-based billing) for running LLMs privately, usable in its own app or any OpenAI-compatible tool (Roo, Cline, Octofriend). It also built Synbad, an open-source evaluation suite sourced from real coding-agent bugs, and positions itself as coding-agent-optimized inference. Synbad's '100% vs as low as 66%' pass-rate comparison is vendor marketing, not independently verified.",
     "caveat": "Synbad's '100% vs as low as 66%' pass-rate comparison is vendor marketing, not independently verified.",
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -3675,6 +3777,7 @@
     "canonical_url": "https://asterlab.ai/",
     "brief": "OpenAI-compatible inference with free, Pro and Max tiers. States zero data retention on the free tier; Pro around $20 for $30 in tokens.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3710,6 +3813,7 @@
     "canonical_url": "https://featherless.ai/",
     "brief": "A serverless inference platform for open-weight models with a catalog of 40,000+ models on a single OpenAI-compatible API — headlined by a flat-rate Chat plan at $25/month with unlimited tokens. Also offers a usage-based Developer tier ($50/month in credits, per-token, with rollover) and custom dedicated-GPU Business plans; the company raised a $20M Series A in December 2025. The flat-rate Chat plan is for interactive human-driven use only — not for automation, reselling, app/API traffic, or benchmarking, and the site says misuse may lead to cancellation without refund.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3745,6 +3849,7 @@
     "canonical_url": "https://longcat.ai/",
     "brief": "Meituan's LongCat with Token Packs — 50M tokens for $4.90 (promotion corroborated). Surfaced via an X post.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3780,6 +3885,7 @@
     "canonical_url": "https://deepinfra.com/",
     "brief": "Pay-as-you-go inference across 100+ models with explicit zero data retention. Example: GLM-5.3 Flash $0.075/$0.25 per 1M.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3815,6 +3921,7 @@
     "canonical_url": "https://cheapestinference.com/",
     "brief": "Flat-rate unlimited time-block subscriptions — Core pool from $22/mo per 8-hour daily block, Frontier $71/mo, Flagship $199/mo. Prompts and completions are processed in memory and discarded, never used for training.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3850,6 +3957,7 @@
     "canonical_url": "https://privacywatch.wyrdwerk.com/",
     "brief": "Open-source comparison of 86+ provider families (97 surfaces) on training, retention, zero-retention and data location, quoting each provider's own ToS and privacy docs. Maintained by the same crew as this library.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "inference",
@@ -3886,6 +3994,7 @@
     "canonical_url": "https://platform.openai.com/docs/pricing",
     "brief": "OpenAI's official per-1M-token pricing page (e.g. gpt-6-luna $0.10 in / $0.50 out short-context). Useful as the first-party reference behind third-party price comparisons.",
     "caveat": null,
+    "details": null,
     "resource_type": "documentation",
     "topics": [
       "inference"
@@ -3921,6 +4030,7 @@
     "canonical_url": "https://zro.moonmath.ai/pricing",
     "brief": "$20/mo including $60 of inference spend, OpenAI/Anthropic-compatible. Explicit zero request retention — prompts and completions are never used for training, evaluation or analytics.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3956,6 +4066,7 @@
     "canonical_url": "https://inferx.net/models",
     "brief": "Pay-as-you-go inference across 200+ production-ready models you can deploy with one click from its console. 'Ready now' endpoints publish per-token input/output/cached-input pricing, with promotional models showing the original rate crossed out beside the active InferX price — the catalog explicitly marks unpublished fields as missing rather than estimating them.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -3993,6 +4104,7 @@
     "canonical_url": "https://xkiro.com/",
     "brief": "Unified gateway — free tier with 40+ free models and 5M tokens/day (no card), pay-as-you-go about 35% below official prices on select models. 90+ models across 16 providers on one API key.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -4028,6 +4140,7 @@
     "canonical_url": "https://platform.stepfun.ai/",
     "brief": "StepFun's open platform with a usage-billed API (api.stepfun.ai/v1) and a 15-day trial needing no card. Serves Step 5 Preview and StepAudio 3.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -4063,6 +4176,7 @@
     "canonical_url": "https://pgsgrove.com/",
     "brief": "A privacy-first AI company selling a Coding Plan with 'near-endless messaging' for agents and coding tools on one API key, running open models including GLM 5.2, MiniMax M3, and Kimi K2.6, with per-token access from $5 and the first month free. It frames itself around data sovereignty and an 'altruistic AI' charter, and also sells a $3.95/month memory-migration tool (Memory Forge) and an AI workspace subscription. 'Near-endless messaging' is marketing language with no published allowance numbers — actual limits are unverified.",
     "caveat": "'Near-endless messaging' is marketing language with no published allowance numbers — actual limits are unverified.",
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -4099,6 +4213,7 @@
     "canonical_url": "https://portal.neuralwatt.com/",
     "brief": "$10/kWh pay-as-you-go (or per-token), $1 free credit after adding a payment method; monthly plans $20–$200. Hosted multi-model OpenAI-compatible API plus on-prem deployment; 14 models.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -4134,6 +4249,7 @@
     "canonical_url": "https://chutes.ai/",
     "brief": "Decentralized, open-source serverless compute platform in the Bittensor ecosystem, aiming to serve new SOTA open-source models 'minutes after release' across text, image, video, speech, and music. Pay-as-you-go billed per token consumed with a live cost estimator, plus TEE/secure compute and a Chutes Chat consumer app. Throughput claims are vendor-reported and not independently verified.",
     "caveat": "Throughput claims are vendor-reported and not independently verified.",
+    "details": null,
     "resource_type": "service-platform",
     "topics": [
       "inference",
@@ -4171,6 +4287,7 @@
     "canonical_url": "https://telnyx.com/pricing/inference-api",
     "brief": "Inference API with published per-token pricing — Kimi K3 at $2.70/M input, $0.27/M cached input, $13.50/M output. The sharer noted they're open to negotiating volume pricing.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -4206,6 +4323,7 @@
     "canonical_url": "https://hyper.charm.land/",
     "brief": "Charm's coding-optimized inference for its Crush agent community: a free tier with 100 Hypercredits per month, a $20/month subscription with 250 Hypercredits refreshing daily, and prepaid bundles ($5–$20) that never expire — one Hypercredit currently maps to 5¢ of token spend. It ships with team governance features (master/sub keys, per-model and per-user usage reports) and advertises zero data retention with GDPR compliance. The zero-data-retention and GDPR claims are vendor-stated and not independently audited or verified.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -4242,6 +4360,7 @@
     "canonical_url": "https://tokenwatch.wyrdwerk.com/",
     "brief": "Live price comparison across inference providers, maintained by the same crew as this library. The sharer noted a Hyper subscription yields $12.50 of inference a day.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "inference"
@@ -4277,6 +4396,7 @@
     "canonical_url": "https://zyloo.io/subscription",
     "brief": "Tiered subscriptions selling 'unlimited' access to named models: LITE at $4.22/week and LITE+ at $12.89/month (Gemini 3/2.5 previews, GPT-4.1, GPT-4o), up to ULTIMATE at $899/month (Claude Opus 4.7/4.8, GPT-5.5/5.6, Claude Sonnet 5, GPT-5.6-Sol). Card payments auto-renew via Stripe with a cancel-anytime portal; crypto, WeChat Pay, Alipay and UPI buy a single non-renewing period. The PRO+ ($199/mo) and ULTRA ($599/mo) tiers were sold out at research time, and the site publishes no fair-use or rate-limit policy behind the 'Unlimited' label.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -4313,6 +4433,7 @@
     "canonical_url": "https://platform.kimi.ai/docs",
     "brief": "Moonshot AI's platform documentation for the Kimi model family. Shared originally via a Kimi-K3 Hugging Face link.",
     "caveat": null,
+    "details": null,
     "resource_type": "documentation",
     "topics": [
       "inference"
@@ -4349,6 +4470,7 @@
     "canonical_url": "https://verboo.ai/",
     "brief": "Free trial, then unlimited-token subscriptions from Junior $24/mo to Ultra $269/mo, plus a usage API from $0.12/1M input tokens. Coding agent plus OpenAI-compatible API on Brazilian servers; states it does not train on or review code and calls.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference",
@@ -4386,6 +4508,7 @@
     "canonical_url": "https://www.makora.com/",
     "brief": "Inference provider and optimization service — Starter $20/mo and Developer $200/mo (both shown sold out), with private model serving and on-prem options. Starter covers unlimited models under 40B parameters.",
     "caveat": null,
+    "details": null,
     "resource_type": "provider",
     "topics": [
       "inference"
@@ -4421,6 +4544,7 @@
     "canonical_url": "https://signals.forwardfuture.ai/loop-library/",
     "brief": "A library of 85 copy-pasteable AI agent \"loops\" from ForwardFuture — repeatable workflows like the docs sweep, the architecture-satisfaction refactor loop, the production-error sweep, and the SEO/GEO visibility loop — each with explicit checks and stopping conditions. Searchable across engineering, design, content, operations, and evaluation categories.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "ai-agents",
@@ -4458,6 +4582,7 @@
     "canonical_url": "https://flueframework.com/blog/flue-1-0-beta/?x",
     "brief": "Flue 1.0 Beta announcement — \"the open framework for building agents without lab lock-in: write once, deploy...\" Details beyond the embed preview are unverified.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -4493,6 +4618,7 @@
     "canonical_url": "https://github.com/LMCache/LMCache",
     "brief": "\"Supercharge Your LLM with the Fastest KV Cache Layer.\" The performance claim is the project's and unverified.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "inference",
@@ -4528,6 +4654,7 @@
     "canonical_url": "https://github.com/junghan0611/pi-shell-acp/",
     "brief": "A Herdr/tmux setup where sibling AI sessions — pi, Claude Code, Codex, Copilot, OMP, Antigravity — can message and spawn each other while keeping their own auth, tools, and transcripts. The repo has since been renamed from pi-shell-acp to \"entwurf\" and now covers the Agent Client Protocol and MCP agent protocols more broadly.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -4566,6 +4693,7 @@
     "canonical_url": "https://github.com/toss/es-git/pull/213",
     "brief": "A fix by monotykamary — diff.print() (default Patch format) was stripping the +/-/space line-origin prefixes from output; this PR prepends them back.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "developer-tools"
@@ -4602,6 +4730,7 @@
     "canonical_url": "https://github.com/monotykamary/pi-tool-repair",
     "brief": "A validate-then-repair extension for pi that fixes common LLM tool-call mistakes (null fields, stringified arrays, wrong field names, anchor bleed) before tools execute. Tom: \"technically their tool repair brought over to pi (+ my additions).\"",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -4636,6 +4765,7 @@
     "canonical_url": "https://github.com/dmtrKovalenko/fff/pull/593",
     "brief": "A fix for fff — the /fff-mode override was only stored in an in-memory variable lost on /reload and session restart; this PR persists fff-mode across reloads and session resumes.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "developer-tools"
@@ -4672,6 +4802,7 @@
     "canonical_url": "https://github.com/dmtrKovalenko/fff",
     "brief": "\"The fastest and the most accurate file search toolkit for AI agents, Neovim, Rust, C, and NodeJS.\" The performance claim is the project's and unverified.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "developer-tools",
@@ -4711,6 +4842,7 @@
     "canonical_url": "https://github.com/ryoppippi/ccusage",
     "brief": "Run `npx ccusage` and get daily, weekly, monthly, and session breakdowns of token usage and spend across Claude Code, Codex, OpenCode, Amp, Hermes Agent, and 15+ more coding CLIs, all read from local usage data. Colorful terminal tables, per-model cost breakdowns, cache-token tracking, JSON export, an offline pricing mode, and a Claude Code statusline hook make it the fastest way to see where your agent budget is going. (~19k stars, MIT.)",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -4750,6 +4882,7 @@
     "canonical_url": "https://github.com/heygen-com/hyperframes#framemd",
     "brief": "HeyGen's TypeScript framework for generating video from HTML — describe motion with GSAP-style animations, render via Puppeteer/ffmpeg, and expose it to coding agents over MCP. The linked framemd section documents a Markdown-first animation format so agents can author motion graphics programmatically; ~53k stars.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "ai-agents",
@@ -4790,6 +4923,7 @@
     "canonical_url": "https://github.com/harry0703/MoneyPrinterTurbo/",
     "brief": "One-click HD short-video generator: feed it a topic or keyword and an automated AI workflow scripts the video, generates subtitles and TTS narration, and renders a finished clip for Reels/Shorts/TikTok. ~126k stars; note the repo docs are largely in Chinese.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "productivity"
@@ -4825,6 +4959,7 @@
     "canonical_url": "https://cozyjournal.app/",
     "brief": "A local-first private journal: entries live as plain files in a folder on your own device — no cloud, no account, no AI reading your diary — with photos, audio, tags, mood/location tracking, and password-lockable journals. Imports from Notion, Day One, Obsidian, and Bear; $49 one-time ($89 forever) for macOS, Windows, iPhone, and iPad.",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "productivity"
@@ -4860,6 +4995,7 @@
     "canonical_url": "https://www.minimax.io/blog/minimax-m3",
     "brief": "MiniMax's M3 announcement — frontier coding capability, 1M context, native multimodality, and a new MSA architecture. All vendor claims, unverified.",
     "caveat": "All vendor claims, unverified.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -4894,6 +5030,7 @@
     "canonical_url": "https://github.com/Soju06/codex-lb",
     "brief": "A Codex/ChatGPT multiple-account load balancer and proxy with usage tracking, a dashboard, and OpenCode compatibility. Tom: \"gonna try first.\"",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -4933,6 +5070,7 @@
     "canonical_url": "https://github.com/Loongphy/codex-auth",
     "brief": "A Zig-written CLI for switching and managing multiple Codex accounts — handy for anyone juggling several Codex subscriptions or auth contexts from the terminal. ~2.7k stars.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -4970,6 +5108,7 @@
     "canonical_url": "https://zinley.com/self-audit",
     "brief": "\"Built to extend you. 10× your day\" — an AI extension of you across every device and person: takes your calls, writes your emails, and more. Vendor claims, unverified.",
     "caveat": "Vendor claims, unverified.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "ai-agents",
@@ -5005,6 +5144,7 @@
     "canonical_url": "https://github.com/versenilvis/iris",
     "brief": "IRIS (Intelligent Real-time Input Suggestion) is an open-source shell auto-completion tool positioned as the successor to Fig: a single native Go binary that runs purely on TTY — no Electron, GUI, account, or telemetry — rendering suggestion menus inline in the real terminal, over SSH and inside tmux. It indexes your aliases and shell history, supports AI suggestions via API key or local models, and configures via a TOML file with instant reload. No Windows support, and it can conflict with other autosuggestion plugins (zsh-autosuggestions, atuin), which the README says to disable first.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "developer-tools"
@@ -5043,6 +5183,7 @@
     "canonical_url": "https://github.com/PipeNetwork/kimi-k3-mlx",
     "brief": "An MLX port of moonshotai's Kimi-K3 (2.78T multimodal MoE); the weights are converted from the original release and requantized. Conversion quality is unverified.",
     "caveat": "Conversion quality is unverified.",
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "inference"
@@ -5077,6 +5218,7 @@
     "canonical_url": "https://hermes.xpetalab.dev/",
     "brief": "A self-hosted AI agent console (\"Tu agente AI self-hosted\") that thelaggingway is giving a go. The self-hosted claim is unverified beyond the site's tagline.",
     "caveat": "The self-hosted claim is unverified beyond the site's tagline.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "ai-agents",
@@ -5114,6 +5256,7 @@
     "canonical_url": "https://github.com/VictorTaelin/OptMem",
     "brief": "Permanent memory for AI agents by Victor Taelin: the whole integration is a 426-token prompt plus a single dependency-free Python script installed with one curl command. You paste a `## Memory` block into your agent's AGENTS.md/CLAUDE.md, then use `memo wake` (read memory at session start) and `memo note` (record one-liners), plus `nap`, `recall`, `zoom`, and `forget`; storage is an append-only log with a rebuildable binary-tree summary cache (1M memories ≈ 608 MB, wake in 0.03s).",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -5153,6 +5296,7 @@
     "canonical_url": "https://www.contentarchitecture.dev/",
     "brief": "A commercial, agent-ready Sanity CMS starter kit in Next.js 16 and Astro 7 editions: a page-builder CMS with in-app Studio, visual editing, draft mode, SEO helpers, a seed dataset, and Plop scaffolding. Its differentiator is agentic-coding workflow support — it ships AGENTS.md plus scoped skills, two preconfigured MCP servers (one reads the running dev server, one drives real Chrome for screenshots/traces), an editable llms.txt, and token-light Markdown versions of every page served to agents via content negotiation. One license per buyer covers unlimited personal, commercial, and client projects; it is a paid product, not open source.",
     "caveat": null,
+    "details": null,
     "resource_type": "template-starter",
     "topics": [
       "ai-agents",
@@ -5195,6 +5339,7 @@
     "canonical_url": "https://github.com/vojtasve-droid/nimbus-lite",
     "brief": "A free, framework-free AI chat UI kit in vanilla HTML/CSS/JS — open index.html and it runs, no build step or dependencies. It includes a full chat layout with sidebar, live token streaming with blinking caret, Markdown plus syntax-highlighted code blocks with copy buttons, a model picker, and light/dark themes with accent colors; it is front-end only, so you bring your own backend (OpenAI, Anthropic, or a local model). The maintainer sells a fuller Nimbus kit ($19) adding citations, reasoning blocks, tool-call chips, and attachments.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "frontend",
@@ -5232,6 +5377,7 @@
     "canonical_url": "https://github.com/koala73/worldmonitor",
     "brief": "An open-source (AGPL-3.0) real-time global intelligence dashboard: AI-synthesized news briefs, a 3D globe and WebGL flat map, a live Country Instability Index for 31 Tier-1 countries, and cross-stream correlation of military, economic, and disaster signals. It is built for programmatic access too — MCP server, REST API with OpenAPI spec, CLI (`npx worldmonitor`), and Python/Ruby/Go SDKs, with local-AI support via Ollama — and ships as a web app, Tauri desktop binaries, and PWA. AGPL-3.0 copyleft applies, so commercial/SaaS use needs a separate license or AGPL compliance.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "observability"
@@ -5277,6 +5423,7 @@
     "canonical_url": "https://amicro.vercel.app/",
     "brief": "A curated gallery of premium React micro-interaction and transition components built with React and Motion, with layout inspired by transition.dev. It showcases around 36 named interactions — morph, glare shine, magnetic field, text reveal, focus blur, shake, rotate, color-morph buttons — as ready-to-use UI components. Licensing and copy-paste terms are not stated on the page, so reusability is uncertain.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "frontend",
@@ -5316,6 +5463,7 @@
     "canonical_url": "https://github.com/edgehero/pi-dispatch",
     "brief": "Runs the pi coding agent as a self-hosted background service: triggered on demand, on a cron schedule, or by GitHub/GitLab issues, comments, and pull/merge requests, each job executing in a locked-down ephemeral container with a durable queue. It enforces per-job/daily/weekly/monthly spend caps before a single token is spent, and ships a live admin panel with run history, cost insights, and per-trigger spend analytics; MIT-licensed. Note: the bare npm name `pi-dispatch` belongs to an unrelated package — the scoped `@edgehero/pi-dispatch` is the correct install.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -5354,6 +5502,7 @@
     "canonical_url": "https://componentry.dev/",
     "brief": "Beautiful animated UI components for React. Rykuuun shared it as a front-end dev finding; details unverified beyond the site's tagline.",
     "caveat": "Rykuuun shared it as a front-end dev finding; details unverified beyond the site's tagline.",
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "frontend"
@@ -5389,6 +5538,7 @@
     "canonical_url": "https://play.mint.gg/",
     "brief": "The public gallery for Mint's 3D-asset-creation tooling for AI agents: use Codex, Claude, or Cursor (via the Mint MCP server and Mint Skills) to generate, rig, and animate 3D models, build 3D worlds, and create PBR materials and asset packs. The playground showcases dozens of agent-built interactive 3D scenes, from mini-games to product configurators and data visualizations — though it is primarily a showcase for Mint's tooling rather than a tool you operate directly.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "ai-agents",
@@ -5426,6 +5576,7 @@
     "canonical_url": "https://tools.rmv.fyi/",
     "brief": "A handmade-web collection of small, single-purpose browser tools: colour utilities (contrast checker, palette generator/extractor, Tailwind shade scales), image tools (compressor, converter, background remover, favicon generator, SVG optimiser, metadata stripper), plus audio/video and typography tools. Everything is free with no logins, no paywalls, and no data collection; fully open source (0-BSD), with a native iOS app and an offline CLI offering the same tools.",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "developer-tools",
@@ -5464,6 +5615,7 @@
     "canonical_url": "https://github.com/lightningpixel/modly",
     "brief": "An open-source desktop app (Windows, Linux, Apple Silicon macOS) that turns a photo or text prompt into a 3D mesh using open-source AI models running entirely on your own GPU — no cloud inference. It ships an extension system for swapping in models like Hunyuan3D 2 and TripoSG, node-based generation workflows, and a CLI so agents and scripts can drive generation headlessly; MIT-licensed, around 7.7k stars.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "inference",
@@ -5502,6 +5654,7 @@
     "canonical_url": "https://github.com/hoainho/img2threejs",
     "brief": "A skill for coding agents (Claude Code, Codex, OpenCode) that rebuilds the object in a reference photo as a code-only, procedural Three.js model — reconstruction-by-code, not photogrammetry or mesh extraction — with a staged sculpting pipeline (blockout → material → lighting → optimization) and vision-review quality gates. It is deliberately token-efficient: deterministic scripts handle validation while model tokens are spent only on visual judgment and code; Apache 2.0, around 16.7k stars, with a live demo gallery.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -5540,6 +5693,7 @@
     "canonical_url": "https://github.com/algal/pi-openai-server-compaction",
     "brief": "Shared without description; the name suggests an OpenAI-compatible server with context compaction for the pi agent. Unverified.",
     "caveat": "Unverified.",
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -5579,6 +5733,7 @@
     "canonical_url": "https://www.plasma.ai/research/fractal",
     "brief": "Plasma AI's Fractal wraps Claude Code and Codex in bounded recursive loops. Details beyond the truncated preview are unverified.",
     "caveat": "Details beyond the truncated preview are unverified.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "ai-agents"
@@ -5613,6 +5768,7 @@
     "canonical_url": "https://github.com/chenglou/freerange",
     "brief": "From chenglou (React core team alumnus): a static verifier that checks ordinary TypeScript layout code at compile time, without a layout engine. ~650 stars.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "frontend",
@@ -5650,6 +5806,7 @@
     "canonical_url": "https://60fps.design/",
     "brief": "An endlessly browsable gallery of ~2,000+ UI/UX animation shots from best-in-class mobile and web apps — buttons, sheets, onboarding, loading states, micro-interactions — tagged across 108 filters. Useful swipe-reference for motion details before implementing your own.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "design"
@@ -5685,6 +5842,7 @@
     "canonical_url": "https://github.com/tmustier/pi-queue-steer",
     "brief": "A pi extension adding a Cursor-style visible follow-up queue: pending agent tasks are listed, inline-editable, and steerable from a terminal UI while pi works. Small repo (~35 stars) but fills a real gap in agent-driven workflows.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -5722,6 +5880,7 @@
     "canonical_url": "https://github.com/stnly/pi-grok",
     "brief": "Use your x.com Premium/SuperGrok subscription in pi with OAuth login, auto-refresh, and live model discovery; supports grok-4.5, grok-composer-2.5-fast, grok-build, grok-4.3, and x_search. Feature claims come from the repo description and are unverified.",
     "caveat": "Feature claims come from the repo description and are unverified.",
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -5756,6 +5915,7 @@
     "canonical_url": "https://github.com/MoonshotAI/Kimi-Vendor-Verifier",
     "brief": "A vendor verifier from MoonshotAI; baanish asked if anyone has run it. Details unverified from the message text.",
     "caveat": "Details unverified from the message text.",
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -5790,6 +5950,7 @@
     "canonical_url": "https://github.com/Dicklesworthstone/agentic_coding_flywheel_setup",
     "brief": "An agentic coding setup that Rykuuun found \"more flexible\" than alternatives. Details unverified from the message text.",
     "caveat": "Details unverified from the message text.",
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -5824,6 +5985,7 @@
     "canonical_url": "https://github.com/monotykamary/tailscale-shell",
     "brief": "A zsh-based proxied shell plus exit-node picker for Tailscale userspace networking: pick an exit node by country, city, or code and route egress through Mullvad or your own relay via SOCKS5. Small repo (~4 stars), but a practical wrapper around the tailscale CLI.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "developer-tools"
@@ -5860,6 +6022,7 @@
     "canonical_url": "https://augani.github.io/dory/",
     "brief": "Docker & Linux containers native to Mac — free, open source, one shared VM for all containers, claiming ~4.7x less idle memory than per-container setups. The memory claim is the vendor's and unverified.",
     "caveat": "The memory claim is the vendor's and unverified.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "devops",
@@ -5897,6 +6060,7 @@
     "canonical_url": "https://github.com/tt-a1i/archify",
     "brief": "An agent skill (Claude/Codex/OpenCode compatible) that generates architecture, workflow, sequence, data-flow, and lifecycle diagrams as self-contained HTML with motion, then exports crisp PNG/JPEG. ~72k stars; positions itself as a verifiable, agentic alternative to Mermaid.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -5933,6 +6097,7 @@
     "canonical_url": "https://github.com/Dicklesworthstone/beads_rust",
     "brief": "A fast Rust port of Steve Yegge's beads — a local-first, non-invasive issue tracker storing tasks in SQLite. Rykuuun \"really loved this tool\" and says it makes things easier to manage.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "developer-tools",
@@ -5971,6 +6136,7 @@
     "canonical_url": "https://usehax.dev/",
     "brief": "A minimalist coding agent that runs natively in the terminal. The \"minimalist\" claim comes from the sharer's one-line description and is unverified.",
     "caveat": "The \"minimalist\" claim comes from the sharer's one-line description and is unverified.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "ai-agents",
@@ -6008,6 +6174,7 @@
     "canonical_url": "https://docs.turso.tech/agentfs/introduction",
     "brief": "Turso's introduction to AgentFS, which Rykuuun found interesting. It appears to be an agent-oriented filesystem from Turso; anything beyond the docs link is unverified.",
     "caveat": "It appears to be an agent-oriented filesystem from Turso; anything beyond the docs link is unverified.",
+    "details": null,
     "resource_type": "documentation",
     "topics": [
       "ai-agents"
@@ -6043,6 +6210,7 @@
     "canonical_url": "https://github.com/ranxianglei/billion-context-pi",
     "brief": "Rykuuun shared this asking \"this is pi-vcc right?\", suggesting it's related to a \"pi\" coding agent with very large context. Details are unverified from the message text alone.",
     "caveat": "Details are unverified from the message text alone.",
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -6077,6 +6245,7 @@
     "canonical_url": "https://github.com/nktkt/pi",
     "brief": "A GitHub repo named \"pi\", shared without description. Given the surrounding chatter about pi-vcc, likely an agent project; unverified from the message text.",
     "caveat": "Given the surrounding chatter about pi-vcc, likely an agent project; unverified from the message text.",
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -6111,6 +6280,7 @@
     "canonical_url": "https://github.com/tontinton/maki",
     "brief": "An AI coding agent (Rust, ratatui TUI) optimized for minimal context-token use: a tree-sitter `index` tool summarizes file structure before reading, system prompts stay concise, and subagents can pick weak/medium/strong models per task. It is extendable via neovim-like Lua plugins, supports skills/MCPs, session memory, and plan mode, and works as an agent backend for editors like Zed via ACP; MIT-licensed. Its benchmark claims are the author's own.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -6150,6 +6320,7 @@
     "canonical_url": "https://www.inspora.design/",
     "brief": "A design-focused site, shared link-only. Its exact purpose is unverified from the message text; the domain suggests a design inspiration or resource site.",
     "caveat": "Its exact purpose is unverified from the message text; the domain suggests a design inspiration or resource site.",
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "design"
@@ -6185,6 +6356,7 @@
     "canonical_url": "https://gooey.jakubantalik.com/",
     "brief": "A site by Jakub Antalik, shared link-only. The name suggests gooey/morphing visual effects; unverified from the message text.",
     "caveat": "The name suggests gooey/morphing visual effects; unverified from the message text.",
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "design",
@@ -6221,6 +6393,7 @@
     "canonical_url": "https://collectui.com/",
     "brief": "A gallery of collected user interfaces for design inspiration. Shared link-only; the description is inferred from the site's name and unverified from the message.",
     "caveat": "Shared link-only; the description is inferred from the site's name and unverified from the message.",
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "design"
@@ -6256,6 +6429,7 @@
     "canonical_url": "https://github.com/luchasarie/bro-skill",
     "brief": "A one-file Agent Skills-format skill adding a `/bro` command: when a coding agent's last reply was too dense or jargon-heavy, `/bro` re-explains that same answer in plain language, with facts, paths, and commands preserved verbatim. It ships an installer covering Hermes, Claude Code, Cursor, Codex, and opencode; MIT-licensed.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -6293,6 +6467,7 @@
     "canonical_url": "https://danielrotter.at/2020/04/08/avoid-z-index-whenever-possible.html",
     "brief": "A 2020 article by Daniel Rotter arguing for CSS layouts that avoid z-index. The thesis is in the URL slug; the article's quality is unverified.",
     "caveat": "The thesis is in the URL slug; the article's quality is unverified.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "frontend"
@@ -6328,6 +6503,7 @@
     "canonical_url": "https://beautiful-ui-five.vercel.app/",
     "brief": "A demo site showcasing 21 crafted UI primitives for AI-native interfaces — loading states, thinking traces, streaming text, approval cards, tool chips, task rows, prompt bars, diff and records tables, insight cards, and more. A handy design reference and pattern library for building agent chat interfaces and agentic tool UIs.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "design",
@@ -6365,6 +6541,7 @@
     "canonical_url": "https://github.com/oil-oil/oil-motion",
     "brief": "An agent-oriented skill (SKILL.md) for designing and implementing web animations that respond to scroll, drag, pointer, touch, or state changes. The agent confirms keyframes, generates in-between motion with AI video models, then converts it into controllable web assets (MP4, alpha WebP sprite sheets) with quality checks for frame consistency and mobile performance; MIT-licensed. The README is primarily in Chinese (an English README.en.md exists), and the generation step needs external AI video services and API keys.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -6401,6 +6578,7 @@
     "canonical_url": "https://www.arlan.me/vault",
     "brief": "A public vault of UI/design techniques by designer Arlan Marat — dated entries like \"Arcade pixel,\" \"Holo,\" \"Fade motion,\" \"Liquid UI,\" \"Kinetic typography,\" and \"Apple's corners,\" each demonstrating a copyable visual effect. Everything is MIT-licensed and explicitly free to copy.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "design",
@@ -6437,6 +6615,7 @@
     "canonical_url": "https://styles.refero.design/",
     "brief": "A library of 2,000+ \"AI-readable\" design systems harvested from leading product websites (Apple, Cursor, Linear, Vercel, ElevenLabs). Each style exposes colors, typography, spacing, and components plus a DESIGN.md file meant to be fed into Cursor, Claude Code, Codex, v0, or Lovable to give AI builders better design taste; currently in beta with new styles added weekly.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "design",
@@ -6476,6 +6655,7 @@
     "canonical_url": "https://thereisanopensourceforthat.com/",
     "brief": "A directory of open-source alternatives to popular software. The description is inferred from the site's name; unverified from the message.",
     "caveat": "The description is inferred from the site's name; unverified from the message.",
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "developer-tools"
@@ -6511,6 +6691,7 @@
     "canonical_url": "https://github.com/josh-project/josh",
     "brief": "\"Just One Single History\" — a git-at-scale platform built on fast, reversible Git history transformation. It presents any part of a repo (e.g. a monorepo subfolder) as an independent repository with history preserved, so repo boundaries can be decided per-context instead of reflecting org silos; it ships a `josh` CLI for partial repo projections and `josh-proxy`, a Git HTTP/SSH proxy with a GraphQL API for CI/build queries. A mature project (since 2016, MIT), though some listed features like the merge queue and Starlark filters are not fully mature yet.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "developer-tools",
@@ -6549,6 +6730,7 @@
     "canonical_url": "https://www.checklist.design/",
     "brief": "An AI-powered design review tool: run a UX/UI quality check on any screen and get instant analysis of what's working, what's missing, and what to improve. It also hosts a searchable library of design checklists covering websites, web apps, mobile, components, and flows, plus a Figma plugin for in-canvas reviews.",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "design",
@@ -6587,6 +6769,7 @@
     "canonical_url": "https://github.com/rlaope/oh-my-hermes",
     "brief": "An all-in-one plugin and workflow layer for Nous Research's Hermes Agent that installs 80+ generated workflow skills with a single `omh setup` — covering coding intelligence, long-term memory, and model-optimized workflow packages. A deterministic chat router turns free-form Korean/English requests into the right prepared workflow, with coding delegated to an explicitly selected executor (Claude Code, Codex, or the Hermes runtime); pure Python with zero runtime dependencies, MIT licensed.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -6628,6 +6811,7 @@
     "canonical_url": "https://blog.cloudflare.com/kitesurf/",
     "brief": "Cloudflare's announcement of Kitesurf, a headless browser built for AI agents that runs entirely on Cloudflare Workers in V8 isolates instead of Chromium — optimized for token efficiency and scale on agentic tasks like screenshots and HTML extraction. The post walks through the engineering (Rust compiled to Wasm, Blitz/Stylo rendering, Chrome DevTools Protocol compatibility), reports 215,000+ Web Platform Tests passing, and availability free during beta inside Browser Run. Benchmark and conformance claims are vendor-reported and not independently verified.",
     "caveat": "Benchmark and conformance claims are vendor-reported and not independently verified.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents",
@@ -6666,6 +6850,7 @@
     "canonical_url": "https://github.com/Mte90/linus-torvalds-skill",
     "brief": "Distills Linus Torvalds' code-review methodology from ~38k review moves extracted from 31k of his LKML emails (2002–2026) plus 67 interview transcripts into a reusable, language-agnostic agent skill. Ships four variants distilled by different LLMs (gpt-oss, GLM, Mistral, Qwen) with validation reports comparing skilled vs. baseline reviews; the gpt-oss variant is the recommended default.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -6702,6 +6887,7 @@
     "canonical_url": "https://github.com/get-bb/bb",
     "brief": "An agentic IDE that \"builds itself\" — it can control, customize, and automate itself, pitched as the groundwork for your own software factory. Desktop app, web app, CLI, and HTTP API are all first-class surfaces; work runs in threads you can follow live, steer at any point, or hand off to another agent. In active development; core architecture is stable, workflows and surfaces still evolving.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -6744,6 +6930,7 @@
     "canonical_url": "https://artificialanalysis.ai/models/qwen3-8-max",
     "brief": "Artificial Analysis's model page for Qwen3-8 Max, with benchmarks and pricing. Shared link-only; the page's data is third-party and unverified.",
     "caveat": "Shared link-only; the page's data is third-party and unverified.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "inference",
@@ -6781,6 +6968,7 @@
     "canonical_url": "https://github.com/jackwener/opencli",
     "brief": "Turns any website into a CLI an AI agent can use: opencli drives your logged-in browser session (Playwright-based) so agents can operate sites through a command line instead of fragile DOM scripting. ~30k stars.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -6819,6 +7007,7 @@
     "canonical_url": "https://desengs.com/",
     "brief": "Shared link-only. Purpose unverified from the message text; the domain suggests a design/engineering resource.",
     "caveat": "Purpose unverified from the message text; the domain suggests a design/engineering resource.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "design"
@@ -6852,6 +7041,7 @@
     "canonical_url": "https://www.liquid.ai/blog/antidoom",
     "brief": "Liquid AI's method for killing the repetitive 'doom loops' that plague small reasoning models: Final Token Preference Optimization trains the model to prefer coherent alternatives at the exact token where a loop begins, leaving the rest of the distribution untouched. On an early LFM2.5-2.6B checkpoint it cut loop rates from 10.2% to 1.4%, and on Qwen3.5-4B from 22.9% to 1% under greedy sampling — with the generation, detection, and training code open-sourced. Results are vendor-reported on vendor checkpoints and not independently verified.",
     "caveat": "Results are vendor-reported on vendor checkpoints and not independently verified.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "inference"
@@ -6885,6 +7075,7 @@
     "canonical_url": "https://www.wafer.ai/blog/kimi-k3-mi355x",
     "brief": "Wafer benchmarked Moonshot's 2.8T-parameter Kimi K3 on AMD's MI355X (288GB VRAM per GPU): 952 tok/s/node aggregate and 118 tok/s single-stream — over 3.8× the per-node throughput of a 2-node B200 deployment. With the MI355X ~2.4× cheaper per GPU than NVIDIA's B300, it wins decisively on performance per dollar; the post also details real ROCm fixes, including speculative decode via RadixArk's DSpark draft and zero-padding heads to unlock the AITER MLA prefill kernel. All throughput figures are vendor-reported and not independently verified.",
     "caveat": "All throughput figures are vendor-reported and not independently verified.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "inference",
@@ -6921,6 +7112,7 @@
     "canonical_url": "https://snowflow-lilac.vercel.app/",
     "brief": "The live demo of the snowflow_demo repo below: real-time procedural snow rendering in the browser via WebGPU, Babylon.js, and hand-written WGSL — GPU-generated terrain, snow deformation, procedural characters, cloth, and post-processing with zero textures, meshes, HDRIs, or animation assets. Requires a WebGPU-capable browser (Chrome 113+ on desktop GPU) to load.",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "frontend"
@@ -6956,6 +7148,7 @@
     "canonical_url": "https://github.com/Noniv/snowflow_demo",
     "brief": "Source repo for the Snowflow demo above: a fully procedural real-time snow scene built on WebGPU + Babylon.js with hand-written WGSL shaders — terrain, snow deformation, surf wakes, water spells, atmosphere, and post-processing, all generated at runtime. ~580 stars.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "frontend"
@@ -6990,6 +7183,7 @@
     "canonical_url": "https://aoagents.dev/",
     "brief": "An AI agent platform whose pitch is \"Everything is an Agent\". Announcement-level description only; details unverified since the link was not opened.",
     "caveat": "Announcement-level description only; details unverified since the link was not opened.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "ai-agents"
@@ -7025,6 +7219,7 @@
     "canonical_url": "https://github.com/Arize-ai/phoenix",
     "brief": "Arize AI's open-source observability platform for LLM apps — tracing, evaluation, and experimentation for agent and RAG workloads. A standard choice for watching what production agents actually do.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "observability",
@@ -7060,6 +7255,7 @@
     "canonical_url": "https://github.com/PrimeIntellect-ai/prime-agent",
     "brief": "Prime Intellect's framework for training AI agents with reinforcement learning. Per the sharer, its gimmick is collecting training data through its CLI — worth a look if you're into RL-for-agents; specifics unverified.",
     "caveat": "Per the sharer, its gimmick is collecting training data through its CLI — worth a look if you're into RL-for-agents; specifics unverified.",
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "ai-agents"
@@ -7096,6 +7292,7 @@
     "canonical_url": "https://github.com/browser-use/windows-harness",
     "brief": "A Windows automation harness from the browser-use team (the web-agent library folks). Likely for running agents against Windows apps; details unverified.",
     "caveat": "Likely for running agents against Windows apps; details unverified.",
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -7131,6 +7328,7 @@
     "canonical_url": "https://alexzhang13.github.io/blog/2026/spec-ptc/",
     "brief": "A write-up of Spec-PTC, a speculative parallel test-time compute framework for long-horizon agents. Interesting if you follow inference-scaling tricks for agentic workloads.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents",
@@ -7165,6 +7363,7 @@
     "canonical_url": "https://github.com/laude-institute/headlong",
     "brief": "An open-source agent microharness with persistent agency and recursive LLMs — \"of bash, by bash\". Minimal by design; good for experimenting with agent loops without a heavy framework.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -7201,6 +7400,7 @@
     "canonical_url": "https://blog.maximeheckel.com/posts/shading-motion/",
     "brief": "Maxime Heckel's deep dive into shading-based motion design techniques. One of the better-written front-end animation articles; useful if you care about motion craft.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "design",
@@ -7235,6 +7435,7 @@
     "canonical_url": "https://radiusbrowser.com/",
     "brief": "An AI-native browser aimed at research workflows. Product claims unverified; notable as another entry in the agentic-browser wave.",
     "caveat": "Product claims unverified; notable as another entry in the agentic-browser wave.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "ai-agents",
@@ -7273,6 +7474,7 @@
     "canonical_url": "https://www.darkbloom.dev/",
     "brief": "An MCP (Model Context Protocol) gateway that advertises an accuracy guarantee — unusual positioning in the MCP tooling space. Claims unverified; interesting if you run MCP servers in production.",
     "caveat": "Claims unverified; interesting if you run MCP servers in production.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "ai-agents"
@@ -7311,6 +7513,7 @@
     "canonical_url": "https://github.com/earendil-works/pi/blob/harness-v2/j4/packages/agent/docs/harness-v2.md",
     "brief": "Deep link into the pi coding agent's v2 harness documentation. Worth reading if you use pi or are designing your own agent harness.",
     "caveat": null,
+    "details": null,
     "resource_type": "documentation",
     "topics": [
       "ai-agents"
@@ -7347,6 +7550,7 @@
     "canonical_url": "https://threeui.com/browse",
     "brief": "A browsable library of Three.js components and interactive shaders. Handy for dropping 3D effects into web projects without writing raw WebGL.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "frontend"
@@ -7384,6 +7588,7 @@
     "canonical_url": "https://kolu.dev/",
     "brief": "A terminal tool that bills itself as \"the best way to run terminals\". Details unverified, but worth a look if your terminal setup needs rethinking.",
     "caveat": "Details unverified, but worth a look if your terminal setup needs rethinking.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "developer-tools"
@@ -7420,6 +7625,7 @@
     "canonical_url": "https://github.com/dmmulroy/anti-slop",
     "brief": "Opinionated Oxlint rules that reject low-evidence TypeScript/JavaScript patterns — basically a linter config against AI-slop code. Fun and practical for teams drowning in generated code.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "developer-tools"
@@ -7459,6 +7665,7 @@
     "canonical_url": "https://www.salesforce.com/introducing-slack-code/",
     "brief": "Salesforce's announcement of Slack Code, bringing coding-agent workflows into Slack. Announcement-level; the \"oh no\" from the sharer suggests healthy skepticism.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents",
@@ -7493,6 +7700,7 @@
     "canonical_url": "https://github.com/gvzdv/claudish-to-english",
     "brief": "A small repo that translates \"Claudish\" — AI-assistant jargon — into plain English. Niche but amusing; useful if you've ever stared at a model hedging for three paragraphs.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -7527,6 +7735,7 @@
     "canonical_url": "https://www.interior.dev/",
     "brief": "Micro-interactions for React, \"built for the half-second after a click\". A focused little library for the small animations that make UIs feel alive.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "frontend"
@@ -7565,6 +7774,7 @@
     "canonical_url": "https://eve.dev/",
     "brief": "A durable agent framework pitched as \"Next.js for agents\" — build agents with one folder, with durability baked in. Product claims unverified; the durability angle is the interesting bit.",
     "caveat": "Product claims unverified; the durability angle is the interesting bit.",
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "ai-agents"
@@ -7599,6 +7809,7 @@
     "canonical_url": "https://openhistory.sh/",
     "brief": "Turns your Mac activity into a private timeline for you and your AI — local activity history as agent context. Privacy-sensitive by nature; the \"private\" claim is unverified.",
     "caveat": "Privacy-sensitive by nature; the \"private\" claim is unverified.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "ai-agents",
@@ -7636,6 +7847,7 @@
     "canonical_url": "https://berd.xyz/",
     "brief": "A self-described \"weird, playful\" desktop app for building with AI agents — \"less chatting, more building\". Product claims unverified.",
     "caveat": "Product claims unverified.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "ai-agents"
@@ -7672,6 +7884,7 @@
     "canonical_url": "https://x.com/vercel_dev/status/2089828083415355806?s=46",
     "brief": "Vercel's announcement of fx, \"a tiny, open, native coding agent\" from Vercel Labs, originally an internal tool. Announcement-only source; details unverified.",
     "caveat": "Announcement-only source; details unverified.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -7707,6 +7920,7 @@
     "canonical_url": "https://github.com/emilkowalski/skills",
     "brief": "A collection of \"skills\" for designers and engineers from Emil Kowalski (of Vercel/animations fame). Likely agent-skill style playbooks; worth browsing.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "ai-agents",
@@ -7744,6 +7958,7 @@
     "canonical_url": "https://gps-01.dmytro.fyi/",
     "brief": "A tiny interactive explainer of how your phone finds itself — satellites, signal timing, and trilateration. The good kind of technical storytelling.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "frontend"
@@ -7780,6 +7995,7 @@
     "canonical_url": "https://www.rareui.com/",
     "brief": "A library of animated React components. Another solid option in the crowded React-animation space; compare with the other UI libraries already in the archive.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "frontend"
@@ -7818,6 +8034,7 @@
     "canonical_url": "https://x.com/trycua/status/2089770780053643397?s=46&t=vWq9H9xzeo6jZ1ywa-gPvg",
     "brief": "Cua's announcement of the first open-source \"Computer History\", in early preview. Announcement-only; interesting for computer-use agent research.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -7851,6 +8068,7 @@
     "canonical_url": "https://github.com/guillaumemeyer/watermarks-remover",
     "brief": "Strips multi-vendor AI provenance marks — Unicode text hygiene, statistical rewrite hooks, and C2PA handling. Legitimate hygiene tooling; obviously dual-use.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "developer-tools"
@@ -7885,6 +8103,7 @@
     "canonical_url": "https://github.com/justrach/codedb",
     "brief": "A Zig code-intelligence server and MCP toolset for AI agents, recommended firsthand by the sharer. Native-speed code intelligence as agent context is a strong pitch.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -7925,6 +8144,7 @@
     "canonical_url": "https://github.com/DeusData/codebase-memory-mcp",
     "brief": "Persistent semantic memory for coding agents — an MCP server that indexes your codebase. Useful when you have many repos and context windows aren't enough.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -7964,6 +8184,7 @@
     "canonical_url": "https://github.com/elixir-volt/quickbeam",
     "brief": "A JavaScript runtime for the BEAM — Web APIs backed by OTP, native DOM, and a built-in TypeScript toolchain. Genuinely novel: Erlang's concurrency model meets JS.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "backend",
@@ -8002,6 +8223,7 @@
     "canonical_url": "https://huggingface.co/unsloth/Qwen3.6-27B-MTP-GGUF",
     "brief": "Unsloth's GGUF quantization of Qwen3.6-27B with MTP (multi-token prediction). For local inference of the 27B Qwen.",
     "caveat": null,
+    "details": null,
     "resource_type": "dataset",
     "topics": [
       "inference"
@@ -8035,6 +8257,7 @@
     "canonical_url": "https://x.com/alibaba_qwen/status/2088280182356611304",
     "brief": "Alibaba's announcement that Qwen3.8's open weights are out. Announcement-only; pair with the unsloth GGUF quant below for local runs.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "inference"
@@ -8070,6 +8293,7 @@
     "canonical_url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
     "brief": "Unsloth's GGUF quantization of Qwen3.8-27B for local inference. The practical artifact behind the open-weights announcement above.",
     "caveat": null,
+    "details": null,
     "resource_type": "dataset",
     "topics": [
       "inference"
@@ -8103,6 +8327,7 @@
     "canonical_url": "https://github.com/ryan-brosas/pi-acp-jetbrain",
     "brief": "A JetBrains IntelliJ ACP (Agent Client Protocol) adapter for the pi coding agent. Niche but exactly what you need if you want pi inside IntelliJ.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -8138,6 +8363,7 @@
     "canonical_url": "https://woxi.ad-si.com/docs/comparison/mathematica/",
     "brief": "Woxi's comparison of itself against Mathematica — Woxi being an interpreter for a subset of the Wolfram Language. A decent way into what Woxi is and where it stands.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "developer-tools"
@@ -8173,6 +8399,7 @@
     "canonical_url": "https://github.com/github/spec-kit",
     "brief": "GitHub's official toolkit for spec-driven development — write the spec, let agents implement. From GitHub itself, so it carries weight in the SDD workflow trend.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -8209,6 +8436,7 @@
     "canonical_url": "https://github.com/pullfrog/pullfrog",
     "brief": "An open-source, model-agnostic, BYOK GitHub bot that runs in GitHub Actions. Bring your own key, pick your model, automate your repo — the self-hosted answer to proprietary coding agents.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -8249,6 +8477,7 @@
     "canonical_url": "https://www.deepseek.com/harness/en/",
     "brief": "DeepSeek's agent harness in developer preview — \"everything is a plugin\", with source released alongside. Every agent capability is a swappable plugin; the plugin architecture is the interesting idea here. Claims unverified.",
     "caveat": "Claims unverified.",
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "ai-agents"
@@ -8283,6 +8512,7 @@
     "canonical_url": "https://delta.dev/",
     "brief": "A multiplayer environment for coding with agents — shared threads where teammates and agents build and review together, with full conversation and code context. Product claims unverified.",
     "caveat": "Product claims unverified.",
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "ai-agents",
@@ -8321,6 +8551,7 @@
     "canonical_url": "https://rustfoundation.org/rust-foundation-trusted-training/",
     "brief": "The Rust Foundation's quality standard for Rust training. Reference material if you're evaluating Rust courses or building one.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "developer-tools"
@@ -8358,6 +8589,7 @@
     "canonical_url": "https://www.nngroup.com/articles/psychology-study-guide/",
     "brief": "Nielsen Norman Group's study guide on the psychology behind UX. A solid reference for grounding design decisions in research rather than taste.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "design"
@@ -8393,6 +8625,7 @@
     "canonical_url": "https://beui.dev/components/motion",
     "brief": "Copy-paste animated React components from beUI. Drop-in motion without building animation primitives from scratch.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "frontend"
@@ -8431,6 +8664,7 @@
     "canonical_url": "https://canvasui.dev/",
     "brief": "A creative component library for Canvas, WebGL and WebGPU. For interfaces that need GPU-level visuals rather than DOM elements.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "frontend"
@@ -8465,6 +8699,7 @@
     "canonical_url": "https://treg.to/",
     "brief": "A tool catalog for agents — 2,630 endpoints across 47 providers (SEO, social, enrichment, ads data) callable with one key, priced per call, plus support for your own keys and skills. Tom's 2 Sep share carried his referral param; normalized to the root domain.",
     "caveat": null,
+    "details": null,
     "resource_type": "service-platform",
     "topics": [
       "ai-agents",
@@ -8502,6 +8737,7 @@
     "canonical_url": "https://x.com/jasonzhou1993/status/2094740336895840605",
     "brief": "Jason Zhou's announcement of \"Claude for people-search\" at a claimed $0.0089/lead versus $600 subscriptions. The pricing claims are the poster's and unverified; the tweet mentions a git repo \"below\" that wasn't captured.",
     "caveat": "The pricing claims are the poster's and unverified; the tweet mentions a git repo \"below\" that wasn't captured.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -8535,6 +8771,7 @@
     "canonical_url": "https://paper.design/",
     "brief": "Paper — \"design, share, ship.\" A design tool baanish was scouting; no verdict from the channel yet. (Rykuuun's pricing-page share from 8 Sep was dropped as context-free.)",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "design"
@@ -8571,6 +8808,7 @@
     "canonical_url": "https://github.com/getpaseo/paseo",
     "brief": "Kenn wanted to fork Paseo for internal use cases but held off because it was AGPL — PR #3944 has now relicensed it to Apache. The shared link was the PR; normalized to the repo root. The license change is the news: it's forkable now.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "developer-tools"
@@ -8605,6 +8843,7 @@
     "canonical_url": "https://github.com/asx8678/elxr",
     "brief": "asx8678's own repo, built after burning through tokens fast. Context is thin, but it reads as a token-efficiency tool from someone feeling the pain directly.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -8639,6 +8878,7 @@
     "canonical_url": "https://x.com/elixirforum/status/2094106034298044867",
     "brief": "The Elixir Forum announcing DSH, the DeepSeek Harness. Announcement only; no repo or docs link was captured.",
     "caveat": "Announcement only; no repo or docs link was captured.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -8672,6 +8912,7 @@
     "canonical_url": "https://getfresh.dev/",
     "brief": "An open-source terminal IDE with zero configuration that brings VS Code-style UX — familiar keybindings, full mouse support, command palette — to the shell. It packs IDE-level features including LSP, multi-cursor editing, magit-style git review with per-hunk staging, TypeScript plugins, multi-GB file handling, and SSH remote editing, plus an orchestrator that runs coding agents (claude, codex, opencode, aider) across worktrees.",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "developer-tools",
@@ -8711,6 +8952,7 @@
     "canonical_url": "https://mdx-graphs.kshv.me/",
     "brief": "Monospace charts and tables for MDX and React. Handy for rendering data visuals that stay crisp in markdown contexts.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "frontend"
@@ -8747,6 +8989,7 @@
     "canonical_url": "https://github.com/eclipse-theia/theia",
     "brief": "Eclipse Theia — a cloud and desktop IDE framework implemented in TypeScript. The open foundation behind several well-known IDE products.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "developer-tools"
@@ -8786,6 +9029,7 @@
     "canonical_url": "https://github.com/makeplane/plane",
     "brief": "Open-source alternative to Jira, Linear, Monday and ClickUp. A self-hostable project-management option for teams avoiding SaaS lock-in.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "self-hosting",
@@ -8823,6 +9067,7 @@
     "canonical_url": "https://huggingface.co/tencent/Hy4-preview-FP8",
     "brief": "Tencent's Hy4 preview weights in FP8 on Hugging Face — 770B total, 49B active, 1M context, open weights. For anyone with the hardware to run a frontier-scale open model.",
     "caveat": null,
+    "details": null,
     "resource_type": "dataset",
     "topics": [
       "inference"
@@ -8856,6 +9101,7 @@
     "canonical_url": "https://huggingface.co/incoai/GLM-5.3-Flash-DFlash2",
     "brief": "A GLM-5.3-Flash quant on Hugging Face. Context is thin — thelaggingway's whole review was \"Huh\" — but it's another fast-model option to know about.",
     "caveat": null,
+    "details": null,
     "resource_type": "dataset",
     "topics": [
       "inference"
@@ -8889,6 +9135,7 @@
     "canonical_url": "https://dbxio.com/en",
     "brief": "DBX — a 20 MB tool for managing 90+ databases. Remarkably small footprint for a universal database client.",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "databases",
@@ -8923,6 +9170,7 @@
     "canonical_url": "https://brilliant.design/",
     "brief": "A professional vector design tool \"where you and your AI agents work directly on the canvas.\" Agent-native design tooling is still rare, which makes this one notable.",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "design",
@@ -8961,6 +9209,7 @@
     "canonical_url": "https://github.com/microsoft/ArgusAgent",
     "brief": "Microsoft's ArgusAgent — a persistent, reviewed multi-agent runtime for long-horizon research and engineering. Directly relevant to anyone running agents on long tasks.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -8995,6 +9244,7 @@
     "canonical_url": "https://prettymd.app/",
     "brief": "A markdown viewer \"for vibe coders\" — a simple, beautiful app for reading the .md files your AI writes: specs, plans, skills, agents and more. Pairs naturally with agent-heavy workflows.",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "productivity",
@@ -9032,6 +9282,7 @@
     "canonical_url": "https://github.com/DevMortimer/pi-warden",
     "brief": "Guardrails for Pi built on pi-typesafe — \"steer the agent instead of interrupting you: Jev judges.\" Part of a small Pi-safety ecosystem from the same author as the next entry.",
     "caveat": null,
+    "details": "pi-warden (DevMortimer, 157 stars) — guardrails for the Pi coding agent that steer instead of interrupt. It enforces your project rules on every write (a `pi-warden.md` rule like \"a bare TODO without a ticket reference is a violation\", judged in ~250ms by TypeSafe's Jev decision model), holds only hard-to-undo actions before they run (force push, `reset --hard`, `rm -rf`, DROP — measured at 3 holds per 1,000 calls on real sessions), and crucially tells the agent what it got wrong so the agent fixes it without you: unverified \"done\" claims get sent back to run the tests (76% of fake \"done\"s became real test runs in the maintainer's 1,168-session field report), repeated failing fixes trigger a request for a new hypothesis, and huge tool outputs get trimmed to what matters. Everything is calibrated on recorded sessions with published eval reports — rules broken went from 6/150 runs to 0/150 with warden on; features that didn't earn their cost (working-memory pruning, stale-result stubs) didn't ship. Install via `pi install npm:pi-warden`, then `/warden enable` and `/warden init`; the offline guards work without a key. MIT.",
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -9067,6 +9318,7 @@
     "canonical_url": "https://github.com/DevMortimer/pi-typesafe",
     "brief": "TypeSafe decisions for Pi — a batched evaluation tool, terminal playground and typed API for extensions. The foundation pi-warden builds on.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "testing",
@@ -9105,6 +9357,7 @@
     "canonical_url": "https://x.com/j_dekoninck/status/2100180792601420138/photo/1",
     "brief": "Jasper Dekoninck releasing new versions of the BrokenArXiv and ArXivMath benchmarks. Announcement only; useful pointer for anyone tracking eval benchmarks.",
     "caveat": "Announcement only; useful pointer for anyone tracking eval benchmarks.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "testing"
@@ -9141,6 +9394,7 @@
     "canonical_url": "https://x.com/QuiverAI/status/2100295136261349802",
     "brief": "QuiverAI's Arrow 2 — their latest models for generating precise, editable vector graphics. Announcement only; a notable data point in AI vector-graphics generation.",
     "caveat": "Announcement only; a notable data point in AI vector-graphics generation.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "design"
@@ -9174,6 +9428,7 @@
     "canonical_url": "https://huggingface.co/monotykamary/MiniCPM5-2B-PCD",
     "brief": "MiniCPM5 2B PCD weights on Hugging Face — the same model family as the 16 Sept in-browser Pi announcement. The model behind that WebGPU coding-agent demo.",
     "caveat": null,
+    "details": null,
     "resource_type": "dataset",
     "topics": [
       "inference"
@@ -9207,6 +9462,7 @@
     "canonical_url": "https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD",
     "brief": "LiquidAI's LFM2.5 2.6B model tuned for RLCD, shared in the context of Jev's API and concepts. A small local model for anyone experimenting with RLCD-style agent loops.",
     "caveat": null,
+    "details": null,
     "resource_type": "dataset",
     "topics": [
       "ai-agents",
@@ -9241,6 +9497,7 @@
     "canonical_url": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD",
     "brief": "A 1B RLCD-tuned Qwen 2.5 that kenn tried locally \"to get a feel of how Jev's API and concepts might feel like\" — and found it did fine in a roguelike spike. Useful as a tiny testbed model before spending on bigger runs.",
     "caveat": null,
+    "details": null,
     "resource_type": "dataset",
     "topics": [
       "inference",
@@ -9275,6 +9532,7 @@
     "canonical_url": "https://x.com/victormustar/status/2099794150879121471",
     "brief": "Announcement of a coding agent (Pi) running entirely in the browser on a 2B model via WebGPU — MiniCPM5-2B + Pi with Transformers.js and 4-bit ONNX weights. Announcement only; no repo was linked in the post.",
     "caveat": "Announcement only; no repo was linked in the post.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -9308,6 +9566,7 @@
     "canonical_url": "https://github.com/monotykamary/varve",
     "brief": "An experimental Rust time-series database with DuckDB SQL and tiered Parquet storage — \"time settles into layers.\" Early-stage but interesting for anyone into time-series storage design.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "databases",
@@ -9345,6 +9604,7 @@
     "canonical_url": "https://github.com/ever-co/ever-gauzy",
     "brief": "Ever Gauzy — an open business management platform covering ERP, CRM, HRM, ATS and project management (gauzy.co). A full open-source suite if you ever need to stand up business tooling.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "self-hosting",
@@ -9382,6 +9642,7 @@
     "canonical_url": "https://x.com/sebastienlorber/status/2099883816718323949",
     "brief": "Demo of a universal syntax highlighter built on the new OpaqueRange web API (Chrome 152+, 2026) — syntax-highlighting different program fragments efficiently. Worth a look for anyone building code-rendering UI.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "frontend",
@@ -9419,6 +9680,7 @@
     "canonical_url": "https://jakub.kr/writing/the-invisible-side-of-design-engineering",
     "brief": "Jakub Krehel's essay on the invisible side of design engineering — the craft that doesn't show up in the final pixels. A thoughtful read for design-minded engineers.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "design"
@@ -9454,6 +9716,7 @@
     "canonical_url": "https://inspomcp.dev/",
     "brief": "A reference layer for AI coding agents — real production websites with desktop and mobile captures, \"real websites worth studying.\" Useful as grounding material when agents need to see how good sites are actually built.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "design",
@@ -9491,6 +9754,7 @@
     "canonical_url": "https://feralui.dev/",
     "brief": "A small library of playful, physics-driven React elements — including a ceiling pull-cord with real Verlet rope physics. For interfaces that should feel alive rather than flat.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "frontend"
@@ -9527,6 +9791,7 @@
     "canonical_url": "https://github.com/slee-persis/GVS5H",
     "brief": "A harness claiming five Qwen3.8-27B models match Claude Fable 5 on LiveCodeBench Hard — \"Fable 5 level coding.\" The performance claims are the poster's and unverified; scarywood75 noted the implementation is Python.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -9565,6 +9830,7 @@
     "canonical_url": "https://github.com/Jakubantalik/transitions.dev",
     "brief": "A collection of the most essential transitions for web apps, plus a skill for agents and a Refine tool. Drop-in motion craft for web projects and the agents building them.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "frontend",
@@ -9600,6 +9866,7 @@
     "canonical_url": "https://www.ui-skills.com/",
     "brief": "A collection of design-engineering skills covering accessibility, motion and frontend craft. Pairs well with the transitions.dev repo above for leveling up UI output.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "frontend",
@@ -9638,6 +9905,7 @@
     "canonical_url": "https://x.com/o_kwasniewski/status/2098804833880817728",
     "brief": "Oskar's announcement of \"e2e\", a new agent-oriented testing framework — he ported React Native Pager View's test suite from Maestro to it. Announcement only; the framework itself is still being built.",
     "caveat": "Announcement only; the framework itself is still being built.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents",
@@ -9674,6 +9942,7 @@
     "canonical_url": "https://www.pdfcn.dev/",
     "brief": "A collection of beautifully designed, accessible and customizable PDF components built on Takumi. Handy if you ever need to render polished PDFs from a web stack.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "frontend",
@@ -9711,6 +9980,7 @@
     "canonical_url": "https://github.com/pascalorg/editor",
     "brief": "An open-source 3D architectural editor with a local CLI, MCP tools and practical workflows for humans and agents. Niche but complete — 3D editing with agent integration baked in.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -9751,6 +10021,7 @@
     "canonical_url": "https://real-api-pricing.vercel.app/",
     "brief": "Compares the real cost of AI — subscription allowances, model benchmarks and the price–performance frontier, with transparent sources. Useful before committing spend to any provider.",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "inference",
@@ -9788,6 +10059,7 @@
     "canonical_url": "https://x.com/aliceisplaying/status/2097387613086683232",
     "brief": "A pi extension giving the agent exactly one tool — doing file read/edit work in arm64 assembly — to stop Astra shelling out to python3, ruby and perl for file ops. Announcement; the actual link was promised in a follow-up tweet.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents",
@@ -9825,6 +10097,7 @@
     "canonical_url": "https://x.com/minara/status/2097413018510618899",
     "brief": "Announcement of Minara Harness — pitched as \"general financial intelligence for everyone\", turning ideas into signals into execution, plus coding tasks like any other agent. The capability claims are the poster's and unverified.",
     "caveat": "The capability claims are the poster's and unverified.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -9860,6 +10133,7 @@
     "canonical_url": "https://x.com/imnotchalk/status/2097056509025018029/photo/1",
     "brief": "Daniel's post that a new herdrdev update is out with fleet management live. A product-update announcement; the herdr blog below has the substance.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -9893,6 +10167,7 @@
     "canonical_url": "https://somethingbig.ai/3d-worlds",
     "brief": "A step-by-step guide to making photorealistic 3D worlds and games — reference photos, Blender assets, sub-agents, blind critics, Three.js vs Unreal Engine, and a starter prompt. The \"GPT-6 Astra\" framing is the site's own marketing.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents",
@@ -9930,6 +10205,7 @@
     "canonical_url": "https://osirisai.live/",
     "brief": "An open-source Palantir alternative — track 10K+ aircraft, 2K satellites and worldwide CCTV on a 3D globe, and run Nmap, DNS, WHOIS and threat-intel scans from the browser across 20+ live feeds. Free.",
     "caveat": null,
+    "details": null,
     "resource_type": "tool",
     "topics": [
       "security"
@@ -9966,6 +10242,7 @@
     "canonical_url": "https://github.com/open-pencil/open-pencil",
     "brief": "An AI-native design editor pitched as an open-source Figma alternative. Worth watching if design tooling is on your radar.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "design"
@@ -10000,6 +10277,7 @@
     "canonical_url": "https://herdr.dev/blog/connecting-the-machines/",
     "brief": "The Herdr blog on 0.9, which brings local and remote machines into one TUI client, with Herdr Cloud coming next. Herdr's pitch: run agents anywhere, leave them running.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents",
@@ -10038,6 +10316,7 @@
     "canonical_url": "https://github.com/affaan-m/ECC",
     "brief": "An agent-harness performance optimization system — skills, instincts, memory, security and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. Directly relevant if you're tuning agent setups.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -10074,6 +10353,7 @@
     "canonical_url": "https://x.com/mdancho84/status/2096623235576053935",
     "brief": "Matt Dancho's post on Microsoft's MarkItDown — turns almost any file (PDFs, Word, PowerPoint, Excel, images) into clean Markdown; claimed 100,000+ GitHub stars. Announcement only; the repo wasn't directly linked.",
     "caveat": "Announcement only; the repo wasn't directly linked.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "developer-tools",
@@ -10110,6 +10390,7 @@
     "canonical_url": "https://x.com/_guillecasaus/status/2096913125266079843",
     "brief": "Google's Magika — detects the real content of any file even when disguised (malware posing as PDF, scripts hidden as images); free and open-source. Announcement only; the repo wasn't directly linked.",
     "caveat": "Announcement only; the repo wasn't directly linked.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "security"
@@ -10146,6 +10427,7 @@
     "canonical_url": "https://github.com/Tencent/teamai-cli",
     "brief": "Tencent's \"Make Every Team AI Native\" CLI. The description is thin, but a Tencent-backed team-AI CLI is worth a look.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -10183,6 +10465,7 @@
     "canonical_url": "https://github.com/1y33/pi-mockdeck",
     "brief": "Cata's first pi extension — an ASCII showcase/mockup gallery of UIs for fast iteration. The shared link pointed at the commits page; normalized to the repo root.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "design",
@@ -10218,6 +10501,7 @@
     "canonical_url": "https://github.com/okf-memory/okf-agent-memory",
     "brief": "Git-native persistent memory for AI coding agents — implements Google OKF v0.2 with sub-300µs in-memory BM25 search and an embedded MCP server. Claims to slash token bloat by 80%; that figure is the repo's and unverified.",
     "caveat": "Claims to slash token bloat by 80%; that figure is the repo's and unverified.",
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -10256,6 +10540,7 @@
     "canonical_url": "https://x.com/jedisct1/status/2096919996412666296",
     "brief": "Microsoft's tgrep — grep for large codebases with client/server support, claimed 7–50x faster than ripgrep and ugrep. Announcement only; the speedup claim is the poster's.",
     "caveat": "Announcement only; the speedup claim is the poster's.",
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "developer-tools"
@@ -10291,6 +10576,7 @@
     "canonical_url": "https://mobframework.com/",
     "brief": "\"BEAM on device\" — write mobile apps in Elixir with the whole BEAM running on the device, rendering native iOS and Android UI; your coding agent attaches to the running app with real state and hot-pushed fixes. Ambitious and unusual.",
     "caveat": null,
+    "details": null,
     "resource_type": "library-framework",
     "topics": [
       "app-development",
@@ -10328,6 +10614,7 @@
     "canonical_url": "https://github.com/redhat-et/ripwire",
     "brief": "\"The ripgrep of AI context\" — a zero-dependency C++23 CLI plus MCP server that gives coding agents a ranked, deterministic map of any repo: blast radius, tests-to-run and quality deltas. From Red Hat's emerging-tech group.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -10369,6 +10656,7 @@
     "canonical_url": "https://developers.openai.com/blog/architectural-visualization-with-astra",
     "brief": "OpenAI's developer blog on using Astra to design a house, refine everyday details, and explore it through Blender camera tours and an Unreal Engine 5 walkthrough. A concrete agentic-design case study.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "ai-agents",
@@ -10403,6 +10691,7 @@
     "canonical_url": "https://x.com/henry_kutrieb/status/2095901727425786300",
     "brief": "SponsorBar — puts a small ad in your menu bar and shares the revenue with you (\"make money from your menu bar for doing nothing\"), with a 10%-extra launch promo. A real launched product, though a niche one.",
     "caveat": null,
+    "details": null,
     "resource_type": "article-guide",
     "topics": [
       "productivity"
@@ -10438,6 +10727,7 @@
     "canonical_url": "https://factory.com/open-source-wikis",
     "brief": "Browse Factory-generated wikis for popular open-source repositories — a preview of what living documentation looks like on real codebases before running it on your own. Nice for evaluating doc-generation tooling.",
     "caveat": null,
+    "details": null,
     "resource_type": "directory-gallery",
     "topics": [
       "developer-tools"
@@ -10475,6 +10765,7 @@
     "canonical_url": "https://github.com/hardbeat920/monocode",
     "brief": "A GUI for your coding agents. Description is minimal, but a visual front-end for agent harnesses is a gap worth filling.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -10509,6 +10800,7 @@
     "canonical_url": "https://github.com/baanish/synthetic-search-mcp",
     "brief": "A search MCP server from baanish, who vouched for PR #4 personally. The shared link was the PR; normalized to the repo root.",
     "caveat": null,
+    "details": null,
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -10547,6 +10839,7 @@
     "canonical_url": "https://github.com/pi-pod/pi-claude-agent-sdk",
     "brief": "An inference provider that lets Pi (a terminal agent harness) run on Claude Code Pro/Max subscriptions instead of API keys. Kenn is using a fork and admits he \"just closed my eyes and let the agent figure it out\" — expect rough edges.",
     "caveat": "Kenn is using a fork and admits he \"just closed my eyes and let the agent figure it out\" — expect rough edges.",
+    "details": "A Pi extension that runs Claude models (Opus, Sonnet, Haiku — including Fable 5.1 and Opus 5.5) inside the Pi coding agent via Anthropic's Agent SDK, billed against your existing Claude Pro/Max subscription quota rather than API spend. Install with `pi install npm:pi-claude-agent-sdk`, then pick any Claude model in `/model`. Behind the scenes it bridges Pi's tools into Claude Code while keeping Pi's TUI, adding streaming, MCP tool bridging, custom tool bridging, session resume/persistence, context sync, thinking support, and skills forwarding. Newer models get 1M context; the model list auto-tracks Pi's Anthropic catalog, so new Claude models appear without a bridge update. The README is unusually honest about caveats: abort-heavy sessions cost noticeably more (session rebuilds re-send the whole conversation and lose prompt cache), exported `ANTHROPIC_*` environment variables redirect the child CLI and break auth, mid-session system-prompt changes may not take effect until a rebuild, and system-prompt edits that strip Pi's prompt refuse the turn to avoid Extra Usage billing. Fork lineage: pi-claude-bridge by Eli Dickinson, originally claude-agent-sdk-pi by Prateek Sunal. MIT.",
     "resource_type": "provider",
     "topics": [
       "ai-agents",
@@ -10586,6 +10879,7 @@
     "canonical_url": "https://github.com/elidickinson/pi-claude-bridge",
     "brief": "Lets you route Pi's model calls through a Claude subscription (\"allow sub usage in pi\"). Same cost-saving idea as pi-claude-agent-sdk: agentic coding without per-token API billing.",
     "caveat": null,
+    "details": "The original Pi extension by Eli Dickinson integrating Claude Code via the Agent SDK (538 stars, 132 forks) — the project that pi-claude-agent-sdk was forked from (itself originally based on Prateek Sunal's claude-agent-sdk-pi). Two features: a provider that runs Opus, Sonnet, and Haiku inside Pi with all tool calls flowing through Pi's TUI, and the opt-in AskClaude tool, which lets Pi's LLM delegate tasks or questions to Claude Code while using another provider (\"Ask Claude to plan a fix\", \"ask claude to poke holes in this theory\", \"ask an isolated claude to review the implementation\"). AskClaude supports read-only, none, or full (read+write+bash) modes, per-call model and thinking-effort selection, and isolated sessions. Model list auto-tracks Pi's Anthropic catalog, 1M context on newer models, and billing currently draws on your regular Pro/Max subscription quota like Claude Code. MIT.",
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -10622,6 +10916,7 @@
     "canonical_url": "https://github.com/harry7557558/spirula-studio",
     "brief": "Cross-vendor 3D Gaussian Splatting trainer — video to splat to mesh, running on Vulkan or CUDA. Notable for not being CUDA-locked.",
     "caveat": null,
+    "details": "Spirula Studio (harry7557558) is a cross-vendor 3D Gaussian Splatting trainer that goes from raw photo/video to splat to textured mesh in one self-contained binary — no Python, PyTorch, or separate COLMAP install. Its differentiator is cross-vendor GPU support: a Vulkan compute backend runs on NVIDIA, AMD, Intel, and Apple Silicon (a legacy CUDA backend remains for NVIDIA). Extreme VRAM efficiency via quantized training — up to 10M full-SH Gaussians in 8GB VRAM — plus native fisheye and 360°/equirectangular camera support, a built-in lightning-fast SfM module with LoMa feature matching, AI masking via SAM, frame extraction from videos, and metric-scale recovery from telemetry metadata. Recent 2026 additions include model/sparse-reconstruction editing and image/video export rendering; macOS/Apple Silicon support was validated in August 2026. Downloadable binaries for Windows, Linux, and macOS, with a CLI for remote/cloud GPU training. 1.4k stars, 967 commits, GPL-3.0, maintained almost entirely by one person. Named after the deep-ocean cephalopod.",
     "resource_type": "repository",
     "topics": [
       "developer-tools"
@@ -10656,6 +10951,7 @@
     "canonical_url": "https://responsively.app/",
     "brief": "A dedicated browser for responsive web development — preview a site at multiple screen sizes side by side. Built for faster, more precise responsive work.",
     "caveat": null,
+    "details": "Responsively App is a free, open-source dev-tool browser (responsively-org/responsively-app) for building responsive web apps faster. It shows all target devices side by side in one window, mirrors every click, scroll, and navigation across all of them in real time, syncs Chrome DevTools inspection, hot-reloads previews, screenshots one device or all at once (full page or element), offers real-time preview of PRs and deploys, and supports custom device profiles with network throttling. Save favorite device combinations as \"Preview Suits\" and switch between them while testing. A Chrome extension jumps to a quick preview from your existing browser.",
     "resource_type": "tool",
     "topics": [
       "developer-tools",
@@ -10691,6 +10987,7 @@
     "canonical_url": "https://www.rege-dev.xyz/lab/grokbot-characters",
     "brief": "A Rege Lab page with six little Grokbot character expressions to play with, plus downloadable editable CoAnimato files. A creative asset resource for bot and character design.",
     "caveat": null,
+    "details": "Rege Lab's \"Grokbot Characters\" page is a demo of image-to-SVG character animation made with AI agents inside CoAnimator — the Grokbot character playing as a 13-second SVG animation alongside its timeline and AI agent. Rather than a code library, it is a showcase you can edit: download the animation file, open it in the free CoAnimator app, and ask your AI agent to change the expressions, motion, or colors.",
     "resource_type": "directory-gallery",
     "topics": [
       "design"
@@ -10726,6 +11023,7 @@
     "canonical_url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
     "brief": "Official Claude guide to prompting Opus 5.5, steering long agent runs, and checking results in Claude apps and Claude Code. A practical reference for anyone driving long agent sessions.",
     "caveat": null,
+    "details": "Anthropic's official operator's guide (claude.dev/blog) for getting the most out of Opus 5.5 in Claude apps and Claude Code. The core advice: hand over the whole task in one message and name the finish line (\"done means every endpoint uses the new client and the test suite passes\") — Opus 5.5 sustains long multi-hour coding runs better than Opus 5. Delete \"think carefully\"/\"think step by step\" lines; it always thinks before replying and removing them speeds up replies without a quality drop. For long runs: put stop-and-ask rules in CLAUDE.md (\"keep going when you don't need me; stop only before destructive actions\"), fan big audits/migrations out across subagents and check each one's evidence, and keep the task list in a file so it survives context compaction. Checking results: read what it needs from you first, ask it to review diffs/PRs before a human does (early testers found it caught more bugs at lowest effort than Opus 5 at high effort), and ask it to mark anything it couldn't confirm. In Claude apps: attach charts and screenshots directly instead of retyping numbers, hand it long decks to check for self-contradictions, and ask for finished files rather than outlines. Also covers the new safeguards — Opus 5.5 is the first Opus with Fable-level bio/cyber guardrails, so flagged messages switch to an older model (disable in Settings if you want to be asked first) — and the /fast research-preview mode for back-and-forth work.",
     "resource_type": "article-guide",
     "topics": [
       "ai-agents",
@@ -10766,6 +11064,7 @@
     "canonical_url": "https://grokbot-icon-studio.serio-ai.chatgpt.site/en",
     "brief": "A minimal bot-icon studio — browse bot icon examples and copy a prompt to generate an icon of your own. Quick asset generation for bot projects.",
     "caveat": null,
+    "details": "A small one-job Rege Lab tool (\"Grokbot Icon · Minimal bot icons\") that turns your favorite character into a little minimal bot icon. Copy the prompt (both versions use the original Korean text), attach your character's image in an image-generation tool, and send — the studio recommends ChatGPT, noting it worked well even on the free plan, while other tools (especially Grok) may not capture the intended style.",
     "resource_type": "tool",
     "topics": [
       "design"
@@ -10802,6 +11101,7 @@
     "canonical_url": "https://try.cloudflare.com/#overview",
     "brief": "Cloudflare Quick Tunnels — free encrypted tunnels that expose localhost as a public URL. Cata plans to use it instead of the VS Code tunnel.",
     "caveat": null,
+    "details": "Cloudflare's Quick Tunnels page — \"put localhost on the Internet.\" One command (`cloudflared tunnel --url http://localhost:8000`) creates a public, encrypted `trycloudflare.com` URL for anything running on your machine: no account, no DNS records, no open ports, ready in seconds. The architecture is outbound-only — cloudflared establishes an encrypted connection to the nearest Cloudflare edge and requests return through it, so your router never accepts inbound traffic. You get automatic HTTPS, edge DDoS protection, and global reachability by default. Made for development loops: share previews, receive webhooks, run browser tests, or give a coding agent a real endpoint. JSON output mode (`--output json`) for scripts. Install with your package manager (`brew install cloudflared`); no Cloudflare account required.",
     "resource_type": "tool",
     "topics": [
       "devops",
@@ -10836,6 +11136,7 @@
     "canonical_url": "https://github.com/k3ybladewielder/BendSR",
     "brief": "Symbolic regression implemented in Bend. A research-flavoured repo for anyone exploring the Bend language.",
     "caveat": null,
+    "details": "BendSR (k3ybladewielder) is a native symbolic-regression implementation built with Bend, Higher Order Company's massively parallel functional language. An evolutionary algorithm breeds expression ASTs concurrently across GPUs/CPUs, and Bend 2's integrated proof checker (LAWS.bend/PROOF.bend) enforces safety invariants — determinism, immutability, numerical safety — during stochastic mutation and crossover, so no division-by-zero or silent NaNs. The cases directory is the fun part: recovering Feynman physics laws, multivariable surfaces, embedded closed-loop control laws for edge devices, interpretable quantitative-finance alpha factors, dynamic-pricing demand curves, GDPR-compliant churn risk scoring, and supply-chain reorder formulas. Runs with `bend src/Main.bend` (CPU) or `bend -c` (GPU); published on Bend Hub as a content-addressed package you can import into your own Bend project. A dataset-loader script converts your CSV/XLSX/Parquet into Bend AST structures. Beyond the algorithm, it is an interesting case study of Bend doing real work plus formal verification of ML-flavored code. MIT.",
     "resource_type": "repository",
     "topics": [
       "developer-tools"
@@ -10869,6 +11170,7 @@
     "canonical_url": "https://github.com/cloudflare/security-audit-skill",
     "brief": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings. A drop-in skill for agentic security reviews.",
     "caveat": null,
+    "details": "Cloudflare's open-source coding-agent skill (23.9k stars) that turns your agent into a security auditor — and the seed of Cloudflare's own vulnerability-discovery harness. It orchestrates a six-phase audit: reconnaissance (architecture, trust boundaries, and input surfaces into architecture.md plus a deterministic coverage-ledger.json), coverage-led hunting with isolated hunters and coverage critics, adversarial candidate validation where a fresh verifier tries to disprove every finding, structured output to findings.json with `confirmed`/`needs_validation`/`rejected` verdicts validated against a schema, independent record verification, and target-neutral reporting (REPORT.md, FINDINGS-DETAIL.md, NEEDS-VALIDATION.md). Attack-class playbooks cover memory safety and binary/kernel targets, LLM prompt injection, web protocol and auth, client-side/DOM, supply chain and CI/release, cloud and IAM, RPC and messaging, resource exhaustion, data isolation, and desktop/mobile IPC. Design principles: only confirm established boundary failures, adversarial validation (the checker is never the finder), severity requires demonstrated impact, defense-in-depth gaps are hardening notes not vulnerabilities, and multiple runs improve coverage. Install with `npx skills add`; needs a tool-using agent with parallel subagents, Node.js, and an OS-enforced sandbox. MIT.",
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -10905,6 +11207,7 @@
     "canonical_url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
     "brief": "Cloudflare engineering deep-dive on saving 100TB of RAM with math (and Rust). A solid systems-engineering read.",
     "caveat": null,
+    "details": "A Cloudflare engineering blog post on how small changes to the consistent-hashing algorithm in the Pingora Backend Router reclaimed over 100TB of RAM globally — on top of 100TB the DNS team shed earlier. The root cause: PBR needed dozens of separate consistent-hash rings (one per feature combination), each holding many hashes per server, ballooning to 6GB of hash structures in some cases. Two fixes: a struct-layout insight (the 32-bit server index was wasteful since PBR will never coordinate 65k+ servers; shrinking to a raw `[u8; 6]` byte array with getters dodged Rust's alignment padding and cut memory 25%), and exact math for the error margin per hash count, showing the last 90,000 hashes bought a minuscule 0.7% reduction — so fewer hashes suffice. The post is also a genuinely good explainer: day-one probability (expected value, standard deviation, coefficient of variation), why 160 hashes per server is the NGINX default, how ketama weighting scales by disk space, and why `#[repr(packed)]` was passed over. Worth reading for any systems engineer — a masterclass in how layout awareness plus a little math saves hardware at scale.",
     "resource_type": "article-guide",
     "topics": [
       "cloud-infrastructure"
@@ -10940,6 +11243,7 @@
     "canonical_url": "https://github.com/bendlang/bend",
     "brief": "Bend 2 — a fast programming language that blocks AI mistakes via proof checking. Install with curl from bend-lang.com.",
     "caveat": null,
+    "details": "Bend 2 (bendlang/bend, 23.3k stars, by Victor Taelin's team) — \"a fast language that blocks AI mistakes via proof.\" The pitch is threefold: it runs as fast as C on the CPU and CUDA on the GPU (the entire language runs on the GPU with full memory unification), it checks mathematical proofs orders of magnitude faster than Isabelle/Agda/Lean/Rocq (sub-second checks that take other provers minutes), and it is parallel by default — no threads, no locks, no kernels; split work in two and it spreads across every core. The signature feature is LAWS.bend: declare rules your app must never break (\"the sum of all balances must be zero\", \"players can never pass through solid walls\", \"winning is impossible\"), and the compiler mechanically demands a correctness proof whenever code is edited, making violations impossible — their demo shows an AI merging a wrap-around bug without laws, and being forced to fix it with them. Syntax reads like Python with dependent types. Get started with `curl -fsSL https://bend-lang.com/install.sh | sh`, then tell your agent to `bend guide`, keep important rules in LAWS.bend, and run `bend PROOF.bend` before committing. The limitations list is refreshingly honest: Bend 2 is young (Bend 1 programs don't carry over), annotations are verbose, no Windows, no TLS/HTTP/JSON/regex yet, the compiler is 99% AI-written and not fully audited, and the JS target is single-core. Apache-2.0.",
     "resource_type": "repository",
     "topics": [
       "developer-tools"
@@ -10975,6 +11279,7 @@
     "canonical_url": "https://x.com/MonidHQ/status/2100705843453079718",
     "brief": "Announcement of a free agent search/fetch API — \"killed Exa, Tavily and Brave\", $0 with no quotas, from Tiny_Fish and MonidHQ. The pricing claims are the poster's and unverified; this link is the announcement, not documentation.",
     "caveat": "The pricing claims are the poster's and unverified; this link is the announcement, not documentation.",
+    "details": "An X announcement from MonidHQ (shared by Rykuuun) for a free agent search/fetch API from TinyFish and Monid, framed by the poster as a \"$0 with no quotas\" alternative to Exa, Tavily, and Brave — those pricing claims are the poster's, not verified. Context: Monid is an \"OpenRouter for agent tools\" platform where agents discover, inspect, and run 1,800+ APIs through one connection (MCP server, skill, CLI, or HTTP API); TinyFish is its zero-cost live-web search and multi-URL fetch provider (browser-rendered, never cached, deterministic). A companion npm plugin (hermes-monid-websearch) routes a Hermes agent's web_search/web_extract calls through it. X.com is not directly fetchable from this environment, so treat the announcement's claims as unverified; the link is the announcement, not documentation.",
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -11010,6 +11315,7 @@
     "canonical_url": "https://github.com/superagents-lab/jev-search",
     "brief": "Shared by thelaggingway with just \"Another one\" — context is thin, but it landed in the search-tool thread. Worth a look if you're tracking search APIs.",
     "caveat": null,
+    "details": "Jev Search (superagents-lab, 507 stars) — search the web in plain language, with a decision model doing the query understanding. Type the request as you would say it (\"Rust async runtimes on Hacker News this month\"), and a decision model such as TypeSafe's Jev or Cloudflare's Clef chooses the sources, time range, and search terms, then ranks results returned through Search1API. You get links and snippets with visible relevance scores and editable filters — no generated answers. Under the hood: Google, DuckDuckGo, and Yandex for open web; Hacker News, Reddit, and GitHub combine site-restricted Google with dedicated engines; X, arXiv, YouTube, Wikipedia, IMDb, and WeChat use vertical engines — all called concurrently and streamed as newline-delimited JSON. Deployable to Cloudflare Workers (TanStack Start, React, KV cache, rate limits), installable as a PWA, with a model selector (Jev, Clef, Clef-flash) and fallback provider chains. Built by Search1API as an independent project, not an official TypeSafe product. MIT.",
     "resource_type": "repository",
     "topics": [
       "backend"

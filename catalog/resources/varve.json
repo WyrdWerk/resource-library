@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/monotykamary/varve",
   "brief": "An experimental Rust time-series database with DuckDB SQL and tiered Parquet storage — \"time settles into layers.\" Early-stage but interesting for anyone into time-series storage design.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "databases",

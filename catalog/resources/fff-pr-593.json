@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/dmtrKovalenko/fff/pull/593",
   "brief": "A fix for fff — the /fff-mode override was only stored in an in-memory variable lost on /reload and session restart; this PR persists fff-mode across reloads and session resumes.",
   "caveat": null,
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "developer-tools"

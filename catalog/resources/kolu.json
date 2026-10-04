@@ -5,6 +5,7 @@
   "canonical_url": "https://kolu.dev/",
   "brief": "A terminal tool that bills itself as \"the best way to run terminals\". Details unverified, but worth a look if your terminal setup needs rethinking.",
   "caveat": "Details unverified, but worth a look if your terminal setup needs rethinking.",
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "developer-tools"

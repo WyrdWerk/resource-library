@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/hoainho/img2threejs",
   "brief": "A skill for coding agents (Claude Code, Codex, OpenCode) that rebuilds the object in a reference photo as a code-only, procedural Three.js model — reconstruction-by-code, not photogrammetry or mesh extraction — with a staged sculpting pipeline (blockout → material → lighting → optimization) and vision-review quality gates. It is deliberately token-efficient: deterministic scripts handle validation while model tokens are spent only on visual judgment and code; Apache 2.0, around 16.7k stars, with a live demo gallery.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

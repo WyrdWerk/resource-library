@@ -5,6 +5,7 @@
   "canonical_url": "https://delta.dev/",
   "brief": "A multiplayer environment for coding with agents — shared threads where teammates and agents build and review together, with full conversation and code context. Product claims unverified.",
   "caveat": "Product claims unverified.",
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "ai-agents",

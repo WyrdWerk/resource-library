@@ -5,6 +5,7 @@
   "canonical_url": "https://fireworks.ai/",
   "brief": "Serverless inference from $0.10/1M tokens (under 4B params), $1 free starter credit, 50% off batch. 100–400+ open models with an OpenAI-compatible API, FireAttention engine, LoRA/RFT fine-tuning and dedicated GPUs.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

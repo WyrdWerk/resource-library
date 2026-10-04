@@ -5,6 +5,7 @@
   "canonical_url": "https://dbxio.com/en",
   "brief": "DBX — a 20 MB tool for managing 90+ databases. Remarkably small footprint for a universal database client.",
   "caveat": null,
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "databases",

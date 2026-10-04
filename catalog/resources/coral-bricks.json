@@ -5,6 +5,7 @@
   "canonical_url": "https://www.coralbricks.ai/",
   "brief": "High-throughput inference aimed at agents. A forwarded promo code (SUPERINT) covered GLM 5.2 and Kimi K3.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

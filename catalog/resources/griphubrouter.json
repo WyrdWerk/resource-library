@@ -5,6 +5,7 @@
   "canonical_url": "https://griphubrouter.com/",
   "brief": "A pay-as-you-go multi-model router aimed at Indonesian developers: 47 models from 12 vendors behind one OpenAI-compatible endpoint, with credits at Rp 300 each, top-ups from Rp 15,000 via QRIS, and no subscription or foreign card required. A one-click installer wires it into VS Code, Claude Code, OpenCode, GitHub Copilot, and Hermes Agent, and a live status widget shows gateway response times.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

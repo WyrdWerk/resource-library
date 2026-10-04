@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/guillaumemeyer/watermarks-remover",
   "brief": "Strips multi-vendor AI provenance marks — Unicode text hygiene, statistical rewrite hooks, and C2PA handling. Legitimate hygiene tooling; obviously dual-use.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "developer-tools"

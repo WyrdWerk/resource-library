@@ -5,6 +5,7 @@
   "canonical_url": "https://thereisanopensourceforthat.com/",
   "brief": "A directory of open-source alternatives to popular software. The description is inferred from the site's name; unverified from the message.",
   "caveat": "The description is inferred from the site's name; unverified from the message.",
+  "details": null,
   "resource_type": "directory-gallery",
   "topics": [
     "developer-tools"

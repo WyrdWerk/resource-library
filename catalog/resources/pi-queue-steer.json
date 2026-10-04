@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/tmustier/pi-queue-steer",
   "brief": "A pi extension adding a Cursor-style visible follow-up queue: pending agent tasks are listed, inline-editable, and steerable from a terminal UI while pi works. Small repo (~35 stars) but fills a real gap in agent-driven workflows.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

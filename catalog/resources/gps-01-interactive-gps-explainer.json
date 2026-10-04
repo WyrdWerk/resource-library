@@ -5,6 +5,7 @@
   "canonical_url": "https://gps-01.dmytro.fyi/",
   "brief": "A tiny interactive explainer of how your phone finds itself — satellites, signal timing, and trilateration. The good kind of technical storytelling.",
   "caveat": null,
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "frontend"

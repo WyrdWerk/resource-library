@@ -5,6 +5,7 @@
   "canonical_url": "https://getfresh.dev/",
   "brief": "An open-source terminal IDE with zero configuration that brings VS Code-style UX — familiar keybindings, full mouse support, command palette — to the shell. It packs IDE-level features including LSP, multi-cursor editing, magit-style git review with per-hunk staging, TypeScript plugins, multi-GB file handling, and SSH remote editing, plus an orchestrator that runs coding agents (claude, codex, opencode, aider) across worktrees.",
   "caveat": null,
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "developer-tools",

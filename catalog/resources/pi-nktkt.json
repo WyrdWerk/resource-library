@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/nktkt/pi",
   "brief": "A GitHub repo named \"pi\", shared without description. Given the surrounding chatter about pi-vcc, likely an agent project; unverified from the message text.",
   "caveat": "Given the surrounding chatter about pi-vcc, likely an agent project; unverified from the message text.",
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents"

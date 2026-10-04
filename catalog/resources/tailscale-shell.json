@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/monotykamary/tailscale-shell",
   "brief": "A zsh-based proxied shell plus exit-node picker for Tailscale userspace networking: pick an exit node by country, city, or code and route egress through Mullvad or your own relay via SOCKS5. Small repo (~4 stars), but a practical wrapper around the tailscale CLI.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "developer-tools"

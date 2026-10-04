@@ -5,6 +5,7 @@
   "canonical_url": "https://openhistory.sh/",
   "brief": "Turns your Mac activity into a private timeline for you and your AI — local activity history as agent context. Privacy-sensitive by nature; the \"private\" claim is unverified.",
   "caveat": "Privacy-sensitive by nature; the \"private\" claim is unverified.",
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "ai-agents",

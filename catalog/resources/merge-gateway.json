@@ -5,6 +5,7 @@
   "canonical_url": "https://merge.dev/",
   "brief": "Multi-provider gateway. A Discord-shared \"75% off DeepSeek V4 Flash through September 30\" promo was not corroborated on its site.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

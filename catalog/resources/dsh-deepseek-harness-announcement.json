@@ -5,6 +5,7 @@
   "canonical_url": "https://x.com/elixirforum/status/2094106034298044867",
   "brief": "The Elixir Forum announcing DSH, the DeepSeek Harness. Announcement only; no repo or docs link was captured.",
   "caveat": "Announcement only; no repo or docs link was captured.",
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "ai-agents"

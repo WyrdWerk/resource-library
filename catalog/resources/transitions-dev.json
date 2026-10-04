@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/Jakubantalik/transitions.dev",
   "brief": "A collection of the most essential transitions for web apps, plus a skill for agents and a Refine tool. Drop-in motion craft for web projects and the agents building them.",
   "caveat": null,
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "frontend",

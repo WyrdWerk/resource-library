@@ -5,6 +5,7 @@
   "canonical_url": "https://prettymd.app/",
   "brief": "A markdown viewer \"for vibe coders\" — a simple, beautiful app for reading the .md files your AI writes: specs, plans, skills, agents and more. Pairs naturally with agent-heavy workflows.",
   "caveat": null,
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "productivity",

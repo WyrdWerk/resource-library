@@ -5,6 +5,7 @@
   "canonical_url": "https://www.wafer.ai/blog/kimi-k3-mi355x",
   "brief": "Wafer benchmarked Moonshot's 2.8T-parameter Kimi K3 on AMD's MI355X (288GB VRAM per GPU): 952 tok/s/node aggregate and 118 tok/s single-stream — over 3.8× the per-node throughput of a 2-node B200 deployment. With the MI355X ~2.4× cheaper per GPU than NVIDIA's B300, it wins decisively on performance per dollar; the post also details real ROCm fixes, including speculative decode via RadixArk's DSpark draft and zero-padding heads to unlock the AITER MLA prefill kernel. All throughput figures are vendor-reported and not independently verified.",
   "caveat": "All throughput figures are vendor-reported and not independently verified.",
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "inference",

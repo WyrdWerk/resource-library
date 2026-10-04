@@ -5,6 +5,7 @@
   "canonical_url": "https://www.rareui.com/",
   "brief": "A library of animated React components. Another solid option in the crowded React-animation space; compare with the other UI libraries already in the archive.",
   "caveat": null,
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "frontend"

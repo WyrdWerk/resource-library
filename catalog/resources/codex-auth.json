@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/Loongphy/codex-auth",
   "brief": "A Zig-written CLI for switching and managing multiple Codex accounts — handy for anyone juggling several Codex subscriptions or auth contexts from the terminal. ~2.7k stars.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

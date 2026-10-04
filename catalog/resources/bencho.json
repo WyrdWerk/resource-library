@@ -5,6 +5,7 @@
   "canonical_url": "https://bencho.dev",
   "brief": "Bencho is a library of interactive React components and micro-interactions — asset swap, heat map, image compare, dynamic island, magnetic select, slide-to-confirm and dozens more — each explorable live and liftable straight into your projects. From @cabralorenzo; a shortcut to polished interactions without building them from scratch.",
   "caveat": null,
+  "details": "Bencho is a library of interactive React components and micro-interactions you can explore live and lift straight into your projects. The catalog covers dozens of tactile patterns — asset swap, heat map, image compare, dynamic island, magnetic select, slide to confirm, pull to refresh, tilt card, reorder list, radial menu, and more — each labeled with its gesture (press, hover, drag, swipe, type, slide, select). A shortcut to polished, tactile UI without building each interaction from scratch. From @cabralorenzo.",
   "resource_type": "library-framework",
   "topics": [
     "frontend"

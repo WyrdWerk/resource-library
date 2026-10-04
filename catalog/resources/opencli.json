@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/jackwener/opencli",
   "brief": "Turns any website into a CLI an AI agent can use: opencli drives your logged-in browser session (Playwright-based) so agents can operate sites through a command line instead of fragile DOM scripting. ~30k stars.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

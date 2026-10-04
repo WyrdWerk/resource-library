@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/getpaseo/paseo",
   "brief": "Kenn wanted to fork Paseo for internal use cases but held off because it was AGPL — PR #3944 has now relicensed it to Apache. The shared link was the PR; normalized to the repo root. The license change is the news: it's forkable now.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "developer-tools"

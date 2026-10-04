@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/Mte90/linus-torvalds-skill",
   "brief": "Distills Linus Torvalds' code-review methodology from ~38k review moves extracted from 31k of his LKML emails (2002–2026) plus 67 interview transcripts into a reusable, language-agnostic agent skill. Ships four variants distilled by different LLMs (gpt-oss, GLM, Mistral, Qwen) with validation reports comparing skilled vs. baseline reviews; the gpt-oss variant is the recommended default.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

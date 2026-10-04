@@ -5,6 +5,7 @@
   "canonical_url": "https://regolo.ai/pricing/",
   "brief": "European inference platform with EUR per-token pay-as-you-go (e.g. Llama-3.3-70B €0.60/€2.70 per 1M in/out) and 70% off the first 3 months. Marketing claim: \"Zero data retention on European green infrastructure.\"",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

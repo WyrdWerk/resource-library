@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/justrach/codedb",
   "brief": "A Zig code-intelligence server and MCP toolset for AI agents, recommended firsthand by the sharer. Native-speed code intelligence as agent context is a strong pitch.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "ai-agents",

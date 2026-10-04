@@ -5,6 +5,7 @@
   "canonical_url": "https://paretoinference.com/",
   "brief": "Pay-per-token inference running on Pareto's own GPUs, including GLM 5.3 Flash. Shared via its pricing page.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

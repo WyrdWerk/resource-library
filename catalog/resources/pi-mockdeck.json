@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/1y33/pi-mockdeck",
   "brief": "Cata's first pi extension — an ASCII showcase/mockup gallery of UIs for fast iteration. The shared link pointed at the commits page; normalized to the repo root.",
   "caveat": null,
+  "details": null,
   "resource_type": "repository",
   "topics": [
     "design",

@@ -5,6 +5,7 @@
   "canonical_url": "https://platform.openai.com/docs/pricing",
   "brief": "OpenAI's official per-1M-token pricing page (e.g. gpt-6-luna $0.10 in / $0.50 out short-context). Useful as the first-party reference behind third-party price comparisons.",
   "caveat": null,
+  "details": null,
   "resource_type": "documentation",
   "topics": [
     "inference"

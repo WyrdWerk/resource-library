@@ -5,6 +5,7 @@
   "canonical_url": "https://eve.dev/",
   "brief": "A durable agent framework pitched as \"Next.js for agents\" — build agents with one folder, with durability baked in. Product claims unverified; the durability angle is the interesting bit.",
   "caveat": "Product claims unverified; the durability angle is the interesting bit.",
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "ai-agents"

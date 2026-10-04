@@ -5,6 +5,7 @@
   "canonical_url": "https://amicro.vercel.app/",
   "brief": "A curated gallery of premium React micro-interaction and transition components built with React and Motion, with layout inspired by transition.dev. It showcases around 36 named interactions — morph, glare shine, magnetic field, text reveal, focus blur, shake, rotate, color-morph buttons — as ready-to-use UI components. Licensing and copy-paste terms are not stated on the page, so reusability is uncertain.",
   "caveat": null,
+  "details": null,
   "resource_type": "directory-gallery",
   "topics": [
     "frontend",

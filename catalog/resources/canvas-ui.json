@@ -5,6 +5,7 @@
   "canonical_url": "https://canvasui.dev/",
   "brief": "A creative component library for Canvas, WebGL and WebGPU. For interfaces that need GPU-level visuals rather than DOM elements.",
   "caveat": null,
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "frontend"

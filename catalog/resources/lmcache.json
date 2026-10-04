@@ -5,6 +5,7 @@
   "canonical_url": "https://github.com/LMCache/LMCache",
   "brief": "\"Supercharge Your LLM with the Fastest KV Cache Layer.\" The performance claim is the project's and unverified.",
   "caveat": null,
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "inference",

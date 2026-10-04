@@ -5,6 +5,7 @@
   "canonical_url": "https://platform.stepfun.ai/",
   "brief": "StepFun's open platform with a usage-billed API (api.stepfun.ai/v1) and a 15-day trial needing no card. Serves Step 5 Preview and StepAudio 3.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

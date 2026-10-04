@@ -5,6 +5,7 @@
   "canonical_url": "https://www.interior.dev/",
   "brief": "Micro-interactions for React, \"built for the half-second after a click\". A focused little library for the small animations that make UIs feel alive.",
   "caveat": null,
+  "details": null,
   "resource_type": "library-framework",
   "topics": [
     "frontend"

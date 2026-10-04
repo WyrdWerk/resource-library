@@ -5,6 +5,7 @@
   "canonical_url": "https://developers.openai.com/blog/architectural-visualization-with-astra",
   "brief": "OpenAI's developer blog on using Astra to design a house, refine everyday details, and explore it through Blender camera tours and an Unreal Engine 5 walkthrough. A concrete agentic-design case study.",
   "caveat": null,
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

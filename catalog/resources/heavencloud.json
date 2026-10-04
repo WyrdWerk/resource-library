@@ -5,6 +5,7 @@
   "canonical_url": "https://heavencloud.in/",
   "brief": "Indian hosting provider (Mumbai, plus US/Singapore/Germany) for Discord/Telegram bots, Lavalink nodes, game servers and Ryzen VPS — a free 24/7 Discord bot tier with no credit card, paid bot plans from ₹20/mo. The share cites a 99.5% SLA, but the site's FAQ reserves uptime SLAs for paid plans; take the SLA claim with caution.",
   "caveat": null,
+  "details": "HeavenCloud is an Indian hosting provider (Mumbai, plus US, Singapore, and Germany) specializing in Discord/Telegram bot hosting, managed Lavalink v4 audio nodes for music bots, game servers (Minecraft, FiveM, Hytale), and Ryzen VPS — on AMD Ryzen 9 9950X with NVMe storage and DDoS-protected uplinks, managed through a Pterodactyl panel. Pricing is in INR: a free 24/7 Discord bot tier with no credit card, paid bots from ₹20/mo, managed Lavalink from ₹200/mo, game servers from ₹60/mo, and VPS from ₹293/mo. DDoS protection is included on every plan including the free tier; paid plans carry a 95–99.95% network uptime SLA while free tiers aim for 24/7 without a paid guarantee. Google reviews show 5.0 from 12 reviews as of late September 2026 — a small sample, so take it with a grain of salt.",
   "resource_type": "service-platform",
   "topics": [
     "cloud-infrastructure"

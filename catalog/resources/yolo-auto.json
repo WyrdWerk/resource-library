@@ -5,6 +5,7 @@
   "canonical_url": "https://yolo-auto.com/",
   "brief": "Unlimited-token API plans, currently $19/$39 — the Discord-era $6/mo claim is superseded. Shared as an unlimited Qwen3.6-35B API.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

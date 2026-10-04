@@ -5,6 +5,7 @@
   "canonical_url": "https://x.com/victormustar/status/2099794150879121471",
   "brief": "Announcement of a coding agent (Pi) running entirely in the browser on a 2B model via WebGPU — MiniCPM5-2B + Pi with Transformers.js and 4-bit ONNX weights. Announcement only; no repo was linked in the post.",
   "caveat": "Announcement only; no repo was linked in the post.",
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "ai-agents"

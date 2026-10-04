@@ -5,6 +5,7 @@
   "canonical_url": "https://docs.turso.tech/agentfs/introduction",
   "brief": "Turso's introduction to AgentFS, which Rykuuun found interesting. It appears to be an agent-oriented filesystem from Turso; anything beyond the docs link is unverified.",
   "caveat": "It appears to be an agent-oriented filesystem from Turso; anything beyond the docs link is unverified.",
+  "details": null,
   "resource_type": "documentation",
   "topics": [
     "ai-agents"

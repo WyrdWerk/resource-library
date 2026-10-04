@@ -5,6 +5,7 @@
   "canonical_url": "https://inco.ai/",
   "brief": "Inference company from the Inco (confidential-computing) team, branding itself 'inference, reimagined for the agentic era.' It open-sourced Splash, a local inference engine claiming 144 tokens/s on an M5 Max with Qwen3.8-27B (integrated into LM Studio), and its earlier DFlash speculative-decoding tech was adopted by SGLang, vLLM, TensorRT-LLM, llama.cpp, plus Meta, NVIDIA, and Xiaomi. The 144 tokens/s figure is a peak vendor-demonstration value, not an independently verified benchmark; the public site is still sparse with no visible pricing or hosted-API details.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

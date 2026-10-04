@@ -5,6 +5,7 @@
   "canonical_url": "https://inference.hetzner.com/api/v1",
   "brief": "Hetzner's free experimental open-weight LLM inference API (announced July 2026), EU-hosted. Roughly 4M input / 100k output tokens per 60s per key, no SLA — not for production.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"

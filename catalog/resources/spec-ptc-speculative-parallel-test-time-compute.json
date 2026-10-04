@@ -5,6 +5,7 @@
   "canonical_url": "https://alexzhang13.github.io/blog/2026/spec-ptc/",
   "brief": "A write-up of Spec-PTC, a speculative parallel test-time compute framework for long-horizon agents. Interesting if you follow inference-scaling tricks for agentic workloads.",
   "caveat": null,
+  "details": null,
   "resource_type": "article-guide",
   "topics": [
     "ai-agents",

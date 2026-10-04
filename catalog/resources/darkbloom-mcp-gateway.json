@@ -5,6 +5,7 @@
   "canonical_url": "https://www.darkbloom.dev/",
   "brief": "An MCP (Model Context Protocol) gateway that advertises an accuracy guarantee — unusual positioning in the MCP tooling space. Claims unverified; interesting if you run MCP servers in production.",
   "caveat": "Claims unverified; interesting if you run MCP servers in production.",
+  "details": null,
   "resource_type": "tool",
   "topics": [
     "ai-agents"

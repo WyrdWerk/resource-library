@@ -5,6 +5,7 @@
   "canonical_url": "https://synthetic.new/",
   "brief": "$30/month subscription (or usage-based billing) for running LLMs privately, usable in its own app or any OpenAI-compatible tool (Roo, Cline, Octofriend). It also built Synbad, an open-source evaluation suite sourced from real coding-agent bugs, and positions itself as coding-agent-optimized inference. Synbad's '100% vs as low as 66%' pass-rate comparison is vendor marketing, not independently verified.",
   "caveat": "Synbad's '100% vs as low as 66%' pass-rate comparison is vendor marketing, not independently verified.",
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference",

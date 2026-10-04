@@ -5,6 +5,7 @@
   "canonical_url": "https://grokbot-icon-studio.serio-ai.chatgpt.site/en",
   "brief": "A minimal bot-icon studio — browse bot icon examples and copy a prompt to generate an icon of your own. Quick asset generation for bot projects.",
   "caveat": null,
+  "details": "A small one-job Rege Lab tool (\"Grokbot Icon · Minimal bot icons\") that turns your favorite character into a little minimal bot icon. Copy the prompt (both versions use the original Korean text), attach your character's image in an image-generation tool, and send — the studio recommends ChatGPT, noting it worked well even on the free plan, while other tools (especially Grok) may not capture the intended style.",
   "resource_type": "tool",
   "topics": [
     "design"

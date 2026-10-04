@@ -5,6 +5,7 @@
   "canonical_url": "https://api-docs.deepseek.com/quick_start/pricing",
   "brief": "DeepSeek's official API pricing: pay-as-you-go with 50% off-peak discounts (Flash $0.15/$0.60, Pro $0.66/$1.98 per 1M in/out on cache miss; peak is 2x). The $0.13/$0.30 figures seen in Discord are stale.",
   "caveat": null,
+  "details": null,
   "resource_type": "provider",
   "topics": [
     "inference"
