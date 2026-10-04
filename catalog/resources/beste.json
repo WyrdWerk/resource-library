@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "beste",
+  "title": "beste",
+  "canonical_url": "https://ui.beste.co",
+  "brief": "Beste UI is a collection of production-ready shadcn/tailwind blocks and components — 2189+ blocks (heroes, pricing, testimonials, error pages) and 1326+ smaller pieces, each self-contained and installed with one shadcn CLI command and no runtime dependency. Free pieces are MIT-licensed for commercial use; Pro blocks need a Beste UI license, though installed code keeps working if the license lapses.",
+  "caveat": null,
+  "resource_type": "library-framework",
+  "topics": [
+    "frontend"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "react",
+    "tailwind-css"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

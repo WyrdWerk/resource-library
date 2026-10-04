@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "bencho",
+  "title": "bencho",
+  "canonical_url": "https://bencho.dev",
+  "brief": "Bencho is a library of interactive React components and micro-interactions — asset swap, heat map, image compare, dynamic island, magnetic select, slide-to-confirm and dozens more — each explorable live and liftable straight into your projects. From @cabralorenzo; a shortcut to polished interactions without building them from scratch.",
+  "caveat": null,
+  "resource_type": "library-framework",
+  "topics": [
+    "frontend"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "react"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

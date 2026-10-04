@@ -1,6 +1,6 @@
 {
-  "migrated": 301,
-  "source_rows": 301,
+  "migrated": 306,
+  "source_rows": 306,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -595,6 +595,86 @@
       "all_equal": true,
       "shared_on": "2026-10-02",
       "date_evidence": "posted '2 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "hyperiux",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-04",
+      "date_evidence": "posted '4 Oct' inside week label '1–8 Oct 2026'"
+    },
+    {
+      "id": "vanta-ui",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-04",
+      "date_evidence": "posted '4 Oct' inside week label '1–8 Oct 2026'"
+    },
+    {
+      "id": "bencho",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-04",
+      "date_evidence": "posted '4 Oct' inside week label '1–8 Oct 2026'"
+    },
+    {
+      "id": "obsidian-ui",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-04",
+      "date_evidence": "posted '4 Oct' inside week label '1–8 Oct 2026'"
+    },
+    {
+      "id": "beste",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-04",
+      "date_evidence": "posted '4 Oct' inside week label '1–8 Oct 2026'"
     },
     {
       "id": "prism-inference",

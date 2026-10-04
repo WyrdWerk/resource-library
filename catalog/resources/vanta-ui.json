@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "vanta-ui",
+  "title": "vanta ui",
+  "canonical_url": "https://vantaui.com",
+  "brief": "VantaUI is a UI library built from real products — production-grade site templates, app templates, components, blocks and Figma files for Next.js, React and LLM-assisted builds, from @vanta_ui. It doubles as a reference for how world-class products handle UI patterns, copywriting and user flows.",
+  "caveat": null,
+  "resource_type": "library-framework",
+  "topics": [
+    "frontend"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "react",
+    "next-js"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
