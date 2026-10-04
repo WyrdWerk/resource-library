@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/dmtrKovalenko/fff/pull/593",
   "brief": "A fix for fff — the /fff-mode override was only stored in an in-memory variable lost on /reload and session restart; this PR persists fff-mode across reloads and session resumes.",
   "caveat": null,
-  "details": null,
+  "details": "This pull request by monotykamary to dmtrKovalenko/fff fixes the pi-fff extension's /fff-mode command, which previously only mutated an in-memory variable that was lost on /reload and session restart. The selected mode is now persisted through two complementary mechanisms: the PI_FFF_MODE environment variable, which survives /reload since the process stays alive, and pi.appendEntry('fff-mode', ...) writing to the session file, which survives full process restarts and is restored on session start. A follow-up commit simplified this to the appendEntry mechanism alone, and the user-facing notice was updated from \"requires restart\" to \"requires /reload\" now that reload actually works.",
   "resource_type": "article-guide",
   "topics": [
     "developer-tools"

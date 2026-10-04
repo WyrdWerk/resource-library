@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/toss/es-git/pull/213",
   "brief": "A fix by monotykamary — diff.print() (default Patch format) was stripping the +/-/space line-origin prefixes from output; this PR prepends them back.",
   "caveat": null,
-  "details": null,
+  "details": "This pull request by monotykamary to toss/es-git (Rust bindings for libgit2) fixes diff.print() in the default Patch format, which was stripping the plus, minus, and space line-origin prefixes from hunk body lines, making the output unparseable for consumers that need to distinguish additions from deletions and context. The fix in src/diff.rs reads each line's origin and prepends it for content lines, while leaving already-formatted origins (file headers, hunk headers, EOF markers, binary notices) untouched, and it applies to all DiffFormat variants going through the print callback. The test plan updates the diff spec expectations and reports all 210 existing tests passing across 34 test files.",
   "resource_type": "article-guide",
   "topics": [
     "developer-tools"

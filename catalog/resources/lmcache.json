@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/LMCache/LMCache",
   "brief": "\"Supercharge Your LLM with the Fastest KV Cache Layer.\" The performance claim is the project's and unverified.",
   "caveat": null,
-  "details": null,
+  "details": "LMCache is an open-source KV cache management layer for LLM inference that turns the KV cache from throwaway state into persistent, reusable AI-native knowledge. Running as an engine-independent daemon, it offloads KV cache from GPU memory into a tiered hierarchy (CPU RAM, local disk, Redis/Valkey, S3-compatible storage, and more), cutting time-to-first-token and boosting throughput especially for long-context, multi-turn, and RAG workloads. It is vendor-neutral across serving engines (vLLM and others), hardware, and storage backends, with production observability metrics and features like non-prefix KV reuse via CacheBlend. Apache 2.0 licensed with around twelve thousand GitHub stars, it is backed in part by Tensormesh and integrated by projects including NVIDIA Dynamo.",
   "resource_type": "library-framework",
   "topics": [
     "inference",

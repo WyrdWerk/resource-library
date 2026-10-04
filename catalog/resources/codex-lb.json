@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/Soju06/codex-lb",
   "brief": "A Codex/ChatGPT multiple-account load balancer and proxy with usage tracking, a dashboard, and OpenCode compatibility. Tom: \"gonna try first.\"",
   "caveat": null,
-  "details": null,
+  "details": "codex-lb (Soju06) is a load balancer and proxy for multiple ChatGPT/Codex accounts: pool accounts, distribute load, track per-account tokens and costs with 28-day trends, manage per-key API rate limits, and view everything in a password/TOTP-protected dashboard. It exposes OpenAI-compatible endpoints for Codex CLI, OpenCode, OpenClaw, Hermes Agent, and the Python SDK, with automatic model sync from upstream. MIT-licensed, deployable via Docker, uvx, or Nix with SQLite by default and optional PostgreSQL; ~3.3k stars.",
   "resource_type": "repository",
   "topics": [
     "ai-agents",

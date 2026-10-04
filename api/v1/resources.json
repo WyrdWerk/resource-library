@@ -4705,7 +4705,7 @@
     "canonical_url": "https://signals.forwardfuture.ai/loop-library/",
     "brief": "A library of 85 copy-pasteable AI agent \"loops\" from ForwardFuture — repeatable workflows like the docs sweep, the architecture-satisfaction refactor loop, the production-error sweep, and the SEO/GEO visibility loop — each with explicit checks and stopping conditions. Searchable across engineering, design, content, operations, and evaluation categories.",
     "caveat": null,
-    "details": null,
+    "details": "The ForwardFuture Signals Loop Library is a searchable collection of 85 copy-paste prompts called loops: repeatable AI agent workflows with clear checks and stopping conditions. Each loop encodes a full operational procedure — for example the production error sweep (find, fix, verify, open a PR), the docs sweep (align docs with the codebase), or the ticket-to-PR-ready loop — across engineering, content, evaluation, operations, and design categories, many contributed by named practitioners. The point is to give agents bounded, verifiable routines instead of open-ended instructions, so recurring work like changelogs, test coverage, or repo cleanup runs the same reliable way every time.",
     "resource_type": "directory-gallery",
     "topics": [
       "ai-agents",
@@ -4743,7 +4743,7 @@
     "canonical_url": "https://flueframework.com/blog/flue-1-0-beta/?x",
     "brief": "Flue 1.0 Beta announcement — \"the open framework for building agents without lab lock-in: write once, deploy...\" Details beyond the embed preview are unverified.",
     "caveat": null,
-    "details": null,
+    "details": "This post announces Flue 1.0 Beta, the open-source TypeScript framework for building autonomous agents and workflows with zero lock-in, designed by the creators of Astro. The beta unifies two primitives — fully autonomous stateful Agents (defined by context: model, tools, skills, sandbox, instructions) and deterministic Workflows where trusted code drives the model — plus Channels that drop agents into Slack, GitHub, and Linear, a React UI library (@flue/react), a revamped SDK, durable agents that recover from downtime via an append-only event log, and OpenTelemetry observability. Note the page carries an update: the surface has since been redesigned around a Vite plugin, so this post is preserved as written with a migration guide linked.",
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -4779,7 +4779,7 @@
     "canonical_url": "https://github.com/LMCache/LMCache",
     "brief": "\"Supercharge Your LLM with the Fastest KV Cache Layer.\" The performance claim is the project's and unverified.",
     "caveat": null,
-    "details": null,
+    "details": "LMCache is an open-source KV cache management layer for LLM inference that turns the KV cache from throwaway state into persistent, reusable AI-native knowledge. Running as an engine-independent daemon, it offloads KV cache from GPU memory into a tiered hierarchy (CPU RAM, local disk, Redis/Valkey, S3-compatible storage, and more), cutting time-to-first-token and boosting throughput especially for long-context, multi-turn, and RAG workloads. It is vendor-neutral across serving engines (vLLM and others), hardware, and storage backends, with production observability metrics and features like non-prefix KV reuse via CacheBlend. Apache 2.0 licensed with around twelve thousand GitHub stars, it is backed in part by Tensormesh and integrated by projects including NVIDIA Dynamo.",
     "resource_type": "library-framework",
     "topics": [
       "inference",
@@ -4815,7 +4815,7 @@
     "canonical_url": "https://github.com/junghan0611/pi-shell-acp/",
     "brief": "A Herdr/tmux setup where sibling AI sessions — pi, Claude Code, Codex, Copilot, OMP, Antigravity — can message and spawn each other while keeping their own auth, tools, and transcripts. The repo has since been renamed from pi-shell-acp to \"entwurf\" and now covers the Agent Client Protocol and MCP agent protocols more broadly.",
     "caveat": null,
-    "details": null,
+    "details": "Note: this URL now redirects to junghan0611/entwurf — the project was renamed from pi-shell-acp around the dispatch substrate rather than the pi adapter. Entwurf is a thin bridge that lets independent agent harnesses (pi, Claude Code, Codex, Copilot, OMP, Antigravity) address each other by stable garden ids and exchange messages or spawn visible sibling sessions, while each keeps its own auth, tools, and transcripts. The canonical entwurf_v2 dispatch verb routes over control sockets, self-fetch mailboxes, or native push depending on the target, with delivery receipts and explicit failure modes rather than silent drops. Install globally via npm and set up per project; a Herdr plugin path exists for workbench users, and an ACP plugin exposes backend turns as pi providers under the operator's own auth.",
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -4854,7 +4854,7 @@
     "canonical_url": "https://github.com/toss/es-git/pull/213",
     "brief": "A fix by monotykamary — diff.print() (default Patch format) was stripping the +/-/space line-origin prefixes from output; this PR prepends them back.",
     "caveat": null,
-    "details": null,
+    "details": "This pull request by monotykamary to toss/es-git (Rust bindings for libgit2) fixes diff.print() in the default Patch format, which was stripping the plus, minus, and space line-origin prefixes from hunk body lines, making the output unparseable for consumers that need to distinguish additions from deletions and context. The fix in src/diff.rs reads each line's origin and prepends it for content lines, while leaving already-formatted origins (file headers, hunk headers, EOF markers, binary notices) untouched, and it applies to all DiffFormat variants going through the print callback. The test plan updates the diff spec expectations and reports all 210 existing tests passing across 34 test files.",
     "resource_type": "article-guide",
     "topics": [
       "developer-tools"
@@ -4891,7 +4891,7 @@
     "canonical_url": "https://github.com/monotykamary/pi-tool-repair",
     "brief": "A validate-then-repair extension for pi that fixes common LLM tool-call mistakes (null fields, stringified arrays, wrong field names, anchor bleed) before tools execute. Tom: \"technically their tool repair brought over to pi (+ my additions).\"",
     "caveat": null,
-    "details": null,
+    "details": "pi-tool-repair is a validate-then-repair extension for the pi coding agent that fixes the recurring set of tool-call mistakes open models make before tools execute. It repairs null optional fields, JSON-stringified arrays, bare strings where arrays are expected, wrong field names via an alias table (file_path to path, query to pattern, and dozens more), numeric strings, schema anchor bleed on models like Kimi K2, and optionally leaked tool-call grammar from families like DeepSeek DSML, Qwen, and GLM. Repairs run on pi's message_end hook against the live tool schemas and only commit when the result re-validates, so schema-valid input passes through untouched. Install with pi install npm:pi-tool-repair; the author reports DeepSeek V4 Pro beating Opus 4.7 in 6 of 10 internal evals with the layer enabled.",
     "resource_type": "repository",
     "topics": [
       "ai-agents"
@@ -4926,7 +4926,7 @@
     "canonical_url": "https://github.com/dmtrKovalenko/fff/pull/593",
     "brief": "A fix for fff — the /fff-mode override was only stored in an in-memory variable lost on /reload and session restart; this PR persists fff-mode across reloads and session resumes.",
     "caveat": null,
-    "details": null,
+    "details": "This pull request by monotykamary to dmtrKovalenko/fff fixes the pi-fff extension's /fff-mode command, which previously only mutated an in-memory variable that was lost on /reload and session restart. The selected mode is now persisted through two complementary mechanisms: the PI_FFF_MODE environment variable, which survives /reload since the process stays alive, and pi.appendEntry('fff-mode', ...) writing to the session file, which survives full process restarts and is restored on session start. A follow-up commit simplified this to the appendEntry mechanism alone, and the user-facing notice was updated from \"requires restart\" to \"requires /reload\" now that reload actually works.",
     "resource_type": "article-guide",
     "topics": [
       "developer-tools"
@@ -4963,7 +4963,7 @@
     "canonical_url": "https://github.com/dmtrKovalenko/fff",
     "brief": "\"The fastest and the most accurate file search toolkit for AI agents, Neovim, Rust, C, and NodeJS.\" The performance claim is the project's and unverified.",
     "caveat": null,
-    "details": null,
+    "details": "fff (dmtrKovalenko/fff) is a Rust-based file search toolkit billed as the fastest and most accurate file search SDK, with typo-resistant path and content search, frequency-ranked file access, a background watcher, and a lightweight in-memory content index. Originally a beloved Neovim plugin, it grew into a library for AI harnesses and editors that need fast programmatic search, plus an MCP server (ffgrep, fffind, fff-multi-grep tools) that gives Claude Code, Codex, Cursor, and other agents faster, more token-efficient search than their built-ins. MIT-licensed with ~10.9k stars; ships a Neovim plugin, a Pi agent extension, and Node/Bun, Python, Rust, and C bindings.",
     "resource_type": "library-framework",
     "topics": [
       "developer-tools",
@@ -5003,7 +5003,7 @@
     "canonical_url": "https://github.com/ryoppippi/ccusage",
     "brief": "Run `npx ccusage` and get daily, weekly, monthly, and session breakdowns of token usage and spend across Claude Code, Codex, OpenCode, Amp, Hermes Agent, and 15+ more coding CLIs, all read from local usage data. Colorful terminal tables, per-model cost breakdowns, cache-token tracking, JSON export, an offline pricing mode, and a Claude Code statusline hook make it the fastest way to see where your agent budget is going. (~19k stars, MIT.)",
     "caveat": null,
-    "details": null,
+    "details": "ccusage (ryoppippi/ccusage) is a fast local CLI that reads usage logs from coding-agent CLIs and aggregates token counts and estimated costs into daily, weekly, monthly, and session reports. Originally focused on Claude Code (hence \"cc\"), it now covers 15+ agents — Codex, OpenCode, Amp, Gemini CLI, GitHub Copilot CLI, Goose, and more — with per-source commands or a unified all-sources report, running entirely on your machine with no data uploaded. Runs install-free via npx, bunx, or pnpm dlx. (Coverage note: written from search coverage of the repo README — the live GitHub page timed out.)",
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -5043,7 +5043,7 @@
     "canonical_url": "https://github.com/heygen-com/hyperframes#framemd",
     "brief": "HeyGen's TypeScript framework for generating video from HTML — describe motion with GSAP-style animations, render via Puppeteer/ffmpeg, and expose it to coding agents over MCP. The linked framemd section documents a Markdown-first animation format so agents can author motion graphics programmatically; ~53k stars.",
     "caveat": null,
-    "details": null,
+    "details": "HyperFrames (heygen-com/hyperframes) is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos — \"write HTML, render video.\" It is built for agents: 21 on-demand skills teach Claude Code, Codex, Cursor, and Gemini CLI the production loop (plan the video, write valid HTML, wire animations, lint, preview, render), plus a local CLI and a frame.md layer that translates web design systems for video. Apache-2.0 with ~56k stars; also handles decks, motion graphics, captions, and music-to-video workflows.",
     "resource_type": "library-framework",
     "topics": [
       "ai-agents",
@@ -5084,7 +5084,7 @@
     "canonical_url": "https://github.com/harry0703/MoneyPrinterTurbo/",
     "brief": "One-click HD short-video generator: feed it a topic or keyword and an automated AI workflow scripts the video, generates subtitles and TTS narration, and renders a finished clip for Reels/Shorts/TikTok. ~126k stars; note the repo docs are largely in Chinese.",
     "caveat": null,
-    "details": null,
+    "details": "MoneyPrinterTurbo (harry0703) is a one-stop AI short-video generator: give it a topic or keyword and it auto-writes the script, matches stock footage (Pexels, Pixabay) or generates AI video, synthesizes voiceover, adds subtitles and background music, and composites an HD short. It offers WebUI, CLI, API, and AI-agent modes, batch generation, 9:16/16:9/1:1 aspect ratios, and one-click publishing to TikTok, Instagram, and YouTube Shorts. MIT-licensed Python project with ~128k stars, working with Kimi, OpenAI, Claude, Gemini, DeepSeek, and many other model services.",
     "resource_type": "repository",
     "topics": [
       "productivity"
@@ -5120,7 +5120,7 @@
     "canonical_url": "https://cozyjournal.app/",
     "brief": "A local-first private journal: entries live as plain files in a folder on your own device — no cloud, no account, no AI reading your diary — with photos, audio, tags, mood/location tracking, and password-lockable journals. Imports from Notion, Day One, Obsidian, and Bear; $49 one-time ($89 forever) for macOS, Windows, iPhone, and iPad.",
     "caveat": null,
-    "details": null,
+    "details": "Cozy (cozyjournal.app) is a local-first private journaling app for macOS, Windows, iPhone, and iPad that stores entries as plain files in a folder you choose — no server, no account, and explicitly no AI, with nothing scraped, read, or sent to any model. It supports photos, audio, video, tags, locations, habit trackers, calendar and map views, password-locked journals, and imports from Notion, Day One, Obsidian, and Bear. One-time purchase ($49 Standard with a year of updates, $89 Forever), 14-day money-back guarantee.",
     "resource_type": "tool",
     "topics": [
       "productivity"
@@ -5156,7 +5156,7 @@
     "canonical_url": "https://www.minimax.io/blog/minimax-m3",
     "brief": "MiniMax's M3 announcement — frontier coding capability, 1M context, native multimodality, and a new MSA architecture. All vendor claims, unverified.",
     "caveat": "All vendor claims, unverified.",
-    "details": null,
+    "details": "MiniMax M3 is MiniMax's open-weight frontier model for coding and agentic work, combining frontier-level coding (59.0% SWE-Bench Pro, 66.0% Terminal-Bench 2.1), a 1M-token context window via the new MSA sparse-attention architecture, and native multimodality including image/video input and desktop computer operation. MSA makes per-token compute at 1M context just 1/20th of the previous generation, with 9x faster prefilling and 15x faster decoding. Available through MiniMax Code (their co-trained agent product), Token Plans ($20–$120/mo tiers), and API with standard and long-context pricing.",
     "resource_type": "article-guide",
     "topics": [
       "ai-agents"
@@ -5191,7 +5191,7 @@
     "canonical_url": "https://github.com/Soju06/codex-lb",
     "brief": "A Codex/ChatGPT multiple-account load balancer and proxy with usage tracking, a dashboard, and OpenCode compatibility. Tom: \"gonna try first.\"",
     "caveat": null,
-    "details": null,
+    "details": "codex-lb (Soju06) is a load balancer and proxy for multiple ChatGPT/Codex accounts: pool accounts, distribute load, track per-account tokens and costs with 28-day trends, manage per-key API rate limits, and view everything in a password/TOTP-protected dashboard. It exposes OpenAI-compatible endpoints for Codex CLI, OpenCode, OpenClaw, Hermes Agent, and the Python SDK, with automatic model sync from upstream. MIT-licensed, deployable via Docker, uvx, or Nix with SQLite by default and optional PostgreSQL; ~3.3k stars.",
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -5231,7 +5231,7 @@
     "canonical_url": "https://github.com/Loongphy/codex-auth",
     "brief": "A Zig-written CLI for switching and managing multiple Codex accounts — handy for anyone juggling several Codex subscriptions or auth contexts from the terminal. ~2.7k stars.",
     "caveat": null,
-    "details": null,
+    "details": "codex-auth (Loongphy) is a CLI tool for switching and managing multiple Codex accounts, written in Zig. It supports Codex CLI, the VS Code extension, and the Codex App, with commands to list, login, switch, remove, alias, import, and export accounts, plus live usage-limit refresh (API-backed by default, local-only with --skip-api) and JSON output for building GUIs. Install via npm (npm install -g @loongphy/codex-auth) or run with npx. MIT-licensed with ~2.8k stars; also ships an experimental Codex App launcher and a codext fork for seamless switching without restarts.",
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -5269,7 +5269,7 @@
     "canonical_url": "https://zinley.com/self-audit",
     "brief": "\"Built to extend you. 10× your day\" — an AI extension of you across every device and person: takes your calls, writes your emails, and more. Vendor claims, unverified.",
     "caveat": "Vendor claims, unverified.",
-    "details": null,
+    "details": "Zinley is an autonomous personal agent you control: give it tasks and rules and it carries out multi-step work — reading emails, reviewing calls, managing its own calendar, following up without re-prompting — while you set boundaries on what it handles alone versus what needs approval. It learns your people with sourced, editable relationship memory, has its own inbox and phone number, and works across web, desktop, iMessage, and Telegram. The self-audit page emphasizes user control: review its history, adjust workflows from your phone, and pause it anytime.",
     "resource_type": "tool",
     "topics": [
       "ai-agents",
@@ -6221,7 +6221,7 @@
     "canonical_url": "https://github.com/tt-a1i/archify",
     "brief": "An agent skill (Claude/Codex/OpenCode compatible) that generates architecture, workflow, sequence, data-flow, and lifecycle diagrams as self-contained HTML with motion, then exports crisp PNG/JPEG. ~72k stars; positions itself as a verifiable, agentic alternative to Mermaid.",
     "caveat": null,
-    "details": null,
+    "details": "Archify is an agent skill that turns descriptions or entire repositories into beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams as self-contained HTML with motion and crisp PNG export. You describe the idea to your coding agent (it installs via npx skills add and works with Cursor, Claude Code, Codex CLI, and OpenCode), then refine in chat with requests like \"highlight the cache-miss path\" or \"switch to the light theme\". The output is a standalone HTML file you can open, explore, and share with no installation needed, and a Proof Lab ships checked-in scenarios with validation receipts. MIT licensed, it hit number one on GitHub Trending's weekly all-language list.",
     "resource_type": "repository",
     "topics": [
       "ai-agents",
@@ -6258,7 +6258,7 @@
     "canonical_url": "https://github.com/Dicklesworthstone/beads_rust",
     "brief": "A fast Rust port of Steve Yegge's beads — a local-first, non-invasive issue tracker storing tasks in SQLite. Rykuuun \"really loved this tool\" and says it makes things easier to manage.",
     "caveat": null,
-    "details": null,
+    "details": "beads_rust (command name br) is a fast Rust port of Steve Yegge's beads, frozen at the classic SQLite plus JSONL architecture, by Jeffrey Emanuel with Yegge's endorsement. It is a local-first, non-invasive issue tracker for git repositories: issues live in a local SQLite database with JSONL export for git-friendly collaboration, supporting dependencies, priorities, labels, and machine-readable JSON output designed for AI coding agents. The design philosophy is explicit over implicit — it never commits, pushes, or runs background services — with commands like br ready to surface actionable work and br sync to reconcile state after merges. Install via a curl script, Homebrew, Scoop, or cargo.",
     "resource_type": "repository",
     "topics": [
       "developer-tools",
