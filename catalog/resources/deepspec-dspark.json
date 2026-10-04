@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "deepspec-dspark",
+  "title": "DeepSpec (DSpark)",
+  "canonical_url": "https://github.com/deepseek-ai/DeepSpec",
+  "brief": "DeepSeek's speculative-decoding repository behind the DSpark announcement — includes the DSpark paper (speculative decoding for DeepSeek V4 Flash & Pro) and the DeepSeek-V4-Pro-DSpark model on Hugging Face.",
+  "caveat": null,
+  "details": "DeepSpec is DeepSeek's full-stack codebase for training and evaluating draft models for speculative decoding, MIT-licensed, with 7.2k stars. It covers the whole pipeline: data-preparation utilities (download prompts, regenerate target answers, build a target cache, with a storage warning of roughly 38 TB for the default Qwen3-4B setting), training code launched via scripts/train/train.sh with per-GPU workers (default configs assume a single 8-GPU node), and evaluation via scripts/eval/eval.sh over benchmarks like gsm8k, math500, aime25, humaneval, mbpp, livecodebench, mt-bench, alpaca, and arena-hard-v2. It ships three draft-model implementations: DSpark (DeepSeek's own confidence-scheduled speculative decoding with semi-autoregressive generation, arXiv 2607.05147), DFlash, and Eagle3, with pre-trained checkpoints released on Hugging Face for Qwen3-4B/8B/14B and Gemma-4-12B-it used in the paper's Table 1. The code builds on SpecForge's training framework and Eagle3 implementation (Apache-2.0, attributed in NOTICE). For a developer, it is the reference implementation to reproduce or extend DSpark-style speculative decoding results, with per-algorithm configs under config/ and a caution that domain-specific use should re-fine-tune the draft, especially if the target runs in thinking mode.",
+  "resource_type": "repository",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "25 Jun–1 Jul 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-06-27",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

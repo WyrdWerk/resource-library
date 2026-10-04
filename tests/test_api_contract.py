@@ -16,6 +16,9 @@ import pytest
 
 ROOT = Path(__file__).resolve().parent.parent
 PORT = 8765
+# Record count comes from the baseline (refreshed by scripts/regen.py), never a
+# literal: hard-coded counts made every parallel resource PR conflict here.
+TOTAL = json.loads((ROOT / "tests" / "manifest.baseline.json").read_text())["inventory"]["total"]
 
 
 @pytest.fixture(scope="module")
@@ -51,7 +54,7 @@ def req(method, path, headers=None):
 def test_index_manifest(server):
     s, _, b = req("GET", "/api/v1/index.json")
     assert s == 200
-    assert b["api_version"] == "1" and b["record_count"] == 310
+    assert b["api_version"] == "1" and b["record_count"] == TOTAL
 
 
 def test_taxonomy(server):
@@ -62,7 +65,7 @@ def test_taxonomy(server):
 
 def test_collection_pagination(server):
     s, _, b = req("GET", "/api/v1/resources.json?limit=5")
-    assert s == 200 and b["total"] == 310 and len(b["records"]) == 5
+    assert s == 200 and b["total"] == TOTAL and len(b["records"]) == 5
     cur = b["next_cursor"]
     s, _, b2 = req("GET", f"/api/v1/resources.json?limit=5&cursor={cur}")
     ids1 = [r["id"] for r in b["records"]]
@@ -142,15 +145,15 @@ def test_unknown_route_404(server):
 def test_static_files_usable():
     """The static catalog must not depend on the adapter."""
     recs = json.loads((ROOT / "api" / "v1" / "resources.json").read_text(encoding="utf-8"))
-    assert len(recs) == 310 and recs[0]["id"]
+    assert len(recs) == TOTAL and recs[0]["id"]
 
 
 def test_facets_json(server):
     s, _, b = req("GET", "/api/v1/facets.json")
     assert s == 200
-    assert b["topic"]["ai-agents"] == 128
-    assert b["resource_type"]["provider"] == 76
-    assert sum(b["channel"].values()) == 310
+    on_disk = json.loads((ROOT / "api" / "v1" / "facets.json").read_text(encoding="utf-8"))
+    assert b == on_disk  # served as built; counts are recounted in the next test
+    assert sum(b["channel"].values()) == TOTAL
     assert set(b) == {"resource_type", "topic", "use_case", "interface",
                       "technology", "channel", "open_source"}
 
@@ -163,6 +166,8 @@ def test_facets_json_matches_catalog():
         "share-tech": sum(1 for r in recs if r["source"]["channel"] == "share-tech"),
         "providers": sum(1 for r in recs if r["source"]["channel"] == "providers")}
     assert facets["topic"]["inference"] == sum("inference" in r["topics"] for r in recs)
+    assert facets["topic"]["ai-agents"] == sum("ai-agents" in r["topics"] for r in recs)
+    assert facets["resource_type"]["provider"] == sum(r["resource_type"] == "provider" for r in recs)
     assert facets["open_source"]["true"] == sum(r.get("open_source") is True for r in recs)
 
 

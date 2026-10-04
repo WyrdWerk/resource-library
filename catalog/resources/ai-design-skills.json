@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "ai-design-skills",
+  "title": "ai-design-skills",
+  "canonical_url": "https://github.com/elayadesign/ai-design-skills",
+  "brief": "A design skill repository for Cursor Composer 2.5 plus the author's design approach — the resource behind the hero-section demo tweet.",
+  "caveat": null,
+  "details": "ai-design-skills by elayadesign is a growing collection of design skills for AI coding tools — Claude Code, Cursor, Codex, Windsurf, and anything else that reads a markdown rules file. Each skill is a self-contained folder you install on demand. The current collection includes landing-page-design (builds a landing page from scratch with intake questions, page structure, conversion copy, and a full visual system of type, spacing, radius, and motion), with more on the way; a related redesign skill for upgrading existing sites lives in its own repo. Installation is per-tool: copy the skill folder into .claude/skills for Claude Code, curl the SKILL.md into .cursor/rules for Cursor, or paste it into AGENTS.md / .windsurfrules / project rules for other tools; even Claude.ai users can upload the SKILL.md to a Project. Every skill's design values (fonts, colors, spacing, motion) live in one section near the bottom of its file, so you can fork the repo, edit that section, and the whole skill follows. MIT licensed, no attribution needed, ~2.3k stars.",
+  "resource_type": "repository",
+  "topics": [
+    "design",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "extension"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "13–20 Aug 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-08-14",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

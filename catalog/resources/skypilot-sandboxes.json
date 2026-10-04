@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "skypilot-sandboxes",
+  "title": "SkyPilot Sandboxes",
+  "canonical_url": "https://skypilot.ai/blog/sandboxes",
+  "brief": "SkyPilot's sandbox platform for running 50,000+ sandboxes on your own Kubernetes clusters (BYOC). Announced via the SkyPilot account; the underlying platform, not just the announcement, is the resource.",
+  "caveat": null,
+  "details": "SkyPilot Sandboxes is a bring-your-own-cloud code execution layer for untrusted, LLM-generated code, announced June 9, 2026 by Lloyd Brown. Each sandbox is a lightweight, isolated Kubernetes pod you create on demand, run commands in, and tear down, running on clusters you already own, so your code, prompts, test cases, and data never leave your cloud. A single cluster sustains 50,000+ sandboxes across 220 nodes, with multi-cluster support and intelligent routing for more, and warm pools of pre-provisioned pods cut single-sandbox launch to about 1 second. The SDK mirrors hosted-vendor style APIs: create(), exec(), terminate(), each with an async .aio sibling for massive fan-out, and secrets are injected from the SkyPilot Secrets Manager at create time rather than baked into images. The post walks through a full RL post-training example (a five-service SkyPilot job group where a Sandbox Reward Server scores GRPO rollouts against hidden tests, 1.0 for pass, 0.0 otherwise) and benchmarks against Modal Sandboxes: ~20% faster to first command at p50 (1.0s vs 1.2s, tighter tail), latency local to your region instead of a ~3.9x cross-region tax, and 4x cheaper on general-purpose nodes up to ~10x cheaper on burstable nodes. As of the post, Sandboxes are in limited early access via a signup form; the RL example lives in the SkyPilot repo with a CPU-only connectivity test.",
+  "resource_type": "article-guide",
+  "topics": [
+    "cloud-infrastructure",
+    "devops"
+  ],
+  "use_cases": [
+    "provision-infrastructure",
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "kubernetes"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "11–17 Jun 2026",
+  "legacy_categories": [
+    "article",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-06-13",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

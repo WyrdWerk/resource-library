@@ -1,5 +1,5 @@
 # Resource Library — CheapInfra #share-tech + #providers
-> 311 curated developer resources shared in the CheapInfra Discord's #share-tech and #providers channels: AI tools, dev tools, websites, articles, GitHub repos, and inference providers. Every entry carries a ~2-sentence editorial brief, its sharer, its share date, and controlled taxonomy facets; 219 also carry a researched long-form `details` breakdown. The site is a single HTML page (https://cheapinfra-resources.wyrdwerk.com/); the same catalog is served by a read-only JSON API v1 — GET only, no auth, CORS-open, ETag-cached, deterministic.
+> 331 curated developer resources shared in the CheapInfra Discord's #share-tech and #providers channels: AI tools, dev tools, websites, articles, GitHub repos, and inference providers. Every entry carries a ~2-sentence editorial brief, its sharer, its share date, and controlled taxonomy facets; 239 also carry a researched long-form `details` breakdown. The site is a single HTML page (https://cheapinfra-resources.wyrdwerk.com/); the same catalog is served by a read-only JSON API v1 — GET only, no auth, CORS-open, ETag-cached, deterministic.
 
 Base URL: https://cheapinfra-resources.wyrdwerk.com/api/v1 — collected read-only from Discord, refreshed by a daily run; content is CC-BY-4.0.
 

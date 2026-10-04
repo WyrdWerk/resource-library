@@ -24,6 +24,9 @@ Counts are curated resources kept after filtering.
 ## week-2026-06-04_to_2026-06-29.md
 - 16 resources → 11–17 Jun 2026, 18–24 Jun 2026, 4–10 Jun 2026
 
+## repass-tweet-links-2026-10-04.md
+- 20 resources → 11–17 Jun 2026, 13–20 Aug 2026, 1–8 Oct 2026, 24 Sep–1 Oct 2026, 25 Jun–1 Jul 2026, 2–8 Jul 2026, 30 Jul–5 Aug 2026, 3–10 Sep 2026, 6–12 Aug 2026, 9–15 Jul 2026
+
 ## providers.md
 - 81 resources → providers
 

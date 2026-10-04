@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "astral-war",
+  "title": "Astral War",
+  "canonical_url": "https://astralwar.io/",
+  "brief": "A browser-based FPS inspired by CoD: World at War, built in a day with GPT-6 Astra Ultra — a remix/upgrade of Modern Claudefare, named in the announcement tweet.",
+  "caveat": null,
+  "details": "Astral War is a free, fan-made World War II-themed first-person shooter that runs entirely in a browser tab with no download, built on Three.js. It offers Team Deathmatch and Free-for-All across three maps, playable against bots or in 12-player online matches with voice chat. It is desktop-only — a keyboard and mouse or a controller is required to play. The site is made by Vesper and positions itself as the frontline-is-on-desktop browser shooter with fast load-in and no install friction.",
+  "resource_type": "service-platform",
+  "topics": [
+    "web-development"
+  ],
+  "use_cases": [
+    "create-media"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "javascript"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "3–10 Sep 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-09-05",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

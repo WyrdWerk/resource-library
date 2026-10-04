@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "typellm",
+  "title": "TypeLLM",
+  "canonical_url": "https://github.com/TypeLLM/TypeLLM",
+  "brief": "Type-safe structured generation library for LLMs — typed string/integer/number outputs and image inputs — from the project's own announcement tweet.",
+  "caveat": null,
+  "details": "TypeLLM is a Python library (built on SGLang, inspired by TypeSafe AI's Jev) that brings type-safe structured generation to existing autoregressive LLMs without changing their architecture or weights. It enforces JSON Schema-guaranteed outputs — string, integer, number, boolean, and enum choice — so there are no out-of-schema hallucinations. Its tricks keep cost low: single-token categorical selection and bounded numeric decoding make output-token cost negligible, KV caching reuses shared prefixes, and independent fields execute together. Fields can declare depends_on dependency graphs, conditional when fields, per-field thinking budgets with effort levels (including auto), image input for vision-language models, and permutation averaging to reduce option-order bias on enum questions. There is also a hosted TypeLLM API that returns typed outputs without you serving a model ($5 free credit). On JevBench (231 public tasks) it scored 228/231 with thinking enabled. Apache-2.0 licensed.",
+  "resource_type": "library-framework",
+  "topics": [
+    "developer-tools",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "generate-code"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [
+    "python",
+    "typescript"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "24 Sep–1 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "simply_roo"
+  },
+  "shared_on": "2026-09-25",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

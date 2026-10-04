@@ -4742,6 +4742,779 @@
   },
   {
     "schema_version": "1.0",
+    "id": "skypilot-sandboxes",
+    "title": "SkyPilot Sandboxes",
+    "canonical_url": "https://skypilot.ai/blog/sandboxes",
+    "brief": "SkyPilot's sandbox platform for running 50,000+ sandboxes on your own Kubernetes clusters (BYOC). Announced via the SkyPilot account; the underlying platform, not just the announcement, is the resource.",
+    "caveat": null,
+    "details": "SkyPilot Sandboxes is a bring-your-own-cloud code execution layer for untrusted, LLM-generated code, announced June 9, 2026 by Lloyd Brown. Each sandbox is a lightweight, isolated Kubernetes pod you create on demand, run commands in, and tear down, running on clusters you already own, so your code, prompts, test cases, and data never leave your cloud. A single cluster sustains 50,000+ sandboxes across 220 nodes, with multi-cluster support and intelligent routing for more, and warm pools of pre-provisioned pods cut single-sandbox launch to about 1 second. The SDK mirrors hosted-vendor style APIs: create(), exec(), terminate(), each with an async .aio sibling for massive fan-out, and secrets are injected from the SkyPilot Secrets Manager at create time rather than baked into images. The post walks through a full RL post-training example (a five-service SkyPilot job group where a Sandbox Reward Server scores GRPO rollouts against hidden tests, 1.0 for pass, 0.0 otherwise) and benchmarks against Modal Sandboxes: ~20% faster to first command at p50 (1.0s vs 1.2s, tighter tail), latency local to your region instead of a ~3.9x cross-region tax, and 4x cheaper on general-purpose nodes up to ~10x cheaper on burstable nodes. As of the post, Sandboxes are in limited early access via a signup form; the RL example lives in the SkyPilot repo with a CPU-only connectivity test.",
+    "resource_type": "article-guide",
+    "topics": [
+      "cloud-infrastructure",
+      "devops"
+    ],
+    "use_cases": [
+      "provision-infrastructure",
+      "learn-technique"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [
+      "kubernetes"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "11–17 Jun 2026",
+    "legacy_categories": [
+      "article",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-06-13",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "deepspec-dspark",
+    "title": "DeepSpec (DSpark)",
+    "canonical_url": "https://github.com/deepseek-ai/DeepSpec",
+    "brief": "DeepSeek's speculative-decoding repository behind the DSpark announcement — includes the DSpark paper (speculative decoding for DeepSeek V4 Flash & Pro) and the DeepSeek-V4-Pro-DSpark model on Hugging Face.",
+    "caveat": null,
+    "details": "DeepSpec is DeepSeek's full-stack codebase for training and evaluating draft models for speculative decoding, MIT-licensed, with 7.2k stars. It covers the whole pipeline: data-preparation utilities (download prompts, regenerate target answers, build a target cache, with a storage warning of roughly 38 TB for the default Qwen3-4B setting), training code launched via scripts/train/train.sh with per-GPU workers (default configs assume a single 8-GPU node), and evaluation via scripts/eval/eval.sh over benchmarks like gsm8k, math500, aime25, humaneval, mbpp, livecodebench, mt-bench, alpaca, and arena-hard-v2. It ships three draft-model implementations: DSpark (DeepSeek's own confidence-scheduled speculative decoding with semi-autoregressive generation, arXiv 2607.05147), DFlash, and Eagle3, with pre-trained checkpoints released on Hugging Face for Qwen3-4B/8B/14B and Gemma-4-12B-it used in the paper's Table 1. The code builds on SpecForge's training framework and Eagle3 implementation (Apache-2.0, attributed in NOTICE). For a developer, it is the reference implementation to reproduce or extend DSpark-style speculative decoding results, with per-algorithm configs under config/ and a caution that domain-specific use should re-fine-tune the draft, especially if the target runs in thinking mode.",
+    "resource_type": "repository",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [],
+    "technologies": [
+      "python"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "25 Jun–1 Jul 2026",
+    "legacy_categories": [
+      "github",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-06-27",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "sidequest-for-pi",
+    "title": "Sidequest for Pi",
+    "canonical_url": "https://github.com/peterp/pi-sidequest",
+    "brief": "A context-aware side channel for coding-agent tangents in Pi — \"a better /btw\" that keeps tangents grounded instead of polluting the main session.",
+    "caveat": null,
+    "details": "Sidequest is a Pi coding-agent extension by PeterP that adds a side channel for asking context-aware questions without derailing the main conversation, described as a better /btw. It runs its own isolated, tool-capable Pi worker, grounded in the active Pi session, with threaded, persistent questions. Install with `pi install npm:pi-sidequest` or `pi install git:github.com/peterp/pi-sidequest`, then open it inside Pi with /sidequest or a quake-console hotkey (default section/tilde, configurable via PI_SIDEQUEST_QUAKE_KEY(S) or ~/.pi/agent/sidequest.json). The UI has two focus areas: selection (choose root or a thread) and prompt (type the next question), switching with Tab. The side worker's default tool allowlist is read, grep, find, ls, plus sidequest_web_search and sidequest_web_fetch (Brave Search when BRAVE_SEARCH_API_KEY is set, otherwise DuckDuckGo HTML search; fetch extracts readable text from public pages), overridable via PI_SIDEQUEST_TOOLS. Releases use Changesets with npm trusted publishing. MIT-licensed, 49 stars, small active project. Useful for Pi users who want a scratch pad that can read the codebase and the web mid-session.",
+    "resource_type": "repository",
+    "topics": [
+      "ai-agents",
+      "developer-tools"
+    ],
+    "use_cases": [
+      "manage-agents"
+    ],
+    "interfaces": [
+      "cli"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "25 Jun–1 Jul 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-06-29",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tinyrouter",
+    "title": "TinyRouter",
+    "canonical_url": "https://github.com/harrrshall/tinyrouter",
+    "brief": "A tiny (~10K-parameter) LLM router that learns which open-source model should answer each query.",
+    "caveat": null,
+    "details": "TinyRouter by harrrshall is a deliberately tiny learned router for LLM routing: a frozen 0.6B encoder turns each question into a single 1024-dim vector, and a ~10K-parameter head decides which of three open-source models answers and in what role (Thinker, Worker, or Verifier), with a multi-turn loop of up to 5 turns that a Verifier can accept early. The routing head is trained by separable CMA-ES, a derivative-free evolution strategy, against a simple right/wrong reward, following TRINITY (Xu et al., ICLR 2026), rebuilt with an all-open-source pool served through Fireworks AI: deepseek-v4-pro (knowledge/MMLU), glm-5p2 (math), kimi-k2p6 (general). Evaluation on 120 held-out questions per task shows the router averaging 0.858 across math and MMLU, beating any single model and random routing, because it sends each task to the right specialist (0.925 on MMLU where models differ widely). An oracle-ceiling diagnostic found ~4.9 points of real headroom on math that the router doesn't capture, and supervised warm-start plus shaped-fitness upgrades were implemented but remain unproven on held-out data. The repo is notable for honest, well-documented negative results and exact API spend tracking (about $62 total). A practical reference for anyone building learned LLM routers or evolutionary training loops.",
+    "resource_type": "repository",
+    "topics": [
+      "inference",
+      "ai-agents"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [],
+    "technologies": [
+      "python"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "2–8 Jul 2026",
+    "legacy_categories": [
+      "github",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-07-05",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "threejs-procedural-dungeon",
+    "title": "threejs-procedural-dungeon",
+    "canonical_url": "https://github.com/majidmanzarpour/threejs-procedural-dungeon",
+    "brief": "Open-source three.js procedural dungeon generator by Majid Manzarpour.",
+    "caveat": null,
+    "details": "Dungeon Forge is a real-time procedural dungeon generator rendered live with Three.js, by Majid Manzarpour (MIT, 507 stars). A single seed drives the entire deterministic pipeline via one mulberry32 stream: scatter room rectangles, relax overlaps, Delaunay-triangulate room centers, reduce to a minimum spanning tree for guaranteed connectivity, then add back a tunable fraction of edges as loops, assign room semantics (entrance, combat, elite, treasure, shrine, boss) by BFS depth and critical path from the entrance, carve rooms and L-shaped corridors into a tile grid, rasterize with ambient occlusion, and decorate. Five hand-tuned themes (Ancient, Molten, Frost, Grim, Verdant, plus seed-picked AUTO) swap palettes, lighting, liquids, props, and particles (embers, snow, spores, wisps). Everything is procedural: canvas-generated textures, instanced rendering for thousands of tiles, and a hand-written post-processing stack (bloom, separable blur, tilt-shift, color grade, vignette, film grain) giving a painted-miniature look. The panel lets you type a seed, pick a theme, adjust room count (12-80), loopiness, and decor density, with overlays for the graph and difficulty heatmap plus live FPS/triangle telemetry. Quick start: npm install, npm run dev; builds to a static bundle. One self-contained main.js, migrated to current Three.js ES modules. A rich study in procedural generation, graph algorithms, and WebGL optimization.",
+    "resource_type": "repository",
+    "topics": [
+      "web-development",
+      "design"
+    ],
+    "use_cases": [
+      "create-media"
+    ],
+    "interfaces": [],
+    "technologies": [
+      "javascript"
+    ],
+    "license": null,
+    "open_source": true,
+    "display_period": "2–8 Jul 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-07-06",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "reactbench",
+    "title": "ReactBench",
+    "canonical_url": "https://github.com/millionco/reactbench",
+    "brief": "An evaluation benchmark for coding agents on realistic React work — 39 scored tasks where solutions must actually work.",
+    "caveat": null,
+    "details": "ReactBench is an evaluation benchmark for coding agents on realistic React work, built by Million (million.dev). Models that pass conventional tests can still write React that fails in production, so ReactBench holds solutions to a higher bar: every solution must pass held-out behavioral tests and produce no new React Doctor issues (their React linter/static analyzer). The suite has 39 scored tasks grounded in real open-source React projects plus a hello-react smoke test. Two task types: Write React (implement a feature/fix from a merged PR given the base repo and an issue-style prompt, with the reference patch withheld) and Fix React (remove every target React Doctor finding from source alone without introducing new graded issues, with the task's own test suite still passing). Tasks use the Harbor sandboxed-eval format with task.toml metadata, environment Dockerfiles, vitest/Playwright verifiers, and held-out reference solutions; agent and verifier run in separate containers with oracle/nop controls, each task getting 4 CPUs, 8GB RAM, 10GB storage. Quickstart needs Docker and uv: uv run harbor run -p tasks/hello-react -a oracle. No license file published; from millionco, ~274 stars.",
+    "resource_type": "repository",
+    "topics": [
+      "testing",
+      "ai-agents"
+    ],
+    "use_cases": [
+      "test-software"
+    ],
+    "interfaces": [],
+    "technologies": [
+      "react",
+      "javascript"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "9–15 Jul 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-07-15",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "numbat",
+    "title": "numbat",
+    "canonical_url": "https://github.com/perplexityai/numbat",
+    "brief": "Perplexity's open-source numbat repository, linked from their announcement.",
+    "caveat": null,
+    "details": "numbat is Perplexity's open-source endpoint-security tool that gives visibility into AI agent activity on developer machines. It observes desktop, CLI, IDE, and gateway agents through local hooks and plugins, OTLP/HTTP log exporters, and on-disk session artifacts, normalizing live and at-rest activity into one event model evaluated by a CEL rule engine. Detection runs locally, records can go to stdout or a local file, with optional HTTP delivery. Features: live monitoring via hooks/plugins, endpoint-local detection with built-in CEL rules plus multi-step sequence and custom YAML rules, opt-in pre-action blocking (off by default; all shipped rules are monitor-only), and forensic reconstruction from session artifacts without prior instrumentation. Output is versioned NDJSON with read-only artifact scanning and secret redaction, plus inventory/investigation tools and portable case bundles with SHA-256 manifests. Distributed as a single static binary for macOS, Linux, and Windows, built without cgo — install with go install github.com/perplexityai/numbat/cmd/numbat@latest. Use commands like numbat agents, numbat scan, and numbat hook install --agent codex --emit all. Apache-2.0 licensed, ~1.1k stars.",
+    "resource_type": "repository",
+    "topics": [
+      "developer-tools"
+    ],
+    "use_cases": [
+      "generate-code"
+    ],
+    "interfaces": [],
+    "technologies": [
+      "python"
+    ],
+    "license": null,
+    "open_source": true,
+    "display_period": "30 Jul–5 Aug 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "asx8678"
+    },
+    "shared_on": "2026-07-31",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "mixture-of-kittens",
+    "title": "Mixture-of-Kittens",
+    "canonical_url": "https://github.com/cursor/mixture-of-kittens",
+    "brief": "Cursor's open-source, fully-deterministic mixture-of-experts training megakernel (Apache-2.0).",
+    "caveat": null,
+    "details": "Mixture-of-Kittens (MoK) is Cursor's fully deterministic mixture-of-experts (MoE) training megakernel for NVIDIA NVL72 systems, built from first principles and powering production training of Cursor's Composer. It fuses all MoE computation and communication into a single kernel, overlapping compute and inter-GPU networking at configurable granularity while fully eliminating CPU-GPU synchronization. Supports BF16 and MXFP8 for both forward and backward passes. Benchmarked up to 2.37x faster than the fastest baseline on MXFP8 forward (1.78x backward, 1.92x BF16 forward, 1.58x BF16 backward) on standalone MoE layers. Requires NVIDIA Blackwell SM100/SM103 GPUs (GB200/GB300 NVL72), Python 3.12+, PyTorch 2.10+, CUDA 13.0+. Install with pip install . --no-build-isolation (builds for SM103 by default, set MOK_ARCH=SM100 for SM100). Two APIs: an ops layer (mok/ops.py) calling CUDA kernels directly, and a functional layer (mok/functional.py) with config/workspace management, schedule(), forward(), backward() — the functional layer is the production choice. Companion paper at arxiv.org/abs/2609.36070. Apache-2.0 licensed, ~605 stars.",
+    "resource_type": "repository",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [],
+    "technologies": [
+      "python"
+    ],
+    "license": null,
+    "open_source": true,
+    "display_period": "30 Jul–5 Aug 2026",
+    "legacy_categories": [
+      "github",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "simply soy"
+    },
+    "shared_on": "2026-08-04",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "pi-subagents",
+    "title": "pi-subagents",
+    "canonical_url": "https://github.com/nicobailon/pi-subagents",
+    "brief": "A collection of subagents for the pi coding agent, linked from the shared tweet's embed.",
+    "caveat": null,
+    "details": "pi-subagents is a Pi extension by nicobailon that lets the Pi coding agent delegate work to focused child agents — for code review, scouting, implementation, parallel audits, saved workflows, and background jobs. Install with pi install npm:pi-subagents, then ask in plain language like \"Use reviewer to review this diff\" or \"Run parallel reviewers for correctness, tests, and cleanup\" — Pi decides which subagent to call and composes the work. It ships seven built-in agents: scout (fast local codebase recon), researcher (web/docs research with sources), evidence-auditor (checks whether research claims are supported by their sources), worker (implementation with file edits), reviewer (code review and small fixes), oracle (second opinion that challenges assumptions without editing), and delegate (lightweight general delegate). Foreground children stream inside the parent session; background children run detached and can be checked later via FleetView or /subagents-fleet. Includes /council and council-mode profiles for debating material decisions with model-based advisors, plus packaged workflow shortcuts like /parallel-review and /review-loop. MIT licensed, ~3.8k stars — the most popular of the five repos.",
+    "resource_type": "repository",
+    "topics": [
+      "ai-agents",
+      "developer-tools"
+    ],
+    "use_cases": [
+      "manage-agents"
+    ],
+    "interfaces": [],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "6–12 Aug 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-08-07",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "ai-design-skills",
+    "title": "ai-design-skills",
+    "canonical_url": "https://github.com/elayadesign/ai-design-skills",
+    "brief": "A design skill repository for Cursor Composer 2.5 plus the author's design approach — the resource behind the hero-section demo tweet.",
+    "caveat": null,
+    "details": "ai-design-skills by elayadesign is a growing collection of design skills for AI coding tools — Claude Code, Cursor, Codex, Windsurf, and anything else that reads a markdown rules file. Each skill is a self-contained folder you install on demand. The current collection includes landing-page-design (builds a landing page from scratch with intake questions, page structure, conversion copy, and a full visual system of type, spacing, radius, and motion), with more on the way; a related redesign skill for upgrading existing sites lives in its own repo. Installation is per-tool: copy the skill folder into .claude/skills for Claude Code, curl the SKILL.md into .cursor/rules for Cursor, or paste it into AGENTS.md / .windsurfrules / project rules for other tools; even Claude.ai users can upload the SKILL.md to a Project. Every skill's design values (fonts, colors, spacing, motion) live in one section near the bottom of its file, so you can fork the repo, edit that section, and the whole skill follows. MIT licensed, no attribution needed, ~2.3k stars.",
+    "resource_type": "repository",
+    "topics": [
+      "design",
+      "developer-tools"
+    ],
+    "use_cases": [
+      "build-interfaces"
+    ],
+    "interfaces": [
+      "extension"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "13–20 Aug 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-08-14",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "astral-war",
+    "title": "Astral War",
+    "canonical_url": "https://astralwar.io/",
+    "brief": "A browser-based FPS inspired by CoD: World at War, built in a day with GPT-6 Astra Ultra — a remix/upgrade of Modern Claudefare, named in the announcement tweet.",
+    "caveat": null,
+    "details": "Astral War is a free, fan-made World War II-themed first-person shooter that runs entirely in a browser tab with no download, built on Three.js. It offers Team Deathmatch and Free-for-All across three maps, playable against bots or in 12-player online matches with voice chat. It is desktop-only — a keyboard and mouse or a controller is required to play. The site is made by Vesper and positions itself as the frontline-is-on-desktop browser shooter with fast load-in and no install friction.",
+    "resource_type": "service-platform",
+    "topics": [
+      "web-development"
+    ],
+    "use_cases": [
+      "create-media"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "3–10 Sep 2026",
+    "legacy_categories": [
+      "web-app"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-09-05",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "typellm",
+    "title": "TypeLLM",
+    "canonical_url": "https://github.com/TypeLLM/TypeLLM",
+    "brief": "Type-safe structured generation library for LLMs — typed string/integer/number outputs and image inputs — from the project's own announcement tweet.",
+    "caveat": null,
+    "details": "TypeLLM is a Python library (built on SGLang, inspired by TypeSafe AI's Jev) that brings type-safe structured generation to existing autoregressive LLMs without changing their architecture or weights. It enforces JSON Schema-guaranteed outputs — string, integer, number, boolean, and enum choice — so there are no out-of-schema hallucinations. Its tricks keep cost low: single-token categorical selection and bounded numeric decoding make output-token cost negligible, KV caching reuses shared prefixes, and independent fields execute together. Fields can declare depends_on dependency graphs, conditional when fields, per-field thinking budgets with effort levels (including auto), image input for vision-language models, and permutation averaging to reduce option-order bias on enum questions. There is also a hosted TypeLLM API that returns typed outputs without you serving a model ($5 free credit). On JevBench (231 public tasks) it scored 228/231 with thinking enabled. Apache-2.0 licensed.",
+    "resource_type": "library-framework",
+    "topics": [
+      "developer-tools",
+      "ai-agents"
+    ],
+    "use_cases": [
+      "generate-code"
+    ],
+    "interfaces": [
+      "api"
+    ],
+    "technologies": [
+      "python",
+      "typescript"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "24 Sep–1 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "simply_roo"
+    },
+    "shared_on": "2026-09-25",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "respan",
+    "title": "Respan",
+    "canonical_url": "https://www.respan.ai",
+    "brief": "LLM observability and tracing platform (tracing, prompts, evals, gateway) — the company site behind the RespanAI announcement tweet.",
+    "caveat": null,
+    "details": "Respan is an AI router with built-in observability and automated evaluations, built by Keywords AI, Inc. (a YC company). You point the SDK you already use at one endpoint to reach 1,000+ models across providers — OpenAI, Anthropic, OpenRouter, Groq, Fireworks, Together AI, Perplexity, Azure OpenAI, AWS Bedrock, Google Vertex and Gemini, and more — with automatic fallbacks, response caching, and spend limits, so one provider's outage never takes your app down. On top of routing it traces, monitors, red-teams, and evaluates every agent run, with dashboards for workflows, monitors, traces, evaluations, and deployments. It integrates with the Python and JS/TS SDKs, OpenAI SDK and Agents SDK, Vercel AI SDK, LangChain, LlamaIndex, Google GenAI, Mem0, Cognee, AssemblyAI, Linkup, and PostHog. Security posture includes SOC 2, HIPAA, GDPR, and a trust center. Sign up for an API key or book a demo.",
+    "resource_type": "service-platform",
+    "topics": [
+      "observability",
+      "inference"
+    ],
+    "use_cases": [
+      "monitor-systems",
+      "run-inference"
+    ],
+    "interfaces": [
+      "web",
+      "api"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "24 Sep–1 Oct 2026",
+    "legacy_categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "simply_roo"
+    },
+    "shared_on": "2026-09-25",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tpu-megakernels",
+    "title": "TPU Megakernels",
+    "canonical_url": "https://github.com/Inferact/tpu-megakernels",
+    "brief": "Inferact's open-source TPU megakernels for Kimi K3 — 709 tokens/s decode on 16x TPU v7 via a single Pallas kernel. Shared in #providers as a benchmark claim; curated here as the code resource, not a provider listing.",
+    "caveat": null,
+    "details": "TPU megakernels is the companion code for Inferact's blog post on TPU megakernels: fused decode implementations (JAX) for two models. Kimi K3 with DSpark runs on 32 TPU devices across four hosts, where one megakernel executes KDA, MLA, MoE, residual, normalization, and collective work; DSpark provides fused speculative decoding with one anchor and seven draft rows. Qwen3.8-27B with DFlash2 runs on eight TPUs on one host with a dense BF16 megakernel covering the hybrid gated-delta-net and grouped-query-attention stack. With speculative decoding at acceptance length 6 they hit 709 accepted tokens/s on Kimi K3 (16x TPU v7 vs 16x GB200, 1.57x) and 1,515 on Qwen3.8-27B (2.18x); without speculative decoding it's roughly 1.4–2x the GB200 baseline decode throughput. Both demos support terminal interaction and an OpenAI-compatible HTTP server. Setup is uv sync with model snapshots pre-cached (HF offline mode); Kimi needs a four-node Slurm allocation with 8 TPUs per host, Qwen one host with 8 TPUs. Apache-2.0 licensed.",
+    "resource_type": "repository",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [],
+    "technologies": [
+      "python"
+    ],
+    "license": null,
+    "open_source": true,
+    "display_period": "24 Sep–1 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "emirsoyturk"
+    },
+    "shared_on": "2026-09-25",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "edge0",
+    "title": "Edge0",
+    "canonical_url": "https://github.com/Edge0-AI/Edge0",
+    "brief": "Open-source (Apache-2.0) streaming mixture-of-experts inference framework by Samuel Zeng — Edge0-35B runs locally.",
+    "caveat": null,
+    "details": "edge0 is an open-source streaming MoE inference framework by Edge0-AI built on three ideas: SSD expert offload, Recover-LoRA, and prerouter routing prediction. Expert weights stream from storage on demand so peak memory is bounded by the active expert set, not the parameter count, letting large sparse-MoE models run on consumer hardware. A trained prerouter head predicts expert routing one step ahead so expert loads overlap the forward pass instead of stalling it — up to +59% decode throughput, growing with storage latency, model size, and routed width K. Recover-LoRA keeps the int4 base frozen and trains LoRA adapters by distillation from the FP teacher to recover most 4-bit quantization loss; adapters stay unmerged so one read-only base serves multiple adapter sets. It ships per-platform runtimes: Python on Apple Silicon (MLX), a Rust macOS app and CLI, Swift iOS app, Kotlin Android engine, and Windows (all open-sourced Sep 2026), with a unified framework on the Q4 2026 roadmap. It also ships two preview models — Edge0-35B-A3B-preview and Edge0-8B-A1B-preview — on Hugging Face and ModelScope, plus an arXiv technical report (2609.18063). Apache-2.0 licensed.",
+    "resource_type": "repository",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference",
+      "host-models"
+    ],
+    "interfaces": [],
+    "technologies": [
+      "python"
+    ],
+    "license": null,
+    "open_source": true,
+    "display_period": "1–8 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "ROman"
+    },
+    "shared_on": "2026-10-02",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "vllm-semantic-router",
+    "title": "vLLM Semantic Router",
+    "canonical_url": "https://github.com/vllm-project/semantic-router",
+    "brief": "Signal-driven decision-routing framework for mixture-of-modality model deployments — Decision 2.0 covers open models from 0.6B to 27B.",
+    "caveat": null,
+    "details": "vLLM Semantic Router is a programmable routing layer for Mixture-of-Models systems across heterogeneous LLM infrastructure, from the vLLM project (6k+ stars). It evaluates request signals, user preferences, and application policies to select or compose the right model path for each request — routing across different models, compute (GPUs, accelerators, edge, cloud), and locations to optimize quality, cost, latency, privacy, and safety without hard-coding routing logic into your app. The core is written in Go with Rust/C++/Python bindings, installable via a one-line install script, and ships a live online playground, dashboard, benchmarks, and docs. Apache 2.0 licensed.",
+    "resource_type": "repository",
+    "topics": [
+      "inference",
+      "ai-agents"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "api"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "1–8 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-10-03",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "ruddr",
+    "title": "ruddr",
+    "canonical_url": "https://github.com/safzanpirani/ruddr",
+    "brief": "A tool that lets Codex or Claude Code spin up other instances of any model harness with any model — model-agnostic workflows from any harness.",
+    "caveat": null,
+    "details": "Ruddr is a control plane for agents that run other agents — a single native Rust binary that keeps a live handle on long-running Codex, Claude Code, OpenCode 2, Pi, and Factory Droid sessions. An orchestrating agent launches a turn in the background, watches its progress from plain files (state.json, events.jsonl, output.md), and redirects it mid-turn over a local control socket via CLI commands like ruddr run, ruddr peek, and ruddr steer, without waiting for the turn to finish or restarting it. Built agents-first: state is plain files, commands print JSON where metadata matters, and steering is a CLI call safe to issue from background tasks. A TUI and web dashboard give humans the same live view. MIT-licensed.",
+    "resource_type": "repository",
+    "topics": [
+      "ai-agents",
+      "developer-tools"
+    ],
+    "use_cases": [
+      "manage-agents"
+    ],
+    "interfaces": [
+      "cli"
+    ],
+    "technologies": [
+      "rust"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "1–8 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Rykuuun"
+    },
+    "shared_on": "2026-10-04",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "uselayouts",
+    "title": "UseLayouts",
+    "canonical_url": "https://uselayouts.com",
+    "brief": "Premium animated React components and micro-interactions (Framer Motion + Tailwind) — one of the libraries in the shared UI-libraries list; Bencho and HyperUIX from the same list were already published.",
+    "caveat": null,
+    "details": "useLayouts is a free library of animated React components built with Framer Motion (Motion) and Tailwind CSS. It covers 12+ layouts (grids, bento, hero sections), 14+ navigation patterns (navbars, tabs, sidebars), 18+ interactions (hover, drag, press, reveal), and 20+ UI pieces (cards, forms, galleries, pricing), each with purposeful motion, clean editable source, and a copy-customize-ship workflow that plays nicely with Next.js, TypeScript, shadcn, Radix, and Lucide. Praised by shadcn ecosystem builders like the founders of shadcnblocks and htmlrev, and maintained by 0xUrvish with a sponsor link. Free and open source.",
+    "resource_type": "library-framework",
+    "topics": [
+      "design",
+      "frontend"
+    ],
+    "use_cases": [
+      "build-interfaces",
+      "discover-design-references"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind-css"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "1–8 Oct 2026",
+    "legacy_categories": [
+      "web-app"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "thelaggingway"
+    },
+    "shared_on": "2026-10-04",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "arc-ui",
+    "title": "Arc UI",
+    "canonical_url": "https://uiarc.dev",
+    "brief": "React component and block library installable via the shadcn CLI (@uiarc registry) — from the shared UI-libraries list.",
+    "caveat": null,
+    "details": "Arc UI is an animated React component library for shadcn and Next.js with 147 components and 85 blocks, every example live and interactive. Components cover focused jobs (morphing selects, date range pickers, command palettes, animated charts); blocks combine them into complete product flows like onboarding, scheduling, and an animated inbox. Install via the shadcn CLI or copy source, and AI tools can consume every component through Markdown pages, an llms.txt index, and an MCP server. Arc Pro unlocks the 42 motion-heavy components, most larger blocks, and new releases. Motion respects reduced-motion device preferences, and source lives in your project with semantic color tokens for easy restyling.",
+    "resource_type": "library-framework",
+    "topics": [
+      "design",
+      "frontend"
+    ],
+    "use_cases": [
+      "build-interfaces"
+    ],
+    "interfaces": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "1–8 Oct 2026",
+    "legacy_categories": [
+      "web-app"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "thelaggingway"
+    },
+    "shared_on": "2026-10-04",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "kobra-systems",
+    "title": "Kobra Systems",
+    "canonical_url": "https://kobra.systems",
+    "brief": "Polished React components and micro-interactions (OTP inputs, AI editor, streaming text) — from the shared UI-libraries list.",
+    "caveat": null,
+    "details": "Kobra Systems is a React component library and micro-interaction collection built with React and Tailwind, offering dozens of free polished components plus a paid Pro tier. Each component is copy-paste ready with three files (the .tsx component, styles.css, and a prompt.md for AI-assisted customization) and live demos showing every state — inputs and form controls, OTP inputs, carousels, toasts, chat interfaces, tables, charts, navigation, overlays, and animated micro-interactions like magnetic buttons, halftone dots, and shimmer effects. Light and dark themes are designed per component, with examples built on input-otp and Motion.",
+    "resource_type": "library-framework",
+    "topics": [
+      "design",
+      "frontend"
+    ],
+    "use_cases": [
+      "build-interfaces"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "1–8 Oct 2026",
+    "legacy_categories": [
+      "web-app"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "thelaggingway"
+    },
+    "shared_on": "2026-10-04",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
     "id": "loop-library-forwardfuture-signals",
     "title": "Loop Library (ForwardFuture Signals)",
     "canonical_url": "https://signals.forwardfuture.ai/loop-library/",

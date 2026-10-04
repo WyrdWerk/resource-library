@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "respan",
+  "title": "Respan",
+  "canonical_url": "https://www.respan.ai",
+  "brief": "LLM observability and tracing platform (tracing, prompts, evals, gateway) — the company site behind the RespanAI announcement tweet.",
+  "caveat": null,
+  "details": "Respan is an AI router with built-in observability and automated evaluations, built by Keywords AI, Inc. (a YC company). You point the SDK you already use at one endpoint to reach 1,000+ models across providers — OpenAI, Anthropic, OpenRouter, Groq, Fireworks, Together AI, Perplexity, Azure OpenAI, AWS Bedrock, Google Vertex and Gemini, and more — with automatic fallbacks, response caching, and spend limits, so one provider's outage never takes your app down. On top of routing it traces, monitors, red-teams, and evaluates every agent run, with dashboards for workflows, monitors, traces, evaluations, and deployments. It integrates with the Python and JS/TS SDKs, OpenAI SDK and Agents SDK, Vercel AI SDK, LangChain, LlamaIndex, Google GenAI, Mem0, Cognee, AssemblyAI, Linkup, and PostHog. Security posture includes SOC 2, HIPAA, GDPR, and a trust center. Sign up for an API key or book a demo.",
+  "resource_type": "service-platform",
+  "topics": [
+    "observability",
+    "inference"
+  ],
+  "use_cases": [
+    "monitor-systems",
+    "run-inference"
+  ],
+  "interfaces": [
+    "web",
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "24 Sep–1 Oct 2026",
+  "legacy_categories": [
+    "web-app",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "simply_roo"
+  },
+  "shared_on": "2026-09-25",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

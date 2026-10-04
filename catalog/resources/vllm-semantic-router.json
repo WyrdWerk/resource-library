@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "vllm-semantic-router",
+  "title": "vLLM Semantic Router",
+  "canonical_url": "https://github.com/vllm-project/semantic-router",
+  "brief": "Signal-driven decision-routing framework for mixture-of-modality model deployments — Decision 2.0 covers open models from 0.6B to 27B.",
+  "caveat": null,
+  "details": "vLLM Semantic Router is a programmable routing layer for Mixture-of-Models systems across heterogeneous LLM infrastructure, from the vLLM project (6k+ stars). It evaluates request signals, user preferences, and application policies to select or compose the right model path for each request — routing across different models, compute (GPUs, accelerators, edge, cloud), and locations to optimize quality, cost, latency, privacy, and safety without hard-coding routing logic into your app. The core is written in Go with Rust/C++/Python bindings, installable via a one-line install script, and ships a live online playground, dashboard, benchmarks, and docs. Apache 2.0 licensed.",
+  "resource_type": "repository",
+  "topics": [
+    "inference",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-03",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

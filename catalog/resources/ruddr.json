@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "ruddr",
+  "title": "ruddr",
+  "canonical_url": "https://github.com/safzanpirani/ruddr",
+  "brief": "A tool that lets Codex or Claude Code spin up other instances of any model harness with any model — model-agnostic workflows from any harness.",
+  "caveat": null,
+  "details": "Ruddr is a control plane for agents that run other agents — a single native Rust binary that keeps a live handle on long-running Codex, Claude Code, OpenCode 2, Pi, and Factory Droid sessions. An orchestrating agent launches a turn in the background, watches its progress from plain files (state.json, events.jsonl, output.md), and redirects it mid-turn over a local control socket via CLI commands like ruddr run, ruddr peek, and ruddr steer, without waiting for the turn to finish or restarting it. Built agents-first: state is plain files, commands print JSON where metadata matters, and steering is a CLI call safe to issue from background tasks. A TUI and web dashboard give humans the same live view. MIT-licensed.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [
+    "rust"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Rykuuun"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
