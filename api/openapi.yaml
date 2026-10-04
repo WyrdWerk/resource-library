@@ -683,8 +683,8 @@ components:
           minimum: 0
       example:
         channel:
-          share-tech: 218
-          providers: 88
+          share-tech: 221
+          providers: 89
     TaxonomyRegistry:
       type: object
       required: [facet, cardinality, values]

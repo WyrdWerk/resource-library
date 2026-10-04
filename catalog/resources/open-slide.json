@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "id": "open-slide",
+  "title": "open-slide",
+  "canonical_url": "https://github.com/open-slide/open-slide",
+  "brief": "\"The slide framework built for agents\" — describe a deck in natural language and your coding agent writes the React; open-slide provides the 1920×1080 canvas, hot reload, a present mode with speaker notes, an in-browser click-to-comment inspector, asset management with svgl logo search, and export to static HTML, PDF and PPTX. Ships agent skills (`/create-slide`, `/slide-authoring`) for Claude Code, Codex and Cursor; open-source (MIT), 8.8k stars. thelaggingway shared it untried, so treat the agent-authoring claims as unevaluated.",
+  "caveat": null,
+  "details": null,
+  "resource_type": "library-framework",
+  "topics": [
+    "ai-agents",
+    "frontend"
+  ],
+  "use_cases": [
+    "create-media",
+    "generate-code"
+  ],
+  "interfaces": [
+    "cli",
+    "web"
+  ],
+  "technologies": [
+    "react",
+    "typescript"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/monotykamary/pi-tool-repair",
   "brief": "A validate-then-repair extension for pi that fixes common LLM tool-call mistakes (null fields, stringified arrays, wrong field names, anchor bleed) before tools execute. Tom: \"technically their tool repair brought over to pi (+ my additions).\"",
   "caveat": null,
-  "details": null,
+  "details": "pi-tool-repair is a validate-then-repair extension for the pi coding agent that fixes the recurring set of tool-call mistakes open models make before tools execute. It repairs null optional fields, JSON-stringified arrays, bare strings where arrays are expected, wrong field names via an alias table (file_path to path, query to pattern, and dozens more), numeric strings, schema anchor bleed on models like Kimi K2, and optionally leaked tool-call grammar from families like DeepSeek DSML, Qwen, and GLM. Repairs run on pi's message_end hook against the live tool schemas and only commit when the result re-validates, so schema-valid input passes through untouched. Install with pi install npm:pi-tool-repair; the author reports DeepSeek V4 Pro beating Opus 4.7 in 6 of 10 internal evals with the layer enabled.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

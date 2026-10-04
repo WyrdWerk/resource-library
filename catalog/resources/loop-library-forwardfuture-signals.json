@@ -5,7 +5,7 @@
   "canonical_url": "https://signals.forwardfuture.ai/loop-library/",
   "brief": "A library of 85 copy-pasteable AI agent \"loops\" from ForwardFuture — repeatable workflows like the docs sweep, the architecture-satisfaction refactor loop, the production-error sweep, and the SEO/GEO visibility loop — each with explicit checks and stopping conditions. Searchable across engineering, design, content, operations, and evaluation categories.",
   "caveat": null,
-  "details": null,
+  "details": "The ForwardFuture Signals Loop Library is a searchable collection of 85 copy-paste prompts called loops: repeatable AI agent workflows with clear checks and stopping conditions. Each loop encodes a full operational procedure — for example the production error sweep (find, fix, verify, open a PR), the docs sweep (align docs with the codebase), or the ticket-to-PR-ready loop — across engineering, content, evaluation, operations, and design categories, many contributed by named practitioners. The point is to give agents bounded, verifiable routines instead of open-ended instructions, so recurring work like changelogs, test coverage, or repo cleanup runs the same reliable way every time.",
   "resource_type": "directory-gallery",
   "topics": [
     "ai-agents",

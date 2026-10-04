@@ -1,6 +1,6 @@
 # CheapInfra Resource Library
 
-A curated, browsable archive of developer resources shared in the [CheapInfra](https://cheapinfra.com) Discord server's `#share-tech` and `#providers` channels: AI tools, dev tools, websites, articles, GitHub repos, and inference providers, newest first. **306 resources** as of 4 Oct 2026; 200 of them carry a long-form "In detail" breakdown.
+A curated, browsable archive of developer resources shared in the [CheapInfra](https://cheapinfra.com) Discord server's `#share-tech` and `#providers` channels: AI tools, dev tools, websites, articles, GitHub repos, and inference providers, newest first. **310 resources** as of 4 Oct 2026; 218 of them carry a long-form "In detail" breakdown.
 
 **Browse it:** <https://cheapinfra-resources.wyrdwerk.com/>. The site is a single `index.html` with no dependencies and no build step. You can open it locally or deploy it to any static host (it's built for Cloudflare Pages). It defaults to a black editorial theme (near-black background, serif headlines, mint-green accent), and a header toggle switches to light mode and remembers your choice. It has three tabs:
 
@@ -39,8 +39,8 @@ Every view is shareable through the URL hash, e.g. `#view=api`.
 
 ## Coverage
 
-- **#share-tech:** 218 resources in 17 weekly periods, from 4 Jun 2026 to the current week (1–8 Oct 2026).
-- **#providers:** 88 inference providers and provider-analysis resources. The first batch covered the channel's whole lifetime from its creation on 20 Jul 2026; daily runs have kept it current since then.
+- **#share-tech:** 221 resources in 17 weekly periods, from 4 Jun 2026 to the current week (1–8 Oct 2026).
+- **#providers:** 89 inference providers and provider-analysis resources. The first batch covered the channel's whole lifetime from its creation on 20 Jul 2026; daily runs have kept it current since then.
 
 Collection has run daily at 08:00 IST since 26 Sep 2026. Each run adds `raw/daily-<date>.md` and `notes/daily-<date>.md` and opens a PR. See [CHANGELOG.md](CHANGELOG.md) for the batch history.
 

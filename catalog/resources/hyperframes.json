@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/heygen-com/hyperframes#framemd",
   "brief": "HeyGen's TypeScript framework for generating video from HTML — describe motion with GSAP-style animations, render via Puppeteer/ffmpeg, and expose it to coding agents over MCP. The linked framemd section documents a Markdown-first animation format so agents can author motion graphics programmatically; ~53k stars.",
   "caveat": null,
-  "details": null,
+  "details": "HyperFrames (heygen-com/hyperframes) is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos — \"write HTML, render video.\" It is built for agents: 21 on-demand skills teach Claude Code, Codex, Cursor, and Gemini CLI the production loop (plan the video, write valid HTML, wire animations, lint, preview, render), plus a local CLI and a frame.md layer that translates web design systems for video. Apache-2.0 with ~56k stars; also handles decks, motion graphics, captions, and music-to-video workflows.",
   "resource_type": "library-framework",
   "topics": [
     "ai-agents",

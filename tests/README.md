@@ -6,7 +6,7 @@ API. Tests are written with `unittest`/plain asserts and run under `pytest`.
 ## Layout
 
 - `manifest.baseline.json` — approved snapshot: the ordered list of all
-  record IDs (306 at the time of writing), inventory counts (total,
+  record IDs (310 at the time of writing), inventory counts (total,
   providers/share-tech split, categories), and SHA-256 of each generated
   site file. The invariant tests enforce IDs and counts; the hashes feed
   the drift audit in `docs/runbook.md` §3. Refresh it deliberately in the

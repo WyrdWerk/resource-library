@@ -126,16 +126,16 @@ PR until that PR refreshes the hashes in `tests/manifest.baseline.json`.
 Note that `index.html` embeds the build date ("Last updated"), so its
 hash changes whenever the site is rebuilt on a new day.
 
-## 4. Generated sizes (2026-10-04, 306 records, 200 with details)
+## 4. Generated sizes (2026-10-04, 310 records, 218 with details)
 
 | Path | Size |
 |---|---|
-| `api/v1/resources.json` | 487 KB |
+| `api/v1/resources.json` | 504 KB |
 | `api/v1/taxonomy.json` | 20 KB |
 | `api/v1/facets.json` | 1.8 KB |
 | `api/v1/index.json` | 371 B |
 | `api/v1/_compat_report.json` | 162 B |
-| `catalog/` (306 records + reports) | 640 KB (apparent size) |
+| `catalog/` (310 records + reports) | 660 KB (apparent size) |
 
 (2026-09-29 baseline at 285 records: resources.json 289 KB — the jump is
 mostly the `details` breakdowns.)
@@ -334,7 +334,7 @@ by `scripts/build.py` (never hand-edit):
 
 ## 11. Documentation refresh + API gap register (2026-10-04)
 
-Docs brought in line with the shipped state at 306 records (README,
+Docs brought in line with the shipped state at 310 records (README,
 AGENTS.md, CONTRIBUTING.md, tests/README.md, this runbook, the
 docs/api-spec.md status banner, api/openapi.yaml, and the build.py
 templates for the API tab and llms.txt). No API behavior changed.
@@ -351,7 +351,7 @@ local adapter and production:
   documented as a v1 limit, with `/resources` as the browse path.
 - `open_source=false` matches every record whose flag is not `true`,
   including the unknown (`null`) ones. Now documented.
-- The `details` field (200 records) was missing from the docs, and
+- The `details` field (218 records) was missing from the docs, and
   `fields=details` is rejected (400 `bad_fields`) because it is absent
   from `FIELD_ALLOW` in both implementations.
 - llms.txt now uses H2 sections (llmstxt.org shape). OpenAPI gained

@@ -5,7 +5,7 @@
   "canonical_url": "https://flueframework.com/blog/flue-1-0-beta/?x",
   "brief": "Flue 1.0 Beta announcement — \"the open framework for building agents without lab lock-in: write once, deploy...\" Details beyond the embed preview are unverified.",
   "caveat": null,
-  "details": null,
+  "details": "This post announces Flue 1.0 Beta, the open-source TypeScript framework for building autonomous agents and workflows with zero lock-in, designed by the creators of Astro. The beta unifies two primitives — fully autonomous stateful Agents (defined by context: model, tools, skills, sandbox, instructions) and deterministic Workflows where trusted code drives the model — plus Channels that drop agents into Slack, GitHub, and Linear, a React UI library (@flue/react), a revamped SDK, durable agents that recover from downtime via an append-only event log, and OpenTelemetry observability. Note the page carries an update: the surface has since been redesigned around a Vite plugin, so this post is preserved as written with a migration guide linked.",
   "resource_type": "article-guide",
   "topics": [
     "ai-agents"

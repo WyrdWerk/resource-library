@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/harry0703/MoneyPrinterTurbo/",
   "brief": "One-click HD short-video generator: feed it a topic or keyword and an automated AI workflow scripts the video, generates subtitles and TTS narration, and renders a finished clip for Reels/Shorts/TikTok. ~126k stars; note the repo docs are largely in Chinese.",
   "caveat": null,
-  "details": null,
+  "details": "MoneyPrinterTurbo (harry0703) is a one-stop AI short-video generator: give it a topic or keyword and it auto-writes the script, matches stock footage (Pexels, Pixabay) or generates AI video, synthesizes voiceover, adds subtitles and background music, and composites an HD short. It offers WebUI, CLI, API, and AI-agent modes, batch generation, 9:16/16:9/1:1 aspect ratios, and one-click publishing to TikTok, Instagram, and YouTube Shorts. MIT-licensed Python project with ~128k stars, working with Kimi, OpenAI, Claude, Gemini, DeepSeek, and many other model services.",
   "resource_type": "repository",
   "topics": [
     "productivity"
