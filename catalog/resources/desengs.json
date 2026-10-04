@@ -5,7 +5,7 @@
   "canonical_url": "https://desengs.com/",
   "brief": "Shared link-only. Purpose unverified from the message text; the domain suggests a design/engineering resource.",
   "caveat": "Purpose unverified from the message text; the domain suggests a design/engineering resource.",
-  "details": null,
+  "details": "DesEngs (desengs.com) is a curated, dated directory of resources for design engineers: UI component libraries, animation and motion tools, typography guides, design-token generators, micro-interaction collections, essays on the design-engineering craft, agent skills for frontend polish, and design-engineer job listings. Each entry links out to the original resource with a one-line description, and the list is updated regularly. Useful as a discovery feed for front-of-the-frontend work — components, motion, type, and taste.",
   "resource_type": "tool",
   "topics": [
     "design"

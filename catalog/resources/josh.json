@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/josh-project/josh",
   "brief": "\"Just One Single History\" — a git-at-scale platform built on fast, reversible Git history transformation. It presents any part of a repo (e.g. a monorepo subfolder) as an independent repository with history preserved, so repo boundaries can be decided per-context instead of reflecting org silos; it ships a `josh` CLI for partial repo projections and `josh-proxy`, a Git HTTP/SSH proxy with a GraphQL API for CI/build queries. A mature project (since 2016, MIT), though some listed features like the merge queue and Starlark filters are not fully mature yet.",
   "caveat": null,
-  "details": null,
+  "details": "Josh (\"Just One Single History\") is a Git-at-scale platform written in Rust that uses fast, reversible history transformation to dissolve repository boundaries. Its headline trick is repo filtering: any subfolder of a monorepo can be presented as an independent Git repository with full history, solving scoping, access-control, and CI-rebuild pain without splitting repos. It ships a josh CLI for local work with partial projections and josh-proxy, a Git HTTP/SSH proxy with shared cache plus a GraphQL API for asking whether code was already built without checking anything out. MIT-licensed.",
   "resource_type": "repository",
   "topics": [
     "developer-tools",

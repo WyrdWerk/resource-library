@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/ranxianglei/billion-context-pi",
   "brief": "Rykuuun shared this asking \"this is pi-vcc right?\", suggesting it's related to a \"pi\" coding agent with very large context. Details are unverified from the message text alone.",
   "caveat": "Details are unverified from the message text alone.",
-  "details": null,
+  "details": "billion-context-pi is a Pi coding-agent extension that replaces Pi's built-in auto-compaction with model-driven context compression. Instead of hard-truncating old messages, it gives the LLM a compress tool plus an 8-stage pipeline (assign refs, sync blocks, prune, filter, recommend, nudge, emergency truncate) so the model decides when and what to compress into high-fidelity, labeled, decompressible blocks that stay searchable via search_context. Protected content like user messages and the recent working set is never compressed, and it ships model-facing tools including acp_delegate for clean-context sub-agents. Install with pi install npm:billion-context-pi; MIT-licensed.",
   "resource_type": "repository",
   "topics": [
     "ai-agents"

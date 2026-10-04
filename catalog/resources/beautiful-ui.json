@@ -5,7 +5,7 @@
   "canonical_url": "https://beautiful-ui-five.vercel.app/",
   "brief": "A demo site showcasing 21 crafted UI primitives for AI-native interfaces — loading states, thinking traces, streaming text, approval cards, tool chips, task rows, prompt bars, diff and records tables, insight cards, and more. A handy design reference and pattern library for building agent chat interfaces and agentic tool UIs.",
   "caveat": null,
-  "details": null,
+  "details": "Beautiful UI (beautiful-ui-five.vercel.app) is a showcase of crafted UI primitives for AI-native interfaces. It demos around twenty components purpose-built for agent-driven products: loading states, expandable thinking traces, streaming text with inline sources, approval cards for human-in-the-loop questions, tool chips, live task rows, tabbed chat panels, prompt bars with model pickers, recommendation cards, context cards, diff tables, flowcharts, insight cards, and an agent screen recorder. Useful as a reference and component inspiration when designing agent chat interfaces.",
   "resource_type": "directory-gallery",
   "topics": [
     "design",

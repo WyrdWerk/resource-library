@@ -5,7 +5,7 @@
   "canonical_url": "https://componentry.dev/",
   "brief": "Beautiful animated UI components for React. Rykuuun shared it as a front-end dev finding; details unverified beyond the site's tagline.",
   "caveat": "Rykuuun shared it as a front-end dev finding; details unverified beyond the site's tagline.",
-  "details": null,
+  "details": "Componentry (componentry.dev, by @harshjdhv) is a library of animated React UI components with editable source code, positioned as the component library for polished interfaces. Components install through the shadcn CLI or directly into an AI editor via MCP, and the site leans on social proof with a wall of testimonials from builders praising pieces like cursor-driven particle typography and image ripple effects. It is backed by the Vercel OSS Program. Best for developers who want motion-rich, shadcn-compatible components they can read and tweak rather than black-box widgets.",
   "resource_type": "library-framework",
   "topics": [
     "frontend"

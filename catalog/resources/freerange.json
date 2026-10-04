@@ -5,7 +5,7 @@
   "canonical_url": "https://github.com/chenglou/freerange",
   "brief": "From chenglou (React core team alumnus): a static verifier that checks ordinary TypeScript layout code at compile time, without a layout engine. ~650 stars.",
   "caveat": null,
-  "details": null,
+  "details": "Freerange, from chenglou (React core team alumnus), is a static verifier that shows you the range of every number in your TypeScript codebase, surfacing potential NaN, Infinity, division by zero, and out-of-bounds array indexes at compile time without running your app. It uses the official TypeScript API directly — no new language, no annotations, no library functions — and respects your tsconfig, so you can swap tsc --noEmit for the fr command. fr --audit prints every function's contracts plus refactor suggestions to make code more analysis-friendly, which the author notes is especially useful for AI agents guaranteeing UI layouts without touching a browser. (Coverage note: written from the GitHub README via search — the live page was not directly fetchable.)",
   "resource_type": "repository",
   "topics": [
     "frontend",

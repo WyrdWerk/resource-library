@@ -5,7 +5,7 @@
   "canonical_url": "https://tools.rmv.fyi/",
   "brief": "A handmade-web collection of small, single-purpose browser tools: colour utilities (contrast checker, palette generator/extractor, Tailwind shade scales), image tools (compressor, converter, background remover, favicon generator, SVG optimiser, metadata stripper), plus audio/video and typography tools. Everything is free with no logins, no paywalls, and no data collection; fully open source (0-BSD), with a native iOS app and an offline CLI offering the same tools.",
   "caveat": null,
-  "details": null,
+  "details": "delphitools (tools.rmv.fyi) is a \"digital indie toolkit\" — a large collection of small, low-stakes, low-effort web utilities with no logins, no paywalls, and no data collection, fully open source under the 0-BSD license. It spans Colour (11 tools: colour atlas, blindness simulator, format converter, WCAG contrast checker, gradient, harmony and palette generators, pixel picker, Tailwind shade generator), Images and Assets (18: format converter, compressor, background remover, favicon generator, SVG optimiser, base64 encoder, EXIF stripper and more), Audio and Video (16: trimmer, loudness normaliser, auto subtitles, screen recorder, video-to-GIF, subtitle studio), plus Typography and Text and Print and Production sections. Everything runs in the browser; there is also a native iOS app and an entirely offline CLI with the same tools for the terminal. A handy bookmark for the everyday conversions and checks that otherwise mean installing something or uploading files to a random site.",
   "resource_type": "tool",
   "topics": [
     "developer-tools",

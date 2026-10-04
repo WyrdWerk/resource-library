@@ -5,7 +5,7 @@
   "canonical_url": "https://danielrotter.at/2020/04/08/avoid-z-index-whenever-possible.html",
   "brief": "A 2020 article by Daniel Rotter arguing for CSS layouts that avoid z-index. The thesis is in the URL slug; the article's quality is unverified.",
   "caveat": "The thesis is in the URL slug; the article's quality is unverified.",
-  "details": null,
+  "details": "This 2020 article by Daniel Rotter argues that CSS z-index is the billion-dollar mistake of web development and should be avoided whenever possible. It walks through why escalating z-index values don't scale, explains stacking contexts (why a higher z-index can still lose inside a parent's stacking context), and shows how component-based frameworks like React make the problem worse. The practical remedy: order elements correctly in the DOM so later elements paint on top, and use techniques like flex-direction column-reverse instead of z-index for sticky headers.",
   "resource_type": "article-guide",
   "topics": [
     "frontend"
