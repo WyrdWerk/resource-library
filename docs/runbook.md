@@ -71,7 +71,7 @@ the build-freeze tests fail (see §3).
 
 ```bash
 python3 -m pytest tests/ -q
-# expected: 103 passed
+# expected: 108 passed (the browser-driven sorting test skips if agent-browser is not installed)
 ```
 
 Suite breakdown:
@@ -87,6 +87,7 @@ Suite breakdown:
 | `test_search.py` | 40 gold queries: 100% exact-ID top-1, 100% top-5 (gate ≥90%), no-result precision, stable cursors; title sort, CSV (OR-within-family) filters, from/to date bounds | 13 |
 | `test_api_contract.py` | local adapter: routes, filters, CSV + date-bound validation, sparse fields, pagination, errors, CORS, ETag/304, facets.json | 30 |
 | `test_site_meta.py` | robots.txt, sitemap.xml, llms.txt shape/content; API tab wired into index.html | 5 |
+| `test_library_sorting.py` | newest-first default + sort control; export/data order unchanged; one real-browser interaction test (skipped without `agent-browser`) | 5 |
 
 ## 3. Audit / diff / smoke
 

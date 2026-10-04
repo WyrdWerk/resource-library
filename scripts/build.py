@@ -302,8 +302,8 @@ def main():
     ordered = sorted([l for l in weeks if l != "providers"],
                      key=lambda l: week_info[l]["end"], reverse=True)
     if "providers" in weeks:
-        # The providers section is a curated cross-channel collection, not a
-        # week: it always leads, newest-first, with a stable "providers" slug.
+        # Preserve Providers-first source/export grouping. The website builds
+        # its own chronological presentation below, without changing batches.
         ordered.insert(0, "providers")
         week_info["providers"] = {"label": "Providers", "start": None,
                                   "end": None, "slug": "providers"}
@@ -388,23 +388,44 @@ def main():
     # ---- index.html ----
     CAT_LABELS = {"ai-tool": "AI tools", "dev-tool": "Dev tools", "github": "GitHub repos",
                   "web-app": "Web apps", "article": "Articles", "providers": "Providers"}
-    sections, wrows = [], []
-    wseq = 0  # sequential number for dated week sections only
-    newest_week_badged = False  # "Latest"/"new" stay on the newest week, not providers
-    for wi, label in enumerate(ordered):
+    # Keep source batches and exports unchanged; chronology is website-only.
+    from datetime import date
+    batch_years = {}
+    for r in all_res:
+        if r["week"] == "providers" and r["_batch"] not in batch_years:
+            header = (NOTES_DIR / r["_batch"]).read_text().splitlines()[0]
+            year = re.search(r"\b(20\d{2})\b", r["_batch"] + " " + header)
+            batch_years[r["_batch"]] = int(year.group(1)) if year else _smax[0]
+    library = []
+    display_info = dict(week_info)
+    for r in all_res:
+        year = (batch_years[r["_batch"]] if r["week"] == "providers"
+                else week_info[r["week"]]["start"][0])
+        day, month = r["date"].split()
+        shared = date(year, MONTHS[norm_mon(month)], int(day))
+        period = next((label for label in _wk
+                       if week_info[label]["start"] <= (year, shared.month, shared.day)
+                       <= week_info[label]["end"]), None)
+        if period is None:
+            period = f"{shared.day} {MON_NAME[shared.month]} {year}"
+            display_info[period] = {"label": period, "slug": "date-" + shared.isoformat()}
+        library.append({**r, "_shared_on": shared, "_period": period})
+    library.sort(key=lambda r: (-r["_shared_on"].toordinal(), r["title"].lower(), r["id"]))
+    display_weeks = {}
+    for r in library:
+        display_weeks.setdefault(r["_period"], []).append(r)
+
+    wrows = []
+    for label in ordered:
         info = week_info[label]
-        res = weeks[label]
-        dlabel = info["label"]
-        if label == "providers":
-            wnum_html = ""
-            is_newest_week = False
-        else:
-            wseq += 1
-            wnum_html = f'<span class="weeknum">{wseq:02d}</span>'
-            is_newest_week = not newest_week_badged
-            newest_week_badged = True
-        latest = ' <span class="newdot">new</span>' if is_newest_week else ''
-        wrows.append(f'<button class="navrow" data-week="{esc(label)}"><span>{esc(dlabel)}{latest}</span><b>{len(res)}</b></button>')
+        latest = ' <span class="newdot">new</span>' if label == _wk[0] else ''
+        wrows.append(f'<button class="navrow" data-week="{esc(label)}"><span>{esc(info["label"])}{latest}</span><b>{len(weeks[label])}</b></button>')
+
+    sections = []
+    anchored = {display_info[label]["slug"] for label in display_weeks}
+    for wi, (label, res) in enumerate(display_weeks.items()):
+        info = display_info[label]
+        wnum_html = f'<span class="weeknum">{wi + 1:02d}</span>'
         cards = []
         for ci, r in enumerate(res):
             chips = "".join(
@@ -424,10 +445,17 @@ def main():
                 det = (f'<button class="detail-toggle" aria-expanded="false" title="Show the detailed breakdown">'
                        f'Detailed breakdown <span class="dt-arrow">↓</span></button>'
                        f'<div class="detail-body"><p class="detail-kicker">In detail</p><p>{esc(r["details"])}</p></div>')
+            source_slug = week_info[r["week"]]["slug"]
+            anchor = ""
+            if source_slug not in anchored:
+                anchor = f'<span id="{source_slug}" aria-hidden="true"></span>'
+                anchored.add(source_slug)
             cards.append(
-                f'<article class="{card_cls}" id="r-{r["id"]}" data-cats="{" ".join(r["categories"])}" data-search="{blob}">'
+                f'<article class="{card_cls}" id="r-{r["id"]}" data-cats="{" ".join(r["categories"])}" data-search="{blob}" '
+                f'data-week="{esc(r["week"])}" data-date="{r["_shared_on"].isoformat()}" '
+                f'data-title="{esc(r["title"].lower())}" data-period="{info["slug"]}">'
                 f'<span class="cardnum">{ci + 1:02d}</span>'
-                f'<div class="card-main">'
+                f'<div class="card-main">{anchor}'
                 f'<h3><a href="{esc(r["url"])}" target="_blank" rel="noopener">{esc(r["title"])}</a></h3>'
                 f'<p>{esc(r["_desc"])}</p>'
                 f'{warnbar}'
@@ -440,16 +468,11 @@ def main():
                 f'<div class="side-row">{esc(r["date"])} · <a class="plink" href="#r-{r["id"]}" title="Copy a link to this resource">Copy link</a></div>'
                 f'</div>'
                 f'</article>')
-        badge = ' <span class="latest">Latest</span>' if is_newest_week else ''
-        heading = "Providers" if label == "providers" else esc(dlabel)
-        if label == "providers":
-            wcount = f"{len(res)} inference provider{'s' if len(res) != 1 else ''}"
-        else:
-            wcount = f"{len(res)} kept"
+        badge = ' <span class="latest">Latest</span>' if wi == 0 else ''
         sections.append(
-            f'<section class="week" id="{info["slug"]}" data-week="{esc(label)}">'
-            f'<div class="weekhead">{wnum_html}<h2>{heading}</h2>{badge}'
-            f'<span class="wcount">{wcount}</span></div>'
+            f'<section class="week" id="{info["slug"]}">'
+            f'<div class="weekhead">{wnum_html}<h2>{esc(info["label"])}</h2>{badge}'
+            f'<span class="wcount">{len(res)} kept</span></div>'
             + "\n".join(cards) + '</section>')
 
     crows = (f'<button class="navrow active" data-cat="all"><span>All resources</span><b>{total}</b></button>' +
@@ -677,6 +700,14 @@ body {{
   display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
   border-bottom: 1px solid var(--ink); padding-bottom: 14px;
 }}
+.library-head {{ flex-wrap: wrap; }}
+.headtools {{ display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }}
+#sortOrder {{
+  font: inherit; font-size: 12px; color: var(--ink); background: var(--paper);
+  border: 1px solid var(--line); border-radius: 6px; padding: 7px 9px;
+  cursor: pointer;
+}}
+#sortOrder:focus-visible {{ outline: 2px solid var(--accent); outline-offset: 2px; }}
 .shortlist-h {{
   font-family: Georgia, "Times New Roman", serif; font-size: 30px; font-weight: 400;
   margin: 0; letter-spacing: -0.015em; scroll-margin-top: 24px;
@@ -993,11 +1024,21 @@ footer a {{ color: var(--accent); }}
     </details>
   </aside>
   <div class="content">
-  <div class="mainhead">
+  <div class="mainhead library-head">
     <h2 class="shortlist-h" id="results">The shortlist</h2>
-    <span class="mcount"><span id="mcount">{total} resources</span> · <button class="sharebtn" id="copyView" title="Copy a link to this exact view, filters included">Copy link</button></span>
+    <div class="headtools">
+      <select id="sortOrder" aria-label="Sort resources" title="Sort resources. Category sorting uses the first listed category.">
+        <option value="newest">Newest first</option>
+        <option value="oldest">Oldest first</option>
+        <option value="title">Name A–Z</option>
+        <option value="title-desc">Name Z–A</option>
+        <option value="category">Category A–Z</option>
+        <option value="category-desc">Category Z–A</option>
+      </select>
+      <span class="mcount"><span id="mcount">{total} resources</span> · <button class="sharebtn" id="copyView" title="Copy a link to this exact view, filters and sorting included">Copy link</button></span>
+    </div>
   </div>
-  <p class="shortlist-sub">Every kept resource, newest week first. Search and the sidebar filters narrow it down.</p>
+  <p class="shortlist-sub">Every kept resource. Sort the list, or narrow it with search and the sidebar filters.</p>
   <main id="main">
 {"".join(sections)}
   </main>
@@ -1170,6 +1211,75 @@ const cchips = [...document.querySelectorAll('.navrow[data-cat]')];
 const wchips = [...document.querySelectorAll('.navrow[data-week]')];
 const mcount = document.getElementById('mcount');
 const cards = [...document.querySelectorAll('.card')];
+const sortOrder = document.getElementById('sortOrder');
+const mainEl = document.getElementById('main');
+const catLabels = {json.dumps(CAT_LABELS)};
+const dateSections = [...mainEl.querySelectorAll('.week')];
+const categorySections = new Map();
+const nameSection = document.createElement('section');
+nameSection.className = 'week';
+const cmp = (a, b) => a < b ? -1 : a > b ? 1 : 0;
+function compareCards(a, b) {{
+  const mode = sortOrder.value;
+  const title = cmp(a.dataset.title, b.dataset.title);
+  const date = cmp(a.dataset.date, b.dataset.date);
+  if (mode === 'title' || mode === 'title-desc') {{
+    return (mode === 'title-desc' ? -title : title) || cmp(a.id, b.id);
+  }}
+  if (mode === 'category' || mode === 'category-desc') {{
+    const category = cmp(catLabels[a.dataset.cats.split(' ')[0]], catLabels[b.dataset.cats.split(' ')[0]]);
+    return (mode === 'category-desc' ? -category : category) || -date || title || cmp(a.id, b.id);
+  }}
+  return (mode === 'oldest' ? date : -date) || title || cmp(a.id, b.id);
+}}
+function renderOrder() {{
+  const mode = sortOrder.value;
+  let sections, groupFor;
+  if (mode.startsWith('category')) {{
+    const cats = Object.keys(catLabels).sort((a, b) =>
+      cmp(catLabels[a], catLabels[b]) * (mode === 'category-desc' ? -1 : 1));
+    sections = cats.map(cat => {{
+      if (!categorySections.has(cat)) {{
+        const section = document.createElement('section');
+        section.className = 'week';
+        const header = document.createElement('div');
+        header.className = 'weekhead';
+        const title = document.createElement('h2');
+        title.textContent = catLabels[cat];
+        const count = document.createElement('span');
+        count.className = 'wcount';
+        header.append(title, count);
+        section.append(header);
+        categorySections.set(cat, section);
+      }}
+      return categorySections.get(cat);
+    }});
+    groupFor = c => categorySections.get(c.dataset.cats.split(' ')[0]);
+  }} else if (mode.startsWith('title')) {{
+    sections = [nameSection];
+    groupFor = () => nameSection;
+  }} else {{
+    sections = mode === 'oldest' ? [...dateSections].reverse() : dateSections;
+    const byPeriod = new Map(dateSections.map(s => [s.id, s]));
+    groupFor = c => byPeriod.get(c.dataset.period);
+  }}
+  for (const section of sections) {{
+    const header = section.querySelector('.weekhead');
+    section.replaceChildren(...(header ? [header] : []));
+  }}
+  for (const card of [...cards].sort(compareCards)) groupFor(card).append(card);
+  let number = 0;
+  for (const section of sections) {{
+    const visible = [...section.querySelectorAll('.card:not(.hidden)')];
+    section.classList.toggle('hidden', !visible.length);
+    visible.forEach((card, i) => {{ card.querySelector('.cardnum').textContent = String(i + 1).padStart(2, '0'); }});
+    const count = section.querySelector('.wcount');
+    if (count) count.textContent = `${{visible.length}} kept`;
+    const ordinal = section.querySelector('.weeknum');
+    if (ordinal && visible.length) ordinal.textContent = String(++number).padStart(2, '0');
+  }}
+  mainEl.replaceChildren(...sections);
+}}
 // expandable detail breakdowns: clicking anywhere on a card toggles its
 // detail section, except on links and buttons which keep native behavior
 for (const c of document.querySelectorAll('.card.has-details')) {{
@@ -1185,7 +1295,6 @@ for (const c of document.querySelectorAll('.card.has-details')) {{
     toggle();
   }});
 }}
-const weeks = [...document.querySelectorAll('.week')];
 const empty = document.getElementById('empty');
 const resultsH = document.getElementById('results');
 let activeCat = null, activeWeek = null;
@@ -1194,17 +1303,13 @@ function apply() {{
   let visible = 0;
   for (const c of cards) {{
     const okCat = !activeCat || c.dataset.cats.split(' ').includes(activeCat);
-    const wsec = c.closest('.week');
-    const okWeek = !activeWeek || (wsec && wsec.dataset.week === activeWeek);
+    const okWeek = !activeWeek || c.dataset.week === activeWeek;
     const okQ = !term || c.dataset.search.includes(term);
     const show = okCat && okWeek && okQ;
     c.classList.toggle('hidden', !show);
     if (show) visible++;
   }}
-  for (const w of weeks) {{
-    const any = [...w.querySelectorAll('.card')].some(c => !c.classList.contains('hidden'));
-    w.classList.toggle('hidden', !any);
-  }}
+  renderOrder();
   if (empty) empty.style.display = visible ? 'none' : 'block';
   if (mcount) mcount.textContent = visible === cards.length
     ? `${{cards.length}} resources` : `${{visible}} of ${{cards.length}} resources`;
@@ -1218,6 +1323,7 @@ function syncUrl() {{
   if (activeCat) p.set('cat', activeCat);
   if (activeWeek) p.set('week', activeWeek);
   if (q.value.trim()) p.set('q', q.value.trim());
+  if (sortOrder.value !== 'newest') p.set('sort', sortOrder.value);
   const anEl = document.getElementById('analytics');
   if (anEl && !anEl.hidden) p.set('view', 'analytics');
   const apiEl = document.getElementById('apidocs');
@@ -1236,6 +1342,7 @@ if (q) {{
   q.addEventListener('input', apply);
   q.addEventListener('keydown', (e) => {{ if (e.key === 'Enter') {{ apply(); goResults(); }} }});
 }}
+sortOrder.addEventListener('change', () => {{ apply(); goResults(); }});
 function setFilters(cat, week, term) {{
   activeCat = cat; activeWeek = week;
   if (term !== undefined) q.value = term;
@@ -1256,6 +1363,7 @@ for (const ch of wchips) ch.addEventListener('click', () => {{
 // clear all: reset search text, category and week filters
 const clearBtn = document.getElementById('clearAll');
 if (clearBtn) clearBtn.addEventListener('click', () => {{
+  sortOrder.value = 'newest';
   setFilters(null, null, '');
   goResults();
 }});
@@ -1284,7 +1392,6 @@ const copyView = document.getElementById('copyView');
 if (copyView) copyView.addEventListener('click', () => copyLink(location.href,
   location.hash.includes('=') ? 'Link to this filtered view copied' : 'Link copied'));
 // category tags and sharer names inside cards act as shortcuts into the filters
-const mainEl = document.getElementById('main');
 if (mainEl) mainEl.addEventListener('click', (e) => {{
   const plink = e.target.closest('.plink');
   if (plink) {{
@@ -1344,6 +1451,7 @@ if (location.hash.includes('=')) {{
   const p = new URLSearchParams(location.hash.slice(1));
   const cat = cchips.some(c => c.dataset.cat === p.get('cat')) ? p.get('cat') : null;
   const week = wchips.some(c => c.dataset.week === p.get('week')) ? p.get('week') : null;
+  sortOrder.value = [...sortOrder.options].some(o => o.value === p.get('sort')) ? p.get('sort') : 'newest';
   setFilters(cat, week, p.get('q') || '');
   if (p.get('view') === 'analytics') showTab('analytics');
   else if (p.get('view') === 'api') showTab('api');

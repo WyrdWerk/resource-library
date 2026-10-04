@@ -77,7 +77,7 @@ message `tests/test_schemas.py` asserts on). Everything else is stdlib.
 | `scripts/search.py` | Deterministic lexical search over the catalog (weighted fields, curated aliases). **Hand-written.** |
 | `scripts/api_server.py` | Stdlib-only local API adapter for contract tests — not production. **Hand-written.** |
 | `docs/runbook.md` | Exact build/test/audit/smoke commands for the API surface. **Hand-maintained** — reference it, don't duplicate commands here. |
-| `tests/` | Test suite (`python3 -m pytest tests/ -q`, 103 tests): parsing, build-freeze, schemas, migration, compat, search gold set, API contract, site meta. `tests/manifest.baseline.json` pins the record count, ID order, and channel split — refresh it deliberately when resources are added. **Hand-maintained.** |
+| `tests/` | Test suite (`python3 -m pytest tests/ -q`, 108 tests): parsing, build-freeze, schemas, migration, compat, search gold set, API contract, site meta, library sorting. `tests/manifest.baseline.json` pins the record count, ID order, and channel split — refresh it deliberately when resources are added. **Hand-maintained.** |
 | `LICENSE` | CC-BY-4.0 — the curated content's license. |
 | `CONTRIBUTING.md` | How outsiders suggest resources or send fixes. |
 | `README.md`, `AGENTS.md` | Hand-maintained documentation. |
@@ -101,8 +101,14 @@ Each file is one collection batch. Sections assign entries to weeks:
 `notes/providers.md` uses a single `## Providers` section for the original
 full-lifetime #providers backfill (earliest occurrence kept, deduped within
 the channel and against the published site). Daily notes add new #providers
-entries under their own `## Providers` section. Providers render as the
-leading "Providers" section of the site.
+entries under their own `## Providers` section.
+
+The website intermixes providers with other resources by share date, newest
+first. Its sort control also offers oldest-first, name A–Z/Z–A, and category
+A–Z/Z–A (first listed category, newest within each category). These are
+presentation-only: source batches, exported data order, and week-filter
+membership stay unchanged. Sort and filter choices are shareable in the URL;
+Clear all restores the unfiltered, newest-first view.
 
 Details sidecars (`notes/details-*.md`) use a different shape — a single
 `## Details` section with one `### <record-id>` heading and a `- Details:`

@@ -4,7 +4,7 @@ A curated, browsable archive of developer resources shared in the [CheapInfra](h
 
 **Browse it:** <https://cheapinfra-resources.wyrdwerk.com/>. The site is a single `index.html` with no dependencies and no build step. You can open it locally or deploy it to any static host (it's built for Cloudflare Pages). It defaults to a black editorial theme (near-black background, serif headlines, mint-green accent), and a header toggle switches to light mode and remembers your choice. It has three tabs:
 
-- **Library**: search, category and period filters, a Clear all button, and numbered sections (Providers, then each week, newest first). Cards with a researched breakdown expand on click.
+- **Library**: search, category and period filters, a Clear all button, and a sort control. By default every resource, providers included, is listed newest first by share date; you can also sort oldest first, by name, or by category. Cards with a researched breakdown expand on click.
 - **Analytics**: weekly volume, top sharers, category mix over time (weekly or fortnightly), all-time mix, and a spotlight on the top sharer. Every chart is inline SVG with no libraries.
 - **API**: human- and agent-facing docs for the JSON API: quick-start curls, endpoints, parameters, record shape, conventions, and errors.
 
@@ -32,7 +32,7 @@ Every view is shareable through the URL hash, e.g. `#view=api`.
 | `scripts/` | `build.py`, `migrate.py`, `api_build.py`, `validate_catalog.py`, `search.py`, `api_server.py`, `edge_parity.py`, `linkcheck.py`, `review_gold.py` | Hand-written |
 | `docs/runbook.md` | Exact build, test, audit, and deploy commands for the API surface | Hand-written |
 | `docs/api-spec.md` | The original API design spec, kept for history. `api/openapi.yaml` is authoritative. | Hand-written |
-| `tests/` | Test suite (103 tests), including build-freeze, search-quality, and API-contract gates | Hand-written; run `python3 -m pytest tests/ -q` |
+| `tests/` | Test suite (108 tests), including build-freeze, search-quality, API-contract, and library-sorting gates | Hand-written; run `python3 -m pytest tests/ -q` |
 | `AGENTS.md` | Operating manual for agents working on this repo | Hand-written |
 | `CONTRIBUTING.md` | How to suggest resources or send fixes | Hand-written |
 | `LICENSE` | CC-BY-4.0, the curated content's license | Hand-written |

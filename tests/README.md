@@ -36,6 +36,9 @@ API. Tests are written with `unittest`/plain asserts and run under `pytest`.
 - `test_site_meta.py` — robots.txt, sitemap.xml, llms.txt shape (H1,
   blockquote, absolute links, key facts) and the API tab wiring in
   index.html.
+- `test_library_sorting.py` — site chronology: newest-first default,
+  sort options, unchanged export order; one test drives a real browser
+  via `agent-browser` and skips when it is not installed.
 - `fixtures/schema/` — deliberately invalid records for `test_schemas.py`.
 
 ## Run
@@ -43,7 +46,7 @@ API. Tests are written with `unittest`/plain asserts and run under `pytest`.
 From the repo root:
 
     python3 -m pytest tests/ -q
-    # expected: 103 passed
+    # expected: 108 passed (the browser-driven sorting test skips if agent-browser is not installed)
 
 ## Environment
 
