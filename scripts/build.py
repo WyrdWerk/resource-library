@@ -416,7 +416,7 @@ def main():
         display_weeks.setdefault(r["_period"], []).append(r)
 
     wrows = []
-    for label in ordered:
+    for label in _wk:
         info = week_info[label]
         latest = ' <span class="newdot">new</span>' if label == _wk[0] else ''
         wrows.append(f'<button class="navrow" data-week="{esc(label)}"><span>{esc(info["label"])}{latest}</span><b>{len(weeks[label])}</b></button>')
@@ -708,6 +708,31 @@ body {{
   cursor: pointer;
 }}
 #sortOrder:focus-visible {{ outline: 2px solid var(--accent); outline-offset: 2px; }}
+#randomFive {{ font-size: 12px; padding: 7px 11px; border-radius: 6px; }}
+.share-dialog {{
+  width: min(720px, calc(100% - 32px)); max-height: calc(100svh - 40px);
+  padding: 24px; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--paper); color: var(--ink); overflow: auto;
+}}
+.share-dialog::backdrop {{ background: rgba(0,0,0,.6); }}
+.share-dialog .shortlist-h {{ font-size: 26px; }}
+.share-actions {{ display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 16px 0; }}
+#pickAgain {{ margin-left: auto; font-size: 12px; }}
+.random-picks {{ display: flex; flex-wrap: wrap; gap: 4px 22px; padding-left: 18px; margin: 14px 0; font-size: 12px; }}
+.random-picks a {{ color: var(--accent); overflow-wrap: anywhere; }}
+.draft-field {{ margin-top: 18px; }}
+.draft-field label {{ display: block; font-size: 12px; font-weight: 600; margin-bottom: 8px; }}
+.draft-field textarea {{
+  display: block; width: 100%; padding: 12px; resize: vertical;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--ink);
+  font: inherit; font-size: 13px; line-height: 1.6;
+}}
+.draft-field textarea:focus-visible, .share-dialog button:focus-visible {{ outline: 2px solid var(--accent); outline-offset: 2px; }}
+.draft-field textarea[aria-invalid="true"] {{ border-color: var(--warm); }}
+.draft-footer {{ display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 8px; }}
+.draft-count, #shareStatus, .share-hint {{ font-size: 12px; color: var(--muted); }}
+#shareStatus {{ min-height: 1.6em; margin: 12px 0 0; }}
+.share-dialog button:disabled, #randomFive:disabled {{ opacity: .45; cursor: default; }}
 .shortlist-h {{
   font-family: Georgia, "Times New Roman", serif; font-size: 30px; font-weight: 400;
   margin: 0; letter-spacing: -0.015em; scroll-margin-top: 24px;
@@ -1035,6 +1060,7 @@ footer a {{ color: var(--accent); }}
         <option value="category">Category A–Z</option>
         <option value="category-desc">Category Z–A</option>
       </select>
+      <button class="fchip" id="randomFive" title="Pick up to five matching resources and prepare a copy-only draft" aria-haspopup="dialog">Random 5</button>
       <span class="mcount"><span id="mcount">{total} resources</span> · <button class="sharebtn" id="copyView" title="Copy a link to this exact view, filters and sorting included">Copy link</button></span>
     </div>
   </div>
@@ -1188,6 +1214,24 @@ curl "{SITE_URL}/api/v1/resources?limit=100"</pre>
 </div>
 <button class="top" id="top" aria-label="Back to top">↑</button>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog class="share-dialog" id="randomShare" aria-labelledby="randomTitle" aria-describedby="randomScope">
+  <div class="mainhead">
+    <h2 class="shortlist-h" id="randomTitle">Random picks</h2>
+    <button class="fchip" id="closeRandom" autofocus>Close</button>
+  </div>
+  <p class="shortlist-sub" id="randomScope"></p>
+  <ol class="random-picks" id="randomPicks"></ol>
+  <div class="share-actions">
+    <button class="fchip active" data-share-format="linkedin" aria-pressed="true">LinkedIn</button>
+    <button class="fchip" data-share-format="x" aria-pressed="false">X post</button>
+    <button class="sharebtn" id="pickAgain" title="Pick new resources and replace the drafts, including your edits">Pick again</button>
+  </div>
+  <div id="linkedinDraft"></div>
+  <div id="xDraft" hidden>
+    <p class="share-hint">One post. Up to three complete descriptions, fewer when needed. X counts are conservative estimates.</p>
+  </div>
+  <p id="shareStatus" role="status" aria-live="polite"></p>
+</dialog>
 <script>
 // theme: black is the default; the toggle offers the light editorial theme, choice remembered
 const tt = document.getElementById('themeToggle');
@@ -1212,6 +1256,7 @@ const wchips = [...document.querySelectorAll('.navrow[data-week]')];
 const mcount = document.getElementById('mcount');
 const cards = [...document.querySelectorAll('.card')];
 const sortOrder = document.getElementById('sortOrder');
+const randomFive = document.getElementById('randomFive');
 const mainEl = document.getElementById('main');
 const catLabels = {json.dumps(CAT_LABELS)};
 const dateSections = [...mainEl.querySelectorAll('.week')];
@@ -1313,6 +1358,7 @@ function apply() {{
   if (empty) empty.style.display = visible ? 'none' : 'block';
   if (mcount) mcount.textContent = visible === cards.length
     ? `${{cards.length}} resources` : `${{visible}} of ${{cards.length}} resources`;
+  randomFive.disabled = !visible;
   syncUrl();
   return visible;
 }}
@@ -1378,19 +1424,158 @@ function showToast(msg) {{
   toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
 }}
 async function copyLink(url, msg) {{
+  const modal = document.querySelector('dialog[open]');
   try {{
     await navigator.clipboard.writeText(url);
   }} catch (e) {{
     const ta = document.createElement('textarea');
-    ta.value = url; document.body.appendChild(ta); ta.select();
-    document.execCommand('copy'); ta.remove();
+    const focus = document.activeElement;
+    ta.value = url; ta.style.position = 'fixed'; ta.style.left = '-9999px';
+    (modal || document.body).appendChild(ta);
+    ta.select();
+    let copied = false;
+    try {{ copied = document.execCommand('copy'); }} catch (e) {{}}
+    ta.remove(); focus.focus({{preventScroll: true}});
+    if (!copied) {{
+      if (!modal) showToast('Copy failed — select and copy the text manually');
+      return false;
+    }}
   }}
-  showToast(msg);
+  if (!modal) showToast(msg);
+  return true;
 }}
 const pageUrl = () => location.origin + location.pathname;
 const copyView = document.getElementById('copyView');
 if (copyView) copyView.addEventListener('click', () => copyLink(location.href,
   location.hash.includes('=') ? 'Link to this filtered view copied' : 'Link copied'));
+// Random discovery is a snapshot of matching cards, not another library filter.
+const shareDialog = document.getElementById('randomShare');
+const shareStatus = document.getElementById('shareStatus');
+const shareFormats = [...document.querySelectorAll('[data-share-format]')];
+const linkedinDraft = document.getElementById('linkedinDraft');
+const xDraft = document.getElementById('xDraft');
+let selectedCards = [], xCards = [], matchingCount = 0;
+const textWeight = text => [...text].reduce((n, c) => n + (c.codePointAt(0) > 127 ? 2 : 1), 0);
+const xLength = text => textWeight(text.replace(/https?:\\/\\/\\S+/g, ' '.repeat(23)));
+function shareIntro(count, format) {{
+  const heading = `${{count === 1 ? 'A useful resource' : 'Some useful resources'}} from ${{format === 'x' ? 'CheapInfra' : 'the CheapInfra Resource Library'}}.`;
+  const source = {json.dumps(SITE_URL + '/')};
+  return heading + '\\n' + (format === 'x' ? source : 'Curated from developer resources shared in CheapInfra Discord: ' + source);
+}}
+function shortLine(text, limit) {{
+  const clean = text.replace(/\\s+/g, ' ').trim();
+  if (textWeight(clean) <= limit) return clean;
+  let excerpt = '';
+  for (const c of clean) {{
+    if (textWeight(excerpt + c + '…') > limit) break;
+    excerpt += c;
+  }}
+  const space = excerpt.lastIndexOf(' ');
+  if (space > excerpt.length * .65) excerpt = excerpt.slice(0, space);
+  return excerpt.trimEnd() + '…';
+}}
+function shareEntry(card, limit) {{
+  const url = card.querySelector('h3 a').getAttribute('href');
+  const description = card.querySelector('.card-main > p').textContent.split(/(?<=[.!?])\\s+(?=[A-Z"'])/)[0];
+  const warning = card.querySelector('.warnbar');
+  const caveat = warning ? ' Caveat: ' + shortLine(warning.textContent.replace(/^⚠\\s*/, ''), Math.min(70, Math.floor(limit / 2))) : '';
+  return url + '\\n' + shortLine(description, limit - textWeight(caveat)) + caveat;
+}}
+function xShareEntry(card) {{
+  const url = card.querySelector('h3 a').getAttribute('href');
+  const sentence = card.querySelector('.card-main > p').textContent
+    .replace(/\\s+/g, ' ').trim().split(/(?<=[.!?])\\s+(?=[A-Z"'])/)[0];
+  // Keep a descriptive lead before optional detail lists, never a character-cut fragment.
+  const lead = sentence.split(/\\s+[—–]\\s+|:\\s+|;\\s+/)[0].trim();
+  let description = lead.split(' ').length >= 4 && !/\\b(a|an|the|and|or|for|with|of|to|is|are)$/i.test(lead) ? lead : sentence;
+  if (!/[.!?。！？]["'”’)]?$/.test(description)) description += '.';
+  const warning = card.querySelector('.warnbar');
+  const caveat = warning ? ' Caveat: ' + warning.textContent.replace(/^⚠\\s*/, '').replace(/\\s+/g, ' ').trim() : '';
+  return url + '\\n' + description + caveat;
+}}
+function addDraft(container, text, label, format) {{
+  const field = document.createElement('div');
+  field.className = 'draft-field';
+  const title = document.createElement('label');
+  const ta = document.createElement('textarea');
+  ta.id = `${{format}}-draft-${{container.querySelectorAll('textarea').length}}`;
+  title.htmlFor = ta.id; title.textContent = label;
+  ta.rows = format === 'x' ? xCards.length * 3 + 3 : 24; ta.value = text;
+  const footer = document.createElement('div'); footer.className = 'draft-footer';
+  const count = document.createElement('span'); count.className = 'draft-count';
+  const copy = document.createElement('button'); copy.className = 'fchip';
+  copy.dataset.copyDraft = ''; copy.textContent = format === 'x' ? 'Copy post' : 'Copy draft';
+  const update = () => {{
+    const length = format === 'x' ? xLength(ta.value) : ta.value.length;
+    const limit = format === 'x' ? 280 : 3000;
+    count.textContent = `${{length}} / ${{limit}}${{length > limit ? ' · Shorten before copying' : ''}}`;
+    ta.setAttribute('aria-invalid', String(length > limit));
+    copy.disabled = !ta.value.trim() || length > limit;
+    shareStatus.textContent = '';
+  }};
+  ta.addEventListener('input', update);
+  copy.addEventListener('click', async () => {{
+    const ok = await copyLink(ta.value, 'Draft copied');
+    shareStatus.textContent = ok ? 'Draft copied. Paste it when you’re ready.' : 'Copy failed. Select and copy the draft manually.';
+    if (!ok) {{ ta.focus(); ta.select(); }}
+  }});
+  footer.append(count, copy); field.append(title, ta, footer); container.append(field);
+  update();
+}}
+function showShareFormat(format) {{
+  const showX = format === 'x';
+  linkedinDraft.hidden = showX; xDraft.hidden = !showX;
+  shareFormats.forEach(button => {{
+    const active = button.dataset.shareFormat === format;
+    button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active));
+  }});
+  const included = showX ? xCards : selectedCards;
+  const picks = document.getElementById('randomPicks'); picks.replaceChildren();
+  included.forEach(card => {{
+    const link = card.querySelector('h3 a');
+    const item = document.createElement('li'); const a = document.createElement('a');
+    a.textContent = link.textContent; a.href = link.href; a.target = '_blank'; a.rel = 'noopener';
+    item.append(a); picks.append(item);
+  }});
+  document.getElementById('randomTitle').textContent = showX && !included.length
+    ? 'No complete X post fits these picks' : `${{included.length}} random pick${{included.length === 1 ? '' : 's'}}`;
+  const picked = included.length === selectedCards.length ? String(included.length) : `${{included.length}} of ${{selectedCards.length}}`;
+  document.getElementById('randomScope').textContent = `${{picked}} picks from ${{matchingCount}} matching resources. Copy only — nothing is posted.`;
+  shareStatus.textContent = '';
+}}
+function pickRandom() {{
+  const pool = [...mainEl.querySelectorAll('.card:not(.hidden)')];
+  const size = Math.min(5, pool.length);
+  if (!size) return;
+  for (let i = 0; i < size; i++) {{
+    const j = i + Math.floor(Math.random() * (pool.length - i));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }}
+  matchingCount = pool.length; selectedCards = pool.slice(0, size);
+  const entries = selectedCards.map(card => shareEntry(card, 160));
+  const xEntries = [];
+  xCards = [];
+  for (const card of selectedCards) {{
+    const entry = xShareEntry(card);
+    const candidate = shareIntro(xCards.length + 1, 'x') + '\\n\\n' + [...xEntries, entry].join('\\n\\n');
+    if (xLength(candidate) > 280) continue;
+    xCards.push(card); xEntries.push(entry);
+    if (xCards.length === 3) break;
+  }}
+  linkedinDraft.replaceChildren();
+  xDraft.querySelectorAll('.draft-field').forEach(el => el.remove());
+  xDraft.querySelector('.share-hint').textContent = xCards.length
+    ? 'One post. Up to three complete descriptions, fewer when needed. X counts are conservative estimates.'
+    : 'These descriptions need more room than one X post. Pick again or use LinkedIn; no descriptions were cut.';
+  addDraft(linkedinDraft, shareIntro(selectedCards.length, 'linkedin') + '\\n\\n' + entries.join('\\n\\n'), 'Ready-to-paste LinkedIn post', 'linkedin');
+  const xText = xCards.length ? shareIntro(xCards.length, 'x') + '\\n\\n' + xEntries.join('\\n\\n') : '';
+  addDraft(xDraft, xText, `${{xCards.length}} resource${{xCards.length === 1 ? '' : 's'}} in one post`, 'x');
+  showShareFormat(xDraft.hidden ? 'linkedin' : 'x');
+}}
+randomFive.addEventListener('click', () => {{ pickRandom(); shareDialog.showModal(); }});
+document.getElementById('pickAgain').addEventListener('click', pickRandom);
+document.getElementById('closeRandom').addEventListener('click', () => shareDialog.close());
+shareFormats.forEach(button => button.addEventListener('click', () => showShareFormat(button.dataset.shareFormat)));
 // category tags and sharer names inside cards act as shortcuts into the filters
 if (mainEl) mainEl.addEventListener('click', (e) => {{
   const plink = e.target.closest('.plink');
