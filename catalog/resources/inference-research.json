@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "inference-research",
+  "title": "inference-research",
+  "canonical_url": "https://github.com/phantomic12/inference-research",
+  "brief": "A structured knowledge base for LLM inference covering accelerators, FLOP classes, engines, quantization, interconnect and benchmarks. Framed by the sharer as a personal research project; completeness claims are unverified.",
+  "caveat": "Framed by the sharer as a personal research project; completeness claims are unverified.",
+  "details": "A structured, machine-readable knowledge base about LLM inference by one_phantomic, organizing accelerators, FLOP classes, inference engines, quantization formats, interconnect and measured benchmarks. Every fact is a single JSON record with provenance — one file in data/, not a paragraph in a wiki page — with synthesized prose in docs/ citing record ids, plus JSON Schemas and validation, query and indexing tooling. Brand new (created 3 Oct 2026, 0 stars); the knowledge base's coverage and accuracy are unverified.",
+  "resource_type": "repository",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "article"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "one_phantomic"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

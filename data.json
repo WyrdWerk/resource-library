@@ -595,6 +595,183 @@
     "details": ""
   },
   {
+    "title": "Bevy",
+    "week": "1–8 Oct 2026",
+    "url": "https://bevy.org/",
+    "sharer": "one_phantomic",
+    "date": "6 Oct",
+    "categories": [
+      "dev-tool"
+    ],
+    "brief": "Bevy is a data-driven game engine built in Rust, described by its own site as \"refreshingly simple\" and \"free and open-source forever\". one_phantomic shared it as their go-to pick for gamedev; the engine's simplicity claims are vendor-reported.",
+    "id": "bevy",
+    "warning": "",
+    "details": "Bevy is a data-driven game engine written in Rust, built around its custom Entity Component System (ECS) with a massively parallel, cache-friendly scheduler where components are Rust structs and systems are Rust functions. It ships real-time 2D and 3D renderers covering sprite sheets, dynamic texture atlases, lights, shadows, cameras, meshes, materials and glTF loading, all composed through an extensible render-graph system with custom shader and pipeline support. The project positions itself as refreshingly simple and free and open-source forever; engine maturity and performance claims are the project's own."
+  },
+  {
+    "title": "genex-desktop",
+    "week": "1–8 Oct 2026",
+    "url": "https://github.com/genex-games/genex-desktop",
+    "sharer": "thelaggingway",
+    "date": "6 Oct",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "A desktop app for game development with AI — per its GitHub embed, macOS and Linux are supported with Windows coming soon. thelaggingway shared it untried, so treat the feature claims as unevaluated.",
+    "id": "genex-desktop",
+    "warning": "",
+    "details": "Genex is an early-stage desktop app for game development with AI, built by genex-games in TypeScript and MIT-licensed, with 159 stars as of early October 2026. It ships as a native download for macOS (Apple Silicon) and Linux (deb, rpm, zip), with Windows still to come, and its banner shows a game built in chat with its assets beside it. The repo itself warns it is early and to expect rough edges; feature claims are unevaluated since thelaggingway shared it untried."
+  },
+  {
+    "title": "FineEnvs: multi-harness RL",
+    "week": "1–8 Oct 2026",
+    "url": "https://huggingface.co/spaces/FineEnvs/multi-harness-rl",
+    "sharer": "baanish",
+    "date": "5 Oct",
+    "categories": [
+      "ai-tool",
+      "article"
+    ],
+    "brief": "Extracted from Clement Delangue's 5 Oct announcement tweet (tweets are never dropped for being announcements): the \"Full guide\" link for Hugging Face's open-source capture proxy that turns coding harnesses (Claude Code, Codex, Hermes, Pi, opencode) into RL environments with no harness changes. The tweet claims same-model-same-weights results of 62% under Mini-SWE-Agent vs 33% under Claude Code, plus 31% fewer tool calls from a brevity bonus — treat the figures as vendor-reported.",
+    "id": "fineenvs-multi-harness-rl",
+    "warning": "",
+    "details": "This Hugging Face Space by FineEnvs is the \"full guide\" companion to Clement Delangue's 5 Oct 2026 announcement of an open-source capture proxy that turns coding harnesses into RL environments. The approach is a proxy, not a rewrite: the harness thinks it is talking to a model API, but a capture proxy speaking the four coding-agent formats (OpenAI Chat Completions, OpenAI Responses, Anthropic Messages, Gemini) forwards to vLLM, records the exact token IDs and logprobs sampled, and hands TRL trainable sequences, with 10 harnesses running through it unmodified. Reported results on Liquid AI's LFM2.5-2.6B: training in one harness lifts OpenCode from 34% to 58%, training in 4 harnesses lifts all four from 42% to 54%, and a brevity bonus cuts tool calls 31% on already-solved tasks; all figures are vendor-reported, and the proxy, trainer, tasks, data and 7 trained models are claimed fully open and reproducible. (Coverage note: written from the announcement tweet text and the Space's published metadata — the interactive Space app is JS-rendered and was not directly readable.)"
+  },
+  {
+    "title": "pi-simplified-technical-english",
+    "week": "1–8 Oct 2026",
+    "url": "https://github.com/hazrid93/pi-simplified-technical-english",
+    "sharer": "0xSaiya",
+    "date": "4 Oct",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "Simplified Technical English (ASD-STE100) tooling for the pi coding agent — a skill, an /ste mode command, and an ste_check tool. Shared link-only, so scope and maturity are unevaluated beyond the embed description.",
+    "id": "pi-simplified-technical-english",
+    "warning": "",
+    "details": "This package gives the pi coding agent Simplified Technical English (STE), a controlled language for technical documentation based on the ASD-STE100 specification. It provides a skill that makes the agent write technical text in STE, a /ste command that toggles a persistent STE mode for the session (with a footer indicator and autocomplete options for on, off, status and check), and an ste_check tool the agent can call to check text or files against the STE rules. It installs through pi's package manager via npm or git and the skill loads automatically; it is brand new (created 4 Oct 2026, 3 stars), so treat it as early-stage."
+  },
+  {
+    "title": "inference-research",
+    "week": "1–8 Oct 2026",
+    "url": "https://github.com/phantomic12/inference-research",
+    "sharer": "one_phantomic",
+    "date": "4 Oct",
+    "categories": [
+      "github",
+      "article"
+    ],
+    "brief": "A structured knowledge base for LLM inference covering accelerators, FLOP classes, engines, quantization, interconnect and benchmarks. Framed by the sharer as a personal research project; completeness claims are unverified.",
+    "id": "inference-research",
+    "warning": "Framed by the sharer as a personal research project; completeness claims are unverified.",
+    "details": "A structured, machine-readable knowledge base about LLM inference by one_phantomic, organizing accelerators, FLOP classes, inference engines, quantization formats, interconnect and measured benchmarks. Every fact is a single JSON record with provenance — one file in data/, not a paragraph in a wiki page — with synthesized prose in docs/ citing record ids, plus JSON Schemas and validation, query and indexing tooling. Brand new (created 3 Oct 2026, 0 stars); the knowledge base's coverage and accuracy are unverified."
+  },
+  {
+    "title": "Introducing Temporal Resources (Ash Framework)",
+    "week": "1–8 Oct 2026",
+    "url": "https://ash-hq.org/blog/introducing-temporal-resources",
+    "sharer": "simply_roo",
+    "date": "4 Oct",
+    "categories": [
+      "article",
+      "dev-tool"
+    ],
+    "brief": "Extracted from Zach Daniel's announcement tweet (the in-tweet t.co link): Ash HQ's blog post introducing Temporal Resources, the newest Ash Framework feature. Shared exactly on the 4 Oct sweep boundary and recovered under the tweet-extraction rule; feature claims are vendor-reported.",
+    "id": "introducing-temporal-resources-ash-framework",
+    "warning": "",
+    "details": "Ash Framework's blog post by Zach Daniel (October 2026) introducing Temporal Resources, a new experimental feature meant to make dealing with changes over time boring: read or write data as of any moment — past, present or future — with a single as_of option, without changing how you write the application. Filters, relationships, aggregates and calculations all work through the one option. The post rebuilds for the web his Goatmire Elixir talk \"Time Travel for Normies\", using pixel examples based on a live multiplayer game; experimental status and all feature claims are vendor-reported."
+  },
+  {
+    "title": "Avian — pricing",
+    "week": "providers",
+    "url": "https://avian.io/pricing/",
+    "sharer": "scarywood75",
+    "date": "5 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Avian's pricing page — an inference provider billing itself as \"the worlds fastest inference for open source LLMs like Llama\". Speed claims are vendor-reported; treat the page as a pricing snapshot, not live prices.",
+    "id": "avian-pricing",
+    "warning": "",
+    "details": "Avian's pricing page for its LLM inference API, which bills itself as the worlds fastest inference for open source LLMs like Llama, with simple per-token pricing on prepaid credits, no subscriptions or commitments, and an OpenAI-compatible API. Listed models include DeepSeek V4.1 Flash (0.1275 in / 0.51 out per million tokens), DeepSeek V4 Flash, MiniMax M3, GLM-5.3, GLM-5.3 Flash, Kimi K3 and MiMo-V2.6, with context windows up to 1M and DeepSeek V4.1 Flash newly live. Speed claims are vendor-reported; treat listed prices as a snapshot."
+  },
+  {
+    "title": "PrimaLabs",
+    "week": "providers",
+    "url": "https://www.primalabs.ai/",
+    "sharer": "nixerman",
+    "date": "5 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "PrimaLabs' homepage — a dedicated inference stack for open models; nixerman reports \"very fast and cheap Mimo-V2.6-Pro (and deepseek-v4-flash fyi)\" and calls it \"really the best provider\". Performance claims are the sharer's, not verified; distinct from the published PrimaLabs blog benchmark and Artificial Analysis entries.",
+    "id": "primalabs",
+    "warning": "",
+    "details": "PrimaLabs builds and operates a dedicated, application-specific inference stack around each workload for open models, served on sovereign terms and tuned continuously in production, positioning itself as national-lab-grade adaptive AI for enterprise. It claims the number 1 spot on Artificial Analysis for MiMo-V2.6-Pro and for DeepSeek V4 Flash, with workload-shaped serving (coding agents, DeepSeek, GLM) where the stack adapts to the arriving traffic pattern. Ranking and performance claims are vendor-reported; the library already carries PrimaLabs' MiMo benchmark blog post and the Artificial Analysis providers page, and this entry is the provider homepage itself."
+  },
+  {
+    "title": "Kendell: Verifiable Inference",
+    "week": "providers",
+    "url": "https://kendell.dev/blog/verifiableinference/",
+    "sharer": "harrisony",
+    "date": "4 Oct",
+    "categories": [
+      "providers",
+      "article"
+    ],
+    "brief": "Kendell's blog post on verifiable inference, shared link-only. Technical claims are vendor-reported.",
+    "id": "kendell-verifiable-inference",
+    "warning": "",
+    "details": "Kendell's blog essay (18 Sep 2026) arguing that everything we need is already here for verifiable inference: forcing suspect responses through legitimate inference produces quick agreement or disagreement, and forcing a random selection of untrusted responses through legitimate inference solves verifiable inference. It builds the case through information theory, using DeepSeek V4.1 Flash token distributions to explain surprisal, entropy and perplexity in plain terms. The argument is the author's; treat it as an explainer, not a deployed system."
+  },
+  {
+    "title": "Kendell: \"crofai is false\"",
+    "week": "providers",
+    "url": "https://kendell.dev/blog/crofaifalse/",
+    "sharer": "harrisony",
+    "date": "4 Oct",
+    "categories": [
+      "providers",
+      "article"
+    ],
+    "brief": "A Kendell blog post arguing CrofAI is an OpenRouter wrapper (\"I am hella late but omg 🍿\", per harrisony). The wrapper claim is the author's allegation, not independently verified.",
+    "id": "kendell-crofai-is-false",
+    "warning": "The wrapper claim is the author's allegation, not independently verified.",
+    "details": "Kendell's investigative blog post (13 Sep 2026) alleging that CrofAI, which presents itself as an independent inference provider, is actually an OpenRouter wrapper that silently routes requests to cheaper or weaker models than requested. The author claims CrofAI accepts the openrouter:advisor tool and documents per-model routing — for example several flagship model names routed to DeepSeek V4 Flash 0731 or GLM 5.3 Flash — explaining its low prices, with proof presented as true at time of writing. These are the author's allegations based on his own testing, not independently verified."
+  },
+  {
+    "title": "SemiAnalysis: Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+    "week": "providers",
+    "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+    "sharer": "baanish",
+    "date": "6 Oct",
+    "categories": [
+      "providers",
+      "article"
+    ],
+    "brief": "SemiAnalysis newsletter piece \"limit testing every AI subscription plan from Anthropic, OpenAI, Meta, SpaceXSI, MiniMax, Moonshot\" and concluding Anthropic subscriptions offer 5x+ more value than OpenAI's. A third-party provider comparison; treat the figures as a benchmark snapshot.",
+    "id": "semianalysis-anthropic-subscriptions-offer-5x-more-value-than-openai",
+    "warning": "",
+    "details": "SemiAnalysis (Andrew Megalaa, Max Kan, Dylan Patel, 5 Oct 2026) limit-tests subscription plans from Anthropic, OpenAI, Meta, SpaceXAI, MiniMax, Moonshot, Z.ai, Cursor and Cognition, concluding Anthropic's subscriptions offer 5x or more value than OpenAI's. The piece argues subscriptions are heavily subsidized customer-acquisition tools, noting OpenAI's generous resets drove Codex adoption and forced Anthropic to repeatedly walk back planned subscription nerfs. It is a paid article; figures come from SemiAnalysis's tokenomics model and should be treated as their analysis, not live pricing."
+  },
+  {
+    "title": "Tibo's 28-day challenge | Codex Resets",
+    "week": "providers",
+    "url": "https://codex-resets.com/tibo-28",
+    "sharer": "ajthemacboy",
+    "date": "5 Oct",
+    "categories": [
+      "providers",
+      "web-app"
+    ],
+    "brief": "Codex Resets' tracker page for Tibo's 28-day challenge — \"an improvement or a reset, every day\", following the announcements one at a time. Complements the Tibo announcement tweet shared the same night; challenge-progress claims are as reported on the page.",
+    "id": "tibo-s-28-day-challenge-codex-resets",
+    "warning": "",
+    "details": "Codex Resets' tracker page for Tibo's 28-day challenge: each day for 28 days he will either ship one clear improvement relevant to codex and work users, or ship a full reset. Day 1 (5 Oct) was an improvement — roughly 50% faster default speed across GPT-6 Astra and GPT-6.1 Sol for subscription products and partners using Sign in With ChatGPT, rolling out within two hours with no user action needed. The page runs a daily log through 1 Nov; challenge-progress claims are as reported on the page."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

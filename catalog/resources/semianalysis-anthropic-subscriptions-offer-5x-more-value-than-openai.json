@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "semianalysis-anthropic-subscriptions-offer-5x-more-value-than-openai",
+  "title": "SemiAnalysis: Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+  "canonical_url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+  "brief": "SemiAnalysis newsletter piece \"limit testing every AI subscription plan from Anthropic, OpenAI, Meta, SpaceXSI, MiniMax, Moonshot\" and concluding Anthropic subscriptions offer 5x+ more value than OpenAI's. A third-party provider comparison; treat the figures as a benchmark snapshot.",
+  "caveat": null,
+  "details": "SemiAnalysis (Andrew Megalaa, Max Kan, Dylan Patel, 5 Oct 2026) limit-tests subscription plans from Anthropic, OpenAI, Meta, SpaceXAI, MiniMax, Moonshot, Z.ai, Cursor and Cognition, concluding Anthropic's subscriptions offer 5x or more value than OpenAI's. The piece argues subscriptions are heavily subsidized customer-acquisition tools, noting OpenAI's generous resets drove Codex adoption and forced Anthropic to repeatedly walk back planned subscription nerfs. It is a paid article; figures come from SemiAnalysis's tokenomics model and should be treated as their analysis, not live pricing.",
+  "resource_type": "article-guide",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers",
+    "article"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "baanish"
+  },
+  "shared_on": "2026-10-06",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

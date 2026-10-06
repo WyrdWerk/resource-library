@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "pi-simplified-technical-english",
+  "title": "pi-simplified-technical-english",
+  "canonical_url": "https://github.com/hazrid93/pi-simplified-technical-english",
+  "brief": "Simplified Technical English (ASD-STE100) tooling for the pi coding agent — a skill, an /ste mode command, and an ste_check tool. Shared link-only, so scope and maturity are unevaluated beyond the embed description.",
+  "caveat": null,
+  "details": "This package gives the pi coding agent Simplified Technical English (STE), a controlled language for technical documentation based on the ASD-STE100 specification. It provides a skill that makes the agent write technical text in STE, a /ste command that toggles a persistent STE mode for the session (with a footer indicator and autocomplete options for on, off, status and check), and an ste_check tool the agent can call to check text or files against the STE rules. It installs through pi's package manager via npm or git and the skill loads automatically; it is brand new (created 4 Oct 2026, 3 stars), so treat it as early-stage.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "0xSaiya"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "introducing-temporal-resources-ash-framework",
+  "title": "Introducing Temporal Resources (Ash Framework)",
+  "canonical_url": "https://ash-hq.org/blog/introducing-temporal-resources",
+  "brief": "Extracted from Zach Daniel's announcement tweet (the in-tweet t.co link): Ash HQ's blog post introducing Temporal Resources, the newest Ash Framework feature. Shared exactly on the 4 Oct sweep boundary and recovered under the tweet-extraction rule; feature claims are vendor-reported.",
+  "caveat": null,
+  "details": "Ash Framework's blog post by Zach Daniel (October 2026) introducing Temporal Resources, a new experimental feature meant to make dealing with changes over time boring: read or write data as of any moment — past, present or future — with a single as_of option, without changing how you write the application. Filters, relationships, aggregates and calculations all work through the one option. The post rebuilds for the web his Goatmire Elixir talk \"Time Travel for Normies\", using pixel examples based on a live multiplayer game; experimental status and all feature claims are vendor-reported.",
+  "resource_type": "article-guide",
+  "topics": [
+    "databases",
+    "backend"
+  ],
+  "use_cases": [
+    "learn-technique",
+    "operate-databases"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "article",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "simply_roo"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

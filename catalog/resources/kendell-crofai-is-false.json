@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "kendell-crofai-is-false",
+  "title": "Kendell: \"crofai is false\"",
+  "canonical_url": "https://kendell.dev/blog/crofaifalse/",
+  "brief": "A Kendell blog post arguing CrofAI is an OpenRouter wrapper (\"I am hella late but omg 🍿\", per harrisony). The wrapper claim is the author's allegation, not independently verified.",
+  "caveat": "The wrapper claim is the author's allegation, not independently verified.",
+  "details": "Kendell's investigative blog post (13 Sep 2026) alleging that CrofAI, which presents itself as an independent inference provider, is actually an OpenRouter wrapper that silently routes requests to cheaper or weaker models than requested. The author claims CrofAI accepts the openrouter:advisor tool and documents per-model routing — for example several flagship model names routed to DeepSeek V4 Flash 0731 or GLM 5.3 Flash — explaining its low prices, with proof presented as true at time of writing. These are the author's allegations based on his own testing, not independently verified.",
+  "resource_type": "article-guide",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers",
+    "article"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "harrisony"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
