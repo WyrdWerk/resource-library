@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-89 curated providers, with briefs.
+95 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -49,6 +49,42 @@
 - Shared by: nixerman (3 Oct)
 - Categories: providers
 - Brief: Artificial Analysis's provider benchmarking page for Xiaomi's MiMo-V2.6-Pro — compares API providers (Xiaomi, DeepInfra, PrimaLabs, Novita per the link embed) on latency (time to first token), output speed and price. A third-party comparison in the same per-model series as the published GLM-5.3-Flash page; treat the figures as benchmark snapshots, not live prices.
+
+## Avian — pricing
+- URL: https://avian.io/pricing/
+- Shared by: scarywood75 (5 Oct)
+- Categories: providers
+- Brief: Avian's pricing page — an inference provider billing itself as "the worlds fastest inference for open source LLMs like Llama". Speed claims are vendor-reported; treat the page as a pricing snapshot, not live prices.
+
+## PrimaLabs
+- URL: https://www.primalabs.ai/
+- Shared by: nixerman (5 Oct)
+- Categories: providers
+- Brief: PrimaLabs' homepage — a dedicated inference stack for open models; nixerman reports "very fast and cheap Mimo-V2.6-Pro (and deepseek-v4-flash fyi)" and calls it "really the best provider". Performance claims are the sharer's, not verified; distinct from the published PrimaLabs blog benchmark and Artificial Analysis entries.
+
+## Kendell: Verifiable Inference
+- URL: https://kendell.dev/blog/verifiableinference/
+- Shared by: harrisony (4 Oct)
+- Categories: providers, article
+- Brief: Kendell's blog post on verifiable inference, shared link-only. Technical claims are vendor-reported.
+
+## Kendell: "crofai is false"
+- URL: https://kendell.dev/blog/crofaifalse/
+- Shared by: harrisony (4 Oct)
+- Categories: providers, article
+- Brief: A Kendell blog post arguing CrofAI is an OpenRouter wrapper ("I am hella late but omg 🍿", per harrisony). The wrapper claim is the author's allegation, not independently verified.
+
+## SemiAnalysis: Anthropic Subscriptions Offer 5x+ More Value Than OpenAI
+- URL: https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x
+- Shared by: baanish (6 Oct)
+- Categories: providers, article
+- Brief: SemiAnalysis newsletter piece "limit testing every AI subscription plan from Anthropic, OpenAI, Meta, SpaceXSI, MiniMax, Moonshot" and concluding Anthropic subscriptions offer 5x+ more value than OpenAI's. A third-party provider comparison; treat the figures as a benchmark snapshot.
+
+## Tibo's 28-day challenge | Codex Resets
+- URL: https://codex-resets.com/tibo-28
+- Shared by: ajthemacboy (5 Oct)
+- Categories: providers, web-app
+- Brief: Codex Resets' tracker page for Tibo's 28-day challenge — "an improvement or a reset, every day", following the announcements one at a time. Complements the Tibo announcement tweet shared the same night; challenge-progress claims are as reported on the page.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

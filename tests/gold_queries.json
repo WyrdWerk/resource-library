@@ -203,14 +203,14 @@
   },
   "expect_top1": null,
   "expect_top5": [
+   "primalabs",
    "pareto-inference",
    "prism-inference",
    "inco",
-   "fast-inference",
-   "aoru"
+   "fast-inference"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-10-03 against 301-record catalog; new records (battleships, aoru, hpc-sandbox-benchmarks, primalabs benchmark) legitimately rank"
+  "note": "re-reviewed 2026-10-06 against 343-record catalog; primalabs (new) legitimately ranks #1 — sharer: 'very fast and cheap... really the best provider'"
  },
  {
   "query": "components",

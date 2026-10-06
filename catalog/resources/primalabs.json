@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "primalabs",
+  "title": "PrimaLabs",
+  "canonical_url": "https://www.primalabs.ai/",
+  "brief": "PrimaLabs' homepage — a dedicated inference stack for open models; nixerman reports \"very fast and cheap Mimo-V2.6-Pro (and deepseek-v4-flash fyi)\" and calls it \"really the best provider\". Performance claims are the sharer's, not verified; distinct from the published PrimaLabs blog benchmark and Artificial Analysis entries.",
+  "caveat": null,
+  "details": "PrimaLabs builds and operates a dedicated, application-specific inference stack around each workload for open models, served on sovereign terms and tuned continuously in production, positioning itself as national-lab-grade adaptive AI for enterprise. It claims the number 1 spot on Artificial Analysis for MiMo-V2.6-Pro and for DeepSeek V4 Flash, with workload-shaped serving (coding agents, DeepSeek, GLM) where the stack adapts to the arriving traffic pattern. Ranking and performance claims are vendor-reported; the library already carries PrimaLabs' MiMo benchmark blog post and the Artificial Analysis providers page, and this entry is the provider homepage itself.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "nixerman"
+  },
+  "shared_on": "2026-10-05",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

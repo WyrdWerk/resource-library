@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "fineenvs-multi-harness-rl",
+  "title": "FineEnvs: multi-harness RL",
+  "canonical_url": "https://huggingface.co/spaces/FineEnvs/multi-harness-rl",
+  "brief": "Extracted from Clement Delangue's 5 Oct announcement tweet (tweets are never dropped for being announcements): the \"Full guide\" link for Hugging Face's open-source capture proxy that turns coding harnesses (Claude Code, Codex, Hermes, Pi, opencode) into RL environments with no harness changes. The tweet claims same-model-same-weights results of 62% under Mini-SWE-Agent vs 33% under Claude Code, plus 31% fewer tool calls from a brevity bonus — treat the figures as vendor-reported.",
+  "caveat": null,
+  "details": "This Hugging Face Space by FineEnvs is the \"full guide\" companion to Clement Delangue's 5 Oct 2026 announcement of an open-source capture proxy that turns coding harnesses into RL environments. The approach is a proxy, not a rewrite: the harness thinks it is talking to a model API, but a capture proxy speaking the four coding-agent formats (OpenAI Chat Completions, OpenAI Responses, Anthropic Messages, Gemini) forwards to vLLM, records the exact token IDs and logprobs sampled, and hands TRL trainable sequences, with 10 harnesses running through it unmodified. Reported results on Liquid AI's LFM2.5-2.6B: training in one harness lifts OpenCode from 34% to 58%, training in 4 harnesses lifts all four from 42% to 54%, and a brevity bonus cuts tool calls 31% on already-solved tasks; all figures are vendor-reported, and the proxy, trainer, tasks, data and 7 trained models are claimed fully open and reproducible. (Coverage note: written from the announcement tweet text and the Space's published metadata — the interactive Space app is JS-rendered and was not directly readable.)",
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "article"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "baanish"
+  },
+  "shared_on": "2026-10-05",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "genex-desktop",
+  "title": "genex-desktop",
+  "canonical_url": "https://github.com/genex-games/genex-desktop",
+  "brief": "A desktop app for game development with AI — per its GitHub embed, macOS and Linux are supported with Windows coming soon. thelaggingway shared it untried, so treat the feature claims as unevaluated.",
+  "caveat": null,
+  "details": "Genex is an early-stage desktop app for game development with AI, built by genex-games in TypeScript and MIT-licensed, with 159 stars as of early October 2026. It ships as a native download for macOS (Apple Silicon) and Linux (deb, rpm, zip), with Windows still to come, and its banner shows a game built in chat with its assets beside it. The repo itself warns it is early and to expect rough edges; feature claims are unevaluated since thelaggingway shared it untried.",
+  "resource_type": "tool",
+  "topics": [
+    "app-development",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "generate-code",
+    "create-media"
+  ],
+  "interfaces": [
+    "desktop"
+  ],
+  "technologies": [
+    "typescript"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-06",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

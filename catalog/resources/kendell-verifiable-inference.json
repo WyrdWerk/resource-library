@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "kendell-verifiable-inference",
+  "title": "Kendell: Verifiable Inference",
+  "canonical_url": "https://kendell.dev/blog/verifiableinference/",
+  "brief": "Kendell's blog post on verifiable inference, shared link-only. Technical claims are vendor-reported.",
+  "caveat": null,
+  "details": "Kendell's blog essay (18 Sep 2026) arguing that everything we need is already here for verifiable inference: forcing suspect responses through legitimate inference produces quick agreement or disagreement, and forcing a random selection of untrusted responses through legitimate inference solves verifiable inference. It builds the case through information theory, using DeepSeek V4.1 Flash token distributions to explain surprisal, entropy and perplexity in plain terms. The argument is the author's; treat it as an explainer, not a deployed system.",
+  "resource_type": "article-guide",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers",
+    "article"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "harrisony"
+  },
+  "shared_on": "2026-10-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

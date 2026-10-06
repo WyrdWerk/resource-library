@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "tibo-s-28-day-challenge-codex-resets",
+  "title": "Tibo's 28-day challenge | Codex Resets",
+  "canonical_url": "https://codex-resets.com/tibo-28",
+  "brief": "Codex Resets' tracker page for Tibo's 28-day challenge — \"an improvement or a reset, every day\", following the announcements one at a time. Complements the Tibo announcement tweet shared the same night; challenge-progress claims are as reported on the page.",
+  "caveat": null,
+  "details": "Codex Resets' tracker page for Tibo's 28-day challenge: each day for 28 days he will either ship one clear improvement relevant to codex and work users, or ship a full reset. Day 1 (5 Oct) was an improvement — roughly 50% faster default speed across GPT-6 Astra and GPT-6.1 Sol for subscription products and partners using Sign in With ChatGPT, rolling out within two hours with no user action needed. The page runs a daily log through 1 Nov; challenge-progress claims are as reported on the page.",
+  "resource_type": "article-guide",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers",
+    "web-app"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "ajthemacboy"
+  },
+  "shared_on": "2026-10-05",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

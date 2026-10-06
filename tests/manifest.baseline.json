@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "55c806416eb3fab3ee7da701bc3484c78f6bd628753233399cdf5fa9aa49254e",
-  "data.json": "a4b0f61ec0e0a563895b94a5a0f82c21964f6fd8572d8889fafba7eeb8513fcc",
-  "feed.xml": "7c7ebc15815907319cf62786365d5efc21e4a12567c32179eba0fb2a94c310ca",
-  "index.html": "57b37c8f0fabe1d616d34f15ba529375461663fdf6636d09281245bb0ad61fd2",
-  "llms.txt": "4edfe6fb6441444bb93b74232924926b4cbb3f270af8e129bcb4aad86c6ef9c3",
-  "og-image.png": "2a3b6775a24f7506741d1fdf69a391cb743610b65475c503fd8edc3d0ddd0616",
+  "CHANGELOG.md": "8a6a2e9c8732229d927d9535e7b660e5b48d33a1e30f32d7d88720e790dd7de1",
+  "data.json": "cadf37b1e8462a6961eda41e7cba461950280d6cd93775fd3e22907c0a0babab",
+  "feed.xml": "7948e13bc8cc5ab549b316a05fe827eed2e30366c19c4d4b28eef63ef47a4438",
+  "index.html": "3c23e7764a985e6d241ebe51266f3c25345229580e99179801eed261309590ca",
+  "llms.txt": "a93a781ffff70b222aa562cef5b8d2bb0477f095ca4638a77fb7233e699e723e",
+  "og-image.png": "96e521b699bf7c60b6332943b4606ad8cc9eac114327d2742ab49ad2e792e065",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "9a9c311df47b89f7a218c4a0002fbc2016b627b0420a73541ad6ea228ff945ca",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -26,8 +26,8 @@
   "weeks/2026-09-10_to_2026-09-17.md": "bc312d307cfe2ca8cd841b2e05783df0e2aba635401c5407e740d6f66bfa9d40",
   "weeks/2026-09-17_to_2026-09-24.md": "d23f05b8bddde2ad551921b2c4e8f3462078e87dce2250aa89b72c4d69ee7ac9",
   "weeks/2026-09-24_to_2026-10-01.md": "a38ab8bce05993227a8fdadb6f78cd1c96797e00c742a4853ff804d346c88cfd",
-  "weeks/2026-10-01_to_2026-10-08.md": "cc0bf7d95a4ccc0cc83ba4e3acb2af308fa9f462062cd41ce69e7a05b825ba11",
-  "weeks/providers.md": "850d9c2d27d27dde3e26e98ee52aa20ab0f98c568d1d6aadd0ca1044f7795a65"
+  "weeks/2026-10-01_to_2026-10-08.md": "5a9c588381447d78d10cb2da3e7c0a1e1e0238662e51ea1e2f77af2567e67dba",
+  "weeks/providers.md": "3f11b528af1d360e1d4be4d17056aae23f6b465713f08e8767da27492d59511b"
  },
  "inventory": {
   "categories": [
@@ -38,13 +38,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 331,
-  "nonempty_warnings": 77,
-  "providers": 89,
-  "share_tech": 242,
-  "total": 331,
-  "unique_ids": 331,
-  "unique_urls": 331
+  "https_urls": 343,
+  "nonempty_warnings": 79,
+  "providers": 95,
+  "share_tech": 248,
+  "total": 343,
+  "unique_ids": 343,
+  "unique_urls": 343
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -88,6 +88,18 @@
   "react-native-deploy",
   "open-slide",
   "artificial-analysis-mimo-v2-6-pro-providers",
+  "bevy",
+  "genex-desktop",
+  "fineenvs-multi-harness-rl",
+  "pi-simplified-technical-english",
+  "inference-research",
+  "introducing-temporal-resources-ash-framework",
+  "avian-pricing",
+  "primalabs",
+  "kendell-verifiable-inference",
+  "kendell-crofai-is-false",
+  "semianalysis-anthropic-subscriptions-offer-5x-more-value-than-openai",
+  "tibo-s-28-day-challenge-codex-resets",
   "annnimate",
   "hyperiux",
   "vanta-ui",

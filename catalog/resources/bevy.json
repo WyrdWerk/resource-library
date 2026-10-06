@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "bevy",
+  "title": "Bevy",
+  "canonical_url": "https://bevy.org/",
+  "brief": "Bevy is a data-driven game engine built in Rust, described by its own site as \"refreshingly simple\" and \"free and open-source forever\". one_phantomic shared it as their go-to pick for gamedev; the engine's simplicity claims are vendor-reported.",
+  "caveat": null,
+  "details": "Bevy is a data-driven game engine written in Rust, built around its custom Entity Component System (ECS) with a massively parallel, cache-friendly scheduler where components are Rust structs and systems are Rust functions. It ships real-time 2D and 3D renderers covering sprite sheets, dynamic texture atlases, lights, shadows, cameras, meshes, materials and glTF loading, all composed through an extensible render-graph system with custom shader and pipeline support. The project positions itself as refreshingly simple and free and open-source forever; engine maturity and performance claims are the project's own.",
+  "resource_type": "library-framework",
+  "topics": [
+    "app-development"
+  ],
+  "use_cases": [
+    "create-media"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "rust"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "one_phantomic"
+  },
+  "shared_on": "2026-10-06",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
