@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "8a6a2e9c8732229d927d9535e7b660e5b48d33a1e30f32d7d88720e790dd7de1",
-  "data.json": "cadf37b1e8462a6961eda41e7cba461950280d6cd93775fd3e22907c0a0babab",
-  "feed.xml": "7948e13bc8cc5ab549b316a05fe827eed2e30366c19c4d4b28eef63ef47a4438",
-  "index.html": "3c23e7764a985e6d241ebe51266f3c25345229580e99179801eed261309590ca",
-  "llms.txt": "a93a781ffff70b222aa562cef5b8d2bb0477f095ca4638a77fb7233e699e723e",
-  "og-image.png": "96e521b699bf7c60b6332943b4606ad8cc9eac114327d2742ab49ad2e792e065",
+  "CHANGELOG.md": "bb91d0642b3205b0ecd97875a000edc752dc472a572225ffb8447b190db5a3b8",
+  "data.json": "be8c9e8c581c455c5a5ac675e314baa6ceb6f5af3ca7ccf70c18e3cf02e88251",
+  "feed.xml": "6526a8bb975f9e10134d1029ea04e903903e5275ca673b105b527d57f1648b4a",
+  "index.html": "a0c2016a4fb8a0606414fd96189c7a638e44eba9d05984f4de68ce4d5a4a7b3b",
+  "llms.txt": "7f683cc20918964910d40aa3e3902a85178a16a8d26815248e8c2d55fd2b923c",
+  "og-image.png": "a620d314416a122a923dbebb3b14657abac59788a16fa622c1993e07e21481f3",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "9a9c311df47b89f7a218c4a0002fbc2016b627b0420a73541ad6ea228ff945ca",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -26,8 +26,8 @@
   "weeks/2026-09-10_to_2026-09-17.md": "bc312d307cfe2ca8cd841b2e05783df0e2aba635401c5407e740d6f66bfa9d40",
   "weeks/2026-09-17_to_2026-09-24.md": "d23f05b8bddde2ad551921b2c4e8f3462078e87dce2250aa89b72c4d69ee7ac9",
   "weeks/2026-09-24_to_2026-10-01.md": "a38ab8bce05993227a8fdadb6f78cd1c96797e00c742a4853ff804d346c88cfd",
-  "weeks/2026-10-01_to_2026-10-08.md": "5a9c588381447d78d10cb2da3e7c0a1e1e0238662e51ea1e2f77af2567e67dba",
-  "weeks/providers.md": "3f11b528af1d360e1d4be4d17056aae23f6b465713f08e8767da27492d59511b"
+  "weeks/2026-10-01_to_2026-10-08.md": "901c88119d25c7dcc33e3e51afa60d62a124893106167422b81c0f7ed3b6be47",
+  "weeks/providers.md": "d2824f7e66c298a4f2add8d806d5a4f4caae7bdae296b955601995e48b92ce6c"
  },
  "inventory": {
   "categories": [
@@ -38,13 +38,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 343,
+  "https_urls": 348,
   "nonempty_warnings": 79,
-  "providers": 95,
-  "share_tech": 248,
-  "total": 343,
-  "unique_ids": 343,
-  "unique_urls": 343
+  "providers": 98,
+  "share_tech": 250,
+  "total": 348,
+  "unique_ids": 348,
+  "unique_urls": 348
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -100,6 +100,11 @@
   "kendell-crofai-is-false",
   "semianalysis-anthropic-subscriptions-offer-5x-more-value-than-openai",
   "tibo-s-28-day-challenge-codex-resets",
+  "arc-cua-arc-driver",
+  "gdp-ts",
+  "kourier",
+  "lithosai",
+  "artificial-analysis-deepseek-v4-1-flash-providers",
   "annnimate",
   "hyperiux",
   "vanta-ui",
