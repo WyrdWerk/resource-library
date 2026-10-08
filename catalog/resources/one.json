@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "one",
+  "title": "One",
+  "canonical_url": "https://getone.one/",
+  "brief": "A Mac app that gives coding agents (Claude Code, Codex, OpenCode, Pi, Grok) a shared Inbox — agent questions and finished work collect in one toolbar, and you answer or redirect from your Mac, iPhone, or connected Linux servers. Free tier covers 25 requests/day; Pro is $12.99/month ($119.88/year) and a pay-once Lifetime tier exists. Pricing and privacy claims are vendor-reported; requests route through One's server.",
+  "caveat": null,
+  "details": "One is a Mac app that acts as a mission-control Inbox for coding agents you already run — Claude Code, Codex, OpenCode, Pi, and Grok. Agents you start (in the bundled herdr terminal, on the Mac, or on connected Linux servers) surface their questions and finished work as cards in one toolbar, and you answer, redirect, or talk to them by voice. The free tier covers 25 requests a day; Pro ($12.99/month or $119.88/year) adds unlimited usage and premium routing, and a limited pay-once Lifetime tier ($229–$299) lets you bring your own API keys. One is not itself a coding agent — it orchestrates the ones you run, and requests route through One's servers. Pricing and privacy claims are vendor-reported.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "desktop"
+  ],
+  "technologies": [
+    "claude-code"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "web-app",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

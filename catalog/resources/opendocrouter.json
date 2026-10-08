@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "opendocrouter",
+  "title": "OpenDocRouter",
+  "canonical_url": "https://www.opendocrouter.ai/",
+  "brief": "Extracted from @llama_index's 8 Oct announcement tweet (tweets are never dropped for being announcements; canonical URL found via web search): LlamaIndex's unified API for document parsing — one endpoint serves frontier and open-weight OCR/parsing models (Claude Opus 5.5, GPT-6 Luna, MinerU, PaddleOCR-VL) at the providers' token prices with no markup, benchmarked on ParseBench. Bills purely per token with prepaid credits (new accounts get $5 free); optional layout/grounding engine.",
+  "caveat": null,
+  "details": "OpenDocRouter is LlamaIndex's unified API for document parsing, launched 7 October 2026: one endpoint serves a lineup of frontier and open-weight OCR/parsing models — Claude Opus 5.5, GPT-6 Luna, MinerU, PaddleOCR-VL, and others — each versioned with a parsing recipe and benchmarked on ParseBench for quality and cost. Billing is purely per token with no markup over providers' prices; new accounts start with $5 of free credit. An optional layout engine adds grounded bounding boxes to any model's output. Very fresh — treat reliability as unproven.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "simply_roo"
+  },
+  "shared_on": "2026-10-08",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

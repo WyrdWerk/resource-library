@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "opendesign",
+  "title": "OpenDesign",
+  "canonical_url": "https://open-design.ai/pricing/",
+  "brief": "A zero-config design agent whose subscription bundles model credits — plans from $8 to $120/month include an OpenDesign API key that calls both Design Plan models and a roster of hosted models (DeepSeek V4/V4.1 Flash, Kimi K2.7 Code, GPT-6 Luna, MiMo V2.6 Pro/Flash, GLM-5.3 Flash) with a per-model usage table. Useful as a provider listing for those models. Pricing figures are vendor-reported.",
+  "caveat": null,
+  "details": "OpenDesign is a zero-config design agent sold as a subscription from $8 to $120/month, and its plans bundle model credits with an API key. The API can call both Design Plan models and a roster of hosted models — DeepSeek V4 and V4.1 Flash, Kimi K2.7 Code, GPT-6 Luna, MiMo V2.6 Pro and Flash, GLM-5.3 Flash — with a published per-model usage table and 162+ skill workflows plus 152+ design systems. Caveat: this is primarily a design product; the model API is one feature, and BYOK provider keys are supported on every plan. Pricing figures are vendor-reported.",
+  "resource_type": "service-platform",
+  "topics": [
+    "design",
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "𒄷𒈦🍐ꀷꌅꑀꈜꌚ ꋖꊿ ꀷꂑꑀ (tag 桃桃物语)"
+  },
+  "shared_on": "2026-10-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

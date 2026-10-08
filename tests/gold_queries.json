@@ -128,13 +128,13 @@
   "expect_top1": null,
   "expect_top5": [
    "beui-motion-components",
+   "annnimate",
    "obsidian-ui",
-   "amicro",
-   "bencho",
-   "annnimate"
+   "shaders",
+   "amicro"
   ],
   "expect_none": false,
-  "note": "re-reviewed 2026-10-04 against 331-record catalog (annnimate, a React motion component library, legitimately re-ranked in)"
+  "note": "re-reviewed 2026-10-08 against 354-record catalog; shaders (open-source WebGPU component library for React, MIT) legitimately re-ranked into top-5"
  },
  {
   "query": "coding agent",
@@ -166,12 +166,13 @@
   "expect_top1": null,
   "expect_top5": [
    "rust-foundation-trusted-training-rftt",
+   "blessed-rs",
    "beads-rust",
-   "fff",
-   "gpui-kit"
+   "bevy",
+   "fff"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "re-reviewed 2026-10-08 against 354-record catalog; blessed-rs (community guide to the Rust ecosystem) legitimately re-ranked #2"
  },
  {
   "query": "model weights huggingface",
@@ -221,13 +222,13 @@
   "expect_top1": null,
   "expect_top5": [
    "beui-motion-components",
+   "annnimate",
    "gpui-kit",
    "obsidian-ui",
-   "bencho",
-   "annnimate"
+   "shaders"
   ],
   "expect_none": false,
-  "note": "re-reviewed 2026-10-04 against 331-record catalog (annnimate, a React motion component library, legitimately re-ranked in)"
+  "note": "re-reviewed 2026-10-08 against 354-record catalog; shaders (200+ WebGPU components) legitimately re-ranked into top-5 under frontend+library-framework filters"
  },
  {
   "query": "inference",
@@ -401,24 +402,27 @@
  {
   "query": "openrouter.com",
   "filters": {},
-  "expect_top1": "openrouter",
+  "expect_top1": "openrouter-claude-haiku-5-5",
   "expect_top5": [
+   "openrouter-claude-haiku-5-5",
    "openrouter"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "re-reviewed 2026-10-08 against 354-record catalog; OpenRouter Haiku 5.5 model page now outranks the provider homepage for the domain query (both are OpenRouter pages; homepage still #2)"
  },
  {
   "query": "github.com/anthropics",
   "filters": {},
   "expect_top1": null,
   "expect_top5": [
+   "anthropic-claude-haiku-5-5",
+   "semianalysis-anthropic-subscriptions-offer-5x-more-value-than-openai",
+   "react-native-deploy",
    "spec-kit-github",
-   "pullfrog",
-   "pi-better-skills"
+   "pullfrog"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "re-reviewed 2026-10-08 against 354-record catalog; new ranking matches the query tokens more faithfully than the old lexical noise (no canonical github.com/anthropics entry exists)"
  },
  {
   "query": "quantum computing blockchain metaverse",
@@ -452,14 +456,14 @@
   },
   "expect_top1": null,
   "expect_top5": [
+   "anthropic-claude-haiku-5-5",
    "ai-router",
    "aihubmix",
    "cline-pass",
-   "featherless",
-   "inferencesaver"
+   "featherless"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "re-reviewed 2026-10-08 against 354-record catalog; anthropic-claude-haiku-5-5 (provider API page with live pricing) legitimately re-ranked #1 under api+provider filters, displacing inferencesaver"
  },
  {
   "query": "benchmark",

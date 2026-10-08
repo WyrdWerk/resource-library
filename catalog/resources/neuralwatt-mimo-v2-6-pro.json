@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "neuralwatt-mimo-v2-6-pro",
+  "title": "Neuralwatt: MiMo-V2.6-Pro",
+  "canonical_url": "https://portal.neuralwatt.com/models/mimo-v2.6-pro",
+  "brief": "Neuralwatt Cloud's model page for Xiaomi's MiMo-V2.6-Pro (1M context, sparse MoE) — $0.87/$1.74 per million in/out tokens, a 35%-off Flex tier, live latency/throughput stats, per-request energy figures, and OpenAI-compatible API examples. Model-specific page under the already-published Neuralwatt provider entry. Pricing and performance figures are live and will shift.",
+  "caveat": null,
+  "details": "Neuralwatt Cloud's model page for Xiaomi's MiMo-V2.6-Pro (sparse MoE, 1M-token context, native vision and tool calling), served at $0.87/$1.74 per million input/output tokens with a 35%-off Flex tier for non-urgent work. The page publishes live latency and throughput stats, per-request energy consumption figures, and OpenAI-compatible API examples. The model is in preview, so rate limits and stability are subject to change. Model-specific page under the already-published Neuralwatt provider entry.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Alp"
+  },
+  "shared_on": "2026-10-08",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

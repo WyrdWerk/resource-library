@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "id": "shaders",
+  "title": "Shaders",
+  "canonical_url": "https://github.com/shader-effects-inc/shaders",
+  "brief": "Extracted from @npm_i_shaders' 7 Oct announcement tweet (tweets are never dropped for being announcements): 200+ real-WebGPU effects as components for React, Vue, Svelte, Solid, and vanilla JS, now MIT open-source — plus a visual design editor at shaders.com that exports the component tree, a CLI, an agent skill, and an MCP server. A paid Pro tier adds presets and sections. ~2.5k stars; adoption claims are vendor-reported.",
+  "caveat": null,
+  "details": "Shaders is a library of 200+ real-WebGPU visual effects as components for React, Vue, Svelte, Solid, and vanilla JavaScript, open-sourced under MIT (~2.5k stars) by Shader Effects, Inc. The package ships typed, SSR-safe components plus a free visual design editor at shaders.com that exports the exact component tree for your framework, a CLI that syncs designed effects into your codebase, an agent skill, and an MCP server for Claude Code, Cursor, Codex, and others. Everything core is free; a paid Pro tier adds 1,000+ presets, website sections, and watermark-free HD rendering. Adoption claims are vendor-reported.",
+  "resource_type": "library-framework",
+  "topics": [
+    "frontend",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "cli",
+    "web",
+    "mcp"
+  ],
+  "technologies": [
+    "react",
+    "vue",
+    "svelte",
+    "javascript",
+    "typescript",
+    "mcp-protocol"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "simply_roo"
+  },
+  "shared_on": "2026-10-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

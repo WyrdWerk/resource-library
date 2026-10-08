@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "orbs",
+  "title": "orbs",
+  "canonical_url": "https://github.com/nikuscs/orbs",
+  "brief": "Extracted from Pedro Martins' 7 Oct announcement tweet (tweets are never dropped for being announcements): a self-hosted multi-bot group chat where an LLM judge (Jev) routes each turn to the right bot and a daemon on your machine runs every turn through Pi (Codex, Claude, Grok, OpenRouter models). Stack is TanStack Start + oRPC + Bun with optional Cloudflare (Workers/D1/R2). Very fresh (2 commits, 34 stars); bots run Pi tools as your user with no sandbox, so treat it as experimental.",
+  "caveat": "Very fresh (2 commits, 34 stars); bots run Pi tools as your user with no sandbox, so treat it as experimental.",
+  "details": "Orbs is an open-source, self-hosted multi-bot chat by Pedro Martins (MIT, very fresh — days old at collection). You create bots with names, instructions, and models; an LLM judge called Jev routes each turn to the right bot, and a daemon on your own machine runs every turn through Pi, reaching Codex, Claude, Grok, OpenRouter, and more. The stack is TanStack Start, oRPC, and Bun, with optional Cloudflare hosting (Workers, D1, R2). Warning: bots run Pi's tools (read, bash, edit, write) as your user in a work directory with no sandbox — treat it as experimental.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "web",
+    "api"
+  ],
+  "technologies": [
+    "typescript"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

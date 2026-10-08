@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "blessed-rs",
+  "title": "blessed-rs",
+  "canonical_url": "https://github.com/nicoburns/blessed-rs",
+  "brief": "A community-maintained guide to the Rust ecosystem (~1.6k stars) — a curated map of crates and tooling by category rather than another raw awesome-list dump. Handy when picking Rust dependencies; \"blessed\" status reflects the maintainers' judgment, so treat it as opinionated rather than canonical.",
+  "caveat": null,
+  "details": "Blessed.rs is a community-curated guide to the Rust ecosystem, maintained by Niko Burns and contributors, with about 1.6k stars on GitHub. Instead of a flat awesome-list, it organizes the ecosystem into categories with recommended crates and tooling, making it a practical starting map when choosing Rust dependencies. The guide is built as a small Rust site from data files, so the curation itself is version-controlled and reviewable. Treat its \"blessed\" picks as the maintainers' informed opinions rather than an official standard.",
+  "resource_type": "directory-gallery",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "rust"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Alp"
+  },
+  "shared_on": "2026-10-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
