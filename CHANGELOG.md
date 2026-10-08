@@ -36,6 +36,9 @@ Counts are curated resources kept after filtering.
 ## manual-2026-10-04-annnimate.md
 - 1 resources → 1–8 Oct 2026
 
+## daily-2026-10-08.md
+- 11 resources → 1–8 Oct 2026, providers
+
 ## daily-2026-10-06.md
 - 12 resources → 1–8 Oct 2026, providers
 

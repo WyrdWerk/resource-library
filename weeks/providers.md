@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-95 curated providers, with briefs.
+101 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -85,6 +85,42 @@
 - Shared by: ajthemacboy (5 Oct)
 - Categories: providers, web-app
 - Brief: Codex Resets' tracker page for Tibo's 28-day challenge — "an improvement or a reset, every day", following the announcements one at a time. Complements the Tibo announcement tweet shared the same night; challenge-progress claims are as reported on the page.
+
+## OpenDesign
+- URL: https://open-design.ai/pricing/
+- Shared by: 𒄷𒈦🍐ꀷꌅꑀꈜꌚ ꋖꊿ ꀷꂑꑀ (tag 桃桃物语) (7 Oct)
+- Categories: providers
+- Brief: A zero-config design agent whose subscription bundles model credits — plans from $8 to $120/month include an OpenDesign API key that calls both Design Plan models and a roster of hosted models (DeepSeek V4/V4.1 Flash, Kimi K2.7 Code, GPT-6 Luna, MiMo V2.6 Pro/Flash, GLM-5.3 Flash) with a per-model usage table. Useful as a provider listing for those models. Pricing figures are vendor-reported.
+
+## Claude: Monthly API credits for Max and Team plans
+- URL: https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans
+- Shared by: baanish (7 Oct)
+- Categories: providers, article
+- Brief: Extracted from @claudedevs' 7 Oct announcement tweet (tweets are never dropped for being announcements): Anthropic's help article on the monthly Claude Platform API credits rolling out to Max and Team subscribers — $100/month on Max 5x, $200 on Max 20x, up to $500 pooled on Team, claimed into a linked Console org. Covers any Claude model including the Agent SDK, but not interactive Claude Code usage. Eligibility details may shift as the rollout completes.
+
+## OpenRouter: Claude Haiku 5.5
+- URL: https://openrouter.ai/anthropic/claude-haiku-5.5
+- Shared by: Felix (8 Oct)
+- Categories: providers
+- Brief: OpenRouter's model page for Claude Haiku 5.5 — 1M-token context, $0.10/$0.50 per million in/out tokens, served by five providers (Vertex, AWS, Azure, Anthropic, Bedrock) with routing modes (Balanced/Nitro/Floor/Exacto) and automatic failover. A provider-comparison-style page with live pricing, throughput, uptime, and benchmark figures — same pattern as the published AA model pages. Figures are live and will shift.
+
+## Anthropic: Claude Haiku 5.5
+- URL: https://www.anthropic.com/claude-haiku-5-5
+- Shared by: Alp (8 Oct)
+- Categories: providers
+- Brief: Extracted from @claudeai's 8 Oct announcement tweet (tweets are never dropped for being announcements): Anthropic's announcement page for Haiku 5.5 — positioned as the cheapest, fastest, most capable small model, ~75% cheaper to run than Haiku 4.5, with a 1M context window and adjustable effort. Also announces halved Sonnet 5.5 cache-read pricing and the monthly API credits for Max/Team. All benchmarks and pricing are vendor-reported.
+
+## OpenDocRouter
+- URL: https://www.opendocrouter.ai/
+- Shared by: simply_roo (8 Oct)
+- Categories: providers, ai-tool
+- Brief: Extracted from @llama_index's 8 Oct announcement tweet (tweets are never dropped for being announcements; canonical URL found via web search): LlamaIndex's unified API for document parsing — one endpoint serves frontier and open-weight OCR/parsing models (Claude Opus 5.5, GPT-6 Luna, MinerU, PaddleOCR-VL) at the providers' token prices with no markup, benchmarked on ParseBench. Bills purely per token with prepaid credits (new accounts get $5 free); optional layout/grounding engine.
+
+## Neuralwatt: MiMo-V2.6-Pro
+- URL: https://portal.neuralwatt.com/models/mimo-v2.6-pro
+- Shared by: Alp (8 Oct)
+- Categories: providers
+- Brief: Neuralwatt Cloud's model page for Xiaomi's MiMo-V2.6-Pro (1M context, sparse MoE) — $0.87/$1.74 per million in/out tokens, a 35%-off Flex tier, live latency/throughput stats, per-request energy figures, and OpenAI-compatible API examples. Model-specific page under the already-published Neuralwatt provider entry. Pricing and performance figures are live and will shift.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

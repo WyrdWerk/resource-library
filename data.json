@@ -772,6 +772,167 @@
     "details": "Codex Resets' tracker page for Tibo's 28-day challenge: each day for 28 days he will either ship one clear improvement relevant to codex and work users, or ship a full reset. Day 1 (5 Oct) was an improvement — roughly 50% faster default speed across GPT-6 Astra and GPT-6.1 Sol for subscription products and partners using Sign in With ChatGPT, rolling out within two hours with no user action needed. The page runs a daily log through 1 Nov; challenge-progress claims are as reported on the page."
   },
   {
+    "title": "blessed-rs",
+    "week": "1–8 Oct 2026",
+    "url": "https://github.com/nicoburns/blessed-rs",
+    "sharer": "Alp",
+    "date": "7 Oct",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "A community-maintained guide to the Rust ecosystem (~1.6k stars) — a curated map of crates and tooling by category rather than another raw awesome-list dump. Handy when picking Rust dependencies; \"blessed\" status reflects the maintainers' judgment, so treat it as opinionated rather than canonical.",
+    "id": "blessed-rs",
+    "warning": "",
+    "details": "Blessed.rs is a community-curated guide to the Rust ecosystem, maintained by Niko Burns and contributors, with about 1.6k stars on GitHub. Instead of a flat awesome-list, it organizes the ecosystem into categories with recommended crates and tooling, making it a practical starting map when choosing Rust dependencies. The guide is built as a small Rust site from data files, so the curation itself is version-controlled and reviewable. Treat its \"blessed\" picks as the maintainers' informed opinions rather than an official standard."
+  },
+  {
+    "title": "One",
+    "week": "1–8 Oct 2026",
+    "url": "https://getone.one/",
+    "sharer": "Tom",
+    "date": "7 Oct",
+    "categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "brief": "A Mac app that gives coding agents (Claude Code, Codex, OpenCode, Pi, Grok) a shared Inbox — agent questions and finished work collect in one toolbar, and you answer or redirect from your Mac, iPhone, or connected Linux servers. Free tier covers 25 requests/day; Pro is $12.99/month ($119.88/year) and a pay-once Lifetime tier exists. Pricing and privacy claims are vendor-reported; requests route through One's server.",
+    "id": "one",
+    "warning": "",
+    "details": "One is a Mac app that acts as a mission-control Inbox for coding agents you already run — Claude Code, Codex, OpenCode, Pi, and Grok. Agents you start (in the bundled herdr terminal, on the Mac, or on connected Linux servers) surface their questions and finished work as cards in one toolbar, and you answer, redirect, or talk to them by voice. The free tier covers 25 requests a day; Pro ($12.99/month or $119.88/year) adds unlimited usage and premium routing, and a limited pay-once Lifetime tier ($229–$299) lets you bring your own API keys. One is not itself a coding agent — it orchestrates the ones you run, and requests route through One's servers. Pricing and privacy claims are vendor-reported."
+  },
+  {
+    "title": "procedural-film",
+    "week": "1–8 Oct 2026",
+    "url": "https://github.com/kuhnhomeuk-cell/procedural-film",
+    "sharer": "Tom",
+    "date": "7 Oct",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "An agent skill that turns a topic into a short vertical film or even a playable NES-style platformer, every pixel drawn in vanilla JS canvas and every sound synthesized in Web Audio — zero media assets. The monarch-butterfly reference film and the playable Claude Quest game demo the pipeline; expect heavy agent usage (one agent per shot, critic waves per shot). MIT licensed; ~500 stars.",
+    "id": "procedural-film",
+    "warning": "",
+    "details": "procedural-film is an agent skill (MIT, ~500 stars) that turns a topic into a short vertical film or even a playable NES-style pixel-art platformer. Every pixel is drawn in vanilla JavaScript on canvas and every sound is synthesized in Web Audio, so each film ships as one self-contained HTML player plus MP4 exports with zero media assets. The repo's reference film — a 32-second monarch-butterfly life cycle — and the playable Claude Quest game show the pipeline end to end. Expect a long, token-heavy run: the skill dispatches one agent per shot with critic-review waves over every shot."
+  },
+  {
+    "title": "orbs",
+    "week": "1–8 Oct 2026",
+    "url": "https://github.com/nikuscs/orbs",
+    "sharer": "Tom",
+    "date": "7 Oct",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Extracted from Pedro Martins' 7 Oct announcement tweet (tweets are never dropped for being announcements): a self-hosted multi-bot group chat where an LLM judge (Jev) routes each turn to the right bot and a daemon on your machine runs every turn through Pi (Codex, Claude, Grok, OpenRouter models). Stack is TanStack Start + oRPC + Bun with optional Cloudflare (Workers/D1/R2). Very fresh (2 commits, 34 stars); bots run Pi tools as your user with no sandbox, so treat it as experimental.",
+    "id": "orbs",
+    "warning": "Very fresh (2 commits, 34 stars); bots run Pi tools as your user with no sandbox, so treat it as experimental.",
+    "details": "Orbs is an open-source, self-hosted multi-bot chat by Pedro Martins (MIT, very fresh — days old at collection). You create bots with names, instructions, and models; an LLM judge called Jev routes each turn to the right bot, and a daemon on your own machine runs every turn through Pi, reaching Codex, Claude, Grok, OpenRouter, and more. The stack is TanStack Start, oRPC, and Bun, with optional Cloudflare hosting (Workers, D1, R2). Warning: bots run Pi's tools (read, bash, edit, write) as your user in a work directory with no sandbox — treat it as experimental."
+  },
+  {
+    "title": "Shaders",
+    "week": "1–8 Oct 2026",
+    "url": "https://github.com/shader-effects-inc/shaders",
+    "sharer": "simply_roo",
+    "date": "7 Oct",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "Extracted from @npm_i_shaders' 7 Oct announcement tweet (tweets are never dropped for being announcements): 200+ real-WebGPU effects as components for React, Vue, Svelte, Solid, and vanilla JS, now MIT open-source — plus a visual design editor at shaders.com that exports the component tree, a CLI, an agent skill, and an MCP server. A paid Pro tier adds presets and sections. ~2.5k stars; adoption claims are vendor-reported.",
+    "id": "shaders",
+    "warning": "",
+    "details": "Shaders is a library of 200+ real-WebGPU visual effects as components for React, Vue, Svelte, Solid, and vanilla JavaScript, open-sourced under MIT (~2.5k stars) by Shader Effects, Inc. The package ships typed, SSR-safe components plus a free visual design editor at shaders.com that exports the exact component tree for your framework, a CLI that syncs designed effects into your codebase, an agent skill, and an MCP server for Claude Code, Cursor, Codex, and others. Everything core is free; a paid Pro tier adds 1,000+ presets, website sections, and watermark-free HD rendering. Adoption claims are vendor-reported."
+  },
+  {
+    "title": "OpenDesign",
+    "week": "providers",
+    "url": "https://open-design.ai/pricing/",
+    "sharer": "𒄷𒈦🍐ꀷꌅꑀꈜꌚ ꋖꊿ ꀷꂑꑀ (tag 桃桃物语)",
+    "date": "7 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "A zero-config design agent whose subscription bundles model credits — plans from $8 to $120/month include an OpenDesign API key that calls both Design Plan models and a roster of hosted models (DeepSeek V4/V4.1 Flash, Kimi K2.7 Code, GPT-6 Luna, MiMo V2.6 Pro/Flash, GLM-5.3 Flash) with a per-model usage table. Useful as a provider listing for those models. Pricing figures are vendor-reported.",
+    "id": "opendesign",
+    "warning": "",
+    "details": "OpenDesign is a zero-config design agent sold as a subscription from $8 to $120/month, and its plans bundle model credits with an API key. The API can call both Design Plan models and a roster of hosted models — DeepSeek V4 and V4.1 Flash, Kimi K2.7 Code, GPT-6 Luna, MiMo V2.6 Pro and Flash, GLM-5.3 Flash — with a published per-model usage table and 162+ skill workflows plus 152+ design systems. Caveat: this is primarily a design product; the model API is one feature, and BYOK provider keys are supported on every plan. Pricing figures are vendor-reported."
+  },
+  {
+    "title": "Claude: Monthly API credits for Max and Team plans",
+    "week": "providers",
+    "url": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans",
+    "sharer": "baanish",
+    "date": "7 Oct",
+    "categories": [
+      "providers",
+      "article"
+    ],
+    "brief": "Extracted from @claudedevs' 7 Oct announcement tweet (tweets are never dropped for being announcements): Anthropic's help article on the monthly Claude Platform API credits rolling out to Max and Team subscribers — $100/month on Max 5x, $200 on Max 20x, up to $500 pooled on Team, claimed into a linked Console org. Covers any Claude model including the Agent SDK, but not interactive Claude Code usage. Eligibility details may shift as the rollout completes.",
+    "id": "claude-monthly-api-credits-for-max-and-team-plans",
+    "warning": "",
+    "details": "Anthropic's help article documents the monthly Claude Platform API credits rolling out to Max and Team subscribers: $100/month on Max 5x, $200 on Max 20x, and up to $500 pooled across seats on Team plans, claimed into a linked Claude Console organization. The credits work with any Claude model on the platform, including the Agent SDK and self-run claude -p usage, but explicitly do not cover interactive Claude Code sessions or over-limit usage. Eligibility details may shift as the rollout completes — the article was updated the day it was collected."
+  },
+  {
+    "title": "OpenRouter: Claude Haiku 5.5",
+    "week": "providers",
+    "url": "https://openrouter.ai/anthropic/claude-haiku-5.5",
+    "sharer": "Felix",
+    "date": "8 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "OpenRouter's model page for Claude Haiku 5.5 — 1M-token context, $0.10/$0.50 per million in/out tokens, served by five providers (Vertex, AWS, Azure, Anthropic, Bedrock) with routing modes (Balanced/Nitro/Floor/Exacto) and automatic failover. A provider-comparison-style page with live pricing, throughput, uptime, and benchmark figures — same pattern as the published AA model pages. Figures are live and will shift.",
+    "id": "openrouter-claude-haiku-5-5",
+    "warning": "",
+    "details": "OpenRouter's model page for Claude Haiku 5.5, Anthropic's small fast model with a 1M-token context window, priced at $0.10/$0.50 per million input/output tokens with cheap cache reads. Five providers serve it (Vertex, AWS, Azure, Anthropic, Bedrock); OpenRouter routes across them with Balanced, Nitro, Floor, and Exacto modes and automatic failover. The page carries live pricing, throughput, latency, uptime, and benchmark figures plus the top apps sending traffic to the model — the same provider-comparison pattern as the published Artificial Analysis model pages. Figures are live and will shift."
+  },
+  {
+    "title": "Anthropic: Claude Haiku 5.5",
+    "week": "providers",
+    "url": "https://www.anthropic.com/claude-haiku-5-5",
+    "sharer": "Alp",
+    "date": "8 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Extracted from @claudeai's 8 Oct announcement tweet (tweets are never dropped for being announcements): Anthropic's announcement page for Haiku 5.5 — positioned as the cheapest, fastest, most capable small model, ~75% cheaper to run than Haiku 4.5, with a 1M context window and adjustable effort. Also announces halved Sonnet 5.5 cache-read pricing and the monthly API credits for Max/Team. All benchmarks and pricing are vendor-reported.",
+    "id": "anthropic-claude-haiku-5-5",
+    "warning": "",
+    "details": "Anthropic's announcement page for Claude Haiku 5.5, positioned as its cheapest, fastest, and most capable small model — about 75% cheaper to run than Haiku 4.5, with a 1M context window, adjustable effort, and strong showings on knowledge work, computer use, and agentic coding benchmarks. The same announcement halves Sonnet 5.5 cache-read pricing (making most agentic work ~20% cheaper) and introduces the monthly API credits for Max and Team subscribers. Available on the Claude Platform, AWS, Google Cloud, and Azure. All benchmarks and pricing are vendor-reported."
+  },
+  {
+    "title": "OpenDocRouter",
+    "week": "providers",
+    "url": "https://www.opendocrouter.ai/",
+    "sharer": "simply_roo",
+    "date": "8 Oct",
+    "categories": [
+      "providers",
+      "ai-tool"
+    ],
+    "brief": "Extracted from @llama_index's 8 Oct announcement tweet (tweets are never dropped for being announcements; canonical URL found via web search): LlamaIndex's unified API for document parsing — one endpoint serves frontier and open-weight OCR/parsing models (Claude Opus 5.5, GPT-6 Luna, MinerU, PaddleOCR-VL) at the providers' token prices with no markup, benchmarked on ParseBench. Bills purely per token with prepaid credits (new accounts get $5 free); optional layout/grounding engine.",
+    "id": "opendocrouter",
+    "warning": "",
+    "details": "OpenDocRouter is LlamaIndex's unified API for document parsing, launched 7 October 2026: one endpoint serves a lineup of frontier and open-weight OCR/parsing models — Claude Opus 5.5, GPT-6 Luna, MinerU, PaddleOCR-VL, and others — each versioned with a parsing recipe and benchmarked on ParseBench for quality and cost. Billing is purely per token with no markup over providers' prices; new accounts start with $5 of free credit. An optional layout engine adds grounded bounding boxes to any model's output. Very fresh — treat reliability as unproven."
+  },
+  {
+    "title": "Neuralwatt: MiMo-V2.6-Pro",
+    "week": "providers",
+    "url": "https://portal.neuralwatt.com/models/mimo-v2.6-pro",
+    "sharer": "Alp",
+    "date": "8 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Neuralwatt Cloud's model page for Xiaomi's MiMo-V2.6-Pro (1M context, sparse MoE) — $0.87/$1.74 per million in/out tokens, a 35%-off Flex tier, live latency/throughput stats, per-request energy figures, and OpenAI-compatible API examples. Model-specific page under the already-published Neuralwatt provider entry. Pricing and performance figures are live and will shift.",
+    "id": "neuralwatt-mimo-v2-6-pro",
+    "warning": "",
+    "details": "Neuralwatt Cloud's model page for Xiaomi's MiMo-V2.6-Pro (sparse MoE, 1M-token context, native vision and tool calling), served at $0.87/$1.74 per million input/output tokens with a 35%-off Flex tier for non-urgent work. The page publishes live latency and throughput stats, per-request energy consumption figures, and OpenAI-compatible API examples. The model is in preview, so rate limits and stability are subject to change. Model-specific page under the already-published Neuralwatt provider entry."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",
