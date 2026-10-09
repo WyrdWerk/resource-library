@@ -29,6 +29,8 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+# Expected record count: the catalog in this checkout (deploy from the same commit).
+TOTAL = len(json.loads((ROOT / "api" / "v1" / "resources.json").read_text(encoding="utf-8")))
 FAILURES = []
 CHECKS = 0
 
@@ -118,15 +120,15 @@ def main():
                         json.loads((ROOT / repo_file).read_text(encoding="utf-8")))
     raw = http("GET", edge + "/api/v1/resources.json")
     check("static resources.json is the raw array (not the paginated object)",
-          isinstance(json.loads(raw[2]), list) and len(json.loads(raw[2])) == 285)
-    st_home, h_home, b_home = http("GET", edge + "/")
+          isinstance(json.loads(raw[2]), list) and len(json.loads(raw[2])) == TOTAL)
+    st_home, h_home, _ = http("GET", edge + "/")
     check("GET / -> 200 HTML (functions do not shadow the site)",
           st_home == 200 and "html" in (h_home.get("Content-Type") or ""),
           f"status {st_home}, type {h_home.get('Content-Type')}")
     weeks = sorted((ROOT / "weeks").glob("*.md"))
     st_w, _, _ = http("GET", edge + "/weeks/" + weeks[0].name)
     check(f"GET /weeks/{weeks[0].name} -> 200", st_w == 200, f"status {st_w}")
-    st_head, h_head, b_head = http("HEAD", edge + "/api/v1/index.json")
+    st_head, _, _ = http("HEAD", edge + "/api/v1/index.json")
     check("HEAD /api/v1/index.json -> 200", st_head == 200, f"status {st_head}")
     st_lib, h_lib, b_lib = http("GET", edge + "/api/v1/_lib.js")
     check("GET /api/v1/_lib.js -> site fallback, helper module not routed/leaked",
@@ -164,7 +166,7 @@ def main():
         return se, pe
 
     se, pe = both("/api/v1/resources", "/api/v1/resources.json", "default page")
-    check("default page: 20 records of 285", pe.get("total") == 285 and len(pe.get("records", [])) == 20)
+    check(f"default page: 20 records of {TOTAL}", pe.get("total") == TOTAL and len(pe.get("records", [])) == 20)
     both("/api/v1/resources?limit=5", "/api/v1/resources.json?limit=5", "limit=5")
     both("/api/v1/resources?fields=id,title", "/api/v1/resources.json?fields=id,title", "sparse fields")
     both("/api/v1/resources?fields=id,nope", "/api/v1/resources.json?fields=id,nope", "bad fields -> 400")
@@ -262,7 +264,7 @@ def main():
     check("search: OPTIONS -> 204 + CORS", stO == 204 and hO.get("Access-Control-Allow-Origin") == "*",
           f"status {stO}")
     for method in ("POST", "PUT", "DELETE"):
-        stM, hM, bM = http(method, edge + "/api/v1/search")
+        stM, _, bM = http(method, edge + "/api/v1/search")
         code = (json.loads(bM) or {}).get("error", {}).get("code")
         check(f"search: {method} -> 405 method_not_allowed",
               stM == 405 and code == "method_not_allowed", f"status {stM}, code {code}")

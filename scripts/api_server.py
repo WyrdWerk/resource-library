@@ -254,7 +254,7 @@ class Handler(BaseHTTPRequestHandler):
         qs = urllib.parse.parse_qs(parsed.query)
         try:
             status, payload = route(parsed.path, qs)
-        except Exception as exc:  # never leak a traceback; stay JSON
+        except Exception:  # never leak a traceback; stay JSON
             status, payload = err("internal", "unexpected error", 500)
         self._send(status, payload, head_only)
 

@@ -79,7 +79,7 @@ message `tests/test_schemas.py` asserts on). Everything else is stdlib.
 | `scripts/search.py` | Deterministic lexical search over the catalog (weighted fields, curated aliases). **Hand-written.** |
 | `scripts/api_server.py` | Stdlib-only local API adapter for contract tests — not production. **Hand-written.** |
 | `docs/runbook.md` | Exact build/test/audit/smoke commands for the API surface. **Hand-maintained** — reference it, don't duplicate commands here. |
-| `tests/` | Test suite (`python3 -m pytest tests/ -q`, 108 tests): parsing, build-freeze, schemas, migration, compat, search gold set, API contract, site meta, library sorting. `tests/manifest.baseline.json` pins the record count, ID order, and channel split — refresh it deliberately when resources are added. **Hand-maintained.** |
+| `tests/` | Test suite (`python3 -m pytest tests/ -q`, 111 tests): parsing, build-freeze, schemas, migration, compat, search gold set, API contract, site meta, library sorting. `tests/manifest.baseline.json` pins the record count, ID order, and channel split — refresh it deliberately when resources are added. **Hand-maintained.** |
 | `LICENSE` | CC-BY-4.0 — the curated content's license. |
 | `CONTRIBUTING.md` | How outsiders suggest resources or send fixes. |
 | `README.md`, `AGENTS.md` | Hand-maintained documentation. |
