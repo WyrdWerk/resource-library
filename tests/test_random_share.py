@@ -5,7 +5,7 @@ import subprocess
 
 import pytest
 
-from tests.test_library_sorting import built_library
+from tests.test_library_sorting import built_library  # noqa: F401  (pytest fixture)
 
 
 @pytest.mark.skipif(shutil.which("agent-browser") is None, reason="agent-browser is not installed")

@@ -19,7 +19,6 @@ import sys
 from pathlib import Path
 
 try:
-    import jsonschema
     from jsonschema import Draft202012Validator, FormatChecker
 except ImportError:
     sys.exit("validate_catalog.py requires the 'jsonschema' package: pip install jsonschema")
@@ -35,13 +34,6 @@ TAX_FILES = {
     "use-cases.json": "use_cases",
     "interfaces.json": "interfaces",
     "technologies.json": "technologies",
-}
-FACET_TO_SCHEMA_KEY = {
-    "resource_type": "resource_type",
-    "topics": "topics",
-    "use_cases": "use_cases",
-    "interfaces": "interfaces",
-    "technologies": "technologies",
 }
 
 

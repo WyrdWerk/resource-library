@@ -274,7 +274,7 @@ def stacked_chart(periods, cats):
     return _svg(W, H, "\n".join(parts))
 
 
-def hbar_chart(items, suffix=""):
+def hbar_chart(items):
     """Horizontal bars. items: list of (label, value, css_class, extra_label)."""
     W, row_h, pad_l, pad_r, pad_t = 560, 34, 170, 84, 10
     H = pad_t + len(items) * row_h + 10
@@ -357,7 +357,7 @@ def main():
         info = week_info[label]
         res = weeks[label]
         if label == "providers":
-            md = [f"# Inference providers — curated from CheapInfra #providers", "",
+            md = ["# Inference providers — curated from CheapInfra #providers", "",
                   f"{len(res)} curated providers, with briefs.", ""]
         else:
             md = [f"# #share-tech resources — week of {label}", "",
