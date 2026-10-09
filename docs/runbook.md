@@ -77,7 +77,7 @@ the build-freeze tests fail (see §3).
 
 ```bash
 python3 -m pytest tests/ -q
-# expected: 108 passed (the browser-driven sorting test skips if agent-browser is not installed)
+# expected: 111 passed (the browser-driven sorting test skips if agent-browser is not installed)
 ```
 
 Suite breakdown:

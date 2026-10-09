@@ -12,7 +12,6 @@ import json
 import unittest
 from pathlib import Path
 
-import jsonschema
 from jsonschema import Draft202012Validator, FormatChecker
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -113,7 +112,6 @@ class TestTaxonomyRegistries(unittest.TestCase):
         for name, doc in self.docs.items():
             for slug, val in doc["values"].items():
                 for a in val.get("aliases", []):
-                    key = (a, slug)
                     self.assertNotIn(a, seen, f"alias {a!r} duplicated ({name})")
                     seen[a] = name
 
