@@ -32,7 +32,7 @@ Every view is shareable through the URL hash, e.g. `#view=api`.
 | `scripts/` | `build.py`, `migrate.py`, `api_build.py`, `validate_catalog.py`, `search.py`, `api_server.py`, `edge_parity.py`, `linkcheck.py`, `review_gold.py` | Hand-written |
 | `docs/runbook.md` | Exact build, test, audit, and deploy commands for the API surface | Hand-written |
 | `docs/api-spec.md` | The original API design spec, kept for history. `api/openapi.yaml` is authoritative. | Hand-written |
-| `tests/` | Test suite (108 tests), including build-freeze, search-quality, API-contract, and library-sorting gates | Hand-written; run `python3 -m pytest tests/ -q` |
+| `tests/` | Test suite (111 tests), including build-freeze, search-quality, API-contract, and library-sorting gates | Hand-written; run `python3 -m pytest tests/ -q` |
 | `AGENTS.md` | Operating manual for agents working on this repo | Hand-written |
 | `CONTRIBUTING.md` | How to suggest resources or send fixes | Hand-written |
 | `LICENSE` | CC-BY-4.0, the curated content's license | Hand-written |
