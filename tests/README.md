@@ -39,6 +39,8 @@ API. Tests are written with `unittest`/plain asserts and run under `pytest`.
 - `test_library_sorting.py` — site chronology: newest-first default,
   sort options, unchanged export order; one test drives a real browser
   via `agent-browser` and skips when it is not installed.
+- `test_random_share.py` — copy-only random-share dialog (two real-browser
+  tests via `agent-browser`; skip when it is not installed).
 - `fixtures/schema/` — deliberately invalid records for `test_schemas.py`.
 
 ## Run
@@ -46,7 +48,7 @@ API. Tests are written with `unittest`/plain asserts and run under `pytest`.
 From the repo root:
 
     python3 -m pytest tests/ -q
-    # expected: 111 passed (the browser-driven sorting test skips if agent-browser is not installed)
+    # expected: 111 passed with agent-browser installed; without it (e.g. CI), 108 passed, 3 skipped (the browser-driven tests)
 
 ## Environment
 

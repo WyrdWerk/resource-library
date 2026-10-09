@@ -29,7 +29,7 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-# Record count tracks the catalog in this checkout (was hard-coded to 285).
+# Expected record count: the catalog in this checkout (deploy from the same commit).
 TOTAL = len(json.loads((ROOT / "api" / "v1" / "resources.json").read_text(encoding="utf-8")))
 FAILURES = []
 CHECKS = 0
