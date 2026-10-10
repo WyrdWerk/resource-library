@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "mac-orbs",
+  "title": "Mac Orbs",
+  "canonical_url": "https://ampcode.com/morbs",
+  "brief": "Amp's Mac app for coding agents — \"Amp just got a Mac. Join the beta for Mac orbs.\" baanish shared the beta signup page; details beyond the landing copy are unconfirmed while it is in beta.",
+  "caveat": null,
+  "details": "Mac Orbs is Amp's native macOS app, currently in beta (\"It's Morbin' Time — Amp just got a Mac. Join the Beta\"). The landing page presents an orb-style agent interface and references a SwiftUI codebase with TestFlight builds (version 2.4 shown), positioning it as the Mac client for Amp's coding agents. Pricing, system requirements, and the beta timeline are not stated on the page, so treat availability and feature claims as vendor-reported.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "app-development"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "desktop"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "8–15 Oct 2026",
+  "legacy_categories": [
+    "web-app",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "baanish"
+  },
+  "shared_on": "2026-10-10",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
