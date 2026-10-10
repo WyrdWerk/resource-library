@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "deno-is-joining-cloudflare",
+  "title": "Deno is joining Cloudflare",
+  "canonical_url": "https://deno.com/blog/cloudflare",
+  "brief": "Deno's announcement that it is joining Cloudflare — \"putting ourselves in the best place to build the future of the web\". Major runtime-ecosystem news; the post's framing is the company's own.",
+  "caveat": null,
+  "details": "On October 9, 2026, Ryan Dahl announced that the entire Deno team is joining Cloudflare to take Deno's runtime work further, citing a shared ambition around compute, storage, and communication without every application assembling its own infrastructure. The post frames the move as a continuation of Deno Deploy and celld, a distributed-application model built on the Cloudflare Workers programming model with scaling built into the programming model. This is an announcement of a team move, not a product launch — concrete product implications are unstated.",
+  "resource_type": "article-guide",
+  "topics": [
+    "web-development"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "javascript"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "8–15 Oct 2026",
+  "legacy_categories": [
+    "article"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Blessed Piss Enjoyer"
+  },
+  "shared_on": "2026-10-09",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,14 +1,14 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "bb91d0642b3205b0ecd97875a000edc752dc472a572225ffb8447b190db5a3b8",
-  "data.json": "be8c9e8c581c455c5a5ac675e314baa6ceb6f5af3ca7ccf70c18e3cf02e88251",
-  "feed.xml": "6526a8bb975f9e10134d1029ea04e903903e5275ca673b105b527d57f1648b4a",
-  "index.html": "a0c2016a4fb8a0606414fd96189c7a638e44eba9d05984f4de68ce4d5a4a7b3b",
-  "llms.txt": "7f683cc20918964910d40aa3e3902a85178a16a8d26815248e8c2d55fd2b923c",
-  "og-image.png": "a620d314416a122a923dbebb3b14657abac59788a16fa622c1993e07e21481f3",
+  "CHANGELOG.md": "92ddb2bfc097b364aad4746c28b9ed792abba83cf848c67d8b9e6e4d8e392894",
+  "data.json": "29bfe240e6b2d6d7b3b1285148163aeb62a808012fefc0b5f0d9bbcabc5ba055",
+  "feed.xml": "d1da00dfe2141be751efc2bdeb2de51fc9b73370f9ba38531567bb44a0c3f8d0",
+  "index.html": "7241de027e120ba3aa687c3063fdabe0660d00c46f95d5c191c23be284fbc11f",
+  "llms.txt": "02b2e3bef4e19bf23d5c31196fa1618a7e83e88f2624e8a43c0e91ef86e7674a",
+  "og-image.png": "3e50d0f44f88af3d959b0bad69fecabdde071cb7966cda720f6b0800c3b3620c",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
-  "sitemap.xml": "9a9c311df47b89f7a218c4a0002fbc2016b627b0420a73541ad6ea228ff945ca",
+  "sitemap.xml": "c87bf0a1074c587460a3357171ca545a447d4a4611e126c43bdeac5fdf75069e",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
   "weeks/2026-06-11_to_2026-06-17.md": "898c793b7587c0d89e3aa12d6f70a0b1c864f65016c3941a1f0183cf7aebbe99",
   "weeks/2026-06-18_to_2026-06-24.md": "7e9d9cd53a38a0fb7719b0df782b0914782d2fc505dfd1084fa99ae17f1d2b92",
@@ -27,7 +27,8 @@
   "weeks/2026-09-17_to_2026-09-24.md": "d23f05b8bddde2ad551921b2c4e8f3462078e87dce2250aa89b72c4d69ee7ac9",
   "weeks/2026-09-24_to_2026-10-01.md": "a38ab8bce05993227a8fdadb6f78cd1c96797e00c742a4853ff804d346c88cfd",
   "weeks/2026-10-01_to_2026-10-08.md": "901c88119d25c7dcc33e3e51afa60d62a124893106167422b81c0f7ed3b6be47",
-  "weeks/providers.md": "d2824f7e66c298a4f2add8d806d5a4f4caae7bdae296b955601995e48b92ce6c"
+  "weeks/2026-10-08_to_2026-10-15.md": "e6be6b93ec5dfab4cb06390ca0e21e155b1cec26bdd689217dd5c518032df36d",
+  "weeks/providers.md": "32e6619d1ce5eebdcc857981d4541a8ab7c46b6c94203abc8cec4e7609726111"
  },
  "inventory": {
   "categories": [
@@ -38,13 +39,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 348,
-  "nonempty_warnings": 79,
-  "providers": 98,
-  "share_tech": 250,
-  "total": 348,
-  "unique_ids": 348,
-  "unique_urls": 348
+  "https_urls": 355,
+  "nonempty_warnings": 80,
+  "providers": 102,
+  "share_tech": 253,
+  "total": 355,
+  "unique_ids": 355,
+  "unique_urls": 355
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -105,6 +106,13 @@
   "kourier",
   "lithosai",
   "artificial-analysis-deepseek-v4-1-flash-providers",
+  "mac-orbs",
+  "maritime",
+  "deno-is-joining-cloudflare",
+  "plexus",
+  "pi-anthropic-auth",
+  "augure-ai",
+  "openrouter-step-5-preview",
   "annnimate",
   "hyperiux",
   "vanta-ui",

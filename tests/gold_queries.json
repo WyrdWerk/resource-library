@@ -1,478 +1,478 @@
 [
-  {
-    "query": "openrouter",
-    "filters": {},
-    "expect_top1": "openrouter",
-    "expect_top5": [
-      "openrouter"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
+ {
+  "query": "openrouter",
+  "filters": {},
+  "expect_top1": "openrouter",
+  "expect_top5": [
+   "openrouter"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "tokenwatch",
+  "filters": {},
+  "expect_top1": "tokenwatch",
+  "expect_top5": [
+   "tokenwatch"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "privacywatch",
+  "filters": {},
+  "expect_top1": "privacywatch",
+  "expect_top5": [
+   "privacywatch"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "deepseek-clock",
+  "filters": {},
+  "expect_top1": "deepseek-clock",
+  "expect_top5": [
+   "deepseek-clock"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "saving-100tb-of-ram-with-math",
+  "filters": {},
+  "expect_top1": "saving-100tb-of-ram-with-math",
+  "expect_top5": [
+   "saving-100tb-of-ram-with-math"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "OpenRouter",
+  "filters": {},
+  "expect_top1": "openrouter",
+  "expect_top5": [
+   "openrouter"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "TokenWatch",
+  "filters": {},
+  "expect_top1": "tokenwatch",
+  "expect_top5": [
+   "tokenwatch"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "DeepSeek clock",
+  "filters": {},
+  "expect_top1": "deepseek-clock",
+  "expect_top5": [
+   "deepseek-clock",
+   "deepseek"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "inference providers",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "artificial-analysis-deepseek-v4-1-flash-providers",
+   "artificial-analysis-glm-5-3-flash-providers",
+   "artificial-analysis-mimo-v2-6-pro-providers",
+   "battleships",
+   "parasail"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-10-07 against 348-record catalog; new AA DeepSeek-V4.1-Flash providers page (21-provider comparison) legitimately ranks #1 for the query, shifting pi-coralbricks-provider to #6"
+ },
+ {
+  "query": "LLM gateway",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "darkbloom-mcp-gateway",
+   "merge-gateway",
+   "fast-inference",
+   "kenari",
+   "griphubrouter"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "price comparison",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "woxi-vs-mathematica-comparison",
+   "boat",
+   "artificial-analysis-mimo-v2-6-pro-providers",
+   "openai-api-pricing",
+   "tokenwatch"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-10-04 against 310-record catalog (daily rebase; new records legitimately re-ranked)"
+ },
+ {
+  "query": "open source react components",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "beui-motion-components",
+   "obsidian-ui",
+   "amicro",
+   "bencho",
+   "annnimate"
+  ],
+  "expect_none": false,
+  "note": "re-reviewed 2026-10-04 against 331-record catalog (annnimate, a React motion component library, legitimately re-ranked in)"
+ },
+ {
+  "query": "coding agent",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "fx-vercel-labs-coding-agent",
+   "pi-coding-agent-in-the-browser-announcement",
+   "delta-multiplayer-coding-with-agents"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "mcp server",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "darkbloom-mcp-gateway",
+   "codebase-memory-mcp-deusdata",
+   "synthetic-search-mcp"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "rust",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "rust-foundation-trusted-training-rftt",
+   "beads-rust",
+   "fff",
+   "gpui-kit"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "model weights huggingface",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "qwen3-8-open-weights-announcement",
+   "hy4-preview-fp8",
+   "minicpm5-2b-pcd"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "vector graphics",
+  "filters": {},
+  "expect_top1": "arrow-2-announcement",
+  "expect_top5": [
+   "arrow-2-announcement",
+   "hyperframes"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "cheap inference",
+  "filters": {
+   "resource_type": "provider"
   },
-  {
-    "query": "tokenwatch",
-    "filters": {},
-    "expect_top1": "tokenwatch",
-    "expect_top5": [
-      "tokenwatch"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
+  "expect_top1": null,
+  "expect_top5": [
+   "primalabs",
+   "pareto-inference",
+   "prism-inference",
+   "inco",
+   "fast-inference"
+  ],
+  "expect_none": false,
+  "note": "re-reviewed 2026-10-06 against 343-record catalog; primalabs (new) legitimately ranks #1 — sharer: 'very fast and cheap... really the best provider'"
+ },
+ {
+  "query": "components",
+  "filters": {
+   "topic": "frontend",
+   "resource_type": "library-framework"
   },
-  {
-    "query": "privacywatch",
-    "filters": {},
-    "expect_top1": "privacywatch",
-    "expect_top5": [
-      "privacywatch"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
+  "expect_top1": null,
+  "expect_top5": [
+   "beui-motion-components",
+   "gpui-kit",
+   "obsidian-ui",
+   "bencho",
+   "annnimate"
+  ],
+  "expect_none": false,
+  "note": "re-reviewed 2026-10-04 against 331-record catalog (annnimate, a React motion component library, legitimately re-ranked in)"
+ },
+ {
+  "query": "inference",
+  "filters": {
+   "channel": "providers"
   },
-  {
-    "query": "deepseek-clock",
-    "filters": {},
-    "expect_top1": "deepseek-clock",
-    "expect_top5": [
-      "deepseek-clock"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
+  "expect_top1": null,
+  "expect_top5": [
+   "pareto-inference",
+   "prism-inference",
+   "inco"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "tutorial",
+  "filters": {
+   "resource_type": "article-guide"
   },
-  {
-    "query": "saving-100tb-of-ram-with-math",
-    "filters": {},
-    "expect_top1": "saving-100tb-of-ram-with-math",
-    "expect_top5": [
-      "saving-100tb-of-ram-with-math"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
+  "expect_top1": null,
+  "expect_top5": [
+   "antidoom-liquid-ai-blog",
+   "architectural-visualization-with-astra"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "journal",
+  "filters": {},
+  "expect_top1": "cozy",
+  "expect_top5": [
+   "cozy"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "postgres",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": null,
+  "expect_none": true,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "cli",
+  "filters": {
+   "interface": "cli"
   },
-  {
-    "query": "OpenRouter",
-    "filters": {},
-    "expect_top1": "openrouter",
-    "expect_top5": [
-      "openrouter"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
+  "expect_top1": null,
+  "expect_top5": [
+   "teamai-cli",
+   "bb",
+   "boat",
+   "boxd",
+   "codex-auth"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "browser extension",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "pi-coding-agent-in-the-browser-announcement",
+   "radius-the-ai-browser-for-research",
+   "pi-better-skills"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "self-host",
+  "filters": {},
+  "expect_top1": "hermes-console",
+  "expect_top5": [
+   "hermes-console",
+   "pi-dispatch",
+   "pullfrog"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "observability dashboard",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "phoenix-arize-ai",
+   "worldmonitor",
+   "inferencesaver"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "agent skills",
+  "filters": {},
+  "expect_top1": "scenario-labs-skills",
+  "expect_top5": [
+   "scenario-labs-skills",
+   "pi-better-skills",
+   "skills-emilkowalski",
+   "ui-skills"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "next.js template",
+  "filters": {},
+  "expect_top1": "content-architecture",
+  "expect_top5": [
+   "content-architecture"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "sqlite",
+  "filters": {},
+  "expect_top1": "beads-rust",
+  "expect_top5": [
+   "beads-rust"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "video generation",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "oil-motion",
+   "moneyprinterturbo"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "free unlimited inference",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "react-native-deploy",
+   "zyloo",
+   "ai-router",
+   "featherless",
+   "makora"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-10-04 against 310-record catalog (daily rebase; new records legitimately re-ranked)"
+ },
+ {
+  "query": "zero data retention",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "charm-hyper",
+   "aster",
+   "cheaperinference",
+   "deepinfra",
+   "nube"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "openrouter.com",
+  "filters": {},
+  "expect_top1": "openrouter",
+  "expect_top5": [
+   "openrouter"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "github.com/anthropics",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "spec-kit-github",
+   "pullfrog",
+   "pi-anthropic-auth"
+  ],
+  "expect_none": false,
+  "note": "re-reviewed 2026-10-10 against 355-record catalog; pi-anthropic-auth (new) legitimately enters top-5 — GitHub repo for Anthropic OAuth (354 stars, MIT), more query-relevant than pi-better-skills"
+ },
+ {
+  "query": "quantum computing blockchain metaverse",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": null,
+  "expect_none": true,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "zzzzqqqjjj",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": null,
+  "expect_none": true,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "the",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": null,
+  "expect_none": true,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "API",
+  "filters": {
+   "interface": "api",
+   "resource_type": "provider"
   },
-  {
-    "query": "TokenWatch",
-    "filters": {},
-    "expect_top1": "tokenwatch",
-    "expect_top5": [
-      "tokenwatch"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "DeepSeek clock",
-    "filters": {},
-    "expect_top1": "deepseek-clock",
-    "expect_top5": [
-      "deepseek-clock",
-      "deepseek"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "inference providers",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "artificial-analysis-deepseek-v4-1-flash-providers",
-      "artificial-analysis-glm-5-3-flash-providers",
-      "artificial-analysis-mimo-v2-6-pro-providers",
-      "battleships",
-      "parasail"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-10-07 against 348-record catalog; new AA DeepSeek-V4.1-Flash providers page (21-provider comparison) legitimately ranks #1 for the query, shifting pi-coralbricks-provider to #6"
-  },
-  {
-    "query": "LLM gateway",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "darkbloom-mcp-gateway",
-      "merge-gateway",
-      "fast-inference",
-      "kenari",
-      "griphubrouter"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "price comparison",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "woxi-vs-mathematica-comparison",
-      "boat",
-      "artificial-analysis-mimo-v2-6-pro-providers",
-      "openai-api-pricing",
-      "tokenwatch"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-10-04 against 310-record catalog (daily rebase; new records legitimately re-ranked)"
-  },
-  {
-    "query": "open source react components",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "beui-motion-components",
-      "obsidian-ui",
-      "amicro",
-      "bencho",
-      "annnimate"
-    ],
-    "expect_none": false,
-    "note": "re-reviewed 2026-10-04 against 331-record catalog (annnimate, a React motion component library, legitimately re-ranked in)"
-  },
-  {
-    "query": "coding agent",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "fx-vercel-labs-coding-agent",
-      "pi-coding-agent-in-the-browser-announcement",
-      "delta-multiplayer-coding-with-agents"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "mcp server",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "darkbloom-mcp-gateway",
-      "codebase-memory-mcp-deusdata",
-      "synthetic-search-mcp"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "rust",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "rust-foundation-trusted-training-rftt",
-      "beads-rust",
-      "fff",
-      "gpui-kit"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "model weights huggingface",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "qwen3-8-open-weights-announcement",
-      "hy4-preview-fp8",
-      "minicpm5-2b-pcd"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "vector graphics",
-    "filters": {},
-    "expect_top1": "arrow-2-announcement",
-    "expect_top5": [
-      "arrow-2-announcement",
-      "hyperframes"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "cheap inference",
-    "filters": {
-      "resource_type": "provider"
-    },
-    "expect_top1": null,
-    "expect_top5": [
-      "primalabs",
-      "pareto-inference",
-      "prism-inference",
-      "inco",
-      "fast-inference"
-    ],
-    "expect_none": false,
-    "note": "re-reviewed 2026-10-06 against 343-record catalog; primalabs (new) legitimately ranks #1 \u2014 sharer: 'very fast and cheap... really the best provider'"
-  },
-  {
-    "query": "components",
-    "filters": {
-      "topic": "frontend",
-      "resource_type": "library-framework"
-    },
-    "expect_top1": null,
-    "expect_top5": [
-      "beui-motion-components",
-      "gpui-kit",
-      "obsidian-ui",
-      "bencho",
-      "annnimate"
-    ],
-    "expect_none": false,
-    "note": "re-reviewed 2026-10-04 against 331-record catalog (annnimate, a React motion component library, legitimately re-ranked in)"
-  },
-  {
-    "query": "inference",
-    "filters": {
-      "channel": "providers"
-    },
-    "expect_top1": null,
-    "expect_top5": [
-      "pareto-inference",
-      "prism-inference",
-      "inco"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "tutorial",
-    "filters": {
-      "resource_type": "article-guide"
-    },
-    "expect_top1": null,
-    "expect_top5": [
-      "antidoom-liquid-ai-blog",
-      "architectural-visualization-with-astra"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "journal",
-    "filters": {},
-    "expect_top1": "cozy",
-    "expect_top5": [
-      "cozy"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "postgres",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": null,
-    "expect_none": true,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "cli",
-    "filters": {
-      "interface": "cli"
-    },
-    "expect_top1": null,
-    "expect_top5": [
-      "teamai-cli",
-      "bb",
-      "boat",
-      "boxd",
-      "codex-auth"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "browser extension",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "pi-coding-agent-in-the-browser-announcement",
-      "radius-the-ai-browser-for-research",
-      "pi-better-skills"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "self-host",
-    "filters": {},
-    "expect_top1": "hermes-console",
-    "expect_top5": [
-      "hermes-console",
-      "pi-dispatch",
-      "pullfrog"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "observability dashboard",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "phoenix-arize-ai",
-      "worldmonitor",
-      "inferencesaver"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "agent skills",
-    "filters": {},
-    "expect_top1": "scenario-labs-skills",
-    "expect_top5": [
-      "scenario-labs-skills",
-      "pi-better-skills",
-      "skills-emilkowalski",
-      "ui-skills"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "next.js template",
-    "filters": {},
-    "expect_top1": "content-architecture",
-    "expect_top5": [
-      "content-architecture"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "sqlite",
-    "filters": {},
-    "expect_top1": "beads-rust",
-    "expect_top5": [
-      "beads-rust"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "video generation",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "oil-motion",
-      "moneyprinterturbo"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "free unlimited inference",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "react-native-deploy",
-      "zyloo",
-      "ai-router",
-      "featherless",
-      "makora"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-10-04 against 310-record catalog (daily rebase; new records legitimately re-ranked)"
-  },
-  {
-    "query": "zero data retention",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "charm-hyper",
-      "aster",
-      "cheaperinference",
-      "deepinfra",
-      "nube"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "openrouter.com",
-    "filters": {},
-    "expect_top1": "openrouter",
-    "expect_top5": [
-      "openrouter"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "github.com/anthropics",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "spec-kit-github",
-      "pullfrog",
-      "pi-better-skills"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "quantum computing blockchain metaverse",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": null,
-    "expect_none": true,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "zzzzqqqjjj",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": null,
-    "expect_none": true,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "the",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": null,
-    "expect_none": true,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "API",
-    "filters": {
-      "interface": "api",
-      "resource_type": "provider"
-    },
-    "expect_top1": null,
-    "expect_top5": [
-      "ai-router",
-      "aihubmix",
-      "cline-pass",
-      "featherless",
-      "inferencesaver"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
-  },
-  {
-    "query": "benchmark",
-    "filters": {},
-    "expect_top1": null,
-    "expect_top5": [
-      "hpc-sandbox-benchmarks",
-      "primalabs-mimo-v2-6-pro-speed-benchmark",
-      "artificial-analysis-mimo-v2-6-pro-providers",
-      "brokenarxiv-arxivmath-announcement",
-      "isoquant"
-    ],
-    "expect_none": false,
-    "note": "reviewed 2026-10-04 against 310-record catalog (daily rebase; new records legitimately re-ranked)"
-  }
+  "expect_top1": null,
+  "expect_top5": [
+   "ai-router",
+   "aihubmix",
+   "cline-pass",
+   "featherless",
+   "inferencesaver"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-09-29 against 285-record catalog"
+ },
+ {
+  "query": "benchmark",
+  "filters": {},
+  "expect_top1": null,
+  "expect_top5": [
+   "hpc-sandbox-benchmarks",
+   "primalabs-mimo-v2-6-pro-speed-benchmark",
+   "artificial-analysis-mimo-v2-6-pro-providers",
+   "brokenarxiv-arxivmath-announcement",
+   "isoquant"
+  ],
+  "expect_none": false,
+  "note": "reviewed 2026-10-04 against 310-record catalog (daily rebase; new records legitimately re-ranked)"
+ }
 ]
