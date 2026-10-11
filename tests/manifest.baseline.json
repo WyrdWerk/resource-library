@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "6534c45007dc9450d7ca8eeffc119e0a06d6839e1df49ff1dacadd098dbbb574",
-  "data.json": "d41444582ffaf43a9e9257d23e4cff44e1eef3e94f627a31932f9437f2f719d6",
-  "feed.xml": "6965a709ef8938c2ff4bfc13b37becf28b0205ecd7b526cbe7fad221819bc330",
-  "index.html": "a8ec24c4a074b7f2471fe4685430811b0a01658ca6cfd423f3a2136c95041b8a",
-  "llms.txt": "7a593d2193ddfc18f055e2f3cc8463f9d30a735a7e71d4f7b4e105afb1d488bb",
-  "og-image.png": "bdf702758e0317377678bd3d380c73e1460a2cdb463e9df323b8cef217beab4b",
+  "CHANGELOG.md": "c8daa928a16dc3d991f51bdbc5380f2722a5077b88d6e5e7723977a882130031",
+  "data.json": "df89f8768b36c48a90223f739f7014940f4619a51962823eb697aa1e95798673",
+  "feed.xml": "02774f61ca91d6042596193f996cd70cc15879835e23e9389ea7bb25c5c25733",
+  "index.html": "8db3d9010ea31d1dadb3bec952a7156a47f741b64bf2215cbf4a53dbdfa87fd4",
+  "llms.txt": "6755875434fe7c319f2b11a6c95db44606f79b66cc97c85718f4ff1252242928",
+  "og-image.png": "8698adc0100825d81e7be4f9cb2d6d939bf605e2899c34acb390d255fd5cdbec",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "c87bf0a1074c587460a3357171ca545a447d4a4611e126c43bdeac5fdf75069e",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -28,7 +28,7 @@
   "weeks/2026-09-24_to_2026-10-01.md": "a38ab8bce05993227a8fdadb6f78cd1c96797e00c742a4853ff804d346c88cfd",
   "weeks/2026-10-01_to_2026-10-08.md": "901c88119d25c7dcc33e3e51afa60d62a124893106167422b81c0f7ed3b6be47",
   "weeks/2026-10-08_to_2026-10-15.md": "c966daaadb7821195d0dd9d5c0c38074f2c567e289b6b27d1124dba2fd535587",
-  "weeks/providers.md": "d2824f7e66c298a4f2add8d806d5a4f4caae7bdae296b955601995e48b92ce6c"
+  "weeks/providers.md": "541383e7eb33dfda5a053b222e8ec344757e3acf04c67eed5ceba6d2fbd3104e"
  },
  "inventory": {
   "categories": [
@@ -39,13 +39,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 350,
+  "https_urls": 351,
   "nonempty_warnings": 80,
-  "providers": 98,
+  "providers": 99,
   "share_tech": 252,
-  "total": 350,
-  "unique_ids": 350,
-  "unique_urls": 350
+  "total": 351,
+  "unique_ids": 351,
+  "unique_urls": 351
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -108,6 +108,7 @@
   "artificial-analysis-deepseek-v4-1-flash-providers",
   "tov",
   "pi-bolt",
+  "does-fast-mode-do-anything",
   "annnimate",
   "hyperiux",
   "vanta-ui",

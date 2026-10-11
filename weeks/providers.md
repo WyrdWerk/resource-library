@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-98 curated providers, with briefs.
+99 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -103,6 +103,12 @@
 - Shared by: Felix (6 Oct)
 - Categories: providers
 - Brief: Artificial Analysis' live provider comparison for DeepSeek V4.1 Flash across 21 API providers — pricing, output speed, latency and cache behaviour side by side, with LithosAI's Ultra Chat tier currently fastest and DeepInfra cheapest. A benchmark snapshot; figures shift as providers are re-tested. (Shared URL carried a `?pricing-comparisons=` view parameter; recorded without it, matching the existing AA entries.)
+
+## Does Fast Mode Do Anything?
+- URL: https://doesfastdoanything.com/
+- Shared by: baanish (10 Oct)
+- Categories: providers
+- Brief: An hourly-updated benchmark site testing whether Codex Fast mode delivers on its promise of 2× speed for 2.5× the usage — a running provider comparison of Fast mode against standard. Bare link share ("lol"); figures are the site's own measurements.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
