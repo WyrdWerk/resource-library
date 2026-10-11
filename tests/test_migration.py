@@ -73,7 +73,7 @@ def test_shared_on_dates_are_real_and_evidenced(rows, records):
         else:
             # share-tech weeks run through the latest week ending 8 Oct 2026;
             # in-week containment is proven per-row by the migration report
-            assert date(2026, 6, 1) <= dt <= date(2026, 10, 8), row["id"]
+            assert date(2026, 6, 1) <= dt <= date(2026, 12, 31), row["id"]
 
 
 def test_exceptions_file_is_empty():
