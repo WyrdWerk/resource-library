@@ -416,11 +416,10 @@
   "expect_top1": null,
   "expect_top5": [
    "spec-kit-github",
-   "pullfrog",
-   "pi-anthropic-auth"
+   "pullfrog"
   ],
   "expect_none": false,
-  "note": "re-reviewed 2026-10-10 against 355-record catalog; pi-anthropic-auth (new) legitimately enters top-5 — GitHub repo for Anthropic OAuth (354 stars, MIT), more query-relevant than pi-better-skills"
+  "note": "re-reviewed 2026-10-12 when merging the 2026-10-08 and 2026-10-10 batches (371-record catalog): their independent reviews disagreed on the remaining slots (anthropic-claude-haiku-5-5 et al. vs pi-anthropic-auth); no canonical github.com/anthropics entry exists, so only the two entries both reviews kept are pinned"
  },
  {
   "query": "quantum computing blockchain metaverse",
