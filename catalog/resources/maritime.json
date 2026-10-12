@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "maritime",
+  "title": "Maritime",
+  "canonical_url": "https://maritime.sh/pricing",
+  "brief": "Host persistent AI agents, each in its own VM — persistent disk, sleep and wake in about a second, flat plans, free for 3 agents per the embed. Pricing and performance figures are vendor-reported.",
+  "caveat": null,
+  "details": "Maritime sells per-agent VM hosting for AI agents: every agent gets 1 vCPU, 2 GB RAM, and 5 GB SSD, sleeps when idle, and wakes in about a second with all state preserved. Pricing is flat and works out to about $1 per agent per month: Free covers 3 agents forever, Starter is $20/month for 20 machines, Growth $100/month for 100, Scale $500/month for 500, Dedicated $5,000/month for 5,000 — with add-ons for extra RAM, SSD, and always-on machines, and sleeping machines free. Support is via Discord on lower tiers and private Slack on higher ones; all figures are vendor-reported and subject to change.",
+  "resource_type": "service-platform",
+  "topics": [
+    "ai-agents",
+    "cloud-infrastructure"
+  ],
+  "use_cases": [
+    "deploy-applications",
+    "provision-infrastructure"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "8–15 Oct 2026",
+  "legacy_categories": [
+    "web-app",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "baanish"
+  },
+  "shared_on": "2026-10-10",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

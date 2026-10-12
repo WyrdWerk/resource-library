@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "openrouter-step-5-preview",
+  "title": "OpenRouter: Step-5-Preview",
+  "canonical_url": "https://openrouter.ai/stepfun/step-5-preview",
+  "brief": "StepFun's Step-5-Preview model page — 1M-token context, $1/$2.70 per million in/out tokens, a sparse-MoE flagship (27B active / 600B total) positioned for agentic work. nixerman flags the pricing as steep for this tier; pricing is live and will shift.",
+  "caveat": null,
+  "details": "Step 5 Preview is StepFun's flagship model for agentic work, a sparse mixture-of-experts design (27B active out of 600B total parameters) with a 1M-token context window and 64K maximum output, released October 8, 2026. OpenRouter lists it at $1 per million input tokens and $2.70 per million output tokens, served by a single provider with live throughput, latency, and uptime statistics on the page. It is positioned for extended agentic tasks spanning large codebases and documents, with particular strength claimed in finance and software engineering — vendor-reported benchmarks.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "nixerman"
+  },
+  "shared_on": "2026-10-08",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
