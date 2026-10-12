@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "f85eb7156597fc1acc7858989a8f7e6fcb7547f7da0774d968bad88f9c741444",
-  "data.json": "fc0732ddc4e0290b536d76ae1521dff395a5dbb12595bdd4980f095c14824fdb",
-  "feed.xml": "944af8908e7f642cff6e6aa9419e7ebab89d1c77a8f57a66b20233b06015feba",
-  "index.html": "7cf2c0e6ae80facaedeb877191ebae93fa2e779109b3ea0d0c73691739dd84ac",
-  "llms.txt": "7a593d2193ddfc18f055e2f3cc8463f9d30a735a7e71d4f7b4e105afb1d488bb",
-  "og-image.png": "bdf702758e0317377678bd3d380c73e1460a2cdb463e9df323b8cef217beab4b",
+  "CHANGELOG.md": "7865f0e29005333af8a084e818196d10057f2abc00e3c7fd56aa5d338042cd24",
+  "data.json": "d5506aebe817a971ac98a305e9bc27212b2af60df817d4bc7446ed898785c60a",
+  "feed.xml": "88cbced49aa4eda63c5e0f7f8b1c9eedb7d067d72c42660cb94d3c27de92e95f",
+  "index.html": "2ee343c7689dd8b4ff5bd7b33d796a02d6db316d753ccb9944960c643d26384d",
+  "llms.txt": "b8d4c82b2e8385e313e047dd26faa2825861099e3b87d846a669fb64fb905cbe",
+  "og-image.png": "7d0b20406bafae20ea85479241e1a4f51241755df57df346ae653077b31c8190",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "c87bf0a1074c587460a3357171ca545a447d4a4611e126c43bdeac5fdf75069e",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -27,8 +27,8 @@
   "weeks/2026-09-17_to_2026-09-24.md": "d23f05b8bddde2ad551921b2c4e8f3462078e87dce2250aa89b72c4d69ee7ac9",
   "weeks/2026-09-24_to_2026-10-01.md": "a38ab8bce05993227a8fdadb6f78cd1c96797e00c742a4853ff804d346c88cfd",
   "weeks/2026-10-01_to_2026-10-08.md": "901c88119d25c7dcc33e3e51afa60d62a124893106167422b81c0f7ed3b6be47",
-  "weeks/2026-10-08_to_2026-10-15.md": "755fce7a506d4750756cf56bc0b749c3e426407f112fdf38e7b4322ab0a2d25b",
-  "weeks/providers.md": "d2824f7e66c298a4f2add8d806d5a4f4caae7bdae296b955601995e48b92ce6c"
+  "weeks/2026-10-08_to_2026-10-15.md": "0b1c611d5cfa61e0ed1c07ebbdcc7230ea058e9b0da95135cc2b3397049fceff",
+  "weeks/providers.md": "32e6619d1ce5eebdcc857981d4541a8ab7c46b6c94203abc8cec4e7609726111"
  },
  "inventory": {
   "categories": [
@@ -39,13 +39,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 350,
-  "nonempty_warnings": 79,
-  "providers": 98,
-  "share_tech": 252,
-  "total": 350,
-  "unique_ids": 350,
-  "unique_urls": 350
+  "https_urls": 357,
+  "nonempty_warnings": 80,
+  "providers": 102,
+  "share_tech": 255,
+  "total": 357,
+  "unique_ids": 357,
+  "unique_urls": 357
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -106,6 +106,13 @@
   "kourier",
   "lithosai",
   "artificial-analysis-deepseek-v4-1-flash-providers",
+  "mac-orbs",
+  "maritime",
+  "deno-is-joining-cloudflare",
+  "plexus",
+  "pi-anthropic-auth",
+  "augure-ai",
+  "openrouter-step-5-preview",
   "anatomy",
   "open-intelligent-ui",
   "annnimate",
