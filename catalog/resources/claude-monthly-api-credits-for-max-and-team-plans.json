@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "claude-monthly-api-credits-for-max-and-team-plans",
+  "title": "Claude: Monthly API credits for Max and Team plans",
+  "canonical_url": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans",
+  "brief": "Extracted from @claudedevs' 7 Oct announcement tweet (tweets are never dropped for being announcements): Anthropic's help article on the monthly Claude Platform API credits rolling out to Max and Team subscribers — $100/month on Max 5x, $200 on Max 20x, up to $500 pooled on Team, claimed into a linked Console org. Covers any Claude model including the Agent SDK, but not interactive Claude Code usage. Eligibility details may shift as the rollout completes.",
+  "caveat": null,
+  "details": "Anthropic's help article documents the monthly Claude Platform API credits rolling out to Max and Team subscribers: $100/month on Max 5x, $200 on Max 20x, and up to $500 pooled across seats on Team plans, claimed into a linked Claude Console organization. The credits work with any Claude model on the platform, including the Agent SDK and self-run claude -p usage, but explicitly do not cover interactive Claude Code sessions or over-limit usage. Eligibility details may shift as the rollout completes — the article was updated the day it was collected.",
+  "resource_type": "article-guide",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "anthropic-api"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers",
+    "article"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "baanish"
+  },
+  "shared_on": "2026-10-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

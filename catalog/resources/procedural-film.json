@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "procedural-film",
+  "title": "procedural-film",
+  "canonical_url": "https://github.com/kuhnhomeuk-cell/procedural-film",
+  "brief": "An agent skill that turns a topic into a short vertical film or even a playable NES-style platformer, every pixel drawn in vanilla JS canvas and every sound synthesized in Web Audio — zero media assets. The monarch-butterfly reference film and the playable Claude Quest game demo the pipeline; expect heavy agent usage (one agent per shot, critic waves per shot). MIT licensed; ~500 stars.",
+  "caveat": null,
+  "details": "procedural-film is an agent skill (MIT, ~500 stars) that turns a topic into a short vertical film or even a playable NES-style pixel-art platformer. Every pixel is drawn in vanilla JavaScript on canvas and every sound is synthesized in Web Audio, so each film ships as one self-contained HTML player plus MP4 exports with zero media assets. The repo's reference film — a 32-second monarch-butterfly life cycle — and the playable Claude Quest game show the pipeline end to end. Expect a long, token-heavy run: the skill dispatches one agent per shot with critic-review waves over every shot.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "create-media",
+    "generate-code"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [
+    "javascript",
+    "node-js"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

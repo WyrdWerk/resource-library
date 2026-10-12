@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "openrouter-claude-haiku-5-5",
+  "title": "OpenRouter: Claude Haiku 5.5",
+  "canonical_url": "https://openrouter.ai/anthropic/claude-haiku-5.5",
+  "brief": "OpenRouter's model page for Claude Haiku 5.5 — 1M-token context, $0.10/$0.50 per million in/out tokens, served by five providers (Vertex, AWS, Azure, Anthropic, Bedrock) with routing modes (Balanced/Nitro/Floor/Exacto) and automatic failover. A provider-comparison-style page with live pricing, throughput, uptime, and benchmark figures — same pattern as the published AA model pages. Figures are live and will shift.",
+  "caveat": null,
+  "details": "OpenRouter's model page for Claude Haiku 5.5, Anthropic's small fast model with a 1M-token context window, priced at $0.10/$0.50 per million input/output tokens with cheap cache reads. Five providers serve it (Vertex, AWS, Azure, Anthropic, Bedrock); OpenRouter routes across them with Balanced, Nitro, Floor, and Exacto modes and automatic failover. The page carries live pricing, throughput, latency, uptime, and benchmark figures plus the top apps sending traffic to the model — the same provider-comparison pattern as the published Artificial Analysis model pages. Figures are live and will shift.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Felix"
+  },
+  "shared_on": "2026-10-08",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "262369c9a98893e6ce8d1d81ed96a4b7337e569164ae78c839cd4aa7c8a47483",
-  "data.json": "a5a1bda78d59e16aca7b049d1a9d3085443fb138e73999298911c50791e9a209",
-  "feed.xml": "d38148309f5f3f51c7dd28af109c9b711390e9065472ede6726d80caed1043a4",
-  "index.html": "e03f94bdf763affb4e79364a2648557e41ddd59b6cd25fcc1d6390de10341ca8",
-  "llms.txt": "2a4734023d47712216c15ced7c2e39e0bc5adb6d3e9f2355006da32b16519aaa",
-  "og-image.png": "67198d158d641509c6d8c94e0269a6f087a92d959d5726e303c76ce4ca81f9e2",
+  "CHANGELOG.md": "18173959370ffcd97111f046a6407a6529cc13ce52d6e283ba6b5cb681da341b",
+  "data.json": "f26751777b44f6527cdc9c98ae7024915a69517689dbd7aa068d290eec9564fc",
+  "feed.xml": "b1b789d41ea121c2f8001a99e256eec92a7e2edaa20991d1fa078e44f005ad8f",
+  "index.html": "5de4d350e0a3ba7a55d63d0551738ad2e63bf3c1d2cb25f346ea4a00ff1152a4",
+  "llms.txt": "0df90e068421474bbe9f486d0c90eced7596af05373efff2eb1ad0b8192f9820",
+  "og-image.png": "7c0d1312a20df98aef09ca607231860f4cf6e102dafa88ab5c4b04caa781eb25",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "c87bf0a1074c587460a3357171ca545a447d4a4611e126c43bdeac5fdf75069e",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -26,9 +26,9 @@
   "weeks/2026-09-10_to_2026-09-17.md": "bc312d307cfe2ca8cd841b2e05783df0e2aba635401c5407e740d6f66bfa9d40",
   "weeks/2026-09-17_to_2026-09-24.md": "d23f05b8bddde2ad551921b2c4e8f3462078e87dce2250aa89b72c4d69ee7ac9",
   "weeks/2026-09-24_to_2026-10-01.md": "a38ab8bce05993227a8fdadb6f78cd1c96797e00c742a4853ff804d346c88cfd",
-  "weeks/2026-10-01_to_2026-10-08.md": "901c88119d25c7dcc33e3e51afa60d62a124893106167422b81c0f7ed3b6be47",
+  "weeks/2026-10-01_to_2026-10-08.md": "474955dc733dfebe6af21d60d526dee9572b20905a35dfe25e11ae9d10ed5f46",
   "weeks/2026-10-08_to_2026-10-15.md": "a175168a0318756306d0c18561b299ad3841bb12eb7fd0b57a8c93e3019f1894",
-  "weeks/providers.md": "040c63757f69414fde89045cb1fedb7da1090dae82160f610cd9c2b0b5ce201f"
+  "weeks/providers.md": "798a52989f23e2fd9e40f89070b6c4d56cd0f8a150f6d5cf1eee1666f01047ae"
  },
  "inventory": {
   "categories": [
@@ -39,13 +39,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 360,
-  "nonempty_warnings": 81,
-  "providers": 103,
-  "share_tech": 257,
-  "total": 360,
-  "unique_ids": 360,
-  "unique_urls": 360
+  "https_urls": 371,
+  "nonempty_warnings": 82,
+  "providers": 109,
+  "share_tech": 262,
+  "total": 371,
+  "unique_ids": 371,
+  "unique_urls": 371
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -106,6 +106,17 @@
   "kourier",
   "lithosai",
   "artificial-analysis-deepseek-v4-1-flash-providers",
+  "blessed-rs",
+  "one",
+  "procedural-film",
+  "orbs",
+  "shaders",
+  "opendesign",
+  "claude-monthly-api-credits-for-max-and-team-plans",
+  "openrouter-claude-haiku-5-5",
+  "anthropic-claude-haiku-5-5",
+  "opendocrouter",
+  "neuralwatt-mimo-v2-6-pro",
   "mac-orbs",
   "maritime",
   "deno-is-joining-cloudflare",

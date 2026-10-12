@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "anthropic-claude-haiku-5-5",
+  "title": "Anthropic: Claude Haiku 5.5",
+  "canonical_url": "https://www.anthropic.com/claude-haiku-5-5",
+  "brief": "Extracted from @claudeai's 8 Oct announcement tweet (tweets are never dropped for being announcements): Anthropic's announcement page for Haiku 5.5 — positioned as the cheapest, fastest, most capable small model, ~75% cheaper to run than Haiku 4.5, with a 1M context window and adjustable effort. Also announces halved Sonnet 5.5 cache-read pricing and the monthly API credits for Max/Team. All benchmarks and pricing are vendor-reported.",
+  "caveat": null,
+  "details": "Anthropic's announcement page for Claude Haiku 5.5, positioned as its cheapest, fastest, and most capable small model — about 75% cheaper to run than Haiku 4.5, with a 1M context window, adjustable effort, and strong showings on knowledge work, computer use, and agentic coding benchmarks. The same announcement halves Sonnet 5.5 cache-read pricing (making most agentic work ~20% cheaper) and introduces the monthly API credits for Max and Team subscribers. Available on the Claude Platform, AWS, Google Cloud, and Azure. All benchmarks and pricing are vendor-reported.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [
+    "anthropic-api"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Alp"
+  },
+  "shared_on": "2026-10-08",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
