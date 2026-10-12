@@ -946,6 +946,50 @@
     "details": "Step 5 Preview is StepFun's flagship model for agentic work, a sparse mixture-of-experts design (27B active out of 600B total parameters) with a 1M-token context window and 64K maximum output, released October 8, 2026. OpenRouter lists it at $1 per million input tokens and $2.70 per million output tokens, served by a single provider with live throughput, latency, and uptime statistics on the page. It is positioned for extended agentic tasks spanning large codebases and documents, with particular strength claimed in finance and software engineering — vendor-reported benchmarks."
   },
   {
+    "title": "Tov",
+    "week": "8–15 Oct 2026",
+    "url": "https://tov.sh/",
+    "sharer": "Tom",
+    "date": "11 Oct",
+    "categories": [
+      "dev-tool",
+      "ai-tool"
+    ],
+    "brief": "A programming language for coding agents that reads like TypeScript and compiles to native binaries — pitched as \"faster than Rust, written like TypeScript\". Bare link share with no commentary (5 skull reactions); performance claims are vendor-pitched, treat as unverified.",
+    "id": "tov",
+    "warning": "Bare link share with no commentary (5 skull reactions); performance claims are vendor-pitched, treat as unverified.",
+    "details": "Tov is a programming language aimed at coding agents: agents write TypeScript-shaped code with stricter types (separate int and f64, no any/null/==), and the Tov compiler checks it, emits C, and hands that to clang, producing a single native binary. The Rust-written checker returns machine-readable fixes (tov check --json) that an agent can apply itself, and the workflow is designed around an agent install prompt plus llms.txt. The project's own benchmarks claim it beats Rust on several micro-benchmarks (e.g. 242k req/s JSON API vs 216k for axum, 42 ms compiles, 33 KB stripped binaries, 1.6 MB server memory) and a Tov-written screen encoder 5.2x faster than x264 at equal quality — all vendor-reported on an Apple M4 Max, treat as unverified. Works today for CLI programs and web servers on macOS and Linux with Bun/Node APIs and npm packages; Windows, TLS sockets, worker threads and some TypeScript features are not yet supported."
+  },
+  {
+    "title": "Pi-Bolt",
+    "week": "8–15 Oct 2026",
+    "url": "https://github.com/opensec-git/Pi-Bolt",
+    "sharer": "Aspiring UBI Recipient",
+    "date": "10 Oct",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Pi, the coding agent, compiled ahead of time to native code — starts 3× sooner than Pi on Bun and uses less memory, per the repo's own claims. Sharer asked \"Has anyone tried pi bolt?\"; a follow-up thread discusses whether it would need porting to work with fabric. Startup/memory figures are vendor-reported.",
+    "id": "pi-bolt",
+    "warning": "",
+    "details": "Pi-Bolt is an independent MIT-licensed fork of the Pi coding agent by OpenSec that compiles Pi ahead of time to native machine code via JavaScriptCore's B3 backend, so it launches without parsing or JIT warmup and needs no Node.js or Bun installed. The same Pi commands, sessions, settings, providers and extensions work unchanged; builds exist for Linux x86-64, macOS Apple silicon and Windows x64, plus JIT variants for heavy runtime-loaded plugins. The project's benchmarks (Pi-Bolt 0.8.0 vs Pi 1.1.0 on Bun 1.4.2) claim 2-3x faster startup, about a third of the CPU over a session, and much cheaper long answers/large files — vendor-reported on AMD EPYC 7B13 and Apple M5, treat as unverified. Not affiliated with Pi's authors or Oven. The Discord sharer asked whether anyone had tried it, and a follow-up thread discussed porting effort for fabric compatibility."
+  },
+  {
+    "title": "Does Fast Mode Do Anything?",
+    "week": "providers",
+    "url": "https://doesfastdoanything.com/",
+    "sharer": "baanish",
+    "date": "10 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "An hourly-updated benchmark site testing whether Codex Fast mode delivers on its promise of 2× speed for 2.5× the usage — a running provider comparison of Fast mode against standard. Bare link share (\"lol\"); figures are the site's own measurements.",
+    "id": "does-fast-mode-do-anything",
+    "warning": "",
+    "details": "A single-purpose benchmark site that re-tests OpenAI Codex's Fast mode every hour, measuring throughput (tokens per second) and latency (time to first token) in paired normal-vs-fast runs to check whether Fast mode delivers its promised 2x speed for 2.5x the usage. Powered by \"omp bench\" (omp.sh). (Coverage note: written from the Discord embed and the site's own framing — the live page's benchmark results are JS-rendered and were not directly fetchable.)"
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

@@ -1,6 +1,6 @@
 {
-  "migrated": 355,
-  "source_rows": 355,
+  "migrated": 358,
+  "source_rows": 358,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -1043,6 +1043,54 @@
       "all_equal": true,
       "shared_on": "2026-10-08",
       "date_evidence": "posted '8 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "tov",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-11",
+      "date_evidence": "posted '11 Oct' inside week label '8–15 Oct 2026'"
+    },
+    {
+      "id": "pi-bolt",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-10",
+      "date_evidence": "posted '10 Oct' inside week label '8–15 Oct 2026'"
+    },
+    {
+      "id": "does-fast-mode-do-anything",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-10",
+      "date_evidence": "posted '10 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
     },
     {
       "id": "annnimate",
