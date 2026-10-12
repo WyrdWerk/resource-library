@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "artificial-analysis-deepseek-v4-1-flash-providers",
+  "title": "Artificial Analysis: DeepSeek V4.1 Flash providers",
+  "canonical_url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash/providers",
+  "brief": "Artificial Analysis' live provider comparison for DeepSeek V4.1 Flash across 21 API providers — pricing, output speed, latency and cache behaviour side by side, with LithosAI's Ultra Chat tier currently fastest and DeepInfra cheapest. A benchmark snapshot; figures shift as providers are re-tested. (Shared URL carried a `?pricing-comparisons=` view parameter; recorded without it, matching the existing AA entries.)",
+  "caveat": null,
+  "details": "Artificial Analysis' live comparison of API providers serving DeepSeek V4.1 Flash, currently tracking 21 providers across pricing, output speed, latency, and cache behaviour. LithosAI's Ultra Chat tier is presently the fastest by output speed while DeepInfra is the cheapest by blended price. Figures are benchmark snapshots that shift as Artificial Analysis re-tests providers; use the page for relative comparison rather than as a price quote.",
+  "resource_type": "article-guide",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Felix"
+  },
+  "shared_on": "2026-10-06",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

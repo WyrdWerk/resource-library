@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "gdp-ts",
+  "title": "gdp-ts",
+  "canonical_url": "https://github.com/rauchg/gdp-ts",
+  "brief": "Extracted from Guillermo Rauch's announcement tweet: a tiny TypeScript library + linter and AI skill implementing \"Ghosts of Departed Proofs\" — sensitive functions must be handed compile-time proof that the caller ran the authorization check, making auth/entitlement bugs nearly impossible for humans and coding agents to introduce, with ~zero runtime overhead. MIT licensed; ~700 stars within two days of its 4 Oct release.",
+  "caveat": null,
+  "details": "gdp-ts is a tiny TypeScript library, linter, and AI skill implementing Ghosts of Departed Proofs, a system for making API contracts safer at compile time. Sensitive functions are written to demand proof that the caller performed the required authorization check, so a missing or wrong check becomes a type error instead of a runtime bug, with negligible runtime overhead. It ships ESLint and Oxlint presets to catch proof-forging, plus an installable skill that guides coding agents through the pattern. MIT licensed; it gained roughly 700 stars within two days of its 4 Oct release.",
+  "resource_type": "library-framework",
+  "topics": [
+    "developer-tools",
+    "security"
+  ],
+  "use_cases": [
+    "generate-code"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "typescript",
+    "node-js"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "simply_roo"
+  },
+  "shared_on": "2026-10-06",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

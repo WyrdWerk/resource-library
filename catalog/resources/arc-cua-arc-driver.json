@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "id": "arc-cua-arc-driver",
+  "title": "arc-cua (arc-driver)",
+  "canonical_url": "https://github.com/shhivv/arc-cua",
+  "brief": "Extracted from @sxhivs's 6 Oct announcement tweet (tweets are never dropped for being announcements): arc-cua ships arc-driver, a lean open-source (MIT) macOS driver that lets coding agents (Claude Code, Codex, any MCP client) read app windows and act on their controls in the background, alongside a decision-model action loop for bounded desktop subtasks. The author claims it beats cua-driver on most tasks (up to 8x on some) — treat the benchmarks as vendor-reported.",
+  "caveat": null,
+  "details": "arc-cua is a superfast action layer for computer-use agents on macOS, shipping two tools in one package. arc-driver is a standalone macOS driver that lets an agent (Claude Code, Codex, or any MCP client) observe an app's window and act on its controls in the background without moving the user's cursor or disturbing open windows. arc-cua itself is a decision-model loop that hands bounded desktop subtasks to a fast decision model so a frontier model isn't needed for every click. The author reports it beats cua-driver on most tasks (up to 8x on some); treat the benchmarks as vendor-reported. MIT licensed.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "automate-workflows"
+  ],
+  "interfaces": [
+    "mcp",
+    "cli"
+  ],
+  "technologies": [
+    "python",
+    "mcp-protocol"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "1–8 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-06",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

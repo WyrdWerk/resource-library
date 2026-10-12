@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "augure-ai",
+  "title": "Augure AI",
+  "canonical_url": "https://augureai.ca/pricing",
+  "brief": "Augure's pricing page — a \"sovereign AI for Canadian teams\" inference provider with a free tier, Pro at C$20/month, Max at C$80/month, and Enterprise. Prices are in Canadian dollars and vendor-reported.",
+  "caveat": null,
+  "details": "Augure is a Canadian \"sovereign AI\" provider aimed at regulated industries, offering chat, knowledge base, legal review, and code products on Canadian-owned infrastructure. Pricing is in Canadian dollars: a free tier (about 25 messages a day), Pro at C$20/month (no message limits, roughly 1,100 messages a week, 100 documents a month), Max at C$80/month (four times the Pro allowance, deep research agents, priority support), and custom Enterprise with SSO and compliance documentation. All plans and compliance claims are vendor-reported.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "web",
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "scarywood75"
+  },
+  "shared_on": "2026-10-09",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

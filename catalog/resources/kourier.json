@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "kourier",
+  "title": "Kourier",
+  "canonical_url": "https://kourier.sh/",
+  "brief": "Open-model inference for coding with flat monthly pricing and no token metering — Starter $20/month (1 concurrent request), Pro $50/month (3 concurrent); serves DeepSeek V4.1 Flash through an OpenAI-compatible API. A small bootstrapped shop with no uptime SLA yet, so treat reliability as unproven.",
+  "caveat": null,
+  "details": "Kourier is an open-model inference provider aimed at coding agents, selling flat monthly plans instead of per-token billing: Starter at $20/month for one concurrent request, Pro at $50/month for three, with no request-volume or token quotas. It currently serves DeepSeek V4.1 Flash through an OpenAI-compatible API and says it owns its own GPU clusters. It is a small bootstrapped business with no contractual uptime SLA yet, so reliability is unproven; treat the page as a pricing snapshot.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "simply_roo"
+  },
+  "shared_on": "2026-10-06",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "pi-bolt",
+  "title": "Pi-Bolt",
+  "canonical_url": "https://github.com/opensec-git/Pi-Bolt",
+  "brief": "Pi, the coding agent, compiled ahead of time to native code — starts 3× sooner than Pi on Bun and uses less memory, per the repo's own claims. Sharer asked \"Has anyone tried pi bolt?\"; a follow-up thread discusses whether it would need porting to work with fabric. Startup/memory figures are vendor-reported.",
+  "caveat": null,
+  "details": "Pi-Bolt is an independent MIT-licensed fork of the Pi coding agent by OpenSec that compiles Pi ahead of time to native machine code via JavaScriptCore's B3 backend, so it launches without parsing or JIT warmup and needs no Node.js or Bun installed. The same Pi commands, sessions, settings, providers and extensions work unchanged; builds exist for Linux x86-64, macOS Apple silicon and Windows x64, plus JIT variants for heavy runtime-loaded plugins. The project's benchmarks (Pi-Bolt 0.8.0 vs Pi 1.1.0 on Bun 1.4.2) claim 2-3x faster startup, about a third of the CPU over a session, and much cheaper long answers/large files — vendor-reported on AMD EPYC 7B13 and Apple M5, treat as unverified. Not affiliated with Pi's authors or Oven. The Discord sharer asked whether anyone had tried it, and a follow-up thread discussed porting effort for fabric compatibility.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "generate-code"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "8–15 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Aspiring UBI Recipient"
+  },
+  "shared_on": "2026-10-10",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

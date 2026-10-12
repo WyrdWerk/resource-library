@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-101 curated providers, with briefs.
+109 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -86,6 +86,24 @@
 - Categories: providers, web-app
 - Brief: Codex Resets' tracker page for Tibo's 28-day challenge — "an improvement or a reset, every day", following the announcements one at a time. Complements the Tibo announcement tweet shared the same night; challenge-progress claims are as reported on the page.
 
+## Kourier
+- URL: https://kourier.sh/
+- Shared by: simply_roo (6 Oct)
+- Categories: providers
+- Brief: Open-model inference for coding with flat monthly pricing and no token metering — Starter $20/month (1 concurrent request), Pro $50/month (3 concurrent); serves DeepSeek V4.1 Flash through an OpenAI-compatible API. A small bootstrapped shop with no uptime SLA yet, so treat reliability as unproven.
+
+## LithosAI
+- URL: https://www.lithosai.com/pricing
+- Shared by: Felix (6 Oct)
+- Categories: providers
+- Brief: Tiered Kimi K3 inference (Base/Fast/Ultra) billed per million tokens, serving full-precision open weights on every tier; the Ultra tier claims 250–1000 tokens/sec per user. OpenAI-compatible endpoints with prompt caching on by default; speed figures are vendor-reported.
+
+## Artificial Analysis: DeepSeek V4.1 Flash providers
+- URL: https://artificialanalysis.ai/models/deepseek-v4-1-flash/providers
+- Shared by: Felix (6 Oct)
+- Categories: providers
+- Brief: Artificial Analysis' live provider comparison for DeepSeek V4.1 Flash across 21 API providers — pricing, output speed, latency and cache behaviour side by side, with LithosAI's Ultra Chat tier currently fastest and DeepInfra cheapest. A benchmark snapshot; figures shift as providers are re-tested. (Shared URL carried a `?pricing-comparisons=` view parameter; recorded without it, matching the existing AA entries.)
+
 ## OpenDesign
 - URL: https://open-design.ai/pricing/
 - Shared by: 𒄷𒈦🍐ꀷꌅꑀꈜꌚ ꋖꊿ ꀷꂑꑀ (tag 桃桃物语) (7 Oct)
@@ -121,6 +139,36 @@
 - Shared by: Alp (8 Oct)
 - Categories: providers
 - Brief: Neuralwatt Cloud's model page for Xiaomi's MiMo-V2.6-Pro (1M context, sparse MoE) — $0.87/$1.74 per million in/out tokens, a 35%-off Flex tier, live latency/throughput stats, per-request energy figures, and OpenAI-compatible API examples. Model-specific page under the already-published Neuralwatt provider entry. Pricing and performance figures are live and will shift.
+
+## plexus
+- URL: https://github.com/mcowger/plexus
+- Shared by: RAPTOR_6 (9 Oct)
+- Categories: github, providers
+- Brief: A unified API gateway for multiple AI providers (OpenAI, Anthropic, Gemini, etc.) — switch models and providers behind one API. RAPTOR_6 reports it supports OAuth for Claude Pro or Max accounts; that claim is the sharer's, unverified.
+
+## pi-anthropic-auth
+- URL: https://github.com/gotgenes/pi-anthropic-auth
+- Shared by: Aspiring UBI Recipient (9 Oct)
+- Categories: github, dev-tool
+- Brief: A Pi extension package adding Anthropic OAuth compatibility, so Pi can run on Claude OAuth credentials. The sharer calls it "very safe"; that assessment is their opinion, not a security audit.
+
+## Augure AI
+- URL: https://augureai.ca/pricing
+- Shared by: scarywood75 (9 Oct)
+- Categories: providers
+- Brief: Augure's pricing page — a "sovereign AI for Canadian teams" inference provider with a free tier, Pro at C$20/month, Max at C$80/month, and Enterprise. Prices are in Canadian dollars and vendor-reported.
+
+## OpenRouter: Step-5-Preview
+- URL: https://openrouter.ai/stepfun/step-5-preview
+- Shared by: nixerman (8 Oct)
+- Categories: providers
+- Brief: StepFun's Step-5-Preview model page — 1M-token context, $1/$2.70 per million in/out tokens, a sparse-MoE flagship (27B active / 600B total) positioned for agentic work. nixerman flags the pricing as steep for this tier; pricing is live and will shift.
+
+## Does Fast Mode Do Anything?
+- URL: https://doesfastdoanything.com/
+- Shared by: baanish (10 Oct)
+- Categories: providers
+- Brief: An hourly-updated benchmark site testing whether Codex Fast mode delivers on its promise of 2× speed for 2.5× the usage — a running provider comparison of Fast mode against standard. Bare link share ("lol"); figures are the site's own measurements.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
