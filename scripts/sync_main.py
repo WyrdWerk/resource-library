@@ -10,13 +10,17 @@ catalog/, so the right resolution is never a hand-merge — it is "merge the
 sources, then rebuild". This script does exactly that:
 
   1. merge <base> into HEAD (no commit);
-  2. if any conflict touches a hand-written file (notes/, scripts/, tests/*.py,
-     ...), abort the merge and exit 2 — a human/agent must resolve that;
-  3. otherwise take either side of each generated file (it is about to be
+  2. merge tests/gold_queries.json entry by entry (keyed by query + filters):
+     daily PRs re-review different gold queries, so a text-level conflict is
+     usually two independent edits; only both sides changing the *same* query
+     differently still needs a human;
+  3. if any other conflict touches a hand-written file (notes/, scripts/,
+     tests/*.py, ...), abort the merge and exit 2 — a human/agent must resolve that;
+  4. otherwise take either side of each generated file (it is about to be
      rebuilt) and run scripts/regen.py;
-  4. check no resource id was lost: the merged id set must equal
+  5. check no resource id was lost: the merged id set must equal
      (base ids ∪ head ids) minus ids either side deliberately removed;
-  5. optionally run the test suite, then commit the merge.
+  6. optionally run the test suite, then commit the merge.
 
 Exit codes: 0 synced (or already up to date), 2 needs a human, 1 other failure.
 Used by .github/workflows/sync-prs.yml after every merge to main; safe to run
@@ -35,6 +39,7 @@ GENERATED = [
     "catalog/resources/*", "catalog/_migration_report.json", "catalog/_exceptions.json",
     "api/v1/*", "tests/manifest.baseline.json",
 ]
+GOLD = "tests/gold_queries.json"
 # Never meant to be tracked; dropped if a branch still carries them.
 JUNK = [".pytest_cache/*", "*/__pycache__/*", "__pycache__/*"]
 
@@ -53,6 +58,42 @@ def matches(path, patterns):
 def ids_at(ref):
     r = git("show", f"{ref}:data.json", check=False)
     return {row["id"] for row in json.loads(r.stdout)} if r.returncode == 0 else set()
+
+
+def merge_gold(root):
+    """Three-way merge GOLD per entry from the index stages; True if resolved.
+
+    The suite's precision gate (--test) still judges the merged expectations.
+    """
+    def stage(n):
+        r = git("show", f":{n}:{GOLD}", check=False)
+        return json.loads(r.stdout) if r.returncode == 0 else None
+
+    base, ours, theirs = stage(1), stage(2), stage(3)
+    if base is None or ours is None or theirs is None:
+        return False
+    key = lambda e: (e["query"], json.dumps(e.get("filters", {}), sort_keys=True))
+    b, o, t = ({key(e): e for e in side} for side in (base, ours, theirs))
+    if len(b) != len(base) or len(o) != len(ours) or len(t) != len(theirs):
+        return False  # duplicate keys: not safe to merge mechanically
+    merged = {}
+    for k in [*o, *(k for k in t if k not in o)]:  # ours' order, then their additions
+        bv, ov, tv = b.get(k), o.get(k), t.get(k)
+        if ov == tv or tv == bv:
+            res = ov
+        elif ov == bv:
+            res = tv
+        else:
+            print(f"  {GOLD}: both sides changed {k[0]!r} differently")
+            return False
+        if res is not None:
+            merged[k] = res
+    # match the file's existing format (1-space indent, no trailing newline)
+    (root / GOLD).write_text(json.dumps(list(merged.values()), indent=1, ensure_ascii=False),
+                             encoding="utf-8")
+    git("add", "--", GOLD)
+    print(f"merged {GOLD} entry by entry")
+    return True
 
 
 def main():
@@ -80,13 +121,16 @@ def main():
 
     merge = git("merge", "--no-commit", "--no-ff", args.base, check=False)
     conflicted = git("diff", "--name-only", "--diff-filter=U").stdout.split()
+    had_conflicts = bool(conflicted)
+    if GOLD in conflicted and merge_gold(root):
+        conflicted.remove(GOLD)
     manual = [p for p in conflicted if not matches(p, GENERATED + JUNK)]
     if manual:
         git("merge", "--abort", check=False)
         print("conflicts in hand-written files need a human/agent:")
         print("\n".join(f"  {p}" for p in manual))
         return 2
-    if merge.returncode and not conflicted:
+    if merge.returncode and not had_conflicts:
         git("merge", "--abort", check=False)
         sys.exit(f"merge failed:\n{merge.stdout}{merge.stderr}")
 

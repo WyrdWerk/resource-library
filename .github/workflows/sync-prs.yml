@@ -63,25 +63,40 @@ jobs:
           for n in $prs; do
             branch=$(gh pr view "$n" --json headRefName --jq .headRefName)
             echo "::group::PR #$n ($branch)"
-            git checkout -q -B "$branch" "origin/$branch"
-            before=$(git rev-parse HEAD)
-            set +e
-            out=$(python "$RUNNER_TEMP/sync_main.py" --base origin/main --test 2>&1); rc=$?
-            set -e
-            echo "$out"
-            if [ $rc -eq 0 ] && [ "$(git rev-parse HEAD)" != "$before" ]; then
-              if git push origin "HEAD:refs/heads/$branch"; then
-                gh api "repos/$GITHUB_REPOSITORY/statuses/$(git rev-parse HEAD)" \
-                  -f state=success -f context="pytest (sync-prs)" -f target_url="$RUN_URL" \
-                  -f description="Full suite passed on this exact commit before push" >/dev/null
-              else
-                status=1
+            # Two attempts: if someone pushes to the branch while we rebuild, the
+            # push is rejected; refetch and redo the sync instead of failing.
+            for attempt in 1 2; do
+              # Refetch right before syncing: the checkout above is stale by the
+              # time later PRs in the loop (or a retry) get here.
+              git fetch -q origin main "+refs/heads/$branch:refs/remotes/origin/$branch"
+              git checkout -q -B "$branch" "origin/$branch"
+              before=$(git rev-parse HEAD)
+              set +e
+              out=$(python "$RUNNER_TEMP/sync_main.py" --base origin/main --test 2>&1); rc=$?
+              set -e
+              echo "$out"
+              retry=0
+              if [ $rc -eq 0 ] && [ "$(git rev-parse HEAD)" != "$before" ]; then
+                if ! git push origin "HEAD:refs/heads/$branch"; then
+                  retry=1
+                else
+                  gh api "repos/$GITHUB_REPOSITORY/statuses/$(git rev-parse HEAD)" \
+                    -f state=success -f context="pytest (sync-prs)" -f target_url="$RUN_URL" \
+                    -f description="Full suite passed on this exact commit before push" >/dev/null
+                fi
+              elif [ $rc -ne 0 ]; then
+                body=$(printf '**sync-prs:** could not auto-merge `main` into this branch (exit %s).\n\n```\n%s\n```\n\nResolve the hand-written conflicts listed above, then run `python3 scripts/sync_main.py` (it rebuilds every generated file) and push.' "$rc" "$(echo "$out" | tail -n 30)")
+                gh pr comment "$n" --edit-last --body "$body" 2>/dev/null || gh pr comment "$n" --body "$body"
+                # A comment alone is easy to miss (PR #27 sat stuck for days):
+                # mark the head commit red so the PR list shows it.
+                gh api "repos/$GITHUB_REPOSITORY/statuses/$before" \
+                  -f state=failure -f context="sync-prs" -f target_url="$RUN_URL" \
+                  -f description="main can't be merged in automatically; see PR comment" >/dev/null
               fi
-            elif [ $rc -ne 0 ]; then
-              body=$(printf '**sync-prs:** could not auto-merge `main` into this branch (exit %s).\n\n```\n%s\n```\n\nResolve the hand-written conflicts listed above, then run `python3 scripts/sync_main.py` (it rebuilds every generated file) and push.' "$rc" "$(echo "$out" | tail -n 30)")
-              gh pr comment "$n" --edit-last --body "$body" 2>/dev/null || gh pr comment "$n" --body "$body"
-            fi
-            git reset -q --hard && git clean -fdq && git checkout -q main
+              git reset -q --hard && git clean -fdq && git checkout -q main
+              [ $retry -eq 0 ] && break
+              if [ $attempt -eq 2 ]; then status=1; else echo "push rejected (branch moved); retrying"; fi
+            done
             echo "::endgroup::"
           done
           exit $status

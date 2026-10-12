@@ -7,7 +7,7 @@ Evidence files under test (committed, deterministic):
 """
 import json
 import re
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 import pytest
@@ -17,7 +17,10 @@ CAT = ROOT / "catalog" / "resources"
 # Record count comes from the baseline (refreshed by scripts/regen.py), never a
 # literal: hard-coded counts made every parallel resource PR conflict here.
 TOTAL = json.loads((ROOT / "tests" / "manifest.baseline.json").read_text())["inventory"]["total"]
-PROV_START, PROV_END = date(2026, 7, 20), date(2026, 12, 31)
+PROV_START = date(2026, 7, 20)
+# Upper bound is "not in the future" (+1 day: IST runs ahead of UTC CI), never a
+# literal: hard-coded end dates made every daily PR edit this file and conflict.
+LATEST = date.today() + timedelta(days=1)
 
 
 @pytest.fixture(scope="module")
@@ -66,16 +69,14 @@ def test_shared_on_dates_are_real_and_evidenced(rows, records):
         iso = rec["shared_on"]
         assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", iso), row["id"]
         dt = date.fromisoformat(iso)
-        assert dt.year == 2026, row["id"]
         if rec["source"]["channel"] == "providers":
-            # documented #providers lifetime (raw/providers_2026-07-20_to_2026-09-25.md)
-            assert PROV_START <= dt <= PROV_END, row["id"]
+            # #providers backfill starts 2026-07-20 (raw/providers_2026-07-20_to_2026-09-25.md);
+            # daily runs extend it
+            assert PROV_START <= dt <= LATEST, row["id"]
         else:
-            # share-tech collection is ongoing (daily incremental since 2026-09-26);
-            # the end bound tracks the calendar year; in-week containment is
-            # proven per-row by the migration report. (Extended 2026-10-10: was
-            # 2026-10-08, the end of the then-latest week.)
-            assert date(2026, 6, 1) <= dt <= date(2026, 12, 31), row["id"]
+            # share-tech collection is ongoing (daily since 2026-09-26); in-week
+            # containment is proven per-row by the migration report
+            assert date(2026, 6, 1) <= dt <= LATEST, row["id"]
 
 
 def test_exceptions_file_is_empty():
