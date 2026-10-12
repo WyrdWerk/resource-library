@@ -71,9 +71,11 @@ def test_shared_on_dates_are_real_and_evidenced(rows, records):
             # documented #providers lifetime (raw/providers_2026-07-20_to_2026-09-25.md)
             assert PROV_START <= dt <= PROV_END, row["id"]
         else:
-            # share-tech weeks run through the latest week ending 8 Oct 2026;
-            # in-week containment is proven per-row by the migration report
-            assert date(2026, 6, 1) <= dt <= date(2026, 10, 8), row["id"]
+            # share-tech collection is ongoing (daily incremental since 2026-09-26);
+            # the end bound tracks the calendar year; in-week containment is
+            # proven per-row by the migration report. (Extended 2026-10-10: was
+            # 2026-10-08, the end of the then-latest week.)
+            assert date(2026, 6, 1) <= dt <= date(2026, 12, 31), row["id"]
 
 
 def test_exceptions_file_is_empty():

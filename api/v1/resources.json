@@ -2193,6 +2193,276 @@
   },
   {
     "schema_version": "1.0",
+    "id": "mac-orbs",
+    "title": "Mac Orbs",
+    "canonical_url": "https://ampcode.com/morbs",
+    "brief": "Amp's Mac app for coding agents — \"Amp just got a Mac. Join the beta for Mac orbs.\" baanish shared the beta signup page; details beyond the landing copy are unconfirmed while it is in beta.",
+    "caveat": null,
+    "details": "Mac Orbs is Amp's native macOS app, currently in beta (\"It's Morbin' Time — Amp just got a Mac. Join the Beta\"). The landing page presents an orb-style agent interface and references a SwiftUI codebase with TestFlight builds (version 2.4 shown), positioning it as the Mac client for Amp's coding agents. Pricing, system requirements, and the beta timeline are not stated on the page, so treat availability and feature claims as vendor-reported.",
+    "resource_type": "tool",
+    "topics": [
+      "ai-agents",
+      "app-development"
+    ],
+    "use_cases": [
+      "manage-agents"
+    ],
+    "interfaces": [
+      "desktop"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "8–15 Oct 2026",
+    "legacy_categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "baanish"
+    },
+    "shared_on": "2026-10-10",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "maritime",
+    "title": "Maritime",
+    "canonical_url": "https://maritime.sh/pricing",
+    "brief": "Host persistent AI agents, each in its own VM — persistent disk, sleep and wake in about a second, flat plans, free for 3 agents per the embed. Pricing and performance figures are vendor-reported.",
+    "caveat": null,
+    "details": "Maritime sells per-agent VM hosting for AI agents: every agent gets 1 vCPU, 2 GB RAM, and 5 GB SSD, sleeps when idle, and wakes in about a second with all state preserved. Pricing is flat and works out to about $1 per agent per month: Free covers 3 agents forever, Starter is $20/month for 20 machines, Growth $100/month for 100, Scale $500/month for 500, Dedicated $5,000/month for 5,000 — with add-ons for extra RAM, SSD, and always-on machines, and sleeping machines free. Support is via Discord on lower tiers and private Slack on higher ones; all figures are vendor-reported and subject to change.",
+    "resource_type": "service-platform",
+    "topics": [
+      "ai-agents",
+      "cloud-infrastructure"
+    ],
+    "use_cases": [
+      "deploy-applications",
+      "provision-infrastructure"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "8–15 Oct 2026",
+    "legacy_categories": [
+      "web-app",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "baanish"
+    },
+    "shared_on": "2026-10-10",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "deno-is-joining-cloudflare",
+    "title": "Deno is joining Cloudflare",
+    "canonical_url": "https://deno.com/blog/cloudflare",
+    "brief": "Deno's announcement that it is joining Cloudflare — \"putting ourselves in the best place to build the future of the web\". Major runtime-ecosystem news; the post's framing is the company's own.",
+    "caveat": null,
+    "details": "On October 9, 2026, Ryan Dahl announced that the entire Deno team is joining Cloudflare to take Deno's runtime work further, citing a shared ambition around compute, storage, and communication without every application assembling its own infrastructure. The post frames the move as a continuation of Deno Deploy and celld, a distributed-application model built on the Cloudflare Workers programming model with scaling built into the programming model. This is an announcement of a team move, not a product launch — concrete product implications are unstated.",
+    "resource_type": "article-guide",
+    "topics": [
+      "web-development"
+    ],
+    "use_cases": [
+      "learn-technique"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "8–15 Oct 2026",
+    "legacy_categories": [
+      "article"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Blessed Piss Enjoyer"
+    },
+    "shared_on": "2026-10-09",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "plexus",
+    "title": "plexus",
+    "canonical_url": "https://github.com/mcowger/plexus",
+    "brief": "A unified API gateway for multiple AI providers (OpenAI, Anthropic, Gemini, etc.) — switch models and providers behind one API. RAPTOR_6 reports it supports OAuth for Claude Pro or Max accounts; that claim is the sharer's, unverified.",
+    "caveat": "RAPTOR_6 reports it supports OAuth for Claude Pro or Max accounts; that claim is the sharer's, unverified.",
+    "details": "Plexus is a unified API gateway for multiple AI providers (OpenAI, Anthropic, Gemini, and others) that lets client code switch models and providers without changes, exposing OpenAI-compatible endpoints. It features OAuth authentication (the sharer reports OAuth support for Claude Pro or Max accounts — unverified), plus quota tracking, embeddings, and transcriptions. The repo has around 235 stars and 53 forks; maturity and production-readiness are unevaluated beyond the README claims.",
+    "resource_type": "repository",
+    "topics": [
+      "inference",
+      "developer-tools"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "api"
+    ],
+    "technologies": [
+      "openai-api",
+      "anthropic-api"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "providers",
+    "legacy_categories": [
+      "github",
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "RAPTOR_6"
+    },
+    "shared_on": "2026-10-09",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "pi-anthropic-auth",
+    "title": "pi-anthropic-auth",
+    "canonical_url": "https://github.com/gotgenes/pi-anthropic-auth",
+    "brief": "A Pi extension package adding Anthropic OAuth compatibility, so Pi can run on Claude OAuth credentials. The sharer calls it \"very safe\"; that assessment is their opinion, not a security audit.",
+    "caveat": null,
+    "details": "pi-anthropic-auth is a Pi extension package that adds Anthropic OAuth compatibility, letting the Pi coding agent run on Anthropic OAuth credentials. The repo carries an MIT license with about 354 stars and 31 forks. The sharer describes it as \"very safe\", but that is one user's opinion, not a security audit — routing OAuth tokens through community extensions is subject to Anthropic's usage policy, so verify the current terms before use.",
+    "resource_type": "repository",
+    "topics": [
+      "ai-agents",
+      "security"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "extension"
+    ],
+    "technologies": [
+      "anthropic-api"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "providers",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "Aspiring UBI Recipient"
+    },
+    "shared_on": "2026-10-09",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "augure-ai",
+    "title": "Augure AI",
+    "canonical_url": "https://augureai.ca/pricing",
+    "brief": "Augure's pricing page — a \"sovereign AI for Canadian teams\" inference provider with a free tier, Pro at C$20/month, Max at C$80/month, and Enterprise. Prices are in Canadian dollars and vendor-reported.",
+    "caveat": null,
+    "details": "Augure is a Canadian \"sovereign AI\" provider aimed at regulated industries, offering chat, knowledge base, legal review, and code products on Canadian-owned infrastructure. Pricing is in Canadian dollars: a free tier (about 25 messages a day), Pro at C$20/month (no message limits, roughly 1,100 messages a week, 100 documents a month), Max at C$80/month (four times the Pro allowance, deep research agents, priority support), and custom Enterprise with SSO and compliance documentation. All plans and compliance claims are vendor-reported.",
+    "resource_type": "provider",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "web",
+      "api"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "scarywood75"
+    },
+    "shared_on": "2026-10-09",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "openrouter-step-5-preview",
+    "title": "OpenRouter: Step-5-Preview",
+    "canonical_url": "https://openrouter.ai/stepfun/step-5-preview",
+    "brief": "StepFun's Step-5-Preview model page — 1M-token context, $1/$2.70 per million in/out tokens, a sparse-MoE flagship (27B active / 600B total) positioned for agentic work. nixerman flags the pricing as steep for this tier; pricing is live and will shift.",
+    "caveat": null,
+    "details": "Step 5 Preview is StepFun's flagship model for agentic work, a sparse mixture-of-experts design (27B active out of 600B total parameters) with a 1M-token context window and 64K maximum output, released October 8, 2026. OpenRouter lists it at $1 per million input tokens and $2.70 per million output tokens, served by a single provider with live throughput, latency, and uptime statistics on the page. It is positioned for extended agentic tasks spanning large codebases and documents, with particular strength claimed in finance and software engineering — vendor-reported benchmarks.",
+    "resource_type": "provider",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "api",
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "nixerman"
+    },
+    "shared_on": "2026-10-08",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
     "id": "annnimate",
     "title": "Annnimate",
     "canonical_url": "https://annnimate.com",

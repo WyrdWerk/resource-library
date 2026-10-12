@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-98 curated providers, with briefs.
+102 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -103,6 +103,30 @@
 - Shared by: Felix (6 Oct)
 - Categories: providers
 - Brief: Artificial Analysis' live provider comparison for DeepSeek V4.1 Flash across 21 API providers — pricing, output speed, latency and cache behaviour side by side, with LithosAI's Ultra Chat tier currently fastest and DeepInfra cheapest. A benchmark snapshot; figures shift as providers are re-tested. (Shared URL carried a `?pricing-comparisons=` view parameter; recorded without it, matching the existing AA entries.)
+
+## plexus
+- URL: https://github.com/mcowger/plexus
+- Shared by: RAPTOR_6 (9 Oct)
+- Categories: github, providers
+- Brief: A unified API gateway for multiple AI providers (OpenAI, Anthropic, Gemini, etc.) — switch models and providers behind one API. RAPTOR_6 reports it supports OAuth for Claude Pro or Max accounts; that claim is the sharer's, unverified.
+
+## pi-anthropic-auth
+- URL: https://github.com/gotgenes/pi-anthropic-auth
+- Shared by: Aspiring UBI Recipient (9 Oct)
+- Categories: github, dev-tool
+- Brief: A Pi extension package adding Anthropic OAuth compatibility, so Pi can run on Claude OAuth credentials. The sharer calls it "very safe"; that assessment is their opinion, not a security audit.
+
+## Augure AI
+- URL: https://augureai.ca/pricing
+- Shared by: scarywood75 (9 Oct)
+- Categories: providers
+- Brief: Augure's pricing page — a "sovereign AI for Canadian teams" inference provider with a free tier, Pro at C$20/month, Max at C$80/month, and Enterprise. Prices are in Canadian dollars and vendor-reported.
+
+## OpenRouter: Step-5-Preview
+- URL: https://openrouter.ai/stepfun/step-5-preview
+- Shared by: nixerman (8 Oct)
+- Categories: providers
+- Brief: StepFun's Step-5-Preview model page — 1M-token context, $1/$2.70 per million in/out tokens, a sparse-MoE flagship (27B active / 600B total) positioned for agentic work. nixerman flags the pricing as steep for this tier; pricing is live and will shift.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
