@@ -166,8 +166,29 @@ re-covers yesterday by design; dedupe against published entries handles
 repeats). Each run writes `raw/daily-<YYYY-MM-DD>.md` and
 `notes/daily-<YYYY-MM-DD>.md` (a header noting sweep counts and newest
 message covered, `## Week:` / `## Fold into week:` / `## Providers` sections,
-and `## Dropped (and why)`), runs the full pipeline below, and opens a PR on
-a `daily/<date>` branch.
+and `## Dropped (and why)`), and runs the full pipeline below.
+
+**One rolling daily PR (since 2026-10-12).** Parallel per-day PRs kept
+conflicting and deduped only against the published site, so daily runs share
+a single open PR:
+
+1. Before collecting, look for an open daily PR:
+   `gh pr list --state open --search "head:daily/"`.
+2. **If one is open:** fetch and check out its branch fresh from origin (the
+   sync bot may have pushed to it overnight). Dedupe against the published
+   site *and* every `notes/daily-*.md` already on that branch. Add today's
+   `raw/daily-<date>.md` + `notes/daily-<date>.md`, run the pipeline, push
+   one new commit, retitle the PR `Daily updates <first date>–<today>: +N
+   resources`, and append today's summary to the PR body.
+3. **If none is open:** branch from latest `main` as `daily/<today>` and open
+   the PR. That branch stays the rolling PR's branch until it merges.
+4. Never reuse a merged or closed `daily/*` branch; never force-push.
+5. Don't hard-code dates or counts in tests. Touch `tests/gold_queries.json`
+   only when the precision test fails, and name the changed queries and why
+   in the commit message.
+
+Merge the rolling PR every few days to keep it reviewable; a bad day can be
+reverted as its own commit.
 
 ## Adding a new week
 
@@ -188,7 +209,7 @@ The repo's token is scoped to this repository only. Push with the GitHub API:
 - **Empty repo:** use the Contents API — `PUT /repos/{owner}/{repo}/contents/{path}` with base64 content, one call per file.
 - **Existing repo:** prefer a single commit via the git data API — create blobs, then a tree, then a commit, then update the branch ref.
 
-Work lands through PRs: push a topic branch (`daily/<date>`, `batch-NN/...`,
+Work lands through PRs: push a topic branch (`daily/<date>` — one rolling PR, see Daily runs — `batch-NN/...`,
 `fix/...`) and open a PR against `main`; merging deploys. Several PRs touching
 generated files at once will conflict with each other. **Never hand-merge
 generated files.** `.github/workflows/sync-prs.yml` fixes this automatically:
