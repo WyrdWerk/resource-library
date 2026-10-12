@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "does-fast-mode-do-anything",
+  "title": "Does Fast Mode Do Anything?",
+  "canonical_url": "https://doesfastdoanything.com/",
+  "brief": "An hourly-updated benchmark site testing whether Codex Fast mode delivers on its promise of 2× speed for 2.5× the usage — a running provider comparison of Fast mode against standard. Bare link share (\"lol\"); figures are the site's own measurements.",
+  "caveat": null,
+  "details": "A single-purpose benchmark site that re-tests OpenAI Codex's Fast mode every hour, measuring throughput (tokens per second) and latency (time to first token) in paired normal-vs-fast runs to check whether Fast mode delivers its promised 2x speed for 2.5x the usage. Powered by \"omp bench\" (omp.sh). (Coverage note: written from the Discord embed and the site's own framing — the live page's benchmark results are JS-rendered and were not directly fetchable.)",
+  "resource_type": "service-platform",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "baanish"
+  },
+  "shared_on": "2026-10-10",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

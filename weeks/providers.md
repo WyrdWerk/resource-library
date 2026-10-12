@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-102 curated providers, with briefs.
+103 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -127,6 +127,12 @@
 - Shared by: nixerman (8 Oct)
 - Categories: providers
 - Brief: StepFun's Step-5-Preview model page — 1M-token context, $1/$2.70 per million in/out tokens, a sparse-MoE flagship (27B active / 600B total) positioned for agentic work. nixerman flags the pricing as steep for this tier; pricing is live and will shift.
+
+## Does Fast Mode Do Anything?
+- URL: https://doesfastdoanything.com/
+- Shared by: baanish (10 Oct)
+- Categories: providers
+- Brief: An hourly-updated benchmark site testing whether Codex Fast mode delivers on its promise of 2× speed for 2.5× the usage — a running provider comparison of Fast mode against standard. Bare link share ("lol"); figures are the site's own measurements.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
