@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "anatomy",
+  "title": "Anatomy",
+  "canonical_url": "https://skills.wheresryan.sh/anatomy",
+  "brief": "A Claude Code skill that turns a one-line idea into an interactive isometric \"machine\" whose moving parts behave the way the concept does — a hash map becomes a post-office sorting desk, a bloom filter a fruit machine. The skill generates framework-free TypeScript/SVG/HTML (or React for Next.js) and ships with a live collection of 33 figures to play with on the site.",
+  "caveat": null,
+  "details": "Anatomy is a Claude Code skill that turns a one-line idea into an interactive isometric \"machine\" whose moving parts behave the way the concept does — a hash map becomes a post-office sorting desk, a bloom filter a fruit machine, the TCP handshake a mail ropeway. Its one rule, written above everything else in SKILL.md, is \"The object is the explanation\": no boxes, arrows, or floating labels; every figure is dozens to hundreds of small solid parts and every number shown comes from the same model that moves them. You write `/anatomy explain <idea>` with modifiers `interactive` (pointer/keyboard response), `WebGL` (shaders for fire, water, plasma), or `3D` (true depth, slow: hours to build). Output is framework-free TypeScript emitting SVG/HTML, or React components for a Next.js site. The site hosts a live collection of 33 figures, and quality is enforced by screenshot audits and automatic checks — on dense machines an audit proves every overlapping pair draws in the right order.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "create-media",
+    "learn-technique"
+  ],
+  "interfaces": [
+    "cli",
+    "web"
+  ],
+  "technologies": [
+    "claude-code",
+    "typescript"
+  ],
+  "license": null,
+  "open_source": false,
+  "display_period": "8–15 Oct 2026",
+  "legacy_categories": [
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-11",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

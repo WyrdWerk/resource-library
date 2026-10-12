@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "open-intelligent-ui",
+  "title": "Open Intelligent UI",
+  "canonical_url": "https://github.com/CopilotKit/OpenIntelligentUI",
+  "brief": "Extracted from ROman's share of CopilotKit's 9 Oct announcement video (the video itself isn't a library-format resource, but the announced project is): the open-source alternative to ChatGPT's Intelligent UI — your agent builds interfaces on demand (charts, 3D scenes, maps, calculators, games) inside your own app, via any AG-UI agent and any model. Generated interfaces run in an isolated iframe and can be downloaded as standalone HTML; the default setup asks for OpenAI and TypeSafe API keys.",
+  "caveat": null,
+  "details": "Open Intelligent UI is CopilotKit's open-source alternative to ChatGPT's Intelligent UI, released 9 Oct 2026: drop it into your own app and your agent answers with generated interfaces on demand — step-by-step algorithm visualizations, Three.js 3D scenes you can rotate, working calculators, games and simulations, trips plotted on a real map, and the agent picking text vs chart vs diagram per answer, all streaming in while it generates. Any agent plugs in through the AG-UI protocol (LangChain Deep Agents by default, swappable for Mastra, Google ADK, Microsoft Agent Framework) and any model can be used. Generated code runs in an isolated iframe restricted to an approved list of CDNs, and any generated interface can be downloaded as a standalone HTML file. Caveats: the default setup asks for OpenAI and TypeSafe API keys in the chat header; setup-effort and capability claims are vendor-reported and unverified.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "frontend",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "build-interfaces"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "8–15 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-11",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
