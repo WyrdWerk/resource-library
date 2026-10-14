@@ -158,3 +158,17 @@ def test_inverted_date_bounds_yield_no_results(index):
     # engine applies bounds literally; from>to is an adapter-level 400
     page, _ = search(index, "inference", {"from": "2026-09-29", "to": "2026-06-09"}, limit=100)
     assert page == []
+
+
+def test_stem_variants_do_not_double_weight_a_word():
+    # "hosted" also indexes as "host"; a title match on it must score the
+    # same as an equally rare word with no stem variants ("quantum").
+    def rec(rid, title):
+        return {"id": rid, "title": title, "brief": "", "canonical_url": f"https://{rid}.example/",
+                "resource_type": "web-app", "topics": [], "use_cases": [],
+                "interfaces": [], "technologies": []}
+    idx = build_index([rec("a", "Hosted box"), rec("b", "Quantum box")], load_taxonomy())
+    (ra, sa), = search(idx, "hosted")[0]
+    (rb, sb), = search(idx, "quantum")[0]
+    assert (ra, rb) == ("a", "b")
+    assert sa == pytest.approx(sb)

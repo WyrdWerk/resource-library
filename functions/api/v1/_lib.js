@@ -60,16 +60,18 @@ function _stemVariants(t) {
   return out.sort();
 }
 
-export function tokenize(text) {
-  const toks = [];
+export function tokenizeGroups(text) {
+  // One group per surface token: [token, ...sorted stem variants].
+  const groups = [];
   for (let t of (text || "").toLowerCase().match(TOKEN_RE) || []) {
     t = t.replace(/^[._-]+|[._-]+$/g, "");
-    if (t && !STOP.has(t) && t.length > 1) {
-      toks.push(t);
-      toks.push(..._stemVariants(t));
-    }
+    if (t && !STOP.has(t) && t.length > 1) groups.push([t, ..._stemVariants(t)]);
   }
-  return toks;
+  return groups;
+}
+
+export function tokenize(text) {
+  return tokenizeGroups(text).flat();
 }
 
 export function normUrl(u) {
@@ -195,13 +197,21 @@ export function search(index, query, filters = null, sort = "relevance", limit =
   const { docs, idf } = index;
   const q = (query || "").trim();
   const ql = q.toLowerCase();
-  let qtoks = tokenize(q);
+  // one group per query word: a word and its stem variants score once
+  // (best variant), so suffixed words aren't double-weighted
+  const qgroups = tokenizeGroups(q);
   if (q.includes(".")) {
     // domain-style queries ("openrouter.com"): also try dots as separators
-    for (const t of tokenize(q.replace(/\./g, " "))) {
-      if (!qtoks.includes(t)) qtoks.push(t);
+    const seen = new Set(qgroups.flat());
+    for (let g of tokenizeGroups(q.replace(/\./g, " "))) {
+      g = g.filter((t) => !seen.has(t));
+      if (g.length) {
+        qgroups.push(g);
+        for (const t of g) seen.add(t);
+      }
     }
   }
+  const qtoks = qgroups.flat();
   let scored = [];
 
   // exact id / url short-circuit: rank 1 with a fixed top score
@@ -218,15 +228,20 @@ export function search(index, query, filters = null, sort = "relevance", limit =
     for (const [rid, d] of docs) {
       if (!matchesFilters(d.record, filters)) continue;
       let s = 0.0;
-      for (const t of qtoks) {
-        const w = idf.get(t) || 0.0;
-        if (!w) continue;
-        s += W_TITLE_TOKEN * w * Math.min(d.title.get(t) || 0, 3);
-        s += W_BRIEF_TOKEN * w * Math.min(d.brief.get(t) || 0, 3);
-        s += W_TAX_LABEL * w * Math.min(d.tax.get(t) || 0, 2);
-        s += W_ALIAS * w * Math.min(d.alias.get(t) || 0, 2);
+      for (const g of qgroups) {
+        let best = 0.0;
+        for (const t of g) {
+          const w = idf.get(t) || 0.0;
+          if (!w) continue;
+          best = Math.max(best,
+            W_TITLE_TOKEN * w * Math.min(d.title.get(t) || 0, 3)
+            + W_BRIEF_TOKEN * w * Math.min(d.brief.get(t) || 0, 3)
+            + W_TAX_LABEL * w * Math.min(d.tax.get(t) || 0, 2)
+            + W_ALIAS * w * Math.min(d.alias.get(t) || 0, 2));
+        }
+        s += best;
       }
-      if (qtoks.length > 1) {
+      if (qgroups.length > 1) {
         if (d.titleText.includes(ql)) s += W_TITLE_PHRASE;
         else if (d.briefText.includes(ql)) s += W_BRIEF_PHRASE;
       }

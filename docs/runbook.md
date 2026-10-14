@@ -160,7 +160,8 @@ rankings. Original review: 40 queries, 2026-09-29, against the 285-record catalo
 
 Engine notes: deterministic lexical scoring, fixed field weights
 (title 5.0 / phrase 8.0 / brief 2.0 / taxonomy-label 3.0 / alias 3.0),
-light symmetric stemming (generation/generator/generates meet),
+light symmetric stemming (generation/generator/generates meet; each query
+word scores once via its best-matching variant),
 domain-style queries (`openrouter.com`) also tried with dots split,
 exact-ID and normalized-URL matches short-circuit to rank 1.
 

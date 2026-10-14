@@ -8,8 +8,8 @@ catalog + taxonomy.
 Index:  per-record token multisets (title, brief, taxonomy labels, curated
         aliases/synonyms) + corpus idf, all derived from catalog files.
 Query:  exact-ID match and normalized-URL match short-circuit to rank 1;
-        otherwise score = Σ weight(field) * Σ idf(token) over matched tokens,
-        plus exact-phrase bonuses. Ties break by id (ascending).
+        otherwise score = Σ over query words of the best-scoring stem variant's
+        Σ weight(field) * idf(token), plus exact-phrase bonuses. Ties break by id (ascending).
 
 Filters: resource_type, topic, use_case, interface, technology, channel,
          open_source. Each facet family accepts a single value or a list
@@ -75,14 +75,18 @@ def _stem_variants(t):
     return {s for s in v if len(s) > 2 and s != t}
 
 
-def tokenize(text):
-    toks = []
+def tokenize_groups(text):
+    """One group per surface token: [token, *sorted stem variants]."""
+    groups = []
     for t in TOKEN_RE.findall((text or "").lower()):
         t = t.strip("._-")
         if t and t not in STOP and len(t) > 1:
-            toks.append(t)
-            toks.extend(sorted(_stem_variants(t)))
-    return toks
+            groups.append([t] + sorted(_stem_variants(t)))
+    return groups
+
+
+def tokenize(text):
+    return [t for g in tokenize_groups(text) for t in g]
 
 
 def norm_url(u):
@@ -184,12 +188,18 @@ def search(index, query, filters=None, sort="relevance", limit=20, cursor=None):
     docs, idf = index["docs"], index["idf"]
     q = (query or "").strip()
     ql = q.lower()
-    qtoks = tokenize(q)
+    # one group per query word: a word and its stem variants score once
+    # (best variant), so suffixed words aren't double-weighted
+    qgroups = tokenize_groups(q)
     if "." in q:
         # domain-style queries ("openrouter.com"): also try dots as separators
-        for t in tokenize(q.replace(".", " ")):
-            if t not in qtoks:
-                qtoks.append(t)
+        seen = {t for g in qgroups for t in g}
+        for g in tokenize_groups(q.replace(".", " ")):
+            g = [t for t in g if t not in seen]
+            if g:
+                qgroups.append(g)
+                seen.update(g)
+    qtoks = [t for g in qgroups for t in g]
     scored = []
 
     # exact id / url short-circuit: rank 1 with a fixed top score
@@ -207,15 +217,19 @@ def search(index, query, filters=None, sort="relevance", limit=20, cursor=None):
             if not _matches_filters(r, filters):
                 continue
             s = 0.0
-            for t in qtoks:
-                w = idf.get(t, 0.0)
-                if not w:
-                    continue
-                s += W_TITLE_TOKEN * w * min(d["title"].get(t, 0), 3)
-                s += W_BRIEF_TOKEN * w * min(d["brief"].get(t, 0), 3)
-                s += W_TAX_LABEL * w * min(d["tax"].get(t, 0), 2)
-                s += W_ALIAS * w * min(d["alias"].get(t, 0), 2)
-            if len(qtoks) > 1:
+            for g in qgroups:
+                best = 0.0
+                for t in g:
+                    w = idf.get(t, 0.0)
+                    if not w:
+                        continue
+                    best = max(best,
+                               W_TITLE_TOKEN * w * min(d["title"].get(t, 0), 3)
+                               + W_BRIEF_TOKEN * w * min(d["brief"].get(t, 0), 3)
+                               + W_TAX_LABEL * w * min(d["tax"].get(t, 0), 2)
+                               + W_ALIAS * w * min(d["alias"].get(t, 0), 2))
+                s += best
+            if len(qgroups) > 1:
                 if ql in d["title_text"]:
                     s += W_TITLE_PHRASE
                 elif ql in d["brief_text"]:
