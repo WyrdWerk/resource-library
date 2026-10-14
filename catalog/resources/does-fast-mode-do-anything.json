@@ -18,7 +18,7 @@
   ],
   "technologies": [],
   "license": null,
-  "open_source": null,
+  "open_source": false,
   "display_period": "providers",
   "legacy_categories": [
     "providers"

@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "subq",
+  "title": "SubQ",
+  "canonical_url": "https://subq.ai/",
+  "brief": "Inference API from Subquadratic for \"SubQ Snap\", a multimodal long-context decision model (up to 384K context) aimed at agentic workflows — routing, ranking, classifying, yes/no calls — at a fraction of frontier cost, with free 100M tokens for the first 10,000 users. Built on a proprietary Subquadratic Sparse Attention architecture rather than transformers. - Warning: Data retention is indefinite by default; zero-data-retention is available only via email request (per their docs, surfaced by Alp). Community members also noted the homepage no longer features the company's earlier LLM (Tom: \"it's qwen\") — the offering appears to have pivoted, so verify what's actually on offer. Benchmark and pricing claims are vendor-reported.",
+  "caveat": null,
+  "details": "SubQ is the inference API from Subquadratic for \"SubQ Snap\", a multimodal long-context decision model (up to 384K context) positioned for enterprise agentic workflows — structured calls like routing, ranking, classifying, and yes/no decisions that don't need a frontier LLM's deep reasoning, at a fraction of the cost. It runs on a proprietary Subquadratic Sparse Attention architecture instead of transformers, and the homepage advertises free 100M tokens for the first 10,000 users, with an OpenAI-compatible API path. Caveats: the company appears to have pivoted its offering — community members noted the homepage no longer features its earlier main LLM (a Qwen-based model) — so verify what's actually on offer before committing; data retention is indefinite by default, with zero-data-retention available only via email request; benchmark and pricing claims are vendor-reported.",
+  "resource_type": "provider",
+  "topics": [
+    "inference",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "run-inference",
+    "manage-agents"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "ajthemacboy"
+  },
+  "shared_on": "2026-10-12",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

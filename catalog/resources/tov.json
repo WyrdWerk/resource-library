@@ -8,8 +8,8 @@
   "details": "Tov is a programming language aimed at coding agents: agents write TypeScript-shaped code with stricter types (separate int and f64, no any/null/==), and the Tov compiler checks it, emits C, and hands that to clang, producing a single native binary. The Rust-written checker returns machine-readable fixes (tov check --json) that an agent can apply itself, and the workflow is designed around an agent install prompt plus llms.txt. The project's own benchmarks claim it beats Rust on several micro-benchmarks (e.g. 242k req/s JSON API vs 216k for axum, 42 ms compiles, 33 KB stripped binaries, 1.6 MB server memory) and a Tov-written screen encoder 5.2x faster than x264 at equal quality — all vendor-reported on an Apple M4 Max, treat as unverified. Works today for CLI programs and web servers on macOS and Linux with Bun/Node APIs and npm packages; Windows, TLS sockets, worker threads and some TypeScript features are not yet supported.",
   "resource_type": "tool",
   "topics": [
-    "ai-agents",
-    "developer-tools"
+    "developer-tools",
+    "ai-agents"
   ],
   "use_cases": [
     "generate-code"
@@ -18,10 +18,10 @@
     "cli"
   ],
   "technologies": [
-    "typescript"
+    "rust"
   ],
   "license": null,
-  "open_source": null,
+  "open_source": false,
   "display_period": "8–15 Oct 2026",
   "legacy_categories": [
     "dev-tool",

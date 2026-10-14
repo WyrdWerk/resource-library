@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "prime-intellect-inference",
+  "title": "Prime Intellect Inference",
+  "canonical_url": "https://www.primeintellect.ai/",
+  "brief": "Prime Intellect's serverless inference offering — hosted models run on their own infrastructure plus an Inference Gateway to third-party models, all behind one OpenAI-compatible API. Per the channel their routing \"isn't half bad\"; the company is the same team behind the Prime Agent RL framework already in the library. - Warning: The shared link was a login-walled dashboard deep link; the public homepage above documents the inference offering. Pricing claims are vendor-reported.",
+  "caveat": null,
+  "details": "Prime Intellect's inference platform comes in two flavors: Prime Hosted Models (starting with GLM-5.3) served on Prime's own infrastructure, and a Prime Inference Gateway that routes to third-party models — both accessed through one OpenAI-compatible API, with a dedicated-inference option for teams that need custom latency and reliability. The company is backed by Founders Fund, NVIDIA, Intel, and angels including Andrej Karpathy and John Schulman. In the channel, one_phantomic reported their routing harness \"isn't half bad\" after trying it. Caveat: the originally shared link was a login-walled dashboard deep link; the public homepage documents the inference offering.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference",
+    "host-models"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "scarywood75"
+  },
+  "shared_on": "2026-10-14",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

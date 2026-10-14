@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-109 curated providers, with briefs.
+112 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -169,6 +169,24 @@
 - Shared by: baanish (10 Oct)
 - Categories: providers
 - Brief: An hourly-updated benchmark site testing whether Codex Fast mode delivers on its promise of 2× speed for 2.5× the usage — a running provider comparison of Fast mode against standard. Bare link share ("lol"); figures are the site's own measurements.
+
+## SubQ
+- URL: https://subq.ai/
+- Shared by: ajthemacboy (12 Oct)
+- Categories: providers
+- Brief: Inference API from Subquadratic for "SubQ Snap", a multimodal long-context decision model (up to 384K context) aimed at agentic workflows — routing, ranking, classifying, yes/no calls — at a fraction of frontier cost, with free 100M tokens for the first 10,000 users. Built on a proprietary Subquadratic Sparse Attention architecture rather than transformers. - Warning: Data retention is indefinite by default; zero-data-retention is available only via email request (per their docs, surfaced by Alp). Community members also noted the homepage no longer features the company's earlier LLM (Tom: "it's qwen") — the offering appears to have pivoted, so verify what's actually on offer. Benchmark and pricing claims are vendor-reported.
+
+## Prime Intellect Inference
+- URL: https://www.primeintellect.ai/
+- Shared by: scarywood75 (14 Oct)
+- Categories: providers
+- Brief: Prime Intellect's serverless inference offering — hosted models run on their own infrastructure plus an Inference Gateway to third-party models, all behind one OpenAI-compatible API. Per the channel their routing "isn't half bad"; the company is the same team behind the Prime Agent RL framework already in the library. - Warning: The shared link was a login-walled dashboard deep link; the public homepage above documents the inference offering. Pricing claims are vendor-reported.
+
+## Experiential Labs
+- URL: https://www.experientiallabs.ai/pricing
+- Shared by: one_phantomic (14 Oct)
+- Categories: providers
+- Brief: An inference gateway routing every provider through one OpenAI-compatible endpoint at 0% token markup — credits are the single billing unit, with budgets, model allowlists, and per-token attribution built in. Pro at $20/mo advertises "unlimited" DeepSeek V4.1 Flash, GPT-6 Luna, Claude Haiku 5.5, and Jev — but only for the plan's first 2,000 credits each month, then list price. - Warning: The "unlimited" wording was challenged in-channel ("I smell bull"); pricing and discount claims are vendor-reported.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

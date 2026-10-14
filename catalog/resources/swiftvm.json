@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "swiftvm",
+  "title": "SwiftVM",
+  "canonical_url": "https://swiftvm.app/",
+  "brief": "A native macOS app that puts virtual machines in your menu bar — run macOS and Linux VMs with a click, built with Swift and Apple's Virtualization framework. For developers who keep test VMs around: no heavyweight hypervisor window, the VMs live alongside your other menu-bar utilities.",
+  "caveat": null,
+  "details": "SwiftVM is a native macOS app that runs macOS and Linux virtual machines from your menu bar, built with Swift and Apple's Virtualization framework — no heavyweight hypervisor UI, no root helper, no kernel extension. Guests set themselves up (macOS installs from Apple with no setup assistant; Ubuntu and Debian from ready-made images in seconds), every machine gets an SSH name so you can `ssh web-server` without looking up addresses, and each machine is a single `.swiftvm` folder with APFS-clone snapshots and duplicates. It also offers suspend/resume to disk, shared folders and clipboard, stable per-machine IP addresses with port forwarding, USB device passthrough, and a `swiftvm` CLI that drives the app so the panel and terminal never disagree. Install via `brew install --cask swiftvm-app/tap/swiftvm`. Free and open source; requires Apple silicon and macOS 27 or newer.",
+  "resource_type": "tool",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "provision-infrastructure"
+  ],
+  "interfaces": [
+    "desktop",
+    "cli"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "8–15 Oct 2026",
+  "legacy_categories": [
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-12",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

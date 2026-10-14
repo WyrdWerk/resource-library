@@ -2907,8 +2907,8 @@
     "details": "Tov is a programming language aimed at coding agents: agents write TypeScript-shaped code with stricter types (separate int and f64, no any/null/==), and the Tov compiler checks it, emits C, and hands that to clang, producing a single native binary. The Rust-written checker returns machine-readable fixes (tov check --json) that an agent can apply itself, and the workflow is designed around an agent install prompt plus llms.txt. The project's own benchmarks claim it beats Rust on several micro-benchmarks (e.g. 242k req/s JSON API vs 216k for axum, 42 ms compiles, 33 KB stripped binaries, 1.6 MB server memory) and a Tov-written screen encoder 5.2x faster than x264 at equal quality — all vendor-reported on an Apple M4 Max, treat as unverified. Works today for CLI programs and web servers on macOS and Linux with Bun/Node APIs and npm packages; Windows, TLS sockets, worker threads and some TypeScript features are not yet supported.",
     "resource_type": "tool",
     "topics": [
-      "ai-agents",
-      "developer-tools"
+      "developer-tools",
+      "ai-agents"
     ],
     "use_cases": [
       "generate-code"
@@ -2917,10 +2917,10 @@
       "cli"
     ],
     "technologies": [
-      "typescript"
+      "rust"
     ],
     "license": null,
-    "open_source": null,
+    "open_source": false,
     "display_period": "8–15 Oct 2026",
     "legacy_categories": [
       "dev-tool",
@@ -2958,7 +2958,7 @@
     ],
     "technologies": [],
     "license": null,
-    "open_source": null,
+    "open_source": true,
     "display_period": "8–15 Oct 2026",
     "legacy_categories": [
       "github",
@@ -2995,7 +2995,7 @@
     ],
     "technologies": [],
     "license": null,
-    "open_source": null,
+    "open_source": false,
     "display_period": "providers",
     "legacy_categories": [
       "providers"
@@ -3086,6 +3086,197 @@
       "sharer": "ROman"
     },
     "shared_on": "2026-10-11",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "swiftvm",
+    "title": "SwiftVM",
+    "canonical_url": "https://swiftvm.app/",
+    "brief": "A native macOS app that puts virtual machines in your menu bar — run macOS and Linux VMs with a click, built with Swift and Apple's Virtualization framework. For developers who keep test VMs around: no heavyweight hypervisor window, the VMs live alongside your other menu-bar utilities.",
+    "caveat": null,
+    "details": "SwiftVM is a native macOS app that runs macOS and Linux virtual machines from your menu bar, built with Swift and Apple's Virtualization framework — no heavyweight hypervisor UI, no root helper, no kernel extension. Guests set themselves up (macOS installs from Apple with no setup assistant; Ubuntu and Debian from ready-made images in seconds), every machine gets an SSH name so you can `ssh web-server` without looking up addresses, and each machine is a single `.swiftvm` folder with APFS-clone snapshots and duplicates. It also offers suspend/resume to disk, shared folders and clipboard, stable per-machine IP addresses with port forwarding, USB device passthrough, and a `swiftvm` CLI that drives the app so the panel and terminal never disagree. Install via `brew install --cask swiftvm-app/tap/swiftvm`. Free and open source; requires Apple silicon and macOS 27 or newer.",
+    "resource_type": "tool",
+    "topics": [
+      "developer-tools"
+    ],
+    "use_cases": [
+      "provision-infrastructure"
+    ],
+    "interfaces": [
+      "desktop",
+      "cli"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": true,
+    "display_period": "8–15 Oct 2026",
+    "legacy_categories": [
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-10-12",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "unlimited-ocr",
+    "title": "Unlimited OCR",
+    "canonical_url": "https://github.com/baidu/Unlimited-OCR",
+    "brief": "Extracted from ROman's share of @BrooksWhaleX's announcement (the tweet itself is just the announcement; the announced project is): Baidu's open-source (MIT) 3B-parameter OCR model that parses 100-page PDFs in one forward pass — 500M active params via MoE, constant KV cache from Reference Sliding Window Attention, 16× token compression built on DeepSeek OCR. Scores 93.23 on OmniDocBench v1.5 (+6.22 over DeepSeek OCR) and runs locally on a single GPU; benchmark claims are vendor-reported.",
+    "caveat": null,
+    "details": "Unlimited OCR is Baidu's open-source (MIT) 3B-parameter Mixture-of-Experts OCR model for \"one-shot long-horizon\" document parsing: with only 500M active params and Reference Sliding Window Attention keeping the KV cache constant, it parses dozens of pages in one forward pass (up to 32K context) instead of page-by-page chunking. It builds on DeepSeek OCR's DeepEncoder (SAM-ViT + CLIP-ViT) with 16x token compression — a 1024x1024 page becomes just 256 visual tokens — and scores 93.23 on OmniDocBench v1.5 (+6.22 over the DeepSeek OCR baseline). The repo (27,000+ stars) supports Transformers, vLLM (official Docker images), and SGLang serving through an OpenAI-compatible API, ships an infer.py batch script for image dirs and PDFs, plus a Hugging Face demo and GGUF/Ollama/llama.cpp variants from the community; weights are MIT-licensed, commercial use OK. Caveats: benchmark scores are vendor-reported and have not been independently verified.",
+    "resource_type": "repository",
+    "topics": [
+      "developer-tools"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "cli",
+      "api"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "license": null,
+    "open_source": true,
+    "display_period": "8–15 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "ROman"
+    },
+    "shared_on": "2026-10-12",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "subq",
+    "title": "SubQ",
+    "canonical_url": "https://subq.ai/",
+    "brief": "Inference API from Subquadratic for \"SubQ Snap\", a multimodal long-context decision model (up to 384K context) aimed at agentic workflows — routing, ranking, classifying, yes/no calls — at a fraction of frontier cost, with free 100M tokens for the first 10,000 users. Built on a proprietary Subquadratic Sparse Attention architecture rather than transformers. - Warning: Data retention is indefinite by default; zero-data-retention is available only via email request (per their docs, surfaced by Alp). Community members also noted the homepage no longer features the company's earlier LLM (Tom: \"it's qwen\") — the offering appears to have pivoted, so verify what's actually on offer. Benchmark and pricing claims are vendor-reported.",
+    "caveat": null,
+    "details": "SubQ is the inference API from Subquadratic for \"SubQ Snap\", a multimodal long-context decision model (up to 384K context) positioned for enterprise agentic workflows — structured calls like routing, ranking, classifying, and yes/no decisions that don't need a frontier LLM's deep reasoning, at a fraction of the cost. It runs on a proprietary Subquadratic Sparse Attention architecture instead of transformers, and the homepage advertises free 100M tokens for the first 10,000 users, with an OpenAI-compatible API path. Caveats: the company appears to have pivoted its offering — community members noted the homepage no longer features its earlier main LLM (a Qwen-based model) — so verify what's actually on offer before committing; data retention is indefinite by default, with zero-data-retention available only via email request; benchmark and pricing claims are vendor-reported.",
+    "resource_type": "provider",
+    "topics": [
+      "inference",
+      "ai-agents"
+    ],
+    "use_cases": [
+      "run-inference",
+      "manage-agents"
+    ],
+    "interfaces": [
+      "api"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "ajthemacboy"
+    },
+    "shared_on": "2026-10-12",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "prime-intellect-inference",
+    "title": "Prime Intellect Inference",
+    "canonical_url": "https://www.primeintellect.ai/",
+    "brief": "Prime Intellect's serverless inference offering — hosted models run on their own infrastructure plus an Inference Gateway to third-party models, all behind one OpenAI-compatible API. Per the channel their routing \"isn't half bad\"; the company is the same team behind the Prime Agent RL framework already in the library. - Warning: The shared link was a login-walled dashboard deep link; the public homepage above documents the inference offering. Pricing claims are vendor-reported.",
+    "caveat": null,
+    "details": "Prime Intellect's inference platform comes in two flavors: Prime Hosted Models (starting with GLM-5.3) served on Prime's own infrastructure, and a Prime Inference Gateway that routes to third-party models — both accessed through one OpenAI-compatible API, with a dedicated-inference option for teams that need custom latency and reliability. The company is backed by Founders Fund, NVIDIA, Intel, and angels including Andrej Karpathy and John Schulman. In the channel, one_phantomic reported their routing harness \"isn't half bad\" after trying it. Caveat: the originally shared link was a login-walled dashboard deep link; the public homepage documents the inference offering.",
+    "resource_type": "provider",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference",
+      "host-models"
+    ],
+    "interfaces": [
+      "api",
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "scarywood75"
+    },
+    "shared_on": "2026-10-14",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "experiential-labs",
+    "title": "Experiential Labs",
+    "canonical_url": "https://www.experientiallabs.ai/pricing",
+    "brief": "An inference gateway routing every provider through one OpenAI-compatible endpoint at 0% token markup — credits are the single billing unit, with budgets, model allowlists, and per-token attribution built in. Pro at $20/mo advertises \"unlimited\" DeepSeek V4.1 Flash, GPT-6 Luna, Claude Haiku 5.5, and Jev — but only for the plan's first 2,000 credits each month, then list price. - Warning: The \"unlimited\" wording was challenged in-channel (\"I smell bull\"); pricing and discount claims are vendor-reported.",
+    "caveat": null,
+    "details": "Experiential Labs is an inference gateway that puts every hosted provider behind one OpenAI-compatible /v1 endpoint, billing everything in credits at a flat 1¢ per credit with 0% markup on routed tokens — what you pay for is the plan's unlocks, not a percentage of traffic. Free gives 500 credits a month after a one-time $1 card verification; Pro ($20/mo) adds BYOK and local models, zero data retention, and \"unlimited\" usage of DeepSeek V4.1 Flash, GPT-6 Luna, Claude Haiku 5.5, and Jev capped at the plan's first 2,000 credits each month. Higher Max and Ultra tiers raise rate limits and deepen per-model discounts; the gateway also ships self-hostable via uvx, with budgets, per-key model allowlists, provider failover, and per-token usage attribution. Caveat: channel members challenged the \"unlimited\" wording as misleading, and all pricing claims are vendor-reported.",
+    "resource_type": "provider",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference",
+      "monitor-systems"
+    ],
+    "interfaces": [
+      "api",
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "one_phantomic"
+    },
+    "shared_on": "2026-10-14",
     "verification": {
       "status": "unchecked",
       "checked_at": null,

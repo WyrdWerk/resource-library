@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "unlimited-ocr",
+  "title": "Unlimited OCR",
+  "canonical_url": "https://github.com/baidu/Unlimited-OCR",
+  "brief": "Extracted from ROman's share of @BrooksWhaleX's announcement (the tweet itself is just the announcement; the announced project is): Baidu's open-source (MIT) 3B-parameter OCR model that parses 100-page PDFs in one forward pass — 500M active params via MoE, constant KV cache from Reference Sliding Window Attention, 16× token compression built on DeepSeek OCR. Scores 93.23 on OmniDocBench v1.5 (+6.22 over DeepSeek OCR) and runs locally on a single GPU; benchmark claims are vendor-reported.",
+  "caveat": null,
+  "details": "Unlimited OCR is Baidu's open-source (MIT) 3B-parameter Mixture-of-Experts OCR model for \"one-shot long-horizon\" document parsing: with only 500M active params and Reference Sliding Window Attention keeping the KV cache constant, it parses dozens of pages in one forward pass (up to 32K context) instead of page-by-page chunking. It builds on DeepSeek OCR's DeepEncoder (SAM-ViT + CLIP-ViT) with 16x token compression — a 1024x1024 page becomes just 256 visual tokens — and scores 93.23 on OmniDocBench v1.5 (+6.22 over the DeepSeek OCR baseline). The repo (27,000+ stars) supports Transformers, vLLM (official Docker images), and SGLang serving through an OpenAI-compatible API, ships an infer.py batch script for image dirs and PDFs, plus a Hugging Face demo and GGUF/Ollama/llama.cpp variants from the community; weights are MIT-licensed, commercial use OK. Caveats: benchmark scores are vendor-reported and have not been independently verified.",
+  "resource_type": "repository",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "cli",
+    "api"
+  ],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "8–15 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-12",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

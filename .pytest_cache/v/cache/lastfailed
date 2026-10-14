@@ -1,0 +1,3 @@
+{
+  "tests/test_search.py::test_top5_precision": true
+}
