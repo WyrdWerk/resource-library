@@ -87,12 +87,12 @@
   "expect_top5": [
    "artificial-analysis-deepseek-v4-1-flash-providers",
    "artificial-analysis-glm-5-3-flash-providers",
-   "artificial-analysis-mimo-v2-6-pro-providers",
-   "battleships",
-   "prime-intellect-inference"
+   "prime-intellect-inference",
+   "pi-coralbricks-provider",
+   "artificial-analysis-mimo-v2-6-pro-providers"
   ],
   "expect_none": false,
-  "note": "re-reviewed 2026-10-14 against 376-record catalog; new prime-intellect-inference (serverless inference provider + gateway) legitimately ranks #5, shifting parasail to #6"
+  "note": "re-reviewed 2026-10-14 against 376-record catalog after the stem double-count fix (a word and its stem variants now score once). pi-coralbricks-provider returns to the top 5; battleships (sandbox/VM pricing, not inference) drops out"
  },
  {
   "query": "LLM gateway",
@@ -334,11 +334,12 @@
   "expect_top5": [
    "scenario-labs-skills",
    "pi-better-skills",
+   "security-audit-skill",
    "skills-emilkowalski",
-   "ui-skills"
+   "linus-torvalds-skill"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "re-reviewed 2026-10-14 against 376-record catalog after the stem double-count fix (a word and its stem variants now score once). singular '-skill' agent skills (security-audit-skill, linus-torvalds-skill) no longer lose to plural titles; ui-skills drops to #6"
  },
  {
   "query": "next.js template",
@@ -377,12 +378,11 @@
   "expect_top1": null,
   "expect_top5": [
    "experiential-labs",
-   "react-native-deploy",
    "zyloo",
-   "ai-router"
+   "aster"
   ],
   "expect_none": false,
-  "note": "re-reviewed 2026-10-14 against 376-record catalog; new experiential-labs (gateway advertising 'unlimited' inference on its Pro plan) legitimately ranks #1; unlimited-ocr (#2, title-word match on an OCR model) is deliberately not endorsed, so only 4 ids are pinned"
+  "note": "re-reviewed 2026-10-14 against 376-record catalog after the stem double-count fix (a word and its stem variants now score once). unlimited-ocr (title-word match on an OCR model) falls out of the top 5. Pinned only the results that actually sell free/unlimited inference; prime-intellect-inference (#2, title match on 'inference') and react-native-deploy (#3, unlimited free builds) are not endorsed"
  },
  {
   "query": "zero data retention",

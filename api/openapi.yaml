@@ -99,7 +99,7 @@ paths:
         queries short-circuit to rank 1. Otherwise each record gets a fixed,
         weighted lexical score over title (5.0), brief (2.0), taxonomy labels
         (3.0), and curated aliases (3.0), plus a phrase bonus for multi-word
-        queries found verbatim in the title (8.0) or brief. Light stemming;
+        queries found verbatim in the title (8.0) or brief. Light stemming (a word and its stem variants count once);
         domain-style queries (`openrouter.com`) are also tried with dots
         split. Records scoring 0 are not returned. No embeddings, no model
         calls — the same query against the same catalog always returns the
