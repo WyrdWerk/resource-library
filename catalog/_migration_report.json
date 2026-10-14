@@ -1,6 +1,6 @@
 {
-  "migrated": 371,
-  "source_rows": 371,
+  "migrated": 376,
+  "source_rows": 376,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -1299,6 +1299,86 @@
       "all_equal": true,
       "shared_on": "2026-10-11",
       "date_evidence": "posted '11 Oct' inside week label '8–15 Oct 2026'"
+    },
+    {
+      "id": "swiftvm",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-12",
+      "date_evidence": "posted '12 Oct' inside week label '8–15 Oct 2026'"
+    },
+    {
+      "id": "unlimited-ocr",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-12",
+      "date_evidence": "posted '12 Oct' inside week label '8–15 Oct 2026'"
+    },
+    {
+      "id": "subq",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-12",
+      "date_evidence": "posted '12 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "prime-intellect-inference",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-14",
+      "date_evidence": "posted '14 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "experiential-labs",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-14",
+      "date_evidence": "posted '14 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
     },
     {
       "id": "annnimate",

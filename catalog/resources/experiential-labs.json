@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "experiential-labs",
+  "title": "Experiential Labs",
+  "canonical_url": "https://www.experientiallabs.ai/pricing",
+  "brief": "An inference gateway routing every provider through one OpenAI-compatible endpoint at 0% token markup — credits are the single billing unit, with budgets, model allowlists, and per-token attribution built in. Pro at $20/mo advertises \"unlimited\" DeepSeek V4.1 Flash, GPT-6 Luna, Claude Haiku 5.5, and Jev — but only for the plan's first 2,000 credits each month, then list price. - Warning: The \"unlimited\" wording was challenged in-channel (\"I smell bull\"); pricing and discount claims are vendor-reported.",
+  "caveat": null,
+  "details": "Experiential Labs is an inference gateway that puts every hosted provider behind one OpenAI-compatible /v1 endpoint, billing everything in credits at a flat 1¢ per credit with 0% markup on routed tokens — what you pay for is the plan's unlocks, not a percentage of traffic. Free gives 500 credits a month after a one-time $1 card verification; Pro ($20/mo) adds BYOK and local models, zero data retention, and \"unlimited\" usage of DeepSeek V4.1 Flash, GPT-6 Luna, Claude Haiku 5.5, and Jev capped at the plan's first 2,000 credits each month. Higher Max and Ultra tiers raise rate limits and deepen per-model discounts; the gateway also ships self-hostable via uvx, with budgets, per-key model allowlists, provider failover, and per-token usage attribution. Caveat: channel members challenged the \"unlimited\" wording as misleading, and all pricing claims are vendor-reported.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference",
+    "monitor-systems"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "one_phantomic"
+  },
+  "shared_on": "2026-10-14",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

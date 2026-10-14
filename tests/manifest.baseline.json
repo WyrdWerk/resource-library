@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "18173959370ffcd97111f046a6407a6529cc13ce52d6e283ba6b5cb681da341b",
-  "data.json": "f26751777b44f6527cdc9c98ae7024915a69517689dbd7aa068d290eec9564fc",
-  "feed.xml": "b1b789d41ea121c2f8001a99e256eec92a7e2edaa20991d1fa078e44f005ad8f",
-  "index.html": "5de4d350e0a3ba7a55d63d0551738ad2e63bf3c1d2cb25f346ea4a00ff1152a4",
-  "llms.txt": "0df90e068421474bbe9f486d0c90eced7596af05373efff2eb1ad0b8192f9820",
-  "og-image.png": "7c0d1312a20df98aef09ca607231860f4cf6e102dafa88ab5c4b04caa781eb25",
+  "CHANGELOG.md": "d1ee1bdb47e2d8ffd6b8de73b74f2fdea15738f8bc07c737ad699d9baaf12c65",
+  "data.json": "014d3bb1565e1080c6bb23b2bc1f239ffa3219e86fc47c17876a0d6493263b87",
+  "feed.xml": "26c2cead0530569f7b7b431914460e5ead94544529240a77ea09b7de68e3a738",
+  "index.html": "43e369c33077148f1ebf3f44e433c1fee6e1d482af04ea52b100fbf1c0f4632a",
+  "llms.txt": "4947fc385321cf532e3ef55a906f6e29463c9031e31c98ab4034a066e1df5186",
+  "og-image.png": "31099c63e24fe946cb04f2ead20f441802dd81c3ab00e6a3b0923443e74d5f78",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "c87bf0a1074c587460a3357171ca545a447d4a4611e126c43bdeac5fdf75069e",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -27,8 +27,8 @@
   "weeks/2026-09-17_to_2026-09-24.md": "d23f05b8bddde2ad551921b2c4e8f3462078e87dce2250aa89b72c4d69ee7ac9",
   "weeks/2026-09-24_to_2026-10-01.md": "a38ab8bce05993227a8fdadb6f78cd1c96797e00c742a4853ff804d346c88cfd",
   "weeks/2026-10-01_to_2026-10-08.md": "474955dc733dfebe6af21d60d526dee9572b20905a35dfe25e11ae9d10ed5f46",
-  "weeks/2026-10-08_to_2026-10-15.md": "a175168a0318756306d0c18561b299ad3841bb12eb7fd0b57a8c93e3019f1894",
-  "weeks/providers.md": "798a52989f23e2fd9e40f89070b6c4d56cd0f8a150f6d5cf1eee1666f01047ae"
+  "weeks/2026-10-08_to_2026-10-15.md": "b3c49a0bbf49dbe1b174e1826d481994b01bff5e83bbe63126046c9c07484237",
+  "weeks/providers.md": "45d3aaa3632bd0142e8beb34b582a954706806893e230d7bb9f88cd4e2b062e8"
  },
  "inventory": {
   "categories": [
@@ -39,13 +39,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 371,
+  "https_urls": 376,
   "nonempty_warnings": 82,
-  "providers": 109,
-  "share_tech": 262,
-  "total": 371,
-  "unique_ids": 371,
-  "unique_urls": 371
+  "providers": 112,
+  "share_tech": 264,
+  "total": 376,
+  "unique_ids": 376,
+  "unique_urls": 376
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -129,6 +129,11 @@
   "does-fast-mode-do-anything",
   "anatomy",
   "open-intelligent-ui",
+  "swiftvm",
+  "unlimited-ocr",
+  "subq",
+  "prime-intellect-inference",
+  "experiential-labs",
   "annnimate",
   "hyperiux",
   "vanta-ui",
