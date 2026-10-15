@@ -104,6 +104,7 @@
   "tests/test_search.py::test_no_result_queries",
   "tests/test_search.py::test_pagination_is_stable",
   "tests/test_search.py::test_sort_title_is_ascending_and_stable",
+  "tests/test_search.py::test_stem_variants_do_not_double_weight_a_word",
   "tests/test_search.py::test_top5_precision",
   "tests/test_site_meta.py::TestApiTab::test_index_has_api_tab_wired_up",
   "tests/test_site_meta.py::TestLlmsTxt::test_every_markdown_link_is_absolute",

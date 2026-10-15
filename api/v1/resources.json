@@ -3285,6 +3285,193 @@
   },
   {
     "schema_version": "1.0",
+    "id": "expand-fetch",
+    "title": "Expand Fetch",
+    "canonical_url": "https://expand.ai/blog/announcing-expand-fetch",
+    "brief": "An API for agents to read the web without losing detail: two in-house models (Iris for structure-preserving Markdown, X-Ray for hidden JSON) plus Wayback Machine snapshots and query-scoped Highlights, all in one fetch call. Built for research agents that misread pages — $1 per 1,000 fetches, usable today. - Warning: Benchmark and adoption claims (MDBench, \"engineers at OpenAI and Amazon\") are vendor-reported.",
+    "caveat": null,
+    "details": "Expand Fetch is a web-fetching API built for AI agents, from the applied research lab Expand. It combines two in-house models — Iris, which converts rendered pages into structure-preserving Markdown (keeping tables, icons like check marks, and column positions that naive converters drop), and X-Ray, which extracts useful hidden JSON a page loads (prices, ratings, coordinates) while filtering out analytics and config — with full-page Wayback Machine snapshots for citable provenance and Highlights, a query-scoped mode that returns only the passages answering a question (claimed 95%+ token savings). Pages render in a real browser with JavaScript, residential proxies, and bot protection handled. Pricing is $1 per 1,000 fetches with enterprise volume discounts; Crawl extends Fetch across whole sites and WebSync streams detected changes. Caveats: the MDBench benchmark (1,094 questions) is kept private and vendor-built; adoption claims such as \"engineers at OpenAI and Amazon Science\" are unverified.",
+    "resource_type": "service-platform",
+    "topics": [
+      "ai-agents",
+      "developer-tools"
+    ],
+    "use_cases": [
+      "manage-agents"
+    ],
+    "interfaces": [
+      "api"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "8–15 Oct 2026",
+    "legacy_categories": [
+      "ai-tool",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "thelaggingway"
+    },
+    "shared_on": "2026-10-15",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "code-modernization",
+    "title": "code-modernization",
+    "canonical_url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization",
+    "brief": "Anthropic's official Claude Code plugin (v1.0.0) for modernizing legacy codebases: it analyzes the system, extracts business rules, generates an approval-gated plan, rewrites across languages — then proves the new code behaves like the old by running both on identical inputs, inventing edge cases, and deliberately breaking tests to check they catch it. Verdicts come back PROVEN, PARTLY PROVEN, or NOT PROVEN; your legacy source is never touched. Install with /plugin install code-modernization@claude-plugins-official. - Warning: Tom's follow-ups in-channel noted the plugin has been out a few weeks — not brand new.",
+    "caveat": null,
+    "details": "code-modernization is an official Anthropic Claude Code plugin (v1.0.0) for modernizing legacy codebases, installable via /plugin install code-modernization@claude-plugins-official. Point it at a legacy system and it produces an assessment (inventory, complexity, debt, security), an interactive dependency map, business rules as testable Given/When/Then cards, and an approval-gated phased plan — then rebuilds via uplift (version moves), transform (module-by-module rewrites), or reimagine (a new architecture), with the legacy source never touched (work lands in analysis/ and modernized/). Its distinguishing feature is proof: modernize-verify re-runs tests from clean, executes old and new implementations on identical inputs and byte-compares outputs, invents new edge-case inputs, and deliberately introduces bugs to confirm tests catch them, yielding PROVEN, PARTLY PROVEN, or NOT PROVEN verdicts per module. A person decides at six gates (preflight answers, rule corrections, plan approval, accepted differences, proof sign-off, security patch). Caveat: large-system runs consume significant agent usage; start with a pilot module.",
+    "resource_type": "repository",
+    "topics": [
+      "developer-tools"
+    ],
+    "use_cases": [
+      "generate-code",
+      "test-software"
+    ],
+    "interfaces": [
+      "cli"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "8–15 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "asx"
+    },
+    "shared_on": "2026-10-14",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "openscale",
+    "title": "OpenScale",
+    "canonical_url": "https://app.openscale.so/",
+    "brief": "An inference provider for open models behind one OpenAI-compatible endpoint — currently serving DeepSeek V4.1 Flash at 200+ tokens per second, with input priced at $0.06 per M tokens (advertised as 50% off the typical $0.12). Pay-as-you-go with no seats or minimums, autoscaling from a single request to millions, and chat request bodies never written to disk. - Warning: Pricing and \"cheapest & fastest\" claims are vendor-reported; only DeepSeek models were on offer at share time.",
+    "caveat": null,
+    "details": "OpenScale is an inference provider serving open-weight models behind a single OpenAI-compatible endpoint, so existing OpenAI SDK code works by swapping the base URL and key. At share time only DeepSeek models were listed, with DeepSeek V4.1 Flash advertised at 200+ tokens per second via tuned kernels and warm capacity; input is priced at $0.06 per million tokens (framed as 50% off a typical $0.12), cached input at $0.003 and output at $0.24. Pricing is linear pay-as-you-go with no seats, minimums, or idle GPUs, and autoscaling is handled on their side. On privacy, chat and Messages request bodies are processed in memory and never written to disk (only 30 days of metadata is kept for billing), and a zero-data-retention switch also disables the 30-day Responses API storage. Caveat: the \"cheapest & fastest\" claims and the 50%-off framing are vendor-reported.",
+    "resource_type": "provider",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference",
+      "host-models"
+    ],
+    "interfaces": [
+      "api",
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "thelaggingway"
+    },
+    "shared_on": "2026-10-15",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "models-dev-opencode-provider-page",
+    "title": "Models.dev — OpenCode provider page",
+    "canonical_url": "https://models.dev/providers/opencode/",
+    "brief": "A directory of the 124 models available through OpenCode's inference endpoint (opencode.ai/inference/v1), with per-model pricing, context windows, and capability flags plus the @ai-sdk/openai-compatible SDK package. Useful for comparing what OpenCode serves and what each model costs there.",
+    "caveat": null,
+    "details": "Models.dev is a third-party directory of AI model providers; this page covers the OpenCode provider (provider ID opencode). It lists 124 models served through OpenCode's inference endpoint at opencode.ai/inference/v1, with per-model input/output pricing per million tokens, context window and max output sizes, and capability flags, plus the @ai-sdk/openai-compatible package name and a link to OpenCode's own docs. It functions as a provider-comparison snapshot — useful for checking which models OpenCode serves and what each costs there, including the newly added Gemini 4 Argon at $2.00/$10.00. Caveat: directory data can lag the provider's live catalog, so verify pricing against OpenCode before relying on it.",
+    "resource_type": "directory-gallery",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "scarywood75"
+    },
+    "shared_on": "2026-10-14",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "flovia",
+    "title": "Flovia",
+    "canonical_url": "https://flovia.dev",
+    "brief": "\"Costco for your API spend\": a group-buying pool that aggregates demand from individuals and startups, buys top-tier API plans in bulk, and covers the cost so members use premium APIs (including AI inference) without enterprise-sized commitments. Early access via waitlist with your X account. - Warning: Early-access waitlist; \"free\" means within per-API credit and usage limits; savings claims are vendor-reported.",
+    "caveat": null,
+    "details": "Flovia is a group-buying pool for API spend, pitched as \"Costco for your API spend\": individuals and startups join one pool, Flovia aggregates their demand into a single bulk purchase of top-tier API plans, then covers the cost so members use premium APIs within set credit and usage limits. Listed use cases include running AI inference (via OpenAI models), tracking whale wallets (Nansen, CoinGecko), onchain apps (QuickNode), web and X search (Exa, Firecrawl), and prospecting. Access is early-access via a waitlist joined with an X account, with approved members invited by email; the service is backed by the NVIDIA Inception Program. Caveats: \"free\" means within per-API allowances and rate limits shown before use, not unlimited; the long-term \"up to 70%\" savings target is a goal, not a guarantee; all claims are vendor-reported.",
+    "resource_type": "service-platform",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "api",
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "baanish"
+    },
+    "shared_on": "2026-10-15",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
     "id": "annnimate",
     "title": "Annnimate",
     "canonical_url": "https://annnimate.com",

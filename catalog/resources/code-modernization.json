@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "code-modernization",
+  "title": "code-modernization",
+  "canonical_url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization",
+  "brief": "Anthropic's official Claude Code plugin (v1.0.0) for modernizing legacy codebases: it analyzes the system, extracts business rules, generates an approval-gated plan, rewrites across languages — then proves the new code behaves like the old by running both on identical inputs, inventing edge cases, and deliberately breaking tests to check they catch it. Verdicts come back PROVEN, PARTLY PROVEN, or NOT PROVEN; your legacy source is never touched. Install with /plugin install code-modernization@claude-plugins-official. - Warning: Tom's follow-ups in-channel noted the plugin has been out a few weeks — not brand new.",
+  "caveat": null,
+  "details": "code-modernization is an official Anthropic Claude Code plugin (v1.0.0) for modernizing legacy codebases, installable via /plugin install code-modernization@claude-plugins-official. Point it at a legacy system and it produces an assessment (inventory, complexity, debt, security), an interactive dependency map, business rules as testable Given/When/Then cards, and an approval-gated phased plan — then rebuilds via uplift (version moves), transform (module-by-module rewrites), or reimagine (a new architecture), with the legacy source never touched (work lands in analysis/ and modernized/). Its distinguishing feature is proof: modernize-verify re-runs tests from clean, executes old and new implementations on identical inputs and byte-compares outputs, invents new edge-case inputs, and deliberately introduces bugs to confirm tests catch them, yielding PROVEN, PARTLY PROVEN, or NOT PROVEN verdicts per module. A person decides at six gates (preflight answers, rule corrections, plan approval, accepted differences, proof sign-off, security patch). Caveat: large-system runs consume significant agent usage; start with a pilot module.",
+  "resource_type": "repository",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "generate-code",
+    "test-software"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "8–15 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx"
+  },
+  "shared_on": "2026-10-14",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

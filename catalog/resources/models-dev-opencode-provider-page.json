@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "models-dev-opencode-provider-page",
+  "title": "Models.dev — OpenCode provider page",
+  "canonical_url": "https://models.dev/providers/opencode/",
+  "brief": "A directory of the 124 models available through OpenCode's inference endpoint (opencode.ai/inference/v1), with per-model pricing, context windows, and capability flags plus the @ai-sdk/openai-compatible SDK package. Useful for comparing what OpenCode serves and what each model costs there.",
+  "caveat": null,
+  "details": "Models.dev is a third-party directory of AI model providers; this page covers the OpenCode provider (provider ID opencode). It lists 124 models served through OpenCode's inference endpoint at opencode.ai/inference/v1, with per-model input/output pricing per million tokens, context window and max output sizes, and capability flags, plus the @ai-sdk/openai-compatible package name and a link to OpenCode's own docs. It functions as a provider-comparison snapshot — useful for checking which models OpenCode serves and what each costs there, including the newly added Gemini 4 Argon at $2.00/$10.00. Caveat: directory data can lag the provider's live catalog, so verify pricing against OpenCode before relying on it.",
+  "resource_type": "directory-gallery",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "scarywood75"
+  },
+  "shared_on": "2026-10-14",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "d1ee1bdb47e2d8ffd6b8de73b74f2fdea15738f8bc07c737ad699d9baaf12c65",
-  "data.json": "014d3bb1565e1080c6bb23b2bc1f239ffa3219e86fc47c17876a0d6493263b87",
-  "feed.xml": "26c2cead0530569f7b7b431914460e5ead94544529240a77ea09b7de68e3a738",
-  "index.html": "43e369c33077148f1ebf3f44e433c1fee6e1d482af04ea52b100fbf1c0f4632a",
-  "llms.txt": "4947fc385321cf532e3ef55a906f6e29463c9031e31c98ab4034a066e1df5186",
-  "og-image.png": "31099c63e24fe946cb04f2ead20f441802dd81c3ab00e6a3b0923443e74d5f78",
+  "CHANGELOG.md": "9408eed3e13f15cda4056ea97cb70208a697b29b2447a3ffb4f38f4055f8831f",
+  "data.json": "2694d13ac7f57597f95445a43baabf3c5606045a89333d3a5589bbc2cb5e6921",
+  "feed.xml": "5c8eb1b38c233a66e5a6816530f3cc6e7d8f044d5e380e902890e509a9cf7bb1",
+  "index.html": "38e18b9b7be1c7887e1379cefd4c030ad04fbfadf9fa11b89e0c564b784b2119",
+  "llms.txt": "065c701047fdfdef9f5495c7e0761d24494f9d537d44b0a2769c0e291e513474",
+  "og-image.png": "f615b0043bd6c552fbcc30c9d4bacd5c950fb5a2fdf04783b32d8d1a9990ca36",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "c87bf0a1074c587460a3357171ca545a447d4a4611e126c43bdeac5fdf75069e",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -27,8 +27,8 @@
   "weeks/2026-09-17_to_2026-09-24.md": "d23f05b8bddde2ad551921b2c4e8f3462078e87dce2250aa89b72c4d69ee7ac9",
   "weeks/2026-09-24_to_2026-10-01.md": "a38ab8bce05993227a8fdadb6f78cd1c96797e00c742a4853ff804d346c88cfd",
   "weeks/2026-10-01_to_2026-10-08.md": "474955dc733dfebe6af21d60d526dee9572b20905a35dfe25e11ae9d10ed5f46",
-  "weeks/2026-10-08_to_2026-10-15.md": "b3c49a0bbf49dbe1b174e1826d481994b01bff5e83bbe63126046c9c07484237",
-  "weeks/providers.md": "45d3aaa3632bd0142e8beb34b582a954706806893e230d7bb9f88cd4e2b062e8"
+  "weeks/2026-10-08_to_2026-10-15.md": "e8ae99ca8b89c53ae2615a947ef4b2bc37d00f3e47ac70071363c624b6fbf54a",
+  "weeks/providers.md": "67bb577ada6e61dcbc3fc0611cd53de2b417c62dc38ab3d8fd12e22ebe2c384a"
  },
  "inventory": {
   "categories": [
@@ -39,13 +39,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 376,
+  "https_urls": 381,
   "nonempty_warnings": 82,
-  "providers": 112,
-  "share_tech": 264,
-  "total": 376,
-  "unique_ids": 376,
-  "unique_urls": 376
+  "providers": 115,
+  "share_tech": 266,
+  "total": 381,
+  "unique_ids": 381,
+  "unique_urls": 381
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -134,6 +134,11 @@
   "subq",
   "prime-intellect-inference",
   "experiential-labs",
+  "expand-fetch",
+  "code-modernization",
+  "openscale",
+  "models-dev-opencode-provider-page",
+  "flovia",
   "annnimate",
   "hyperiux",
   "vanta-ui",
