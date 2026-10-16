@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "openscale",
+  "title": "OpenScale",
+  "canonical_url": "https://app.openscale.so/",
+  "brief": "An inference provider for open models behind one OpenAI-compatible endpoint — currently serving DeepSeek V4.1 Flash at 200+ tokens per second, with input priced at $0.06 per M tokens (advertised as 50% off the typical $0.12). Pay-as-you-go with no seats or minimums, autoscaling from a single request to millions, and chat request bodies never written to disk. - Warning: Pricing and \"cheapest & fastest\" claims are vendor-reported; only DeepSeek models were on offer at share time.",
+  "caveat": null,
+  "details": "OpenScale is an inference provider serving open-weight models behind a single OpenAI-compatible endpoint, so existing OpenAI SDK code works by swapping the base URL and key. At share time only DeepSeek models were listed, with DeepSeek V4.1 Flash advertised at 200+ tokens per second via tuned kernels and warm capacity; input is priced at $0.06 per million tokens (framed as 50% off a typical $0.12), cached input at $0.003 and output at $0.24. Pricing is linear pay-as-you-go with no seats, minimums, or idle GPUs, and autoscaling is handled on their side. On privacy, chat and Messages request bodies are processed in memory and never written to disk (only 30 days of metadata is kept for billing), and a zero-data-retention switch also disables the 30-day Responses API storage. Caveat: the \"cheapest & fastest\" claims and the 50%-off framing are vendor-reported.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference",
+    "host-models"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-15",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

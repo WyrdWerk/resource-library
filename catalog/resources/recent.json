@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "recent",
+  "title": "Recent",
+  "canonical_url": "https://recent.design/",
+  "brief": "Daryl Ginn's relaunched design-inspiration gallery — a curated collection of the best design on the internet (his bio claims 1M+ monthly pageviews). Useful as a design reference feed for developers who want a steady stream of high-quality interface inspiration. - Warning: the pageview figure is from the maker's bio, not independently verified.",
+  "caveat": "Useful as a design reference feed for developers who want a steady stream of high-quality interface inspiration. - Warning: the pageview figure is from the maker's bio, not independently verified.",
+  "details": "Recent is Daryl Ginn's relaunched design-inspiration gallery at recent.design, described as a curation of the best design on the Internet — his bio claims over 1 million monthly pageviews. The site presents a slide-based gallery of standout interface design. Useful as a steady design reference feed for developers and designers looking for high-quality UI inspiration; the pageview figure is self-reported by the maker.",
+  "resource_type": "directory-gallery",
+  "topics": [
+    "design"
+  ],
+  "use_cases": [
+    "discover-design-references"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-16",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

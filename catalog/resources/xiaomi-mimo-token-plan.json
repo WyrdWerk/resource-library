@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "xiaomi-mimo-token-plan",
+  "title": "Xiaomi MiMo Token Plan",
+  "canonical_url": "https://mimo.mi.com/docs/en-US/price/token-plan",
+  "brief": "Xiaomi's official Token Plan pricing docs for its MiMo models (mimo-v2.6-pro/flash plus ASR/TTS): individual plans run $6–$100/month and team plans are per-seat, with token-to-credit conversion tables and an off-peak (00:00–08:00 Beijing) discount. Useful for pricing MiMo inference inside coding tools like OpenCode or Claude Code. - Warning: Pricing and conversion rates are vendor-reported; mimo-v2.5 models are retired 21 Oct 2026 per the same page.",
+  "caveat": null,
+  "details": "Xiaomi's Token Plan is a subscription offering for the MiMo model family (mimo-v2.6-pro, mimo-v2.6-flash, plus ASR and TTS models), aimed at AI programming scenarios inside tools like OpenCode, OpenClaw, and Claude Code. Individual plans range from $6/month (4.1B credits, Lite) to $100/month (82B credits, Max), with per-seat team tiers at the same price points; credits are consumed per token with a published conversion table (for example 300 credits per 1M input tokens cache-miss on mimo-v2.6-pro), and off-peak hours (00:00–08:00 Beijing) get a 0.8x consumption coefficient. When a monthly quota is exhausted the service suspends until upgrade or the next period. Useful for pricing MiMo inference for sustained coding-agent use; note that mimo-v2.5 models retire on 21 Oct 2026 per the same page, and all pricing is vendor-reported.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "asx"
+  },
+  "shared_on": "2026-10-15",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

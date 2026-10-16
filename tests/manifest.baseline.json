@@ -1,14 +1,14 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "d1ee1bdb47e2d8ffd6b8de73b74f2fdea15738f8bc07c737ad699d9baaf12c65",
-  "data.json": "014d3bb1565e1080c6bb23b2bc1f239ffa3219e86fc47c17876a0d6493263b87",
-  "feed.xml": "26c2cead0530569f7b7b431914460e5ead94544529240a77ea09b7de68e3a738",
-  "index.html": "43e369c33077148f1ebf3f44e433c1fee6e1d482af04ea52b100fbf1c0f4632a",
-  "llms.txt": "4947fc385321cf532e3ef55a906f6e29463c9031e31c98ab4034a066e1df5186",
-  "og-image.png": "31099c63e24fe946cb04f2ead20f441802dd81c3ab00e6a3b0923443e74d5f78",
+  "CHANGELOG.md": "2f787ac1b5968fea618c5249cd90975c5324606e64651ae9b5476773eeb6708c",
+  "data.json": "fee4f820f3f0531b5fa44bc13c69164b6b72e16630ff753d60176cd148404319",
+  "feed.xml": "13fcd4e643081b8c239784d78d27eeed6319848eba3a335444086694c4b1c65b",
+  "index.html": "5abfb91afd88d77e516e64a38038039001c0eabe99c0ffeeb0a346b2957c1ef3",
+  "llms.txt": "22e5612186d8b716adb961ef3c273be6825ee6fa7909d51b17481e09949e8a99",
+  "og-image.png": "dc1e107081ecb6050315e958e56ca7ec91c83489d68b45cbada4755f631a8419",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
-  "sitemap.xml": "c87bf0a1074c587460a3357171ca545a447d4a4611e126c43bdeac5fdf75069e",
+  "sitemap.xml": "c1a9b0f9efa243000d469f2ea12e09e083a50ab2169272c57422f88bdfc40fe8",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
   "weeks/2026-06-11_to_2026-06-17.md": "898c793b7587c0d89e3aa12d6f70a0b1c864f65016c3941a1f0183cf7aebbe99",
   "weeks/2026-06-18_to_2026-06-24.md": "7e9d9cd53a38a0fb7719b0df782b0914782d2fc505dfd1084fa99ae17f1d2b92",
@@ -27,8 +27,9 @@
   "weeks/2026-09-17_to_2026-09-24.md": "d23f05b8bddde2ad551921b2c4e8f3462078e87dce2250aa89b72c4d69ee7ac9",
   "weeks/2026-09-24_to_2026-10-01.md": "a38ab8bce05993227a8fdadb6f78cd1c96797e00c742a4853ff804d346c88cfd",
   "weeks/2026-10-01_to_2026-10-08.md": "474955dc733dfebe6af21d60d526dee9572b20905a35dfe25e11ae9d10ed5f46",
-  "weeks/2026-10-08_to_2026-10-15.md": "b3c49a0bbf49dbe1b174e1826d481994b01bff5e83bbe63126046c9c07484237",
-  "weeks/providers.md": "45d3aaa3632bd0142e8beb34b582a954706806893e230d7bb9f88cd4e2b062e8"
+  "weeks/2026-10-08_to_2026-10-15.md": "e8ae99ca8b89c53ae2615a947ef4b2bc37d00f3e47ac70071363c624b6fbf54a",
+  "weeks/2026-10-15_to_2026-10-22.md": "291e11b897a3625aa695b6079cbc4e39e57a1d41a03b687f45bde8a7b32a074a",
+  "weeks/providers.md": "0c07cb8a32dadf2297535260e60c9e890cc9891bf1837061a107c8af8ca18cb9"
  },
  "inventory": {
   "categories": [
@@ -39,13 +40,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 376,
-  "nonempty_warnings": 82,
-  "providers": 112,
-  "share_tech": 264,
-  "total": 376,
-  "unique_ids": 376,
-  "unique_urls": 376
+  "https_urls": 385,
+  "nonempty_warnings": 83,
+  "providers": 117,
+  "share_tech": 268,
+  "total": 385,
+  "unique_ids": 385,
+  "unique_urls": 385
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -134,6 +135,15 @@
   "subq",
   "prime-intellect-inference",
   "experiential-labs",
+  "expand-fetch",
+  "code-modernization",
+  "openscale",
+  "models-dev-opencode-provider-page",
+  "flovia",
+  "pokeheartgold",
+  "recent",
+  "vercel-token-pass",
+  "xiaomi-mimo-token-plan",
   "annnimate",
   "hyperiux",
   "vanta-ui",

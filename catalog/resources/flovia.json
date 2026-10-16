@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "flovia",
+  "title": "Flovia",
+  "canonical_url": "https://flovia.dev",
+  "brief": "\"Costco for your API spend\": a group-buying pool that aggregates demand from individuals and startups, buys top-tier API plans in bulk, and covers the cost so members use premium APIs (including AI inference) without enterprise-sized commitments. Early access via waitlist with your X account. - Warning: Early-access waitlist; \"free\" means within per-API credit and usage limits; savings claims are vendor-reported.",
+  "caveat": null,
+  "details": "Flovia is a group-buying pool for API spend, pitched as \"Costco for your API spend\": individuals and startups join one pool, Flovia aggregates their demand into a single bulk purchase of top-tier API plans, then covers the cost so members use premium APIs within set credit and usage limits. Listed use cases include running AI inference (via OpenAI models), tracking whale wallets (Nansen, CoinGecko), onchain apps (QuickNode), web and X search (Exa, Firecrawl), and prospecting. Access is early-access via a waitlist joined with an X account, with approved members invited by email; the service is backed by the NVIDIA Inception Program. Caveats: \"free\" means within per-API allowances and rate limits shown before use, not unlimited; the long-term \"up to 70%\" savings target is a goal, not a guarantee; all claims are vendor-reported.",
+  "resource_type": "service-platform",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "baanish"
+  },
+  "shared_on": "2026-10-15",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

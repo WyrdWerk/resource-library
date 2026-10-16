@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-112 curated providers, with briefs.
+117 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -187,6 +187,36 @@
 - Shared by: one_phantomic (14 Oct)
 - Categories: providers
 - Brief: An inference gateway routing every provider through one OpenAI-compatible endpoint at 0% token markup — credits are the single billing unit, with budgets, model allowlists, and per-token attribution built in. Pro at $20/mo advertises "unlimited" DeepSeek V4.1 Flash, GPT-6 Luna, Claude Haiku 5.5, and Jev — but only for the plan's first 2,000 credits each month, then list price. - Warning: The "unlimited" wording was challenged in-channel ("I smell bull"); pricing and discount claims are vendor-reported.
+
+## OpenScale
+- URL: https://app.openscale.so/
+- Shared by: thelaggingway (15 Oct)
+- Categories: providers
+- Brief: An inference provider for open models behind one OpenAI-compatible endpoint — currently serving DeepSeek V4.1 Flash at 200+ tokens per second, with input priced at $0.06 per M tokens (advertised as 50% off the typical $0.12). Pay-as-you-go with no seats or minimums, autoscaling from a single request to millions, and chat request bodies never written to disk. - Warning: Pricing and "cheapest & fastest" claims are vendor-reported; only DeepSeek models were on offer at share time.
+
+## Models.dev — OpenCode provider page
+- URL: https://models.dev/providers/opencode/
+- Shared by: scarywood75 (14 Oct)
+- Categories: providers
+- Brief: A directory of the 124 models available through OpenCode's inference endpoint (opencode.ai/inference/v1), with per-model pricing, context windows, and capability flags plus the @ai-sdk/openai-compatible SDK package. Useful for comparing what OpenCode serves and what each model costs there.
+
+## Flovia
+- URL: https://flovia.dev
+- Shared by: baanish (15 Oct)
+- Categories: providers
+- Brief: "Costco for your API spend": a group-buying pool that aggregates demand from individuals and startups, buys top-tier API plans in bulk, and covers the cost so members use premium APIs (including AI inference) without enterprise-sized commitments. Early access via waitlist with your X account. - Warning: Early-access waitlist; "free" means within per-API credit and usage limits; savings claims are vendor-reported.
+
+## Vercel Token Pass
+- URL: https://vercel.com/changelog/introducing-token-pass
+- Shared by: baanish (16 Oct)
+- Categories: providers
+- Brief: Vercel's $30/month Token Pass subscription (early access for Pro teams) gives $80 in monthly inference credit for GLM 5.3 and Kimi K3 through the Vercel AI Gateway, with zero data retention on by default. Useful for running coding agents like fx, Command Code, or Pi on a shared team token budget — credit doesn't roll over and there are no overage charges. - Warning: Pricing, model lineup, and early-access terms are vendor-reported; verify current terms before budgeting.
+
+## Xiaomi MiMo Token Plan
+- URL: https://mimo.mi.com/docs/en-US/price/token-plan
+- Shared by: asx (15 Oct)
+- Categories: providers
+- Brief: Xiaomi's official Token Plan pricing docs for its MiMo models (mimo-v2.6-pro/flash plus ASR/TTS): individual plans run $6–$100/month and team plans are per-seat, with token-to-credit conversion tables and an off-peak (00:00–08:00 Beijing) discount. Useful for pricing MiMo inference inside coding tools like OpenCode or Claude Code. - Warning: Pricing and conversion rates are vendor-reported; mimo-v2.5 models are retired 21 Oct 2026 per the same page.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
