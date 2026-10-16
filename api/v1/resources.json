@@ -3472,6 +3472,77 @@
   },
   {
     "schema_version": "1.0",
+    "id": "pokeheartgold",
+    "title": "pokeheartgold",
+    "canonical_url": "https://github.com/ctrl-cheeb-del/pokeheartgold",
+    "brief": "A full decompilation of Pokémon HeartGold and SoulSilver — everything in C/C++, both ROMs building byte-for-byte, assembled with LLM agents; the tweeter notes about a month of work and roughly $56k at API prices for 4.1MB of compiled code. A remarkable reverse-engineering reference for ROM hackers and a real-world case study of agent-driven decompilation at scale. - Warning: the cost/time figures are from the announcement tweet; the repo is a fork — pret (upstream) doesn't accept AI-generated code and asks that nothing be sent upstream.",
+    "caveat": null,
+    "details": "A full decompilation of Pokémon HeartGold and SoulSilver by ctrl-cheeb-del: the entire game in C/C++, with both ROMs (pokeheartgold.us.nds and pokesoulsilver.us.nds) building byte-for-byte from source. It is a fork of pret's pokeheartgold project, assembled with LLM agents — the announcement notes roughly a month of agent work and about $56k in API costs to decompile 4.1MB of compiled code. The author warns that pret does not accept AI-generated code, so nothing should be sent upstream. Useful as a reverse-engineering reference for ROM hackers and as a large-scale case study of what coding agents can accomplish on decompilation tasks.",
+    "resource_type": "repository",
+    "topics": [
+      "developer-tools",
+      "ai-agents"
+    ],
+    "use_cases": [
+      "learn-technique"
+    ],
+    "interfaces": [],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "github"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-10-16",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "recent",
+    "title": "Recent",
+    "canonical_url": "https://recent.design/",
+    "brief": "Daryl Ginn's relaunched design-inspiration gallery — a curated collection of the best design on the internet (his bio claims 1M+ monthly pageviews). Useful as a design reference feed for developers who want a steady stream of high-quality interface inspiration. - Warning: the pageview figure is from the maker's bio, not independently verified.",
+    "caveat": "Useful as a design reference feed for developers who want a steady stream of high-quality interface inspiration. - Warning: the pageview figure is from the maker's bio, not independently verified.",
+    "details": "Recent is Daryl Ginn's relaunched design-inspiration gallery at recent.design, described as a curation of the best design on the Internet — his bio claims over 1 million monthly pageviews. The site presents a slide-based gallery of standout interface design. Useful as a steady design reference feed for developers and designers looking for high-quality UI inspiration; the pageview figure is self-reported by the maker.",
+    "resource_type": "directory-gallery",
+    "topics": [
+      "design"
+    ],
+    "use_cases": [
+      "discover-design-references"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "web-app"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-10-16",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
     "id": "vercel-token-pass",
     "title": "Vercel Token Pass",
     "canonical_url": "https://vercel.com/changelog/introducing-token-pass",

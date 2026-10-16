@@ -1,6 +1,6 @@
 {
-  "migrated": 383,
-  "source_rows": 383,
+  "migrated": 385,
+  "source_rows": 385,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -1459,6 +1459,38 @@
       "all_equal": true,
       "shared_on": "2026-10-15",
       "date_evidence": "posted '15 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "pokeheartgold",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-16",
+      "date_evidence": "posted '16 Oct' inside week label '15–22 Oct 2026'"
+    },
+    {
+      "id": "recent",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-16",
+      "date_evidence": "posted '16 Oct' inside week label '15–22 Oct 2026'"
     },
     {
       "id": "vercel-token-pass",

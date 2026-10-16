@@ -1323,6 +1323,34 @@
     "details": "Flovia is a group-buying pool for API spend, pitched as \"Costco for your API spend\": individuals and startups join one pool, Flovia aggregates their demand into a single bulk purchase of top-tier API plans, then covers the cost so members use premium APIs within set credit and usage limits. Listed use cases include running AI inference (via OpenAI models), tracking whale wallets (Nansen, CoinGecko), onchain apps (QuickNode), web and X search (Exa, Firecrawl), and prospecting. Access is early-access via a waitlist joined with an X account, with approved members invited by email; the service is backed by the NVIDIA Inception Program. Caveats: \"free\" means within per-API allowances and rate limits shown before use, not unlimited; the long-term \"up to 70%\" savings target is a goal, not a guarantee; all claims are vendor-reported."
   },
   {
+    "title": "pokeheartgold",
+    "week": "15–22 Oct 2026",
+    "url": "https://github.com/ctrl-cheeb-del/pokeheartgold",
+    "sharer": "Tom",
+    "date": "16 Oct",
+    "categories": [
+      "github"
+    ],
+    "brief": "A full decompilation of Pokémon HeartGold and SoulSilver — everything in C/C++, both ROMs building byte-for-byte, assembled with LLM agents; the tweeter notes about a month of work and roughly $56k at API prices for 4.1MB of compiled code. A remarkable reverse-engineering reference for ROM hackers and a real-world case study of agent-driven decompilation at scale. - Warning: the cost/time figures are from the announcement tweet; the repo is a fork — pret (upstream) doesn't accept AI-generated code and asks that nothing be sent upstream.",
+    "id": "pokeheartgold",
+    "warning": "",
+    "details": "A full decompilation of Pokémon HeartGold and SoulSilver by ctrl-cheeb-del: the entire game in C/C++, with both ROMs (pokeheartgold.us.nds and pokesoulsilver.us.nds) building byte-for-byte from source. It is a fork of pret's pokeheartgold project, assembled with LLM agents — the announcement notes roughly a month of agent work and about $56k in API costs to decompile 4.1MB of compiled code. The author warns that pret does not accept AI-generated code, so nothing should be sent upstream. Useful as a reverse-engineering reference for ROM hackers and as a large-scale case study of what coding agents can accomplish on decompilation tasks."
+  },
+  {
+    "title": "Recent",
+    "week": "15–22 Oct 2026",
+    "url": "https://recent.design/",
+    "sharer": "Tom",
+    "date": "16 Oct",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "Daryl Ginn's relaunched design-inspiration gallery — a curated collection of the best design on the internet (his bio claims 1M+ monthly pageviews). Useful as a design reference feed for developers who want a steady stream of high-quality interface inspiration. - Warning: the pageview figure is from the maker's bio, not independently verified.",
+    "id": "recent",
+    "warning": "Useful as a design reference feed for developers who want a steady stream of high-quality interface inspiration. - Warning: the pageview figure is from the maker's bio, not independently verified.",
+    "details": "Recent is Daryl Ginn's relaunched design-inspiration gallery at recent.design, described as a curation of the best design on the Internet — his bio claims over 1 million monthly pageviews. The site presents a slide-based gallery of standout interface design. Useful as a steady design reference feed for developers and designers looking for high-quality UI inspiration; the pageview figure is self-reported by the maker."
+  },
+  {
     "title": "Vercel Token Pass",
     "week": "providers",
     "url": "https://vercel.com/changelog/introducing-token-pass",
