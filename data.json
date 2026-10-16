@@ -1323,6 +1323,34 @@
     "details": "Flovia is a group-buying pool for API spend, pitched as \"Costco for your API spend\": individuals and startups join one pool, Flovia aggregates their demand into a single bulk purchase of top-tier API plans, then covers the cost so members use premium APIs within set credit and usage limits. Listed use cases include running AI inference (via OpenAI models), tracking whale wallets (Nansen, CoinGecko), onchain apps (QuickNode), web and X search (Exa, Firecrawl), and prospecting. Access is early-access via a waitlist joined with an X account, with approved members invited by email; the service is backed by the NVIDIA Inception Program. Caveats: \"free\" means within per-API allowances and rate limits shown before use, not unlimited; the long-term \"up to 70%\" savings target is a goal, not a guarantee; all claims are vendor-reported."
   },
   {
+    "title": "Vercel Token Pass",
+    "week": "providers",
+    "url": "https://vercel.com/changelog/introducing-token-pass",
+    "sharer": "baanish",
+    "date": "16 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Vercel's $30/month Token Pass subscription (early access for Pro teams) gives $80 in monthly inference credit for GLM 5.3 and Kimi K3 through the Vercel AI Gateway, with zero data retention on by default. Useful for running coding agents like fx, Command Code, or Pi on a shared team token budget — credit doesn't roll over and there are no overage charges. - Warning: Pricing, model lineup, and early-access terms are vendor-reported; verify current terms before budgeting.",
+    "id": "vercel-token-pass",
+    "warning": "",
+    "details": "Vercel Token Pass is a $30/month subscription (early access for Pro teams) that provides $80 in monthly inference credit for the GLM 5.3 and Kimi K3 models, redeemable through the Vercel AI Gateway. It is designed for teams running coding agents (fx, Command Code, Pi) or building personal agents with the Vercel AI SDK: the shared team credit covers requests, zero data retention is enabled by default with inference in the US and EU, and there are no automatic overage charges — requests simply stop when credit runs out until the next billing period. Credit does not roll over. Useful as a predictable, seat-free way to budget inference for agent workloads; pricing, the model lineup, and early-access availability are vendor-reported and should be verified on the changelog page."
+  },
+  {
+    "title": "Xiaomi MiMo Token Plan",
+    "week": "providers",
+    "url": "https://mimo.mi.com/docs/en-US/price/token-plan",
+    "sharer": "asx",
+    "date": "15 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Xiaomi's official Token Plan pricing docs for its MiMo models (mimo-v2.6-pro/flash plus ASR/TTS): individual plans run $6–$100/month and team plans are per-seat, with token-to-credit conversion tables and an off-peak (00:00–08:00 Beijing) discount. Useful for pricing MiMo inference inside coding tools like OpenCode or Claude Code. - Warning: Pricing and conversion rates are vendor-reported; mimo-v2.5 models are retired 21 Oct 2026 per the same page.",
+    "id": "xiaomi-mimo-token-plan",
+    "warning": "",
+    "details": "Xiaomi's Token Plan is a subscription offering for the MiMo model family (mimo-v2.6-pro, mimo-v2.6-flash, plus ASR and TTS models), aimed at AI programming scenarios inside tools like OpenCode, OpenClaw, and Claude Code. Individual plans range from $6/month (4.1B credits, Lite) to $100/month (82B credits, Max), with per-seat team tiers at the same price points; credits are consumed per token with a published conversion table (for example 300 credits per 1M input tokens cache-miss on mimo-v2.6-pro), and off-peak hours (00:00–08:00 Beijing) get a 0.8x consumption coefficient. When a monthly quota is exhausted the service suspends until upgrade or the next period. Useful for pricing MiMo inference for sustained coding-agent use; note that mimo-v2.5 models retire on 21 Oct 2026 per the same page, and all pricing is vendor-reported."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

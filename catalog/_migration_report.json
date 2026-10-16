@@ -1,6 +1,6 @@
 {
-  "migrated": 381,
-  "source_rows": 381,
+  "migrated": 383,
+  "source_rows": 383,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -1446,6 +1446,38 @@
     },
     {
       "id": "flovia",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-15",
+      "date_evidence": "posted '15 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "vercel-token-pass",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-16",
+      "date_evidence": "posted '16 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "xiaomi-mimo-token-plan",
       "checks": {
         "id": true,
         "title": true,

@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-115 curated providers, with briefs.
+117 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -205,6 +205,18 @@
 - Shared by: baanish (15 Oct)
 - Categories: providers
 - Brief: "Costco for your API spend": a group-buying pool that aggregates demand from individuals and startups, buys top-tier API plans in bulk, and covers the cost so members use premium APIs (including AI inference) without enterprise-sized commitments. Early access via waitlist with your X account. - Warning: Early-access waitlist; "free" means within per-API credit and usage limits; savings claims are vendor-reported.
+
+## Vercel Token Pass
+- URL: https://vercel.com/changelog/introducing-token-pass
+- Shared by: baanish (16 Oct)
+- Categories: providers
+- Brief: Vercel's $30/month Token Pass subscription (early access for Pro teams) gives $80 in monthly inference credit for GLM 5.3 and Kimi K3 through the Vercel AI Gateway, with zero data retention on by default. Useful for running coding agents like fx, Command Code, or Pi on a shared team token budget — credit doesn't roll over and there are no overage charges. - Warning: Pricing, model lineup, and early-access terms are vendor-reported; verify current terms before budgeting.
+
+## Xiaomi MiMo Token Plan
+- URL: https://mimo.mi.com/docs/en-US/price/token-plan
+- Shared by: asx (15 Oct)
+- Categories: providers
+- Brief: Xiaomi's official Token Plan pricing docs for its MiMo models (mimo-v2.6-pro/flash plus ASR/TTS): individual plans run $6–$100/month and team plans are per-seat, with token-to-credit conversion tables and an off-peak (00:00–08:00 Beijing) discount. Useful for pricing MiMo inference inside coding tools like OpenCode or Claude Code. - Warning: Pricing and conversion rates are vendor-reported; mimo-v2.5 models are retired 21 Oct 2026 per the same page.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

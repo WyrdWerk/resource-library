@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "vercel-token-pass",
+  "title": "Vercel Token Pass",
+  "canonical_url": "https://vercel.com/changelog/introducing-token-pass",
+  "brief": "Vercel's $30/month Token Pass subscription (early access for Pro teams) gives $80 in monthly inference credit for GLM 5.3 and Kimi K3 through the Vercel AI Gateway, with zero data retention on by default. Useful for running coding agents like fx, Command Code, or Pi on a shared team token budget — credit doesn't roll over and there are no overage charges. - Warning: Pricing, model lineup, and early-access terms are vendor-reported; verify current terms before budgeting.",
+  "caveat": null,
+  "details": "Vercel Token Pass is a $30/month subscription (early access for Pro teams) that provides $80 in monthly inference credit for the GLM 5.3 and Kimi K3 models, redeemable through the Vercel AI Gateway. It is designed for teams running coding agents (fx, Command Code, Pi) or building personal agents with the Vercel AI SDK: the shared team credit covers requests, zero data retention is enabled by default with inference in the US and EU, and there are no automatic overage charges — requests simply stop when credit runs out until the next billing period. Credit does not roll over. Useful as a predictable, seat-free way to budget inference for agent workloads; pricing, the model lineup, and early-access availability are vendor-reported and should be verified on the changelog page.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "baanish"
+  },
+  "shared_on": "2026-10-16",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
