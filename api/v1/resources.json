@@ -3617,6 +3617,231 @@
   },
   {
     "schema_version": "1.0",
+    "id": "instabox",
+    "title": "InstaBox",
+    "canonical_url": "https://instabox.sh/pricing",
+    "brief": "A new VPS/cloud provider currently offering 5 free machines per account (4 vCPUs, 8 GB RAM each) while it settles pricing, promising \"the most competitive pricing, with a generous free tier\" later. Shared in a thread comparing VPS prices (netcup vs Hetzner) — useful for developers hunting cheap compute. - Warning: the service looks brand-new and was discussed as invite-based in the thread; the free tier and future pricing are vendor claims, unverified.",
+    "caveat": "Shared in a thread comparing VPS prices (netcup vs Hetzner) — useful for developers hunting cheap compute. - Warning: the service looks brand-new and was discussed as invite-based in the thread; the free tier and future pricing are vendor claims, unverified.",
+    "details": "InstaBox is a new VPS/cloud provider whose pricing page currently promises \"Free until we figure it out\": 5 machines free for everyone, each with 4 vCPUs and 8 GB of memory, with \"the most competitive pricing, with a generous free tier\" promised for later. It was shared in a #share-tech thread comparing VPS pricing (netcup vs Hetzner) where members were discussing instabox invites, suggesting the service is new and possibly in an invite phase. Useful for developers hunting cheap compute; the free tier and future pricing are vendor claims and should be verified on the pricing page before relying on them.",
+    "resource_type": "service-platform",
+    "topics": [
+      "cloud-infrastructure"
+    ],
+    "use_cases": [
+      "provision-infrastructure"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "web-app"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "baanish"
+    },
+    "shared_on": "2026-10-17",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "capy-ai",
+    "title": "Capy AI",
+    "canonical_url": "https://capy.ai/",
+    "brief": "An AI software-engineering product that delegates tasks to parallel coding agents which plan, build, and ship from task to merged PR. The site lists pricing from $20 to $1000, suggesting tiered plans for individuals through teams. - Warning: \"the best AI software engineer\" is vendor marketing, unverified; pricing figures come from the site's own metadata.",
+    "caveat": "The site lists pricing from $20 to $1000, suggesting tiered plans for individuals through teams. - Warning: \"the best AI software engineer\" is vendor marketing, unverified; pricing figures come from the site's own metadata.",
+    "details": "Capy AI is an AI software-engineering product: delegate tasks to parallel coding agents that plan, build, and ship, taking work from task to merged PR. The site lists pricing from $20 to $1000, suggesting tiered plans spanning individuals to teams. Useful for developers who want to run multiple coding agents in parallel rather than driving a single agent session; the \"best AI software engineer\" claim is vendor marketing and the pricing figures come from the site's own metadata, so both should be treated as unverified until checked against current terms.",
+    "resource_type": "service-platform",
+    "topics": [
+      "ai-agents",
+      "developer-tools"
+    ],
+    "use_cases": [
+      "generate-code",
+      "manage-agents"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Aspiring UBI Recipient"
+    },
+    "shared_on": "2026-10-17",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "handwired",
+    "title": "Handwired",
+    "canonical_url": "https://github.com/chenglou/handwired",
+    "brief": "Cheng Lou's new toy project that compiles regular JavaScript — if-else, loops, state — into a neural net: no training, exact outputs matching the JS program, fully differentiable, runnable in a browser without a GPU. Demos include a mini OS transformed into a 9,909-weight network and unfreezing a compiled program's weights to train it in real time. - Warning: brand-new experimental repo (created 15 Oct 2026); the author frames it as \"for fun\", not production tooling.",
+    "caveat": null,
+    "details": "Handwired is Cheng Lou's new project that turns regular JavaScript code — if-else, loops, and state — into a neural net: no training, exact outputs matching the JS program, and fully differentiable, all runnable in a browser without a GPU. The README explains the trick: program constructs are expressed as arithmetic (e.g. a comparison becomes ReLU terms), then the +/*/relu primitives are collected into a giant matrix multiplication that can also run on WebGPU. Demos include a small desktop OS transformed into a 9,909-weight, 130-layer network, a gallery where you unfreeze a compiled program's weights and train them in real time, and regex/JSON search over 100,000 documents compiled to WebGPU kernels for massive parallelism. MIT licensed. Useful as a mind-bending experiment at the intersection of programming languages and neural nets, and as a playground for differentiable-programming ideas; it is brand-new (created 15 Oct 2026) and framed by the author as \"for fun\", not production tooling. (Coverage note: written from web-search coverage of the repo and project site — the tweet itself was not directly fetchable.)",
+    "resource_type": "repository",
+    "topics": [
+      "developer-tools"
+    ],
+    "use_cases": [
+      "learn-technique"
+    ],
+    "interfaces": [],
+    "technologies": [
+      "javascript"
+    ],
+    "license": null,
+    "open_source": false,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-10-15",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "herdr-quicklook",
+    "title": "herdr-quicklook",
+    "canonical_url": "https://github.com/dwarvesf/herdr-quicklook",
+    "brief": "A herdr plugin that Quick-Looks whatever path or URL an agent prints: one key overlays a hint on every openable token on screen, and a letter opens files in a rendered preview popup (markdown via glow, images via chafa, csv via qsv), escalates to the file-viewer, or opens URLs in the browser. Shared in answer to \"any cool plugins for herdr\" — Tom notes his CEO maintains it. MIT licensed.",
+    "caveat": null,
+    "details": "herdr-quicklook is a herdr plugin by dwarvesf that Quick-Looks whatever path or URL a coding agent prints in your terminal. One key (prefix+v) overlays a one-letter hint on every openable token on screen; picking a letter opens files in a rendered preview popup (markdown via glow, images via chafa, csv via qsv, json via jq, notebooks and office docs via pandoc), escalates to the file-viewer with one keystroke, opens URLs in the browser, and even resolves a pasted GitHub blob URL to your local checkout at that line. Agent suggestions can also push files to the screen automatically during a working turn. It was shared in #share-tech in answer to \"any cool plugins for herdr\", and Tom notes his CEO maintains it. MIT licensed. Useful for terminal-centric developers who live in herdr and review agent output all day; it requires herdr >= 0.7.0.",
+    "resource_type": "repository",
+    "topics": [
+      "developer-tools"
+    ],
+    "use_cases": [
+      "manage-agents"
+    ],
+    "interfaces": [
+      "cli"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-10-16",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "hy-memory",
+    "title": "Hy-Memory",
+    "canonical_url": "https://github.com/Tencent-Hunyuan/Hy-Memory",
+    "brief": "Tencent Hunyuan's open-source memory engine for LLM agents: a dual-system cognitive memory (hierarchical chat memory, two-layer working/coding memory with a version-evolution diff chain) plus MemHub, a local-first desktop/CLI that unifies memory across Codex, Cursor, Claude Code, and OpenCode. The announcement claims its 3B-active Hy-Memory-30B-A3B model leads MemoryArena by 10.2 points while cutting memory volume ~52%. - Warning: the benchmark claims (\"beats Opus 5 at memory\", MemoryArena lead) are vendor-reported from the announcement tweet, not independently verified.",
+    "caveat": "The announcement claims its 3B-active Hy-Memory-30B-A3B model leads MemoryArena by 10.2 points while cutting memory volume ~52%. - Warning: the benchmark claims (\"beats Opus 5 at memory\", MemoryArena lead) are vendor-reported from the announcement tweet, not independently verified.",
+    "details": "Hy-Memory is Tencent Hunyuan's open-source memory engine for LLM agents, shipping as a Python SDK (hy-memory) plus MemHub, a local-first desktop and CLI product. The engine provides three memory scenes: hierarchical long-term cognitive memory for chat (an 8-layer hierarchy from raw dialogues up to schemas and intentions), two-layer fact-and-experience memory for working, and the same two layers plus a version-evolution diff chain for coding. MemHub unifies conversation history and coding traces from user-authorized AI applications (Claude Code, Cursor, Codex, OpenCode, Qwen Code) into a single managed runtime and local data directory, enabling governed cross-application memory recall. The accompanying Hy-Memory-30B-A3B model on Hugging Face was trained via attributed reinforcement learning specifically for high-precision long-term memory extraction. Useful for anyone building long-horizon agents that need persistent, structured memory across sessions and tools. The announcement's benchmark claims (leading MemoryArena by 10.2 points, beating Opus 5 at memory) are vendor-reported from the launch tweet and should be treated as unverified; the repo carries an Apache-2.0 license badge.",
+    "resource_type": "library-framework",
+    "topics": [
+      "ai-agents"
+    ],
+    "use_cases": [
+      "manage-agents"
+    ],
+    "interfaces": [
+      "api",
+      "cli",
+      "desktop"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "license": null,
+    "open_source": true,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "ROman"
+    },
+    "shared_on": "2026-10-16",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "artificial-analysis-models-leaderboard",
+    "title": "Artificial Analysis: Models leaderboard",
+    "canonical_url": "https://artificialanalysis.ai/leaderboards/models",
+    "brief": "Artificial Analysis's flagship LLM leaderboard comparing 250+ models across intelligence, price, output speed, latency, and context window, with per-model provider links. Shared alongside an agent-benchmark cost/score rundown (e.g. MiMo-V2.6-Pro at $0.13/task as \"top open weights\") — the natural starting point for model and provider selection.",
+    "caveat": null,
+    "details": "The Artificial Analysis models leaderboard is the flagship comparison page of Artificial Analysis, ranking 250+ AI models across intelligence, price, output speed (tokens per second), latency (time to first token), and context window, with per-model links into provider pricing. It was shared in #providers alongside an agent-benchmark cost/score rundown that highlighted MiMo-V2.6-Pro at $0.13/task as \"top open weights\" and compared coding-agent leaders like Claude Opus 5.5 ($5.98/task) against budget options. Useful as the starting point for model and provider selection: sort by the dimension that matters (intelligence for quality, cost per task for budget) and drill into a model's provider tab to find the cheapest fast host. Benchmark figures update continuously and reflect Artificial Analysis's own harnesses, so treat specific numbers as snapshots.",
+    "resource_type": "article-guide",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": false,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "tom App (bot)"
+    },
+    "shared_on": "2026-10-16",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
     "id": "annnimate",
     "title": "Annnimate",
     "canonical_url": "https://annnimate.com",

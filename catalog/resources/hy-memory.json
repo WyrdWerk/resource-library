@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "hy-memory",
+  "title": "Hy-Memory",
+  "canonical_url": "https://github.com/Tencent-Hunyuan/Hy-Memory",
+  "brief": "Tencent Hunyuan's open-source memory engine for LLM agents: a dual-system cognitive memory (hierarchical chat memory, two-layer working/coding memory with a version-evolution diff chain) plus MemHub, a local-first desktop/CLI that unifies memory across Codex, Cursor, Claude Code, and OpenCode. The announcement claims its 3B-active Hy-Memory-30B-A3B model leads MemoryArena by 10.2 points while cutting memory volume ~52%. - Warning: the benchmark claims (\"beats Opus 5 at memory\", MemoryArena lead) are vendor-reported from the announcement tweet, not independently verified.",
+  "caveat": "The announcement claims its 3B-active Hy-Memory-30B-A3B model leads MemoryArena by 10.2 points while cutting memory volume ~52%. - Warning: the benchmark claims (\"beats Opus 5 at memory\", MemoryArena lead) are vendor-reported from the announcement tweet, not independently verified.",
+  "details": "Hy-Memory is Tencent Hunyuan's open-source memory engine for LLM agents, shipping as a Python SDK (hy-memory) plus MemHub, a local-first desktop and CLI product. The engine provides three memory scenes: hierarchical long-term cognitive memory for chat (an 8-layer hierarchy from raw dialogues up to schemas and intentions), two-layer fact-and-experience memory for working, and the same two layers plus a version-evolution diff chain for coding. MemHub unifies conversation history and coding traces from user-authorized AI applications (Claude Code, Cursor, Codex, OpenCode, Qwen Code) into a single managed runtime and local data directory, enabling governed cross-application memory recall. The accompanying Hy-Memory-30B-A3B model on Hugging Face was trained via attributed reinforcement learning specifically for high-precision long-term memory extraction. Useful for anyone building long-horizon agents that need persistent, structured memory across sessions and tools. The announcement's benchmark claims (leading MemoryArena by 10.2 points, beating Opus 5 at memory) are vendor-reported from the launch tweet and should be treated as unverified; the repo carries an Apache-2.0 license badge.",
+  "resource_type": "library-framework",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "api",
+    "cli",
+    "desktop"
+  ],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-16",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

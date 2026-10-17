@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "capy-ai",
+  "title": "Capy AI",
+  "canonical_url": "https://capy.ai/",
+  "brief": "An AI software-engineering product that delegates tasks to parallel coding agents which plan, build, and ship from task to merged PR. The site lists pricing from $20 to $1000, suggesting tiered plans for individuals through teams. - Warning: \"the best AI software engineer\" is vendor marketing, unverified; pricing figures come from the site's own metadata.",
+  "caveat": "The site lists pricing from $20 to $1000, suggesting tiered plans for individuals through teams. - Warning: \"the best AI software engineer\" is vendor marketing, unverified; pricing figures come from the site's own metadata.",
+  "details": "Capy AI is an AI software-engineering product: delegate tasks to parallel coding agents that plan, build, and ship, taking work from task to merged PR. The site lists pricing from $20 to $1000, suggesting tiered plans spanning individuals to teams. Useful for developers who want to run multiple coding agents in parallel rather than driving a single agent session; the \"best AI software engineer\" claim is vendor marketing and the pricing figures come from the site's own metadata, so both should be treated as unverified until checked against current terms.",
+  "resource_type": "service-platform",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "generate-code",
+    "manage-agents"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Aspiring UBI Recipient"
+  },
+  "shared_on": "2026-10-17",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

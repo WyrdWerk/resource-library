@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "instabox",
+  "title": "InstaBox",
+  "canonical_url": "https://instabox.sh/pricing",
+  "brief": "A new VPS/cloud provider currently offering 5 free machines per account (4 vCPUs, 8 GB RAM each) while it settles pricing, promising \"the most competitive pricing, with a generous free tier\" later. Shared in a thread comparing VPS prices (netcup vs Hetzner) — useful for developers hunting cheap compute. - Warning: the service looks brand-new and was discussed as invite-based in the thread; the free tier and future pricing are vendor claims, unverified.",
+  "caveat": "Shared in a thread comparing VPS prices (netcup vs Hetzner) — useful for developers hunting cheap compute. - Warning: the service looks brand-new and was discussed as invite-based in the thread; the free tier and future pricing are vendor claims, unverified.",
+  "details": "InstaBox is a new VPS/cloud provider whose pricing page currently promises \"Free until we figure it out\": 5 machines free for everyone, each with 4 vCPUs and 8 GB of memory, with \"the most competitive pricing, with a generous free tier\" promised for later. It was shared in a #share-tech thread comparing VPS pricing (netcup vs Hetzner) where members were discussing instabox invites, suggesting the service is new and possibly in an invite phase. Useful for developers hunting cheap compute; the free tier and future pricing are vendor claims and should be verified on the pricing page before relying on them.",
+  "resource_type": "service-platform",
+  "topics": [
+    "cloud-infrastructure"
+  ],
+  "use_cases": [
+    "provision-infrastructure"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "baanish"
+  },
+  "shared_on": "2026-10-17",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
