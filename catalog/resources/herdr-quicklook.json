@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "herdr-quicklook",
+  "title": "herdr-quicklook",
+  "canonical_url": "https://github.com/dwarvesf/herdr-quicklook",
+  "brief": "A herdr plugin that Quick-Looks whatever path or URL an agent prints: one key overlays a hint on every openable token on screen, and a letter opens files in a rendered preview popup (markdown via glow, images via chafa, csv via qsv), escalates to the file-viewer, or opens URLs in the browser. Shared in answer to \"any cool plugins for herdr\" — Tom notes his CEO maintains it. MIT licensed.",
+  "caveat": null,
+  "details": "herdr-quicklook is a herdr plugin by dwarvesf that Quick-Looks whatever path or URL a coding agent prints in your terminal. One key (prefix+v) overlays a one-letter hint on every openable token on screen; picking a letter opens files in a rendered preview popup (markdown via glow, images via chafa, csv via qsv, json via jq, notebooks and office docs via pandoc), escalates to the file-viewer with one keystroke, opens URLs in the browser, and even resolves a pasted GitHub blob URL to your local checkout at that line. Agent suggestions can also push files to the screen automatically during a working turn. It was shared in #share-tech in answer to \"any cool plugins for herdr\", and Tom notes his CEO maintains it. MIT licensed. Useful for terminal-centric developers who live in herdr and review agent output all day; it requires herdr >= 0.7.0.",
+  "resource_type": "repository",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-16",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

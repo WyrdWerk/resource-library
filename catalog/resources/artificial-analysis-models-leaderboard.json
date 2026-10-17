@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "artificial-analysis-models-leaderboard",
+  "title": "Artificial Analysis: Models leaderboard",
+  "canonical_url": "https://artificialanalysis.ai/leaderboards/models",
+  "brief": "Artificial Analysis's flagship LLM leaderboard comparing 250+ models across intelligence, price, output speed, latency, and context window, with per-model provider links. Shared alongside an agent-benchmark cost/score rundown (e.g. MiMo-V2.6-Pro at $0.13/task as \"top open weights\") — the natural starting point for model and provider selection.",
+  "caveat": null,
+  "details": "The Artificial Analysis models leaderboard is the flagship comparison page of Artificial Analysis, ranking 250+ AI models across intelligence, price, output speed (tokens per second), latency (time to first token), and context window, with per-model links into provider pricing. It was shared in #providers alongside an agent-benchmark cost/score rundown that highlighted MiMo-V2.6-Pro at $0.13/task as \"top open weights\" and compared coding-agent leaders like Claude Opus 5.5 ($5.98/task) against budget options. Useful as the starting point for model and provider selection: sort by the dimension that matters (intelligence for quality, cost per task for budget) and drill into a model's provider tab to find the cheapest fast host. Benchmark figures update continuously and reflect Artificial Analysis's own harnesses, so treat specific numbers as snapshots.",
+  "resource_type": "article-guide",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": false,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "tom App (bot)"
+  },
+  "shared_on": "2026-10-16",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

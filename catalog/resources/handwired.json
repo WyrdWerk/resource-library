@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "handwired",
+  "title": "Handwired",
+  "canonical_url": "https://github.com/chenglou/handwired",
+  "brief": "Cheng Lou's new toy project that compiles regular JavaScript — if-else, loops, state — into a neural net: no training, exact outputs matching the JS program, fully differentiable, runnable in a browser without a GPU. Demos include a mini OS transformed into a 9,909-weight network and unfreezing a compiled program's weights to train it in real time. - Warning: brand-new experimental repo (created 15 Oct 2026); the author frames it as \"for fun\", not production tooling.",
+  "caveat": null,
+  "details": "Handwired is Cheng Lou's new project that turns regular JavaScript code — if-else, loops, and state — into a neural net: no training, exact outputs matching the JS program, and fully differentiable, all runnable in a browser without a GPU. The README explains the trick: program constructs are expressed as arithmetic (e.g. a comparison becomes ReLU terms), then the +/*/relu primitives are collected into a giant matrix multiplication that can also run on WebGPU. Demos include a small desktop OS transformed into a 9,909-weight, 130-layer network, a gallery where you unfreeze a compiled program's weights and train them in real time, and regex/JSON search over 100,000 documents compiled to WebGPU kernels for massive parallelism. MIT licensed. Useful as a mind-bending experiment at the intersection of programming languages and neural nets, and as a playground for differentiable-programming ideas; it is brand-new (created 15 Oct 2026) and framed by the author as \"for fun\", not production tooling. (Coverage note: written from web-search coverage of the repo and project site — the tweet itself was not directly fetchable.)",
+  "resource_type": "repository",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "javascript"
+  ],
+  "license": null,
+  "open_source": false,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-15",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-117 curated providers, with briefs.
+118 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -217,6 +217,12 @@
 - Shared by: asx (15 Oct)
 - Categories: providers
 - Brief: Xiaomi's official Token Plan pricing docs for its MiMo models (mimo-v2.6-pro/flash plus ASR/TTS): individual plans run $6–$100/month and team plans are per-seat, with token-to-credit conversion tables and an off-peak (00:00–08:00 Beijing) discount. Useful for pricing MiMo inference inside coding tools like OpenCode or Claude Code. - Warning: Pricing and conversion rates are vendor-reported; mimo-v2.5 models are retired 21 Oct 2026 per the same page.
+
+## Artificial Analysis: Models leaderboard
+- URL: https://artificialanalysis.ai/leaderboards/models
+- Shared by: tom App (bot) (16 Oct)
+- Categories: providers
+- Brief: Artificial Analysis's flagship LLM leaderboard comparing 250+ models across intelligence, price, output speed, latency, and context window, with per-model provider links. Shared alongside an agent-benchmark cost/score rundown (e.g. MiMo-V2.6-Pro at $0.13/task as "top open weights") — the natural starting point for model and provider selection.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
