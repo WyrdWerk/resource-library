@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-118 curated providers, with briefs.
+119 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -223,6 +223,12 @@
 - Shared by: tom App (bot) (16 Oct)
 - Categories: providers
 - Brief: Artificial Analysis's flagship LLM leaderboard comparing 250+ models across intelligence, price, output speed, latency, and context window, with per-model provider links. Shared alongside an agent-benchmark cost/score rundown (e.g. MiMo-V2.6-Pro at $0.13/task as "top open weights") — the natural starting point for model and provider selection.
+
+## XPLabs (Experiential)
+- URL: https://platform.xplabs.ai
+- Shared by: nixerman (17 Oct)
+- Categories: providers
+- Brief: XPLabs (Experiential) is a small inference provider with published per-token prices for models including DeepSeek V4.1 Flash, GLM 5.3, Kimi K3, and Claude/GPT-6 variants. The share announced a free uncensored DeepSeek V4.1 Flash tier (~41M TPM shared, ~403 TPS peak) — worth a look for free or discounted access to recent open-weight models. - Warning: the free tier was announced by an individual as "free until someone stops me" — an ephemeral offer with no service guarantee; pricing and availability are vendor claims, unverified.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

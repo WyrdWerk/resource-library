@@ -1466,6 +1466,20 @@
     "details": "The Artificial Analysis models leaderboard is the flagship comparison page of Artificial Analysis, ranking 250+ AI models across intelligence, price, output speed (tokens per second), latency (time to first token), and context window, with per-model links into provider pricing. It was shared in #providers alongside an agent-benchmark cost/score rundown that highlighted MiMo-V2.6-Pro at $0.13/task as \"top open weights\" and compared coding-agent leaders like Claude Opus 5.5 ($5.98/task) against budget options. Useful as the starting point for model and provider selection: sort by the dimension that matters (intelligence for quality, cost per task for budget) and drill into a model's provider tab to find the cheapest fast host. Benchmark figures update continuously and reflect Artificial Analysis's own harnesses, so treat specific numbers as snapshots."
   },
   {
+    "title": "XPLabs (Experiential)",
+    "week": "providers",
+    "url": "https://platform.xplabs.ai",
+    "sharer": "nixerman",
+    "date": "17 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "XPLabs (Experiential) is a small inference provider with published per-token prices for models including DeepSeek V4.1 Flash, GLM 5.3, Kimi K3, and Claude/GPT-6 variants. The share announced a free uncensored DeepSeek V4.1 Flash tier (~41M TPM shared, ~403 TPS peak) — worth a look for free or discounted access to recent open-weight models. - Warning: the free tier was announced by an individual as \"free until someone stops me\" — an ephemeral offer with no service guarantee; pricing and availability are vendor claims, unverified.",
+    "id": "xplabs-experiential",
+    "warning": "The share announced a free uncensored DeepSeek V4.1 Flash tier (~41M TPM shared, ~403 TPS peak) — worth a look for free or discounted access to recent open-weight models. - Warning: the free tier was announced by an individual as \"free until someone stops me\" — an ephemeral offer with no service guarantee; pricing and availability are vendor claims, unverified.",
+    "details": "XPLabs, branded \"Experiential\", is a small inference provider whose public models page lists per-token prices for a range of models: DeepSeek V4.1 Flash (1017), GLM 5.3, Kimi K3, GPT-6 Luna, Claude Sonnet 5, Gemini 3.8 Flash, and others, alongside free tiers for several of them. The share that surfaced it announced a free uncensored DeepSeek V4.1 Flash tier at roughly 41M shared tokens per minute and ~403 TPS peak. It is worth checking for cheap or free access to recent open-weight models, but treat it as experimental: the operator announced the free tier as \"free until someone stops me\", so availability and pricing carry no guarantee, and the provider's uptime track record is unknown."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",
