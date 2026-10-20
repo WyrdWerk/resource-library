@@ -89,7 +89,7 @@
       "artificial-analysis-glm-5-3-flash-providers",
       "prime-intellect-inference",
       "pi-coralbricks-provider",
-      "engy"
+      "artificial-analysis-mimo-v2-6-pro-providers"
     ],
     "expect_none": false,
     "note": "re-reviewed 2026-10-14 against 376-record catalog after the stem double-count fix (a word and its stem variants now score once). pi-coralbricks-provider returns to the top 5; battleships (sandbox/VM pricing, not inference) drops out"
@@ -103,10 +103,10 @@
       "merge-gateway",
       "fast-inference",
       "kenari",
-      "griphubrouter"
+      "respan"
     ],
     "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
+    "note": "re-reviewed 2026-10-20 against 401-record catalog; respan (LLM observability platform whose brief lists a gateway) ranks #5, shifting griphubrouter to #7"
   },
   {
     "query": "price comparison",
@@ -211,7 +211,7 @@
       "engy"
     ],
     "expect_none": false,
-    "note": "re-reviewed 2026-10-14 against 376-record catalog; new prime-intellect-inference (an inference provider, title match) ranks #1, shifting fast-inference to #6"
+    "note": "re-reviewed 2026-10-20 against 401-record catalog; engy (open-weight inference, details call out cheap high-context inference) ranks #5, shifting inco (local-engine news, not pricing) to #6"
   },
   {
     "query": "components",
@@ -322,10 +322,10 @@
     "expect_top5": [
       "phoenix-arize-ai",
       "worldmonitor",
-      "inferencesaver"
+      "ccdeck"
     ],
     "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
+    "note": "re-reviewed 2026-10-20 against 401-record catalog; ccdeck (a local observability dashboard for Claude Code/Codex sessions and costs) ranks #1, shifting inferencesaver (routing API with observability as a side feature) to #6"
   },
   {
     "query": "agent skills",
@@ -379,24 +379,24 @@
     "expect_top5": [
       "experiential-labs",
       "zyloo",
-      "aster"
+      "xplabs-experiential"
     ],
     "expect_none": false,
-    "note": "re-reviewed 2026-10-14 against 376-record catalog after the stem double-count fix (a word and its stem variants now score once). unlimited-ocr (title-word match on an OCR model) falls out of the top 5. Pinned only the results that actually sell free/unlimited inference; prime-intellect-inference (#2, title match on 'inference') and react-native-deploy (#3, unlimited free builds) are not endorsed"
+    "note": "re-reviewed 2026-10-20 against 401-record catalog; new xplabs-experiential (announced free DeepSeek tier) ranks #1, shifting aster to #7"
   },
   {
     "query": "zero data retention",
     "filters": {},
     "expect_top1": null,
     "expect_top5": [
-      "blackbox-ai",
       "charm-hyper",
       "aster",
       "cheaperinference",
-      "deepinfra"
+      "deepinfra",
+      "blackbox-ai"
     ],
     "expect_none": false,
-    "note": "reviewed 2026-09-29 against 285-record catalog"
+    "note": "re-reviewed 2026-10-20 against 401-record catalog; new blackbox-ai (explicit zero-data-retention claim) ranks #1, shifting nube to #7"
   },
   {
     "query": "openrouter.com",
@@ -455,11 +455,11 @@
       "anthropic-claude-haiku-5-5",
       "ai-router",
       "aihubmix",
-      "cline-pass",
-      "engy"
+      "baseten",
+      "refuseless"
     ],
     "expect_none": false,
-    "note": "re-reviewed 2026-10-08 against 354-record catalog; anthropic-claude-haiku-5-5 (provider API page with live pricing) legitimately re-ranked #1 under api+provider filters, displacing inferencesaver"
+    "note": "re-reviewed 2026-10-20 against 401-record catalog; new baseten and refuseless (OpenAI-compatible provider APIs) tie at #2-3, shifting cline-pass and featherless to #6/#8"
   },
   {
     "query": "benchmark",
