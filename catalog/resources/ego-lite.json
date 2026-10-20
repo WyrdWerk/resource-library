@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "ego-lite",
+  "title": "Ego (lite)",
+  "canonical_url": "https://lite.ego.app/",
+  "brief": "Ego (lite) is a browser built for AI agents to run web automation — scraping and automating complex sites, including behind logins — always free with no setup. Its vendor-published benchmarks claim 47–63% faster task completion and a 93.5% success rate versus agent browser tooling like chrome-devtools-cli and playwright-cli. - Warning: speed, success-rate, and cost figures are vendor-published benchmarks, unverified.",
+  "caveat": "Its vendor-published benchmarks claim 47–63% faster task completion and a 93.5% success rate versus agent browser tooling like chrome-devtools-cli and playwright-cli. - Warning: speed, success-rate, and cost figures are vendor-published benchmarks, unverified.",
+  "details": "Ego (lite) is a browser built for AI agents to run web automation — scraping and automating complex websites, including pages behind logins — positioned as the fastest option for agent-driven browsing, always free with no setup. Its vendor-published benchmarks claim agents complete complex web tasks 47–63% faster than tools like chrome-devtools-cli, agent-browser, browser-harness, and playwright-cli (398s vs 587–648s average), with a 93.5% full success rate and lower token cost. Useful for developers building web-automation agents that need reliable, hands-off browsing; treat the speed, success, and cost figures as vendor benchmarks until independently verified.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "automate-workflows"
+  ],
+  "interfaces": [
+    "desktop"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-19",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "atas",
+  "title": "ATAS",
+  "canonical_url": "https://lhmd.top/atas",
+  "brief": "ATAS (\"Any Time, Any Space\") is a world-state-centric framework for agentic video generation (arXiv:2610.20571, Wang et al.). The project page shows video results, comparisons with other frameworks, and quantitative tables — useful for anyone tracking agent-driven media generation research.",
+  "caveat": null,
+  "details": "ATAS (Any Time, Any Space) is a world-state-centric framework for agentic video generation, introduced in an arXiv preprint (2610.20571) by Wang et al. Instead of generating video frame-by-frame from a prompt, it maintains an explicit world state that the agent updates as it acts, letting it reason about any time and any space in the scene. The project page publishes video results, comparisons against other frameworks, and quantitative tables, plus BibTeX for citation. Useful for researchers and builders working on agentic or controllable video generation.",
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "article"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "simply_roo"
+  },
+  "shared_on": "2026-10-18",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

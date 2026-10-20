@@ -1480,6 +1480,133 @@
     "details": "XPLabs, branded \"Experiential\", is a small inference provider whose public models page lists per-token prices for a range of models: DeepSeek V4.1 Flash (1017), GLM 5.3, Kimi K3, GPT-6 Luna, Claude Sonnet 5, Gemini 3.8 Flash, and others, alongside free tiers for several of them. The share that surfaced it announced a free uncensored DeepSeek V4.1 Flash tier at roughly 41M shared tokens per minute and ~403 TPS peak. It is worth checking for cheap or free access to recent open-weight models, but treat it as experimental: the operator announced the free tier as \"free until someone stops me\", so availability and pricing carry no guarantee, and the provider's uptime track record is unknown."
   },
   {
+    "title": "ATAS",
+    "week": "15–22 Oct 2026",
+    "url": "https://lhmd.top/atas",
+    "sharer": "simply_roo",
+    "date": "18 Oct",
+    "categories": [
+      "article"
+    ],
+    "brief": "ATAS (\"Any Time, Any Space\") is a world-state-centric framework for agentic video generation (arXiv:2610.20571, Wang et al.). The project page shows video results, comparisons with other frameworks, and quantitative tables — useful for anyone tracking agent-driven media generation research.",
+    "id": "atas",
+    "warning": "",
+    "details": "ATAS (Any Time, Any Space) is a world-state-centric framework for agentic video generation, introduced in an arXiv preprint (2610.20571) by Wang et al. Instead of generating video frame-by-frame from a prompt, it maintains an explicit world state that the agent updates as it acts, letting it reason about any time and any space in the scene. The project page publishes video results, comparisons against other frameworks, and quantitative tables, plus BibTeX for citation. Useful for researchers and builders working on agentic or controllable video generation."
+  },
+  {
+    "title": "Harness²",
+    "week": "15–22 Oct 2026",
+    "url": "https://github.com/google-research/harness2",
+    "sharer": "ROman",
+    "date": "18 Oct",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Google Research's Harness² is a plug-and-play framework for recursive agent harnessing: it iteratively refines an agent's harness — system prompt, tools, memory, skills, subagents — per task through a Propose–Probe–Compose loop while keeping model weights fixed. It supports OpenCode and Codex executors with JobBench, LAB, and WorkBuddy-Bench benchmarks, and ships Apache-2.0 with a no-credentials local demo.",
+    "id": "harness",
+    "warning": "",
+    "details": "Harness² is Google Research's open-source framework for recursive agent harnessing — optimizing the system around a model (system prompt, guardrails, memory, tool guidance, subagents, skills, scripts, plugins) rather than the weights. Each step runs a contrastive Propose–Probe–Compose cycle: propose harness edits, probe their effects on the same task, and compose a refined harness from behavioral contrasts, without ground-truth feedback; a second recursion level accumulates evidence-supported lessons into a persistent improvement harness for future tasks. The repo reports gains of up to 11.5 points on WorkBuddy-Bench and 11.8 percentage points on LAB's partial pass rate for GLM-5 and Gemini 3.5 Flash (repo-reported, unverified). It supports parallel and sequential recursion with OpenCode and Codex executors across JobBench, LAB, and WorkBuddy-Bench, is Apache-2.0 licensed, and includes a no-credentials local demo."
+  },
+  {
+    "title": "Your Agent Harness Should Repair Itself",
+    "week": "15–22 Oct 2026",
+    "url": "https://x.com/i/article/2064051835636498924",
+    "sharer": "ROman",
+    "date": "18 Oct",
+    "categories": [
+      "article"
+    ],
+    "brief": "Akshay Pachaar's article argues agent observability should go beyond \"what happened\" traces: it presents CometML's Opik as a self-correcting loop — tracing, the Ollie coding agent, plain-English test suites, an agent sandbox — that diagnoses a failed run, proposes a fix, reruns, and locks a regression test automatically. Every outbound link in the article points to the open-source github.com/comet-ml/opik repo.",
+    "id": "your-agent-harness-should-repair-itself",
+    "warning": "",
+    "details": "In \"Your Agent Harness Should Repair Itself\", Akshay Pachaar argues that current agent observability stops at \"what happened\" traces, leaving diagnosis, fixing, and prevention to developers on \"developer time\". The piece presents CometML's Opik as a self-correcting four-layer loop: tracing to capture failures, Ollie (a built-in coding agent) to diagnose them, plain-English test suites to lock expected behavior, and an agent sandbox to verify fixes — going from a bad trace to an approved fix, a rerun, and a locked regression test automatically. All outbound links in the article point to the open-source comet-ml/opik GitHub repo, which includes a self-host command."
+  },
+  {
+    "title": "Engy",
+    "week": "providers",
+    "url": "https://engy.ai/",
+    "sharer": "Felix",
+    "date": "18 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Engy is a \"verified inference\" provider serving frontier open-weight models — DeepSeek V4.1 Flash, GLM 5.3/5.2, Kimi K3, Qwen3.x, MiniMax-H3 — over an OpenAI-compatible API, advertising cryptographic proof of correct inference and zero data retention. Its pricing table undercuts official API prices by up to 90% on a 3:1 input/output blend. - Warning: pricing, discount percentages, and the \"verified inference\" claim are vendor-published and unverified.",
+    "id": "engy",
+    "warning": "Its pricing table undercuts official API prices by up to 90% on a 3:1 input/output blend. - Warning: pricing, discount percentages, and the \"verified inference\" claim are vendor-published and unverified.",
+    "details": "Engy is an inference provider positioning itself as \"the energy grid for an AI-native world\", serving frontier open-weight models — DeepSeek V4.1 Flash, GLM 5.3/5.2, Kimi K3, Qwen3.x, MiniMax-H3 — through an OpenAI-compatible API. Its differentiators are cryptographic proof of correct inference, zero data retention, and per-token prices it claims undercut official APIs by up to 90% on a 3:1 input/output blend (vendor-claimed, unverified). Worth a look for cheap high-context inference (up to 1M tokens on several models), but treat the pricing and \"verified inference\" claims as marketing until independently tested."
+  },
+  {
+    "title": "Ego (lite)",
+    "week": "15–22 Oct 2026",
+    "url": "https://lite.ego.app/",
+    "sharer": "thelaggingway",
+    "date": "19 Oct",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Ego (lite) is a browser built for AI agents to run web automation — scraping and automating complex sites, including behind logins — always free with no setup. Its vendor-published benchmarks claim 47–63% faster task completion and a 93.5% success rate versus agent browser tooling like chrome-devtools-cli and playwright-cli. - Warning: speed, success-rate, and cost figures are vendor-published benchmarks, unverified.",
+    "id": "ego-lite",
+    "warning": "Its vendor-published benchmarks claim 47–63% faster task completion and a 93.5% success rate versus agent browser tooling like chrome-devtools-cli and playwright-cli. - Warning: speed, success-rate, and cost figures are vendor-published benchmarks, unverified.",
+    "details": "Ego (lite) is a browser built for AI agents to run web automation — scraping and automating complex websites, including pages behind logins — positioned as the fastest option for agent-driven browsing, always free with no setup. Its vendor-published benchmarks claim agents complete complex web tasks 47–63% faster than tools like chrome-devtools-cli, agent-browser, browser-harness, and playwright-cli (398s vs 587–648s average), with a 93.5% full success rate and lower token cost. Useful for developers building web-automation agents that need reliable, hands-off browsing; treat the speed, success, and cost figures as vendor benchmarks until independently verified."
+  },
+  {
+    "title": "tramme",
+    "week": "15–22 Oct 2026",
+    "url": "https://tramme.dev/",
+    "sharer": "simply_roo",
+    "date": "19 Oct",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "tramme is a motion-design studio \"directed in words\": describe a film, pin notes to moments or spots in the frame, and it answers with takes to keep or set aside, then exports MP4, transparent video, GIF, or Lottie from the atelier. It's free and open source, with desktop apps for Windows, macOS, and Linux.",
+    "id": "tramme",
+    "warning": "",
+    "details": "tramme is a motion-design studio \"directed in words\": you describe a film (or feed it a brief, video, or folder of material), pin notes to moments or spots in the frame, and it answers with takes to keep or set aside, refining every keyframe in the atelier. It supports keyframes, a graph editor, 2.5D camera, motion blur, masks and mattes, particles, shaders, frame-by-frame drawing, captions from speech, and a sound library, exporting MP4, transparent video, GIF, or Lottie. Free and open source with desktop apps for Windows, macOS, and Linux; the site links to its GitHub repo. Handy for developers and creators who want AI-assisted motion graphics without a traditional timeline editor."
+  },
+  {
+    "title": "Refuseless",
+    "week": "providers",
+    "url": "https://refuseless.com/pricing",
+    "sharer": "ROman",
+    "date": "19 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Refuseless is an inference provider serving \"abliterated\" models — GLM 5.3 Abliterated, GLM 5.3 Flash Abliterated, Qwen3.8 Flash Next Abliterated, and DeepSeek V4.1 Flash Abliterated (refusal behavior removed from the weights) — plus the vendor-original non-abliterated DeepSeek V4.1 Flash, over an OpenAI-compatible /v1/chat/completions API with per-token USD pricing (cards and crypto accepted for top-ups). - Warning: pricing is vendor-published and unverified; \"abliterated\" (refusal-removed) models are uncensored by design — evaluate accordingly.",
+    "id": "refuseless",
+    "warning": "",
+    "details": "Refuseless is an inference provider serving \"abliterated\" models — GLM 5.3 Abliterated, GLM 5.3 Flash Abliterated, Qwen3.8 Flash Next Abliterated, and DeepSeek V4.1 Flash Abliterated — with refusal behavior removed from the weights, plus the vendor-original non-abliterated DeepSeek V4.1 Flash. It exposes an OpenAI-compatible /v1/chat/completions API billed per million tokens (e.g. $2.00/$3.00 per 1M input/output for GLM 5.3 Abliterated, $0.05/$0.15 for the DeepSeek V4.1 Flash safeguards variant), with cached-input discounts and pay-as-you-go top-ups by card or crypto. Worth knowing if you need uncensored open-weight inference, but the models are uncensored by design and all pricing is vendor-published."
+  },
+  {
+    "title": "BlackBox AI",
+    "week": "providers",
+    "url": "https://www.blackbox.ai/models/blackboxai/deepseek/deepseek-v4.1-flash-fast",
+    "sharer": "Felix",
+    "date": "19 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "BlackBox AI's secure-inference platform serves DeepSeek V4.1 Flash Fast — a higher-throughput variant for coding, reasoning, and agentic workloads — at $0.60 input / $2.40 output per 1M tokens with a 1M context window, advertising zero data retention, a model router, and dedicated deployments. - Warning: pricing, throughput, and zero-data-retention claims are vendor-published, unverified.",
+    "id": "blackbox-ai",
+    "warning": "",
+    "details": "BlackBox AI is a \"secure inference\" platform offering a model catalog, a model router, dedicated deployments, and forward-deployed engineering, advertising zero data retention for enterprise workloads. Its DeepSeek V4.1 Flash Fast page lists the higher-throughput DeepSeek variant for coding, reasoning, and agentic workloads at $0.60/$2.40 per 1M input/output tokens with a 1M-token context window and capabilities including reasoning, tool use, implicit caching, vision, and structured output. The site also publishes inference benchmarks plus developer docs with SDKs and quickstarts. Consider it for production inference with data-retention requirements, but verify the zero-retention and performance claims independently."
+  },
+  {
+    "title": "Baseten",
+    "week": "providers",
+    "url": "https://www.baseten.co/library/deepseek-v41-flash-fast/",
+    "sharer": "Felix",
+    "date": "19 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Baseten's model API serves DeepSeek V4.1 Flash Fast — a speed-optimized DeepSeek MoE (552B-parameter backbone, 8B/16B active per token) with a 1M context window and multimodal input — at $0.60 input / $2.40 output per 1M tokens, callable through an OpenAI-compatible client, with OpenAI commitment credits usable on open models. - Warning: pricing and performance claims are vendor-published, unverified.",
+    "id": "baseten",
+    "warning": "",
+    "details": "Baseten is an inference infrastructure provider whose model library serves DeepSeek V4.1 Flash Fast — a speed-optimized DeepSeek v4.1 Flash mixture-of-experts model (552B-parameter backbone, 8B active per token in prefill, 16B in decoding) with a 1M-token context window, multimodal text+image input, and configurable reasoning effort. Its Model API prices the variant at $0.60 input / $0.014 cached input / $2.40 output per 1M tokens, callable through an OpenAI-compatible client, and Baseten lets customers apply OpenAI commitment credits to open models. A solid option for high-throughput long-context inference; pricing and performance figures are vendor-published."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

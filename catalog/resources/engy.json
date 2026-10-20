@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "engy",
+  "title": "Engy",
+  "canonical_url": "https://engy.ai/",
+  "brief": "Engy is a \"verified inference\" provider serving frontier open-weight models — DeepSeek V4.1 Flash, GLM 5.3/5.2, Kimi K3, Qwen3.x, MiniMax-H3 — over an OpenAI-compatible API, advertising cryptographic proof of correct inference and zero data retention. Its pricing table undercuts official API prices by up to 90% on a 3:1 input/output blend. - Warning: pricing, discount percentages, and the \"verified inference\" claim are vendor-published and unverified.",
+  "caveat": "Its pricing table undercuts official API prices by up to 90% on a 3:1 input/output blend. - Warning: pricing, discount percentages, and the \"verified inference\" claim are vendor-published and unverified.",
+  "details": "Engy is an inference provider positioning itself as \"the energy grid for an AI-native world\", serving frontier open-weight models — DeepSeek V4.1 Flash, GLM 5.3/5.2, Kimi K3, Qwen3.x, MiniMax-H3 — through an OpenAI-compatible API. Its differentiators are cryptographic proof of correct inference, zero data retention, and per-token prices it claims undercut official APIs by up to 90% on a 3:1 input/output blend (vendor-claimed, unverified). Worth a look for cheap high-context inference (up to 1M tokens on several models), but treat the pricing and \"verified inference\" claims as marketing until independently tested.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Felix"
+  },
+  "shared_on": "2026-10-18",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
