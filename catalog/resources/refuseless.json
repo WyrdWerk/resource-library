@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "refuseless",
+  "title": "Refuseless",
+  "canonical_url": "https://refuseless.com/pricing",
+  "brief": "Refuseless is an inference provider serving \"abliterated\" models — GLM 5.3 Abliterated, GLM 5.3 Flash Abliterated, Qwen3.8 Flash Next Abliterated, and DeepSeek V4.1 Flash Abliterated (refusal behavior removed from the weights) — plus the vendor-original non-abliterated DeepSeek V4.1 Flash, over an OpenAI-compatible /v1/chat/completions API with per-token USD pricing (cards and crypto accepted for top-ups). - Warning: pricing is vendor-published and unverified; \"abliterated\" (refusal-removed) models are uncensored by design — evaluate accordingly.",
+  "caveat": null,
+  "details": "Refuseless is an inference provider serving \"abliterated\" models — GLM 5.3 Abliterated, GLM 5.3 Flash Abliterated, Qwen3.8 Flash Next Abliterated, and DeepSeek V4.1 Flash Abliterated — with refusal behavior removed from the weights, plus the vendor-original non-abliterated DeepSeek V4.1 Flash. It exposes an OpenAI-compatible /v1/chat/completions API billed per million tokens (e.g. $2.00/$3.00 per 1M input/output for GLM 5.3 Abliterated, $0.05/$0.15 for the DeepSeek V4.1 Flash safeguards variant), with cached-input discounts and pay-as-you-go top-ups by card or crypto. Worth knowing if you need uncensored open-weight inference, but the models are uncensored by design and all pricing is vendor-published.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [
+    "openai-api"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-19",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

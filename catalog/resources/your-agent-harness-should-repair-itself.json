@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "your-agent-harness-should-repair-itself",
+  "title": "Your Agent Harness Should Repair Itself",
+  "canonical_url": "https://x.com/i/article/2064051835636498924",
+  "brief": "Akshay Pachaar's article argues agent observability should go beyond \"what happened\" traces: it presents CometML's Opik as a self-correcting loop — tracing, the Ollie coding agent, plain-English test suites, an agent sandbox — that diagnoses a failed run, proposes a fix, reruns, and locks a regression test automatically. Every outbound link in the article points to the open-source github.com/comet-ml/opik repo.",
+  "caveat": null,
+  "details": "In \"Your Agent Harness Should Repair Itself\", Akshay Pachaar argues that current agent observability stops at \"what happened\" traces, leaving diagnosis, fixing, and prevention to developers on \"developer time\". The piece presents CometML's Opik as a self-correcting four-layer loop: tracing to capture failures, Ollie (a built-in coding agent) to diagnose them, plain-English test suites to lock expected behavior, and an agent sandbox to verify fixes — going from a bad trace to an approved fix, a rerun, and a locked regression test automatically. All outbound links in the article point to the open-source comet-ml/opik GitHub repo, which includes a self-host command.",
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents",
+    "observability"
+  ],
+  "use_cases": [
+    "learn-technique",
+    "monitor-systems"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "article"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-18",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

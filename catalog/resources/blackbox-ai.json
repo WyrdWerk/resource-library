@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "blackbox-ai",
+  "title": "BlackBox AI",
+  "canonical_url": "https://www.blackbox.ai/models/blackboxai/deepseek/deepseek-v4.1-flash-fast",
+  "brief": "BlackBox AI's secure-inference platform serves DeepSeek V4.1 Flash Fast — a higher-throughput variant for coding, reasoning, and agentic workloads — at $0.60 input / $2.40 output per 1M tokens with a 1M context window, advertising zero data retention, a model router, and dedicated deployments. - Warning: pricing, throughput, and zero-data-retention claims are vendor-published, unverified.",
+  "caveat": null,
+  "details": "BlackBox AI is a \"secure inference\" platform offering a model catalog, a model router, dedicated deployments, and forward-deployed engineering, advertising zero data retention for enterprise workloads. Its DeepSeek V4.1 Flash Fast page lists the higher-throughput DeepSeek variant for coding, reasoning, and agentic workloads at $0.60/$2.40 per 1M input/output tokens with a 1M-token context window and capabilities including reasoning, tool use, implicit caching, vision, and structured output. The site also publishes inference benchmarks plus developer docs with SDKs and quickstarts. Consider it for production inference with data-retention requirements, but verify the zero-retention and performance claims independently.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Felix"
+  },
+  "shared_on": "2026-10-19",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

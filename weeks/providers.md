@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-118 curated providers, with briefs.
+123 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -223,6 +223,36 @@
 - Shared by: tom App (bot) (16 Oct)
 - Categories: providers
 - Brief: Artificial Analysis's flagship LLM leaderboard comparing 250+ models across intelligence, price, output speed, latency, and context window, with per-model provider links. Shared alongside an agent-benchmark cost/score rundown (e.g. MiMo-V2.6-Pro at $0.13/task as "top open weights") — the natural starting point for model and provider selection.
+
+## XPLabs (Experiential)
+- URL: https://platform.xplabs.ai
+- Shared by: nixerman (17 Oct)
+- Categories: providers
+- Brief: XPLabs (Experiential) is a small inference provider with published per-token prices for models including DeepSeek V4.1 Flash, GLM 5.3, Kimi K3, and Claude/GPT-6 variants. The share announced a free uncensored DeepSeek V4.1 Flash tier (~41M TPM shared, ~403 TPS peak) — worth a look for free or discounted access to recent open-weight models. - Warning: the free tier was announced by an individual as "free until someone stops me" — an ephemeral offer with no service guarantee; pricing and availability are vendor claims, unverified.
+
+## Engy
+- URL: https://engy.ai/
+- Shared by: Felix (18 Oct)
+- Categories: providers
+- Brief: Engy is a "verified inference" provider serving frontier open-weight models — DeepSeek V4.1 Flash, GLM 5.3/5.2, Kimi K3, Qwen3.x, MiniMax-H3 — over an OpenAI-compatible API, advertising cryptographic proof of correct inference and zero data retention. Its pricing table undercuts official API prices by up to 90% on a 3:1 input/output blend. - Warning: pricing, discount percentages, and the "verified inference" claim are vendor-published and unverified.
+
+## Refuseless
+- URL: https://refuseless.com/pricing
+- Shared by: ROman (19 Oct)
+- Categories: providers
+- Brief: Refuseless is an inference provider serving "abliterated" models — GLM 5.3 Abliterated, GLM 5.3 Flash Abliterated, Qwen3.8 Flash Next Abliterated, and DeepSeek V4.1 Flash Abliterated (refusal behavior removed from the weights) — plus the vendor-original non-abliterated DeepSeek V4.1 Flash, over an OpenAI-compatible /v1/chat/completions API with per-token USD pricing (cards and crypto accepted for top-ups). - Warning: pricing is vendor-published and unverified; "abliterated" (refusal-removed) models are uncensored by design — evaluate accordingly.
+
+## BlackBox AI
+- URL: https://www.blackbox.ai/models/blackboxai/deepseek/deepseek-v4.1-flash-fast
+- Shared by: Felix (19 Oct)
+- Categories: providers
+- Brief: BlackBox AI's secure-inference platform serves DeepSeek V4.1 Flash Fast — a higher-throughput variant for coding, reasoning, and agentic workloads — at $0.60 input / $2.40 output per 1M tokens with a 1M context window, advertising zero data retention, a model router, and dedicated deployments. - Warning: pricing, throughput, and zero-data-retention claims are vendor-published, unverified.
+
+## Baseten
+- URL: https://www.baseten.co/library/deepseek-v41-flash-fast/
+- Shared by: Felix (19 Oct)
+- Categories: providers
+- Brief: Baseten's model API serves DeepSeek V4.1 Flash Fast — a speed-optimized DeepSeek MoE (552B-parameter backbone, 8B/16B active per token) with a 1M context window and multimodal input — at $0.60 input / $2.40 output per 1M tokens, callable through an OpenAI-compatible client, with OpenAI commitment credits usable on open models. - Warning: pricing and performance claims are vendor-published, unverified.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "baseten",
+  "title": "Baseten",
+  "canonical_url": "https://www.baseten.co/library/deepseek-v41-flash-fast/",
+  "brief": "Baseten's model API serves DeepSeek V4.1 Flash Fast — a speed-optimized DeepSeek MoE (552B-parameter backbone, 8B/16B active per token) with a 1M context window and multimodal input — at $0.60 input / $2.40 output per 1M tokens, callable through an OpenAI-compatible client, with OpenAI commitment credits usable on open models. - Warning: pricing and performance claims are vendor-published, unverified.",
+  "caveat": null,
+  "details": "Baseten is an inference infrastructure provider whose model library serves DeepSeek V4.1 Flash Fast — a speed-optimized DeepSeek v4.1 Flash mixture-of-experts model (552B-parameter backbone, 8B active per token in prefill, 16B in decoding) with a 1M-token context window, multimodal text+image input, and configurable reasoning effort. Its Model API prices the variant at $0.60 input / $0.014 cached input / $2.40 output per 1M tokens, callable through an OpenAI-compatible client, and Baseten lets customers apply OpenAI commitment credits to open models. A solid option for high-throughput long-context inference; pricing and performance figures are vendor-published.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [
+    "openai-api"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Felix"
+  },
+  "shared_on": "2026-10-19",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

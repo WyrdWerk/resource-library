@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "harness",
+  "title": "Harness²",
+  "canonical_url": "https://github.com/google-research/harness2",
+  "brief": "Google Research's Harness² is a plug-and-play framework for recursive agent harnessing: it iteratively refines an agent's harness — system prompt, tools, memory, skills, subagents — per task through a Propose–Probe–Compose loop while keeping model weights fixed. It supports OpenCode and Codex executors with JobBench, LAB, and WorkBuddy-Bench benchmarks, and ships Apache-2.0 with a no-credentials local demo.",
+  "caveat": null,
+  "details": "Harness² is Google Research's open-source framework for recursive agent harnessing — optimizing the system around a model (system prompt, guardrails, memory, tool guidance, subagents, skills, scripts, plugins) rather than the weights. Each step runs a contrastive Propose–Probe–Compose cycle: propose harness edits, probe their effects on the same task, and compose a refined harness from behavioral contrasts, without ground-truth feedback; a second recursion level accumulates evidence-supported lessons into a persistent improvement harness for future tasks. The repo reports gains of up to 11.5 points on WorkBuddy-Bench and 11.8 percentage points on LAB's partial pass rate for GLM-5 and Gemini 3.5 Flash (repo-reported, unverified). It supports parallel and sequential recursion with OpenCode and Codex executors across JobBench, LAB, and WorkBuddy-Bench, is Apache-2.0 licensed, and includes a no-credentials local demo.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-18",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

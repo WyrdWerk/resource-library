@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "xplabs-experiential",
+  "title": "XPLabs (Experiential)",
+  "canonical_url": "https://platform.xplabs.ai",
+  "brief": "XPLabs (Experiential) is a small inference provider with published per-token prices for models including DeepSeek V4.1 Flash, GLM 5.3, Kimi K3, and Claude/GPT-6 variants. The share announced a free uncensored DeepSeek V4.1 Flash tier (~41M TPM shared, ~403 TPS peak) — worth a look for free or discounted access to recent open-weight models. - Warning: the free tier was announced by an individual as \"free until someone stops me\" — an ephemeral offer with no service guarantee; pricing and availability are vendor claims, unverified.",
+  "caveat": "The share announced a free uncensored DeepSeek V4.1 Flash tier (~41M TPM shared, ~403 TPS peak) — worth a look for free or discounted access to recent open-weight models. - Warning: the free tier was announced by an individual as \"free until someone stops me\" — an ephemeral offer with no service guarantee; pricing and availability are vendor claims, unverified.",
+  "details": "XPLabs, branded \"Experiential\", is a small inference provider whose public models page lists per-token prices for a range of models: DeepSeek V4.1 Flash (1017), GLM 5.3, Kimi K3, GPT-6 Luna, Claude Sonnet 5, Gemini 3.8 Flash, and others, alongside free tiers for several of them. The share that surfaced it announced a free uncensored DeepSeek V4.1 Flash tier at roughly 41M shared tokens per minute and ~403 TPS peak. It is worth checking for cheap or free access to recent open-weight models, but treat it as experimental: the operator announced the free tier as \"free until someone stops me\", so availability and pricing carry no guarantee, and the provider's uptime track record is unknown.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "nixerman"
+  },
+  "shared_on": "2026-10-17",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "tramme",
+  "title": "tramme",
+  "canonical_url": "https://tramme.dev/",
+  "brief": "tramme is a motion-design studio \"directed in words\": describe a film, pin notes to moments or spots in the frame, and it answers with takes to keep or set aside, then exports MP4, transparent video, GIF, or Lottie from the atelier. It's free and open source, with desktop apps for Windows, macOS, and Linux.",
+  "caveat": null,
+  "details": "tramme is a motion-design studio \"directed in words\": you describe a film (or feed it a brief, video, or folder of material), pin notes to moments or spots in the frame, and it answers with takes to keep or set aside, refining every keyframe in the atelier. It supports keyframes, a graph editor, 2.5D camera, motion blur, masks and mattes, particles, shaders, frame-by-frame drawing, captions from speech, and a sound library, exporting MP4, transparent video, GIF, or Lottie. Free and open source with desktop apps for Windows, macOS, and Linux; the site links to its GitHub repo. Handy for developers and creators who want AI-assisted motion graphics without a traditional timeline editor.",
+  "resource_type": "tool",
+  "topics": [
+    "design"
+  ],
+  "use_cases": [
+    "create-media"
+  ],
+  "interfaces": [
+    "web",
+    "desktop"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "simply_roo"
+  },
+  "shared_on": "2026-10-19",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
