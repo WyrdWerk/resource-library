@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "oss-scanner",
+  "title": "OSS Scanner",
+  "canonical_url": "https://red.anthropic.com/oss-scanner",
+  "brief": "Anthropic's OSS Scanner is a free, opt-in service that scans eligible open-source projects for vulnerabilities with Claude and emails maintainers the findings plus candidate patches. Enrollment is via pull request to Anthropic's oss-scanner registry repo. - Warning: reports are fully model-generated without human review — maintainers must validate findings; false positives possible.",
+  "caveat": null,
+  "details": "OSS Scanner is Anthropic's free, opt-in vulnerability-scanning service for open-source projects: enrolled projects receive periodic scans from Anthropic's strongest models, with findings and candidate patches emailed to maintainers. Enrollment happens by pull request to the anthropics/oss-scanner registry repo; the scanner itself runs service-side and is not open source. Reports are fully model-generated without human review, so maintainers must validate findings — false positives are possible, though Anthropic cites an ~88% bar-meeting rate on critical/high findings in its validation. Anthropic covers the scanning cost.",
+  "resource_type": "service-platform",
+  "topics": [
+    "security",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "test-software"
+  ],
+  "interfaces": [
+    "web",
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "web-app",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx"
+  },
+  "shared_on": "2026-10-20",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

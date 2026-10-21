@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "deepinfer",
+  "title": "DeepInfer",
+  "canonical_url": "https://github.com/deepseek-ai/DeepInfer",
+  "brief": "DeepInfer is DeepSeek's in-house inference framework, open-sourced under Apache 2.0 — the production stack behind DeepSeek-V4.1-Flash serving, with custom kernels (FlashMLA, DeepGEMM, DeepEP), speculative decoding, and support for Nvidia SM100 GPUs and Huawei Ascend 950 NPUs. Self-hostable; production throughput figures are DeepSeek's own, unverified. - Warning: performance and scale figures are vendor-published, unverified.",
+  "caveat": "Self-hostable; production throughput figures are DeepSeek's own, unverified. - Warning: performance and scale figures are vendor-published, unverified.",
+  "details": "DeepInfer is the high-performance inference framework DeepSeek says powers its own large-scale production services, open-sourced under Apache 2.0. It ships custom kernels (FlashMLA, DeepGEMM, DeepEP, TileKernels), speculative decoding, asynchronous batch scheduling, and structured outputs, targeting Nvidia SM100 GPUs and Huawei Ascend 950 NPUs with DeepSeek-V4.1-Flash as the first supported model. DeepSeek reports 155 trillion tokens per day per cluster with a 96% input cache hit rate — vendor figures, unverified. It was originally built primarily on vLLM, with inspiration from SGLang and TensorRT-LLM.",
+  "resource_type": "repository",
+  "topics": [
+    "inference",
+    "self-hosting"
+  ],
+  "use_cases": [
+    "host-models",
+    "run-inference"
+  ],
+  "interfaces": [],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx"
+  },
+  "shared_on": "2026-10-20",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
