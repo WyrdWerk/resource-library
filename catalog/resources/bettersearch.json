@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "bettersearch",
+  "title": "bettersearch",
+  "canonical_url": "https://github.com/ry0narushima/bettersearch",
+  "brief": "bettersearch is \"deep research for any AI agent\" built on DeepSeek's Search API — it spawns subagents, fact-checks results, and returns a clean write-up. Useful as a drop-in web-research primitive for agents that need grounded answers.",
+  "caveat": null,
+  "details": "bettersearch gives any AI agent a deep-research capability on top of DeepSeek's Search API: it spawns subagents, fact-checks what it finds, and produces a clean HTML report. Tagged for agent skills, Claude Code, and Codex, it works as a drop-in research primitive for agents that need web-grounded answers. MIT licensed. Young repo (created October 2026) with a small star count — evaluate before depending on it.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "claude-code"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-20",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "bb-plugin-millivolt",
+  "title": "bb-plugin-millivolt",
+  "canonical_url": "https://github.com/hv-V6/bb-plugin-millivolt",
+  "brief": "A bb plugin to install, adopt, repair, update, and roll back the millivolt inference proxy from the bb agent framework, including its dashboard. Pairs with the millivolt proxy repo shared the same day — distinct artifacts, kept separately. - Warning: marked experimental by the author; expect rough edges.",
+  "caveat": "Pairs with the millivolt proxy repo shared the same day — distinct artifacts, kept separately. - Warning: marked experimental by the author; expect rough edges.",
+  "details": "A bb agent-framework plugin that installs, adopts, repairs, updates, and rolls back the millivolt inference proxy, surfacing its dashboard in the bb sidebar. The author marks it experimental, so expect rough edges. It pairs with the millivolt proxy repo shared the same day — the plugin manages the proxy; it is not the proxy itself. MIT licensed.",
+  "resource_type": "repository",
+  "topics": [
+    "developer-tools",
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "extension"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-20",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

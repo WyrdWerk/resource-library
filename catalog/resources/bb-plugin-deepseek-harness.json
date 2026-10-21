@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "bb-plugin-deepseek-harness",
+  "title": "bb-plugin-deepseek-harness",
+  "canonical_url": "https://github.com/hv-V6/bb-plugin-deepseek-harness",
+  "brief": "A bb plugin for DeepSeek Harness (dsh) — Standard/Creator/Minimal modes, harness slash commands, and one-command setup from the bb agent framework. Distinct from the published DeepSeek Harness entries (the official harness page and its announcement), which this plugin installs and manages. - Warning: marked experimental by the author; expect rough edges.",
+  "caveat": "Distinct from the published DeepSeek Harness entries (the official harness page and its announcement), which this plugin installs and manages. - Warning: marked experimental by the author; expect rough edges.",
+  "details": "A bb agent-framework plugin that provisions DeepSeek Harness (dsh) with one command, offering Standard, Creator, and Minimal modes plus harness slash commands. The author marks it experimental, so expect rough edges. It is distinct from the published DeepSeek Harness entries (the official harness page and its announcement) — this plugin installs and manages the harness from bb rather than being the harness itself. MIT licensed.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "extension"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-20",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

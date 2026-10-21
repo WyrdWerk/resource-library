@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "id": "millivolt",
+  "title": "millivolt",
+  "canonical_url": "https://github.com/LLM-4-People/millivolt",
+  "brief": "millivolt is an inference proxy with a dashboard (per the bb plugin that installs and manages it, shared the same day). Shared for reference with minimal context in the original message.",
+  "caveat": null,
+  "details": "millivolt is a self-hosted, OpenAI-compatible inference proxy written in Go, with a live dashboard, SQLite request history, routing controls, and operator tooling. It lets you see every AI request while keeping your own API keys and routing. MIT licensed, with docs at llm-4-people.github.io/millivolt. It was shared for reference with minimal context in the original message.",
+  "resource_type": "repository",
+  "topics": [
+    "inference",
+    "self-hosting",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "run-inference",
+    "host-models"
+  ],
+  "interfaces": [
+    "web",
+    "api"
+  ],
+  "technologies": [
+    "go",
+    "sqlite",
+    "openai-api"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-20",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

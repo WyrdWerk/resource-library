@@ -4212,6 +4212,278 @@
   },
   {
     "schema_version": "1.0",
+    "id": "tsrs-typescript-ported-to-rust",
+    "title": "tsrs — TypeScript ported to Rust",
+    "canonical_url": "https://blog.cloudflare.com/typescript-rust-port",
+    "brief": "Cloudflare's blog introduces tsrs, a Rust port of the TypeScript compiler developed in collaboration with Cloudflare, claimed to run up to 8x faster while using substantially less memory. It walks through the engineering of the port — parser, checker, and the techniques behind the speedup. - Warning: speedup and memory figures are vendor-published, unverified.",
+    "caveat": "It walks through the engineering of the port — parser, checker, and the techniques behind the speedup. - Warning: speedup and memory figures are vendor-published, unverified.",
+    "details": "tsrs is a Rust port of the TypeScript compiler, built by Cloudflare with VoidZero and Max Schwenk and incubated inside the Oxc toolchain in close collaboration with the TypeScript team. Early benchmarks claim up to 8x faster type-checking and ~70% less memory than TypeScript 7.0, with an experimental release installable via npm (npx tsrs). Rust was chosen for its WebAssembly story — no garbage collector to bundle — so full dev toolchains could eventually run sandboxed on Cloudflare Workers, in the browser, or on embedded devices. The project plans to merge with Theo Browne's tsc-rs and contribute performance wins back to the official TypeScript Go codebase; the speedup and memory figures are vendor-published and unverified.",
+    "resource_type": "article-guide",
+    "topics": [
+      "developer-tools"
+    ],
+    "use_cases": [
+      "learn-technique"
+    ],
+    "interfaces": [],
+    "technologies": [
+      "typescript",
+      "rust"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "article"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Blessed Piss Enjoyer"
+    },
+    "shared_on": "2026-10-20",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "bettersearch",
+    "title": "bettersearch",
+    "canonical_url": "https://github.com/ry0narushima/bettersearch",
+    "brief": "bettersearch is \"deep research for any AI agent\" built on DeepSeek's Search API — it spawns subagents, fact-checks results, and returns a clean write-up. Useful as a drop-in web-research primitive for agents that need grounded answers.",
+    "caveat": null,
+    "details": "bettersearch gives any AI agent a deep-research capability on top of DeepSeek's Search API: it spawns subagents, fact-checks what it finds, and produces a clean HTML report. Tagged for agent skills, Claude Code, and Codex, it works as a drop-in research primitive for agents that need web-grounded answers. MIT licensed. Young repo (created October 2026) with a small star count — evaluate before depending on it.",
+    "resource_type": "repository",
+    "topics": [
+      "ai-agents",
+      "developer-tools"
+    ],
+    "use_cases": [
+      "manage-agents"
+    ],
+    "interfaces": [],
+    "technologies": [
+      "claude-code"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "ai-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "ROman"
+    },
+    "shared_on": "2026-10-20",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "bb-plugin-millivolt",
+    "title": "bb-plugin-millivolt",
+    "canonical_url": "https://github.com/hv-V6/bb-plugin-millivolt",
+    "brief": "A bb plugin to install, adopt, repair, update, and roll back the millivolt inference proxy from the bb agent framework, including its dashboard. Pairs with the millivolt proxy repo shared the same day — distinct artifacts, kept separately. - Warning: marked experimental by the author; expect rough edges.",
+    "caveat": "Pairs with the millivolt proxy repo shared the same day — distinct artifacts, kept separately. - Warning: marked experimental by the author; expect rough edges.",
+    "details": "A bb agent-framework plugin that installs, adopts, repairs, updates, and rolls back the millivolt inference proxy, surfacing its dashboard in the bb sidebar. The author marks it experimental, so expect rough edges. It pairs with the millivolt proxy repo shared the same day — the plugin manages the proxy; it is not the proxy itself. MIT licensed.",
+    "resource_type": "repository",
+    "topics": [
+      "developer-tools",
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "extension"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "ROman"
+    },
+    "shared_on": "2026-10-20",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "millivolt",
+    "title": "millivolt",
+    "canonical_url": "https://github.com/LLM-4-People/millivolt",
+    "brief": "millivolt is an inference proxy with a dashboard (per the bb plugin that installs and manages it, shared the same day). Shared for reference with minimal context in the original message.",
+    "caveat": null,
+    "details": "millivolt is a self-hosted, OpenAI-compatible inference proxy written in Go, with a live dashboard, SQLite request history, routing controls, and operator tooling. It lets you see every AI request while keeping your own API keys and routing. MIT licensed, with docs at llm-4-people.github.io/millivolt. It was shared for reference with minimal context in the original message.",
+    "resource_type": "repository",
+    "topics": [
+      "inference",
+      "self-hosting",
+      "developer-tools"
+    ],
+    "use_cases": [
+      "run-inference",
+      "host-models"
+    ],
+    "interfaces": [
+      "web",
+      "api"
+    ],
+    "technologies": [
+      "go",
+      "sqlite",
+      "openai-api"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "thelaggingway"
+    },
+    "shared_on": "2026-10-20",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "bb-plugin-deepseek-harness",
+    "title": "bb-plugin-deepseek-harness",
+    "canonical_url": "https://github.com/hv-V6/bb-plugin-deepseek-harness",
+    "brief": "A bb plugin for DeepSeek Harness (dsh) — Standard/Creator/Minimal modes, harness slash commands, and one-command setup from the bb agent framework. Distinct from the published DeepSeek Harness entries (the official harness page and its announcement), which this plugin installs and manages. - Warning: marked experimental by the author; expect rough edges.",
+    "caveat": "Distinct from the published DeepSeek Harness entries (the official harness page and its announcement), which this plugin installs and manages. - Warning: marked experimental by the author; expect rough edges.",
+    "details": "A bb agent-framework plugin that provisions DeepSeek Harness (dsh) with one command, offering Standard, Creator, and Minimal modes plus harness slash commands. The author marks it experimental, so expect rough edges. It is distinct from the published DeepSeek Harness entries (the official harness page and its announcement) — this plugin installs and manages the harness from bb rather than being the harness itself. MIT licensed.",
+    "resource_type": "repository",
+    "topics": [
+      "ai-agents",
+      "developer-tools"
+    ],
+    "use_cases": [
+      "manage-agents"
+    ],
+    "interfaces": [
+      "extension"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "ROman"
+    },
+    "shared_on": "2026-10-20",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "deepinfer",
+    "title": "DeepInfer",
+    "canonical_url": "https://github.com/deepseek-ai/DeepInfer",
+    "brief": "DeepInfer is DeepSeek's in-house inference framework, open-sourced under Apache 2.0 — the production stack behind DeepSeek-V4.1-Flash serving, with custom kernels (FlashMLA, DeepGEMM, DeepEP), speculative decoding, and support for Nvidia SM100 GPUs and Huawei Ascend 950 NPUs. Self-hostable; production throughput figures are DeepSeek's own, unverified. - Warning: performance and scale figures are vendor-published, unverified.",
+    "caveat": "Self-hostable; production throughput figures are DeepSeek's own, unverified. - Warning: performance and scale figures are vendor-published, unverified.",
+    "details": "DeepInfer is the high-performance inference framework DeepSeek says powers its own large-scale production services, open-sourced under Apache 2.0. It ships custom kernels (FlashMLA, DeepGEMM, DeepEP, TileKernels), speculative decoding, asynchronous batch scheduling, and structured outputs, targeting Nvidia SM100 GPUs and Huawei Ascend 950 NPUs with DeepSeek-V4.1-Flash as the first supported model. DeepSeek reports 155 trillion tokens per day per cluster with a 96% input cache hit rate — vendor figures, unverified. It was originally built primarily on vLLM, with inspiration from SGLang and TensorRT-LLM.",
+    "resource_type": "repository",
+    "topics": [
+      "inference",
+      "self-hosting"
+    ],
+    "use_cases": [
+      "host-models",
+      "run-inference"
+    ],
+    "interfaces": [],
+    "technologies": [],
+    "license": null,
+    "open_source": true,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "github",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "asx"
+    },
+    "shared_on": "2026-10-20",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "oss-scanner",
+    "title": "OSS Scanner",
+    "canonical_url": "https://red.anthropic.com/oss-scanner",
+    "brief": "Anthropic's OSS Scanner is a free, opt-in service that scans eligible open-source projects for vulnerabilities with Claude and emails maintainers the findings plus candidate patches. Enrollment is via pull request to Anthropic's oss-scanner registry repo. - Warning: reports are fully model-generated without human review — maintainers must validate findings; false positives possible.",
+    "caveat": null,
+    "details": "OSS Scanner is Anthropic's free, opt-in vulnerability-scanning service for open-source projects: enrolled projects receive periodic scans from Anthropic's strongest models, with findings and candidate patches emailed to maintainers. Enrollment happens by pull request to the anthropics/oss-scanner registry repo; the scanner itself runs service-side and is not open source. Reports are fully model-generated without human review, so maintainers must validate findings — false positives are possible, though Anthropic cites an ~88% bar-meeting rate on critical/high findings in its validation. Anthropic covers the scanning cost.",
+    "resource_type": "service-platform",
+    "topics": [
+      "security",
+      "developer-tools"
+    ],
+    "use_cases": [
+      "test-software"
+    ],
+    "interfaces": [
+      "web",
+      "api"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "15–22 Oct 2026",
+    "legacy_categories": [
+      "web-app",
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "asx"
+    },
+    "shared_on": "2026-10-20",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
     "id": "annnimate",
     "title": "Annnimate",
     "canonical_url": "https://annnimate.com",
