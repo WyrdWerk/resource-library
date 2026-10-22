@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "id": "pandacode",
+  "title": "PandaCode",
+  "canonical_url": "https://github.com/aicodeking/pandacode/",
+  "brief": "PandaCode is a small, open-source native desktop workspace for coding agents (Tauri 2, no bundled Chromium): it runs your coding CLIs — Claude Code, Codex, OpenCode, Kimi Code, DeepSeek and more — side by side with projects, Git, a terminal, and a browser in one window, plus a task board, agent teams, and review diffs per turn. No accounts, no telemetry; code stays local in SQLite. - Warning: brand-new repo (created 18 Oct 2026, ~419 stars); release builds are not code-signed so the OS warns on first install.",
+  "caveat": null,
+  "details": "PandaCode is a free, open-source native desktop workspace for coding agents, built with Tauri 2, Rust, SQLite and plain TypeScript — it uses the OS webview, so there is no bundled Chromium, resident Node server, React runtime or embedded editor. It runs the coding CLIs you already use — Claude Code, Codex, Kimi Code, OpenCode, GLM Coding Plan, Xiaomi MiMo (through Claude Code), Antigravity and xAI Grok Build (through ACP), Pi (through RPC mode) and DeepSeek (through ACP) — side by side with your projects, Git, a terminal and a browser in one window. Task management includes parallel tasks across projects with a Pending-to-Completed board, message queueing, steering while agents run, and architect-plus-worker agent teams mixing harnesses and models. It also has a GitHub view (repos, threads, PRs, issues, one-click merges), per-task worktrees, approval requests grouped above the prompt, per-turn diff review, a token-saver response-style pack, agent usage and cost estimates, local VM and cloud sandbox support (Tart, Daytona, Cloudflare, AWS), iOS/Android simulators, deploy tasks for Vercel/Cloudflare/Railway/AWS/Google Cloud, and bots behind Telegram/Slack/Discord/WhatsApp. Privacy stance: no telemetry, no analytics, no accounts; projects, conversations and settings stored locally in SQLite, and provider keys in the system keychain sent only to that provider. Installed via dmg/exe/AppImage or npx pandacode; release builds are not code-signed, so macOS/Windows warn on first install. Brand-new project (repo created 18 Oct 2026) — long-term maintenance and quality claims are vendor-published and unverified.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "desktop"
+  ],
+  "technologies": [
+    "claude-code",
+    "rust",
+    "typescript",
+    "sqlite"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "15–22 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-21",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,6 +1,6 @@
 {
   "resource_type": {
-    "repository": 111,
+    "repository": 112,
     "provider": 97,
     "article-guide": 63,
     "tool": 41,
@@ -13,9 +13,9 @@
     "other": 0
   },
   "topic": {
-    "ai-agents": 160,
+    "ai-agents": 161,
     "inference": 156,
-    "developer-tools": 92,
+    "developer-tools": 93,
     "design": 43,
     "frontend": 42,
     "cloud-infrastructure": 21,
@@ -32,7 +32,7 @@
   },
   "use_case": {
     "run-inference": 132,
-    "manage-agents": 88,
+    "manage-agents": 89,
     "learn-technique": 80,
     "build-interfaces": 34,
     "generate-code": 28,
@@ -51,27 +51,27 @@
     "web": 160,
     "api": 123,
     "cli": 54,
-    "desktop": 18,
+    "desktop": 19,
     "mcp": 15,
     "extension": 6
   },
   "technology": {
     "react": 19,
+    "typescript": 18,
     "python": 17,
-    "typescript": 17,
     "mcp-protocol": 16,
-    "rust": 14,
-    "claude-code": 12,
+    "rust": 15,
+    "claude-code": 13,
     "javascript": 10,
     "openai-api": 5,
     "anthropic-api": 4,
     "go": 3,
     "next-js": 3,
     "node-js": 3,
+    "sqlite": 3,
     "tailwind-css": 3,
     "docker": 2,
     "github-actions": 2,
-    "sqlite": 2,
     "vue": 2,
     "kubernetes": 1,
     "neovim": 1,
@@ -83,11 +83,11 @@
     "zed": 0
   },
   "channel": {
-    "share-tech": 285,
+    "share-tech": 286,
     "providers": 123
   },
   "open_source": {
-    "true": 42,
+    "true": 43,
     "false": 20
   }
 }
