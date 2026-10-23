@@ -1711,6 +1711,21 @@
     "details": "OSS Scanner is Anthropic's free, opt-in vulnerability-scanning service for open-source projects: enrolled projects receive periodic scans from Anthropic's strongest models, with findings and candidate patches emailed to maintainers. Enrollment happens by pull request to the anthropics/oss-scanner registry repo; the scanner itself runs service-side and is not open source. Reports are fully model-generated without human review, so maintainers must validate findings — false positives are possible, though Anthropic cites an ~88% bar-meeting rate on critical/high findings in its validation. Anthropic covers the scanning cost."
   },
   {
+    "title": "PandaCode",
+    "week": "15–22 Oct 2026",
+    "url": "https://github.com/aicodeking/pandacode/",
+    "sharer": "ROman",
+    "date": "21 Oct",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "PandaCode is a small, open-source native desktop workspace for coding agents (Tauri 2, no bundled Chromium): it runs your coding CLIs — Claude Code, Codex, OpenCode, Kimi Code, DeepSeek and more — side by side with projects, Git, a terminal, and a browser in one window, plus a task board, agent teams, and review diffs per turn. No accounts, no telemetry; code stays local in SQLite. - Warning: brand-new repo (created 18 Oct 2026, ~419 stars); release builds are not code-signed so the OS warns on first install.",
+    "id": "pandacode",
+    "warning": "",
+    "details": "PandaCode is a free, open-source native desktop workspace for coding agents, built with Tauri 2, Rust, SQLite and plain TypeScript — it uses the OS webview, so there is no bundled Chromium, resident Node server, React runtime or embedded editor. It runs the coding CLIs you already use — Claude Code, Codex, Kimi Code, OpenCode, GLM Coding Plan, Xiaomi MiMo (through Claude Code), Antigravity and xAI Grok Build (through ACP), Pi (through RPC mode) and DeepSeek (through ACP) — side by side with your projects, Git, a terminal and a browser in one window. Task management includes parallel tasks across projects with a Pending-to-Completed board, message queueing, steering while agents run, and architect-plus-worker agent teams mixing harnesses and models. It also has a GitHub view (repos, threads, PRs, issues, one-click merges), per-task worktrees, approval requests grouped above the prompt, per-turn diff review, a token-saver response-style pack, agent usage and cost estimates, local VM and cloud sandbox support (Tart, Daytona, Cloudflare, AWS), iOS/Android simulators, deploy tasks for Vercel/Cloudflare/Railway/AWS/Google Cloud, and bots behind Telegram/Slack/Discord/WhatsApp. Privacy stance: no telemetry, no analytics, no accounts; projects, conversations and settings stored locally in SQLite, and provider keys in the system keychain sent only to that provider. Installed via dmg/exe/AppImage or npx pandacode; release builds are not code-signed, so macOS/Windows warn on first install. Brand-new project (repo created 18 Oct 2026) — long-term maintenance and quality claims are vendor-published and unverified."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

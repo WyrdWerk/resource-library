@@ -1,6 +1,6 @@
 {
-  "migrated": 408,
-  "source_rows": 408,
+  "migrated": 409,
+  "source_rows": 409,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -1891,6 +1891,22 @@
       "all_equal": true,
       "shared_on": "2026-10-20",
       "date_evidence": "posted '20 Oct' inside week label '15–22 Oct 2026'"
+    },
+    {
+      "id": "pandacode",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-21",
+      "date_evidence": "posted '21 Oct' inside week label '15–22 Oct 2026'"
     },
     {
       "id": "annnimate",
