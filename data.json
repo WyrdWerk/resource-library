@@ -1726,6 +1726,50 @@
     "details": "PandaCode is a free, open-source native desktop workspace for coding agents, built with Tauri 2, Rust, SQLite and plain TypeScript — it uses the OS webview, so there is no bundled Chromium, resident Node server, React runtime or embedded editor. It runs the coding CLIs you already use — Claude Code, Codex, Kimi Code, OpenCode, GLM Coding Plan, Xiaomi MiMo (through Claude Code), Antigravity and xAI Grok Build (through ACP), Pi (through RPC mode) and DeepSeek (through ACP) — side by side with your projects, Git, a terminal and a browser in one window. Task management includes parallel tasks across projects with a Pending-to-Completed board, message queueing, steering while agents run, and architect-plus-worker agent teams mixing harnesses and models. It also has a GitHub view (repos, threads, PRs, issues, one-click merges), per-task worktrees, approval requests grouped above the prompt, per-turn diff review, a token-saver response-style pack, agent usage and cost estimates, local VM and cloud sandbox support (Tart, Daytona, Cloudflare, AWS), iOS/Android simulators, deploy tasks for Vercel/Cloudflare/Railway/AWS/Google Cloud, and bots behind Telegram/Slack/Discord/WhatsApp. Privacy stance: no telemetry, no analytics, no accounts; projects, conversations and settings stored locally in SQLite, and provider keys in the system keychain sent only to that provider. Installed via dmg/exe/AppImage or npx pandacode; release builds are not code-signed, so macOS/Windows warn on first install. Brand-new project (repo created 18 Oct 2026) — long-term maintenance and quality claims are vendor-published and unverified."
   },
   {
+    "title": "dquickts",
+    "week": "22–29 Oct 2026",
+    "url": "https://github.com/stencil-hq/dquickts",
+    "sharer": "Tom",
+    "date": "23 Oct",
+    "categories": [
+      "github",
+      "dev-tool"
+    ],
+    "brief": "dquickts is a QuickJS fork adding durable execution: suspend a running JS program mid-loop, serialize the whole heap to bytes, and resume it in another process. It also runs TypeScript natively (no transpile step), ships a durable REPL whose session survives restarts, and includes Rust bindings. - Warning: brand-new repo (created 19 Oct 2026, ~357 stars); license field shows NOASSERTION.",
+    "id": "dquickts",
+    "warning": "",
+    "details": "dquickts is a fork of Fabrice Bellard's QuickJS embeddable JavaScript engine that adds durable execution: you can pause a running program even in the middle of a for loop, serialize the whole heap to bytes, and resume it later in a different process. It runs TypeScript natively with no transpile step, ships a durable REPL (qjs --drepl FILE) whose session survives restarts, and includes Rust bindings. Use cases: hibernating idle scripts to disk, durable workflows that span hours, time-slicing computation across machines, and warm starts from snapshots. (Coverage note: written from the repo README — the repo was created 19 Oct 2026 and its license field reads NOASSERTION.)"
+  },
+  {
+    "title": "python-skills",
+    "week": "22–29 Oct 2026",
+    "url": "https://github.com/1y33/python-skills",
+    "sharer": "cata",
+    "date": "23 Oct",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "python-skills is a pair of open-source agent skills (plain SKILL.md folders) that teach coding agents to write Python a senior reviewer would approve: typed contracts, bounded waits, specific exceptions, and behavior-preserving refactors with characterization tests. Works in Claude Code, Pi, Codex, Cursor, Gemini CLI, OpenCode, and other skill-reading agents.",
+    "id": "python-skills",
+    "warning": "",
+    "details": "python-skills is a pair of open-source agent skills (plain SKILL.md folders) from cata that teach coding agents to write Python a senior reviewer would approve. python-dev covers writing, reviewing, and setting up Python — typed contracts, understandable execution, usable APIs, deliberate extension points, reliable operation. python-refactor does behavior-preserving cleanup: scoped audit, characterization tests first, then small verified steps toward the python-dev patterns, with the repo's formatter, linter, type checker, and tests run after each step. They install via npx skills add, as a Claude Code plugin, a Pi package, or manual copy, and work in Claude Code, Pi, Codex, Cursor, Gemini CLI, OpenCode, and other skill-reading agents. (Coverage note: written from the live README — repo created 23 Oct 2026, MIT license.)"
+  },
+  {
+    "title": "Wally",
+    "week": "providers",
+    "url": "https://www.runwally.com/",
+    "sharer": "nixerman",
+    "date": "23 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Wally is RunAnywhere's cloud inference product: an OpenAI-compatible API serving frontier open models (GLM-5.3 Flash, DeepSeek V4.1 Flash, MiMo V2.6 Pro), with cloud and local as explicit choices and zero data retention on prompt/completion bodies. Pricing lives in the console behind sign-in. - Warning: nixerman's \"faster than primalabs\" performance claim is unverified; pricing requires console sign-in.",
+    "id": "wally",
+    "warning": "Pricing lives in the console behind sign-in. - Warning: nixerman's \"faster than primalabs\" performance claim is unverified; pricing requires console sign-in.",
+    "details": "Wally is RunAnywhere's cloud inference product: an OpenAI-compatible API (https://inference.runanywhere.ai/v1) serving frontier open models, currently GLM-5.3 Flash (380 tok/s decode), DeepSeek V4.1 Flash (615 tok/s), and MiMo V2.6 Pro (320 tok/s), plus Eve, a decision model that answers yes/no, choice, and score questions with a probability via wally decisions or POST /v1/decisions. Cloud and local are explicit choices — Wally never moves a request between them silently — and production Wally uses zero data retention for prompt and completion bodies. Sign in once with wally account login (Google or GitHub) and point any OpenAI client at the base URL. (Coverage note: written from the live product page — the model lineup and live prices change, and pricing lives in the console behind sign-in.)"
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

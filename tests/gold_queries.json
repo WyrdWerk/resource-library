@@ -166,13 +166,13 @@
     "expect_top1": null,
     "expect_top5": [
       "rust-foundation-trusted-training-rftt",
+      "tsrs-typescript-ported-to-rust",
       "blessed-rs",
       "beads-rust",
-      "bevy",
-      "fff"
+      "bevy"
     ],
     "expect_none": false,
-    "note": "re-reviewed 2026-10-08 against 354-record catalog; blessed-rs (community guide to the Rust ecosystem) legitimately re-ranked #2"
+    "note": "re-reviewed 2026-10-24 against 412-record catalog; tsrs (Rust port of the TypeScript compiler, Cloudflare collab) legitimately re-ranked #2, shifting fff to #6"
   },
   {
     "query": "model weights huggingface",
@@ -453,13 +453,13 @@
     "expect_top1": null,
     "expect_top5": [
       "anthropic-claude-haiku-5-5",
-      "ai-router",
-      "aihubmix",
       "baseten",
-      "refuseless"
+      "refuseless",
+      "wally",
+      "ai-router"
     ],
     "expect_none": false,
-    "note": "re-reviewed 2026-10-20 against 401-record catalog; new baseten and refuseless (OpenAI-compatible provider APIs) tie at #2-3, shifting cline-pass and featherless to #6/#8"
+    "note": "re-reviewed 2026-10-24 against 412-record catalog; new wally (OpenAI-compatible inference API provider) ties at #2-4, shifting aihubmix to #6"
   },
   {
     "query": "benchmark",
@@ -470,9 +470,9 @@
       "primalabs-mimo-v2-6-pro-speed-benchmark",
       "artificial-analysis-mimo-v2-6-pro-providers",
       "brokenarxiv-arxivmath-announcement",
-      "isoquant"
+      "ego-lite"
     ],
     "expect_none": false,
-    "note": "reviewed 2026-10-04 against 310-record catalog (daily rebase; new records legitimately re-ranked)"
+    "note": "re-reviewed 2026-10-24 against 412-record catalog; ego-lite (brief leads with vendor-published benchmark claims) legitimately re-ranked #5, shifting isoquant to #6"
   }
 ]
