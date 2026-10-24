@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "wally",
+  "title": "Wally",
+  "canonical_url": "https://www.runwally.com/",
+  "brief": "Wally is RunAnywhere's cloud inference product: an OpenAI-compatible API serving frontier open models (GLM-5.3 Flash, DeepSeek V4.1 Flash, MiMo V2.6 Pro), with cloud and local as explicit choices and zero data retention on prompt/completion bodies. Pricing lives in the console behind sign-in. - Warning: nixerman's \"faster than primalabs\" performance claim is unverified; pricing requires console sign-in.",
+  "caveat": "Pricing lives in the console behind sign-in. - Warning: nixerman's \"faster than primalabs\" performance claim is unverified; pricing requires console sign-in.",
+  "details": "Wally is RunAnywhere's cloud inference product: an OpenAI-compatible API (https://inference.runanywhere.ai/v1) serving frontier open models, currently GLM-5.3 Flash (380 tok/s decode), DeepSeek V4.1 Flash (615 tok/s), and MiMo V2.6 Pro (320 tok/s), plus Eve, a decision model that answers yes/no, choice, and score questions with a probability via wally decisions or POST /v1/decisions. Cloud and local are explicit choices — Wally never moves a request between them silently — and production Wally uses zero data retention for prompt and completion bodies. Sign in once with wally account login (Google or GitHub) and point any OpenAI client at the base URL. (Coverage note: written from the live product page — the model lineup and live prices change, and pricing lives in the console behind sign-in.)",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "cli"
+  ],
+  "technologies": [
+    "openai-api"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "nixerman"
+  },
+  "shared_on": "2026-10-23",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "python-skills",
+  "title": "python-skills",
+  "canonical_url": "https://github.com/1y33/python-skills",
+  "brief": "python-skills is a pair of open-source agent skills (plain SKILL.md folders) that teach coding agents to write Python a senior reviewer would approve: typed contracts, bounded waits, specific exceptions, and behavior-preserving refactors with characterization tests. Works in Claude Code, Pi, Codex, Cursor, Gemini CLI, OpenCode, and other skill-reading agents.",
+  "caveat": null,
+  "details": "python-skills is a pair of open-source agent skills (plain SKILL.md folders) from cata that teach coding agents to write Python a senior reviewer would approve. python-dev covers writing, reviewing, and setting up Python — typed contracts, understandable execution, usable APIs, deliberate extension points, reliable operation. python-refactor does behavior-preserving cleanup: scoped audit, characterization tests first, then small verified steps toward the python-dev patterns, with the repo's formatter, linter, type checker, and tests run after each step. They install via npx skills add, as a Claude Code plugin, a Pi package, or manual copy, and work in Claude Code, Pi, Codex, Cursor, Gemini CLI, OpenCode, and other skill-reading agents. (Coverage note: written from the live README — repo created 23 Oct 2026, MIT license.)",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "generate-code"
+  ],
+  "interfaces": [
+    "extension"
+  ],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "22–29 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "cata"
+  },
+  "shared_on": "2026-10-23",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

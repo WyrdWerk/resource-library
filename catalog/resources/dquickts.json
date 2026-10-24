@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "dquickts",
+  "title": "dquickts",
+  "canonical_url": "https://github.com/stencil-hq/dquickts",
+  "brief": "dquickts is a QuickJS fork adding durable execution: suspend a running JS program mid-loop, serialize the whole heap to bytes, and resume it in another process. It also runs TypeScript natively (no transpile step), ships a durable REPL whose session survives restarts, and includes Rust bindings. - Warning: brand-new repo (created 19 Oct 2026, ~357 stars); license field shows NOASSERTION.",
+  "caveat": null,
+  "details": "dquickts is a fork of Fabrice Bellard's QuickJS embeddable JavaScript engine that adds durable execution: you can pause a running program even in the middle of a for loop, serialize the whole heap to bytes, and resume it later in a different process. It runs TypeScript natively with no transpile step, ships a durable REPL (qjs --drepl FILE) whose session survives restarts, and includes Rust bindings. Use cases: hibernating idle scripts to disk, durable workflows that span hours, time-slicing computation across machines, and warm starts from snapshots. (Coverage note: written from the repo README — the repo was created 19 Oct 2026 and its license field reads NOASSERTION.)",
+  "resource_type": "repository",
+  "topics": [
+    "developer-tools"
+  ],
+  "use_cases": [
+    "automate-workflows"
+  ],
+  "interfaces": [
+    "cli"
+  ],
+  "technologies": [
+    "javascript",
+    "typescript",
+    "rust"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "22–29 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-23",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

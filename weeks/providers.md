@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-123 curated providers, with briefs.
+124 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -253,6 +253,12 @@
 - Shared by: Felix (19 Oct)
 - Categories: providers
 - Brief: Baseten's model API serves DeepSeek V4.1 Flash Fast — a speed-optimized DeepSeek MoE (552B-parameter backbone, 8B/16B active per token) with a 1M context window and multimodal input — at $0.60 input / $2.40 output per 1M tokens, callable through an OpenAI-compatible client, with OpenAI commitment credits usable on open models. - Warning: pricing and performance claims are vendor-published, unverified.
+
+## Wally
+- URL: https://www.runwally.com/
+- Shared by: nixerman (23 Oct)
+- Categories: providers
+- Brief: Wally is RunAnywhere's cloud inference product: an OpenAI-compatible API serving frontier open models (GLM-5.3 Flash, DeepSeek V4.1 Flash, MiMo V2.6 Pro), with cloud and local as explicit choices and zero data retention on prompt/completion bodies. Pricing lives in the console behind sign-in. - Warning: nixerman's "faster than primalabs" performance claim is unverified; pricing requires console sign-in.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
