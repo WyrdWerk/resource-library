@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-124 curated providers, with briefs.
+126 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -259,6 +259,18 @@
 - Shared by: nixerman (23 Oct)
 - Categories: providers
 - Brief: Wally is RunAnywhere's cloud inference product: an OpenAI-compatible API serving frontier open models (GLM-5.3 Flash, DeepSeek V4.1 Flash, MiMo V2.6 Pro), with cloud and local as explicit choices and zero data retention on prompt/completion bodies. Pricing lives in the console behind sign-in. - Warning: nixerman's "faster than primalabs" performance claim is unverified; pricing requires console sign-in.
+
+## Piramyd Cloud
+- URL: https://piramyd.cloud/
+- Shared by: Aspiring UBI Recipient (25 Oct)
+- Categories: providers
+- Brief: Piramyd Cloud is a flat-rate unified model API for coding agents: one monthly price buys unlimited tokens across 59 frontier models (Claude, GPT, Gemini, DeepSeek, Kimi and more) through OpenAI- and Anthropic-compatible endpoints, set up via npx piramyd without touching existing agent configs. Plans run $30/month (Solo, about 2 agents) to $90/month (Scale, about 10 agents), with throughput capped by requests per minute rather than tokens. - Warning: "unlimited" is the vendor's marketing — the binding limit is requests per minute, and the 3-day Solo trial requires a card; no independent verification of sustained throughput.
+
+## DeepSeek Platform API vs OpenCode Go — 4-round comparison
+- URL: https://x.com/nothingto12/status/2113847685664940481
+- Shared by: ROman (24 Oct)
+- Categories: providers
+- Brief: Naz's four-round head-to-head (same prompt, same DSH harness, DeepSeek-v4.1-Flash-1017) finds DeepSeek's official API ahead on output quality every round, faster, and never timing out, while OpenCode Go timed out repeatedly — yet concludes OpenCode Go's $10-for-$80 value may still be worth it for most users and for personal-assistant use. Per-round results are shown in an attached comparison image rather than a linked page. - Warning: subjective single-user verdict on non-deterministic runs; quality judgments are not reproducible and the author notes results may differ between people.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

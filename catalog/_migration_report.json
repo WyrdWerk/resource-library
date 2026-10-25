@@ -1,6 +1,6 @@
 {
-  "migrated": 412,
-  "source_rows": 412,
+  "migrated": 414,
+  "source_rows": 414,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -1955,6 +1955,38 @@
       "all_equal": true,
       "shared_on": "2026-10-23",
       "date_evidence": "posted '23 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "piramyd-cloud",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-25",
+      "date_evidence": "posted '25 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "deepseek-platform-api-vs-opencode-go-4-round-comparison",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-24",
+      "date_evidence": "posted '24 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
     },
     {
       "id": "annnimate",

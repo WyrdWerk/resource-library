@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "piramyd-cloud",
+  "title": "Piramyd Cloud",
+  "canonical_url": "https://piramyd.cloud/",
+  "brief": "Piramyd Cloud is a flat-rate unified model API for coding agents: one monthly price buys unlimited tokens across 59 frontier models (Claude, GPT, Gemini, DeepSeek, Kimi and more) through OpenAI- and Anthropic-compatible endpoints, set up via npx piramyd without touching existing agent configs. Plans run $30/month (Solo, about 2 agents) to $90/month (Scale, about 10 agents), with throughput capped by requests per minute rather than tokens. - Warning: \"unlimited\" is the vendor's marketing — the binding limit is requests per minute, and the 3-day Solo trial requires a card; no independent verification of sustained throughput.",
+  "caveat": null,
+  "details": "Piramyd Cloud is a flat-rate unified API that puts 59 frontier models behind one key for coding agents: Claude Code, Codex, Gemini CLI and other OpenAI- or Anthropic-compatible tools connect via npx piramyd or the https://api.piramyd.cloud/v1 base URL, with each agent getting its own profile while existing configs, instructions, hooks and memory stay untouched. Every plan includes all 59 models with no per-token charges — Solo at $30/month (10 requests per minute, about 2 agents), Growth at $50/month (25 RPM, about 5 agents), Scale at $90/month (50 RPM, about 10 agents) — plus embeddings, speech-to-text, web search and scrape/crawl tools on the same key. The pitch is aimed at long agent runs that would otherwise be cut short by token budgets, and Solo starts with a 3-day trial (card required, cancel before day 4). Treat \"unlimited\" as throughput-limited: requests per minute is the real cap, bursts queue briefly, and sustained heavy use beyond the RPM limit has no published guarantee.",
+  "resource_type": "provider",
+  "topics": [
+    "inference",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "run-inference",
+    "manage-agents"
+  ],
+  "interfaces": [
+    "api",
+    "cli"
+  ],
+  "technologies": [
+    "openai-api",
+    "anthropic-api"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Aspiring UBI Recipient"
+  },
+  "shared_on": "2026-10-25",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
