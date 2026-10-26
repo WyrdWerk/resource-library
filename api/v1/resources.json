@@ -4648,6 +4648,161 @@
   },
   {
     "schema_version": "1.0",
+    "id": "piramyd-cloud",
+    "title": "Piramyd Cloud",
+    "canonical_url": "https://piramyd.cloud/",
+    "brief": "Piramyd Cloud is a flat-rate unified model API for coding agents: one monthly price buys unlimited tokens across 59 frontier models (Claude, GPT, Gemini, DeepSeek, Kimi and more) through OpenAI- and Anthropic-compatible endpoints, set up via npx piramyd without touching existing agent configs. Plans run $30/month (Solo, about 2 agents) to $90/month (Scale, about 10 agents), with throughput capped by requests per minute rather than tokens. - Warning: \"unlimited\" is the vendor's marketing — the binding limit is requests per minute, and the 3-day Solo trial requires a card; no independent verification of sustained throughput.",
+    "caveat": null,
+    "details": "Piramyd Cloud is a flat-rate unified API that puts 59 frontier models behind one key for coding agents: Claude Code, Codex, Gemini CLI and other OpenAI- or Anthropic-compatible tools connect via npx piramyd or the https://api.piramyd.cloud/v1 base URL, with each agent getting its own profile while existing configs, instructions, hooks and memory stay untouched. Every plan includes all 59 models with no per-token charges — Solo at $30/month (10 requests per minute, about 2 agents), Growth at $50/month (25 RPM, about 5 agents), Scale at $90/month (50 RPM, about 10 agents) — plus embeddings, speech-to-text, web search and scrape/crawl tools on the same key. The pitch is aimed at long agent runs that would otherwise be cut short by token budgets, and Solo starts with a 3-day trial (card required, cancel before day 4). Treat \"unlimited\" as throughput-limited: requests per minute is the real cap, bursts queue briefly, and sustained heavy use beyond the RPM limit has no published guarantee.",
+    "resource_type": "provider",
+    "topics": [
+      "inference",
+      "ai-agents"
+    ],
+    "use_cases": [
+      "run-inference",
+      "manage-agents"
+    ],
+    "interfaces": [
+      "api",
+      "cli"
+    ],
+    "technologies": [
+      "openai-api",
+      "anthropic-api"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "Aspiring UBI Recipient"
+    },
+    "shared_on": "2026-10-25",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "deepseek-platform-api-vs-opencode-go-4-round-comparison",
+    "title": "DeepSeek Platform API vs OpenCode Go — 4-round comparison",
+    "canonical_url": "https://x.com/nothingto12/status/2113847685664940481",
+    "brief": "Naz's four-round head-to-head (same prompt, same DSH harness, DeepSeek-v4.1-Flash-1017) finds DeepSeek's official API ahead on output quality every round, faster, and never timing out, while OpenCode Go timed out repeatedly — yet concludes OpenCode Go's $10-for-$80 value may still be worth it for most users and for personal-assistant use. Per-round results are shown in an attached comparison image rather than a linked page. - Warning: subjective single-user verdict on non-deterministic runs; quality judgments are not reproducible and the author notes results may differ between people.",
+    "caveat": null,
+    "details": "Naz's thread reports a four-round, same-prompt, same-harness (DSH) comparison of DeepSeek-v4.1-Flash-1017 served two ways: DeepSeek's official Platform API versus the OpenCode Go subscription. Across all four rounds the official API came out ahead on output quality, felt faster, and never timed out, while OpenCode Go timed out repeatedly; round 4 was arguably a tie on quality. The verdict is split by use case: the official API for anything crucial where multi-turn mistakes compound, OpenCode Go for personal-assistant use, on the grounds that its $10 subscription covering $80 of usage value is hard to beat even with lower perceived quality. Treat this as one user's subjective, non-deterministic comparison — the author says quality judgments may differ between people — and note the per-round results live in an attached image, not a linked data page.",
+    "resource_type": "provider",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "ROman"
+    },
+    "shared_on": "2026-10-24",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "hemmingway",
+    "title": "Hemmingway",
+    "canonical_url": "https://hemmingway.io/",
+    "brief": "Hemmingway is an AI writing tool built around its own Hemmingway-1.5 model, which writes emails, texts, replies and stories meant to read as if a person wrote them. It offers an OpenAI-compatible endpoint for subscribers and a free tier to try without an account or card. - Warning: \"passes AI detectors 90% of the time\" is the vendor's own test result (GPTZero and other detectors, on its own prompts); the free allowance is small, per the sharer's own follow-up in-channel.",
+    "caveat": null,
+    "details": "Hemmingway is an AI writing tool built around its own Hemmingway-1.5 model, designed to produce emails, texts, replies and stories that read as if a person wrote them, with a chat interface on web, Mac, Windows and Android. The vendor claims the model passes GPTZero and other top AI detectors 90 percent of the time on its own test prompts, against 86 percent for real human writing on the same detectors, and publishes side-by-side examples against other models. It is free to try without an account or card, with paid plans from 9 dollars a month for a much larger allowance, and subscribers can plug it into any OpenAI-compatible endpoint. Caveats: the detector-pass figures are the vendor's own test results, not independent verification, and the free allowance is small.",
+    "resource_type": "service-platform",
+    "topics": [
+      "productivity"
+    ],
+    "use_cases": [
+      "automate-workflows"
+    ],
+    "interfaces": [
+      "web",
+      "desktop",
+      "api"
+    ],
+    "technologies": [
+      "openai-api"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "22–29 Oct 2026",
+    "legacy_categories": [
+      "ai-tool",
+      "web-app"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Aspiring UBI Recipient"
+    },
+    "shared_on": "2026-10-25",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "deepseek-benchmarks-deepseek-api-vs-opencode-go-vs-commandcode-goat",
+    "title": "DeepSeek Benchmarks — DeepSeek API vs OpenCode Go vs CommandCode GOAT",
+    "canonical_url": "https://nazzysar.github.io/deepseek-benchmarks/",
+    "brief": "Naz's demo archive for a three-way comparison of the same challenge across DeepSeek Platform, OpenCode Go and CommandCode GOAT: pick a round and step into each contender's original demo result. It extends the earlier DeepSeek-vs-OpenCode Go head-to-head with a third contender and a browsable archive of the demos. - Warning: single-user, non-deterministic demo runs; results are the author's own and are not reproducible benchmarks.",
+    "caveat": null,
+    "details": "DeepSeek Benchmarks is a demo archive for a three-way comparison of the same coding challenge across DeepSeek Platform, OpenCode Go and CommandCode GOAT, run by Naz and shared in the channel on 25 October 2026. The site presents the original demos as submitted and lets the reader pick a round, then step inside each contender's result to compare them side by side. It extends an earlier DeepSeek-versus-OpenCode Go head-to-head with a third contender and a browsable archive rather than a single verdict thread. Caveats: these are single-user, non-deterministic demo runs rather than reproducible benchmarks, and the comparison thread itself notes the CommandCode GOAT run failed repeatedly before producing working content.",
+    "resource_type": "provider",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "ROman"
+    },
+    "shared_on": "2026-10-25",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
     "id": "annnimate",
     "title": "Annnimate",
     "canonical_url": "https://annnimate.com",

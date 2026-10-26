@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "deepseek-benchmarks-deepseek-api-vs-opencode-go-vs-commandcode-goat",
+  "title": "DeepSeek Benchmarks — DeepSeek API vs OpenCode Go vs CommandCode GOAT",
+  "canonical_url": "https://nazzysar.github.io/deepseek-benchmarks/",
+  "brief": "Naz's demo archive for a three-way comparison of the same challenge across DeepSeek Platform, OpenCode Go and CommandCode GOAT: pick a round and step into each contender's original demo result. It extends the earlier DeepSeek-vs-OpenCode Go head-to-head with a third contender and a browsable archive of the demos. - Warning: single-user, non-deterministic demo runs; results are the author's own and are not reproducible benchmarks.",
+  "caveat": null,
+  "details": "DeepSeek Benchmarks is a demo archive for a three-way comparison of the same coding challenge across DeepSeek Platform, OpenCode Go and CommandCode GOAT, run by Naz and shared in the channel on 25 October 2026. The site presents the original demos as submitted and lets the reader pick a round, then step inside each contender's result to compare them side by side. It extends an earlier DeepSeek-versus-OpenCode Go head-to-head with a third contender and a browsable archive rather than a single verdict thread. Caveats: these are single-user, non-deterministic demo runs rather than reproducible benchmarks, and the comparison thread itself notes the CommandCode GOAT run failed repeatedly before producing working content.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-25",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

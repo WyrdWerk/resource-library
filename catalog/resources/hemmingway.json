@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "hemmingway",
+  "title": "Hemmingway",
+  "canonical_url": "https://hemmingway.io/",
+  "brief": "Hemmingway is an AI writing tool built around its own Hemmingway-1.5 model, which writes emails, texts, replies and stories meant to read as if a person wrote them. It offers an OpenAI-compatible endpoint for subscribers and a free tier to try without an account or card. - Warning: \"passes AI detectors 90% of the time\" is the vendor's own test result (GPTZero and other detectors, on its own prompts); the free allowance is small, per the sharer's own follow-up in-channel.",
+  "caveat": null,
+  "details": "Hemmingway is an AI writing tool built around its own Hemmingway-1.5 model, designed to produce emails, texts, replies and stories that read as if a person wrote them, with a chat interface on web, Mac, Windows and Android. The vendor claims the model passes GPTZero and other top AI detectors 90 percent of the time on its own test prompts, against 86 percent for real human writing on the same detectors, and publishes side-by-side examples against other models. It is free to try without an account or card, with paid plans from 9 dollars a month for a much larger allowance, and subscribers can plug it into any OpenAI-compatible endpoint. Caveats: the detector-pass figures are the vendor's own test results, not independent verification, and the free allowance is small.",
+  "resource_type": "service-platform",
+  "topics": [
+    "productivity"
+  ],
+  "use_cases": [
+    "automate-workflows"
+  ],
+  "interfaces": [
+    "web",
+    "desktop",
+    "api"
+  ],
+  "technologies": [
+    "openai-api"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "22–29 Oct 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Aspiring UBI Recipient"
+  },
+  "shared_on": "2026-10-25",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
