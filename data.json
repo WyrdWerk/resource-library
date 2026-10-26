@@ -1798,6 +1798,35 @@
     "details": "Naz's thread reports a four-round, same-prompt, same-harness (DSH) comparison of DeepSeek-v4.1-Flash-1017 served two ways: DeepSeek's official Platform API versus the OpenCode Go subscription. Across all four rounds the official API came out ahead on output quality, felt faster, and never timed out, while OpenCode Go timed out repeatedly; round 4 was arguably a tie on quality. The verdict is split by use case: the official API for anything crucial where multi-turn mistakes compound, OpenCode Go for personal-assistant use, on the grounds that its $10 subscription covering $80 of usage value is hard to beat even with lower perceived quality. Treat this as one user's subjective, non-deterministic comparison — the author says quality judgments may differ between people — and note the per-round results live in an attached image, not a linked data page."
   },
   {
+    "title": "Hemmingway",
+    "week": "22–29 Oct 2026",
+    "url": "https://hemmingway.io/",
+    "sharer": "Aspiring UBI Recipient",
+    "date": "25 Oct",
+    "categories": [
+      "ai-tool",
+      "web-app"
+    ],
+    "brief": "Hemmingway is an AI writing tool built around its own Hemmingway-1.5 model, which writes emails, texts, replies and stories meant to read as if a person wrote them. It offers an OpenAI-compatible endpoint for subscribers and a free tier to try without an account or card. - Warning: \"passes AI detectors 90% of the time\" is the vendor's own test result (GPTZero and other detectors, on its own prompts); the free allowance is small, per the sharer's own follow-up in-channel.",
+    "id": "hemmingway",
+    "warning": "",
+    "details": "Hemmingway is an AI writing tool built around its own Hemmingway-1.5 model, designed to produce emails, texts, replies and stories that read as if a person wrote them, with a chat interface on web, Mac, Windows and Android. The vendor claims the model passes GPTZero and other top AI detectors 90 percent of the time on its own test prompts, against 86 percent for real human writing on the same detectors, and publishes side-by-side examples against other models. It is free to try without an account or card, with paid plans from 9 dollars a month for a much larger allowance, and subscribers can plug it into any OpenAI-compatible endpoint. Caveats: the detector-pass figures are the vendor's own test results, not independent verification, and the free allowance is small."
+  },
+  {
+    "title": "DeepSeek Benchmarks — DeepSeek API vs OpenCode Go vs CommandCode GOAT",
+    "week": "providers",
+    "url": "https://nazzysar.github.io/deepseek-benchmarks/",
+    "sharer": "ROman",
+    "date": "25 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Naz's demo archive for a three-way comparison of the same challenge across DeepSeek Platform, OpenCode Go and CommandCode GOAT: pick a round and step into each contender's original demo result. It extends the earlier DeepSeek-vs-OpenCode Go head-to-head with a third contender and a browsable archive of the demos. - Warning: single-user, non-deterministic demo runs; results are the author's own and are not reproducible benchmarks.",
+    "id": "deepseek-benchmarks-deepseek-api-vs-opencode-go-vs-commandcode-goat",
+    "warning": "",
+    "details": "DeepSeek Benchmarks is a demo archive for a three-way comparison of the same coding challenge across DeepSeek Platform, OpenCode Go and CommandCode GOAT, run by Naz and shared in the channel on 25 October 2026. The site presents the original demos as submitted and lets the reader pick a round, then step inside each contender's result to compare them side by side. It extends an earlier DeepSeek-versus-OpenCode Go head-to-head with a third contender and a browsable archive rather than a single verdict thread. Caveats: these are single-user, non-deterministic demo runs rather than reproducible benchmarks, and the comparison thread itself notes the CommandCode GOAT run failed repeatedly before producing working content."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

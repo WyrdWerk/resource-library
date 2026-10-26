@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "710fd3e677de7396eccf03dc7a71ee1bdf7b209455ac27762652e43b3a02d32d",
-  "data.json": "c2d9f075ccd3766bda8671c60961f8a04403178e499043548ada9a9b2afff132",
-  "feed.xml": "15f05f6b6adb1f7321c88bbdab8b5245b1a1521d9f435bd3733728713f0faf65",
-  "index.html": "f414cfe8efd4994ca34b5cc1c8d2d42acd6e339a0d924cb0d1a5846eb7614bae",
-  "llms.txt": "d1bd44ba0cf3b0e80d9d60336aef9d4ecbbdf9c0c6b5cf61acb01524cb3bf3fa",
-  "og-image.png": "0c0213185b3c388c34645c36c1996a9c9218021e058ed357c55a59d905cffb6a",
+  "CHANGELOG.md": "09335822fc5f14caa0a17fc82adf32cd7698604b738166b9166c0e62e311919d",
+  "data.json": "a777c3090da8f21dc8e338c0d811d4455c1751f72f3f7d781da6f1db740c460d",
+  "feed.xml": "19f591ab0800a586bfa92a69dfb2b05416e34279757afe5c8f52aa93d99cbb80",
+  "index.html": "0a162bf03d756ef18a3f9548fbd69f1ee4d0973021d589083b635b1ba921bd52",
+  "llms.txt": "7073d7c888f08896ab5df1cabc5bac9ffe442e07d0eaff11dfe44046e8d92153",
+  "og-image.png": "6571ed3ad0143f2a64de801b4dfe0060416556cb49bcfd1908cb64fee15ce50c",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "c1a99cb60c51ecf05e6307051bd169a2b5fd453b68dfd52898653db41ca7c377",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -29,8 +29,8 @@
   "weeks/2026-10-01_to_2026-10-08.md": "474955dc733dfebe6af21d60d526dee9572b20905a35dfe25e11ae9d10ed5f46",
   "weeks/2026-10-08_to_2026-10-15.md": "e8ae99ca8b89c53ae2615a947ef4b2bc37d00f3e47ac70071363c624b6fbf54a",
   "weeks/2026-10-15_to_2026-10-22.md": "e793d798bf4039c0f14e3da05c252a304b4064abb282e44076ae9ff2af939004",
-  "weeks/2026-10-22_to_2026-10-29.md": "8030a238a53ce4c8053bb01170a1fdb7907a294888410ce280436c5abfdbb687",
-  "weeks/providers.md": "27abe7b97cf9f3698d7790d050c1aa39363867c51226768da61d7f57008e96e3"
+  "weeks/2026-10-22_to_2026-10-29.md": "3c1fee54ffe8d04c39249d400e7ba3e57e2639ca036a73c0d91e64833806f0d7",
+  "weeks/providers.md": "082ba8b31b594183f85a1aebad260f0f8de3bb5d37e64496aff1eb587d51c6ac"
  },
  "inventory": {
   "categories": [
@@ -41,13 +41,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 414,
+  "https_urls": 416,
   "nonempty_warnings": 94,
-  "providers": 126,
-  "share_tech": 288,
-  "total": 414,
-  "unique_ids": 414,
-  "unique_urls": 414
+  "providers": 127,
+  "share_tech": 289,
+  "total": 416,
+  "unique_ids": 416,
+  "unique_urls": 416
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -174,6 +174,8 @@
   "wally",
   "piramyd-cloud",
   "deepseek-platform-api-vs-opencode-go-4-round-comparison",
+  "hemmingway",
+  "deepseek-benchmarks-deepseek-api-vs-opencode-go-vs-commandcode-goat",
   "annnimate",
   "hyperiux",
   "vanta-ui",

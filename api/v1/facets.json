@@ -1,12 +1,12 @@
 {
   "resource_type": {
     "repository": 114,
-    "provider": 100,
+    "provider": 101,
     "article-guide": 63,
     "tool": 41,
     "library-framework": 35,
     "directory-gallery": 26,
-    "service-platform": 22,
+    "service-platform": 23,
     "dataset": 7,
     "documentation": 5,
     "template-starter": 1,
@@ -14,12 +14,12 @@
   },
   "topic": {
     "ai-agents": 163,
-    "inference": 159,
+    "inference": 160,
     "developer-tools": 95,
     "design": 43,
     "frontend": 42,
     "cloud-infrastructure": 21,
-    "productivity": 15,
+    "productivity": 16,
     "security": 10,
     "app-development": 8,
     "self-hosting": 7,
@@ -31,12 +31,12 @@
     "databases": 3
   },
   "use_case": {
-    "run-inference": 135,
+    "run-inference": 136,
     "manage-agents": 91,
     "learn-technique": 80,
     "build-interfaces": 34,
     "generate-code": 29,
-    "automate-workflows": 22,
+    "automate-workflows": 23,
     "create-media": 21,
     "discover-design-references": 20,
     "test-software": 16,
@@ -48,10 +48,10 @@
     "operate-databases": 3
   },
   "interface": {
-    "web": 161,
-    "api": 125,
+    "web": 163,
+    "api": 126,
     "cli": 57,
-    "desktop": 19,
+    "desktop": 20,
     "mcp": 15,
     "extension": 7
   },
@@ -63,7 +63,7 @@
     "rust": 16,
     "claude-code": 13,
     "javascript": 11,
-    "openai-api": 7,
+    "openai-api": 8,
     "anthropic-api": 5,
     "go": 3,
     "next-js": 3,
@@ -83,8 +83,8 @@
     "zed": 0
   },
   "channel": {
-    "share-tech": 288,
-    "providers": 126
+    "share-tech": 289,
+    "providers": 127
   },
   "open_source": {
     "true": 44,

@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-126 curated providers, with briefs.
+127 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -271,6 +271,12 @@
 - Shared by: ROman (24 Oct)
 - Categories: providers
 - Brief: Naz's four-round head-to-head (same prompt, same DSH harness, DeepSeek-v4.1-Flash-1017) finds DeepSeek's official API ahead on output quality every round, faster, and never timing out, while OpenCode Go timed out repeatedly — yet concludes OpenCode Go's $10-for-$80 value may still be worth it for most users and for personal-assistant use. Per-round results are shown in an attached comparison image rather than a linked page. - Warning: subjective single-user verdict on non-deterministic runs; quality judgments are not reproducible and the author notes results may differ between people.
+
+## DeepSeek Benchmarks — DeepSeek API vs OpenCode Go vs CommandCode GOAT
+- URL: https://nazzysar.github.io/deepseek-benchmarks/
+- Shared by: ROman (25 Oct)
+- Categories: providers
+- Brief: Naz's demo archive for a three-way comparison of the same challenge across DeepSeek Platform, OpenCode Go and CommandCode GOAT: pick a round and step into each contender's original demo result. It extends the earlier DeepSeek-vs-OpenCode Go head-to-head with a third contender and a browsable archive of the demos. - Warning: single-user, non-deterministic demo runs; results are the author's own and are not reproducible benchmarks.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
