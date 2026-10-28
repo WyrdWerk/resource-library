@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "popcorn",
+  "title": "Popcorn",
+  "canonical_url": "https://github.com/software-mansion/popcorn",
+  "brief": "Popcorn runs Elixir and Erlang applications in the browser, on a BEAM virtual machine compiled to WebAssembly, with OTP processes, message passing and supervision running on the user's device. JavaScript and Elixir communicate through Popcorn's APIs, and the 1.0 release includes documentation, examples and a Phoenix LiveView-in-the-browser demo.",
+  "caveat": null,
+  "details": "Popcorn, by Software Mansion (747 stars, Apache-2.0), runs Elixir and Erlang applications in the browser by compiling the BEAM virtual machine to WebAssembly, so OTP processes, message passing and supervision run on the user's device rather than on a server. JavaScript and Elixir communicate through Popcorn's APIs, and the project ships documentation, examples and LocalLiveView, which runs Phoenix LiveView in the browser. The 1.0 release shared in-channel makes it a practical way to demo or distribute Elixir applications without a backend, though browser execution will not suit workloads that need server-side resources or persistence beyond the device.",
+  "resource_type": "repository",
+  "topics": [
+    "developer-tools",
+    "frontend"
+  ],
+  "use_cases": [
+    "deploy-applications"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "javascript"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "22–29 Oct 2026",
+  "legacy_categories": [
+    "github",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx"
+  },
+  "shared_on": "2026-10-28",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

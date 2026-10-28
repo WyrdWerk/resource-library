@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-127 curated providers, with briefs.
+128 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -277,6 +277,12 @@
 - Shared by: ROman (25 Oct)
 - Categories: providers
 - Brief: Naz's demo archive for a three-way comparison of the same challenge across DeepSeek Platform, OpenCode Go and CommandCode GOAT: pick a round and step into each contender's original demo result. It extends the earlier DeepSeek-vs-OpenCode Go head-to-head with a third contender and a browsable archive of the demos. - Warning: single-user, non-deterministic demo runs; results are the author's own and are not reproducible benchmarks.
+
+## AntSeedStats
+- URL: https://antseedstats.com/models
+- Shared by: 0xSaiya (27 Oct)
+- Categories: providers
+- Brief: AntSeedStats is third-party analytics for AntSeed, the peer-to-peer AI-inference marketplace on Base, listing every model sold on the marketplace with seller counts and input/output prices per million tokens. The models table compares live seller offers side by side, including a savings figure against direct prices, with tracked usage totals. - Warning: prices and savings are advertised catalog figures from the site's DHT crawl, not verified per-purchase usage; the page itself notes the catalog is advertised, not per-purchase usage.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
