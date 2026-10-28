@@ -1,0 +1,10 @@
+## Details
+
+### popcorn
+- Details: Popcorn, by Software Mansion (747 stars, Apache-2.0), runs Elixir and Erlang applications in the browser by compiling the BEAM virtual machine to WebAssembly, so OTP processes, message passing and supervision run on the user's device rather than on a server. JavaScript and Elixir communicate through Popcorn's APIs, and the project ships documentation, examples and LocalLiveView, which runs Phoenix LiveView in the browser. The 1.0 release shared in-channel makes it a practical way to demo or distribute Elixir applications without a backend, though browser execution will not suit workloads that need server-side resources or persistence beyond the device.
+
+### hyperlang
+- Details: Hyperlang runs untrusted Erlang inside an Elixir host on the same BEAM, compiling guest source through a verifier into BEAM modules that can call only a frozen stdlib allowlist and host-declared bindings, with every run metered for reductions, heap and wall time. It targets agent systems that run partly trusted generated code, tools and per-tenant logic, where a bad step must not reach the host, other tenants or capabilities it was not given. The README reports benchmark figures, such as a guest fib(25) in 0.35 ms and 23 KiB per idle tenant, from the project's own measurements on one shared host, so treat them as indicative rather than verified. The repository is brand new (created 26 Oct 2026, 3 commits, 31 stars when collected) and needs Erlang/OTP 29 and Elixir 1.20 or later.
+
+### antseedstats
+- Details: AntSeedStats is third-party analytics for AntSeed, the peer-to-peer AI-inference marketplace on Base, tracking the models sold on the marketplace from a DHT crawl. Its models table lists 813 models with seller counts, input and output prices per million tokens, savings against direct prices and tracked usage, letting a buyer compare live seller offers for a model side by side. It also tracks network revenue, staking and other marketplace metrics. Prices are advertised catalog figures from the crawl rather than verified per-purchase usage, so confirm an offer on AntSeed itself before relying on a price.

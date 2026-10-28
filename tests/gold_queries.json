@@ -117,10 +117,10 @@
    "woxi-vs-mathematica-comparison",
    "boat",
    "artificial-analysis-mimo-v2-6-pro-providers",
-   "openai-api-pricing"
+   "antseedstats"
   ],
   "expect_none": false,
-  "note": "re-reviewed 2026-10-25 against 414-record catalog; new DeepSeek-vs-OpenCode-Go provider price/value comparison legitimately ranks #1 (tied), shifting tokenwatch to #6 (tied with #5)"
+  "note": "re-reviewed 2026-10-28 against 419-record catalog; new AntSeedStats (live seller price-comparison table for AntSeed) legitimately ranks #5, shifting openai-api-pricing (single-provider pricing page) to #6"
  },
  {
   "query": "open source react components",
@@ -467,12 +467,12 @@
   "expect_top1": null,
   "expect_top5": [
    "hpc-sandbox-benchmarks",
+   "deepseek-benchmarks-deepseek-api-vs-opencode-go-vs-commandcode-goat",
    "primalabs-mimo-v2-6-pro-speed-benchmark",
    "artificial-analysis-mimo-v2-6-pro-providers",
-   "brokenarxiv-arxivmath-announcement",
-   "ego-lite"
+   "brokenarxiv-arxivmath-announcement"
   ],
   "expect_none": false,
-  "note": "re-reviewed 2026-10-24 against 412-record catalog; ego-lite (brief leads with vendor-published benchmark claims) legitimately re-ranked #5, shifting isoquant to #6"
+  "note": "re-reviewed 2026-10-28 against 419-record catalog; DeepSeek Benchmarks (three-way demo-comparison archive, added 26 Oct) legitimately ranks #2, shifting ego-lite (browser whose brief merely mentions benchmark claims) to #6"
  }
 ]
