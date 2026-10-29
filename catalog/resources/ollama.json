@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "ollama",
+  "title": "Ollama",
+  "canonical_url": "https://ollama.com/pricing",
+  "brief": "Ollama's pricing page compares its cloud plans for running open models without local hardware: pay-as-you-go per-token billing, plus Pro, Max, Team and Enterprise tiers with monthly usage credits, concurrency limits and model access controls. Running models on the user's own hardware stays unlimited, and the table lists per-million-token input, cached-input and output prices for each cloud model. - Warning: prices and credit amounts are the site's own figures at collection time; verify current pricing before comparing providers.",
+  "caveat": null,
+  "details": "Ollama's pricing page sets out its cloud offering for running open models without local hardware, alongside the local runner: pay-as-you-go per-token billing with no subscription, or Pro, Max, Team and Enterprise plans with monthly usage credits, concurrency limits and, on higher tiers, early access to new models, shared billing and model access controls. The model table lists input, cached-input and output prices per million tokens for cloud models including DeepSeek, GLM, Kimi, Gemma, Mistral, gpt-oss and others, with cheaper off-peak rates outside weekday 12:00 to 18:00 UTC and all weekend. Running models on the user's own hardware is always unlimited, and prompt or response data is never logged or trained on, with hosting primarily in the United States and additional European capacity. Caveats: all prices and credit amounts are the site's own figures at collection time and should be checked against current pricing before comparing providers.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [
+    "ollama"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "plainskill"
+  },
+  "shared_on": "2026-10-28",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -1871,6 +1871,79 @@
     "details": "AntSeedStats is third-party analytics for AntSeed, the peer-to-peer AI-inference marketplace on Base, tracking the models sold on the marketplace from a DHT crawl. Its models table lists 813 models with seller counts, input and output prices per million tokens, savings against direct prices and tracked usage, letting a buyer compare live seller offers for a model side by side. It also tracks network revenue, staking and other marketplace metrics. Prices are advertised catalog figures from the crawl rather than verified per-purchase usage, so confirm an offer on AntSeed itself before relying on a price."
   },
   {
+    "title": "Rakazo",
+    "week": "22–29 Oct 2026",
+    "url": "https://rakazo.com/",
+    "sharer": "ROman",
+    "date": "28 Oct",
+    "categories": [
+      "ai-tool",
+      "web-app"
+    ],
+    "brief": "Rakazo is an open-source alternative to Grok Bot: persistent AI teammates that run on the user's own computer, each given a job such as inbox management, coding or expense tracking, with Gmail, GitHub, Notion and MCP connections. Bots remember what they learn, wake on schedules or webhooks, delegate to each other, and run on the subscriptions or API keys the user already has.",
+    "id": "rakazo",
+    "warning": "",
+    "details": "Rakazo is an open-source (Apache-2.0) alternative to Grok Bot that runs persistent AI teammates on the user's own machine, each bot given a job from templates such as inbox management, sales outreach, talent scouting, expenses, coding or account management. Bots connect to Gmail, GitHub, Notion and any MCP server, learn tasks by watching them done once and saving the steps as skills, remember what they learn across the team, and wake on schedules, webhooks, GitHub events or watched changes. Each bot can use a different model, including Claude or ChatGPT subscriptions, API keys, OpenRouter, Grok or local Ollama and LM Studio servers, with approval limits the user sets. The hosted plan limits described on the site are the project's own figures."
+  },
+  {
+    "title": "Codync",
+    "week": "22–29 Oct 2026",
+    "url": "https://www.codync.dev/",
+    "sharer": "ROman",
+    "date": "28 Oct",
+    "categories": [
+      "ai-tool",
+      "dev-tool"
+    ],
+    "brief": "Codync is a free, open-source way to message Claude Code, Codex and 40+ other AI agents as persistent bots from an iPhone, with a Rust host running on the user's own Mac, Windows or Linux machine. Bots keep their chat, memory and folder across fallback agents at usage limits, and the phone reaches the host directly or through an end-to-end encrypted relay, with no account or cloud copy of the work.",
+    "id": "codync",
+    "warning": "",
+    "details": "Codync is a free, open-source (Apache-2.0) way to run Claude Code, Codex and about 40 other AI agents as persistent bots from an iPhone, driven by a Rust host on the user's own Mac, Windows or Linux machine, including headless servers and other machines reached over SSH. Each bot keeps one ongoing chat with its own instructions, project, memory and tools, and when its agent hits a usage limit, rate limit or sign-out, a fallback agent carries on the same turn with the same chat, memory, folder and tools. The phone reaches the host directly over Wi-Fi or Tailscale, or anywhere else through a free relay that only forwards ciphertext, since every message is sealed end-to-end between phone and computer. Bots, transcripts and memory stay on the user's computer with no account needed, and the iPhone app adds widgets, Live Activities and Dynamic Island status, plus remote screen and voice calls."
+  },
+  {
+    "title": "OpenBot",
+    "week": "22–29 Oct 2026",
+    "url": "https://openbot.run/",
+    "sharer": "ROman",
+    "date": "28 Oct",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "OpenBot is a free desktop app that runs a team of persistent AI agents on the user's own computer, each with its own instructions, workspace and conversation, using the ChatGPT, Claude, Gemini or Grok plan they already pay for or their own model. Agents hand work to each other, queue tasks and keep their workspace when the provider changes, with all data staying local. - Warning: the source is public under the PolyForm Noncommercial licence — free for noncommercial use, commercial use needs a separate licence; it is not open-source. OpenBot is a development preview, and agents can read and change files, run commands and browse without asking each time.",
+    "id": "openbot",
+    "warning": "",
+    "details": "OpenBot is a free desktop app for macOS, Windows and Linux, with iOS and Android clients, that runs a team of persistent AI agents on the user's own computer, each with its own name, instructions, workspace and conversation. Agents message each other, hand off tasks and share files, and can run Codex, Claude Code, Gemini, Grok, OpenCode, Cursor, Cline, Muse Code, Pi or Mercury, plus ACP agents, OpenAI-compatible endpoints, Ollama or LM Studio, using plans the user already pays for. Workspaces, conversations, files and browser data stay on the local computer, and an agent keeps its workspace and conversation when it moves to a backup model at a plan limit. Caveats: the source is public under the PolyForm Noncommercial licence, so commercial use needs a separate licence, and OpenBot is a development preview whose agents can read and change files, run commands and browse without asking each time."
+  },
+  {
+    "title": "Cindy",
+    "week": "22–29 Oct 2026",
+    "url": "https://github.com/makecindy/cindy",
+    "sharer": "thelaggingway",
+    "date": "28 Oct",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Cindy is an open-source AI agent that brings Claude Code, Codex and Pi harnesses together in one desktop and mobile client, with sessions, tools and automations shared across a user's computers and phone. The client is free and Apache-2.0 licensed, using subscriptions or API keys the user already has, with an optional hosted service for cloud sync. - Warning: the client connects to Cindy's cloud services by default, and official builds collect usage analytics by default (disableable in Settings); the backend service is a separate repository, not part of this one.",
+    "id": "cindy",
+    "warning": "",
+    "details": "Cindy is an open-source AI agent whose desktop and mobile clients bring Claude Code, Codex and the Pi harness together behind one interface, with sessions, connected tools, automations and MCP skills shared across a user's computers and phone. A computer acts as its own server, so project files stay on their machine while sessions, memory and shared attachments sync through Cindy's cloud service, and model providers are shared across devices including subscriptions, API providers and local models. The client is free and Apache-2.0 licensed, and a Skip Sign-In mode runs local agents without a Cindy account, though server-backed capabilities are then unavailable. Caveats: the client connects to Cindy's cloud services by default, official builds collect usage analytics by default with a switch in Settings, and the backend service lives in a separate repository."
+  },
+  {
+    "title": "Ollama",
+    "week": "providers",
+    "url": "https://ollama.com/pricing",
+    "sharer": "plainskill",
+    "date": "28 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Ollama's pricing page compares its cloud plans for running open models without local hardware: pay-as-you-go per-token billing, plus Pro, Max, Team and Enterprise tiers with monthly usage credits, concurrency limits and model access controls. Running models on the user's own hardware stays unlimited, and the table lists per-million-token input, cached-input and output prices for each cloud model. - Warning: prices and credit amounts are the site's own figures at collection time; verify current pricing before comparing providers.",
+    "id": "ollama",
+    "warning": "",
+    "details": "Ollama's pricing page sets out its cloud offering for running open models without local hardware, alongside the local runner: pay-as-you-go per-token billing with no subscription, or Pro, Max, Team and Enterprise plans with monthly usage credits, concurrency limits and, on higher tiers, early access to new models, shared billing and model access controls. The model table lists input, cached-input and output prices per million tokens for cloud models including DeepSeek, GLM, Kimi, Gemma, Mistral, gpt-oss and others, with cheaper off-peak rates outside weekday 12:00 to 18:00 UTC and all weekend. Running models on the user's own hardware is always unlimited, and prompt or response data is never logged or trained on, with hosting primarily in the United States and additional European capacity. Caveats: all prices and credit amounts are the site's own figures at collection time and should be checked against current pricing before comparing providers."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

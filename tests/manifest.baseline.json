@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "f8ec6e53a4d19be7d10906c0733db1554e9e3f5c11c5bdfc269c99e4a3870c58",
-  "data.json": "70ed11b1d4d3a7a4f23f0fa4c21520dbaa43202e61d03573e8c06b975146e0e6",
-  "feed.xml": "553fb73c42dd8596c7e5ec5199c4ea3560fbdd9a32007a391c2b394bcf4feac9",
-  "index.html": "da09ca6767609a7ac1181b03087a10cc3592e17bdeee353f5b0814b37d6fd902",
-  "llms.txt": "dbc2fe006e4a7bf7b2432f2f5152d15233fb91409da7d052e8dc0a19134d7f19",
-  "og-image.png": "b041511c26924073cdc7c3089aed557de468e7041545a8655fe3d6cf4d0decd2",
+  "CHANGELOG.md": "b2a39e18a4988d32f740bbc43f6814c5108ec1bd0d298662c8f22913788214b9",
+  "data.json": "6ba88c3fa1187c50625326c5d803695fb84cdfab37627237341235be9fb958e5",
+  "feed.xml": "0aaf2ed8a32651ed90ebf0280c58701ce33224ec924d5f2781b002676c3d1962",
+  "index.html": "3006cf4235a939a9fcf9256a8c66dd4122f44c3a5f0c254e885f8eb1575a09f0",
+  "llms.txt": "69fe0a259192390a9fae150f8ce83218f14d75a0443b7890bf49f4299ddda83c",
+  "og-image.png": "65e3ee1be1afe5186bdb2d7fcb18cf29aefeb60f672ff4dcf2fadda7ff5f6479",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "c1a99cb60c51ecf05e6307051bd169a2b5fd453b68dfd52898653db41ca7c377",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -29,8 +29,8 @@
   "weeks/2026-10-01_to_2026-10-08.md": "474955dc733dfebe6af21d60d526dee9572b20905a35dfe25e11ae9d10ed5f46",
   "weeks/2026-10-08_to_2026-10-15.md": "e8ae99ca8b89c53ae2615a947ef4b2bc37d00f3e47ac70071363c624b6fbf54a",
   "weeks/2026-10-15_to_2026-10-22.md": "e793d798bf4039c0f14e3da05c252a304b4064abb282e44076ae9ff2af939004",
-  "weeks/2026-10-22_to_2026-10-29.md": "89d82deb4252d375520ecde6352e21e0a964b127ad4e36cb98aa4b3b331e5caa",
-  "weeks/providers.md": "4c7180d52e5e0be6d45acec7c835beb2caa6cfca5d18bc15dca775b7a734ea6a"
+  "weeks/2026-10-22_to_2026-10-29.md": "ed2fe89c71a112f21db40144f4874c58938c28d169350f11489851e38d3c15fd",
+  "weeks/providers.md": "39e2c6a481fab5ba83790250c222c49190a94fb065ffd9454a5c2c92546ce999"
  },
  "inventory": {
   "categories": [
@@ -41,13 +41,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 419,
+  "https_urls": 424,
   "nonempty_warnings": 94,
-  "providers": 128,
-  "share_tech": 291,
-  "total": 419,
-  "unique_ids": 419,
-  "unique_urls": 419
+  "providers": 129,
+  "share_tech": 295,
+  "total": 424,
+  "unique_ids": 424,
+  "unique_urls": 424
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -179,6 +179,11 @@
   "popcorn",
   "hyperlang",
   "antseedstats",
+  "rakazo",
+  "codync",
+  "openbot",
+  "cindy",
+  "ollama",
   "annnimate",
   "hyperiux",
   "vanta-ui",

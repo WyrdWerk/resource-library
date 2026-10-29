@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "cindy",
+  "title": "Cindy",
+  "canonical_url": "https://github.com/makecindy/cindy",
+  "brief": "Cindy is an open-source AI agent that brings Claude Code, Codex and Pi harnesses together in one desktop and mobile client, with sessions, tools and automations shared across a user's computers and phone. The client is free and Apache-2.0 licensed, using subscriptions or API keys the user already has, with an optional hosted service for cloud sync. - Warning: the client connects to Cindy's cloud services by default, and official builds collect usage analytics by default (disableable in Settings); the backend service is a separate repository, not part of this one.",
+  "caveat": null,
+  "details": "Cindy is an open-source AI agent whose desktop and mobile clients bring Claude Code, Codex and the Pi harness together behind one interface, with sessions, connected tools, automations and MCP skills shared across a user's computers and phone. A computer acts as its own server, so project files stay on their machine while sessions, memory and shared attachments sync through Cindy's cloud service, and model providers are shared across devices including subscriptions, API providers and local models. The client is free and Apache-2.0 licensed, and a Skip Sign-In mode runs local agents without a Cindy account, though server-backed capabilities are then unavailable. Caveats: the client connects to Cindy's cloud services by default, official builds collect usage analytics by default with a switch in Settings, and the backend service lives in a separate repository.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "desktop"
+  ],
+  "technologies": [
+    "claude-code",
+    "electron",
+    "typescript"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "22–29 Oct 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-10-28",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

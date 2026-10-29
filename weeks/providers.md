@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-128 curated providers, with briefs.
+129 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -283,6 +283,12 @@
 - Shared by: 0xSaiya (27 Oct)
 - Categories: providers
 - Brief: AntSeedStats is third-party analytics for AntSeed, the peer-to-peer AI-inference marketplace on Base, listing every model sold on the marketplace with seller counts and input/output prices per million tokens. The models table compares live seller offers side by side, including a savings figure against direct prices, with tracked usage totals. - Warning: prices and savings are advertised catalog figures from the site's DHT crawl, not verified per-purchase usage; the page itself notes the catalog is advertised, not per-purchase usage.
+
+## Ollama
+- URL: https://ollama.com/pricing
+- Shared by: plainskill (28 Oct)
+- Categories: providers
+- Brief: Ollama's pricing page compares its cloud plans for running open models without local hardware: pay-as-you-go per-token billing, plus Pro, Max, Team and Enterprise tiers with monthly usage credits, concurrency limits and model access controls. Running models on the user's own hardware stays unlimited, and the table lists per-million-token input, cached-input and output prices for each cloud model. - Warning: prices and credit amounts are the site's own figures at collection time; verify current pricing before comparing providers.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
