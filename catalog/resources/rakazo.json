@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "id": "rakazo",
+  "title": "Rakazo",
+  "canonical_url": "https://rakazo.com/",
+  "brief": "Rakazo is an open-source alternative to Grok Bot: persistent AI teammates that run on the user's own computer, each given a job such as inbox management, coding or expense tracking, with Gmail, GitHub, Notion and MCP connections. Bots remember what they learn, wake on schedules or webhooks, delegate to each other, and run on the subscriptions or API keys the user already has.",
+  "caveat": null,
+  "details": "Rakazo is an open-source (Apache-2.0) alternative to Grok Bot that runs persistent AI teammates on the user's own machine, each bot given a job from templates such as inbox management, sales outreach, talent scouting, expenses, coding or account management. Bots connect to Gmail, GitHub, Notion and any MCP server, learn tasks by watching them done once and saving the steps as skills, remember what they learn across the team, and wake on schedules, webhooks, GitHub events or watched changes. Each bot can use a different model, including Claude or ChatGPT subscriptions, API keys, OpenRouter, Grok or local Ollama and LM Studio servers, with approval limits the user sets. The hosted plan limits described on the site are the project's own figures.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "self-hosting"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "automate-workflows"
+  ],
+  "interfaces": [
+    "desktop"
+  ],
+  "technologies": [
+    "anthropic-api",
+    "openai-api",
+    "ollama"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "22–29 Oct 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-10-28",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

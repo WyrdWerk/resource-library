@@ -1,6 +1,6 @@
 {
-  "migrated": 419,
-  "source_rows": 419,
+  "migrated": 424,
+  "source_rows": 424,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -2067,6 +2067,86 @@
       "all_equal": true,
       "shared_on": "2026-10-27",
       "date_evidence": "posted '27 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "rakazo",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-28",
+      "date_evidence": "posted '28 Oct' inside week label '22–29 Oct 2026'"
+    },
+    {
+      "id": "codync",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-28",
+      "date_evidence": "posted '28 Oct' inside week label '22–29 Oct 2026'"
+    },
+    {
+      "id": "openbot",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-28",
+      "date_evidence": "posted '28 Oct' inside week label '22–29 Oct 2026'"
+    },
+    {
+      "id": "cindy",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-28",
+      "date_evidence": "posted '28 Oct' inside week label '22–29 Oct 2026'"
+    },
+    {
+      "id": "ollama",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-28",
+      "date_evidence": "posted '28 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
     },
     {
       "id": "annnimate",
