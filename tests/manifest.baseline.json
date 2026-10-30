@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "e24163df05e89e344cbcc9d43641649bfcd0bbe4c726ecc5613d833235c392ba",
-  "data.json": "56cfbba0bba5a89eb88dca234171b2d4381b471efcd1adc7a06849fc61601774",
-  "feed.xml": "9ef64351ba0fb0c4f858b6fd11589af1345d072107ad7774c0181cf55a7cf5c9",
-  "index.html": "a402e4932d2b7b5cc09035214361b1c626c4baaf863648ae862067d10152394f",
-  "llms.txt": "600a8f25b2ea6517afd9702d99f2086c5d3a7c2f600de9e2443cc41458de8922",
-  "og-image.png": "92515c45071b1a4004c0912fc81cb48658152ea9b4f2e010efcd7f13651856a7",
+  "CHANGELOG.md": "87caf693157822c0311a9bbddd74335c2774608d4fdd195911ee582d58f05619",
+  "data.json": "35554105a969db06aa4e4d03e840de83760c05feb77bb16d25c27107d1896ea6",
+  "feed.xml": "9787899db7761c2cd8f58a6d6812e63c2f05110a296cbf5001125015981e798f",
+  "index.html": "c8757104b73edcc1b1e066905ba9b21b17e802a1cfb00f480d9bcd786c76d349",
+  "llms.txt": "1fc8a484e45df77aadf989df724373bf0e2d87c89a0fc544ce113b0464e5657a",
+  "og-image.png": "aef3c80f5b54bcb6b19db0a698218f95b994e57d5f1b6cc15f012aefaf417a03",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "c1a99cb60c51ecf05e6307051bd169a2b5fd453b68dfd52898653db41ca7c377",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -29,7 +29,7 @@
   "weeks/2026-10-01_to_2026-10-08.md": "474955dc733dfebe6af21d60d526dee9572b20905a35dfe25e11ae9d10ed5f46",
   "weeks/2026-10-08_to_2026-10-15.md": "e8ae99ca8b89c53ae2615a947ef4b2bc37d00f3e47ac70071363c624b6fbf54a",
   "weeks/2026-10-15_to_2026-10-22.md": "e793d798bf4039c0f14e3da05c252a304b4064abb282e44076ae9ff2af939004",
-  "weeks/2026-10-22_to_2026-10-29.md": "23737168d0f4690c217bbc3bbb827652bff183d205f24d6827e02d5787ba491f",
+  "weeks/2026-10-22_to_2026-10-29.md": "98101e9ed1a116eccb023e539dc24c4b9d9aa8808c9135f2c1569341e8f58cb5",
   "weeks/providers.md": "537ad8ee05df84ae32c2d12940131c31e541889c8a5decee0d6cf1025bffd302"
  },
  "inventory": {
@@ -41,13 +41,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 426,
+  "https_urls": 428,
   "nonempty_warnings": 95,
   "providers": 130,
-  "share_tech": 296,
-  "total": 426,
-  "unique_ids": 426,
-  "unique_urls": 426
+  "share_tech": 298,
+  "total": 428,
+  "unique_ids": 428,
+  "unique_urls": 428
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -185,6 +185,8 @@
   "cindy",
   "ollama",
   "ovis",
+  "what-effort-level-should-i-choose",
+  "reasoning-effort-trajectories",
   "apikey-fan",
   "annnimate",
   "hyperiux",

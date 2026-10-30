@@ -1,6 +1,6 @@
 {
-  "migrated": 426,
-  "source_rows": 426,
+  "migrated": 428,
+  "source_rows": 428,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -2150,6 +2150,38 @@
     },
     {
       "id": "ovis",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-29",
+      "date_evidence": "posted '29 Oct' inside week label '22–29 Oct 2026'"
+    },
+    {
+      "id": "what-effort-level-should-i-choose",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-29",
+      "date_evidence": "posted '29 Oct' inside week label '22–29 Oct 2026'"
+    },
+    {
+      "id": "reasoning-effort-trajectories",
       "checks": {
         "id": true,
         "title": true,

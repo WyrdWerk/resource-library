@@ -1959,6 +1959,34 @@
     "details": "Ovis is a free, MIT-licensed browser and phone client for herdr (formerly the herdr web UI) that presents the coding agents running on a user's computer as chats, with the live terminal one click away and every workspace, tab and remote PC over SSH in one list. It supports Claude Code, Codex, OpenCode, pi and more, showing each agent's prompts as cards checked as still current before an answer is sent, and sending push alerts when an agent asks something or finishes, even with the app closed. Installation is a Mac/Windows download or a Linux shell script that also adds herdr and Bun if missing; phones use TestFlight or Google Play betas, or the browser as an installable page, paired by scanning a QR code with Tailscale on both ends. Caveats: Ovis needs herdr and a switched-on computer it can reach, sessions stay on the machine running each agent with no Ovis account or hosted relay, and anonymous usage counts are on by default with a switch in Settings."
   },
   {
+    "title": "What Effort Level Should I Choose?",
+    "week": "22–29 Oct 2026",
+    "url": "https://arxiv.org/abs/2610.34491",
+    "sharer": "asx",
+    "date": "29 Oct",
+    "categories": [
+      "article"
+    ],
+    "brief": "This paper asks whether the reasoning-effort setting on today's models is worth what it costs, measuring the counterfactual effect of effort levels on proprietary and open-weight models across four benchmarks, single-call and long-horizon agentic tasks. It finds higher effort frequently fails tasks lower effort solved and costs up to 42x more on tasks every level can solve, and that starting low and escalating only after a verified failure matches or beats fixed top effort at lower cost; the trajectories behind the results are published alongside it (see Reasoning-Effort Trajectories). - Warning: the $25,000 spend figure is the author's own claim in the tweet; the findings are the paper's measurements on its benchmarks, not a guarantee for any particular workload.",
+    "id": "what-effort-level-should-i-choose",
+    "warning": "",
+    "details": "A paper by Kaiser Sun, Yongchan Kwon, Zain Hasan and colleagues (submitted 25 Oct 2026) that treats reasoning effort as a credence good: users pay for extra computation before knowing whether it will help, and a successful run never reveals whether the effort was necessary. Across four benchmarks spanning single-call and long-horizon agentic tasks, on proprietary and open-weight models, the authors find higher effort frequently fails tasks lower effort solved, costs up to 42 times more on tasks every effort level solves, and shifts agents toward heavier self-verification and solution-searching rather than direct solving. Their proposed alternative — start at the lowest effort and escalate only after a verified failure — matches or improves on fixed top effort across all models and benchmarks at lower cost for most proprietary models. Caveats: the $25,000 spend figure comes from the author's tweet, not the paper; results are measurements on the paper's benchmarks and harness, and may not transfer to other tasks or setups."
+  },
+  {
+    "title": "Reasoning-Effort Trajectories",
+    "week": "22–29 Oct 2026",
+    "url": "https://huggingface.co/datasets/KaiserWhoLearns/ReasiningEffortTrajec",
+    "sharer": "asx",
+    "date": "29 Oct",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "The trajectories behind the reasoning-effort paper: one run per model, benchmark and effort combination across eight models and four benchmarks (AIME 2026, GPQA Diamond, Terminal-Bench 2.1 and SWE-bench Pro), with per-attempt samples, resolution outcomes and trajectory files. It lets readers replay exactly what each effort level did — and what it cost — rather than trusting the paper's aggregates, and is the data behind \"What Effort Level Should I Choose?\". - Warning: the release is licensed by subset because the source benchmarks carry different licences — check the subset licence before reuse. The dataset slug is spelled \"ReasiningEffortTrajec\" on Hugging Face, as published.",
+    "id": "reasoning-effort-trajectories",
+    "warning": "",
+    "details": "The full trajectory data behind the reasoning-effort paper, published by Kaiser Sun on Hugging Face: exactly one run per model, benchmark and effort cell, covering eight models (including GPT-5.6 variants, Claude Sonnet 5, GLM-5.2, Kimi K3 and DeepSeek V4 Flash) on AIME 2026, GPQA Diamond, Terminal-Bench 2.1 and SWE-bench Pro, with per-attempt samples, resolution flags and trajectory files. Pilot, smoke-test, repeat and superseded runs are excluded, so each cell is the single run reported in the paper. The release is licensed by subset because the source benchmarks carry different licences, and the dataset slug is spelled \"ReasiningEffortTrajec\" as published. It is the evidence base for the paper's cost claims: replaying a cell shows what each effort level actually did and cost, rather than relying on the aggregates."
+  },
+  {
     "title": "APIKEY.FAN",
     "week": "providers",
     "url": "https://apikey.fun/pricing",

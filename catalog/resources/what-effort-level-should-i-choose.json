@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "what-effort-level-should-i-choose",
+  "title": "What Effort Level Should I Choose?",
+  "canonical_url": "https://arxiv.org/abs/2610.34491",
+  "brief": "This paper asks whether the reasoning-effort setting on today's models is worth what it costs, measuring the counterfactual effect of effort levels on proprietary and open-weight models across four benchmarks, single-call and long-horizon agentic tasks. It finds higher effort frequently fails tasks lower effort solved and costs up to 42x more on tasks every level can solve, and that starting low and escalating only after a verified failure matches or beats fixed top effort at lower cost; the trajectories behind the results are published alongside it (see Reasoning-Effort Trajectories). - Warning: the $25,000 spend figure is the author's own claim in the tweet; the findings are the paper's measurements on its benchmarks, not a guarantee for any particular workload.",
+  "caveat": null,
+  "details": "A paper by Kaiser Sun, Yongchan Kwon, Zain Hasan and colleagues (submitted 25 Oct 2026) that treats reasoning effort as a credence good: users pay for extra computation before knowing whether it will help, and a successful run never reveals whether the effort was necessary. Across four benchmarks spanning single-call and long-horizon agentic tasks, on proprietary and open-weight models, the authors find higher effort frequently fails tasks lower effort solved, costs up to 42 times more on tasks every effort level solves, and shifts agents toward heavier self-verification and solution-searching rather than direct solving. Their proposed alternative — start at the lowest effort and escalate only after a verified failure — matches or improves on fixed top effort across all models and benchmarks at lower cost for most proprietary models. Caveats: the $25,000 spend figure comes from the author's tweet, not the paper; results are measurements on the paper's benchmarks and harness, and may not transfer to other tasks or setups.",
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "22–29 Oct 2026",
+  "legacy_categories": [
+    "article"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx"
+  },
+  "shared_on": "2026-10-29",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

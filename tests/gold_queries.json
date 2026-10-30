@@ -469,10 +469,10 @@
    "hpc-sandbox-benchmarks",
    "deepseek-benchmarks-deepseek-api-vs-opencode-go-vs-commandcode-goat",
    "primalabs-mimo-v2-6-pro-speed-benchmark",
-   "artificial-analysis-mimo-v2-6-pro-providers",
-   "brokenarxiv-arxivmath-announcement"
+   "reasoning-effort-trajectories",
+   "artificial-analysis-mimo-v2-6-pro-providers"
   ],
   "expect_none": false,
-  "note": "re-reviewed 2026-10-28 against 419-record catalog; DeepSeek Benchmarks (three-way demo-comparison archive, added 26 Oct) legitimately ranks #2, shifting ego-lite (browser whose brief merely mentions benchmark claims) to #6"
+  "note": "re-reviewed 2026-10-30 against 428-record catalog; new Reasoning-Effort Trajectories dataset (benchmark trajectory data across 4 benchmarks, added 30 Oct) legitimately ranks #4, shifting brokenarxiv-arxivmath-announcement to #6"
  }
 ]
