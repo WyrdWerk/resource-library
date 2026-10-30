@@ -1944,6 +1944,35 @@
     "details": "Ollama's pricing page sets out its cloud offering for running open models without local hardware, alongside the local runner: pay-as-you-go per-token billing with no subscription, or Pro, Max, Team and Enterprise plans with monthly usage credits, concurrency limits and, on higher tiers, early access to new models, shared billing and model access controls. The model table lists input, cached-input and output prices per million tokens for cloud models including DeepSeek, GLM, Kimi, Gemma, Mistral, gpt-oss and others, with cheaper off-peak rates outside weekday 12:00 to 18:00 UTC and all weekend. Running models on the user's own hardware is always unlimited, and prompt or response data is never logged or trained on, with hosting primarily in the United States and additional European capacity. Caveats: all prices and credit amounts are the site's own figures at collection time and should be checked against current pricing before comparing providers."
   },
   {
+    "title": "Ovis",
+    "week": "22–29 Oct 2026",
+    "url": "https://github.com/devswha/ovis",
+    "sharer": "cata",
+    "date": "29 Oct",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Ovis is a free, open-source browser and phone client for herdr (formerly the herdr web UI) that turns the coding agents on a user's computer into chats answerable with a click or tap, with a live terminal, workspaces across machines over SSH, and push alerts when an agent asks something or finishes. It covers Claude Code, Codex, OpenCode and more, runs on the user's own hardware with no account, and pairs the phone over Tailscale, a VPN or an SSH tunnel. - Warning: anonymous usage counts are on by default (disableable in Settings or with OVIS_TELEMETRY=0); the phone can only reach a computer that is switched on.",
+    "id": "ovis",
+    "warning": "",
+    "details": "Ovis is a free, MIT-licensed browser and phone client for herdr (formerly the herdr web UI) that presents the coding agents running on a user's computer as chats, with the live terminal one click away and every workspace, tab and remote PC over SSH in one list. It supports Claude Code, Codex, OpenCode, pi and more, showing each agent's prompts as cards checked as still current before an answer is sent, and sending push alerts when an agent asks something or finishes, even with the app closed. Installation is a Mac/Windows download or a Linux shell script that also adds herdr and Bun if missing; phones use TestFlight or Google Play betas, or the browser as an installable page, paired by scanning a QR code with Tailscale on both ends. Caveats: Ovis needs herdr and a switched-on computer it can reach, sessions stay on the machine running each agent with no Ovis account or hosted relay, and anonymous usage counts are on by default with a switch in Settings."
+  },
+  {
+    "title": "APIKEY.FAN",
+    "week": "providers",
+    "url": "https://apikey.fun/pricing",
+    "sharer": "t",
+    "date": "29 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "APIKEY.FAN is a third-party AI gateway selling access to Claude, ChatGPT, Gemini, Grok, Zhipu, Kimi, DeepSeek and more at a fraction of official prices — Claude at 15% of official rates on the pricing page, via shared group multipliers — with a client that connects Codex in one click. It presents itself as enterprise-quota routing behind standard endpoints, so existing SDKs and tools point at it with only an endpoint and key change, and balances never expire. - Warning: unofficial third-party reseller — the discount and \"zero ban risk\" claims are the site's own and unverified, and the sharer asked whether anyone had heard of it, so there is no in-channel endorsement. Resold access can breach the underlying providers' terms; verify legitimacy before sending it work or payment details.",
+    "id": "apikey-fan",
+    "warning": "It presents itself as enterprise-quota routing behind standard endpoints, so existing SDKs and tools point at it with only an endpoint and key change, and balances never expire. - Warning: unofficial third-party reseller — the discount and \"zero ban risk\" claims are the site's own and unverified, and the sharer asked whether anyone had heard of it, so there is no in-channel endorsement.",
+    "details": "APIKEY.FAN is a third-party AI gateway that resells access to Claude, ChatGPT, Gemini, Grok, Zhipu, Kimi, DeepSeek, MiniMax, Qwen, MiMo and TypeSafe models through shared groups priced as multipliers of official rates: the pricing page lists Claude Opus 5.5 at $0.60 input / $3 output per million tokens against official $4 / $20, and similar 10-50% of official pricing across the catalogue, with balances that never expire and Alipay / WeChat Pay supported. Integration is an endpoint and key swap keeping official SDKs and standard endpoints, with a macOS client that connects Codex in one click and support for Claude Code, OpenClaw, Hermes and other tools. Caveats: the site is an unofficial reseller whose \"enterprise procurement\", \"zero ban risk\" and performance claims are its own and unverified, the sharer asked whether anyone had heard of it with no in-channel endorsement, and resold access may breach the underlying providers' terms."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",
