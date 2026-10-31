@@ -1,6 +1,6 @@
 {
-  "migrated": 428,
-  "source_rows": 428,
+  "migrated": 430,
+  "source_rows": 430,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -2211,6 +2211,38 @@
       "all_equal": true,
       "shared_on": "2026-10-29",
       "date_evidence": "posted '29 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "multica",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-31",
+      "date_evidence": "posted '31 Oct' inside week label '29 Oct–5 Nov 2026'"
+    },
+    {
+      "id": "subvocal",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-31",
+      "date_evidence": "posted '31 Oct' inside week label '29 Oct–5 Nov 2026'"
     },
     {
       "id": "annnimate",

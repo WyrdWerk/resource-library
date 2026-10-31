@@ -1,14 +1,14 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "87caf693157822c0311a9bbddd74335c2774608d4fdd195911ee582d58f05619",
-  "data.json": "35554105a969db06aa4e4d03e840de83760c05feb77bb16d25c27107d1896ea6",
-  "feed.xml": "9787899db7761c2cd8f58a6d6812e63c2f05110a296cbf5001125015981e798f",
-  "index.html": "c8757104b73edcc1b1e066905ba9b21b17e802a1cfb00f480d9bcd786c76d349",
-  "llms.txt": "1fc8a484e45df77aadf989df724373bf0e2d87c89a0fc544ce113b0464e5657a",
-  "og-image.png": "aef3c80f5b54bcb6b19db0a698218f95b994e57d5f1b6cc15f012aefaf417a03",
+  "CHANGELOG.md": "d09a9aa77142d9629e53e7b0cc7507047fd7e36227654ab196709c06dcb2f0c7",
+  "data.json": "58bf182cbe5398a5c82767be071f8bcbdf239d07101e51f4499b14db98bc2a7c",
+  "feed.xml": "79b592e0a756cb6ea108930d955f4cbe9127ae1240736473deb66aea6763a718",
+  "index.html": "2d5cb1c2620ee3a0b88cfecd4a4dc75d3ff7f7d0e02cb7e2a1bc89325462080a",
+  "llms.txt": "30059982971c337b83e9778645bec4b91d082f6c8a2596313845833b50780104",
+  "og-image.png": "5eac879653bf121c91d2a0bbbcec00334c3d0759993d11bd6f577b488c69cea9",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
-  "sitemap.xml": "c1a99cb60c51ecf05e6307051bd169a2b5fd453b68dfd52898653db41ca7c377",
+  "sitemap.xml": "ba8e62cbfd4d011191867af7e41fa3ddb2a0dfffd8866115f5e7e1be16e34d94",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
   "weeks/2026-06-11_to_2026-06-17.md": "898c793b7587c0d89e3aa12d6f70a0b1c864f65016c3941a1f0183cf7aebbe99",
   "weeks/2026-06-18_to_2026-06-24.md": "7e9d9cd53a38a0fb7719b0df782b0914782d2fc505dfd1084fa99ae17f1d2b92",
@@ -30,6 +30,7 @@
   "weeks/2026-10-08_to_2026-10-15.md": "e8ae99ca8b89c53ae2615a947ef4b2bc37d00f3e47ac70071363c624b6fbf54a",
   "weeks/2026-10-15_to_2026-10-22.md": "e793d798bf4039c0f14e3da05c252a304b4064abb282e44076ae9ff2af939004",
   "weeks/2026-10-22_to_2026-10-29.md": "98101e9ed1a116eccb023e539dc24c4b9d9aa8808c9135f2c1569341e8f58cb5",
+  "weeks/2026-10-29_to_2026-11-05.md": "23153ef5a6f9815362956ad12a062249966df29af554c477a99feb4f87e773fa",
   "weeks/providers.md": "537ad8ee05df84ae32c2d12940131c31e541889c8a5decee0d6cf1025bffd302"
  },
  "inventory": {
@@ -41,13 +42,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 428,
+  "https_urls": 430,
   "nonempty_warnings": 95,
   "providers": 130,
-  "share_tech": 298,
-  "total": 428,
-  "unique_ids": 428,
-  "unique_urls": 428
+  "share_tech": 300,
+  "total": 430,
+  "unique_ids": 430,
+  "unique_urls": 430
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -188,6 +189,8 @@
   "what-effort-level-should-i-choose",
   "reasoning-effort-trajectories",
   "apikey-fan",
+  "multica",
+  "subvocal",
   "annnimate",
   "hyperiux",
   "vanta-ui",

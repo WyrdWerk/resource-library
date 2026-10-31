@@ -2001,6 +2001,36 @@
     "details": "APIKEY.FAN is a third-party AI gateway that resells access to Claude, ChatGPT, Gemini, Grok, Zhipu, Kimi, DeepSeek, MiniMax, Qwen, MiMo and TypeSafe models through shared groups priced as multipliers of official rates: the pricing page lists Claude Opus 5.5 at $0.60 input / $3 output per million tokens against official $4 / $20, and similar 10-50% of official pricing across the catalogue, with balances that never expire and Alipay / WeChat Pay supported. Integration is an endpoint and key swap keeping official SDKs and standard endpoints, with a macOS client that connects Codex in one click and support for Claude Code, OpenClaw, Hermes and other tools. Caveats: the site is an unofficial reseller whose \"enterprise procurement\", \"zero ban risk\" and performance claims are its own and unverified, the sharer asked whether anyone had heard of it with no in-channel endorsement, and resold access may breach the underlying providers' terms."
   },
   {
+    "title": "Multica",
+    "week": "29 Oct–5 Nov 2026",
+    "url": "https://github.com/multica-ai/multica",
+    "sharer": "ROman",
+    "date": "31 Oct",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Multica is an open-source, self-hostable platform for humans and AI agents to work as one team, built as a \"software factory\" where agents collaborate on software work with human oversight. It gives a team a shared workspace for running coding agents together instead of each agent working in isolation, and Tom called out its good UX for that setup while noting he isn't the target market.",
+    "id": "multica",
+    "warning": "",
+    "details": "Multica is a source-available workspace where AI coding agents show up on a shared board as teammates: you assign them issues the way you would a colleague, they pick the work up, comment as they go, and hand it back for review, with nothing shipping without a human sign-off. It drives the agent CLIs you already have installed — Claude Code, Codex, Cursor, Kimi, OpenCode and 20 more — on runtimes you control, so code never leaves your machines, and it adds squads, skills playbooks, execution logs, usage analytics and review gates around them. You can use the hosted cloud, the desktop app, or self-host the whole stack with Docker Compose or Helm on your own infrastructure; a self-hosted server sends one anonymous daily deployment snapshot unless DO_NOT_TRACK=1 is set. The project is large and active, with 54,393 stars and 5,833 commits since January 2026, though GitHub lists its license field as NOASSERTION, so check the LICENSE file before assuming standard open-source terms."
+  },
+  {
+    "title": "Subvocal",
+    "week": "29 Oct–5 Nov 2026",
+    "url": "https://subvocal.company",
+    "sharer": "Tom",
+    "date": "31 Oct",
+    "categories": [
+      "ai-tool",
+      "web-app"
+    ],
+    "brief": "Subvocal is a pair of smart glasses from The Subvocal Company that turns silently mouthed speech into text at the speed of voice, so you can type without a keyboard or speaking aloud. The YC Fall 2026 startup says its prototypes reach over 200 words per minute and is taking US reservations for a Q1 2027 ship date. - Warning: the 200-words-per-minute figure is the company's own prototype claim and has not been independently verified; early-bird price is $499 with a refundable $199 deposit, the rest due later.",
+    "id": "subvocal",
+    "warning": "",
+    "details": "Subvocal is a pair of smart glasses from The Subvocal Company that decodes deliberate silent mouthing into text at a claimed 200+ words per minute, letting you type, message, take notes or talk to AI assistants without speaking aloud or touching a keyboard. It uses muscle-sensing hardware rather than cameras or lip reading, needs no webcam, and is designed as a general input method that works in the apps you already use — ChatGPT, Claude, Cursor, Slack, email and documents — including dictating to coding agents next to coworkers. The YC Fall 2026 startup raised $1.3M from Y Combinator and Afore Capital, is taking US reservations at a $499 early-bird price with a refundable $199 deposit, and expects shipping to begin in Q1 2027. The 200+ WPM figure is the company's own prototype claim and has not been independently verified, and first-time setup involves a short personal calibration."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",
