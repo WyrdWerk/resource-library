@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "reasoning-effort-trajectories",
+  "title": "Reasoning-Effort Trajectories",
+  "canonical_url": "https://huggingface.co/datasets/KaiserWhoLearns/ReasiningEffortTrajec",
+  "brief": "The trajectories behind the reasoning-effort paper: one run per model, benchmark and effort combination across eight models and four benchmarks (AIME 2026, GPQA Diamond, Terminal-Bench 2.1 and SWE-bench Pro), with per-attempt samples, resolution outcomes and trajectory files. It lets readers replay exactly what each effort level did — and what it cost — rather than trusting the paper's aggregates, and is the data behind \"What Effort Level Should I Choose?\". - Warning: the release is licensed by subset because the source benchmarks carry different licences — check the subset licence before reuse. The dataset slug is spelled \"ReasiningEffortTrajec\" on Hugging Face, as published.",
+  "caveat": null,
+  "details": "The full trajectory data behind the reasoning-effort paper, published by Kaiser Sun on Hugging Face: exactly one run per model, benchmark and effort cell, covering eight models (including GPT-5.6 variants, Claude Sonnet 5, GLM-5.2, Kimi K3 and DeepSeek V4 Flash) on AIME 2026, GPQA Diamond, Terminal-Bench 2.1 and SWE-bench Pro, with per-attempt samples, resolution flags and trajectory files. Pilot, smoke-test, repeat and superseded runs are excluded, so each cell is the single run reported in the paper. The release is licensed by subset because the source benchmarks carry different licences, and the dataset slug is spelled \"ReasiningEffortTrajec\" as published. It is the evidence base for the paper's cost claims: replaying a cell shows what each effort level actually did and cost, rather than relying on the aggregates.",
+  "resource_type": "dataset",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "22–29 Oct 2026",
+  "legacy_categories": [
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx"
+  },
+  "shared_on": "2026-10-29",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

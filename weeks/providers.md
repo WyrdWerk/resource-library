@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-129 curated providers, with briefs.
+130 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -289,6 +289,12 @@
 - Shared by: plainskill (28 Oct)
 - Categories: providers
 - Brief: Ollama's pricing page compares its cloud plans for running open models without local hardware: pay-as-you-go per-token billing, plus Pro, Max, Team and Enterprise tiers with monthly usage credits, concurrency limits and model access controls. Running models on the user's own hardware stays unlimited, and the table lists per-million-token input, cached-input and output prices for each cloud model. - Warning: prices and credit amounts are the site's own figures at collection time; verify current pricing before comparing providers.
+
+## APIKEY.FAN
+- URL: https://apikey.fun/pricing
+- Shared by: t (29 Oct)
+- Categories: providers
+- Brief: APIKEY.FAN is a third-party AI gateway selling access to Claude, ChatGPT, Gemini, Grok, Zhipu, Kimi, DeepSeek and more at a fraction of official prices — Claude at 15% of official rates on the pricing page, via shared group multipliers — with a client that connects Codex in one click. It presents itself as enterprise-quota routing behind standard endpoints, so existing SDKs and tools point at it with only an endpoint and key change, and balances never expire. - Warning: unofficial third-party reseller — the discount and "zero ban risk" claims are the site's own and unverified, and the sharer asked whether anyone had heard of it, so there is no in-channel endorsement. Resold access can breach the underlying providers' terms; verify legitimacy before sending it work or payment details.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
