@@ -2031,6 +2031,20 @@
     "details": "Subvocal is a pair of smart glasses from The Subvocal Company that decodes deliberate silent mouthing into text at a claimed 200+ words per minute, letting you type, message, take notes or talk to AI assistants without speaking aloud or touching a keyboard. It uses muscle-sensing hardware rather than cameras or lip reading, needs no webcam, and is designed as a general input method that works in the apps you already use — ChatGPT, Claude, Cursor, Slack, email and documents — including dictating to coding agents next to coworkers. The YC Fall 2026 startup raised $1.3M from Y Combinator and Afore Capital, is taking US reservations at a $499 early-bird price with a refundable $199 deposit, and expects shipping to begin in Q1 2027. The 200+ WPM figure is the company's own prototype claim and has not been independently verified, and first-time setup involves a short personal calibration."
   },
   {
+    "title": "Subscription Tier List: How Much API Usage $1 Buys",
+    "week": "29 Oct–5 Nov 2026",
+    "url": "https://x.com/adamholtererer/status/2115827734223974762",
+    "sharer": "0xSaiya",
+    "date": "30 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Adam Holter's tier list ranks twelve model-and-plan combinations by how much API usage $1 of subscription buys, from Grok 4.7 on X Premium+ ($80) and Claude Opus/Sonnet 5.5 on Claude Max 20x ($66) in S tier down to Gemini 4 Argon on Google AI Pro ($2.8) in F tier, with Claude Haiku 5.5, GPT-5 Astra, Gemini 3.0 Flash and GLM 5.3 in between. It is a quick way to compare which subscription gives the most model usage per dollar across ChatGPT Plus, Claude Max, Google AI Pro, X Premium+ and GLM Coding Pro — presented as a 10-second video, not a page. - Warning: the dollar figures are the author's own and unverified — the video's methodology footnote was not legible, and Yash himself asked for the workings in the thread; some listed model names are unverified. Treat the ranking as one person's comparison, not measured pricing.",
+    "id": "subscription-tier-list-how-much-api-usage-1-buys",
+    "warning": "It is a quick way to compare which subscription gives the most model usage per dollar across ChatGPT Plus, Claude Max, Google AI Pro, X Premium+ and GLM Coding Pro — presented as a 10-second video, not a page. - Warning: the dollar figures are the author's own and unverified — the video's methodology footnote was not legible, and Yash himself asked for the workings in the thread; some listed model names are unverified.",
+    "details": "Adam Holter's tier list is a 10-second video ranking twelve model-and-plan combinations by API usage per $1 of subscription, from S tier (Grok 4.7 on X Premium+ at $80, Claude Opus 5.5 and Claude Sonnet 5.5 on Claude Max 20x at $66) through A tier (Claude Haiku 5.5 at $47, GPT-5 Astra on ChatGPT Plus at $32), B tier (Gemini 3.0 Flash $25, GPT-5.1 Sol $24, GPT-5 Luna $19, GPT-5.1 Terra $18), C tier (GLM 5.3 $9.6, Claude Fable 5.1 $6.4) to F tier (Gemini 4 Argon $2.8). It answers a practical question — which subscription buys the most model usage per dollar — across ChatGPT Plus, Claude Max 20x, Google AI Pro, X Premium+ and GLM Coding Pro. The figures are the author's own and unverified: the video's methodology footnote was not legible at the available resolution, and Yash asked for the workings in the thread. The post was shared by 0xSaiya as useful and by thelaggingway, and the video is the whole resource — there is no linked page or data table behind it."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

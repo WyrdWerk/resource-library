@@ -1,7 +1,7 @@
 {
   "resource_type": {
     "repository": 116,
-    "provider": 104,
+    "provider": 105,
     "article-guide": 64,
     "tool": 48,
     "library-framework": 35,
@@ -14,7 +14,7 @@
   },
   "topic": {
     "ai-agents": 173,
-    "inference": 163,
+    "inference": 164,
     "developer-tools": 98,
     "design": 43,
     "frontend": 43,
@@ -31,7 +31,7 @@
     "databases": 3
   },
   "use_case": {
-    "run-inference": 139,
+    "run-inference": 140,
     "manage-agents": 99,
     "learn-technique": 82,
     "build-interfaces": 34,
@@ -48,7 +48,7 @@
     "operate-databases": 3
   },
   "interface": {
-    "web": 170,
+    "web": 171,
     "api": 128,
     "cli": 58,
     "desktop": 26,
@@ -83,7 +83,7 @@
     "zed": 0
   },
   "channel": {
-    "share-tech": 300,
+    "share-tech": 301,
     "providers": 130
   },
   "open_source": {
