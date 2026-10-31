@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "apikey-fan",
+  "title": "APIKEY.FAN",
+  "canonical_url": "https://apikey.fun/pricing",
+  "brief": "APIKEY.FAN is a third-party AI gateway selling access to Claude, ChatGPT, Gemini, Grok, Zhipu, Kimi, DeepSeek and more at a fraction of official prices — Claude at 15% of official rates on the pricing page, via shared group multipliers — with a client that connects Codex in one click. It presents itself as enterprise-quota routing behind standard endpoints, so existing SDKs and tools point at it with only an endpoint and key change, and balances never expire. - Warning: unofficial third-party reseller — the discount and \"zero ban risk\" claims are the site's own and unverified, and the sharer asked whether anyone had heard of it, so there is no in-channel endorsement. Resold access can breach the underlying providers' terms; verify legitimacy before sending it work or payment details.",
+  "caveat": "It presents itself as enterprise-quota routing behind standard endpoints, so existing SDKs and tools point at it with only an endpoint and key change, and balances never expire. - Warning: unofficial third-party reseller — the discount and \"zero ban risk\" claims are the site's own and unverified, and the sharer asked whether anyone had heard of it, so there is no in-channel endorsement.",
+  "details": "APIKEY.FAN is a third-party AI gateway that resells access to Claude, ChatGPT, Gemini, Grok, Zhipu, Kimi, DeepSeek, MiniMax, Qwen, MiMo and TypeSafe models through shared groups priced as multipliers of official rates: the pricing page lists Claude Opus 5.5 at $0.60 input / $3 output per million tokens against official $4 / $20, and similar 10-50% of official pricing across the catalogue, with balances that never expire and Alipay / WeChat Pay supported. Integration is an endpoint and key swap keeping official SDKs and standard endpoints, with a macOS client that connects Codex in one click and support for Claude Code, OpenClaw, Hermes and other tools. Caveats: the site is an unofficial reseller whose \"enterprise procurement\", \"zero ban risk\" and performance claims are its own and unverified, the sharer asked whether anyone had heard of it with no in-channel endorsement, and resold access may breach the underlying providers' terms.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [
+    "anthropic-api",
+    "openai-api"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "t"
+  },
+  "shared_on": "2026-10-29",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

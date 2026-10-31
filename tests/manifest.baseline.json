@@ -1,14 +1,14 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "b2a39e18a4988d32f740bbc43f6814c5108ec1bd0d298662c8f22913788214b9",
-  "data.json": "6ba88c3fa1187c50625326c5d803695fb84cdfab37627237341235be9fb958e5",
-  "feed.xml": "0aaf2ed8a32651ed90ebf0280c58701ce33224ec924d5f2781b002676c3d1962",
-  "index.html": "3006cf4235a939a9fcf9256a8c66dd4122f44c3a5f0c254e885f8eb1575a09f0",
-  "llms.txt": "69fe0a259192390a9fae150f8ce83218f14d75a0443b7890bf49f4299ddda83c",
-  "og-image.png": "65e3ee1be1afe5186bdb2d7fcb18cf29aefeb60f672ff4dcf2fadda7ff5f6479",
+  "CHANGELOG.md": "09b1fc5a2c030ae38cdae50ff0cc3bb6674e4d95750e3f8568af11fac36effe7",
+  "data.json": "1f6ebf0ed356f4d1e1ca1bb2bb79f5f1e2e0c21c7ecb181800ad1fdcd8863cc3",
+  "feed.xml": "9b03b30619ebafb9f591376c614f6c6134bbf8bf5dbd49d6deab49d1418b31a7",
+  "index.html": "5eac0b61c5bcd240f8f3c2e77bfd9d4b75b82ec8b9498c05c873c074514d920c",
+  "llms.txt": "5ab9eb046c27009a2c91baf7e000dc900cf96231d8b2ea6095816013cca42b29",
+  "og-image.png": "d00439309afb0d8bb78c8e7a8c3c15ab4035a4a411de5c9e145f49e063480704",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
-  "sitemap.xml": "c1a99cb60c51ecf05e6307051bd169a2b5fd453b68dfd52898653db41ca7c377",
+  "sitemap.xml": "ba8e62cbfd4d011191867af7e41fa3ddb2a0dfffd8866115f5e7e1be16e34d94",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
   "weeks/2026-06-11_to_2026-06-17.md": "898c793b7587c0d89e3aa12d6f70a0b1c864f65016c3941a1f0183cf7aebbe99",
   "weeks/2026-06-18_to_2026-06-24.md": "7e9d9cd53a38a0fb7719b0df782b0914782d2fc505dfd1084fa99ae17f1d2b92",
@@ -29,8 +29,9 @@
   "weeks/2026-10-01_to_2026-10-08.md": "474955dc733dfebe6af21d60d526dee9572b20905a35dfe25e11ae9d10ed5f46",
   "weeks/2026-10-08_to_2026-10-15.md": "e8ae99ca8b89c53ae2615a947ef4b2bc37d00f3e47ac70071363c624b6fbf54a",
   "weeks/2026-10-15_to_2026-10-22.md": "e793d798bf4039c0f14e3da05c252a304b4064abb282e44076ae9ff2af939004",
-  "weeks/2026-10-22_to_2026-10-29.md": "ed2fe89c71a112f21db40144f4874c58938c28d169350f11489851e38d3c15fd",
-  "weeks/providers.md": "39e2c6a481fab5ba83790250c222c49190a94fb065ffd9454a5c2c92546ce999"
+  "weeks/2026-10-22_to_2026-10-29.md": "98101e9ed1a116eccb023e539dc24c4b9d9aa8808c9135f2c1569341e8f58cb5",
+  "weeks/2026-10-29_to_2026-11-05.md": "3026fe8a3bca4daaa86abe78323801d81d24947ccfaf769fe0f12980b8f27806",
+  "weeks/providers.md": "537ad8ee05df84ae32c2d12940131c31e541889c8a5decee0d6cf1025bffd302"
  },
  "inventory": {
   "categories": [
@@ -41,13 +42,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 424,
-  "nonempty_warnings": 94,
-  "providers": 129,
-  "share_tech": 295,
-  "total": 424,
-  "unique_ids": 424,
-  "unique_urls": 424
+  "https_urls": 431,
+  "nonempty_warnings": 96,
+  "providers": 130,
+  "share_tech": 301,
+  "total": 431,
+  "unique_ids": 431,
+  "unique_urls": 431
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -184,6 +185,13 @@
   "openbot",
   "cindy",
   "ollama",
+  "ovis",
+  "what-effort-level-should-i-choose",
+  "reasoning-effort-trajectories",
+  "apikey-fan",
+  "multica",
+  "subvocal",
+  "subscription-tier-list-how-much-api-usage-1-buys",
   "annnimate",
   "hyperiux",
   "vanta-ui",

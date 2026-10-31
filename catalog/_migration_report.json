@@ -1,6 +1,6 @@
 {
-  "migrated": 424,
-  "source_rows": 424,
+  "migrated": 431,
+  "source_rows": 431,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -2147,6 +2147,118 @@
       "all_equal": true,
       "shared_on": "2026-10-28",
       "date_evidence": "posted '28 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "ovis",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-29",
+      "date_evidence": "posted '29 Oct' inside week label '22–29 Oct 2026'"
+    },
+    {
+      "id": "what-effort-level-should-i-choose",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-29",
+      "date_evidence": "posted '29 Oct' inside week label '22–29 Oct 2026'"
+    },
+    {
+      "id": "reasoning-effort-trajectories",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-29",
+      "date_evidence": "posted '29 Oct' inside week label '22–29 Oct 2026'"
+    },
+    {
+      "id": "apikey-fan",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-29",
+      "date_evidence": "posted '29 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "multica",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-31",
+      "date_evidence": "posted '31 Oct' inside week label '29 Oct–5 Nov 2026'"
+    },
+    {
+      "id": "subvocal",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-31",
+      "date_evidence": "posted '31 Oct' inside week label '29 Oct–5 Nov 2026'"
+    },
+    {
+      "id": "subscription-tier-list-how-much-api-usage-1-buys",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-30",
+      "date_evidence": "posted '30 Oct' inside week label '29 Oct–5 Nov 2026'"
     },
     {
       "id": "annnimate",

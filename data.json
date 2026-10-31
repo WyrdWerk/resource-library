@@ -1944,6 +1944,107 @@
     "details": "Ollama's pricing page sets out its cloud offering for running open models without local hardware, alongside the local runner: pay-as-you-go per-token billing with no subscription, or Pro, Max, Team and Enterprise plans with monthly usage credits, concurrency limits and, on higher tiers, early access to new models, shared billing and model access controls. The model table lists input, cached-input and output prices per million tokens for cloud models including DeepSeek, GLM, Kimi, Gemma, Mistral, gpt-oss and others, with cheaper off-peak rates outside weekday 12:00 to 18:00 UTC and all weekend. Running models on the user's own hardware is always unlimited, and prompt or response data is never logged or trained on, with hosting primarily in the United States and additional European capacity. Caveats: all prices and credit amounts are the site's own figures at collection time and should be checked against current pricing before comparing providers."
   },
   {
+    "title": "Ovis",
+    "week": "22–29 Oct 2026",
+    "url": "https://github.com/devswha/ovis",
+    "sharer": "cata",
+    "date": "29 Oct",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Ovis is a free, open-source browser and phone client for herdr (formerly the herdr web UI) that turns the coding agents on a user's computer into chats answerable with a click or tap, with a live terminal, workspaces across machines over SSH, and push alerts when an agent asks something or finishes. It covers Claude Code, Codex, OpenCode and more, runs on the user's own hardware with no account, and pairs the phone over Tailscale, a VPN or an SSH tunnel. - Warning: anonymous usage counts are on by default (disableable in Settings or with OVIS_TELEMETRY=0); the phone can only reach a computer that is switched on.",
+    "id": "ovis",
+    "warning": "",
+    "details": "Ovis is a free, MIT-licensed browser and phone client for herdr (formerly the herdr web UI) that presents the coding agents running on a user's computer as chats, with the live terminal one click away and every workspace, tab and remote PC over SSH in one list. It supports Claude Code, Codex, OpenCode, pi and more, showing each agent's prompts as cards checked as still current before an answer is sent, and sending push alerts when an agent asks something or finishes, even with the app closed. Installation is a Mac/Windows download or a Linux shell script that also adds herdr and Bun if missing; phones use TestFlight or Google Play betas, or the browser as an installable page, paired by scanning a QR code with Tailscale on both ends. Caveats: Ovis needs herdr and a switched-on computer it can reach, sessions stay on the machine running each agent with no Ovis account or hosted relay, and anonymous usage counts are on by default with a switch in Settings."
+  },
+  {
+    "title": "What Effort Level Should I Choose?",
+    "week": "22–29 Oct 2026",
+    "url": "https://arxiv.org/abs/2610.34491",
+    "sharer": "asx",
+    "date": "29 Oct",
+    "categories": [
+      "article"
+    ],
+    "brief": "This paper asks whether the reasoning-effort setting on today's models is worth what it costs, measuring the counterfactual effect of effort levels on proprietary and open-weight models across four benchmarks, single-call and long-horizon agentic tasks. It finds higher effort frequently fails tasks lower effort solved and costs up to 42x more on tasks every level can solve, and that starting low and escalating only after a verified failure matches or beats fixed top effort at lower cost; the trajectories behind the results are published alongside it (see Reasoning-Effort Trajectories). - Warning: the $25,000 spend figure is the author's own claim in the tweet; the findings are the paper's measurements on its benchmarks, not a guarantee for any particular workload.",
+    "id": "what-effort-level-should-i-choose",
+    "warning": "",
+    "details": "A paper by Kaiser Sun, Yongchan Kwon, Zain Hasan and colleagues (submitted 25 Oct 2026) that treats reasoning effort as a credence good: users pay for extra computation before knowing whether it will help, and a successful run never reveals whether the effort was necessary. Across four benchmarks spanning single-call and long-horizon agentic tasks, on proprietary and open-weight models, the authors find higher effort frequently fails tasks lower effort solved, costs up to 42 times more on tasks every effort level solves, and shifts agents toward heavier self-verification and solution-searching rather than direct solving. Their proposed alternative — start at the lowest effort and escalate only after a verified failure — matches or improves on fixed top effort across all models and benchmarks at lower cost for most proprietary models. Caveats: the $25,000 spend figure comes from the author's tweet, not the paper; results are measurements on the paper's benchmarks and harness, and may not transfer to other tasks or setups."
+  },
+  {
+    "title": "Reasoning-Effort Trajectories",
+    "week": "22–29 Oct 2026",
+    "url": "https://huggingface.co/datasets/KaiserWhoLearns/ReasiningEffortTrajec",
+    "sharer": "asx",
+    "date": "29 Oct",
+    "categories": [
+      "web-app"
+    ],
+    "brief": "The trajectories behind the reasoning-effort paper: one run per model, benchmark and effort combination across eight models and four benchmarks (AIME 2026, GPQA Diamond, Terminal-Bench 2.1 and SWE-bench Pro), with per-attempt samples, resolution outcomes and trajectory files. It lets readers replay exactly what each effort level did — and what it cost — rather than trusting the paper's aggregates, and is the data behind \"What Effort Level Should I Choose?\". - Warning: the release is licensed by subset because the source benchmarks carry different licences — check the subset licence before reuse. The dataset slug is spelled \"ReasiningEffortTrajec\" on Hugging Face, as published.",
+    "id": "reasoning-effort-trajectories",
+    "warning": "",
+    "details": "The full trajectory data behind the reasoning-effort paper, published by Kaiser Sun on Hugging Face: exactly one run per model, benchmark and effort cell, covering eight models (including GPT-5.6 variants, Claude Sonnet 5, GLM-5.2, Kimi K3 and DeepSeek V4 Flash) on AIME 2026, GPQA Diamond, Terminal-Bench 2.1 and SWE-bench Pro, with per-attempt samples, resolution flags and trajectory files. Pilot, smoke-test, repeat and superseded runs are excluded, so each cell is the single run reported in the paper. The release is licensed by subset because the source benchmarks carry different licences, and the dataset slug is spelled \"ReasiningEffortTrajec\" as published. It is the evidence base for the paper's cost claims: replaying a cell shows what each effort level actually did and cost, rather than relying on the aggregates."
+  },
+  {
+    "title": "APIKEY.FAN",
+    "week": "providers",
+    "url": "https://apikey.fun/pricing",
+    "sharer": "t",
+    "date": "29 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "APIKEY.FAN is a third-party AI gateway selling access to Claude, ChatGPT, Gemini, Grok, Zhipu, Kimi, DeepSeek and more at a fraction of official prices — Claude at 15% of official rates on the pricing page, via shared group multipliers — with a client that connects Codex in one click. It presents itself as enterprise-quota routing behind standard endpoints, so existing SDKs and tools point at it with only an endpoint and key change, and balances never expire. - Warning: unofficial third-party reseller — the discount and \"zero ban risk\" claims are the site's own and unverified, and the sharer asked whether anyone had heard of it, so there is no in-channel endorsement. Resold access can breach the underlying providers' terms; verify legitimacy before sending it work or payment details.",
+    "id": "apikey-fan",
+    "warning": "It presents itself as enterprise-quota routing behind standard endpoints, so existing SDKs and tools point at it with only an endpoint and key change, and balances never expire. - Warning: unofficial third-party reseller — the discount and \"zero ban risk\" claims are the site's own and unverified, and the sharer asked whether anyone had heard of it, so there is no in-channel endorsement.",
+    "details": "APIKEY.FAN is a third-party AI gateway that resells access to Claude, ChatGPT, Gemini, Grok, Zhipu, Kimi, DeepSeek, MiniMax, Qwen, MiMo and TypeSafe models through shared groups priced as multipliers of official rates: the pricing page lists Claude Opus 5.5 at $0.60 input / $3 output per million tokens against official $4 / $20, and similar 10-50% of official pricing across the catalogue, with balances that never expire and Alipay / WeChat Pay supported. Integration is an endpoint and key swap keeping official SDKs and standard endpoints, with a macOS client that connects Codex in one click and support for Claude Code, OpenClaw, Hermes and other tools. Caveats: the site is an unofficial reseller whose \"enterprise procurement\", \"zero ban risk\" and performance claims are its own and unverified, the sharer asked whether anyone had heard of it with no in-channel endorsement, and resold access may breach the underlying providers' terms."
+  },
+  {
+    "title": "Multica",
+    "week": "29 Oct–5 Nov 2026",
+    "url": "https://github.com/multica-ai/multica",
+    "sharer": "ROman",
+    "date": "31 Oct",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Multica is an open-source, self-hostable platform for humans and AI agents to work as one team, built as a \"software factory\" where agents collaborate on software work with human oversight. It gives a team a shared workspace for running coding agents together instead of each agent working in isolation, and Tom called out its good UX for that setup while noting he isn't the target market.",
+    "id": "multica",
+    "warning": "",
+    "details": "Multica is a source-available workspace where AI coding agents show up on a shared board as teammates: you assign them issues the way you would a colleague, they pick the work up, comment as they go, and hand it back for review, with nothing shipping without a human sign-off. It drives the agent CLIs you already have installed — Claude Code, Codex, Cursor, Kimi, OpenCode and 20 more — on runtimes you control, so code never leaves your machines, and it adds squads, skills playbooks, execution logs, usage analytics and review gates around them. You can use the hosted cloud, the desktop app, or self-host the whole stack with Docker Compose or Helm on your own infrastructure; a self-hosted server sends one anonymous daily deployment snapshot unless DO_NOT_TRACK=1 is set. The project is large and active, with 54,393 stars and 5,833 commits since January 2026, though GitHub lists its license field as NOASSERTION, so check the LICENSE file before assuming standard open-source terms."
+  },
+  {
+    "title": "Subvocal",
+    "week": "29 Oct–5 Nov 2026",
+    "url": "https://subvocal.company",
+    "sharer": "Tom",
+    "date": "31 Oct",
+    "categories": [
+      "ai-tool",
+      "web-app"
+    ],
+    "brief": "Subvocal is a pair of smart glasses from The Subvocal Company that turns silently mouthed speech into text at the speed of voice, so you can type without a keyboard or speaking aloud. The YC Fall 2026 startup says its prototypes reach over 200 words per minute and is taking US reservations for a Q1 2027 ship date. - Warning: the 200-words-per-minute figure is the company's own prototype claim and has not been independently verified; early-bird price is $499 with a refundable $199 deposit, the rest due later.",
+    "id": "subvocal",
+    "warning": "",
+    "details": "Subvocal is a pair of smart glasses from The Subvocal Company that decodes deliberate silent mouthing into text at a claimed 200+ words per minute, letting you type, message, take notes or talk to AI assistants without speaking aloud or touching a keyboard. It uses muscle-sensing hardware rather than cameras or lip reading, needs no webcam, and is designed as a general input method that works in the apps you already use — ChatGPT, Claude, Cursor, Slack, email and documents — including dictating to coding agents next to coworkers. The YC Fall 2026 startup raised $1.3M from Y Combinator and Afore Capital, is taking US reservations at a $499 early-bird price with a refundable $199 deposit, and expects shipping to begin in Q1 2027. The 200+ WPM figure is the company's own prototype claim and has not been independently verified, and first-time setup involves a short personal calibration."
+  },
+  {
+    "title": "Subscription Tier List: How Much API Usage $1 Buys",
+    "week": "29 Oct–5 Nov 2026",
+    "url": "https://x.com/adamholtererer/status/2115827734223974762",
+    "sharer": "0xSaiya",
+    "date": "30 Oct",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Adam Holter's tier list ranks twelve model-and-plan combinations by how much API usage $1 of subscription buys, from Grok 4.7 on X Premium+ ($80) and Claude Opus/Sonnet 5.5 on Claude Max 20x ($66) in S tier down to Gemini 4 Argon on Google AI Pro ($2.8) in F tier, with Claude Haiku 5.5, GPT-5 Astra, Gemini 3.0 Flash and GLM 5.3 in between. It is a quick way to compare which subscription gives the most model usage per dollar across ChatGPT Plus, Claude Max, Google AI Pro, X Premium+ and GLM Coding Pro — presented as a 10-second video, not a page. - Warning: the dollar figures are the author's own and unverified — the video's methodology footnote was not legible, and Yash himself asked for the workings in the thread; some listed model names are unverified. Treat the ranking as one person's comparison, not measured pricing.",
+    "id": "subscription-tier-list-how-much-api-usage-1-buys",
+    "warning": "It is a quick way to compare which subscription gives the most model usage per dollar across ChatGPT Plus, Claude Max, Google AI Pro, X Premium+ and GLM Coding Pro — presented as a 10-second video, not a page. - Warning: the dollar figures are the author's own and unverified — the video's methodology footnote was not legible, and Yash himself asked for the workings in the thread; some listed model names are unverified.",
+    "details": "Adam Holter's tier list is a 10-second video ranking twelve model-and-plan combinations by API usage per $1 of subscription, from S tier (Grok 4.7 on X Premium+ at $80, Claude Opus 5.5 and Claude Sonnet 5.5 on Claude Max 20x at $66) through A tier (Claude Haiku 5.5 at $47, GPT-5 Astra on ChatGPT Plus at $32), B tier (Gemini 3.0 Flash $25, GPT-5.1 Sol $24, GPT-5 Luna $19, GPT-5.1 Terra $18), C tier (GLM 5.3 $9.6, Claude Fable 5.1 $6.4) to F tier (Gemini 4 Argon $2.8). It answers a practical question — which subscription buys the most model usage per dollar — across ChatGPT Plus, Claude Max 20x, Google AI Pro, X Premium+ and GLM Coding Pro. The figures are the author's own and unverified: the video's methodology footnote was not legible at the available resolution, and Yash asked for the workings in the thread. The post was shared by 0xSaiya as useful and by thelaggingway, and the video is the whole resource — there is no linked page or data table behind it."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

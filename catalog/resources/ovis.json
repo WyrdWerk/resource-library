@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "ovis",
+  "title": "Ovis",
+  "canonical_url": "https://github.com/devswha/ovis",
+  "brief": "Ovis is a free, open-source browser and phone client for herdr (formerly the herdr web UI) that turns the coding agents on a user's computer into chats answerable with a click or tap, with a live terminal, workspaces across machines over SSH, and push alerts when an agent asks something or finishes. It covers Claude Code, Codex, OpenCode and more, runs on the user's own hardware with no account, and pairs the phone over Tailscale, a VPN or an SSH tunnel. - Warning: anonymous usage counts are on by default (disableable in Settings or with OVIS_TELEMETRY=0); the phone can only reach a computer that is switched on.",
+  "caveat": null,
+  "details": "Ovis is a free, MIT-licensed browser and phone client for herdr (formerly the herdr web UI) that presents the coding agents running on a user's computer as chats, with the live terminal one click away and every workspace, tab and remote PC over SSH in one list. It supports Claude Code, Codex, OpenCode, pi and more, showing each agent's prompts as cards checked as still current before an answer is sent, and sending push alerts when an agent asks something or finishes, even with the app closed. Installation is a Mac/Windows download or a Linux shell script that also adds herdr and Bun if missing; phones use TestFlight or Google Play betas, or the browser as an installable page, paired by scanning a QR code with Tailscale on both ends. Caveats: Ovis needs herdr and a switched-on computer it can reach, sessions stay on the machine running each agent with no Ovis account or hosted relay, and anonymous usage counts are on by default with a switch in Settings.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "web",
+    "desktop"
+  ],
+  "technologies": [
+    "react",
+    "typescript"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "22–29 Oct 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "cata"
+  },
+  "shared_on": "2026-10-29",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
