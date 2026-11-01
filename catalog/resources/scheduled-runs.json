@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "scheduled-runs",
+  "title": "Scheduled Runs",
+  "canonical_url": "https://www.affectui.com/components/scheduled-runs",
+  "brief": "affectUI's Scheduled Runs is a React component that sorts agent tasks into a week of sessions, each with a usage limit — small tasks fill the gaps, big ones split across sessions, and the stack feeds in one card at a time. It shows where queued coding-agent tasks will run before they run, installs via shadcn, and is aimed at coding agents, API quotas, and rate-limited tools. - Warning: part of affectUI Pro (paid) — Alp asked in the channel why he has to pay, and Tom's reply was \"you can just ask your ai to copy lol\".",
+  "caveat": null,
+  "details": "affectUI's Scheduled Runs is a React component for displaying agent work organized into a week of sessions, where each session has a usage limit. Tasks carry an id, title, usage cost, and optionally an assigned agent; booked tasks pin to a day and session while the rest wait in a stack and get sorted in automatically, with small tasks filling gaps and large ones split across sessions. It is designed for coding agents, API quotas, and rate-limited tools, and for showing people where queued tasks will run before they run. The component installs through shadcn and is part of affectUI Pro, so the full version is paid.",
+  "resource_type": "library-framework",
+  "topics": [
+    "ai-agents",
+    "frontend"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "build-interfaces"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "react",
+    "typescript"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "29 Oct–5 Nov 2026",
+  "legacy_categories": [
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Tom"
+  },
+  "shared_on": "2026-10-31",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

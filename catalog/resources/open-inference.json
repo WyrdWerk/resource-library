@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "open-inference",
+  "title": "Open Inference",
+  "canonical_url": "https://www.openinference.ai/",
+  "brief": "Open Inference reshapes open models to run fast on any accelerator, reworking how attention is organized, how context is selected, and how weights are stored, instead of only optimizing for GPUs. Its models are listed on OpenRouter, and the team says it shares the engineering as it goes. - Warning: early community reports are mixed — one_phantomic in the thread said \"These guys aren't great from what I hear\" and linked a Reddit thread about erratic output from its models; those reports are unverified, and the site itself lists no pricing.",
+  "caveat": "Its models are listed on OpenRouter, and the team says it shares the engineering as it goes. - Warning: early community reports are mixed — one_phantomic in the thread said \"These guys aren't great from what I hear\" and linked a Reddit thread about erratic output from its models; those reports are unverified, and the site itself lists no pricing.",
+  "details": "Open Inference is a San Francisco inference provider that reshapes open models to run fast on accelerators beyond GPUs, reworking attention organization, context selection, and weight storage for each target chip. Its models are served through OpenRouter, where the company points users to see them, and it publishes its engineering as it goes. The public site is minimal — a short about page with contact details and no pricing or docs — so the main way to evaluate it is its OpenRouter listings and community reports, which have been mixed, including a Reddit thread about erratic output from its models.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference",
+    "host-models"
+  ],
+  "interfaces": [
+    "api"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Felix"
+  },
+  "shared_on": "2026-11-01",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

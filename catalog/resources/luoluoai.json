@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "luoluoai",
+  "title": "luoluoAI",
+  "canonical_url": "https://luoluocoder.com/",
+  "brief": "luoluoAI is a multi-model API gateway offering GPT, Claude, and Grok through one OpenAI-compatible endpoint, with familiar SDKs, a console for keys, balance, and usage, and pay-as-you-go top-ups via Stripe. It advertises up to 90% off list prices on its model plaza. - Warning: the discount figures are the vendor's own and unverified; plainskill in the thread called the pricing \"crap\", so community reception is mixed.",
+  "caveat": "It advertises up to 90% off list prices on its model plaza. - Warning: the discount figures are the vendor's own and unverified; plainskill in the thread called the pricing \"crap\", so community reception is mixed.",
+  "details": "luoluoAI is a multi-model API gateway that puts GPT, Claude, and Grok behind one OpenAI-compatible endpoint at api.luoluocoder.com/v1, so existing SDK code works with a base-URL change. Its model plaza lists live per-token prices, advertising steep discounts such as GPT-6 Astra at 0.10x list and Claude Opus 5 at 0.20x, with pay-as-you-go top-ups via Stripe and a console for keys, balance, and usage. It also runs a Discord community where new users can claim free credits. The discount figures are the vendor's own and unverified, and community reception in the CheapInfra thread was mixed.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Aspiring UBI Recipient"
+  },
+  "shared_on": "2026-10-31",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
