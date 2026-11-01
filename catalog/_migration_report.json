@@ -1,6 +1,6 @@
 {
-  "migrated": 431,
-  "source_rows": 431,
+  "migrated": 435,
+  "source_rows": 435,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -2259,6 +2259,70 @@
       "all_equal": true,
       "shared_on": "2026-10-30",
       "date_evidence": "posted '30 Oct' inside week label '29 Oct–5 Nov 2026'"
+    },
+    {
+      "id": "scheduled-runs",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-31",
+      "date_evidence": "posted '31 Oct' inside week label '29 Oct–5 Nov 2026'"
+    },
+    {
+      "id": "open-inference",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-11-01",
+      "date_evidence": "posted '1 Nov' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "codefast",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-11-01",
+      "date_evidence": "posted '1 Nov' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "luoluoai",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-10-31",
+      "date_evidence": "posted '31 Oct' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
     },
     {
       "id": "annnimate",

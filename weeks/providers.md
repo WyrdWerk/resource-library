@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-130 curated providers, with briefs.
+133 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -295,6 +295,24 @@
 - Shared by: t (29 Oct)
 - Categories: providers
 - Brief: APIKEY.FAN is a third-party AI gateway selling access to Claude, ChatGPT, Gemini, Grok, Zhipu, Kimi, DeepSeek and more at a fraction of official prices — Claude at 15% of official rates on the pricing page, via shared group multipliers — with a client that connects Codex in one click. It presents itself as enterprise-quota routing behind standard endpoints, so existing SDKs and tools point at it with only an endpoint and key change, and balances never expire. - Warning: unofficial third-party reseller — the discount and "zero ban risk" claims are the site's own and unverified, and the sharer asked whether anyone had heard of it, so there is no in-channel endorsement. Resold access can breach the underlying providers' terms; verify legitimacy before sending it work or payment details.
+
+## Open Inference
+- URL: https://www.openinference.ai/
+- Shared by: Felix (1 Nov)
+- Categories: providers
+- Brief: Open Inference reshapes open models to run fast on any accelerator, reworking how attention is organized, how context is selected, and how weights are stored, instead of only optimizing for GPUs. Its models are listed on OpenRouter, and the team says it shares the engineering as it goes. - Warning: early community reports are mixed — one_phantomic in the thread said "These guys aren't great from what I hear" and linked a Reddit thread about erratic output from its models; those reports are unverified, and the site itself lists no pricing.
+
+## CodeFast
+- URL: https://www.codefast.app/
+- Shared by: one_phantomic (1 Nov)
+- Categories: providers
+- Brief: CodeFast is a Turkish AI API platform selling packaged access to Claude, GPT, Gemini, Grok, GLM, Kimi, and open-source models from a single panel, with balance tracking, API keys, usage limits, and card or crypto payment. It also covers image and video generation models and Codex, Claude Code, and OpenCode-style coding tools. - Warning: a third-party reseller, not a first-party provider — the sharer's "allegedly unlimited DeepSeek for stupid cheap" claim is unverified, and the site is in Turkish.
+
+## luoluoAI
+- URL: https://luoluocoder.com/
+- Shared by: Aspiring UBI Recipient (31 Oct)
+- Categories: providers
+- Brief: luoluoAI is a multi-model API gateway offering GPT, Claude, and Grok through one OpenAI-compatible endpoint, with familiar SDKs, a console for keys, balance, and usage, and pay-as-you-go top-ups via Stripe. It advertises up to 90% off list prices on its model plaza. - Warning: the discount figures are the vendor's own and unverified; plainskill in the thread called the pricing "crap", so community reception is mixed.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

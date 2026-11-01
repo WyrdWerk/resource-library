@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "codefast",
+  "title": "CodeFast",
+  "canonical_url": "https://www.codefast.app/",
+  "brief": "CodeFast is a Turkish AI API platform selling packaged access to Claude, GPT, Gemini, Grok, GLM, Kimi, and open-source models from a single panel, with balance tracking, API keys, usage limits, and card or crypto payment. It also covers image and video generation models and Codex, Claude Code, and OpenCode-style coding tools. - Warning: a third-party reseller, not a first-party provider — the sharer's \"allegedly unlimited DeepSeek for stupid cheap\" claim is unverified, and the site is in Turkish.",
+  "caveat": "It also covers image and video generation models and Codex, Claude Code, and OpenCode-style coding tools. - Warning: a third-party reseller, not a first-party provider — the sharer's \"allegedly unlimited DeepSeek for stupid cheap\" claim is unverified, and the site is in Turkish.",
+  "details": "CodeFast is a Turkish AI API platform that sells packaged access to Claude, GPT, Gemini, Grok, GLM, Kimi, Qwen, NVIDIA, and open-source models, plus image and video generation, from one panel. Packages are bought directly by card or crypto or with pre-loaded balance, and the panel handles API key creation, remaining-limit tracking, service status, and support. Its docs list base URLs, endpoints, and model details, and it offers CLI setup guides for Claude Code, Codex, and OpenCode. The site is in Turkish, and the \"unlimited DeepSeek\" claim from the Discord share is unverified.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference",
+    "create-media"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "one_phantomic"
+  },
+  "shared_on": "2026-11-01",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

@@ -5387,6 +5387,157 @@
   },
   {
     "schema_version": "1.0",
+    "id": "scheduled-runs",
+    "title": "Scheduled Runs",
+    "canonical_url": "https://www.affectui.com/components/scheduled-runs",
+    "brief": "affectUI's Scheduled Runs is a React component that sorts agent tasks into a week of sessions, each with a usage limit — small tasks fill the gaps, big ones split across sessions, and the stack feeds in one card at a time. It shows where queued coding-agent tasks will run before they run, installs via shadcn, and is aimed at coding agents, API quotas, and rate-limited tools. - Warning: part of affectUI Pro (paid) — Alp asked in the channel why he has to pay, and Tom's reply was \"you can just ask your ai to copy lol\".",
+    "caveat": null,
+    "details": "affectUI's Scheduled Runs is a React component for displaying agent work organized into a week of sessions, where each session has a usage limit. Tasks carry an id, title, usage cost, and optionally an assigned agent; booked tasks pin to a day and session while the rest wait in a stack and get sorted in automatically, with small tasks filling gaps and large ones split across sessions. It is designed for coding agents, API quotas, and rate-limited tools, and for showing people where queued tasks will run before they run. The component installs through shadcn and is part of affectUI Pro, so the full version is paid.",
+    "resource_type": "library-framework",
+    "topics": [
+      "ai-agents",
+      "frontend"
+    ],
+    "use_cases": [
+      "manage-agents",
+      "build-interfaces"
+    ],
+    "interfaces": [],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "29 Oct–5 Nov 2026",
+    "legacy_categories": [
+      "dev-tool"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "Tom"
+    },
+    "shared_on": "2026-10-31",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "open-inference",
+    "title": "Open Inference",
+    "canonical_url": "https://www.openinference.ai/",
+    "brief": "Open Inference reshapes open models to run fast on any accelerator, reworking how attention is organized, how context is selected, and how weights are stored, instead of only optimizing for GPUs. Its models are listed on OpenRouter, and the team says it shares the engineering as it goes. - Warning: early community reports are mixed — one_phantomic in the thread said \"These guys aren't great from what I hear\" and linked a Reddit thread about erratic output from its models; those reports are unverified, and the site itself lists no pricing.",
+    "caveat": "Its models are listed on OpenRouter, and the team says it shares the engineering as it goes. - Warning: early community reports are mixed — one_phantomic in the thread said \"These guys aren't great from what I hear\" and linked a Reddit thread about erratic output from its models; those reports are unverified, and the site itself lists no pricing.",
+    "details": "Open Inference is a San Francisco inference provider that reshapes open models to run fast on accelerators beyond GPUs, reworking attention organization, context selection, and weight storage for each target chip. Its models are served through OpenRouter, where the company points users to see them, and it publishes its engineering as it goes. The public site is minimal — a short about page with contact details and no pricing or docs — so the main way to evaluate it is its OpenRouter listings and community reports, which have been mixed, including a Reddit thread about erratic output from its models.",
+    "resource_type": "provider",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference",
+      "host-models"
+    ],
+    "interfaces": [
+      "api"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "Felix"
+    },
+    "shared_on": "2026-11-01",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "codefast",
+    "title": "CodeFast",
+    "canonical_url": "https://www.codefast.app/",
+    "brief": "CodeFast is a Turkish AI API platform selling packaged access to Claude, GPT, Gemini, Grok, GLM, Kimi, and open-source models from a single panel, with balance tracking, API keys, usage limits, and card or crypto payment. It also covers image and video generation models and Codex, Claude Code, and OpenCode-style coding tools. - Warning: a third-party reseller, not a first-party provider — the sharer's \"allegedly unlimited DeepSeek for stupid cheap\" claim is unverified, and the site is in Turkish.",
+    "caveat": "It also covers image and video generation models and Codex, Claude Code, and OpenCode-style coding tools. - Warning: a third-party reseller, not a first-party provider — the sharer's \"allegedly unlimited DeepSeek for stupid cheap\" claim is unverified, and the site is in Turkish.",
+    "details": "CodeFast is a Turkish AI API platform that sells packaged access to Claude, GPT, Gemini, Grok, GLM, Kimi, Qwen, NVIDIA, and open-source models, plus image and video generation, from one panel. Packages are bought directly by card or crypto or with pre-loaded balance, and the panel handles API key creation, remaining-limit tracking, service status, and support. Its docs list base URLs, endpoints, and model details, and it offers CLI setup guides for Claude Code, Codex, and OpenCode. The site is in Turkish, and the \"unlimited DeepSeek\" claim from the Discord share is unverified.",
+    "resource_type": "provider",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference",
+      "create-media"
+    ],
+    "interfaces": [
+      "api",
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "one_phantomic"
+    },
+    "shared_on": "2026-11-01",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "luoluoai",
+    "title": "luoluoAI",
+    "canonical_url": "https://luoluocoder.com/",
+    "brief": "luoluoAI is a multi-model API gateway offering GPT, Claude, and Grok through one OpenAI-compatible endpoint, with familiar SDKs, a console for keys, balance, and usage, and pay-as-you-go top-ups via Stripe. It advertises up to 90% off list prices on its model plaza. - Warning: the discount figures are the vendor's own and unverified; plainskill in the thread called the pricing \"crap\", so community reception is mixed.",
+    "caveat": "It advertises up to 90% off list prices on its model plaza. - Warning: the discount figures are the vendor's own and unverified; plainskill in the thread called the pricing \"crap\", so community reception is mixed.",
+    "details": "luoluoAI is a multi-model API gateway that puts GPT, Claude, and Grok behind one OpenAI-compatible endpoint at api.luoluocoder.com/v1, so existing SDK code works with a base-URL change. Its model plaza lists live per-token prices, advertising steep discounts such as GPT-6 Astra at 0.10x list and Claude Opus 5 at 0.20x, with pay-as-you-go top-ups via Stripe and a console for keys, balance, and usage. It also runs a Discord community where new users can claim free credits. The discount figures are the vendor's own and unverified, and community reception in the CheapInfra thread was mixed.",
+    "resource_type": "provider",
+    "topics": [
+      "inference"
+    ],
+    "use_cases": [
+      "run-inference"
+    ],
+    "interfaces": [
+      "api",
+      "web"
+    ],
+    "technologies": [],
+    "license": null,
+    "open_source": null,
+    "display_period": "providers",
+    "legacy_categories": [
+      "providers"
+    ],
+    "source": {
+      "channel": "providers",
+      "sharer": "Aspiring UBI Recipient"
+    },
+    "shared_on": "2026-10-31",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
     "id": "annnimate",
     "title": "Annnimate",
     "canonical_url": "https://annnimate.com",

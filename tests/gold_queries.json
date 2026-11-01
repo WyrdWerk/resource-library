@@ -206,12 +206,12 @@
   "expect_top5": [
    "prime-intellect-inference",
    "primalabs",
+   "open-inference",
    "pareto-inference",
-   "prism-inference",
-   "engy"
+   "prism-inference"
   ],
   "expect_none": false,
-  "note": "re-reviewed 2026-10-20 against 401-record catalog; engy (open-weight inference, details call out cheap high-context inference) ranks #5, shifting inco (local-engine news, not pricing) to #6"
+  "note": "re-reviewed 2026-11-01 against 435-record catalog; new Open Inference (genuine inference provider) joins the top 5, shifting engy to #6"
  },
  {
   "query": "components",
@@ -237,12 +237,14 @@
   },
   "expect_top1": null,
   "expect_top5": [
+   "prime-intellect-inference",
+   "open-inference",
    "pareto-inference",
    "prism-inference",
-   "inco"
+   "engy"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "re-reviewed 2026-11-01 against 435-record catalog; Prime Intellect Inference and new Open Inference (both genuine inference providers) now lead, shifting inco out of the top 5"
  },
  {
   "query": "tutorial",
@@ -283,13 +285,13 @@
   "expect_top1": null,
   "expect_top5": [
    "teamai-cli",
+   "arc-ui",
    "bb",
    "boat",
-   "boxd",
-   "codex-auth"
+   "boxd"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "re-reviewed 2026-11-01 against 435-record catalog; Arc UI (interfaces include cli — installable via the shadcn CLI) ranks #2, shifting codex-auth to #6"
  },
  {
   "query": "browser extension",
