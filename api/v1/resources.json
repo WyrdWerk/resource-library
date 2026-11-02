@@ -5538,6 +5538,85 @@
   },
   {
     "schema_version": "1.0",
+    "id": "hex",
+    "title": "Hex",
+    "canonical_url": "https://github.com/anomalyco/hex",
+    "brief": "Hex is local voice dictation for Mac, Windows, and Linux — hold a key, speak, and it pastes the transcription into whatever app you're in. Transcription runs entirely on-device after a first-run model download, it's MIT-licensed, and the sharer notes it's more or less equivalent to Willow's free tier.",
+    "caveat": null,
+    "details": "Hex is a local-first voice dictation app for macOS, Windows, and Linux: hold a shortcut key, speak, release, and the transcription is pasted into whichever app is focused. Transcription runs entirely on-device using a speech model downloaded on first run, so nothing leaves the machine afterwards. It is written in Rust, MIT-licensed, and ships installers for all three platforms plus Homebrew, AUR, Nix, and an install script, with experimental features tucked into a Labs section of the sidebar.",
+    "resource_type": "tool",
+    "topics": [
+      "productivity"
+    ],
+    "use_cases": [
+      "automate-workflows"
+    ],
+    "interfaces": [
+      "desktop"
+    ],
+    "technologies": [
+      "rust"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "29 Oct–5 Nov 2026",
+    "legacy_categories": [
+      "dev-tool",
+      "github"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "thelaggingway"
+    },
+    "shared_on": "2026-11-02",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "dsh-superagent-prototype",
+    "title": "dsh-superagent-prototype",
+    "canonical_url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    "brief": "DeepSeek's dsh-superagent is a proactive coding agent for a single GitHub repository that watches for Issues and PRs, takes a first pass at fixes in its own agent session, and answers with a pull request. It only acts when asked or when a rule allows it, and a web panel shows what still needs a person. - Warning: research prototype for reference only, not an official DeepSeek product — the README says it may still contain bugs and is not production-ready software.",
+    "caveat": null,
+    "details": "dsh-superagent is DeepSeek's research prototype of a proactive coding agent for a single GitHub repository: it listens to GitHub (and optionally Feishu), and when someone allowed asks it for work it opens a work item, works on it in its own agent session and directory, then answers in the original conversation, for example with a pull request. It is designed to take as little human attention as possible, acting only when asked or when a rule the team wrote allows it, and a web panel surfaces whatever still needs a person. It is MIT-licensed and explicitly a research prototype, not an official DeepSeek product; setup is done with a coding agent following SETUP.md.",
+    "resource_type": "repository",
+    "topics": [
+      "ai-agents"
+    ],
+    "use_cases": [
+      "manage-agents"
+    ],
+    "interfaces": [
+      "api",
+      "web"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "29 Oct–5 Nov 2026",
+    "legacy_categories": [
+      "ai-tool",
+      "github"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "0xSaiya"
+    },
+    "shared_on": "2026-11-01",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
     "id": "annnimate",
     "title": "Annnimate",
     "canonical_url": "https://annnimate.com",

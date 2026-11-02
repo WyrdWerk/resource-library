@@ -2101,6 +2101,36 @@
     "details": "luoluoAI is a multi-model API gateway that puts GPT, Claude, and Grok behind one OpenAI-compatible endpoint at api.luoluocoder.com/v1, so existing SDK code works with a base-URL change. Its model plaza lists live per-token prices, advertising steep discounts such as GPT-6 Astra at 0.10x list and Claude Opus 5 at 0.20x, with pay-as-you-go top-ups via Stripe and a console for keys, balance, and usage. It also runs a Discord community where new users can claim free credits. The discount figures are the vendor's own and unverified, and community reception in the CheapInfra thread was mixed."
   },
   {
+    "title": "Hex",
+    "week": "29 Oct–5 Nov 2026",
+    "url": "https://github.com/anomalyco/hex",
+    "sharer": "thelaggingway",
+    "date": "2 Nov",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "Hex is local voice dictation for Mac, Windows, and Linux — hold a key, speak, and it pastes the transcription into whatever app you're in. Transcription runs entirely on-device after a first-run model download, it's MIT-licensed, and the sharer notes it's more or less equivalent to Willow's free tier.",
+    "id": "hex",
+    "warning": "",
+    "details": "Hex is a local-first voice dictation app for macOS, Windows, and Linux: hold a shortcut key, speak, release, and the transcription is pasted into whichever app is focused. Transcription runs entirely on-device using a speech model downloaded on first run, so nothing leaves the machine afterwards. It is written in Rust, MIT-licensed, and ships installers for all three platforms plus Homebrew, AUR, Nix, and an install script, with experimental features tucked into a Labs section of the sidebar."
+  },
+  {
+    "title": "dsh-superagent-prototype",
+    "week": "29 Oct–5 Nov 2026",
+    "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    "sharer": "0xSaiya",
+    "date": "1 Nov",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "DeepSeek's dsh-superagent is a proactive coding agent for a single GitHub repository that watches for Issues and PRs, takes a first pass at fixes in its own agent session, and answers with a pull request. It only acts when asked or when a rule allows it, and a web panel shows what still needs a person. - Warning: research prototype for reference only, not an official DeepSeek product — the README says it may still contain bugs and is not production-ready software.",
+    "id": "dsh-superagent-prototype",
+    "warning": "",
+    "details": "dsh-superagent is DeepSeek's research prototype of a proactive coding agent for a single GitHub repository: it listens to GitHub (and optionally Feishu), and when someone allowed asks it for work it opens a work item, works on it in its own agent session and directory, then answers in the original conversation, for example with a pull request. It is designed to take as little human attention as possible, acting only when asked or when a rule the team wrote allows it, and a web panel surfaces whatever still needs a person. It is MIT-licensed and explicitly a research prototype, not an official DeepSeek product; setup is done with a coding agent following SETUP.md."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",
