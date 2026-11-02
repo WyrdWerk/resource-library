@@ -1,9 +1,9 @@
 {
   "resource_type": {
-    "repository": 116,
+    "repository": 117,
     "provider": 108,
     "article-guide": 64,
-    "tool": 48,
+    "tool": 49,
     "library-framework": 36,
     "directory-gallery": 26,
     "service-platform": 23,
@@ -13,13 +13,13 @@
     "other": 0
   },
   "topic": {
-    "ai-agents": 174,
+    "ai-agents": 175,
     "inference": 167,
     "developer-tools": 98,
     "frontend": 44,
     "design": 43,
     "cloud-infrastructure": 21,
-    "productivity": 17,
+    "productivity": 18,
     "security": 11,
     "app-development": 8,
     "self-hosting": 8,
@@ -32,11 +32,11 @@
   },
   "use_case": {
     "run-inference": 143,
-    "manage-agents": 100,
+    "manage-agents": 101,
     "learn-technique": 82,
     "build-interfaces": 35,
     "generate-code": 30,
-    "automate-workflows": 24,
+    "automate-workflows": 25,
     "create-media": 22,
     "discover-design-references": 20,
     "test-software": 16,
@@ -48,18 +48,18 @@
     "operate-databases": 3
   },
   "interface": {
-    "web": 173,
-    "api": 131,
+    "web": 174,
+    "api": 132,
     "cli": 58,
-    "desktop": 26,
+    "desktop": 27,
     "mcp": 15,
     "extension": 7
   },
   "technology": {
-    "typescript": 23,
+    "typescript": 24,
     "react": 21,
     "python": 18,
-    "rust": 17,
+    "rust": 18,
     "claude-code": 16,
     "mcp-protocol": 16,
     "javascript": 12,
@@ -83,7 +83,7 @@
     "zed": 0
   },
   "channel": {
-    "share-tech": 302,
+    "share-tech": 304,
     "providers": 133
   },
   "open_source": {
