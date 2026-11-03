@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "sparks-of-weight-space-programming",
+  "title": "Sparks of Weight-Space Programming",
+  "canonical_url": "https://rikiyat.github.io/blog/weight-space-programming/",
+  "brief": "A research write-up showing frontier LLMs can natively read and write neural network weights — well past what humans or conventional algorithms manage. It explores \"weight-space programming\" as a way of working with models directly in weight space rather than only through text.",
+  "caveat": null,
+  "details": "A research write-up by Rikiya Takehi and colleagues at MIT CSAIL (published 2 Nov 2026) arguing that frontier LLMs can natively read and write neural network weights. Their model GPT-6 Astra identifies what a network was trained to do just from its raw weights, writes small game-playing networks from scratch that outplay PPO-trained ones, and fixes a reasoning-loop issue in Qwen3.5-0.8B by editing 0.016% of its weights — raising MATH-500 from 7.9% to 48.1% with no training loop involved. The authors call this \"Weight-Space Programming\": LLMs reasoning about what each part of a network computes and changing the weights directly, instead of relying on small symbolic optimizers like Adam. Figures are the authors' own reported results.",
+  "resource_type": "article-guide",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "29 Oct–5 Nov 2026",
+  "legacy_categories": [
+    "article",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "Alp"
+  },
+  "shared_on": "2026-11-03",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

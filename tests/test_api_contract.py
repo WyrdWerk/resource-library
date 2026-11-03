@@ -218,12 +218,25 @@ def test_search_bad_sort_message_lists_title(server):
 
 
 def test_search_from_bound_narrows(server):
-    s, _, bounded = req("GET", "/api/v1/search?q=inference&from=2026-09-01&limit=100")
-    assert s == 200
-    assert bounded["filters"]["from"] == "2026-09-01"
-    assert all(r["shared_on"] >= "2026-09-01" for r in bounded["results"])
-    s, _, unbounded = req("GET", "/api/v1/search?q=inference&limit=100")
-    assert len(bounded["results"]) < len(unbounded["results"]), "bound must actually narrow"
+    # Page through every result (MAX_LIMIT caps a single page), so the
+    # comparison measures the full result sets, not the page cap.
+    def all_results(path):
+        out, cursor, first = [], None, None
+        while True:
+            url = path + (f"&cursor={cursor}" if cursor else "")
+            s, _, b = req("GET", url)
+            assert s == 200
+            if first is None:
+                first = b
+            out.extend(b["results"])
+            cursor = b.get("next_cursor")
+            if not cursor:
+                return first, out
+    first, bounded = all_results("/api/v1/search?q=inference&from=2026-09-01&limit=100")
+    assert first["filters"]["from"] == "2026-09-01"
+    assert all(r["shared_on"] >= "2026-09-01" for r in bounded)
+    _, unbounded = all_results("/api/v1/search?q=inference&limit=100")
+    assert len(bounded) < len(unbounded), "bound must actually narrow"
 
 
 def test_search_to_bound_excludes_newer(server):
