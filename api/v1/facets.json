@@ -1,11 +1,11 @@
 {
   "resource_type": {
-    "repository": 117,
-    "provider": 108,
-    "article-guide": 64,
+    "repository": 118,
+    "provider": 109,
+    "article-guide": 65,
     "tool": 49,
     "library-framework": 36,
-    "directory-gallery": 26,
+    "directory-gallery": 27,
     "service-platform": 23,
     "dataset": 8,
     "documentation": 5,
@@ -14,41 +14,41 @@
   },
   "topic": {
     "ai-agents": 175,
-    "inference": 167,
-    "developer-tools": 98,
+    "inference": 169,
+    "developer-tools": 99,
     "frontend": 44,
     "design": 43,
     "cloud-infrastructure": 21,
     "productivity": 18,
     "security": 11,
+    "self-hosting": 10,
     "app-development": 8,
-    "self-hosting": 8,
+    "devops": 7,
     "testing": 7,
     "backend": 6,
-    "devops": 6,
     "observability": 5,
     "web-development": 5,
     "databases": 3
   },
   "use_case": {
-    "run-inference": 143,
-    "manage-agents": 101,
-    "learn-technique": 82,
+    "run-inference": 144,
+    "manage-agents": 102,
+    "learn-technique": 83,
     "build-interfaces": 35,
     "generate-code": 30,
     "automate-workflows": 25,
     "create-media": 22,
     "discover-design-references": 20,
     "test-software": 16,
-    "provision-infrastructure": 11,
+    "provision-infrastructure": 12,
     "host-models": 8,
     "monitor-systems": 7,
     "search-code": 7,
-    "deploy-applications": 5,
+    "deploy-applications": 6,
     "operate-databases": 3
   },
   "interface": {
-    "web": 174,
+    "web": 178,
     "api": 132,
     "cli": 58,
     "desktop": 27,
@@ -65,8 +65,8 @@
     "javascript": 12,
     "openai-api": 10,
     "anthropic-api": 7,
-    "go": 4,
-    "docker": 3,
+    "go": 5,
+    "docker": 4,
     "next-js": 3,
     "node-js": 3,
     "ollama": 3,
@@ -83,11 +83,11 @@
     "zed": 0
   },
   "channel": {
-    "share-tech": 304,
-    "providers": 133
+    "share-tech": 307,
+    "providers": 134
   },
   "open_source": {
-    "true": 49,
+    "true": 50,
     "false": 21
   }
 }

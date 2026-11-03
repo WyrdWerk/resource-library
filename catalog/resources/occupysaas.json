@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "occupysaas",
+  "title": "OccupySaaS",
+  "canonical_url": "https://occupysaas.com/",
+  "brief": "Clean-room, AI-assisted, open-source drop-in replacements for the SaaS giants, built by a team who say they were laid off and are rebuilding the tools themselves. Apache-2.0 licensed and self-hostable, pitched as replacements you can run yourself instead of renting.",
+  "caveat": null,
+  "details": "OccupySaaS is a protest movement written in code, launched October 2026 and Apache-2.0 licensed: laid-off engineers rebuilding popular SaaS tools as clean-room, open-source, drop-in replacements that you self-host with no per-seat pricing. Each project is rebuilt from public documentation and open standards under a strict firewall — spec writers and builders stay separated, AI implements from the spec alone under human review, and a compatibility lab runs the vendors' own public client SDKs against the replacement server to prove existing code works unchanged. The site frames it as \"the software built by the 99% belongs to the 99%\" and lists its first releases, method, and FAQ.",
+  "resource_type": "directory-gallery",
+  "topics": [
+    "self-hosting",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "deploy-applications"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": true,
+  "display_period": "29 Oct–5 Nov 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-11-02",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

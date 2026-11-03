@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "tuxee",
+  "title": "Tuxee",
+  "canonical_url": "https://github.com/agent0ai/tuxee",
+  "brief": "A Linux distribution pitched as \"the most convenient Linux for servers and agents\", aimed at machines that run AI agents. The sharer asked whether anyone had tried it, so treat the convenience claim as untested by the channel.",
+  "caveat": null,
+  "details": "Tuxee is a tiny Debian Linux container (60 MB Docker image, about 20 MB RAM, 1-second startup, core written in Go) with a web interface for file management and persistent terminals that survive logout, aimed at servers and at machines running AI agents. It is also available as a standalone web interface for existing Linux servers, with login as a real Linux user and no configuration needed. The web UI adds workspace tabs, drag-and-resize windows with grid snapping, and GUI apps (Chromium, VS Code) alongside the terminals. The repo has 258 stars and positions itself as \"the most convenient Linux for servers and agents\".",
+  "resource_type": "repository",
+  "topics": [
+    "devops",
+    "self-hosting"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "provision-infrastructure"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [
+    "docker",
+    "go"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "29 Oct–5 Nov 2026",
+  "legacy_categories": [
+    "dev-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-11-02",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

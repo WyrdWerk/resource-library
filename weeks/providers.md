@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-133 curated providers, with briefs.
+134 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -313,6 +313,12 @@
 - Shared by: Aspiring UBI Recipient (31 Oct)
 - Categories: providers
 - Brief: luoluoAI is a multi-model API gateway offering GPT, Claude, and Grok through one OpenAI-compatible endpoint, with familiar SDKs, a console for keys, balance, and usage, and pay-as-you-go top-ups via Stripe. It advertises up to 90% off list prices on its model plaza. - Warning: the discount figures are the vendor's own and unverified; plainskill in the thread called the pricing "crap", so community reception is mixed.
+
+## Abliterated Model Provider Directory
+- URL: https://abliteratusdirectory.pages.dev/
+- Shared by: Felix (3 Nov)
+- Categories: providers
+- Brief: A directory indexing 19 API providers serving abliterated and uncensored frontier models, with prices, rails, KYC requirements, and cyber scores for each. Useful as a comparison starting point for uncensored-model access. - Warning: the sharer warns some of these providers will certainly be suspect — verify any provider here yourself before sending it data or money.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

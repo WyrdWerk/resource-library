@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "abliterated-model-provider-directory",
+  "title": "Abliterated Model Provider Directory",
+  "canonical_url": "https://abliteratusdirectory.pages.dev/",
+  "brief": "A directory indexing 19 API providers serving abliterated and uncensored frontier models, with prices, rails, KYC requirements, and cyber scores for each. Useful as a comparison starting point for uncensored-model access. - Warning: the sharer warns some of these providers will certainly be suspect — verify any provider here yourself before sending it data or money.",
+  "caveat": null,
+  "details": "A directory indexing 19 API providers that serve abliterated and uncensored frontier models, based on a catalog scan dated 31 Oct 2026 covering 89 priced models. Each provider gets a full sheet with models, per-token prices, payment rails, and KYC status, plus a compare view that ranks by workload cost (1M input plus 250K output tokens) — cheapest listed is GLM-5.3 Flash Uncensored at $0.20 via uncensoredllm.ai — and a section on defense cases for who can buy and who gets gated. Four providers are explicit no-KYC and Monero rails are noted as an access path. The sharer warns some listed providers will certainly be suspect, so treat the directory as a comparison starting point and verify any provider yourself before sending it data or money.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Felix"
+  },
+  "shared_on": "2026-11-03",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
