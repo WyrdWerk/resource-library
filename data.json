@@ -2190,6 +2190,36 @@
     "details": "A directory indexing 19 API providers that serve abliterated and uncensored frontier models, based on a catalog scan dated 31 Oct 2026 covering 89 priced models. Each provider gets a full sheet with models, per-token prices, payment rails, and KYC status, plus a compare view that ranks by workload cost (1M input plus 250K output tokens) — cheapest listed is GLM-5.3 Flash Uncensored at $0.20 via uncensoredllm.ai — and a section on defense cases for who can buy and who gets gated. Four providers are explicit no-KYC and Monero rails are noted as an access path. The sharer warns some listed providers will certainly be suspect, so treat the directory as a comparison starting point and verify any provider yourself before sending it data or money."
   },
   {
+    "title": "voxl",
+    "week": "29 Oct–5 Nov 2026",
+    "url": "https://github.com/tembo/voxl",
+    "sharer": "thelaggingway",
+    "date": "4 Nov",
+    "categories": [
+      "dev-tool",
+      "github"
+    ],
+    "brief": "Low-latency desktop streaming for the browser, written in Rust — it streams an X11 display, a Mac screen, or a Windows desktop as H.264 over WebSocket to a small web client that decodes with WebCodecs, with input, clipboard, audio, and file transfer. The project's own benchmarks claim 60 FPS at 12–99 ms median latency on a CPU-only VM versus under 8 FPS for noVNC, and the channel compared it with Moonlight, which one member said handles bidirectional clipboard better.",
+    "id": "voxl",
+    "warning": "",
+    "details": "voxl is a low-latency desktop streaming tool for the browser, written in Rust by Tembo. It streams an X11 display, a macOS screen, or a Windows desktop as H.264 video over a WebSocket to a small web client that decodes with WebCodecs, and it carries input, clipboard, audio, microphone, and file and folder transfer plus dynamic resolution. The project publishes its own benchmarks showing 60 FPS with 12–99 ms median latency on a CPU-only VM, against under 8 FPS for noVNC, though those numbers are the project's own measurements and not independently verified. It installs with cargo install voxl-server and prints a sign-in link for the display it streams, which makes it a quick way to give a remote machine — including an agent sandbox — a browser-reachable desktop."
+  },
+  {
+    "title": "Sable",
+    "week": "29 Oct–5 Nov 2026",
+    "url": "https://github.com/moonmath-ai/Sable",
+    "sharer": "tom",
+    "date": "3 Nov",
+    "categories": [
+      "github",
+      "ai-tool"
+    ],
+    "brief": "Sable (Small-field Argument for Bit-exact LLM Execution) proves that a language model with committed weights produced a given reply, bit for bit — a client can verify every token without the GPU that ran the model. It ships the integer-exact model, a sumcheck-based proof system over the KoalaBear field, and the full paper, and is slated for deployment on Zro's Dolly models.",
+    "id": "sable",
+    "warning": "",
+    "details": "Sable (Small-field Argument for Bit-exact LLM Execution) is a system from moonmath-ai that proves a language model with committed weights produced a given reply to a given prompt, bit for bit. It has two parts: an exact integer version of the model in which every rounding, normalization, softmax, and sampling decision is fixed by its inputs, and a sumcheck-based proof system over the 31-bit KoalaBear field that lets a client verify every token — including where generation stopped — without the GPU that ran the model. The repository includes the prover, the cost model, the specification, and the full paper, with measured proving times of roughly 85–670 seconds for 32B-class models on a single RTX PRO 6000 GPU and verification in 19–56 seconds on one CPU core. It is aimed at verifiable inference: proving that a provider actually ran the model it claims, and it is slated for deployment on Zro's Dolly models."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

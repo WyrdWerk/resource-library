@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "sable",
+  "title": "Sable",
+  "canonical_url": "https://github.com/moonmath-ai/Sable",
+  "brief": "Sable (Small-field Argument for Bit-exact LLM Execution) proves that a language model with committed weights produced a given reply, bit for bit — a client can verify every token without the GPU that ran the model. It ships the integer-exact model, a sumcheck-based proof system over the KoalaBear field, and the full paper, and is slated for deployment on Zro's Dolly models.",
+  "caveat": null,
+  "details": "Sable (Small-field Argument for Bit-exact LLM Execution) is a system from moonmath-ai that proves a language model with committed weights produced a given reply to a given prompt, bit for bit. It has two parts: an exact integer version of the model in which every rounding, normalization, softmax, and sampling decision is fixed by its inputs, and a sumcheck-based proof system over the 31-bit KoalaBear field that lets a client verify every token — including where generation stopped — without the GPU that ran the model. The repository includes the prover, the cost model, the specification, and the full paper, with measured proving times of roughly 85–670 seconds for 32B-class models on a single RTX PRO 6000 GPU and verification in 19–56 seconds on one CPU core. It is aimed at verifiable inference: proving that a provider actually ran the model it claims, and it is slated for deployment on Zro's Dolly models.",
+  "resource_type": "repository",
+  "topics": [
+    "inference",
+    "security"
+  ],
+  "use_cases": [
+    "run-inference",
+    "learn-technique"
+  ],
+  "interfaces": [],
+  "technologies": [
+    "python"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "29 Oct–5 Nov 2026",
+  "legacy_categories": [
+    "github",
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "tom"
+  },
+  "shared_on": "2026-11-03",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
