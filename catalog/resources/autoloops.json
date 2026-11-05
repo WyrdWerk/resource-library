@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "autoloops",
+  "title": "Autoloops",
+  "canonical_url": "https://autoloops.ai/",
+  "brief": "Autoloops serves open-weight models — DeepSeek V4.1 Flash, Gemma 4, Qwen3.8, plus speech-to-text and text-to-speech — through one API aimed at realtime voice and agent workloads, with calibrated-answer (\"Jev\") variants of its models. The site advertises DeepSeek V4.1 Flash at 50% off and $1 of free credit for new accounts, and the sharer reports DeepSeek at off-peak pricing with about 300 tokens/sec throughput. Throughput (~300 tok/s), the 2 req/s limit, and the ~$7/B pricing figure are unverified claims from the sharer's messages.",
+  "caveat": "Throughput (~300 tok/s), the 2 req/s limit, and the ~$7/B pricing figure are unverified claims from the sharer's messages.",
+  "details": "Autoloops is an inference provider serving open-weight models through a single API, aimed at realtime voice and agent workloads. Its catalog includes DeepSeek V4.1 Flash (552B MoE), Gemma 4 31B and 26B, and Qwen3.8-27B, alongside Qwen3-ASR speech-to-text and text-to-speech models, plus \"Jev\" variants that return calibrated answers. The site advertises DeepSeek V4.1 Flash at 50% off, new accounts get $1 of free credit, and dedicated deployments are offered for heavier use. The Discord sharer reports roughly 300 tokens/sec on DeepSeek with a 2 requests/second limit and about $7 per billion tokens — those figures come from the sharer's messages and are not stated on the provider's site.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "scarywood75"
+  },
+  "shared_on": "2026-11-05",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
