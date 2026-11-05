@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-134 curated providers, with briefs.
+136 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -319,6 +319,18 @@
 - Shared by: Felix (3 Nov)
 - Categories: providers
 - Brief: A directory indexing 19 API providers serving abliterated and uncensored frontier models, with prices, rails, KYC requirements, and cyber scores for each. Useful as a comparison starting point for uncensored-model access. - Warning: the sharer warns some of these providers will certainly be suspect — verify any provider here yourself before sending it data or money.
+
+## Autoloops
+- URL: https://autoloops.ai/
+- Shared by: scarywood75 (5 Nov)
+- Categories: providers
+- Brief: Autoloops serves open-weight models — DeepSeek V4.1 Flash, Gemma 4, Qwen3.8, plus speech-to-text and text-to-speech — through one API aimed at realtime voice and agent workloads, with calibrated-answer ("Jev") variants of its models. The site advertises DeepSeek V4.1 Flash at 50% off and $1 of free credit for new accounts, and the sharer reports DeepSeek at off-peak pricing with about 300 tokens/sec throughput. Throughput (~300 tok/s), the 2 req/s limit, and the ~$7/B pricing figure are unverified claims from the sharer's messages.
+
+## Mistral — pricing
+- URL: https://mistral.ai/pricing/
+- Shared by: ROman (4 Nov)
+- Categories: providers
+- Brief: Mistral's pricing page covers Mistral Vibe, its personal AI agent, and API access: Vibe runs from a free tier through Pro at $14.99/month and Team at $24.99/user/month to custom Enterprise, with API credits bundled into the paid tiers. The page also lists Vibe's interfaces — web, CLI, IDE plugins, and mobile — and notes fair-usage limits apply.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

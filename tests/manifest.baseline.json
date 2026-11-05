@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "7f53affc5ddafdbbf62527fda8f581907dee8de829909b08c70f6cfe75830a42",
-  "data.json": "f36b71a777fede6c15061563f92dcd6f16095f329fd8bd8eef54d8ff8286971f",
-  "feed.xml": "bbfb87861dffe650df6439ef7512ebffe74b871be561fc9ff3a6174490e77653",
-  "index.html": "83cfaa0cdf4440817fe80d7f96d8f7d2305058ba9892e8d134818a7305a5121b",
-  "llms.txt": "fcc5ff2f21d328616f6854019853ec69b06c22284f3240abf4facae93585d2c2",
-  "og-image.png": "11d165c7e4584ba385a2907ecea550ec3caef3fec81bc9aa783973a3f96f70a6",
+  "CHANGELOG.md": "4fb49f178691dabd1b6adb6da7df7dd6efe02d09b60b6584384a9be5c3cbad22",
+  "data.json": "70248985ade95d77fe9515fdecffebb6fdc9e0b176d7e7ae326818111395640a",
+  "feed.xml": "ef78be5948a0f1998e6e767ebd588381598aa3d1a3770d892899c224eec42d74",
+  "index.html": "855323b238275700b6ec038f3617ec0386a8d5092245b242fcd318340719c997",
+  "llms.txt": "06a91649e4abc76c677d3c7e28b93f0ab87f0f42adb287c150e98208807f54f3",
+  "og-image.png": "c82b0a09e635bdf51567db9aa43788e1c9bf37e2280ffd7310758707b5c5354d",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "ba8e62cbfd4d011191867af7e41fa3ddb2a0dfffd8866115f5e7e1be16e34d94",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -31,7 +31,7 @@
   "weeks/2026-10-15_to_2026-10-22.md": "e793d798bf4039c0f14e3da05c252a304b4064abb282e44076ae9ff2af939004",
   "weeks/2026-10-22_to_2026-10-29.md": "98101e9ed1a116eccb023e539dc24c4b9d9aa8808c9135f2c1569341e8f58cb5",
   "weeks/2026-10-29_to_2026-11-05.md": "259c835f2a1d25fdf631b1bcc49f1fe741201db383ce6ad8ed05598bd873708e",
-  "weeks/providers.md": "8aca055783b2091d32b64b9cc8155b50bee52102884485bfca1f279bc48983e3"
+  "weeks/providers.md": "df184e02ea8204905d11fafa25a382caee48ae1d86f150255638d1435acb825c"
  },
  "inventory": {
   "categories": [
@@ -42,13 +42,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 443,
-  "nonempty_warnings": 99,
-  "providers": 134,
+  "https_urls": 445,
+  "nonempty_warnings": 100,
+  "providers": 136,
   "share_tech": 309,
-  "total": 443,
-  "unique_ids": 443,
-  "unique_urls": 443
+  "total": 445,
+  "unique_ids": 445,
+  "unique_urls": 445
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -204,6 +204,8 @@
   "abliterated-model-provider-directory",
   "voxl",
   "sable",
+  "autoloops",
+  "mistral-pricing",
   "annnimate",
   "hyperiux",
   "vanta-ui",

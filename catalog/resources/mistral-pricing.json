@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "mistral-pricing",
+  "title": "Mistral — pricing",
+  "canonical_url": "https://mistral.ai/pricing/",
+  "brief": "Mistral's pricing page covers Mistral Vibe, its personal AI agent, and API access: Vibe runs from a free tier through Pro at $14.99/month and Team at $24.99/user/month to custom Enterprise, with API credits bundled into the paid tiers. The page also lists Vibe's interfaces — web, CLI, IDE plugins, and mobile — and notes fair-usage limits apply.",
+  "caveat": null,
+  "details": "Mistral's pricing page covers Mistral Vibe, its personal AI agent, and API access in one place. Vibe runs from a free tier through Pro at $14.99 a month and Team at $24.99 per user a month to custom Enterprise, with monthly API credits bundled into the paid tiers and higher limits, storage, and support as you go up. Vibe works on web, in a terminal-native CLI, as VS Code and JetBrains plugins, and on mobile, with chat, voice mode, web search, file libraries, task scheduling, spreadsheets, slides, workflows, and connectors. The page is the reference for comparing Vibe plans side by side and for checking what the free tier includes before paying.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-11-04",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
