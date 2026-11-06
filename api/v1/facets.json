@@ -1,6 +1,6 @@
 {
   "resource_type": {
-    "repository": 120,
+    "repository": 119,
     "provider": 111,
     "article-guide": 65,
     "tool": 51,
@@ -14,8 +14,8 @@
   },
   "topic": {
     "ai-agents": 176,
-    "inference": 173,
-    "developer-tools": 102,
+    "inference": 172,
+    "developer-tools": 101,
     "frontend": 44,
     "design": 43,
     "cloud-infrastructure": 21,
@@ -26,12 +26,12 @@
     "devops": 7,
     "testing": 7,
     "backend": 6,
-    "observability": 6,
+    "observability": 5,
     "web-development": 5,
     "databases": 3
   },
   "use_case": {
-    "run-inference": 148,
+    "run-inference": 147,
     "manage-agents": 103,
     "learn-technique": 84,
     "build-interfaces": 35,
@@ -42,7 +42,7 @@
     "test-software": 16,
     "provision-infrastructure": 12,
     "host-models": 8,
-    "monitor-systems": 8,
+    "monitor-systems": 7,
     "search-code": 7,
     "deploy-applications": 6,
     "operate-databases": 3
@@ -50,7 +50,7 @@
   "interface": {
     "web": 182,
     "api": 134,
-    "cli": 60,
+    "cli": 59,
     "desktop": 27,
     "mcp": 15,
     "extension": 7
@@ -65,7 +65,7 @@
     "javascript": 12,
     "openai-api": 10,
     "anthropic-api": 7,
-    "go": 6,
+    "go": 5,
     "docker": 4,
     "next-js": 3,
     "node-js": 3,
@@ -83,7 +83,7 @@
     "zed": 0
   },
   "channel": {
-    "share-tech": 311,
+    "share-tech": 310,
     "providers": 136
   },
   "open_source": {
