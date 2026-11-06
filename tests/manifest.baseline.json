@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "819254c5e25aa1676ec63e6ab748739682f5620d0f6c6048aa3410d84f91ee10",
-  "data.json": "143ac5ced096e80e8312ed0316d7c65204df625d0ae1f1d55ecc35409234d983",
-  "feed.xml": "20f9df12bf5a78fff426d25c38c711112fc85c67a5a8e7e31ba4c4b13e5d9af9",
-  "index.html": "7559495e614adcfa588746e370f37a40b82c63b1b94a5f8885a627871b5dc11d",
-  "llms.txt": "e09949c87ddf6a3745d5baa76144cad7940920b28353baf15721e636ddcf61a1",
-  "og-image.png": "aeb145ba7e92f036da941d0730e9b62b1d97fed92a9f5b1c353afd27eba3fa25",
+  "CHANGELOG.md": "9f6ae0a92cb8b9180069a6262f3c6abf82d8dd53b6e7eca08fd8ae6491dbb919",
+  "data.json": "e82e7985b705f3c0349a5da286f715b0201d206cf326faa21752a6e2be019993",
+  "feed.xml": "78d27d95c943030b1707942c9fbb1af9c6aebc2090832b0f3494420ae64517eb",
+  "index.html": "51bb0341867b7df1e47d63439f0799f1fb4136aa8250d89785b3ebbc689136e2",
+  "llms.txt": "c1d8cd16e3977c3541168aa82a0f99fd271c9761e7abf93a11748a0e8d9fb3c3",
+  "og-image.png": "3aae4266087eb098d4b729dc4373783afe91be11a5f5764420a702cfe9a71c43",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "07dc6c4dfa4d7a44fa363797f93d17c67b3dada208cd58046929dcbbb8bbad3a",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -30,7 +30,7 @@
   "weeks/2026-10-08_to_2026-10-15.md": "e8ae99ca8b89c53ae2615a947ef4b2bc37d00f3e47ac70071363c624b6fbf54a",
   "weeks/2026-10-15_to_2026-10-22.md": "e793d798bf4039c0f14e3da05c252a304b4064abb282e44076ae9ff2af939004",
   "weeks/2026-10-22_to_2026-10-29.md": "98101e9ed1a116eccb023e539dc24c4b9d9aa8808c9135f2c1569341e8f58cb5",
-  "weeks/2026-10-29_to_2026-11-05.md": "882d5275f5ff99eac3e58d01af1ed725afe45ca6a2175e1efc4c4161d1c3d4aa",
+  "weeks/2026-10-29_to_2026-11-05.md": "259c835f2a1d25fdf631b1bcc49f1fe741201db383ce6ad8ed05598bd873708e",
   "weeks/2026-11-05_to_2026-11-12.md": "3fe5a198dcf2f3a50da5cf1944e51eebb2e8831710981c4442c961feb5274596",
   "weeks/providers.md": "df184e02ea8204905d11fafa25a382caee48ae1d86f150255638d1435acb825c"
  },
@@ -43,13 +43,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 447,
+  "https_urls": 446,
   "nonempty_warnings": 100,
   "providers": 136,
-  "share_tech": 311,
-  "total": 447,
-  "unique_ids": 447,
-  "unique_urls": 447
+  "share_tech": 310,
+  "total": 446,
+  "unique_ids": 446,
+  "unique_urls": 446
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -207,7 +207,6 @@
   "sable",
   "autoloops",
   "mistral-pricing",
-  "millivolt-cli",
   "chirp",
   "annnimate",
   "hyperiux",
