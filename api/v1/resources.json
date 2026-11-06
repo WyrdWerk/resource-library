@@ -5924,6 +5924,88 @@
   },
   {
     "schema_version": "1.0",
+    "id": "millivolt-cli",
+    "title": "millivolt-cli",
+    "canonical_url": "https://github.com/hv-V6/millivolt-cli",
+    "brief": "mvctl is a single Go binary that controls, inspects, and shows off a millivolt inference proxy from the terminal: operator-plane controls, KPIs, request logs, and spend attribution, plus a live full-screen dashboard, traffic generator, and load benchmark. A deliberately small subset is proposed upstream as millivolt PR #66; the standalone tool adds the TUI, Docker lifecycle commands, and 74 verified commands.",
+    "caveat": null,
+    "details": "mvctl is a single Go binary that operates a millivolt inference proxy from the terminal, with no runtime dependencies: it drives the whole operator plane (config, pause holds, provider throttles, quota gates, queue draining, debug capture, purge, backup and restore), shows KPIs, the retained request log, spend attribution and model/provider leaderboards, and runs an 8-point diagnostic, with a --json mode on everything for scripting. Its showpiece is a live full-screen TUI in millivolt's own eight palettes, plus a traffic generator, load benchmark, scripted tour, and a token-free dashboard proxy for demos. State-changing commands require --yes and preview first, and auto-discovery finds a running millivolt from Docker Compose labels or a loopback health probe. A deliberately small subset is proposed upstream as millivolt PR #66; the standalone tool is the fuller version, published 5 Nov 2026, so expect rapid change.",
+    "resource_type": "repository",
+    "topics": [
+      "developer-tools",
+      "inference",
+      "observability"
+    ],
+    "use_cases": [
+      "monitor-systems",
+      "run-inference"
+    ],
+    "interfaces": [
+      "cli"
+    ],
+    "technologies": [
+      "go"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "29 Oct–5 Nov 2026",
+    "legacy_categories": [
+      "dev-tool",
+      "github"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "ROman"
+    },
+    "shared_on": "2026-11-05",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "chirp",
+    "title": "chirp",
+    "canonical_url": "https://github.com/solst-ice/chirp",
+    "brief": "Chirp sends text and small files between devices through sound: one device plays a short burst of tones from its speaker and another decodes it from its microphone, with no network, pairing, or account involved. Three modes trade speed for robustness — FAST at ~320 bit/s, ROBUST for noisy rooms, and a near-ultrasonic INAUDIBLE mode — with Reed–Solomon error correction and a terminal-style spectrum UI; nothing is encrypted, so anyone within earshot can listen.",
+    "caveat": null,
+    "details": "Chirp is a browser app that moves text and small files between devices through sound instead of a network: one device plays a short burst of tones from its speaker and another decodes it with its microphone, so there is no pairing, account, or connection to set up. It offers three modes — FAST at about 320 bit/s, ROBUST at about 85 bit/s for noisy or echoey rooms, and a near-ultrasonic INAUDIBLE mode at about 65 bit/s — and the receiver listens for all three at once, with Reed–Solomon error correction and a CRC-32 checksum so a message only counts once it arrives intact. The terminal-style interface shows a live 0–20 kHz spectrum and waterfall, a transfer log with progress bars, and per-mode link statistics; files up to 256 KB are chunked with deflate compression and can be resent to fill gaps. It is genuinely useful for air-gapped transfers between nearby devices, but transmissions are one-way and unencrypted, so anyone within earshot can listen.",
+    "resource_type": "tool",
+    "topics": [
+      "developer-tools"
+    ],
+    "use_cases": [
+      "create-media"
+    ],
+    "interfaces": [
+      "web"
+    ],
+    "technologies": [
+      "typescript",
+      "react"
+    ],
+    "license": null,
+    "open_source": null,
+    "display_period": "5–12 Nov 2026",
+    "legacy_categories": [
+      "dev-tool",
+      "github"
+    ],
+    "source": {
+      "channel": "share-tech",
+      "sharer": "simply_roo"
+    },
+    "shared_on": "2026-11-06",
+    "verification": {
+      "status": "unchecked",
+      "checked_at": null,
+      "final_url": null
+    }
+  },
+  {
+    "schema_version": "1.0",
     "id": "annnimate",
     "title": "Annnimate",
     "canonical_url": "https://annnimate.com",
