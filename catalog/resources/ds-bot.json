@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "id": "ds-bot",
+  "title": "DS Bot",
+  "canonical_url": "https://dsbot.app/",
+  "brief": "DS Bot is a free, open-source desktop app that runs a team of long-lived bots — each with its own name, role, model, and memory — that split work in group chats, hand jobs to each other, and run scheduled tasks, all local-first with your data staying on your computer. Bots use models you set up on your own quota (a DeepSeek sign-in or other model services), with per-bot access controls and token-usage tracking; it also works as a plugin inside DSH Desktop. The installers are not signed yet, so Windows and macOS need a manual bypass on first open.",
+  "caveat": null,
+  "details": "DS Bot is a free, open-source (Apache 2.0) desktop app for Windows, macOS, and Linux that runs a team of long-lived bots, each with its own name, role, model, and persistent memory, that split work in group chats, hand jobs to each other, and run scheduled tasks once, daily, weekly, or every few hours. Bots share MCP servers and skills across the team, and each bot gets its own access level (read-only, workspace-only, or full access), with local commands requiring approval and token usage tracked by time, bot, and model. Everything is local-first: chats, memory, and files stay on your computer, and bots run on models you set up on your own quota, via a DeepSeek sign-in or other model services. It also works as a plugin inside DSH Desktop. Caveat: version 0.2.7 (3 November 2026) ships unsigned installers, so Windows and macOS need a manual bypass on first open.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "productivity"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "automate-workflows"
+  ],
+  "interfaces": [
+    "desktop",
+    "mcp"
+  ],
+  "technologies": [
+    "mcp-protocol"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "5–12 Nov 2026",
+  "legacy_categories": [
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-11-06",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
