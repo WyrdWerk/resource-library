@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "botperch",
+  "title": "Botperch",
+  "canonical_url": "https://botperch.com/",
+  "brief": "A plain-language guide to hosting AI agents — which cloud sandbox, VM, or server fits the job, what it costs with the AI model included, and the catch — covering 29 providers with sourced prices, feature-by-feature explainers, and a cost calculator that shows its arithmetic. The sharer notes it is still a work in progress. Machine prices were checked 29 Oct 2026 and model prices are medians from TokenWatch, so treat the figures as list-rate illustrations rather than live quotes.",
+  "caveat": null,
+  "details": "Botperch is a plain-language guide to finding a home for an AI agent, covering 29 cloud sandbox, VM, and server providers with sourced prices, capability checks, and a cost calculator that shows its arithmetic. It walks through what actually matters per provider: isolation (container, gVisor, microVM, or full VM), sizes and regions, stop/pause/sleep lifecycle, snapshots and storage persistence, idle timers and wake paths, network access and secrets handling, billing models, and trials. Its headline finding is that the model dwarfs the machine: for a personal agent the cheapest machine is $2.98 a month while the model runs $7.30 to $488.07 a month at the site's assumed 144 million tokens, so choosing the model moves the bill far more than choosing the host. Caveat: the site is still a work in progress, machine prices were checked 29 October 2026 and model prices are medians from TokenWatch read 31 October 2026, so treat figures as list-rate illustrations and verify current pricing before deciding.",
+  "resource_type": "directory-gallery",
+  "topics": [
+    "cloud-infrastructure",
+    "ai-agents"
+  ],
+  "use_cases": [
+    "provision-infrastructure",
+    "manage-agents"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "5–12 Nov 2026",
+  "legacy_categories": [
+    "web-app",
+    "providers"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-11-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
