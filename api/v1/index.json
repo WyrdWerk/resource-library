@@ -1,12 +1,12 @@
 {
   "api_version": "1",
-  "generated_at": "2026-11-07T02:56:41Z",
-  "record_count": 448,
+  "generated_at": "2026-11-08T03:25:56Z",
+  "record_count": 450,
   "channels": [
     "providers",
     "share-tech"
   ],
-  "resources_sha256": "9046115a92a4cc3cc316d09d37b5786a4e7c97f0c96b7798f718273e71237755",
+  "resources_sha256": "837bd81c841c4951aecc8bfddf7df664e4da321b65ed7e5a26d9000e233ae81f",
   "endpoints": {
     "records": "api/v1/resources.json",
     "taxonomy": "api/v1/taxonomy.json",

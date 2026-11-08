@@ -1,6 +1,6 @@
 {
-  "migrated": 448,
-  "source_rows": 448,
+  "migrated": 450,
+  "source_rows": 450,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -2531,6 +2531,38 @@
       "all_equal": true,
       "shared_on": "2026-11-06",
       "date_evidence": "posted '6 Nov' inside week label '5–12 Nov 2026'"
+    },
+    {
+      "id": "gputable",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-11-07",
+      "date_evidence": "posted '7 Nov' inside week label '5–12 Nov 2026'"
+    },
+    {
+      "id": "pi-intercom",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-11-07",
+      "date_evidence": "posted '7 Nov' inside week label '5–12 Nov 2026'"
     },
     {
       "id": "annnimate",

@@ -2292,6 +2292,36 @@
     "details": "DS Bot is a free, open-source (Apache 2.0) desktop app for Windows, macOS, and Linux that runs a team of long-lived bots, each with its own name, role, model, and persistent memory, that split work in group chats, hand jobs to each other, and run scheduled tasks once, daily, weekly, or every few hours. Bots share MCP servers and skills across the team, and each bot gets its own access level (read-only, workspace-only, or full access), with local commands requiring approval and token usage tracked by time, bot, and model. Everything is local-first: chats, memory, and files stay on your computer, and bots run on models you set up on your own quota, via a DeepSeek sign-in or other model services. It also works as a plugin inside DSH Desktop. Caveat: version 0.2.7 (3 November 2026) ships unsigned installers, so Windows and macOS need a manual bypass on first open."
   },
   {
+    "title": "GPUTable",
+    "week": "5–12 Nov 2026",
+    "url": "https://gputable.dev/",
+    "sharer": "thelaggingway",
+    "date": "7 Nov",
+    "categories": [
+      "web-app",
+      "providers"
+    ],
+    "brief": "GPUTable tracks live per-GPU hourly rental prices across 35+ cloud providers, refreshed every 5 minutes, with on-demand, spot, and reserved pricing plus a daily price-history index. It covers datacenter GPUs from H100s and B200s down to RTX 3060s, so you can compare the cheapest host for a given card at a glance.",
+    "id": "gputable",
+    "warning": "",
+    "details": "GPUTable is a live price board for renting cloud GPUs: it lists per-GPU hourly rates for 35 datacenter and consumer cards — H100, H200, B200, B300, A100, MI300X, RTX 4090, RTX 5090 and more — across 42 providers including Vast.ai, Runpod, Lambda Labs, CoreWeave, AWS, Azure, Google Cloud, and Akash, refreshed every five minutes. Each card shows its cheapest available hourly rate alongside on-demand, spot, and reserved pricing, and the site keeps a daily price-history index so you can see whether a rate is trending up or down. The listed rates are live snapshots from the providers' own pricing pages, so treat them as a comparison starting point and confirm the current price with the host before booking."
+  },
+  {
+    "title": "pi-intercom",
+    "week": "5–12 Nov 2026",
+    "url": "https://github.com/nicobailon/pi-intercom",
+    "sharer": "asx",
+    "date": "7 Nov",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Pi Intercom is an extension for the pi coding agent that adds direct 1:1 messaging between pi sessions on the same machine, so a research session can hand findings to an execution session, or a worker can ask its planner a blocking question without losing context. Sessions connect through a tiny local broker with an `intercom` tool and an Alt+M overlay, and it integrates with pi-subagents so delegated children can escalate to their supervisor.",
+    "id": "pi-intercom",
+    "warning": "",
+    "details": "Pi Intercom is an extension for the pi coding agent that lets separate pi sessions on the same machine message each other directly — a research session can send findings to an execution session, or a worker can ask its planner a blocking question and wait for the answer in the same turn. Each session with the extension loaded connects to a tiny local broker over local IPC; you pick a recipient by name or session ID from the /intercom overlay (Alt+M) or with the intercom tool, which supports send, ask (blocks until replied), reply, and attachments like code snippets. It covers planner-worker coordination, handing a session over to another, and subagent-to-supervisor escalation — delegated children get a contact_supervisor tool when pi-subagents supplies bridge metadata — and cross-machine coordination over SSH is supported too. Install with pi install npm:pi-intercom; MIT-licensed, about 600 stars. Caveat: messaging is local-machine by default, so sessions on other machines need the SSH transport configured."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",
