@@ -2322,6 +2322,20 @@
     "details": "Pi Intercom is an extension for the pi coding agent that lets separate pi sessions on the same machine message each other directly — a research session can send findings to an execution session, or a worker can ask its planner a blocking question and wait for the answer in the same turn. Each session with the extension loaded connects to a tiny local broker over local IPC; you pick a recipient by name or session ID from the /intercom overlay (Alt+M) or with the intercom tool, which supports send, ask (blocks until replied), reply, and attachments like code snippets. It covers planner-worker coordination, handing a session over to another, and subagent-to-supervisor escalation — delegated children get a contact_supervisor tool when pi-subagents supplies bridge metadata — and cross-machine coordination over SSH is supported too. Install with pi install npm:pi-intercom; MIT-licensed, about 600 stars. Caveat: messaging is local-machine by default, so sessions on other machines need the SSH transport configured."
   },
   {
+    "title": "OpenRouter: DeepSeek V4.1 Flash 1017",
+    "week": "providers",
+    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+    "sharer": "Felix",
+    "date": "8 Nov",
+    "categories": [
+      "providers"
+    ],
+    "brief": "OpenRouter's model page for DeepSeek V4.1 Flash 1017 — the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by 40 providers with routing modes (Balanced/Nitro/Floor) and automatic failover, with live pricing from $0.006/$0.50 per million in/out tokens and per-provider throughput, latency, and uptime side by side. A provider-comparison-style page, same pattern as the published OpenRouter model pages for Claude Haiku 5.5 and Step-5-Preview; Felix shared it for the abnormal error rates on some providers (a few rows show availability as low as 38%), and figures are live so they will shift.",
+    "id": "openrouter-deepseek-v4-1-flash-1017",
+    "warning": "",
+    "details": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, a sparse mixture-of-experts model built on DeepSeek's Causal Encoder-Decoder architecture, served under the deepseek-flash API model name with a 1,048,576-token context window, tool calling, and structured outputs. OpenRouter lists 40 providers serving it with Balanced, Nitro, and Floor routing modes plus automatic failover when a provider errors, and the page compares live per-provider pricing (from $0.006/$0.50 per million input/output tokens), throughput, latency, and uptime, alongside GPQA Diamond and TAU-Bench scores per provider. It is most useful as a live comparison for picking the cheapest or most reliable host for this snapshot: check the availability column before choosing, since Felix flagged abnormal error rates and a few providers show availability as low as 38%, and the figures shift as providers are re-tested."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "openrouter-deepseek-v4-1-flash-1017",
+  "title": "OpenRouter: DeepSeek V4.1 Flash 1017",
+  "canonical_url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+  "brief": "OpenRouter's model page for DeepSeek V4.1 Flash 1017 — the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by 40 providers with routing modes (Balanced/Nitro/Floor) and automatic failover, with live pricing from $0.006/$0.50 per million in/out tokens and per-provider throughput, latency, and uptime side by side. A provider-comparison-style page, same pattern as the published OpenRouter model pages for Claude Haiku 5.5 and Step-5-Preview; Felix shared it for the abnormal error rates on some providers (a few rows show availability as low as 38%), and figures are live so they will shift.",
+  "caveat": null,
+  "details": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, a sparse mixture-of-experts model built on DeepSeek's Causal Encoder-Decoder architecture, served under the deepseek-flash API model name with a 1,048,576-token context window, tool calling, and structured outputs. OpenRouter lists 40 providers serving it with Balanced, Nitro, and Floor routing modes plus automatic failover when a provider errors, and the page compares live per-provider pricing (from $0.006/$0.50 per million input/output tokens), throughput, latency, and uptime, alongside GPQA Diamond and TAU-Bench scores per provider. It is most useful as a live comparison for picking the cheapest or most reliable host for this snapshot: check the availability column before choosing, since Felix flagged abnormal error rates and a few providers show availability as low as 38%, and the figures shift as providers are re-tested.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "Felix"
+  },
+  "shared_on": "2026-11-08",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

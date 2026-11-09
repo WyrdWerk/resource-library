@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-136 curated providers, with briefs.
+137 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -331,6 +331,12 @@
 - Shared by: ROman (4 Nov)
 - Categories: providers
 - Brief: Mistral's pricing page covers Mistral Vibe, its personal AI agent, and API access: Vibe runs from a free tier through Pro at $14.99/month and Team at $24.99/user/month to custom Enterprise, with API credits bundled into the paid tiers. The page also lists Vibe's interfaces — web, CLI, IDE plugins, and mobile — and notes fair-usage limits apply.
+
+## OpenRouter: DeepSeek V4.1 Flash 1017
+- URL: https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017
+- Shared by: Felix (8 Nov)
+- Categories: providers
+- Brief: OpenRouter's model page for DeepSeek V4.1 Flash 1017 — the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by 40 providers with routing modes (Balanced/Nitro/Floor) and automatic failover, with live pricing from $0.006/$0.50 per million in/out tokens and per-provider throughput, latency, and uptime side by side. A provider-comparison-style page, same pattern as the published OpenRouter model pages for Claude Haiku 5.5 and Step-5-Preview; Felix shared it for the abnormal error rates on some providers (a few rows show availability as low as 38%), and figures are live so they will shift.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

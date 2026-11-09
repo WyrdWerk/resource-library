@@ -403,13 +403,14 @@
  {
   "query": "openrouter.com",
   "filters": {},
-  "expect_top1": "openrouter-claude-haiku-5-5",
+  "expect_top1": "openrouter-deepseek-v4-1-flash-1017",
   "expect_top5": [
+   "openrouter-deepseek-v4-1-flash-1017",
    "openrouter-claude-haiku-5-5",
    "openrouter"
   ],
   "expect_none": false,
-  "note": "re-reviewed 2026-10-08 against 354-record catalog; OpenRouter Haiku 5.5 model page now outranks the provider homepage for the domain query (both are OpenRouter pages; homepage still #2)"
+  "note": "re-reviewed 2026-11-09 against 451-record catalog; newest OpenRouter model page (DeepSeek V4.1 Flash 1017) now outranks the Haiku 5.5 page for the domain query (all top results are OpenRouter pages; homepage still in top 5)"
  },
  {
   "query": "github.com/anthropics",
