@@ -1,12 +1,12 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "dba4e4e93fe90f60721ac27d93aaa92d012cb0c02405a71253e1c59509b988ab",
-  "data.json": "67f5d94dcf2990c362cfd107fd2b0ad646c98111624c16af326c49f428865da5",
-  "feed.xml": "b9a782c616876f5bd1d933662f4c1f7f67dcc99654ec2bd9fa832fb65ed45e8c",
-  "index.html": "a1a2fcf8fdf1bbaf1394a7e0501f5b2d730010be33cf642a01573f44eadade9a",
-  "llms.txt": "b78753948f202f8f81b25932f711ef4ef9c3d561cb3630530c0557a9efd7582d",
-  "og-image.png": "5bb673814cd8b1a4b1d051e9e3dfeb76b993aa99219a99be8b6907220327bcf7",
+  "CHANGELOG.md": "d8a3e678cfc85a13c8706af2678f1997f9cb7fa8435cbb1fda3c9e16fb8bbea8",
+  "data.json": "fdb2cc436309b2e31d50cea199a852b493baca198ce88cb417993d6f636bdb10",
+  "feed.xml": "423e42bf0f2fd6bf1c3d6e4035655967ce831d72cfb9ce5f8a9354c614fbd6d2",
+  "index.html": "2089ae25507a9494083167408652779a3d7ca783f6a7402faa854a02b37f7437",
+  "llms.txt": "1029133fa4d4ea3c1d66077b8e715593a82c232ba310c1df9fe1ae01d8b4afd3",
+  "og-image.png": "5043b1469980f66aa77905e69b6747fcd57f84caa4c5bd07d58e5414f68056d0",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
   "sitemap.xml": "07dc6c4dfa4d7a44fa363797f93d17c67b3dada208cd58046929dcbbb8bbad3a",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
@@ -32,7 +32,7 @@
   "weeks/2026-10-22_to_2026-10-29.md": "98101e9ed1a116eccb023e539dc24c4b9d9aa8808c9135f2c1569341e8f58cb5",
   "weeks/2026-10-29_to_2026-11-05.md": "259c835f2a1d25fdf631b1bcc49f1fe741201db383ce6ad8ed05598bd873708e",
   "weeks/2026-11-05_to_2026-11-12.md": "ea3fcd0fc64aa9bd0ad26751d42f6822c6e22c3991da4fd0b0ffd95cb774d457",
-  "weeks/providers.md": "aa5e88fdcc0705f9fd5ca02e7f3a70308f806274a85e342b3b003b2a888d9339"
+  "weeks/providers.md": "a081b3f7b47a363f77b31127b96ad9ade6cd24353f1797920079b5607a6e32a7"
  },
  "inventory": {
   "categories": [
@@ -43,13 +43,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 451,
+  "https_urls": 452,
   "nonempty_warnings": 100,
-  "providers": 137,
+  "providers": 138,
   "share_tech": 314,
-  "total": 451,
-  "unique_ids": 451,
-  "unique_urls": 451
+  "total": 452,
+  "unique_ids": 452,
+  "unique_urls": 452
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -213,6 +213,7 @@
   "gputable",
   "pi-intercom",
   "openrouter-deepseek-v4-1-flash-1017",
+  "morph-ultra",
   "annnimate",
   "hyperiux",
   "vanta-ui",

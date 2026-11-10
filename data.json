@@ -2336,6 +2336,20 @@
     "details": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, a sparse mixture-of-experts model built on DeepSeek's Causal Encoder-Decoder architecture, served under the deepseek-flash API model name with a 1,048,576-token context window, tool calling, and structured outputs. OpenRouter lists 40 providers serving it with Balanced, Nitro, and Floor routing modes plus automatic failover when a provider errors, and the page compares live per-provider pricing (from $0.006/$0.50 per million input/output tokens), throughput, latency, and uptime, alongside GPQA Diamond and TAU-Bench scores per provider. It is most useful as a live comparison for picking the cheapest or most reliable host for this snapshot: check the availability column before choosing, since Felix flagged abnormal error rates and a few providers show availability as low as 38%, and the figures shift as providers are re-tested."
   },
   {
+    "title": "Morph Ultra",
+    "week": "providers",
+    "url": "https://www.morphllm.com/products/ultra",
+    "sharer": "thelaggingway",
+    "date": "10 Nov",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Morph's flat $200/month plan for coding agents — unlimited Kimi K3.1 and DeepSeek V4.1 Flash with no token meter and no monthly cap, served over OpenAI- and Anthropic-compatible endpoints so two environment variables point Claude Code at it. Only 1,000 subscriptions are available, and \"unlimited\" means per-minute rate limits on uncached tokens rather than reserved capacity, so requests can return 429 when Morph is busy. (The Discord embed said \"Kimi K3\"; the live page lists Kimi K3.1.)",
+    "id": "morph-ultra",
+    "warning": "",
+    "details": "Morph Ultra is Morph's flat-rate subscription for coding agents: $200 a month buys unlimited use of two models, Kimi K3.1 and DeepSeek V4.1 Flash, with no token meter and no monthly token cap, while every other Morph model still bills per token. The catch is in the rate limits: each model has a per-minute cap on uncached input and output tokens (Kimi K3.1 allows 72,870 uncached input and 6,162 output tokens per minute; DeepSeek V4.1 Flash allows 2,103,237 in and 76,559 out), cached input does not count toward them, and requests can return 429 when Morph is at capacity. It serves the OpenAI and Anthropic wire formats, so pointing Claude Code at it takes two environment variables. Only 1,000 subscriptions are available, and the page shows live median speeds (Nov 9: Kimi K3.1 at 129 tokens/sec with 1.67s to first token, DeepSeek V4.1 Flash at 156 tokens/sec with 0.74s)."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",
