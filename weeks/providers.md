@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-138 curated providers, with briefs.
+141 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -343,6 +343,24 @@
 - Shared by: thelaggingway (10 Nov)
 - Categories: providers
 - Brief: Morph's flat $200/month plan for coding agents — unlimited Kimi K3.1 and DeepSeek V4.1 Flash with no token meter and no monthly cap, served over OpenAI- and Anthropic-compatible endpoints so two environment variables point Claude Code at it. Only 1,000 subscriptions are available, and "unlimited" means per-minute rate limits on uncached tokens rather than reserved capacity, so requests can return 429 when Morph is busy. (The Discord embed said "Kimi K3"; the live page lists Kimi K3.1.)
+
+## Lyber
+- URL: https://lyber.ai/
+- Shared by: ROman (10 Nov)
+- Categories: providers
+- Brief: Lyber is an OpenAI-compatible API router for uncensored ("abliterated") models — Kimi K3.1 Pro and DeepSeek V4.1 Flash 1017, with MiniMax M3.1 Flash coming back soon — sold as monthly credit plans from $15/month ($20 credit) to $180/month ($250 credit). DeepSeek V4.1 Flash 1017 runs $0.29 in / $0.029 cached / $0.99 out per million tokens with a 126,976-token output cap; the tweet's $300 bonus credit was a 24-hour promo and is not on the live page.
+
+## OpenGateway: DeepSeek V4.1 Flash Eco
+- URL: https://opengateway.ai/models/deepseek/deepseek-v4.1-flash-eco
+- Shared by: ROman (10 Nov)
+- Categories: providers
+- Brief: OpenGateway's model page for DeepSeek V4.1 Flash Eco, with availability, per-token pricing, endpoints, and provider details for this V4.1 Flash variant on one page. OpenGateway is a unified LLM gateway — one OpenAI-compatible endpoint for every model, with automatic retries, failover chains, live request inspection, and team keys with prepaid credits.
+
+## OpenGateway: DeepSeek V4.1 Flash Ultrafast
+- URL: https://opengateway.ai/models/deepseek/deepseek-v4.1-flash-ultrafast
+- Shared by: ROman (10 Nov)
+- Categories: providers
+- Brief: OpenGateway's model page for DeepSeek V4.1 Flash Ultrafast, an accelerated serving variant of DeepSeek's V4.1 Flash, with availability, per-token pricing, endpoints, and provider details on one page. OpenGateway is a unified LLM gateway — one OpenAI-compatible endpoint for every model, with automatic retries, failover chains, live request inspection, and team keys with prepaid credits.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

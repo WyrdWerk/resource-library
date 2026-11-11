@@ -2350,6 +2350,77 @@
     "details": "Morph Ultra is Morph's flat-rate subscription for coding agents: $200 a month buys unlimited use of two models, Kimi K3.1 and DeepSeek V4.1 Flash, with no token meter and no monthly token cap, while every other Morph model still bills per token. The catch is in the rate limits: each model has a per-minute cap on uncached input and output tokens (Kimi K3.1 allows 72,870 uncached input and 6,162 output tokens per minute; DeepSeek V4.1 Flash allows 2,103,237 in and 76,559 out), cached input does not count toward them, and requests can return 429 when Morph is at capacity. It serves the OpenAI and Anthropic wire formats, so pointing Claude Code at it takes two environment variables. Only 1,000 subscriptions are available, and the page shows live median speeds (Nov 9: Kimi K3.1 at 129 tokens/sec with 1.67s to first token, DeepSeek V4.1 Flash at 156 tokens/sec with 0.74s)."
   },
   {
+    "title": "SAG-Wiki",
+    "week": "5–12 Nov 2026",
+    "url": "https://github.com/Zleap-AI/SAG-Wiki",
+    "sharer": "ROman",
+    "date": "10 Nov",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "SAG-Wiki is a free, open-source (MIT) knowledge base for people and agents that indexes local files without LLM calls or embeddings, using its SAG2 retrieval method to surface passages and answer questions with citations back to the source. The 14 MB download ships a Tauri desktop app and a `sag` CLI — plus a ready-to-install Skill for Claude Code, Codex, and OpenCode — and indexes a million characters in about 200 ms; deep semantic retrieval and cited Q&A need an embedding/answer model configured.",
+    "id": "sag-wiki",
+    "warning": "",
+    "details": "SAG-Wiki is a free, open-source (MIT) knowledge base for people and agents built around SAG2, the project's own retrieval method: it indexes local files without embeddings or LLM calls, then finds supporting passages across documents with evidence scoring and query-time expansion. The 14 MB download includes a Tauri desktop app for macOS and Windows and a Rust `sag` CLI, plus a ready-to-install Skill for Claude Code, Codex, and OpenCode; add a folder and your documents, notes, and code become searchable, with cited Q&A that links each answer back to its source passage. Indexing is fast — about 200 ms per million characters — and files stay in their original locations with no separate database to install; PDF, Office, and EPUB files convert out of the box, while image recognition and audio/video transcription are optional add-ons. The project reports SAG2 beating BM25 and earlier SAG on Recall@10 across MuSiQue, 2WikiMultiHopQA, and HotpotQA (its own benchmarks, so treat the margin as vendor-reported); cited Q&A and deep semantic retrieval need an embedding/answer model configured with your own API key."
+  },
+  {
+    "title": "s³: Simple Scaling of Swarms via Cooperative Multi-agent RL",
+    "week": "5–12 Nov 2026",
+    "url": "https://arxiv.org/abs/2611.08615",
+    "sharer": "ROman",
+    "date": "10 Nov",
+    "categories": [
+      "article"
+    ],
+    "brief": "s³ is the first multi-agent RL method that trains LLM agent swarms to organise themselves — each agent learns when to work alone, share findings, or read teammates' messages, with no preset roles. With matched training and inference budgets, swarms evaluated with twice as many agents as in training solve over 25× more coordination problems than the strongest baseline, and communicating agents cut repeated work by nearly half in exploration.",
+    "id": "s-simple-scaling-of-swarms-via-cooperative-multi-agent-rl",
+    "warning": "",
+    "details": "s³ (Simple Scaling of Swarms via Cooperative Multi-agent RL), from researchers at the University of Washington and the Allen Institute for AI, is the first multi-agent RL method that trains LLM swarms to organise themselves instead of following a developer-written plan. Each agent in a swarm of N copies of one model works on its own copy of the task and learns when to work alone, share findings, or read teammates' messages, with the team rewarded when any agent solves the task and a small cost for the share of the token budget used. Trained with four agents on small models (Qwen3-0.6B and 1.7B) and evaluated with up to sixteen, s³ swarms solve 93% of held-out coordination problems with four agents (vs 35% for imitating its own successful swarms and 13% for individual rewards), and with eight agents solve over 25 times more coordination problems than the strongest baseline under matched budgets. In parallel exploration, communicating agents cut repeated work by nearly half and beat best-of-N by up to 9.4 percentage points; the paper's project site is scalingswarms.com, and the arXiv listing is arXiv:2611.08615, submitted 5 November 2026."
+  },
+  {
+    "title": "Lyber",
+    "week": "providers",
+    "url": "https://lyber.ai/",
+    "sharer": "ROman",
+    "date": "10 Nov",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Lyber is an OpenAI-compatible API router for uncensored (\"abliterated\") models — Kimi K3.1 Pro and DeepSeek V4.1 Flash 1017, with MiniMax M3.1 Flash coming back soon — sold as monthly credit plans from $15/month ($20 credit) to $180/month ($250 credit). DeepSeek V4.1 Flash 1017 runs $0.29 in / $0.029 cached / $0.99 out per million tokens with a 126,976-token output cap; the tweet's $300 bonus credit was a 24-hour promo and is not on the live page.",
+    "id": "lyber",
+    "warning": "",
+    "details": "Lyber is an OpenAI-compatible API router for uncensored (\"abliterated\") models, sold as monthly credit plans: Starter $15 a month for $20 of credit, Pro $45 for $60, and Max $180 for $250, with one-time credit available from $10 and no automatic overage charges. Its available models are Kimi K3.1 Pro Abliterated at $4 in / $15 out per million tokens (131,072 max output tokens) and DeepSeek V4.1 Flash 1017 Uncensored at $0.29 in / $0.029 cached / $0.99 out per million (126,976 max output tokens, 1,048,576-token shared context), while MiniMax M3.1 Flash is listed as on hold and coming back soon. It works through browser chat, Codex, Hermes, and Claude Code (via its Anthropic Messages API) or any OpenAI-compatible SDK pointed at Lyber's endpoint, with one balance across browser and agents, team workspaces, spending controls, and usage history. The service is in early access with open signup via Stripe Checkout; the $300 bonus credit mentioned in the launch tweet was a 24-hour promotion and is not on the live pricing page."
+  },
+  {
+    "title": "OpenGateway: DeepSeek V4.1 Flash Eco",
+    "week": "providers",
+    "url": "https://opengateway.ai/models/deepseek/deepseek-v4.1-flash-eco",
+    "sharer": "ROman",
+    "date": "10 Nov",
+    "categories": [
+      "providers"
+    ],
+    "brief": "OpenGateway's model page for DeepSeek V4.1 Flash Eco, with availability, per-token pricing, endpoints, and provider details for this V4.1 Flash variant on one page. OpenGateway is a unified LLM gateway — one OpenAI-compatible endpoint for every model, with automatic retries, failover chains, live request inspection, and team keys with prepaid credits.",
+    "id": "opengateway-deepseek-v4-1-flash-eco",
+    "warning": "",
+    "details": "OpenGateway's model page for DeepSeek V4.1 Flash Eco lists that variant's availability, per-token pricing, endpoints, and provider details in one place, so you can see what the Eco route costs and how to call it before wiring it up. OpenGateway itself is a unified LLM gateway: point any OpenAI SDK at its single endpoint and switch models by changing one string, with routing, authentication, retries, and response normalisation handled for you. It adds a Grafana-style Live Tail for debugging calls in flight, configurable failover chains that reroute on 429, 5xx, or timeouts, and team keys with roles, prepaid credits, and auto-pause spend caps. (Coverage note: written from the OpenGateway homepage and the Discord embed — the model page is client-rendered and was not directly fetchable.)"
+  },
+  {
+    "title": "OpenGateway: DeepSeek V4.1 Flash Ultrafast",
+    "week": "providers",
+    "url": "https://opengateway.ai/models/deepseek/deepseek-v4.1-flash-ultrafast",
+    "sharer": "ROman",
+    "date": "10 Nov",
+    "categories": [
+      "providers"
+    ],
+    "brief": "OpenGateway's model page for DeepSeek V4.1 Flash Ultrafast, an accelerated serving variant of DeepSeek's V4.1 Flash, with availability, per-token pricing, endpoints, and provider details on one page. OpenGateway is a unified LLM gateway — one OpenAI-compatible endpoint for every model, with automatic retries, failover chains, live request inspection, and team keys with prepaid credits.",
+    "id": "opengateway-deepseek-v4-1-flash-ultrafast",
+    "warning": "",
+    "details": "OpenGateway's model page for DeepSeek V4.1 Flash Ultrafast lists that variant's availability, per-token pricing, endpoints, and provider details in one place; Ultrafast is the accelerated serving route for DeepSeek's V4.1 Flash, the open-weight model tuned for agentic coding, reasoning, and tool use with a 1M-token context. OpenGateway itself is a unified LLM gateway: point any OpenAI SDK at its single endpoint and switch models by changing one string, with routing, authentication, retries, and response normalisation handled for you. It adds a Grafana-style Live Tail for debugging calls in flight, configurable failover chains that reroute on 429, 5xx, or timeouts, and team keys with roles, prepaid credits, and auto-pause spend caps. (Coverage note: written from the OpenGateway homepage and the Discord embed — the model page is client-rendered and was not directly fetchable.)"
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

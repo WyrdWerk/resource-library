@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "opengateway-deepseek-v4-1-flash-eco",
+  "title": "OpenGateway: DeepSeek V4.1 Flash Eco",
+  "canonical_url": "https://opengateway.ai/models/deepseek/deepseek-v4.1-flash-eco",
+  "brief": "OpenGateway's model page for DeepSeek V4.1 Flash Eco, with availability, per-token pricing, endpoints, and provider details for this V4.1 Flash variant on one page. OpenGateway is a unified LLM gateway — one OpenAI-compatible endpoint for every model, with automatic retries, failover chains, live request inspection, and team keys with prepaid credits.",
+  "caveat": null,
+  "details": "OpenGateway's model page for DeepSeek V4.1 Flash Eco lists that variant's availability, per-token pricing, endpoints, and provider details in one place, so you can see what the Eco route costs and how to call it before wiring it up. OpenGateway itself is a unified LLM gateway: point any OpenAI SDK at its single endpoint and switch models by changing one string, with routing, authentication, retries, and response normalisation handled for you. It adds a Grafana-style Live Tail for debugging calls in flight, configurable failover chains that reroute on 429, 5xx, or timeouts, and team keys with roles, prepaid credits, and auto-pause spend caps. (Coverage note: written from the OpenGateway homepage and the Discord embed — the model page is client-rendered and was not directly fetchable.)",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-11-10",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
