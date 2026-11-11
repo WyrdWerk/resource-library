@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "sag-wiki",
+  "title": "SAG-Wiki",
+  "canonical_url": "https://github.com/Zleap-AI/SAG-Wiki",
+  "brief": "SAG-Wiki is a free, open-source (MIT) knowledge base for people and agents that indexes local files without LLM calls or embeddings, using its SAG2 retrieval method to surface passages and answer questions with citations back to the source. The 14 MB download ships a Tauri desktop app and a `sag` CLI — plus a ready-to-install Skill for Claude Code, Codex, and OpenCode — and indexes a million characters in about 200 ms; deep semantic retrieval and cited Q&A need an embedding/answer model configured.",
+  "caveat": null,
+  "details": "SAG-Wiki is a free, open-source (MIT) knowledge base for people and agents built around SAG2, the project's own retrieval method: it indexes local files without embeddings or LLM calls, then finds supporting passages across documents with evidence scoring and query-time expansion. The 14 MB download includes a Tauri desktop app for macOS and Windows and a Rust `sag` CLI, plus a ready-to-install Skill for Claude Code, Codex, and OpenCode; add a folder and your documents, notes, and code become searchable, with cited Q&A that links each answer back to its source passage. Indexing is fast — about 200 ms per million characters — and files stay in their original locations with no separate database to install; PDF, Office, and EPUB files convert out of the box, while image recognition and audio/video transcription are optional add-ons. The project reports SAG2 beating BM25 and earlier SAG on Recall@10 across MuSiQue, 2WikiMultiHopQA, and HotpotQA (its own benchmarks, so treat the margin as vendor-reported); cited Q&A and deep semantic retrieval need an embedding/answer model configured with your own API key.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "productivity"
+  ],
+  "use_cases": [
+    "search-code"
+  ],
+  "interfaces": [
+    "desktop",
+    "cli"
+  ],
+  "technologies": [
+    "rust",
+    "sqlite"
+  ],
+  "license": null,
+  "open_source": true,
+  "display_period": "5–12 Nov 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-11-10",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

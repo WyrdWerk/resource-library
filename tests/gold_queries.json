@@ -85,14 +85,14 @@
   "filters": {},
   "expect_top1": null,
   "expect_top5": [
+   "abliterated-model-provider-directory",
    "artificial-analysis-deepseek-v4-1-flash-providers",
    "artificial-analysis-glm-5-3-flash-providers",
    "prime-intellect-inference",
-   "pi-coralbricks-provider",
-   "artificial-analysis-mimo-v2-6-pro-providers"
+   "pi-coralbricks-provider"
   ],
   "expect_none": false,
-  "note": "re-reviewed 2026-10-14 against 376-record catalog after the stem double-count fix (a word and its stem variants now score once). pi-coralbricks-provider returns to the top 5; battleships (sandbox/VM pricing, not inference) drops out"
+  "note": "re-reviewed 2026-11-11 against 456-record catalog; abliterated-model-provider-directory (a directory of inference providers) now ranks #1, pushing artificial-analysis-mimo-v2-6-pro-providers to #6 — the new #1 is the most on-point result for this query"
  },
  {
   "query": "LLM gateway",
@@ -101,12 +101,12 @@
   "expect_top5": [
    "darkbloom-mcp-gateway",
    "merge-gateway",
+   "opengateway",
    "fast-inference",
-   "kenari",
-   "respan"
+   "kenari"
   ],
   "expect_none": false,
-  "note": "re-reviewed 2026-10-20 against 401-record catalog; respan (LLM observability platform whose brief lists a gateway) ranks #5, shifting griphubrouter to #7"
+  "note": "re-reviewed 2026-11-11 against 456-record catalog; the new OpenGateway provider (a unified LLM gateway) ranks #3 and respan drops out of the top 5"
  },
  {
   "query": "price comparison",

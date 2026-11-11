@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "s-simple-scaling-of-swarms-via-cooperative-multi-agent-rl",
+  "title": "s³: Simple Scaling of Swarms via Cooperative Multi-agent RL",
+  "canonical_url": "https://arxiv.org/abs/2611.08615",
+  "brief": "s³ is the first multi-agent RL method that trains LLM agent swarms to organise themselves — each agent learns when to work alone, share findings, or read teammates' messages, with no preset roles. With matched training and inference budgets, swarms evaluated with twice as many agents as in training solve over 25× more coordination problems than the strongest baseline, and communicating agents cut repeated work by nearly half in exploration.",
+  "caveat": null,
+  "details": "s³ (Simple Scaling of Swarms via Cooperative Multi-agent RL), from researchers at the University of Washington and the Allen Institute for AI, is the first multi-agent RL method that trains LLM swarms to organise themselves instead of following a developer-written plan. Each agent in a swarm of N copies of one model works on its own copy of the task and learns when to work alone, share findings, or read teammates' messages, with the team rewarded when any agent solves the task and a small cost for the share of the token budget used. Trained with four agents on small models (Qwen3-0.6B and 1.7B) and evaluated with up to sixteen, s³ swarms solve 93% of held-out coordination problems with four agents (vs 35% for imitating its own successful swarms and 13% for individual rewards), and with eight agents solve over 25 times more coordination problems than the strongest baseline under matched budgets. In parallel exploration, communicating agents cut repeated work by nearly half and beat best-of-N by up to 9.4 percentage points; the paper's project site is scalingswarms.com, and the arXiv listing is arXiv:2611.08615, submitted 5 November 2026.",
+  "resource_type": "article-guide",
+  "topics": [
+    "ai-agents"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "5–12 Nov 2026",
+  "legacy_categories": [
+    "article"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-11-10",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
