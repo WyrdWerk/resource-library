@@ -1,0 +1,4 @@
+## Details
+
+### morph-ultra
+- Details: Morph Ultra is Morph's flat-rate subscription for coding agents: $200 a month buys unlimited use of two models, Kimi K3.1 and DeepSeek V4.1 Flash, with no token meter and no monthly token cap, while every other Morph model still bills per token. The catch is in the rate limits: each model has a per-minute cap on uncached input and output tokens (Kimi K3.1 allows 72,870 uncached input and 6,162 output tokens per minute; DeepSeek V4.1 Flash allows 2,103,237 in and 76,559 out), cached input does not count toward them, and requests can return 429 when Morph is at capacity. It serves the OpenAI and Anthropic wire formats, so pointing Claude Code at it takes two environment variables. Only 1,000 subscriptions are available, and the page shows live median speeds (Nov 9: Kimi K3.1 at 129 tokens/sec with 1.67s to first token, DeepSeek V4.1 Flash at 156 tokens/sec with 0.74s).

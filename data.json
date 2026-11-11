@@ -2263,6 +2263,93 @@
     "details": "Chirp is a browser app that moves text and small files between devices through sound instead of a network: one device plays a short burst of tones from its speaker and another decodes it with its microphone, so there is no pairing, account, or connection to set up. It offers three modes — FAST at about 320 bit/s, ROBUST at about 85 bit/s for noisy or echoey rooms, and a near-ultrasonic INAUDIBLE mode at about 65 bit/s — and the receiver listens for all three at once, with Reed–Solomon error correction and a CRC-32 checksum so a message only counts once it arrives intact. The terminal-style interface shows a live 0–20 kHz spectrum and waterfall, a transfer log with progress bars, and per-mode link statistics; files up to 256 KB are chunked with deflate compression and can be resent to fill gaps. It is genuinely useful for air-gapped transfers between nearby devices, but transmissions are one-way and unencrypted, so anyone within earshot can listen."
   },
   {
+    "title": "Botperch",
+    "week": "5–12 Nov 2026",
+    "url": "https://botperch.com/",
+    "sharer": "thelaggingway",
+    "date": "7 Nov",
+    "categories": [
+      "web-app",
+      "providers"
+    ],
+    "brief": "A plain-language guide to hosting AI agents — which cloud sandbox, VM, or server fits the job, what it costs with the AI model included, and the catch — covering 29 providers with sourced prices, feature-by-feature explainers, and a cost calculator that shows its arithmetic. The sharer notes it is still a work in progress. Machine prices were checked 29 Oct 2026 and model prices are medians from TokenWatch, so treat the figures as list-rate illustrations rather than live quotes.",
+    "id": "botperch",
+    "warning": "",
+    "details": "Botperch is a plain-language guide to finding a home for an AI agent, covering 29 cloud sandbox, VM, and server providers with sourced prices, capability checks, and a cost calculator that shows its arithmetic. It walks through what actually matters per provider: isolation (container, gVisor, microVM, or full VM), sizes and regions, stop/pause/sleep lifecycle, snapshots and storage persistence, idle timers and wake paths, network access and secrets handling, billing models, and trials. Its headline finding is that the model dwarfs the machine: for a personal agent the cheapest machine is $2.98 a month while the model runs $7.30 to $488.07 a month at the site's assumed 144 million tokens, so choosing the model moves the bill far more than choosing the host. Caveat: the site is still a work in progress, machine prices were checked 29 October 2026 and model prices are medians from TokenWatch read 31 October 2026, so treat figures as list-rate illustrations and verify current pricing before deciding."
+  },
+  {
+    "title": "DS Bot",
+    "week": "5–12 Nov 2026",
+    "url": "https://dsbot.app/",
+    "sharer": "ROman",
+    "date": "6 Nov",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "DS Bot is a free, open-source desktop app that runs a team of long-lived bots — each with its own name, role, model, and memory — that split work in group chats, hand jobs to each other, and run scheduled tasks, all local-first with your data staying on your computer. Bots use models you set up on your own quota (a DeepSeek sign-in or other model services), with per-bot access controls and token-usage tracking; it also works as a plugin inside DSH Desktop. The installers are not signed yet, so Windows and macOS need a manual bypass on first open.",
+    "id": "ds-bot",
+    "warning": "",
+    "details": "DS Bot is a free, open-source (Apache 2.0) desktop app for Windows, macOS, and Linux that runs a team of long-lived bots, each with its own name, role, model, and persistent memory, that split work in group chats, hand jobs to each other, and run scheduled tasks once, daily, weekly, or every few hours. Bots share MCP servers and skills across the team, and each bot gets its own access level (read-only, workspace-only, or full access), with local commands requiring approval and token usage tracked by time, bot, and model. Everything is local-first: chats, memory, and files stay on your computer, and bots run on models you set up on your own quota, via a DeepSeek sign-in or other model services. It also works as a plugin inside DSH Desktop. Caveat: version 0.2.7 (3 November 2026) ships unsigned installers, so Windows and macOS need a manual bypass on first open."
+  },
+  {
+    "title": "GPUTable",
+    "week": "5–12 Nov 2026",
+    "url": "https://gputable.dev/",
+    "sharer": "thelaggingway",
+    "date": "7 Nov",
+    "categories": [
+      "web-app",
+      "providers"
+    ],
+    "brief": "GPUTable tracks live per-GPU hourly rental prices across 35+ cloud providers, refreshed every 5 minutes, with on-demand, spot, and reserved pricing plus a daily price-history index. It covers datacenter GPUs from H100s and B200s down to RTX 3060s, so you can compare the cheapest host for a given card at a glance.",
+    "id": "gputable",
+    "warning": "",
+    "details": "GPUTable is a live price board for renting cloud GPUs: it lists per-GPU hourly rates for 35 datacenter and consumer cards — H100, H200, B200, B300, A100, MI300X, RTX 4090, RTX 5090 and more — across 42 providers including Vast.ai, Runpod, Lambda Labs, CoreWeave, AWS, Azure, Google Cloud, and Akash, refreshed every five minutes. Each card shows its cheapest available hourly rate alongside on-demand, spot, and reserved pricing, and the site keeps a daily price-history index so you can see whether a rate is trending up or down. The listed rates are live snapshots from the providers' own pricing pages, so treat them as a comparison starting point and confirm the current price with the host before booking."
+  },
+  {
+    "title": "pi-intercom",
+    "week": "5–12 Nov 2026",
+    "url": "https://github.com/nicobailon/pi-intercom",
+    "sharer": "asx",
+    "date": "7 Nov",
+    "categories": [
+      "ai-tool",
+      "github"
+    ],
+    "brief": "Pi Intercom is an extension for the pi coding agent that adds direct 1:1 messaging between pi sessions on the same machine, so a research session can hand findings to an execution session, or a worker can ask its planner a blocking question without losing context. Sessions connect through a tiny local broker with an `intercom` tool and an Alt+M overlay, and it integrates with pi-subagents so delegated children can escalate to their supervisor.",
+    "id": "pi-intercom",
+    "warning": "",
+    "details": "Pi Intercom is an extension for the pi coding agent that lets separate pi sessions on the same machine message each other directly — a research session can send findings to an execution session, or a worker can ask its planner a blocking question and wait for the answer in the same turn. Each session with the extension loaded connects to a tiny local broker over local IPC; you pick a recipient by name or session ID from the /intercom overlay (Alt+M) or with the intercom tool, which supports send, ask (blocks until replied), reply, and attachments like code snippets. It covers planner-worker coordination, handing a session over to another, and subagent-to-supervisor escalation — delegated children get a contact_supervisor tool when pi-subagents supplies bridge metadata — and cross-machine coordination over SSH is supported too. Install with pi install npm:pi-intercom; MIT-licensed, about 600 stars. Caveat: messaging is local-machine by default, so sessions on other machines need the SSH transport configured."
+  },
+  {
+    "title": "OpenRouter: DeepSeek V4.1 Flash 1017",
+    "week": "providers",
+    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+    "sharer": "Felix",
+    "date": "8 Nov",
+    "categories": [
+      "providers"
+    ],
+    "brief": "OpenRouter's model page for DeepSeek V4.1 Flash 1017 — the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by 40 providers with routing modes (Balanced/Nitro/Floor) and automatic failover, with live pricing from $0.006/$0.50 per million in/out tokens and per-provider throughput, latency, and uptime side by side. A provider-comparison-style page, same pattern as the published OpenRouter model pages for Claude Haiku 5.5 and Step-5-Preview; Felix shared it for the abnormal error rates on some providers (a few rows show availability as low as 38%), and figures are live so they will shift.",
+    "id": "openrouter-deepseek-v4-1-flash-1017",
+    "warning": "",
+    "details": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, a sparse mixture-of-experts model built on DeepSeek's Causal Encoder-Decoder architecture, served under the deepseek-flash API model name with a 1,048,576-token context window, tool calling, and structured outputs. OpenRouter lists 40 providers serving it with Balanced, Nitro, and Floor routing modes plus automatic failover when a provider errors, and the page compares live per-provider pricing (from $0.006/$0.50 per million input/output tokens), throughput, latency, and uptime, alongside GPQA Diamond and TAU-Bench scores per provider. It is most useful as a live comparison for picking the cheapest or most reliable host for this snapshot: check the availability column before choosing, since Felix flagged abnormal error rates and a few providers show availability as low as 38%, and the figures shift as providers are re-tested."
+  },
+  {
+    "title": "Morph Ultra",
+    "week": "providers",
+    "url": "https://www.morphllm.com/products/ultra",
+    "sharer": "thelaggingway",
+    "date": "10 Nov",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Morph's flat $200/month plan for coding agents — unlimited Kimi K3.1 and DeepSeek V4.1 Flash with no token meter and no monthly cap, served over OpenAI- and Anthropic-compatible endpoints so two environment variables point Claude Code at it. Only 1,000 subscriptions are available, and \"unlimited\" means per-minute rate limits on uncached tokens rather than reserved capacity, so requests can return 429 when Morph is busy. (The Discord embed said \"Kimi K3\"; the live page lists Kimi K3.1.)",
+    "id": "morph-ultra",
+    "warning": "",
+    "details": "Morph Ultra is Morph's flat-rate subscription for coding agents: $200 a month buys unlimited use of two models, Kimi K3.1 and DeepSeek V4.1 Flash, with no token meter and no monthly token cap, while every other Morph model still bills per token. The catch is in the rate limits: each model has a per-minute cap on uncached input and output tokens (Kimi K3.1 allows 72,870 uncached input and 6,162 output tokens per minute; DeepSeek V4.1 Flash allows 2,103,237 in and 76,559 out), cached input does not count toward them, and requests can return 429 when Morph is at capacity. It serves the OpenAI and Anthropic wire formats, so pointing Claude Code at it takes two environment variables. Only 1,000 subscriptions are available, and the page shows live median speeds (Nov 9: Kimi K3.1 at 129 tokens/sec with 1.67s to first token, DeepSeek V4.1 Flash at 156 tokens/sec with 0.74s)."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

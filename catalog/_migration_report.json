@@ -1,6 +1,6 @@
 {
-  "migrated": 446,
-  "source_rows": 446,
+  "migrated": 452,
+  "source_rows": 452,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -2499,6 +2499,102 @@
       "all_equal": true,
       "shared_on": "2026-11-06",
       "date_evidence": "posted '6 Nov' inside week label '5–12 Nov 2026'"
+    },
+    {
+      "id": "botperch",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-11-07",
+      "date_evidence": "posted '7 Nov' inside week label '5–12 Nov 2026'"
+    },
+    {
+      "id": "ds-bot",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-11-06",
+      "date_evidence": "posted '6 Nov' inside week label '5–12 Nov 2026'"
+    },
+    {
+      "id": "gputable",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-11-07",
+      "date_evidence": "posted '7 Nov' inside week label '5–12 Nov 2026'"
+    },
+    {
+      "id": "pi-intercom",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-11-07",
+      "date_evidence": "posted '7 Nov' inside week label '5–12 Nov 2026'"
+    },
+    {
+      "id": "openrouter-deepseek-v4-1-flash-1017",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-11-08",
+      "date_evidence": "posted '8 Nov' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
+    },
+    {
+      "id": "morph-ultra",
+      "checks": {
+        "id": true,
+        "title": true,
+        "url": true,
+        "brief": true,
+        "warning->caveat": true,
+        "sharer": true,
+        "week->display_period": true,
+        "categories->legacy_categories": true
+      },
+      "all_equal": true,
+      "shared_on": "2026-11-10",
+      "date_evidence": "posted '10 Nov' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
     },
     {
       "id": "annnimate",

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "gputable",
+  "title": "GPUTable",
+  "canonical_url": "https://gputable.dev/",
+  "brief": "GPUTable tracks live per-GPU hourly rental prices across 35+ cloud providers, refreshed every 5 minutes, with on-demand, spot, and reserved pricing plus a daily price-history index. It covers datacenter GPUs from H100s and B200s down to RTX 3060s, so you can compare the cheapest host for a given card at a glance.",
+  "caveat": null,
+  "details": "GPUTable is a live price board for renting cloud GPUs: it lists per-GPU hourly rates for 35 datacenter and consumer cards — H100, H200, B200, B300, A100, MI300X, RTX 4090, RTX 5090 and more — across 42 providers including Vast.ai, Runpod, Lambda Labs, CoreWeave, AWS, Azure, Google Cloud, and Akash, refreshed every five minutes. Each card shows its cheapest available hourly rate alongside on-demand, spot, and reserved pricing, and the site keeps a daily price-history index so you can see whether a rate is trending up or down. The listed rates are live snapshots from the providers' own pricing pages, so treat them as a comparison starting point and confirm the current price with the host before booking.",
+  "resource_type": "directory-gallery",
+  "topics": [
+    "cloud-infrastructure"
+  ],
+  "use_cases": [
+    "provision-infrastructure"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "5–12 Nov 2026",
+  "legacy_categories": [
+    "web-app",
+    "providers"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-11-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

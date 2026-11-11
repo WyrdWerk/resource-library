@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "pi-intercom",
+  "title": "pi-intercom",
+  "canonical_url": "https://github.com/nicobailon/pi-intercom",
+  "brief": "Pi Intercom is an extension for the pi coding agent that adds direct 1:1 messaging between pi sessions on the same machine, so a research session can hand findings to an execution session, or a worker can ask its planner a blocking question without losing context. Sessions connect through a tiny local broker with an `intercom` tool and an Alt+M overlay, and it integrates with pi-subagents so delegated children can escalate to their supervisor.",
+  "caveat": null,
+  "details": "Pi Intercom is an extension for the pi coding agent that lets separate pi sessions on the same machine message each other directly — a research session can send findings to an execution session, or a worker can ask its planner a blocking question and wait for the answer in the same turn. Each session with the extension loaded connects to a tiny local broker over local IPC; you pick a recipient by name or session ID from the /intercom overlay (Alt+M) or with the intercom tool, which supports send, ask (blocks until replied), reply, and attachments like code snippets. It covers planner-worker coordination, handing a session over to another, and subagent-to-supervisor escalation — delegated children get a contact_supervisor tool when pi-subagents supplies bridge metadata — and cross-machine coordination over SSH is supported too. Install with pi install npm:pi-intercom; MIT-licensed, about 600 stars. Caveat: messaging is local-machine by default, so sessions on other machines need the SSH transport configured.",
+  "resource_type": "repository",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "extension"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "5–12 Nov 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "github"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx"
+  },
+  "shared_on": "2026-11-07",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
