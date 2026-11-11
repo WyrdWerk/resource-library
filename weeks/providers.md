@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-141 curated providers, with briefs.
+140 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -350,17 +350,11 @@
 - Categories: providers
 - Brief: Lyber is an OpenAI-compatible API router for uncensored ("abliterated") models — Kimi K3.1 Pro and DeepSeek V4.1 Flash 1017, with MiniMax M3.1 Flash coming back soon — sold as monthly credit plans from $15/month ($20 credit) to $180/month ($250 credit). DeepSeek V4.1 Flash 1017 runs $0.29 in / $0.029 cached / $0.99 out per million tokens with a 126,976-token output cap; the tweet's $300 bonus credit was a 24-hour promo and is not on the live page.
 
-## OpenGateway: DeepSeek V4.1 Flash Eco
-- URL: https://opengateway.ai/models/deepseek/deepseek-v4.1-flash-eco
+## OpenGateway
+- URL: https://opengateway.ai/
 - Shared by: ROman (10 Nov)
 - Categories: providers
-- Brief: OpenGateway's model page for DeepSeek V4.1 Flash Eco, with availability, per-token pricing, endpoints, and provider details for this V4.1 Flash variant on one page. OpenGateway is a unified LLM gateway — one OpenAI-compatible endpoint for every model, with automatic retries, failover chains, live request inspection, and team keys with prepaid credits.
-
-## OpenGateway: DeepSeek V4.1 Flash Ultrafast
-- URL: https://opengateway.ai/models/deepseek/deepseek-v4.1-flash-ultrafast
-- Shared by: ROman (10 Nov)
-- Categories: providers
-- Brief: OpenGateway's model page for DeepSeek V4.1 Flash Ultrafast, an accelerated serving variant of DeepSeek's V4.1 Flash, with availability, per-token pricing, endpoints, and provider details on one page. OpenGateway is a unified LLM gateway — one OpenAI-compatible endpoint for every model, with automatic retries, failover chains, live request inspection, and team keys with prepaid credits.
+- Brief: OpenGateway is a unified LLM gateway — one OpenAI-compatible endpoint for models from OpenAI, Anthropic, Google, DeepSeek, Z.ai, Moonshot AI, and more, with automatic retries, failover chains, live request inspection, and team keys with prepaid credits and spend caps. Shared via its model pages for DeepSeek V4.1 Flash Eco and Ultrafast, two serving routes of the already-listed DeepSeek V4.1 Flash.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

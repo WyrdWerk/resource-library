@@ -6308,49 +6308,12 @@
   },
   {
     "schema_version": "1.0",
-    "id": "opengateway-deepseek-v4-1-flash-eco",
-    "title": "OpenGateway: DeepSeek V4.1 Flash Eco",
-    "canonical_url": "https://opengateway.ai/models/deepseek/deepseek-v4.1-flash-eco",
-    "brief": "OpenGateway's model page for DeepSeek V4.1 Flash Eco, with availability, per-token pricing, endpoints, and provider details for this V4.1 Flash variant on one page. OpenGateway is a unified LLM gateway — one OpenAI-compatible endpoint for every model, with automatic retries, failover chains, live request inspection, and team keys with prepaid credits.",
+    "id": "opengateway",
+    "title": "OpenGateway",
+    "canonical_url": "https://opengateway.ai/",
+    "brief": "OpenGateway is a unified LLM gateway — one OpenAI-compatible endpoint for models from OpenAI, Anthropic, Google, DeepSeek, Z.ai, Moonshot AI, and more, with automatic retries, failover chains, live request inspection, and team keys with prepaid credits and spend caps. Shared via its model pages for DeepSeek V4.1 Flash Eco and Ultrafast, two serving routes of the already-listed DeepSeek V4.1 Flash.",
     "caveat": null,
-    "details": "OpenGateway's model page for DeepSeek V4.1 Flash Eco lists that variant's availability, per-token pricing, endpoints, and provider details in one place, so you can see what the Eco route costs and how to call it before wiring it up. OpenGateway itself is a unified LLM gateway: point any OpenAI SDK at its single endpoint and switch models by changing one string, with routing, authentication, retries, and response normalisation handled for you. It adds a Grafana-style Live Tail for debugging calls in flight, configurable failover chains that reroute on 429, 5xx, or timeouts, and team keys with roles, prepaid credits, and auto-pause spend caps. (Coverage note: written from the OpenGateway homepage and the Discord embed — the model page is client-rendered and was not directly fetchable.)",
-    "resource_type": "provider",
-    "topics": [
-      "inference"
-    ],
-    "use_cases": [
-      "run-inference"
-    ],
-    "interfaces": [
-      "api",
-      "web"
-    ],
-    "technologies": [],
-    "license": null,
-    "open_source": null,
-    "display_period": "providers",
-    "legacy_categories": [
-      "providers"
-    ],
-    "source": {
-      "channel": "providers",
-      "sharer": "ROman"
-    },
-    "shared_on": "2026-11-10",
-    "verification": {
-      "status": "unchecked",
-      "checked_at": null,
-      "final_url": null
-    }
-  },
-  {
-    "schema_version": "1.0",
-    "id": "opengateway-deepseek-v4-1-flash-ultrafast",
-    "title": "OpenGateway: DeepSeek V4.1 Flash Ultrafast",
-    "canonical_url": "https://opengateway.ai/models/deepseek/deepseek-v4.1-flash-ultrafast",
-    "brief": "OpenGateway's model page for DeepSeek V4.1 Flash Ultrafast, an accelerated serving variant of DeepSeek's V4.1 Flash, with availability, per-token pricing, endpoints, and provider details on one page. OpenGateway is a unified LLM gateway — one OpenAI-compatible endpoint for every model, with automatic retries, failover chains, live request inspection, and team keys with prepaid credits.",
-    "caveat": null,
-    "details": "OpenGateway's model page for DeepSeek V4.1 Flash Ultrafast lists that variant's availability, per-token pricing, endpoints, and provider details in one place; Ultrafast is the accelerated serving route for DeepSeek's V4.1 Flash, the open-weight model tuned for agentic coding, reasoning, and tool use with a 1M-token context. OpenGateway itself is a unified LLM gateway: point any OpenAI SDK at its single endpoint and switch models by changing one string, with routing, authentication, retries, and response normalisation handled for you. It adds a Grafana-style Live Tail for debugging calls in flight, configurable failover chains that reroute on 429, 5xx, or timeouts, and team keys with roles, prepaid credits, and auto-pause spend caps. (Coverage note: written from the OpenGateway homepage and the Discord embed — the model page is client-rendered and was not directly fetchable.)",
+    "details": "OpenGateway is a unified LLM gateway: point any OpenAI SDK at its single endpoint (`https://apis.opengateway.ai/v1`) and switch models by changing one string, with routing, authentication, retries, and response normalisation handled for you. Its homepage lists models from OpenAI, Anthropic, Google, Azure, Google Vertex, xAI, Moonshot AI, DeepSeek, MiniMax, Z.ai, Alibaba, and Sionic AI, including accelerated \"ultrafast\" routes such as `deepseek/deepseek-v4.1-flash-ultrafast` and `z-ai/glm-5.3-flash-ultrafast`. It adds a Grafana-style Live Tail for debugging calls in flight, configurable failover chains that reroute on 429, 5xx, or timeouts, per-request latency, token, and cost analytics, and team keys with roles, prepaid credits, and auto-pause spend caps; the homepage publishes no fee schedule or credit terms. It was shared in #providers via its model pages for DeepSeek V4.1 Flash Eco and Ultrafast, two serving routes of DeepSeek V4.1 Flash; those pages are client-rendered, and the Eco route isn't shown on the homepage (unverified beyond the Discord embed).",
     "resource_type": "provider",
     "topics": [
       "inference"

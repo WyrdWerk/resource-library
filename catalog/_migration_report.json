@@ -1,6 +1,6 @@
 {
-  "migrated": 457,
-  "source_rows": 457,
+  "migrated": 456,
+  "source_rows": 456,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -2645,23 +2645,7 @@
       "date_evidence": "posted '10 Nov' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
     },
     {
-      "id": "opengateway-deepseek-v4-1-flash-eco",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-11-10",
-      "date_evidence": "posted '10 Nov' within documented #providers lifetime 2026-07-20..2026-09-25 (raw/providers_2026-07-20_to_2026-09-25.md)"
-    },
-    {
-      "id": "opengateway-deepseek-v4-1-flash-ultrafast",
+      "id": "opengateway",
       "checks": {
         "id": true,
         "title": true,
