@@ -2407,6 +2407,91 @@
     "details": "OpenGateway is a unified LLM gateway: point any OpenAI SDK at its single endpoint (`https://apis.opengateway.ai/v1`) and switch models by changing one string, with routing, authentication, retries, and response normalisation handled for you. Its homepage lists models from OpenAI, Anthropic, Google, Azure, Google Vertex, xAI, Moonshot AI, DeepSeek, MiniMax, Z.ai, Alibaba, and Sionic AI, including accelerated \"ultrafast\" routes such as `deepseek/deepseek-v4.1-flash-ultrafast` and `z-ai/glm-5.3-flash-ultrafast`. It adds a Grafana-style Live Tail for debugging calls in flight, configurable failover chains that reroute on 429, 5xx, or timeouts, per-request latency, token, and cost analytics, and team keys with roles, prepaid credits, and auto-pause spend caps; the homepage publishes no fee schedule or credit terms. It was shared in #providers via its model pages for DeepSeek V4.1 Flash Eco and Ultrafast, two serving routes of DeepSeek V4.1 Flash; those pages are client-rendered, and the Eco route isn't shown on the homepage (unverified beyond the Discord embed)."
   },
   {
+    "title": "Taalas",
+    "week": "5–12 Nov 2026",
+    "url": "https://taalas.com/",
+    "sharer": "asx",
+    "date": "11 Nov",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Taalas is building a platform that turns any AI model into custom silicon — \"Hardcore Models\" it claims are 1000x more efficient than running the same model as software, with fine-tuning support and apps written in human language. It was shared as the answer to waiting on ASIC nodes for LLMs; its demo chatbot ChatJimmy runs on the same silicon. - Warning: the 1000x efficiency claim is vendor-reported and unverified.",
+    "id": "taalas",
+    "warning": "It was shared as the answer to waiting on ASIC nodes for LLMs; its demo chatbot ChatJimmy runs on the same silicon. - Warning: the 1000x efficiency claim is vendor-reported and unverified.",
+    "details": "Taalas is building a platform that turns any AI model into custom silicon, producing what it calls Hardcore Models — the model itself becomes the computer, embodied in native hardware rather than simulated on general-purpose chips. The company claims the resulting models are 1000x more efficient than their software counterparts, with fine-tuning supported through low-rank adapters and applications written in human language rather than code. Its public proof point is ChatJimmy, a chatbot running a hard-wired Llama 3.1 8B at around 17,000 tokens per second. The efficiency and two-months-to-silicon claims are the vendor's own and unverified, and the site gives no pricing or availability for the Foundry platform itself."
+  },
+  {
+    "title": "ChatJimmy",
+    "week": "5–12 Nov 2026",
+    "url": "https://chatjimmy.ai/",
+    "sharer": "asx",
+    "date": "11 Nov",
+    "categories": [
+      "ai-tool",
+      "web-app"
+    ],
+    "brief": "ChatJimmy is Taalas's public demo chatbot — a Llama 3.1 8B model hard-wired into custom silicon, answering at around 17,000 tokens per second so thousands of words appear near-instantly. It is a speed demo rather than a full assistant, with a small context window and accuracy that trails larger models. - Warning: the token rate is vendor-reported; the page itself is client-rendered and shows only a status check to crawlers.",
+    "id": "chatjimmy",
+    "warning": "",
+    "details": "ChatJimmy is a chatbot demo from AI hardware startup Taalas, running Meta's Llama 3.1 8B hard-wired into custom silicon rather than on GPUs. It answers at around 17,000 tokens per second — roughly ten times the rate of leading GPU-based systems — so replies of thousands of tokens appear in well under a second; the site shows the generation time for each answer. The model was aggressively quantized (a mix of 3-bit and 6-bit) to fit the chip, so it is a speed demonstration, not a full assistant: context is small, accuracy trails larger models, and it can produce speculative answers. (Coverage note: written from press and directory coverage of ChatJimmy — the live page is client-rendered and shows only a status check to crawlers.)"
+  },
+  {
+    "title": "Qwen4-Max-Preview",
+    "week": "5–12 Nov 2026",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+    "sharer": "tom",
+    "date": "12 Nov",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "Qwen4-Max-Preview is Alibaba's next-generation flagship multimodal model — text, image, and video understanding with deep reasoning, tool calling, and web search — with a 1M-token context and a 393,216-token maximum output. It is available only through Alibaba's Token Plan (no pay-as-you-go API, no price on the page), and the preview runs Nov 11–25, 2026, after which the model is retired.",
+    "id": "qwen4-max-preview",
+    "warning": "",
+    "details": "Qwen4-Max-Preview is Alibaba's next-generation flagship multimodal model in the Qwen family, combining text generation, image and video understanding, and deep reasoning for coding, office productivity, frontend design, and complex agentic tasks. It supports web search, tool calling, and structured outputs, works with the OpenAI and Anthropic APIs, and offers a 1M-token context with up to 393,216 output tokens shared between thinking and the final answer. Access is through Alibaba's Token Plan only — there is no pay-as-you-go API and the documentation page lists no price — and the preview runs from 10:00 on November 11 to 24:00 on November 25, 2026 (UTC+8), after which the model is retired. Thinking is on by default with low, medium, and xhigh (default) reasoning effort, and starting with this model max_tokens is equivalent to max_completion_tokens, so output limits must leave room for both thinking and the answer."
+  },
+  {
+    "title": "Mach-2-Additive-Medium-GGUF",
+    "week": "5–12 Nov 2026",
+    "url": "https://huggingface.co/SyzygyResearch/Mach-2-Additive-Medium-GGUF",
+    "sharer": "one_phantomic",
+    "date": "12 Nov",
+    "categories": [
+      "ai-tool"
+    ],
+    "brief": "A GGUF build of Mach-2 Additive Medium — Qwen3.8-Flash-Next compressed to 1.70 bits per weight, 26.7 GB of weights plus a 102.4 GB n-gram table — retaining 85–102% of the BF16 model's benchmark scores. It needs the Mach-1 fork of llama.cpp (mainline llama.cpp will not load it), about 105 GB of RAM, and a 32 GB+ GPU. - Warning: the 130 GB download and the fork requirement make this a heavyweight local run; benchmark scores are the publisher's own.",
+    "id": "mach-2-additive-medium-gguf",
+    "warning": "",
+    "details": "This is a GGUF build of Mach-2 Additive Medium, a Qwen3.8-Flash-Next model compressed to 1.70 bits per weight: 26.7 GB of weights plus the model's 102.4 GB n-gram embedding table, in a single 130.1 GB file. Against the BF16 original it retains 85.0% on Humanity's Last Exam, 98.1% on GPQA Diamond, 100.4% on AIME 2026, and 95.9–102.0% across Terminal-Bench, AutomationBench, NL2Repo, DeepSWE, and tau-bench. It requires the Mach-1 fork of llama.cpp — mainline llama.cpp will not load it, because the model uses custom compressed tensor payloads and decode ops that only exist in the fork — and about 105 GB of free RAM with a 32 GB or larger GPU, run with --mlock so the n-gram table stays in memory. Sample at temperature 1.0, top_p 0.95, top_k 20; without those settings the model can loop."
+  },
+  {
+    "title": "Agent 37",
+    "week": "providers",
+    "url": "https://www.agent37.com/",
+    "sharer": "ROman",
+    "date": "11 Nov",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Agent 37 is a Y Combinator-backed cloud sandbox for AI agents, claiming 94% lower cost than most sandbox providers with per-minute billing and a $5 starter credit. Host a ready-made harness (Claude Code, Codex, OpenCode, Hermes, OpenClaw) or bring your own, with per-customer isolation via gVisor, persistent disk, auto-sleep, and SOC 2 Type I. - Warning: the 94% cost claim and benchmark rankings are vendor-reported (benchmarks cite ComputeSDK and HPC Sandbox Benchmarks).",
+    "id": "agent-37",
+    "warning": "",
+    "details": "Agent 37 is a Y Combinator-backed cloud sandbox service for AI agents that claims to cost 94% less than most sandbox providers, with per-minute billing, no subscription or plan fee, and a $5 starter credit once a card is on file. You host a ready-made harness — Claude Code, Codex, OpenCode, Hermes, OpenClaw, Grok, or Pi — or bring your own, keeping each customer's tools, files, and credentials in a separate sandbox with persistent disk, auto-sleep to pause compute charges, and automatic backups. Isolation is enforced by gVisor with per-sandbox filesystems and disk quotas, egress is firewalled to the public internet only, and the company says it never collects prompts, files, or terminal sessions for training; it lists SOC 2 Type I. Its own benchmarks put 1,000 builds of a real repo at $0.99 versus $13.96 for E2B and $27.64 for Vercel Sandbox, and a 2 vCPU / 4 GB sandbox running all month is quoted at $4.76 — all vendor-reported figures."
+  },
+  {
+    "title": "Deploy",
+    "week": "providers",
+    "url": "https://deploy.com/",
+    "sharer": "ROman",
+    "date": "12 Nov",
+    "categories": [
+      "providers"
+    ],
+    "brief": "Deploy is an inference provider serving open-source and proprietary models — DeepSeek V4.1 Flash 1017 at $0.10 in / $0.35 out per million tokens, Z.ai GLM-5.3-Flash, its own DeployVLM, plus moderation and detection models — on pay-as-you-go usage billing. Shared via its signup page; the homepage states no free tier. - Warning: per-token prices are from the vendor's homepage and unverified.",
+    "id": "deploy",
+    "warning": "Shared via its signup page; the homepage states no free tier. - Warning: per-token prices are from the vendor's homepage and unverified.",
+    "details": "Deploy is an inference provider offering a library of open-source and proprietary models behind one API, pitched as intelligence infrastructure with optimized inference for low cost and latency. The open-source side includes DeepSeek-V4.1-Flash-1017 at $0.10 input and $0.35 output per million tokens with $0.003 cache tokens, and Z.ai's GLM-5.3-Flash at $0.05 and $0.17; proprietary models include DeployVLM for low-latency moderation, detection, and classification, plus visual, text, and audio moderation and AI-generated-content, deepfake, celebrity, and likeness detection. Billing is pay-as-you-go usage billing, with custom pricing and higher rate limits for enterprises. The homepage names Sony Music, Rappi, Medal, SoundCloud, Runway, and Paramount as customers, and states no free tier; prices are from the vendor's homepage and unverified."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

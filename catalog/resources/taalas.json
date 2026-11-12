@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "id": "taalas",
+  "title": "Taalas",
+  "canonical_url": "https://taalas.com/",
+  "brief": "Taalas is building a platform that turns any AI model into custom silicon — \"Hardcore Models\" it claims are 1000x more efficient than running the same model as software, with fine-tuning support and apps written in human language. It was shared as the answer to waiting on ASIC nodes for LLMs; its demo chatbot ChatJimmy runs on the same silicon. - Warning: the 1000x efficiency claim is vendor-reported and unverified.",
+  "caveat": "It was shared as the answer to waiting on ASIC nodes for LLMs; its demo chatbot ChatJimmy runs on the same silicon. - Warning: the 1000x efficiency claim is vendor-reported and unverified.",
+  "details": "Taalas is building a platform that turns any AI model into custom silicon, producing what it calls Hardcore Models — the model itself becomes the computer, embodied in native hardware rather than simulated on general-purpose chips. The company claims the resulting models are 1000x more efficient than their software counterparts, with fine-tuning supported through low-rank adapters and applications written in human language rather than code. Its public proof point is ChatJimmy, a chatbot running a hard-wired Llama 3.1 8B at around 17,000 tokens per second. The efficiency and two-months-to-silicon claims are the vendor's own and unverified, and the site gives no pricing or availability for the Foundry platform itself.",
+  "resource_type": "service-platform",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "host-models"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "5–12 Nov 2026",
+  "legacy_categories": [
+    "ai-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx"
+  },
+  "shared_on": "2026-11-11",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

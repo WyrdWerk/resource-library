@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-140 curated providers, with briefs.
+142 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -355,6 +355,18 @@
 - Shared by: ROman (10 Nov)
 - Categories: providers
 - Brief: OpenGateway is a unified LLM gateway — one OpenAI-compatible endpoint for models from OpenAI, Anthropic, Google, DeepSeek, Z.ai, Moonshot AI, and more, with automatic retries, failover chains, live request inspection, and team keys with prepaid credits and spend caps. Shared via its model pages for DeepSeek V4.1 Flash Eco and Ultrafast, two serving routes of the already-listed DeepSeek V4.1 Flash.
+
+## Agent 37
+- URL: https://www.agent37.com/
+- Shared by: ROman (11 Nov)
+- Categories: providers
+- Brief: Agent 37 is a Y Combinator-backed cloud sandbox for AI agents, claiming 94% lower cost than most sandbox providers with per-minute billing and a $5 starter credit. Host a ready-made harness (Claude Code, Codex, OpenCode, Hermes, OpenClaw) or bring your own, with per-customer isolation via gVisor, persistent disk, auto-sleep, and SOC 2 Type I. - Warning: the 94% cost claim and benchmark rankings are vendor-reported (benchmarks cite ComputeSDK and HPC Sandbox Benchmarks).
+
+## Deploy
+- URL: https://deploy.com/
+- Shared by: ROman (12 Nov)
+- Categories: providers
+- Brief: Deploy is an inference provider serving open-source and proprietary models — DeepSeek V4.1 Flash 1017 at $0.10 in / $0.35 out per million tokens, Z.ai GLM-5.3-Flash, its own DeployVLM, plus moderation and detection models — on pay-as-you-go usage billing. Shared via its signup page; the homepage states no free tier. - Warning: per-token prices are from the vendor's homepage and unverified.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
