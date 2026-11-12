@@ -25,7 +25,7 @@ WEEKS_DIR = ROOT / "weeks"
 SITE_URL = "https://cheapinfra-resources.wyrdwerk.com"
 
 # Header social links; also used for the twitter:creator tag and share text.
-REPO_URL = "https://github.com/WyrdWerk/resource-library"
+REPO_URL = "https://github.com/thelaggingway/resource-library"
 LINKEDIN_URL = "https://www.linkedin.com/in/yash-jain-65295511b/"
 X_HANDLE = "thelaggingway"
 
