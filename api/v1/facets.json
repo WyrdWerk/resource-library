@@ -1,8 +1,8 @@
 {
   "resource_type": {
     "repository": 120,
-    "provider": 116,
-    "article-guide": 66,
+    "provider": 117,
+    "article-guide": 67,
     "tool": 54,
     "library-framework": 36,
     "directory-gallery": 29,
@@ -13,14 +13,14 @@
     "other": 0
   },
   "topic": {
+    "inference": 183,
     "ai-agents": 182,
-    "inference": 181,
     "developer-tools": 102,
     "frontend": 44,
     "design": 43,
     "cloud-infrastructure": 24,
     "productivity": 20,
-    "security": 12,
+    "security": 13,
     "self-hosting": 10,
     "app-development": 8,
     "devops": 7,
@@ -31,9 +31,9 @@
     "databases": 3
   },
   "use_case": {
-    "run-inference": 155,
+    "run-inference": 156,
     "manage-agents": 107,
-    "learn-technique": 85,
+    "learn-technique": 86,
     "build-interfaces": 35,
     "generate-code": 30,
     "automate-workflows": 26,
@@ -48,8 +48,8 @@
     "operate-databases": 3
   },
   "interface": {
-    "web": 194,
-    "api": 140,
+    "web": 196,
+    "api": 141,
     "cli": 60,
     "desktop": 29,
     "mcp": 16,
@@ -83,8 +83,8 @@
     "zed": 0
   },
   "channel": {
-    "share-tech": 320,
-    "providers": 142
+    "share-tech": 321,
+    "providers": 143
   },
   "open_source": {
     "true": 52,

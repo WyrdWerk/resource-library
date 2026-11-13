@@ -2492,6 +2492,34 @@
     "details": "Deploy is an inference provider offering a library of open-source and proprietary models behind one API, pitched as intelligence infrastructure with optimized inference for low cost and latency. The open-source side includes DeepSeek-V4.1-Flash-1017 at $0.10 input and $0.35 output per million tokens with $0.003 cache tokens, and Z.ai's GLM-5.3-Flash at $0.05 and $0.17; proprietary models include DeployVLM for low-latency moderation, detection, and classification, plus visual, text, and audio moderation and AI-generated-content, deepfake, celebrity, and likeness detection. Billing is pay-as-you-go usage billing, with custom pricing and higher rate limits for enterprises. The homepage names Sony Music, Rappi, Medal, SoundCloud, Runway, and Paramount as customers, and states no free tier; prices are from the vendor's homepage and unverified."
   },
   {
+    "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
+    "week": "5–12 Nov 2026",
+    "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+    "sharer": "thelaggingway",
+    "date": "12 Nov",
+    "categories": [
+      "article"
+    ],
+    "brief": "The Hacker News reports that Fireworks AI's October breach was wider than first disclosed — attackers reached customer account and billing data, secrets, datasets, and incomplete model weights — and that Notion confirmed fewer than 1% of its workspaces were impacted, with Notion AI chat transcripts among the exposed data. Notion has disabled its Insights feature and stopped serving open-weight models through Fireworks, and affected users are advised to rotate any credentials pasted into Notion AI.",
+    "id": "fireworks-ai-confirms-wider-breach-affecting-customer-datasets-model-weights-and-notion-ai-chats",
+    "warning": "",
+    "details": "The Hacker News reports that Fireworks AI's October 2026 security incident was broader than first disclosed: attackers reached customer account and billing information, secrets, datasets and incomplete model weights for a limited set of accounts, after reaching Fireworks' development environment through a third-party cloud provider on October 23. Notion disclosed that the incident impacted fewer than 1% of its workspaces, with Notion AI chat transcripts used for its Insights feature among the exposed data — mostly unattributable, without workspace or author labels and without tool call results. Notion has disabled Insights, stopped serving open-weight models through Fireworks, and advised affected customers to review the impacted data inside their workspace and rotate any passwords, API keys or credentials pasted into Notion AI during the exposure window."
+  },
+  {
+    "title": "DeepRelay",
+    "week": "providers",
+    "url": "https://deeprelay.ai/",
+    "sharer": "ROman",
+    "date": "12 Nov",
+    "categories": [
+      "providers"
+    ],
+    "brief": "DeepRelay is an inference relay putting 48 open models — DeepSeek, GLM, Kimi, Qwen, plus image and video models — behind one OpenAI-compatible API key, with a flat $0.99/month Base plan (500M input / 50M output tokens) and pay-as-you-go rates past the allowance. It also publishes weights-verification results, running Model Equality Testing against independent deployments of the same weights. - Warning: plan prices and token allowances are vendor-reported; high-factor models draw the allowance down faster than 1:1.",
+    "id": "deeprelay",
+    "warning": "",
+    "details": "DeepRelay is an inference relay that puts 48 open models behind a single OpenAI-compatible API key: chat models from DeepSeek, GLM, Kimi and Qwen, plus image and video generation, all reachable at api.deeprelay.ai with the same request shapes clients already use, including streaming, tool calls, JSON mode and reasoning tokens surfaced in usage. Instead of per-token billing only, it sells flat monthly plans — Base at $0.99 a month for 500M input and 50M output tokens, Plus at $4.99 for five times that — with usage past the allowance billed pay-as-you-go at published per-model rates, and a rolling 7-day cap alongside the monthly allowance. Each plan model carries a published usage factor, so a token on a high-factor model draws more than one token of allowance, and cached input bills at the model's cached rate. The service also publishes weights-verification results: an open-source harness samples the same prompts from DeepRelay and from independent deployments of the same published weights and runs Model Equality Testing on the completions."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

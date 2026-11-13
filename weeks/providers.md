@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-142 curated providers, with briefs.
+143 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -367,6 +367,12 @@
 - Shared by: ROman (12 Nov)
 - Categories: providers
 - Brief: Deploy is an inference provider serving open-source and proprietary models — DeepSeek V4.1 Flash 1017 at $0.10 in / $0.35 out per million tokens, Z.ai GLM-5.3-Flash, its own DeployVLM, plus moderation and detection models — on pay-as-you-go usage billing. Shared via its signup page; the homepage states no free tier. - Warning: per-token prices are from the vendor's homepage and unverified.
+
+## DeepRelay
+- URL: https://deeprelay.ai/
+- Shared by: ROman (12 Nov)
+- Categories: providers
+- Brief: DeepRelay is an inference relay putting 48 open models — DeepSeek, GLM, Kimi, Qwen, plus image and video models — behind one OpenAI-compatible API key, with a flat $0.99/month Base plan (500M input / 50M output tokens) and pay-as-you-go rates past the allowance. It also publishes weights-verification results, running Model Equality Testing against independent deployments of the same weights. - Warning: plan prices and token allowances are vendor-reported; high-factor models draw the allowance down faster than 1:1.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing
