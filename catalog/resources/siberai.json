@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "id": "siberai",
+  "title": "SiberAI",
+  "canonical_url": "https://siberai.net/",
+  "brief": "SiberAI is a security-focused inference provider serving DeepSeek V4.1 Uncensored and its own Cyber v3-tuned model through an OpenAI-compatible API, with a downloadable agent for code review, vulnerability research, and debugging. It charges per token ($0.018/1M input, $1.32/1M output) with no KYC and no card required. - Warning: vendor markets uncensored models with \"no rules, no content logs\"; per-token rates are vendor-reported.",
+  "caveat": null,
+  "details": "SiberAI is a security-focused inference provider built around Siber v3, serving DeepSeek V4.1 Uncensored plus its own Cyber v3-tuned model through an OpenAI-compatible API with Chat Completions and Responses endpoints and API keys. It also ships a downloadable agent for Windows, Linux, and macOS for code review, vulnerability research, and debugging, alongside a jailbreak agent product. Pricing is pay-per-use at $0.018 per 1M input tokens and $1.32 per 1M output tokens, with no KYC and no card required. The vendor's \"no rules, no content logs\" positioning and the uncensored-model claims are vendor-reported and unverified, and support runs through Telegram.",
+  "resource_type": "provider",
+  "topics": [
+    "inference",
+    "security"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "desktop"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "simply_roo"
+  },
+  "shared_on": "2026-11-14",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

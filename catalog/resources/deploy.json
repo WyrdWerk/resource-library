@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "deploy",
+  "title": "Deploy",
+  "canonical_url": "https://deploy.com/",
+  "brief": "Deploy is an inference provider serving open-source and proprietary models — DeepSeek V4.1 Flash 1017 at $0.10 in / $0.35 out per million tokens, Z.ai GLM-5.3-Flash, its own DeployVLM, plus moderation and detection models — on pay-as-you-go usage billing. Shared via its signup page; the homepage states no free tier. - Warning: per-token prices are from the vendor's homepage and unverified.",
+  "caveat": "Shared via its signup page; the homepage states no free tier. - Warning: per-token prices are from the vendor's homepage and unverified.",
+  "details": "Deploy is an inference provider offering a library of open-source and proprietary models behind one API, pitched as intelligence infrastructure with optimized inference for low cost and latency. The open-source side includes DeepSeek-V4.1-Flash-1017 at $0.10 input and $0.35 output per million tokens with $0.003 cache tokens, and Z.ai's GLM-5.3-Flash at $0.05 and $0.17; proprietary models include DeployVLM for low-latency moderation, detection, and classification, plus visual, text, and audio moderation and AI-generated-content, deepfake, celebrity, and likeness detection. Billing is pay-as-you-go usage billing, with custom pricing and higher rate limits for enterprises. The homepage names Sony Music, Rappi, Medal, SoundCloud, Runway, and Paramount as customers, and states no free tier; prices are from the vendor's homepage and unverified.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-11-12",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

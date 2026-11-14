@@ -179,12 +179,11 @@
   "filters": {},
   "expect_top1": null,
   "expect_top5": [
-   "qwen3-8-open-weights-announcement",
-   "hy4-preview-fp8",
-   "minicpm5-2b-pcd"
+   "sable",
+   "deeprelay"
   ],
   "expect_none": false,
-  "note": "reviewed 2026-09-29 against 285-record catalog"
+  "note": "re-reviewed 2026-11-14 against 454-record catalog: the three model-weights records it expected were removed under the no-models rule; Sable (bit-exact proof of committed weights) and DeepRelay (weights-verification results) are now the relevant hits"
  },
  {
   "query": "vector graphics",

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "agent-37",
+  "title": "Agent 37",
+  "canonical_url": "https://www.agent37.com/",
+  "brief": "Agent 37 is a Y Combinator-backed cloud sandbox for AI agents, claiming 94% lower cost than most sandbox providers with per-minute billing and a $5 starter credit. Host a ready-made harness (Claude Code, Codex, OpenCode, Hermes, OpenClaw) or bring your own, with per-customer isolation via gVisor, persistent disk, auto-sleep, and SOC 2 Type I. - Warning: the 94% cost claim and benchmark rankings are vendor-reported (benchmarks cite ComputeSDK and HPC Sandbox Benchmarks).",
+  "caveat": null,
+  "details": "Agent 37 is a Y Combinator-backed cloud sandbox service for AI agents that claims to cost 94% less than most sandbox providers, with per-minute billing, no subscription or plan fee, and a $5 starter credit once a card is on file. You host a ready-made harness — Claude Code, Codex, OpenCode, Hermes, OpenClaw, Grok, or Pi — or bring your own, keeping each customer's tools, files, and credentials in a separate sandbox with persistent disk, auto-sleep to pause compute charges, and automatic backups. Isolation is enforced by gVisor with per-sandbox filesystems and disk quotas, egress is firewalled to the public internet only, and the company says it never collects prompts, files, or terminal sessions for training; it lists SOC 2 Type I. Its own benchmarks put 1,000 builds of a real repo at $0.99 versus $13.96 for E2B and $27.64 for Vercel Sandbox, and a 2 vCPU / 4 GB sandbox running all month is quoted at $4.76 — all vendor-reported figures.",
+  "resource_type": "service-platform",
+  "topics": [
+    "ai-agents",
+    "cloud-infrastructure"
+  ],
+  "use_cases": [
+    "manage-agents",
+    "provision-infrastructure"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-11-11",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

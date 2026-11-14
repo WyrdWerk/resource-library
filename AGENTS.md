@@ -131,7 +131,7 @@ claims as unverified. Ids with no fetchable page are simply omitted.
 ## Filter policy
 
 **Keep:** AI tools, general tools, useful websites/webpages, GitHub repositories, and (from #providers) inference providers and provider comparisons — things a developer would actually use.
-**Drop:** hype-only posts, exact duplicates, content with no usable resource (videos, memes), links with no context that can't be classified. **Announcement tweets are never dropped for being announcements** — extract every outbound link inside the tweet and evaluate each link individually as a resource (Yash's 2026-10-04 rule); attribute each added resource to the tweet's Discord sharer.
+**Drop:** hype-only posts, exact duplicates, content with no usable resource (videos, memes), links with no context that can't be classified. **Models and model weights are dropped** (Yash's 2026-11-14 rule): Hugging Face model repos, GGUF/FP8/MLX or other quantized/converted builds, fine-tunes, open-weights announcements, and model launch or docs pages for a single model (e.g. a vendor's "Qwen4-Max-Preview" page). Still keep inference providers (including a provider's pricing page for a model), tools, apps, benchmarks/leaderboards, datasets, and articles *about* models. **Announcement tweets are never dropped for being announcements** — extract every outbound link inside the tweet and evaluate each link individually as a resource (Yash's 2026-10-04 rule); attribute each added resource to the tweet's Discord sharer.
 **Briefs:** ~2 sentences. Descriptions come from message text and embed previews — links are *not* opened during collection. Flag unverified claims from announcement posts as unverified.
 
 ## Category taxonomy (fixed set)

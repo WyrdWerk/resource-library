@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "chatjimmy",
+  "title": "ChatJimmy",
+  "canonical_url": "https://chatjimmy.ai/",
+  "brief": "ChatJimmy is Taalas's public demo chatbot — a Llama 3.1 8B model hard-wired into custom silicon, answering at around 17,000 tokens per second so thousands of words appear near-instantly. It is a speed demo rather than a full assistant, with a small context window and accuracy that trails larger models. - Warning: the token rate is vendor-reported; the page itself is client-rendered and shows only a status check to crawlers.",
+  "caveat": null,
+  "details": "ChatJimmy is a chatbot demo from AI hardware startup Taalas, running Meta's Llama 3.1 8B hard-wired into custom silicon rather than on GPUs. It answers at around 17,000 tokens per second — roughly ten times the rate of leading GPU-based systems — so replies of thousands of tokens appear in well under a second; the site shows the generation time for each answer. The model was aggressively quantized (a mix of 3-bit and 6-bit) to fit the chip, so it is a speed demonstration, not a full assistant: context is small, accuracy trails larger models, and it can produce speculative answers. (Coverage note: written from press and directory coverage of ChatJimmy — the live page is client-rendered and shows only a status check to crawlers.)",
+  "resource_type": "tool",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "5–12 Nov 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "web-app"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "asx"
+  },
+  "shared_on": "2026-11-11",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

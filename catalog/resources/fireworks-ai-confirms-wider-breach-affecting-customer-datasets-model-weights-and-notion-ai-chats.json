@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "fireworks-ai-confirms-wider-breach-affecting-customer-datasets-model-weights-and-notion-ai-chats",
+  "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
+  "canonical_url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+  "brief": "The Hacker News reports that Fireworks AI's October breach was wider than first disclosed — attackers reached customer account and billing data, secrets, datasets, and incomplete model weights — and that Notion confirmed fewer than 1% of its workspaces were impacted, with Notion AI chat transcripts among the exposed data. Notion has disabled its Insights feature and stopped serving open-weight models through Fireworks, and affected users are advised to rotate any credentials pasted into Notion AI.",
+  "caveat": null,
+  "details": "The Hacker News reports that Fireworks AI's October 2026 security incident was broader than first disclosed: attackers reached customer account and billing information, secrets, datasets and incomplete model weights for a limited set of accounts, after reaching Fireworks' development environment through a third-party cloud provider on October 23. Notion disclosed that the incident impacted fewer than 1% of its workspaces, with Notion AI chat transcripts used for its Insights feature among the exposed data — mostly unattributable, without workspace or author labels and without tool call results. Notion has disabled Insights, stopped serving open-weight models through Fireworks, and advised affected customers to review the impacted data inside their workspace and rotate any passwords, API keys or credentials pasted into Notion AI during the exposure window.",
+  "resource_type": "article-guide",
+  "topics": [
+    "security",
+    "inference"
+  ],
+  "use_cases": [
+    "learn-technique"
+  ],
+  "interfaces": [
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "5–12 Nov 2026",
+  "legacy_categories": [
+    "article"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "thelaggingway"
+  },
+  "shared_on": "2026-11-12",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

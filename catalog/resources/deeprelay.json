@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "deeprelay",
+  "title": "DeepRelay",
+  "canonical_url": "https://deeprelay.ai/",
+  "brief": "DeepRelay is an inference relay putting 48 open models — DeepSeek, GLM, Kimi, Qwen, plus image and video models — behind one OpenAI-compatible API key, with a flat $0.99/month Base plan (500M input / 50M output tokens) and pay-as-you-go rates past the allowance. It also publishes weights-verification results, running Model Equality Testing against independent deployments of the same weights. - Warning: plan prices and token allowances are vendor-reported; high-factor models draw the allowance down faster than 1:1.",
+  "caveat": null,
+  "details": "DeepRelay is an inference relay that puts 48 open models behind a single OpenAI-compatible API key: chat models from DeepSeek, GLM, Kimi and Qwen, plus image and video generation, all reachable at api.deeprelay.ai with the same request shapes clients already use, including streaming, tool calls, JSON mode and reasoning tokens surfaced in usage. Instead of per-token billing only, it sells flat monthly plans — Base at $0.99 a month for 500M input and 50M output tokens, Plus at $4.99 for five times that — with usage past the allowance billed pay-as-you-go at published per-model rates, and a rolling 7-day cap alongside the monthly allowance. Each plan model carries a published usage factor, so a token on a high-factor model draws more than one token of allowance, and cached input bills at the model's cached rate. The service also publishes weights-verification results: an open-source harness samples the same prompts from DeepRelay and from independent deployments of the same published weights and runs Model Equality Testing on the completions.",
+  "resource_type": "provider",
+  "topics": [
+    "inference"
+  ],
+  "use_cases": [
+    "run-inference"
+  ],
+  "interfaces": [
+    "api",
+    "web"
+  ],
+  "technologies": [],
+  "license": null,
+  "open_source": null,
+  "display_period": "providers",
+  "legacy_categories": [
+    "providers"
+  ],
+  "source": {
+    "channel": "providers",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-11-12",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}
