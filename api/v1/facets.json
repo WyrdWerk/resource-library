@@ -1,21 +1,21 @@
 {
   "resource_type": {
-    "repository": 120,
     "provider": 118,
-    "article-guide": 67,
+    "repository": 118,
+    "article-guide": 65,
     "tool": 56,
     "library-framework": 36,
     "directory-gallery": 29,
     "service-platform": 25,
-    "dataset": 9,
-    "documentation": 6,
+    "documentation": 5,
+    "dataset": 1,
     "template-starter": 1,
     "other": 0
   },
   "topic": {
-    "inference": 184,
-    "ai-agents": 183,
-    "developer-tools": 103,
+    "ai-agents": 181,
+    "inference": 172,
+    "developer-tools": 102,
     "frontend": 44,
     "design": 43,
     "cloud-infrastructure": 24,
@@ -31,9 +31,9 @@
     "databases": 3
   },
   "use_case": {
-    "run-inference": 157,
+    "run-inference": 146,
     "manage-agents": 108,
-    "learn-technique": 86,
+    "learn-technique": 84,
     "build-interfaces": 35,
     "generate-code": 30,
     "automate-workflows": 26,
@@ -48,9 +48,9 @@
     "operate-databases": 3
   },
   "interface": {
-    "web": 197,
-    "api": 142,
-    "cli": 61,
+    "web": 195,
+    "api": 141,
+    "cli": 60,
     "desktop": 31,
     "mcp": 16,
     "extension": 8
@@ -59,7 +59,7 @@
     "typescript": 25,
     "react": 22,
     "rust": 20,
-    "python": 19,
+    "python": 18,
     "claude-code": 17,
     "mcp-protocol": 17,
     "javascript": 12,
@@ -83,11 +83,11 @@
     "zed": 0
   },
   "channel": {
-    "share-tech": 323,
+    "share-tech": 310,
     "providers": 144
   },
   "open_source": {
-    "true": 52,
+    "true": 51,
     "false": 21
   }
 }

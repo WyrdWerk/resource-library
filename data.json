@@ -131,21 +131,6 @@
     "details": "SoulStack (proxysoul/SoulStack) is the published skill, preset, prompt, and habit collection behind Empryo — a coding agent from ProxySoul — packaged so you can point your own agent at it. Contents include skills like ensoul (reads the code and your vibe, builds a product's design system and redesigns its website, proven with screenshots), enliven (makes an app measurably faster with an A/B harness and an HTML report where every figure comes from JSON), marketing (turns product evidence into positioning without exposing private data), plus performance-traps, working habits, and takeaways rule sets. Its signature idea is an immune-system approach to testing: ten \"immune cells\" (tcell-hunter attacks, dendritic finds gaps, negative-selection kills false alarms, memory-cell turns confirmed bugs into permanent checks, natural-killer guards security, and more) grown per project. Installable per-skill via `npx skills add proxysoul/SoulStack`, as a Copilot plugin, or via a setup script that links skills and immune cells into Empryo, Claude Code, Copilot CLI, pi, OpenCode, and Gemini CLI — backing up every file it touches and adding a `soulstack` command for update/remove. Best in Empryo (live rule reload, genome-aware cells, background agents), with docs at soulstack.proxysoul.com."
   },
   {
-    "title": "GLiNER2.5-Decide",
-    "week": "24 Sep–1 Oct 2026",
-    "url": "https://fastino.ai/blog/gliner-2-5-decide-open-weight-decision-model",
-    "sharer": "Tom",
-    "date": "25 Sep",
-    "categories": [
-      "article",
-      "ai-tool"
-    ],
-    "brief": "Fastino's 340M-parameter open-weight model for schema-defined decision-making: feed it text plus typed questions and get valid answers with probabilities, confidence scores, and constraint-feasibility metadata. Apache 2.0, CPU-capable, strong on routing/triage/guardrail tasks. Benchmark figures are vendor-reported and not independently verified.",
-    "id": "gliner2-5-decide",
-    "warning": "Benchmark figures are vendor-reported and not independently verified.",
-    "details": "Fastino's announcement of GLiNER2.5-Decide, a 340M-parameter open-weight (Apache 2.0) model built for schema-defined structured decision-making. Given text plus a set of typed questions — each with permitted answers, cardinality (single, multi, ordered), and cross-question rules — it returns answers with probabilities, confidence scores, and constraint-feasibility metadata. A constrained decoder evaluates related answers jointly, so decisions stay coherent (e.g., detecting prompt injection forces the safety verdict to `unsafe` rather than contradicting it). It also extracts character-level spans and relations and supports full or LoRA fine-tuning. Deliberately compact and non-generative: ~38ms p50 latency on a V100 GPU, ~167ms on a 48-vCPU CPU, runs locally and in air-gapped environments. Topped its unseen 17-dataset internal benchmark (60.1%) — intent routing, ticket triage, banking, sentiment, news topics — beating 4B-class decoder baselines. Natural fits: model routing, tool calling, browser/computer-use action selection, guardrails, context pruning, and LLM-as-judge."
-  },
-  {
     "title": "Isoquant",
     "week": "providers",
     "url": "https://isoquant.ai/",
@@ -1192,21 +1177,6 @@
     "id": "swiftvm",
     "warning": "",
     "details": "SwiftVM is a native macOS app that runs macOS and Linux virtual machines from your menu bar, built with Swift and Apple's Virtualization framework — no heavyweight hypervisor UI, no root helper, no kernel extension. Guests set themselves up (macOS installs from Apple with no setup assistant; Ubuntu and Debian from ready-made images in seconds), every machine gets an SSH name so you can `ssh web-server` without looking up addresses, and each machine is a single `.swiftvm` folder with APFS-clone snapshots and duplicates. It also offers suspend/resume to disk, shared folders and clipboard, stable per-machine IP addresses with port forwarding, USB device passthrough, and a `swiftvm` CLI that drives the app so the panel and terminal never disagree. Install via `brew install --cask swiftvm-app/tap/swiftvm`. Free and open source; requires Apple silicon and macOS 27 or newer."
-  },
-  {
-    "title": "Unlimited OCR",
-    "week": "8–15 Oct 2026",
-    "url": "https://github.com/baidu/Unlimited-OCR",
-    "sharer": "ROman",
-    "date": "12 Oct",
-    "categories": [
-      "github",
-      "ai-tool"
-    ],
-    "brief": "Extracted from ROman's share of @BrooksWhaleX's announcement (the tweet itself is just the announcement; the announced project is): Baidu's open-source (MIT) 3B-parameter OCR model that parses 100-page PDFs in one forward pass — 500M active params via MoE, constant KV cache from Reference Sliding Window Attention, 16× token compression built on DeepSeek OCR. Scores 93.23 on OmniDocBench v1.5 (+6.22 over DeepSeek OCR) and runs locally on a single GPU; benchmark claims are vendor-reported.",
-    "id": "unlimited-ocr",
-    "warning": "",
-    "details": "Unlimited OCR is Baidu's open-source (MIT) 3B-parameter Mixture-of-Experts OCR model for \"one-shot long-horizon\" document parsing: with only 500M active params and Reference Sliding Window Attention keeping the KV cache constant, it parses dozens of pages in one forward pass (up to 32K context) instead of page-by-page chunking. It builds on DeepSeek OCR's DeepEncoder (SAM-ViT + CLIP-ViT) with 16x token compression — a 1024x1024 page becomes just 256 visual tokens — and scores 93.23 on OmniDocBench v1.5 (+6.22 over the DeepSeek OCR baseline). The repo (27,000+ stars) supports Transformers, vLLM (official Docker images), and SGLang serving through an OpenAI-compatible API, ships an infer.py batch script for image dirs and PDFs, plus a Hugging Face demo and GGUF/Ollama/llama.cpp variants from the community; weights are MIT-licensed, commercial use OK. Caveats: benchmark scores are vendor-reported and have not been independently verified."
   },
   {
     "title": "SubQ",
@@ -2434,34 +2404,6 @@
     "id": "chatjimmy",
     "warning": "",
     "details": "ChatJimmy is a chatbot demo from AI hardware startup Taalas, running Meta's Llama 3.1 8B hard-wired into custom silicon rather than on GPUs. It answers at around 17,000 tokens per second — roughly ten times the rate of leading GPU-based systems — so replies of thousands of tokens appear in well under a second; the site shows the generation time for each answer. The model was aggressively quantized (a mix of 3-bit and 6-bit) to fit the chip, so it is a speed demonstration, not a full assistant: context is small, accuracy trails larger models, and it can produce speculative answers. (Coverage note: written from press and directory coverage of ChatJimmy — the live page is client-rendered and shows only a status check to crawlers.)"
-  },
-  {
-    "title": "Qwen4-Max-Preview",
-    "week": "5–12 Nov 2026",
-    "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
-    "sharer": "tom",
-    "date": "12 Nov",
-    "categories": [
-      "ai-tool"
-    ],
-    "brief": "Qwen4-Max-Preview is Alibaba's next-generation flagship multimodal model — text, image, and video understanding with deep reasoning, tool calling, and web search — with a 1M-token context and a 393,216-token maximum output. It is available only through Alibaba's Token Plan (no pay-as-you-go API, no price on the page), and the preview runs Nov 11–25, 2026, after which the model is retired.",
-    "id": "qwen4-max-preview",
-    "warning": "",
-    "details": "Qwen4-Max-Preview is Alibaba's next-generation flagship multimodal model in the Qwen family, combining text generation, image and video understanding, and deep reasoning for coding, office productivity, frontend design, and complex agentic tasks. It supports web search, tool calling, and structured outputs, works with the OpenAI and Anthropic APIs, and offers a 1M-token context with up to 393,216 output tokens shared between thinking and the final answer. Access is through Alibaba's Token Plan only — there is no pay-as-you-go API and the documentation page lists no price — and the preview runs from 10:00 on November 11 to 24:00 on November 25, 2026 (UTC+8), after which the model is retired. Thinking is on by default with low, medium, and xhigh (default) reasoning effort, and starting with this model max_tokens is equivalent to max_completion_tokens, so output limits must leave room for both thinking and the answer."
-  },
-  {
-    "title": "Mach-2-Additive-Medium-GGUF",
-    "week": "5–12 Nov 2026",
-    "url": "https://huggingface.co/SyzygyResearch/Mach-2-Additive-Medium-GGUF",
-    "sharer": "one_phantomic",
-    "date": "12 Nov",
-    "categories": [
-      "ai-tool"
-    ],
-    "brief": "A GGUF build of Mach-2 Additive Medium — Qwen3.8-Flash-Next compressed to 1.70 bits per weight, 26.7 GB of weights plus a 102.4 GB n-gram table — retaining 85–102% of the BF16 model's benchmark scores. It needs the Mach-1 fork of llama.cpp (mainline llama.cpp will not load it), about 105 GB of RAM, and a 32 GB+ GPU. - Warning: the 130 GB download and the fork requirement make this a heavyweight local run; benchmark scores are the publisher's own.",
-    "id": "mach-2-additive-medium-gguf",
-    "warning": "",
-    "details": "This is a GGUF build of Mach-2 Additive Medium, a Qwen3.8-Flash-Next model compressed to 1.70 bits per weight: 26.7 GB of weights plus the model's 102.4 GB n-gram embedding table, in a single 130.1 GB file. Against the BF16 original it retains 85.0% on Humanity's Last Exam, 98.1% on GPQA Diamond, 100.4% on AIME 2026, and 95.9–102.0% across Terminal-Bench, AutomationBench, NL2Repo, DeepSWE, and tau-bench. It requires the Mach-1 fork of llama.cpp — mainline llama.cpp will not load it, because the model uses custom compressed tensor payloads and decode ops that only exist in the fork — and about 105 GB of free RAM with a 32 GB or larger GPU, run with --mlock so the n-gram table stays in memory. Sample at temperature 1.0, top_p 0.95, top_k 20; without those settings the model can loop."
   },
   {
     "title": "Agent 37",
@@ -4338,21 +4280,6 @@
     "details": "IRIS (Intelligent Real-time Input Suggestion, github.com/versenilvis/iris) is a shell auto-completion tool that works like an editor's IntelliSense inside your terminal. Built as a single native Go binary on raw TTY, it renders the suggestion menu inline in your real terminal session, so it works over SSH, in tmux and in Linux virtual terminals without breaking full-screen TUIs. It indexes your aliases and shell history to suggest commands matching your workflow, supports zsh, bash and fish, and offers optional AI suggestions via Groq or Ollama. Positioned as the lightweight, zero-telemetry, open-source (0BSD) successor to Fig, which was sunset in September 2024. Linux and macOS only."
   },
   {
-    "title": "kimi-k3-mlx",
-    "week": "23–29 Jul 2026",
-    "url": "https://github.com/PipeNetwork/kimi-k3-mlx",
-    "sharer": "JohnDotOwl",
-    "date": "29 Jul",
-    "categories": [
-      "ai-tool",
-      "github"
-    ],
-    "brief": "An MLX port of moonshotai's Kimi-K3 (2.78T multimodal MoE); the weights are converted from the original release and requantized. Conversion quality is unverified.",
-    "id": "kimi-k3-mlx",
-    "warning": "Conversion quality is unverified.",
-    "details": "An MLX (Apple Silicon) port of Moonshot's Kimi K3 — a 2.78T-total / 104B-active native-multimodal mixture-of-experts model with 1M-token context, built on Kimi Delta Attention and Attention Residuals. The repo ships a streaming weight converter (stock mlx_lm convert can't be used since K3 is 5.6 TB in bf16), REAP expert-pruning tooling, and per-language expert-overlap analysis, with published pruned builds on HuggingFace. It is unusually honest about practicality: nothing here runs on a single Mac, with the smallest tier around 870 GB against the 512 GB ceiling of the largest Apple Silicon machine. The REAP73 build hits about 5.5 tok/s on a 512 GiB M3 Ultra."
-  },
-  {
     "title": "Hermes Console",
     "week": "23–29 Jul 2026",
     "url": "https://hermes.xpetalab.dev/",
@@ -5529,48 +5456,6 @@
     "details": "QuickBEAM (elixir-volt/quickbeam) — a JavaScript runtime for the BEAM: Web APIs backed by OTP, a native DOM, and a built-in TypeScript toolchain. The core idea: JS runtimes are GenServers — they live in supervision trees (crash recovery included), send and receive messages, and call into Erlang/OTP libraries, all without leaving the BEAM. JS can call Elixir handlers via `Beam.call`, send to any PID, monitor processes, and even do `Beam.rpc` across connected nodes; contexts can be pooled for high-concurrency workloads (e.g. one pool behind a Phoenix LiveView mount, each context with its own global scope, memory limits, and opcode budgets). An isolated `QuickBEAM.VM` mode decodes QuickJS bytecode with a BEAM interpreter for bounded evaluation with per-call fresh heaps — good for SSR-style workloads with step/memory/timeout limits. Supports browser APIs, Node.js compatibility, granular API groups (fetch, websocket, crypto, dom… down to 58 KB for bare), TypeScript compile support, npm packages, and bytecode disassembly for introspection. Install as a hex package (`{:quickbeam, \"~> 0.11.2\"}`); precompiled NIFs via Zig. MIT."
   },
   {
-    "title": "Qwen3.6-27B-MTP-GGUF (unsloth quant)",
-    "week": "13–20 Aug 2026",
-    "url": "https://huggingface.co/unsloth/Qwen3.6-27B-MTP-GGUF",
-    "sharer": "simply soy",
-    "date": "14 Aug",
-    "categories": [
-      "ai-tool"
-    ],
-    "brief": "Unsloth's GGUF quantization of Qwen3.6-27B with MTP (multi-token prediction). For local inference of the 27B Qwen.",
-    "id": "qwen3-6-27b-mtp-gguf-unsloth-quant",
-    "warning": "",
-    "details": "Qwen3.6-27B-MTP-GGUF (unsloth) — GGUF quantizations of Qwen3.6-27B with Multi-Token Prediction (MTP) enabled, for ~1.5-2x faster local inference with no accuracy loss. Qwen3.6-27B is the first open-weight Qwen3.6: a 27B causal LM with a vision encoder, built for agentic coding — 64 layers of a Gated DeltaNet + Gated Attention hybrid layout, 262K native context (extensible to ~1M), thinking preservation, and improved tool calling. Unsloth's MTP build runs in llama.cpp (`--spec-type draft-mtp --spec-draft-n-max 2`), also loadable in Unsloth Studio (which auto-tunes MTP per hardware) with Dynamic 2.0 quants and developer-role support for Codex/OpenCode. Serving recipes for SGLang, vLLM (qwen3_next_mtp speculative config), KTransformers, and Transformers are documented. Good for anyone self-hosting Qwen3.6 and wanting draft-speculative speedups without changing outputs. License follows the upstream Qwen release."
-  },
-  {
-    "title": "Qwen3.8 open weights announcement",
-    "week": "13–20 Aug 2026",
-    "url": "https://x.com/alibaba_qwen/status/2088280182356611304",
-    "sharer": "simply soy",
-    "date": "14 Aug",
-    "categories": [
-      "ai-tool"
-    ],
-    "brief": "Alibaba's announcement that Qwen3.8's open weights are out. Announcement-only; pair with the unsloth GGUF quant below for local runs.",
-    "id": "qwen3-8-open-weights-announcement",
-    "warning": "",
-    "details": "Qwen3.8 open-weights announcement (from the @alibaba_qwen X account, Aug 2026) — the announcement post for the Qwen3.8 open-weight release: Qwen3.8-27B, a 27B dense native vision-language model (text, images, video in), released under Apache 2.0, alongside the weights of the flagship Qwen3.8-2.4T-A95B MoE (2.4T total / 95B active, under a custom Qwen3.8-Max license with commercial revenue conditions). Qwen3.8-27B highlights: 262K native context (YaRN-extensible to 1M), thinking mode on by default with per-request disable and `reasoning_effort` control, stronger autonomous planning and environment feedback for long-horizon agentic work; Alibaba claims 61.7 on SWE-bench Pro and Terminal Bench 2.1 gains over Qwen3.6 (maker-reported, independent validation pending). The ecosystem picked it up fast: Unsloth GGUFs, Ollama builds, OpenRouter routes, and top-5 most-liked on Hugging Face within two days. (x.com is not directly fetchable from this environment; the release details above are corroborated from the public model cards and independent coverage, not from the post itself.)"
-  },
-  {
-    "title": "Qwen3.8-27B-GGUF (unsloth quant)",
-    "week": "13–20 Aug 2026",
-    "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-    "sharer": "simply soy",
-    "date": "14 Aug",
-    "categories": [
-      "ai-tool"
-    ],
-    "brief": "Unsloth's GGUF quantization of Qwen3.8-27B for local inference. The practical artifact behind the open-weights announcement above.",
-    "id": "qwen3-8-27b-gguf-unsloth-quant",
-    "warning": "",
-    "details": "Qwen3.8-27B-GGUF (unsloth) — Unsloth's Dynamic 3.0 GGUF quantizations of Qwen3.8-27B (1-bit through 16-bit), which Unsloth claims delivers >10% better top-1 accuracy at the same size than other providers. Qwen3.8-27B is \"the most capable generation in the Qwen open-model family to date\": a 27B dense model on the Qwen3.5 architectural foundation (16 × [3 × (Gated DeltaNet → FFN) + 1 × (Gated Attention → FFN)]), a native vision-language model understanding images, videos (hour-scale), STEM diagrams, and documents, with 262K native context (up to 1M). Thinking is on by default, disable-able per request, with tunable `reasoning_effort` and `preserve_thinking` for multi-turn agent work; Apache 2.0, commercial use allowed. Runs in Unsloth Desktop with thinking toggles, with recommended sampling params documented (temp 1.0/top_p 0.95 thinking, temp 0.7/top_p 0.80 instruct). ~6.3M downloads last month at card time; 1,305 derivative quants on the tree. The compact deployment-friendly counterpart to the 2.4T-A95B flagship — the one most teams will actually run on a single GPU."
-  },
-  {
     "title": "pi-acp-jetbrain (ryan-brosas)",
     "week": "13–20 Aug 2026",
     "url": "https://github.com/ryan-brosas/pi-acp-jetbrain",
@@ -5866,34 +5751,6 @@
     "details": "Plane (makeplane/plane, 60.3k stars) — the heavyweight open-source Jira/Linear/Monday/ClickUp alternative for modern project management: work items with a rich-text editor, cycles (sprints) with burn-down charts, modules for breaking down complex projects, customizable filtered views, Pages (docs with AI), and real-time analytics. Install options: Plane Cloud (fastest), or self-host via Docker/Kubernetes with full control of your data — instance admins get a \"God mode\" for configuration. Built with React Router, Django, and Node. Active community (forum + GitHub Discussions), 64 releases. AGPL-3.0 — fine for self-hosting, but the copyleft matters if you modify and offer it as a service."
   },
   {
-    "title": "Hy4-preview-FP8",
-    "week": "27 Aug–3 Sep 2026",
-    "url": "https://huggingface.co/tencent/Hy4-preview-FP8",
-    "sharer": "Alp",
-    "date": "28 Aug",
-    "categories": [
-      "ai-tool"
-    ],
-    "brief": "Tencent's Hy4 preview weights in FP8 on Hugging Face — 770B total, 49B active, 1M context, open weights. For anyone with the hardware to run a frontier-scale open model.",
-    "id": "hy4-preview-fp8",
-    "warning": "",
-    "details": "Hy4 preview-FP8 (tencent) — the FP8-quantized open-weights release of Tencent's new Hy4 preview flagship MoE: 770B total parameters, 49B activated per token, 78 layers (256 routed experts + 1 shared per MoE layer, top-8 routed), 1M context, plus a built-in 10B MTP layer for speculative decoding. Architecture borrows from DeepSeek/GLM: gated sparse attention with cross-layer index reuse, identity hyper-connections on the residual path. Tencent positions it at the open-source frontier — blind side-by-side evals by 163 internal experts on 203 engineering tasks had it slightly ahead of GLM 5.3 and Kimi K3. Training data was co-built with in-house software, game, finance, and security experts, and the model is co-designed with Tencent's CodeBuddy/WorkBuddy products. Deploy via vLLM or SGLang (official prebuilt images, OpenAI-compatible API); finetuning pipeline and the AngelSlim compression toolkit included. Apache-2.0. The card is candid about known issues: it can over-reason and over-verify."
-  },
-  {
-    "title": "GLM-5.3-Flash-DFlash2",
-    "week": "27 Aug–3 Sep 2026",
-    "url": "https://huggingface.co/incoai/GLM-5.3-Flash-DFlash2",
-    "sharer": "thelaggingway",
-    "date": "28 Aug",
-    "categories": [
-      "ai-tool"
-    ],
-    "brief": "A GLM-5.3-Flash quant on Hugging Face. Context is thin — thelaggingway's whole review was \"Huh\" — but it's another fast-model option to know about.",
-    "id": "glm-5-3-flash-dflash2",
-    "warning": "",
-    "details": "GLM-5.3-Flash-DFlash2 (incoai) — not a standalone model but the DFlash 2 draft model for z-ai's GLM-5.3-Flash, used inside a speculative-decoding server. DFlash 2 is a block-diffusion drafter: it predicts a whole block of tokens in a single pass, keeps the top candidates at every position, and a lightweight selector traces one coherent path through them; two-tap dynamic convolutions keep the draft from decaying toward the end of the block. Decoding is lossless — greedy output matches the target model exactly, sampling preserves its distribution. Serve with SGLang (`--speculative-algorithm DFLASH`). Benchmark numbers for this checkpoint were still being re-measured at card time. License is CC BY-NC-ND 4.0 for research/evaluation only — contact Inco AI for commercial use. Relevant if you're self-hosting GLM-5.3-Flash and want faster inference without changing outputs."
-  },
-  {
     "title": "DBX",
     "week": "27 Aug–3 Sep 2026",
     "url": "https://dbxio.com/en",
@@ -6010,48 +5867,6 @@
     "id": "arrow-2-announcement",
     "warning": "Announcement only; a notable data point in AI vector-graphics generation.",
     "details": "An X announcement from QuiverAI for Arrow 2 — their latest models for generating precise, editable vector graphics, a notable data point in AI vector-graphics generation where editability (not just raster output) is the hard part. The link is the announcement, not documentation or a model card. (x.com is not directly fetchable from this environment; the breakdown reflects the announcement's subject as curated.)"
-  },
-  {
-    "title": "MiniCPM5-2B-PCD",
-    "week": "17–24 Sep 2026",
-    "url": "https://huggingface.co/monotykamary/MiniCPM5-2B-PCD",
-    "sharer": "Tom",
-    "date": "17 Sep",
-    "categories": [
-      "ai-tool"
-    ],
-    "brief": "MiniCPM5 2B PCD weights on Hugging Face — the same model family as the 16 Sept in-browser Pi announcement. The model behind that WebGPU coding-agent demo.",
-    "id": "minicpm5-2b-pcd",
-    "warning": "",
-    "details": "An experimental inference package (monotykamary) applying Parallel Constrained Decoding (PCD) to the unchanged openbmb/MiniCPM5-2B weights — no training, RL, LoRA, or weight modification — for fast finite-choice classification and structured extraction on a 2B model. Token mode branches one question per field and projects the LM head only onto allowed token rows; sequence mode scores complete serialized candidates by normalized log-likelihood. Measured on one L40S in FP32: token PCD averaged 85.61ms versus 694.99ms for autoregressive JSON (8.1x faster), with 88.9% field accuracy versus 94.4% — and 100% schema-valid objects in both. The card is unusually honest about limits: accuracy equivalence is not established, returned probabilities are uncalibrated, sequence mode keeps length bias, and only closed flat objects (required fields, enums/booleans, no nesting or cross-field constraints) are supported. Includes a Modal scale-to-zero deployment path and a conservative FP32 configuration. Code MIT; weights Apache-2.0 (OpenBMB)."
-  },
-  {
-    "title": "LFM2.5-2.6B-RLCD",
-    "week": "10–17 Sep 2026",
-    "url": "https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD",
-    "sharer": "Tom",
-    "date": "16 Sep",
-    "categories": [
-      "ai-tool"
-    ],
-    "brief": "LiquidAI's LFM2.5 2.6B model tuned for RLCD, shared in the context of Jev's API and concepts. A small local model for anyone experimenting with RLCD-style agent loops.",
-    "id": "lfm2-5-2-6b-rlcd",
-    "warning": "",
-    "details": "LFM2.5-2.6B-RLCD (monotykamary) — an experimental inference-only package implementing Parallel Constrained Decoding (PCD) on unchanged LiquidAI/LFM2.5-2.6B weights. Instead of generating JSON tokens autoregressively, it prefills shared context once, forks the model's attention and convolution state per field, evaluates all allowed answers in parallel (projecting the output head only onto the relevant option-token rows), and serializes a typed JSON object in Python. Two modes: `token` (fast classifier-style per-field decisions, ~9.9x faster than AR JSON on 12 dev cases and 45.6x on a 28-field synthetic case on a single L40S) and `sequence` (full-sequence log-likelihood scoring reference). The card is unusually honest about limits: only 72.2% accuracy on six fresh audit cases vs 94.4% for autoregressive JSON, failed both high-cardinality probes, and the production accuracy gate was not met — returned probabilities are uncalibrated. Weights unchanged from upstream (LFM Open License v1.0, commercial revenue conditions); the PCD inference code is MIT. Includes Modal scripts, benchmarks with raw JSON evidence, and pytest coverage of cache/scoring equivalence. The `RLCD` name follows community naming, not TypeSafe/Jev's actual RL training."
-  },
-  {
-    "title": "Qwen-2.5-1B-RLCD",
-    "week": "10–17 Sep 2026",
-    "url": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD",
-    "sharer": "kenn",
-    "date": "16 Sep",
-    "categories": [
-      "ai-tool"
-    ],
-    "brief": "A 1B RLCD-tuned Qwen 2.5 that kenn tried locally \"to get a feel of how Jev's API and concepts might feel like\" — and found it did fine in a roguelike spike. Useful as a tiny testbed model before spending on bigger runs.",
-    "id": "qwen-2-5-1b-rlcd",
-    "warning": "",
-    "details": "Qwen-2.5-1B-RLCD (harshatheg) — a high-throughput Parallel Constrained Decoding inference engine for structured extraction, decision routing, and categorical classification, tuned for Apple Silicon via MLX (benchmarked with mlx-community/Qwen2.5-1.5B-Instruct-4bit on an M4 Max, where it claims 5.6x-7.0x latency reductions over standard autoregressive decoding with 100% schema validity). The trick: single broadcast prefill of the context and schema into one KV cache, broadcast across all schema fields in parallel, sub-vocabulary logit slicing so only valid candidate token IDs are scored, calibrated softmax over the candidate slice, token-tree disambiguation for multi-token enum prefixes, and programmatic JSON assembly — no JSON parsing errors, ever. Includes a developer SDK (`StructuredSchema`/`FieldDefinition` for enums up to 255 choices and booleans), per-field confidence telemetry, a command-line benchmark runner with enterprise presets (fraud routing, code security audit, support triage, tariff classification), an interactive web visualizer comparing PCD vs autoregressive with hallucination detection, and a FastAPI server. Live side-by-side demo on Hugging Face Spaces. Apache 2.0."
   },
   {
     "title": "Pi coding agent in the browser (announcement)",

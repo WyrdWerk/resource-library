@@ -1,6 +1,6 @@
 {
-  "migrated": 467,
-  "source_rows": 467,
+  "migrated": 454,
+  "source_rows": 454,
   "order_preserved": true,
   "all_fields_equal": true,
   "rows": [
@@ -134,22 +134,6 @@
     },
     {
       "id": "soulstack",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-09-25",
-      "date_evidence": "posted '25 Sep' inside week label '24 Sep–1 Oct 2026'"
-    },
-    {
-      "id": "gliner2-5-decide",
       "checks": {
         "id": true,
         "title": true,
@@ -1302,22 +1286,6 @@
     },
     {
       "id": "swiftvm",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-10-12",
-      "date_evidence": "posted '12 Oct' inside week label '8–15 Oct 2026'"
-    },
-    {
-      "id": "unlimited-ocr",
       "checks": {
         "id": true,
         "title": true,
@@ -2691,38 +2659,6 @@
       "all_equal": true,
       "shared_on": "2026-11-11",
       "date_evidence": "posted '11 Nov' inside week label '5–12 Nov 2026'"
-    },
-    {
-      "id": "qwen4-max-preview",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-11-12",
-      "date_evidence": "posted '12 Nov' inside week label '5–12 Nov 2026'"
-    },
-    {
-      "id": "mach-2-additive-medium-gguf",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-11-12",
-      "date_evidence": "posted '12 Nov' inside week label '5–12 Nov 2026'"
     },
     {
       "id": "agent-37",
@@ -4821,22 +4757,6 @@
       "date_evidence": "posted '29 Jul' inside week label '23–29 Jul 2026'"
     },
     {
-      "id": "kimi-k3-mlx",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-07-29",
-      "date_evidence": "posted '29 Jul' inside week label '23–29 Jul 2026'"
-    },
-    {
       "id": "hermes-console",
       "checks": {
         "id": true,
@@ -6117,54 +6037,6 @@
       "date_evidence": "posted '15 Aug' inside week label '13–20 Aug 2026'"
     },
     {
-      "id": "qwen3-6-27b-mtp-gguf-unsloth-quant",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-08-14",
-      "date_evidence": "posted '14 Aug' inside week label '13–20 Aug 2026'"
-    },
-    {
-      "id": "qwen3-8-open-weights-announcement",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-08-14",
-      "date_evidence": "posted '14 Aug' inside week label '13–20 Aug 2026'"
-    },
-    {
-      "id": "qwen3-8-27b-gguf-unsloth-quant",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-08-14",
-      "date_evidence": "posted '14 Aug' inside week label '13–20 Aug 2026'"
-    },
-    {
       "id": "pi-acp-jetbrain-ryan-brosas",
       "checks": {
         "id": true,
@@ -6485,38 +6357,6 @@
       "date_evidence": "posted '28 Aug' inside week label '27 Aug–3 Sep 2026'"
     },
     {
-      "id": "hy4-preview-fp8",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-08-28",
-      "date_evidence": "posted '28 Aug' inside week label '27 Aug–3 Sep 2026'"
-    },
-    {
-      "id": "glm-5-3-flash-dflash2",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-08-28",
-      "date_evidence": "posted '28 Aug' inside week label '27 Aug–3 Sep 2026'"
-    },
-    {
       "id": "dbx",
       "checks": {
         "id": true,
@@ -6643,54 +6483,6 @@
       "all_equal": true,
       "shared_on": "2026-09-17",
       "date_evidence": "posted '17 Sep' inside week label '17–24 Sep 2026'"
-    },
-    {
-      "id": "minicpm5-2b-pcd",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-09-17",
-      "date_evidence": "posted '17 Sep' inside week label '17–24 Sep 2026'"
-    },
-    {
-      "id": "lfm2-5-2-6b-rlcd",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-09-16",
-      "date_evidence": "posted '16 Sep' inside week label '10–17 Sep 2026'"
-    },
-    {
-      "id": "qwen-2-5-1b-rlcd",
-      "checks": {
-        "id": true,
-        "title": true,
-        "url": true,
-        "brief": true,
-        "warning->caveat": true,
-        "sharer": true,
-        "week->display_period": true,
-        "categories->legacy_categories": true
-      },
-      "all_equal": true,
-      "shared_on": "2026-09-16",
-      "date_evidence": "posted '16 Sep' inside week label '10–17 Sep 2026'"
     },
     {
       "id": "pi-coding-agent-in-the-browser-announcement",
