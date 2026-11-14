@@ -2520,6 +2520,50 @@
     "details": "DeepRelay is an inference relay that puts 48 open models behind a single OpenAI-compatible API key: chat models from DeepSeek, GLM, Kimi and Qwen, plus image and video generation, all reachable at api.deeprelay.ai with the same request shapes clients already use, including streaming, tool calls, JSON mode and reasoning tokens surfaced in usage. Instead of per-token billing only, it sells flat monthly plans — Base at $0.99 a month for 500M input and 50M output tokens, Plus at $4.99 for five times that — with usage past the allowance billed pay-as-you-go at published per-model rates, and a rolling 7-day cap alongside the monthly allowance. Each plan model carries a published usage factor, so a token on a high-factor model draws more than one token of allowance, and cached input bills at the model's cached rate. The service also publishes weights-verification results: an open-source harness samples the same prompts from DeepRelay and from independent deployments of the same published weights and runs Model Equality Testing on the completions."
   },
   {
+    "title": "Dukoi",
+    "week": "12–19 Nov 2026",
+    "url": "https://dukoi.com/",
+    "sharer": "thelaggingway",
+    "date": "13 Nov",
+    "categories": [
+      "dev-tool",
+      "web-app"
+    ],
+    "brief": "Dukoi turns a spare Android phone into a server — install the app, pair it with the CLI over Wi-Fi, and deploy real apps that get a live URL, with no root, no Termux, and no cloud bill. It runs apps as a foreground service that restarts them within seconds if Android kills them, works behind CGNAT with optional custom domains via Cloudflare, and keeps every deploy as a rollback-able release with live logs in the terminal and dashboard.",
+    "id": "dukoi",
+    "warning": "",
+    "details": "Dukoi turns a spare Android phone into a small server. Install the app on the phone, pair it with the CLI over the same Wi-Fi using keys instead of passwords, then deploy from your app's folder with `dukoi deploy` and get a live URL, public when you want it. It runs apps as a foreground service that restarts anything Android stops within seconds and resumes after reboot, works behind CGNAT with optional custom domains through Cloudflare, and treats every deploy as a release you can roll back with one command. Live logs stream to the phone, terminal, and a local web dashboard in under a second; a battery-care note in the docs suggests keeping the phone on charge."
+  },
+  {
+    "title": "Zeron",
+    "week": "12–19 Nov 2026",
+    "url": "https://zeron.sh/",
+    "sharer": "ROman",
+    "date": "14 Nov",
+    "categories": [
+      "ai-tool",
+      "dev-tool"
+    ],
+    "brief": "Zeron is a native desktop app for driving the coding agents already on your machine — Claude Code, Codex, Cursor, Grok, Hermes, and Pi — from any of your devices, with sessions living on your machines and every device able to pilot them. Start a session at your desk, watch it from your phone, and approve diffs from the couch, with plugins and a chart-drawing reply view built in.",
+    "id": "zeron",
+    "warning": "",
+    "details": "Zeron is a native desktop app that drives the coding agents already installed on your machines — Claude Code, Codex, OpenCode, Cursor, Antigravity, Pi, Grok, and Hermes — rather than being a new harness. Sessions live on your machines, and any device you own can pilot them, so you can start Claude Code at your desk, watch from your phone, and approve a diff from the couch. It is built with GPUI for a fast native window on every device, supports plugins that can change the interface, and its replies can include charts the app draws itself. Downloads are offered for macOS, Windows, Linux, and iOS."
+  },
+  {
+    "title": "SiberAI",
+    "week": "providers",
+    "url": "https://siberai.net/",
+    "sharer": "simply_roo",
+    "date": "14 Nov",
+    "categories": [
+      "providers"
+    ],
+    "brief": "SiberAI is a security-focused inference provider serving DeepSeek V4.1 Uncensored and its own Cyber v3-tuned model through an OpenAI-compatible API, with a downloadable agent for code review, vulnerability research, and debugging. It charges per token ($0.018/1M input, $1.32/1M output) with no KYC and no card required. - Warning: vendor markets uncensored models with \"no rules, no content logs\"; per-token rates are vendor-reported.",
+    "id": "siberai",
+    "warning": "",
+    "details": "SiberAI is a security-focused inference provider built around Siber v3, serving DeepSeek V4.1 Uncensored plus its own Cyber v3-tuned model through an OpenAI-compatible API with Chat Completions and Responses endpoints and API keys. It also ships a downloadable agent for Windows, Linux, and macOS for code review, vulnerability research, and debugging, alongside a jailbreak agent product. Pricing is pay-per-use at $0.018 per 1M input tokens and $1.32 per 1M output tokens, with no KYC and no card required. The vendor's \"no rules, no content logs\" positioning and the uncensored-model claims are vendor-reported and unverified, and support runs through Telegram."
+  },
+  {
     "title": "Annnimate",
     "week": "1–8 Oct 2026",
     "url": "https://annnimate.com",

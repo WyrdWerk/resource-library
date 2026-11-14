@@ -1,6 +1,6 @@
 # Inference providers — curated from CheapInfra #providers
 
-143 curated providers, with briefs.
+144 curated providers, with briefs.
 
 ## Isoquant
 - URL: https://isoquant.ai/
@@ -373,6 +373,12 @@
 - Shared by: ROman (12 Nov)
 - Categories: providers
 - Brief: DeepRelay is an inference relay putting 48 open models — DeepSeek, GLM, Kimi, Qwen, plus image and video models — behind one OpenAI-compatible API key, with a flat $0.99/month Base plan (500M input / 50M output tokens) and pay-as-you-go rates past the allowance. It also publishes weights-verification results, running Model Equality Testing against independent deployments of the same weights. - Warning: plan prices and token allowances are vendor-reported; high-factor models draw the allowance down faster than 1:1.
+
+## SiberAI
+- URL: https://siberai.net/
+- Shared by: simply_roo (14 Nov)
+- Categories: providers
+- Brief: SiberAI is a security-focused inference provider serving DeepSeek V4.1 Uncensored and its own Cyber v3-tuned model through an OpenAI-compatible API, with a downloadable agent for code review, vulnerability research, and debugging. It charges per token ($0.018/1M input, $1.32/1M output) with no KYC and no card required. - Warning: vendor markets uncensored models with "no rules, no content logs"; per-token rates are vendor-reported.
 
 ## Prism Inference
 - URL: https://prisminference.com/pricing

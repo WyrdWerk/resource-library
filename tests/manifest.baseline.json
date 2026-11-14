@@ -1,14 +1,14 @@
 {
  "baseline_commit": "scripts/regen.py",
  "generated_sha256": {
-  "CHANGELOG.md": "8c1d29670289fa14e1d07bee1236e67030d98f8187235ac0e748977323e8b1bc",
-  "data.json": "6bae92e3e440a9c8170ff69e75d421e7f58e53ad61fd7054b215207723acb51a",
-  "feed.xml": "84b7d52b004edc441a74c748e9ee00ed2c2c214c881f7603eb27827895d68ded",
-  "index.html": "f5018bcef3583cc1c8c3ba980becded60ee8affe92b0fe3cb60dcb72ab87f6a2",
-  "llms.txt": "3657fdbd9f1d82b9ec61441f95e316d059ed6f10c784363d58ee605adeddee61",
-  "og-image.png": "73d27300defe97c5e7a2d105395e77acf79d7cae34a29ab9afc1303104849951",
+  "CHANGELOG.md": "48a2c31ec17e31070ddfc317656a56ad6c2e0e98231bad36b3b4c65135011f77",
+  "data.json": "c1fe7f20d5a7e56f2d39cc39351a5c8d86ff15259e6617d4d66757d6e6d5d42a",
+  "feed.xml": "358b5a90d538fb9f077561a6c86246705207f71589f558ecff5a734f58a494cd",
+  "index.html": "1a37e717f999d128e84f5ca2f13d771e21e0314500ac21b0eaa769a68f97dac6",
+  "llms.txt": "0521d233493fe280a06bace548f92b9124d2fe854760d70372b6fc5d15e355cb",
+  "og-image.png": "8ddad9c9fc0af216398d52c20f3be70f5cc2d15c05a1594ad8a42df49f04f836",
   "robots.txt": "b2834e28a8a876d4adf4d27806f0ac783dc0f6617aaf32dd42e9f5453a0ac56e",
-  "sitemap.xml": "07dc6c4dfa4d7a44fa363797f93d17c67b3dada208cd58046929dcbbb8bbad3a",
+  "sitemap.xml": "cd0838cd17152d755817863e4b01cebe9ad5148fb9b70dead73f824c5915a964",
   "weeks/2026-06-04_to_2026-06-10.md": "f17652a5eb159df59ced4eeb8cc4e1704e99ee37c8202da73c2c78fa8635de15",
   "weeks/2026-06-11_to_2026-06-17.md": "898c793b7587c0d89e3aa12d6f70a0b1c864f65016c3941a1f0183cf7aebbe99",
   "weeks/2026-06-18_to_2026-06-24.md": "7e9d9cd53a38a0fb7719b0df782b0914782d2fc505dfd1084fa99ae17f1d2b92",
@@ -32,7 +32,8 @@
   "weeks/2026-10-22_to_2026-10-29.md": "98101e9ed1a116eccb023e539dc24c4b9d9aa8808c9135f2c1569341e8f58cb5",
   "weeks/2026-10-29_to_2026-11-05.md": "259c835f2a1d25fdf631b1bcc49f1fe741201db383ce6ad8ed05598bd873708e",
   "weeks/2026-11-05_to_2026-11-12.md": "ba94b3219977bccea298bbcf1e755ed7ad8b16be83d9148517a6113c6a6e6017",
-  "weeks/providers.md": "6e382cd9c3366fb8830d5c448b768f61d32738b7026ab11afa1b17c86069c5fb"
+  "weeks/2026-11-12_to_2026-11-19.md": "aa47e0b7a165b937229e0e98de5cec93cd1fdf58472c348f3d13039a62cdb8f5",
+  "weeks/providers.md": "227718656f579c758f36affcf5235df3e6858f41bd681453e890beed62780cf8"
  },
  "inventory": {
   "categories": [
@@ -43,13 +44,13 @@
    "providers",
    "web-app"
   ],
-  "https_urls": 464,
+  "https_urls": 467,
   "nonempty_warnings": 102,
-  "providers": 143,
-  "share_tech": 321,
-  "total": 464,
-  "unique_ids": 464,
-  "unique_urls": 464
+  "providers": 144,
+  "share_tech": 323,
+  "total": 467,
+  "unique_ids": 467,
+  "unique_urls": 467
  },
  "ordered_ids": [
   "railway-changelog-0309-free-vms-without-an-account",
@@ -226,6 +227,9 @@
   "deploy",
   "fireworks-ai-confirms-wider-breach-affecting-customer-datasets-model-weights-and-notion-ai-chats",
   "deeprelay",
+  "dukoi",
+  "zeron",
+  "siberai",
   "annnimate",
   "hyperiux",
   "vanta-ui",

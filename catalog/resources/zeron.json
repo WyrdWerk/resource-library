@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "zeron",
+  "title": "Zeron",
+  "canonical_url": "https://zeron.sh/",
+  "brief": "Zeron is a native desktop app for driving the coding agents already on your machine — Claude Code, Codex, Cursor, Grok, Hermes, and Pi — from any of your devices, with sessions living on your machines and every device able to pilot them. Start a session at your desk, watch it from your phone, and approve diffs from the couch, with plugins and a chart-drawing reply view built in.",
+  "caveat": null,
+  "details": "Zeron is a native desktop app that drives the coding agents already installed on your machines — Claude Code, Codex, OpenCode, Cursor, Antigravity, Pi, Grok, and Hermes — rather than being a new harness. Sessions live on your machines, and any device you own can pilot them, so you can start Claude Code at your desk, watch from your phone, and approve a diff from the couch. It is built with GPUI for a fast native window on every device, supports plugins that can change the interface, and its replies can include charts the app draws itself. Downloads are offered for macOS, Windows, Linux, and iOS.",
+  "resource_type": "tool",
+  "topics": [
+    "ai-agents",
+    "developer-tools"
+  ],
+  "use_cases": [
+    "manage-agents"
+  ],
+  "interfaces": [
+    "desktop"
+  ],
+  "technologies": [
+    "claude-code"
+  ],
+  "license": null,
+  "open_source": null,
+  "display_period": "12–19 Nov 2026",
+  "legacy_categories": [
+    "ai-tool",
+    "dev-tool"
+  ],
+  "source": {
+    "channel": "share-tech",
+    "sharer": "ROman"
+  },
+  "shared_on": "2026-11-14",
+  "verification": {
+    "status": "unchecked",
+    "checked_at": null,
+    "final_url": null
+  }
+}

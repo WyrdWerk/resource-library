@@ -1,0 +1,10 @@
+## Details
+
+### dukoi
+- Details: Dukoi turns a spare Android phone into a small server. Install the app on the phone, pair it with the CLI over the same Wi-Fi using keys instead of passwords, then deploy from your app's folder with `dukoi deploy` and get a live URL, public when you want it. It runs apps as a foreground service that restarts anything Android stops within seconds and resumes after reboot, works behind CGNAT with optional custom domains through Cloudflare, and treats every deploy as a release you can roll back with one command. Live logs stream to the phone, terminal, and a local web dashboard in under a second; a battery-care note in the docs suggests keeping the phone on charge.
+
+### zeron
+- Details: Zeron is a native desktop app that drives the coding agents already installed on your machines — Claude Code, Codex, OpenCode, Cursor, Antigravity, Pi, Grok, and Hermes — rather than being a new harness. Sessions live on your machines, and any device you own can pilot them, so you can start Claude Code at your desk, watch from your phone, and approve a diff from the couch. It is built with GPUI for a fast native window on every device, supports plugins that can change the interface, and its replies can include charts the app draws itself. Downloads are offered for macOS, Windows, Linux, and iOS.
+
+### siberai
+- Details: SiberAI is a security-focused inference provider built around Siber v3, serving DeepSeek V4.1 Uncensored plus its own Cyber v3-tuned model through an OpenAI-compatible API with Chat Completions and Responses endpoints and API keys. It also ships a downloadable agent for Windows, Linux, and macOS for code review, vulnerability research, and debugging, alongside a jailbreak agent product. Pricing is pay-per-use at $0.018 per 1M input tokens and $1.32 per 1M output tokens, with no KYC and no card required. The vendor's "no rules, no content logs" positioning and the uncensored-model claims are vendor-reported and unverified, and support runs through Telegram.
